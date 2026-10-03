@@ -1,0 +1,54 @@
+name: Publish site and build APK
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency: { group: drx, cancel-in-progress: false }
+jobs:
+  site:
+    runs-on: ubuntu-latest
+    environment: { name: github-pages, url: "${{ steps.deploy.outputs.page_url }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: www }
+      - id: deploy
+        uses: actions/deploy-pages@v4
+  apk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - id: changed
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || ! gh release view apk-latest >/dev/null 2>&1 || git diff --name-only HEAD~1 HEAD | grep -q '^android/'; then echo "build=1" >> $GITHUB_OUTPUT; fi
+        env: { GH_TOKEN: "${{ github.token }}" }
+      - if: steps.changed.outputs.build == '1'
+        uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: '17' }
+      - if: steps.changed.outputs.build == '1'
+        uses: gradle/actions/setup-gradle@v4
+        with: { gradle-version: '8.7' }
+      - if: steps.changed.outputs.build == '1'
+        name: Build signed APK
+        working-directory: android
+        env:
+          DRX_KEYPASS: ${{ secrets.DRX_KEYPASS }}
+        run: |
+          if [ -z "$DRX_KEYPASS" ]; then echo "::error::Add the repository secret DRX_KEYPASS (Settings → Secrets and variables → Actions)"; exit 1; fi
+          openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in ../keys/dermrx.jks.enc -out $RUNNER_TEMP/dermrx.jks -pass env:DRX_KEYPASS
+          export DRX_KEYSTORE=$RUNNER_TEMP/dermrx.jks
+          export DRX_HOST=$(echo "${{ github.repository_owner }}.github.io" | tr 'A-Z' 'a-z')
+          gradle --no-daemon assembleRelease
+          cp app/build/outputs/apk/release/app-release.apk $RUNNER_TEMP/DermRx-Desk.apk
+      - if: steps.changed.outputs.build == '1'
+        name: Publish APK download
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          gh release delete apk-latest -y --cleanup-tag >/dev/null 2>&1 || true
+          gh release create apk-latest "$RUNNER_TEMP/DermRx-Desk.apk" --title "DermRx Desk (Android)" --notes "Install on Android: download DermRx-Desk.apk, open it, allow 'Install unknown apps' if asked. The app updates itself from the website — no need to reinstall for new features or medicines." --latest

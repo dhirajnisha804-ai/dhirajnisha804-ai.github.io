@@ -1,0 +1,14 @@
+[
+ {
+  "relation": [
+   "delegate_permission/common.handle_all_urls"
+  ],
+  "target": {
+   "namespace": "android_app",
+   "package_name": "in.dermrx.desk",
+   "sha256_cert_fingerprints": [
+    "37:23:48:67:AD:A0:60:DF:9F:CE:15:FF:84:51:46:68:26:E3:A1:82:54:A3:FA:7F:C2:32:27:10:BC:9E:97:B6"
+   ]
+  }
+ }
+]
