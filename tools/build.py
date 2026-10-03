@@ -22,6 +22,7 @@ head = f"""<link rel="manifest" href="manifest.webmanifest"><meta name="theme-co
 <link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
 <meta name="drx-build" content="{BUILD}">
 <script src="config.js"></script>
+<script>window.DRX_OCR=(b=>({{lib:b+"tesseract.min.js",worker:b+"worker.min.js",core:b,lang:b}}))(new URL("vendor/tesseract/",location.href).href);</script>
 <script src="vendor/firebase-app-compat.js"></script><script src="vendor/firebase-auth-compat.js"></script><script src="vendor/firebase-firestore-compat.js"></script>
 <script src="drx-shim.js"></script>
 </head>"""
@@ -57,6 +58,8 @@ V = HERE + "/vend"
 for f in ["firebase-app-compat.js", "firebase-auth-compat.js", "firebase-firestore-compat.js"]:
     shutil.copy(f"{V}/x_firebase-10.12.2/package/{f}", OUT + "/vendor/")
 shutil.copy(f"{V}/x_html2pdf.js-0.10.1/package/dist/html2pdf.bundle.min.js", OUT + "/vendor/")
+os.makedirs(OUT + "/vendor/tesseract")
+for f in glob.glob(V + "/tesseract/*"): shutil.copy(f, OUT + "/vendor/tesseract/")
 for f in glob.glob(HERE + "/src/icons/*.png"): shutil.copy(f, OUT + "/icons/")
 shutil.copy(HERE + "/src/manifest.webmanifest", OUT)
 open(OUT + "/.nojekyll", "w").write("")

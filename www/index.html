@@ -1,7 +1,8 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#14324d">
 <link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<meta name="drx-build" content="202610032019">
+<meta name="drx-build" content="202610032038">
 <script src="config.js"></script>
+<script>window.DRX_OCR=(b=>({lib:b+"tesseract.min.js",worker:b+"worker.min.js",core:b,lang:b}))(new URL("vendor/tesseract/",location.href).href);</script>
 <script src="vendor/firebase-app-compat.js"></script><script src="vendor/firebase-auth-compat.js"></script><script src="vendor/firebase-firestore-compat.js"></script>
 <script src="drx-shim.js"></script>
 </head><body>
@@ -192,6 +193,10 @@ details.sec > .in{padding:0 14px 14px;display:flex;flex-direction:column;gap:12p
 .pick .main{flex:1;min-width:0}
 .pick .t{font-weight:650;display:block}
 .pick .s{font-size:12.5px;color:var(--muted);display:block}
+.scan{border-color:var(--accent);border-style:dashed}
+.scrow{display:flex;gap:10px;align-items:flex-start;cursor:pointer}.scrow>input[type=checkbox]{margin-top:4px;width:18px;height:18px;flex:none}.scrow .main{display:flex;flex-direction:column;gap:3px;flex:1;min-width:0}.scrow .main input,.scrow .main select{width:100%}.scrow .t{font-weight:600}.scrow .s{font-size:12.5px;color:var(--muted)}.sconf{font-style:italic}
+.scbar{height:6px;border-radius:3px;background:var(--line);overflow:hidden}.scbar i{display:block;height:100%;width:0;background:var(--accent);transition:width .2s}
+.scraw{white-space:pre-wrap;font-size:12px;background:var(--bg);padding:8px;border-radius:8px;max-height:220px;overflow:auto}
 .qb{display:flex;gap:6px;flex-wrap:wrap}
 /* Paper */
 .paper{background:var(--paper);color:var(--paper-ink);border:1px solid var(--line);border-radius:6px;padding:22px 20px}
@@ -844,6 +849,147 @@ function assetsOfVisit(v){ return [...(v.photos||[]).map(x=>x.id), ...(v.derm||[
 function startConsultFlow(){ openPatientPage(null); }
 
 /* ---------- PATIENT RECORD (single page) ---------- */
+/* ---------- scan a prescription photo (on-device OCR) ---------- */
+const OCR = { w:null, loading:null };
+function ocrBase(){ return window.DRX_OCR || {lib:"https://cdn.jsdelivr.net/npm/tesseract.js@7.0.0/dist/tesseract.min.js", worker:"https://cdn.jsdelivr.net/npm/tesseract.js@7.0.0/dist/worker.min.js", core:"https://cdn.jsdelivr.net/npm/tesseract.js-core@6.1.2", lang:"https://cdn.jsdelivr.net/npm/@tesseract.js-data/eng@1.0.0/4.0.0_best_int"}; }
+function loadScript(src){ return new Promise((ok,no)=>{ const s=document.createElement("script"); s.src=src; s.onload=ok; s.onerror=()=>no(new Error("load")); document.head.appendChild(s); }); }
+async function ocrWorker(onProg){
+  if(OCR.w) return OCR.w;
+  if(!OCR.loading) OCR.loading = (async()=>{
+    const B=ocrBase();
+    if(!window.Tesseract) await loadScript(B.lib);
+    const w = await Tesseract.createWorker("eng", 1, { workerPath:B.worker, corePath:B.core, langPath:B.lang, gzip:true, workerBlobURL:!window.DRX_OCR, logger:m=>OCR.prog?.(m) });
+    OCR.w=w; return w;
+  })().catch(e=>{ OCR.loading=null; throw e; });
+  OCR.prog=onProg; return OCR.loading;
+}
+async function ocrPrep(file){
+  const url=URL.createObjectURL(file);
+  try{
+    const img=await new Promise((ok,no)=>{ const i=new Image(); i.onload=()=>ok(i); i.onerror=no; i.src=url; });
+    const max=2200, sc=Math.min(1, max/Math.max(img.naturalWidth,img.naturalHeight));
+    const c=document.createElement("canvas"); c.width=Math.round(img.naturalWidth*sc); c.height=Math.round(img.naturalHeight*sc);
+    const x=c.getContext("2d"); x.drawImage(img,0,0,c.width,c.height);
+    const d=x.getImageData(0,0,c.width,c.height), a=d.data;
+    for(let i=0;i<a.length;i+=4){ let g=0.299*a[i]+0.587*a[i+1]+0.114*a[i+2]; g=Math.max(0,Math.min(255,(g-128)*1.35+140)); a[i]=a[i+1]=a[i+2]=g; }
+    x.putImageData(d,0,0); return c;
+  } finally { URL.revokeObjectURL(url); }
+}
+const lev=(a,b)=>{ if(a===b) return 0; const m=a.length,n=b.length; if(!m||!n) return m||n; let p=Array.from({length:n+1},(_,j)=>j); for(let i=1;i<=m;i++){ const q=[i]; for(let j=1;j<=n;j++) q[j]=Math.min(p[j]+1,q[j-1]+1,p[j-1]+(a[i-1]===b[j-1]?0:1)); p=q; } return p[n]; };
+const sim=(a,b)=>1-lev(a,b)/Math.max(a.length,b.length);
+const nrm=s=>String(s||"").toLowerCase().replace(/[^a-z0-9 ]+/g," ").replace(/\s+/g," ").trim();
+const FORM_RE=/^(?:rx\s*)?(?:\d+[.)]\s*)?(tab(?:let)?s?|cap(?:sule)?s?|syp|syr(?:up)?|susp|oint(?:ment)?|oint|crm|cream|gel|lot(?:ion)?|sol(?:ution)?|soap|shampoo|face ?wash|serum|spray|powder|pwd|dusting powder|inj(?:ection)?|drops?|sachet|kit)\b\.?\s*/i;
+const GEN_STOP=new Set("cream gel lotion ointment oint tablet tablets tab capsule capsules cap caps soap face wash facewash serum solution sol spray powder shampoo syrup suspension drops sachet with and the of for in technology cetosomal topical oral strength per pack confirm mr skin anti foaming moisturiser moisturizer sunscreen cleanser bar kit".split(" "));
+const ORAL_FORMS=/^(tab|cap|syp|syr|susp|sachet|kit)/i;
+function scanIndex(){
+  const brands=S.brands.map(b=>{ const full=nrm(b.product); const head=nrm(String(b.product||"").replace(/\b\d[\d.]*\s*(mg|mcg|g|ml|%|iu)?\b.*$/i,"")); return {b, full, head, first:head.split(" ")[0]||""}; }).filter(x=>x.head.length>=3);
+  const gens=new Set();
+  S.brands.forEach(b=>String(b.composition||"").split(/[+,/&]| and /i).forEach(g=>{ g=nrm(g.replace(/\(.*?\)/g,"").replace(/\b\d[\d.]*\s*(mg|mcg|g|ml|%|w\/w|w\/v|iu)?\b/gi,"")); g=g.split(" ").filter(w=>!GEN_STOP.has(w)).join(" "); if(g.length>=5 && g.split(" ").some(w=>w.length>=5)) gens.add(g); }));
+  (typeof dsList==="function"?dsList():[]).forEach(d=>{ const g=nrm(d.name); if(g.length>=5) gens.add(g); });
+  return {brands, gens:[...gens]};
+}
+function matchDrug(text, IX){
+  const t=nrm(text); if(!t) return null; const words=t.split(" ");
+  let best=null;
+  for(const x of IX.brands){
+    const n=x.head.split(" ").length, cand=words.slice(0,Math.max(n,1)+1);
+    for(let k=1;k<=Math.min(cand.length,n+1);k++){
+      const w=cand.slice(0,k).join(" "); if(w.length<3) continue;
+      let s=sim(w,x.head); if(x.first.length>=5) s=Math.max(s, sim(words[0],x.first)*0.97);
+      if(x.full && t.startsWith(x.full)) s=1.01;
+      if(!best||s>best.s) best={s, b:x.b};
+    }
+  }
+  let g=null;
+  for(const x of IX.gens){ const n=x.split(" ").length; const w=words.slice(0,n).join(" "); const s=sim(w,x); if((" "+t+" ").includes(" "+x+" ")) { g={s:1,g:x}; break; } if(!g||s>g.s) g={s,g:x}; }
+  if(best && best.s>=0.8 && (!g || best.s>=g.s-0.02)) return {kind:"brand", b:best.b, s:best.s};
+  if(g && g.s>=0.82) return {kind:"generic", g:g.g, s:g.s};
+  return null;
+}
+function parseSig(line){
+  const L=" "+line.toLowerCase()+" "; const o={};
+  const pat=line.match(/\b([01½](?:\s*[-–]\s*[01½]){2,3})\b/);
+  if(pat){ const p=pat[1].replace(/\s/g,"").replace(/–/g,"-"); o.freq={"1-0-0":"OD","0-0-1":"HS","1-0-1":"BD","1-1-1":"TDS","1-1-1-1":"QID","0-1-0":"OD","1-1-0":"BD","0-1-1":"BD"}[p]||p; if(p==="1-0-0") o.timing="Morning"; if(p==="0-0-1") o.timing="Night"; if(p==="1-0-1") o.timing="Morning and night"; }
+  if(!o.freq){ if(/\b(qid|4 times)\b/.test(L)) o.freq="QID"; else if(/\b(tds|tid|thrice|3 times)\b/.test(L)) o.freq="TDS"; else if(/\b(bd|bid|twice|2 times)\b/.test(L)) o.freq="BD"; else if(/\b(hs|at night|bedtime)\b/.test(L)) o.freq="HS"; else if(/\b(od|once daily|once a day|daily)\b/.test(L)) o.freq="OD"; else if(/\b(sos|prn|when needed)\b/.test(L)) o.freq="SOS"; else if(/\b(weekly|once a week)\b/.test(L)) o.freq="Weekly"; else if(/\b(alternate days?|aod|eod)\b/.test(L)) o.freq="Alternate days"; }
+  { if(/after (food|meal)|\bpc\b/.test(L)) o.timing="After food"; else if(/before (food|meal)|\bac\b/.test(L)) o.timing="Before food"; else if(/empty stomach/.test(L)) o.timing="Empty stomach"; }
+  const d=line.match(/(?:[x×*]|for)\s*(\d{1,3})\s*(d(?:ays?)?|w(?:ee)?ks?|wk|m(?:on)?ths?|mo)\b/i) || line.match(/\b(\d{1,3})\s*(days?|weeks?|wks?|months?)\b/i);
+  if(d){ const n=+d[1], u=d[2].toLowerCase(); o.dur = u.startsWith("d")?`${n} day${n>1?"s":""}`: u.startsWith("w")?`${n} week${n>1?"s":""}`:`${n} month${n>1?"s":""}`; }
+  const dose=line.match(/\b(\d+(?:\.\d+)?\s*(?:mg|mcg|g|ml|iu))\b/i); if(dose) o.dose=dose[1].replace(/\s+/,"");
+  return o;
+}
+function parseDate(s){
+  const mons=["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"];
+  let m=s.match(/\b(\d{1,2})\s*[\/.\-]\s*(\d{1,2})\s*[\/.\-]\s*(\d{2,4})\b/);
+  if(m){ let [_,d,mo,y]=m; y=+y; if(y<100) y+=2000; d=+d; mo=+mo; if(mo>12&&d<=12) [d,mo]=[mo,d]; if(mo>=1&&mo<=12&&d>=1&&d<=31&&y>1990&&y<2100) return `${y}-${String(mo).padStart(2,"0")}-${String(d).padStart(2,"0")}`; }
+  m=s.match(/\b(\d{1,2})(?:st|nd|rd|th)?\s*[\-\s]?\s*([a-z]{3,9})[,\s\-]*(\d{2,4})\b/i);
+  if(m){ const mo=mons.indexOf(m[2].slice(0,3).toLowerCase())+1; let y=+m[3]; if(y<100) y+=2000; if(mo>0) return `${y}-${String(mo).padStart(2,"0")}-${String(+m[1]).padStart(2,"0")}`; }
+  return "";
+}
+function parseRx(text){
+  const lines=text.split(/\n+/).map(l=>l.replace(/[|_]+/g," ").replace(/\s+/g," ").trim()).filter(l=>l.length>1);
+  const out={name:"", age:"", sex:"", date:"", meds:[], raw:text};
+  const all=lines.join("\n");
+  let m=all.match(/(?:patient'?s?\s*name|pt\.?\s*name|name)\s*[:\-.]?\s*((?:mrs|miss|ms|mr|smt|shri|master|baby)\.?\s*)?([a-z][a-z .']{1,40}?)(?=\s*(?:age|sex|gender|date|\d|\/|,|$|\n))/im);
+  if(!m) m=all.match(/\b((?:mrs|miss|ms|mr|smt|shri|master|baby)\.?\s+)([a-z][a-z .']{1,40}?)(?=\s*(?:age|sex|gender|date|\d|\/|,|$|\n))/im);
+  if(m) out.name=m[2].trim().replace(/\s+/g," ").replace(/\b\w/g,c=>c.toUpperCase());
+  m=all.match(/\bage\s*[:\-.]?\s*(\d{1,3})/i) || all.match(/\b(\d{1,3})\s*(?:y(?:ea)?rs?|y\/o|yo|y)\b/i) || all.match(/\b(\d{1,3})\s*\/\s*[mf]\b/i);
+  if(m && +m[1]<=110) out.age=String(+m[1]);
+  m=all.match(/\b(?:sex|gender)\s*[:\-.]?\s*(m|f|male|female)\b/i) || all.match(/\b\d{1,3}\s*(?:y(?:ea)?rs?|y\/o|yo|y)?\s*[\/,\- ]\s*(m|f|male|female)\b/i);
+  if(m) out.sex=/^f/i.test(m[1])?"Female":"Male";
+  else if(/\b(mrs|ms|miss|smt)\.?\s/i.test(all)) out.sex="Female"; else if(/\b(mr|shri|master)\.?\s/i.test(all)) out.sex="Male";
+  const dl=lines.find(l=>/\bdate\b|\bdt\b/i.test(l)&&parseDate(l)); out.date=parseDate(dl||all);
+  const IX=scanIndex(); const seen=new Set();
+  let inRx=false;
+  for(const l of lines){
+    if(/^\s*(rx|℞|r\/x)\b/i.test(l)) inRx=true;
+    if(/\b(name|age|sex|date|reg\.?\s*no|mobile|phone|address|diagnosis|dx|c\/o|complaints?|follow|review|signature|mbbs|md\b|dnb|clinic|hospital)\b/i.test(l) && !FORM_RE.test(l)) continue;
+    const formM=l.match(FORM_RE); const body=l.replace(FORM_RE,"").replace(/^[\-•*·\d.)\s]+/,"");
+    const mt=matchDrug(body, IX);
+    if(!mt && !formM) continue;
+    if(!mt && formM && !inRx && body.split(" ").length>6) continue;
+    const sig=parseSig(l); const form=formM?formM[1]:"";
+    const route = mt?.kind==="brand" ? (/oral|Antihistamine|Supplement/i.test(catOf(mt.b))&&!/topical/i.test(catOf(mt.b))?"Oral":"Topical") : form ? (ORAL_FORMS.test(form)?"Oral":"Topical") : "";
+    let item;
+    if(mt?.kind==="brand"){ const br=mt.b; item={drug:br.composition||br.product, brandId:br.id, brand:[br.product, br.brand&&!String(br.product).includes(br.brand)?"("+br.brand+")":""].filter(Boolean).join(" "), cost:br.price??"", route}; }
+    else if(mt?.kind==="generic"){ item={drug:mt.g.replace(/\b\w/g,c=>c.toUpperCase()), route}; }
+    else { const w=body.replace(/\b(\d[\d.\-–]*\s*(mg|mcg|g|ml|%)?|od|bd|tds|hs|x.*)$/gi,"").trim(); if(w.length<3) continue; item={drug:(form?form.replace(/\b\w/,c=>c.toUpperCase())+" ":"")+w.split(" ").slice(0,4).join(" "), route}; }
+    Object.assign(item, {dose:sig.dose||"", freq:sig.freq||"", timing:sig.timing||"", dur:sig.dur||""});
+    const key=(item.brandId||item.drug).toLowerCase(); if(seen.has(key)) continue; seen.add(key);
+    out.meds.push({item:normRx(item), line:l, conf:mt?(mt.kind==="brand"?"Matched to your list":"Generic name"):"Read as written"});
+  }
+  return out;
+}
+async function scanRxPhoto(file, apply){
+  openSheet2("Reading prescription", `<div class="stack"><p class="hint" style="margin:0" id="scMsg">Preparing the photo…</p><div class="scbar"><i id="scBar"></i></div><p class="hint" style="margin:0">Reading happens on this phone. The photo isn’t uploaded anywhere.</p></div>`);
+  const msg=t=>{ const e=$("#scMsg"); if(e) e.textContent=t; }, bar=p=>{ const e=$("#scBar"); if(e) e.style.width=Math.round(p*100)+"%"; };
+  let res;
+  try{
+    const canvas=await ocrPrep(file);
+    msg(OCR.w?"Reading text…":"Loading the reader (first time needs internet, about 4 MB)…");
+    const w=await ocrWorker(m=>{ if(m.status==="recognizing text"){ msg("Reading text…"); bar(m.progress); } else if(/load/i.test(m.status||"")) bar((m.progress||0)*0.3); });
+    OCR.prog=m=>{ if(m.status==="recognizing text"){ msg("Reading text…"); bar(m.progress); } };
+    const r=await w.recognize(canvas); res=parseRx(r.data.text||"");
+  }catch(e){ console.warn(e); msg(navigator.onLine===false&&!OCR.w?"The reader needs internet the first time. Connect once, then scanning works offline.":"Couldn’t read this photo. Try a sharper, well-lit photo taken straight on."); bar(0); return; }
+  const fld=(k,label,val,show)=>`<label class="scrow"><input type="checkbox" data-sck="${k}" ${val?"checked":""}><span class="main"><span class="s">${label}</span><input class="inp" data-scv="${k}" value="${esc(val)}" ${k==="date"?'type="date"':""} placeholder="Not found"></span></label>`;
+  const medRow=(m,i)=>`<label class="scrow"><input type="checkbox" data-scm="${i}" checked><span class="main"><span class="t">${esc(m.item.brand||m.item.drug)}</span><span class="s">${esc([m.item.brand?m.item.drug:"", m.item.dose, m.item.freq, m.item.timing, m.item.dur].filter(Boolean).join(" · "))}</span><span class="s sconf">${esc(m.conf)} — “${esc(m.line.slice(0,70))}”</span></span></label>`;
+  const nothing=!res.name&&!res.age&&!res.date&&!res.meds.length;
+  openSheet2("Check scanned details", `<div class="stack">
+    <p class="hint" style="margin:0">${nothing?"No details could be picked out. Check the text below, or try a clearer photo.":"Untick anything that’s wrong, or correct it, then tap <b>Fill in</b>."}</p>
+    <div class="section stack">${fld("name","Name",res.name)}${fld("age","Age (years)",res.age)}<label class="scrow"><input type="checkbox" data-sck="sex" ${res.sex?"checked":""}><span class="main"><span class="s">Sex</span><select class="inp" data-scv="sex">${["","Male","Female","Other"].map(s=>`<option ${s===res.sex?"selected":""} value="${s}">${s||"Not found"}</option>`).join("")}</select></span></label>${fld("date","Date",res.date)}</div>
+    <div class="group"><h3>Medicines (${res.meds.length})</h3><div class="section stack">${res.meds.map(medRow).join("")||`<p class="hint" style="margin:0">None found. Add them with <b>+ Add medicine</b>.</p>`}</div></div>
+    <label class="scrow"><input type="checkbox" id="scKeep"><span class="main"><span class="t">Keep the prescription photo with this visit</span></span></label>
+    <details><summary class="hint">Text read from the photo</summary><pre class="scraw">${esc(res.raw.trim()||"(nothing)")}</pre></details>
+    <div class="actions"><button class="btn" id="scAgain">Try another photo</button><button class="btn primary" id="scApply">Fill in</button></div>
+  </div>`);
+  document.querySelectorAll("[data-scv]").forEach(i=>i.addEventListener("input",()=>{ const c=document.querySelector(`[data-sck="${i.dataset.scv}"]`); if(c) c.checked=!!i.value.trim(); }));
+  $("#scAgain").onclick=()=>{ closeSheet2(); apply.again?.(); };
+  $("#scApply").onclick=()=>{
+    const v={}; document.querySelectorAll("[data-sck]").forEach(c=>{ if(c.checked){ const val=document.querySelector(`[data-scv="${c.dataset.sck}"]`).value.trim(); if(val) v[c.dataset.sck]=val; } });
+    const meds=[...document.querySelectorAll("[data-scm]")].filter(c=>c.checked).map(c=>res.meds[+c.dataset.scm].item);
+    apply(v, meds, $("#scKeep").checked?file:null); closeSheet2();
+  };
+}
+
 function openPatientPage(pid, vid, {tpl}={}){
   const p = pid ? personById(pid) : null;
   if(pid && !p){ toast("This patient record isn’t available"); return; }
@@ -862,6 +1008,7 @@ function openPatientPage(pid, vid, {tpl}={}){
   const dxList = uniq([...CASES.map(c=>c.n), ...S.templates.map(t=>t.dx||t.name), ...DX]).sort();
   const others = vs.filter(x=>x!==v);
   openSheet(isNew?"New patient":(p.name||"Patient"), `<div class="stack">
+    <div class="section scan"><div class="lbl" style="margin:0;flex-wrap:wrap;gap:8px"><span>Scan a prescription</span><span class="actions"><label class="btn sm filebtn"><input type="file" id="ppScCam" accept="image/*" capture="environment">Camera</label><label class="btn sm filebtn"><input type="file" id="ppScGal" accept="image/*">Gallery</label></span></div><p class="hint" style="margin:6px 0 0">Fills name, age, date and medicines from a photo. You check them before anything is filled.</p></div>
     <div class="section"><div class="grid">
       <div class="field" style="grid-column:1/-1"><label for="ppName">Name *</label><input id="ppName" value="${esc(W.name)}" autocomplete="off"></div>
       <div class="field"><label for="ppAge">Age (years)</label><input id="ppAge" type="number" inputmode="numeric" min="0" max="120" value="${esc(W.age)}"></div>
@@ -915,6 +1062,14 @@ function openPatientPage(pid, vid, {tpl}={}){
   $("#ppAdd").onclick = () => openMedPicker(null, item => { W.rx.push(item); drawRx(); });
   $("#ppTpl").onclick = () => openTplPicker(t => { applyTpl(t); drawRx(); toast(`Applied ${t.name}`); });
   $("#ppGuide").onclick = () => openCaseRef($("#ppDx").value.trim());
+  const scanApply = (v, meds, keep) => {
+    if(v.name) $("#ppName").value=v.name; if(v.age) $("#ppAge").value=v.age; if(v.sex) $("#ppSex").value=v.sex; if(v.date) $("#ppDate").value=v.date;
+    if(meds.length){ W.rx.push(...meds); }
+    drawRx(); if(keep) addPhotos([keep]);
+    const n=Object.keys(v).length+meds.length; toast(n?`Filled ${n} item${n>1?"s":""} from the scan — please check`:"Nothing was filled");
+  };
+  scanApply.again = () => $("#ppScGal").click();
+  ["#ppScCam","#ppScGal"].forEach(sel=>$(sel).addEventListener("change", e=>{ const f=e.target.files[0]; e.target.value=""; if(f) scanRxPhoto(f, scanApply); }));
   const collect = () => { W.name=$("#ppName").value.trim(); W.age=$("#ppAge").value; W.sex=$("#ppSex").value; W.date=$("#ppDate").value||today(); W.complaint=$("#ppCc").value.trim(); W.history=$("#ppHx").value.trim(); W.dx=$("#ppDx").value.trim(); };
   const doSave = async () => {
     if(busy){ toast("Wait for photos to finish uploading"); return null; }

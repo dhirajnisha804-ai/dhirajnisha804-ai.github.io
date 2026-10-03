@@ -1,6 +1,6 @@
 /* DermRx Desk service worker: works offline, always prefers the latest version when online,
    and serves locally stored photos at /_blob/<id>. */
-const VERSION = "202610032019";
+const VERSION = "202610032038";
 const SHELL = "drx-shell-" + VERSION;
 const FILES = ["./", "index.html", "drx-shim.js", "config.js", "seed.json", "prices.json", "manifest.webmanifest",
   "vendor/firebase-app-compat.js", "vendor/firebase-auth-compat.js", "vendor/firebase-firestore-compat.js",
@@ -10,7 +10,7 @@ self.addEventListener("install", e => {
   e.waitUntil(caches.open(SHELL).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
 });
 self.addEventListener("activate", e => {
-  e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k.startsWith("drx-") && k !== SHELL && k !== "drx-runtime").map(k => caches.delete(k)))).then(() => self.clients.claim()));
+  e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k.startsWith("drx-") && k !== SHELL && k !== "drx-runtime" && !k.startsWith("drx-ocr")).map(k => caches.delete(k)))).then(() => self.clients.claim()));
 });
 
 function idbGet(id) {
@@ -37,6 +37,11 @@ self.addEventListener("fetch", e => {
       e.respondWith(caches.open("drx-runtime").then(async c => { const hit = await c.match(e.request); const net = fetch(e.request).then(r => { if (r.ok || r.type === "opaque") c.put(e.request, r.clone()); return r; }).catch(() => hit); return hit || net; }));
     }
     return; // Firestore / auth traffic goes straight to the network.
+  }
+  if (url.pathname.includes("/vendor/tesseract/")) {
+    // Prescription reader: downloaded once, kept across app updates, then works offline.
+    e.respondWith(caches.open("drx-ocr-7").then(async c => { const hit = await c.match(e.request, { ignoreSearch: true }); return hit || fetch(e.request).then(r => { if (r.ok) c.put(e.request, r.clone()); return r; }); }));
+    return;
   }
   const fresh = e.request.mode === "navigate" || /(\/|index\.html|seed\.json|prices\.json|config\.js|drx-shim\.js|manifest\.webmanifest)$/.test(url.pathname);
   if (fresh) {
