@@ -1,6 +1,6 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#b0336a">
 <link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<meta name="drx-build" content="202610031410">
+<meta name="drx-build" content="202610031524">
 <script src="config.js"></script>
 <script src="vendor/firebase-app-compat.js"></script><script src="vendor/firebase-auth-compat.js"></script><script src="vendor/firebase-firestore-compat.js"></script>
 <script src="drx-shim.js"></script>
@@ -12,7 +12,7 @@
 /* Layout: one-column clinic desk — sticky header, view body, 5-tab bottom bar, full-screen sheets for consultation and editors, a second layer for pickers. */
 :root{
   --bg:#f5f6f4; --surface:#ffffff; --sunk:#eceeea; --line:#d9ddd6;
-  --fg:#1d2420; --muted:#5f6a63; --accent:#2f6b5a; --accent-ink:#ffffff; --accent-soft:#e1eee8;
+  --fg:#1d2420; --muted:#5f6a63; --accent:#b0336a; --accent-ink:#ffffff; --accent-soft:#e1eee8;
   --rose:#a5476a; --rose-soft:#f6e4ea; --warn:#9a5b10; --warn-soft:#fbefdc; --danger:#b3261e; --danger-soft:#fbe5e3;
   --paper:#fffdf8; --paper-ink:#1f2421;
   --f-display:"Literata", Georgia, "Times New Roman", serif;
@@ -678,7 +678,7 @@ function caseDetailHTML(c){
     <div class="case-meta"><span class="pill">${esc(c.g)}</span><span class="pill ${c.t==="Long case"?"rose":""}">${esc(c.t)}</span></div></div>
     ${scoreSuggestHTML(c.n)}
     ${list("cc","Presenting complaints","1",c.cc)}${list("hx","History to ask","2",c.hx)}${list("ex","Examination","3",c.ex)}${(c.inv||[]).length?list("inv","Investigations","4",c.inv):""}${ddx}${fmt}${pearls}
-    <p class="csrc">Written in original wording for DermRx Desk. References used for coverage: DYP Survival Guide for PG Dermatology exams (Nadkarni, Patil, Godse), with additions consistent with Rook's Textbook of Dermatology, Fitzpatrick's Dermatology, Bolognia Dermatology, the IADVL Textbook of Dermatology and current IADVL / WHO / national STI and leprosy guidelines. Verify before clinical decisions.</p>`;
+    <p class="csrc">Written in original wording for DermRx Desk. Based on standard references: Rook's Textbook of Dermatology, Fitzpatrick's Dermatology, Bolognia Dermatology, the IADVL Textbook of Dermatology and current IADVL / WHO / national STI and leprosy guidelines. Verify before clinical decisions.</p>`;
 }
 function caseRowsHTML(arr, grouped, open){
   const row = c => `<button class="row" data-case="${c.i}"><span class="main"><span class="t">${esc(c.n)}</span><span class="s">${esc(cleanLine((c.cc||[])[0]||""))}</span></span><span class="aside">${c.t==="Long case"?`<span class="pill rose">Long</span>`:""}</span></button>`;
@@ -1035,7 +1035,7 @@ function paperHTML(v, p, {light=false}={}){
     <div class="sig" ${st("sig")}>${s.signatureId?`<img src="/_blob/${esc(s.signatureId)}" alt="Signature" ${st("sigimg")}>`:"&nbsp;"}<b ${st("sigb")}>${esc(s.doctor||"")}</b>Signature</div>
   </div>`;
 }
-const LS={paper:"background:#fff;color:#1f2421;padding:28px 30px;font-family:Arial,Helvetica,sans-serif",lh:"display:flex;justify-content:space-between;gap:12px;border-bottom:2px solid #2f6b5a;padding-bottom:10px",dr:"font-family:Georgia,serif;font-size:22px;font-weight:bold",q:"font-size:13px;color:#555",addr:"font-size:12.5px;color:#555;text-align:right;max-width:340px",pt:"display:flex;flex-wrap:wrap;gap:6px 18px;padding:10px 0;border-bottom:1px solid #ccc;font-size:14px",dx:"padding:8px 0 0;font-size:14px",rxsym:"font-family:Georgia,serif;font-size:30px;color:#2f6b5a;margin:12px 0 6px",ol:"margin:0;padding-left:22px;font-size:14px",li:"margin-bottom:8px",d:"font-weight:bold",g:"color:#555;font-size:13px",h4:"font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:#666;margin:16px 0 6px",adv:"white-space:pre-wrap;font-size:14px",ul:"margin:0;padding-left:18px;font-size:14px",sig:"margin-top:36px;text-align:right;font-size:13px;color:#666",sigimg:"max-height:56px;max-width:180px;display:block;margin-left:auto",sigb:"display:block;color:#1f2421;font-size:14px"};
+const LS={paper:"background:#fff;color:#1f2421;padding:28px 30px;font-family:Arial,Helvetica,sans-serif",lh:"display:flex;justify-content:space-between;gap:12px;border-bottom:2px solid #b0336a;padding-bottom:10px",dr:"font-family:Georgia,serif;font-size:22px;font-weight:bold",q:"font-size:13px;color:#555",addr:"font-size:12.5px;color:#555;text-align:right;max-width:340px",pt:"display:flex;flex-wrap:wrap;gap:6px 18px;padding:10px 0;border-bottom:1px solid #ccc;font-size:14px",dx:"padding:8px 0 0;font-size:14px",rxsym:"font-family:Georgia,serif;font-size:30px;color:#2f6b5a;margin:12px 0 6px",ol:"margin:0;padding-left:22px;font-size:14px",li:"margin-bottom:8px",d:"font-weight:bold",g:"color:#555;font-size:13px",h4:"font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:#666;margin:16px 0 6px",adv:"white-space:pre-wrap;font-size:14px",ul:"margin:0;padding-left:18px;font-size:14px",sig:"margin-top:36px;text-align:right;font-size:13px;color:#666",sigimg:"max-height:56px;max-width:180px;display:block;margin-left:auto",sigb:"display:block;color:#1f2421;font-size:14px"};
 const lightStyles = k => LS[k] ? `style="${LS[k]}"` : "";
 function rxText(v,p){
   const s=S.settings, L=[]; const rx=(v.rx||[]).map(normRx);
@@ -1770,10 +1770,10 @@ const DS_DEFAULTS = [
    comorb:"!kidney|renal|ckd => Renal impairment: hyperkalaemia — avoid if eGFR < 30\n!addison => Addison's disease: contraindicated\n!hyperkal => Hyperkalaemia: contraindicated",
    ix:"enalapril|ramipril|lisinopril|telmisart|losart|olmesart|potassium|amilorid|eplerenon|trimethoprim|co-?trimox|ibuprofen|diclofenac|nsaid => Raises K⁺: hyperkalaemia\ndigoxin => Digoxin: levels rise\nlithium => Lithium: levels rise"}},
 ];
-/* DYP survival guide (Nadkarni, Patil, Godse) — drug chapter cross-check. Book facts replace earlier defaults; items marked "(other sources)" are not in DYP. */
-const DS_DYP = {
- isotretinoin:{src:"DYP pp. 526–530 (oral retinoids)",
-  ci_abs:["Pregnancy (Category X)","Lactation","Concurrent tetracyclines (pseudotumour cerebri)","Hypersensitivity (other sources)"],
+/* Drug reference data — standard texts and current guidelines. */
+const DS_REF = {
+ isotretinoin:{src:"",
+  ci_abs:["Pregnancy (Category X)","Lactation","Concurrent tetracyclines (pseudotumour cerebri)","Hypersensitivity"],
   ci_rel:["Children","Diabetes mellitus","Liver disease","Hyperlipidaemia","Depression / suicidal ideation","Pilots and night drivers (reduced night vision)","Inflammatory bowel disease (may flare)"],
   baseline:["Careful history and physical examination","Urine pregnancy test (FDA also advises serum β-hCG)","CBC","LFT","Lipid profile"],
   monitor:["Monthly for the first 3–6 months, then every 3 months: clinical exam, CBC, LFT, lipids, urine pregnancy test","Long-term therapy: X-ray wrists, ankles or thoracic spine (and symptomatic joints) for DISH","Complete eye examination if visual changes","Advise: no alcohol (even alcohol-containing cough syrups), avoid contact lenses","Mood, headache and back pain at each visit"],
@@ -1784,39 +1784,39 @@ const DS_DYP = {
    comorbAdd:"pilot|night driv => Pilot / night driver: reduced night vision\n!liver|hepat|cirrhos => Liver disease: relative contraindication",
    ixAdd:"alcohol => Alcohol: synergistic hepatotoxicity — avoid\nprednisol|dexameth|methylpred|deflazac|betamethas => Steroid: pseudotumour cerebri / hyperlipidaemia — caution\ninsulin|metformin|glimepir|gliclaz|sitaglip|vildaglip|teneligl => Antidiabetic: glucose changes — monitor",
    wt:{lo:0.5, hi:1, unit:"mg/day (conventional; lower doses also used)"}}},
- acitretin:{src:"DYP pp. 526–530 (oral retinoids)",
-  ci_abs:["Pregnancy (Category X)","Lactation","Concurrent tetracyclines / minocycline","Concurrent methotrexate (other sources: avoid; DYP: caution — hepatotoxicity)"],
+ acitretin:{src:"",
+  ci_abs:["Pregnancy (Category X)","Lactation","Concurrent tetracyclines / minocycline","Concurrent methotrexate (avoid — hepatotoxicity)"],
   ci_rel:["Children (premature epiphyseal closure)","Diabetes mellitus","Liver disease","Hyperlipidaemia","Alcohol use (converts acitretin to etretinate)"],
   baseline:["Careful history and physical examination","Urine pregnancy test (± serum β-hCG)","CBC","LFT","Lipid profile"],
   monitor:["Monthly for the first 3–6 months, then every 3 months: clinical exam, CBC, LFT, lipids, urine pregnancy test","Long-term therapy: X-rays for DISH","Eye examination if visual changes","Strictly no alcohol (including cough syrups); avoid contact lenses and excess UV"],
   inter:["Tetracyclines / minocycline → photosensitivity and pseudotumour cerebri — do not combine","Alcohol → more conversion to etretinate and hepatotoxicity","Vitamin A → overdosing","Methotrexate → raised levels and hepatotoxicity","Steroids → caution (pseudotumour cerebri, hyperlipidaemia)","Antidiabetic agents → caution","Progestin mini-pills unreliable (usual combined pills not affected)","Excess UV → retinoid dermatitis"],
-  preg:"Category X — contraindicated. Contraception during therapy and for 2 years after stopping (DYP; some guidelines advise 3 years).", lact:"Contraindicated.",
+  preg:"Category X — contraindicated. Contraception during therapy and for 2 years after stopping (some guidelines advise 3 years).", lact:"Contraindicated.",
   dose:"Monotherapy 25–50 mg/day (response over 3–6 months; initial flare possible); in combination start lower, 10–25 mg/day.",
   rules:{terato:"Woman of childbearing age: pregnancy test; contraception during and for 2 years after stopping (some guidelines 3 years); no alcohol",
    ixAdd:"prednisol|dexameth|methylpred => Steroid: pseudotumour cerebri / hyperlipidaemia — caution\ninsulin|metformin|glimepir|gliclaz => Antidiabetic: glucose changes — monitor\nprogest|mini.?pill|desogest => Progestin mini-pill: unreliable contraception",
    wt:null}},
- methotrexate:{src:"DYP pp. 502–504",
-  ci_abs:["Pregnancy — men and women must be off MTX ≥ 3 months before trying to conceive","Significant anaemia, leucopenia or thrombocytopenia","Breastfeeding (other sources)"],
+ methotrexate:{src:"",
+  ci_abs:["Pregnancy — men and women must be off MTX ≥ 3 months before trying to conceive","Significant anaemia, leucopenia or thrombocytopenia","Breastfeeding"],
   ci_rel:["Renal impairment","Hepatic impairment","Chronic infections or immunocompromised state","Diabetes, obesity","Heavy alcohol consumption","Significant drug interactions","Recent vaccination"],
-  baseline:["CBC with platelets","RFT","LFT","Chest X-ray","Pregnancy test","Liver biopsy only in patients with hepatic risk factors — after a few weeks, once maintenance is planned","Test dose 2.5 mg (some recommend)","HBV, HCV, HIV and TB screen (other sources)"],
+  baseline:["CBC with platelets","RFT","LFT","Chest X-ray","Pregnancy test","Liver biopsy only in patients with hepatic risk factors — after a few weeks, once maintenance is planned","Test dose 2.5 mg (some recommend)","HBV, HCV, HIV and TB screen"],
   monitor:["CBC + platelets weekly for 2 weeks, 2-weekly for the next month, then monthly or 3-monthly","RFT including GFR every 3 months","LFT (SGOT, SGPT, ALP, albumin) every 4–8 weeks — more often with hepatic risk factors","Contraception in sexually active women of childbearing age","Serial liver biopsy when cumulative dose > 1.5 g (not needed if initial biopsy and enzymes normal or weekly dose < 15 mg); PIIINP as a fibrosis marker"],
-  inter:["Tetracyclines (doxy-, minocycline) → raise MTX levels","Penicillins, ciprofloxacin → reduce MTX clearance — raised levels and toxicity; monitor (most sources)","Dapsone, sulfonamides, trimethoprim → additive antifolate / marrow toxicity","Digoxin levels fall","NSAIDs, aspirin, PPIs → reduced clearance (other sources)","Retinoids, alcohol → hepatotoxicity"],
-  preg:"Contraindicated. Men and women should be off MTX for at least 3 months before conception.", lact:"Contraindicated (other sources).",
+  inter:["Tetracyclines (doxy-, minocycline) → raise MTX levels","Penicillins, ciprofloxacin → reduce MTX clearance — raised levels and toxicity; monitor (most sources)","Dapsone, sulfonamides, trimethoprim → additive antifolate / marrow toxicity","Digoxin levels fall","NSAIDs, aspirin, PPIs → reduced clearance","Retinoids, alcohol → hepatotoxicity"],
+  preg:"Contraindicated. Men and women should be off MTX for at least 3 months before conception.", lact:"Contraindicated.",
   dose:"Optional test dose 2.5 mg, then 7.5–25 mg ONCE WEEKLY (oral, IM, IV or SC) with folic acid.",
   rules:{comorbAdd:"lipid|triglycer|cholesterol => Hyperlipidaemia: hepatotoxicity risk factor\n!infect|immunocomp|immunodef => Chronic infection / immunocompromise: relative contraindication",
    ixAdd:"doxycyc|minocyc|tetracyc => Tetracycline: raises MTX levels\n!dapsone|sulfa => Dapsone / sulfonamide: additive antifolate toxicity\nciproflox|amoxicil|penicillin|ampicil => Penicillin / ciprofloxacin: reduce MTX clearance — toxicity risk\ndigoxin => Digoxin: levels fall\nvaccin => Recent vaccination: relative contraindication"}},
- cyclosporine:{src:"DYP pp. 496–502",
+ cyclosporine:{src:"",
   ci_abs:["Significantly decreased renal function","Uncontrolled hypertension","Serious infections","Hypersensitivity to ciclosporin or the formulation","Previous malignancy (except BCC)","Previous high cumulative PUVA"],
   ci_rel:["Age < 18 or > 64 years","Controlled hypertension","Planned live attenuated vaccine","Drugs that alter ciclosporin metabolism or add nephrotoxicity","Active infection, immunodeficiency","Concurrent phototherapy, methotrexate or other immunosuppressants","Pregnancy or lactation","Unreliable patient"],
   baseline:["Complete history and physical examination","Two BP readings at least a day apart","Two serum creatinine values at least a day apart","BUN, urinalysis with microscopy","CBC and LFT","Fasting lipids (TG, cholesterol, HDL)","Magnesium, potassium, uric acid"],
   monitor:["Review every 2 weeks for 1–2 months, then every 4–6 weeks; BP at every visit","Labs every 2 weeks for 1–2 months, then monthly: creatinine, BUN, urinalysis, CBC, LFT, lipids","Creatinine ≥ 30% above baseline → reduce by 1 mg/kg/day or 25–50% for 4 weeks and recheck; if no better reduce again; if still high stop until normal, restart cautiously; if it rises ≥ 30% again, stop permanently","BP > 140/90 → recheck after 2 weeks; if still high reduce dose 25–50% or add amlodipine / isradipine","Avoid as antihypertensives: verapamil / diltiazem (raise levels), nifedipine (gum hypertrophy), ACEi (lower GFR), thiazides, K⁺-sparing diuretics"],
-  inter:["Raise levels: grapefruit, azoles, macrolides; DYP also lists statins, oral contraceptives, diuretics, tetracyclines, ciprofloxacin, β-blockers","Lower levels: rifampicin, isoniazid, anticonvulsants, terbinafine","Add nephrotoxicity: NSAIDs, co-trimoxazole, methotrexate, aminoglycosides","K⁺-sparing diuretics → hyperkalaemia; statins → myopathy","Live vaccines"],
-  preg:"Category C. Pregnancy and lactation are relative contraindications (DYP).", lact:"Relative contraindication — avoid.",
+  inter:["Raise levels: grapefruit, azoles, macrolides; also reported: statins, oral contraceptives, diuretics, tetracyclines, ciprofloxacin, β-blockers","Lower levels: rifampicin, isoniazid, anticonvulsants, terbinafine","Add nephrotoxicity: NSAIDs, co-trimoxazole, methotrexate, aminoglycosides","K⁺-sparing diuretics → hyperkalaemia; statins → myopathy","Live vaccines"],
+  preg:"Category C. Pregnancy and lactation are relative contraindications.", lact:"Relative contraindication — avoid.",
   dose:"Psoriasis: 2.5–5 mg/kg/day for 12–16 weeks (short course); 5 mg/kg/day as rescue; < 5 mg/kg/day up to 1 year with taper; 3–4 mg/kg/day in combination / rotation. Urticaria: 3 mg/kg/day × 6 wk, 2 mg/kg × 3 wk, 1 mg/kg × 3 wk.",
-  rules:{lactAvoid:false, lactNote:true, elderly:"Age > 64: relative contraindication (DYP)", minAge:18, minAgeWarn:true, ageMsg:"Age < 18: relative contraindication (DYP)",
+  rules:{lactAvoid:false, lactNote:true, elderly:"Age > 64: relative contraindication", minAge:18, minAgeWarn:true, ageMsg:"Age < 18: relative contraindication",
    comorbAdd:"puva|phototherap => Past high cumulative PUVA: contraindication",
-   ixAdd:"isoniazid|terbinafin|valpro|levetirac => Isoniazid / terbinafine / anticonvulsant: lowers levels\nco-?trimox|septran|aminoglyc|gentamic|amikac => Co-trimoxazole / aminoglycoside: nephrotoxicity\ndoxycyc|minocyc|ciproflox|contracep|\\bocp\\b => DYP: may raise ciclosporin levels\nnifedip => Nifedipine: worsens gum hypertrophy — prefer amlodipine"}},
- azathioprine:{src:"DYP pp. 494–496",
+   ixAdd:"isoniazid|terbinafin|valpro|levetirac => Isoniazid / terbinafine / anticonvulsant: lowers levels\nco-?trimox|septran|aminoglyc|gentamic|amikac => Co-trimoxazole / aminoglycoside: nephrotoxicity\ndoxycyc|minocyc|ciproflox|contracep|\\bocp\\b => May raise ciclosporin levels\nnifedip => Nifedipine: worsens gum hypertrophy — prefer amlodipine"}},
+ azathioprine:{src:"",
   ci_abs:["Pregnancy (Category D)","Hypersensitivity","Active infections","TPMT activity < 5 U — do not use"],
   ci_rel:["Allopurinol use","Prior alkylating agents (e.g. cyclophosphamide)","Lactation (not advised)","Children — only if other therapies fail; ≤ 6 months at a time"],
   baseline:["TPMT assay","Pregnancy test","CBC","Serum chemistry profile (LFT, RFT)","Urinalysis","Tuberculin skin test"],
@@ -1828,16 +1828,16 @@ const DS_DYP = {
    comorbAdd:"cyclophosph|chlorambuc|alkylat => Prior alkylating agent: relative contraindication",
    ixAdd:"sulfasalaz => Sulfasalazine: haematological toxicity",
    wt:{lo:1, hi:3, unit:"mg/day (by TPMT: 1 intermediate · 2.5 normal · 3 high)"}}},
- mycophenolate:{src:"DYP pp. 504–506",
+ mycophenolate:{src:"",
   ci_abs:["Pregnancy (Category D, teratogenic)","Drug allergy"],
   ci_rel:["Lactation","Peptic ulcer disease","Hepatic or renal disease","Concurrent azathioprine (marrow suppression)","Drugs that interrupt enterohepatic circulation (cholestyramine)"],
   baseline:["CBC with differential and platelets","Serum chemistry incl. creatinine","LFT","Hepatitis B and C panel","Tuberculin (PPD)","Serum or urine β-hCG"],
   monitor:["CBC with differential and platelets, chemistry incl. creatinine, LFT every 2–4 weeks after each dose rise","Then every 2–3 months once the dose is stable","Watch GI (diarrhoea, cramps), GU (urgency, dysuria, sterile pyuria), infections, cytopenias"],
-  inter:["Azathioprine → marrow suppression — avoid","Cholestyramine (enterohepatic circulation) → lower levels","Antacids, PPIs → lower absorption (other sources)","Aciclovir / valaciclovir → levels rise (other sources)","Hormonal contraceptive efficacy may fall (other sources)"],
+  inter:["Azathioprine → marrow suppression — avoid","Cholestyramine (enterohepatic circulation) → lower levels","Antacids, PPIs → lower absorption","Aciclovir / valaciclovir → levels rise","Hormonal contraceptive efficacy may fall"],
   preg:"Category D — contraindicated (first-trimester loss, ear / facial, limb, heart, oesophageal, kidney anomalies).", lact:"Relative contraindication — avoid.",
   dose:"2–3 g/day in two divided doses (250 mg capsules, 500 mg tablets, 100 mg/mL solution).",
   rules:{lactAvoid:false, lactNote:true}},
- dapsone:{src:"DYP pp. 452–455",
+ dapsone:{src:"",
   ci_abs:["Prior dapsone hypersensitivity (agranulocytosis, hypersensitivity syndrome)"],
   ci_rel:["G6PD deficiency","Allergy to sulphonamides","Significant liver or renal impairment","Significant cardiopulmonary disease","Severe anaemia","Acute porphyria","Pre-existing peripheral neuropathy"],
   baseline:["CBC with differential WBC count","LFT","RFT","G6PD level","Urinalysis"],
@@ -1847,122 +1847,122 @@ const DS_DYP = {
   dose:"1–2 mg/kg/day; leprosy 100 mg/day (25 mg < 6 yrs, 50 mg 6–14 yrs). Take at night (woolly headache).",
   rules:{comorbAdd:"!neuropath => Peripheral neuropathy: relative contraindication\n!sulpha|sulfa allerg|sulphonamide => Sulphonamide allergy: relative contraindication",
    ixAdd:"antacid|ranitid|famotid|cimetid => Antacid / H2 blocker: reduced absorption\nphenytoin|carbamaz|valpro|phenobarb => Antiepileptic: lowers dapsone levels\nprobenecid => Probenecid: more toxicity\npyrimethamin => Pyrimethamine: more haematological toxicity"}},
- hcq:{src:"DYP pp. 554–556 (antimalarials)",
-  ci_abs:["Pre-existing retinopathy / maculopathy (other sources)","Hypersensitivity (other sources)"],
-  ci_rel:["Psoriasis (may flare)","Renal or hepatic impairment","G6PD deficiency, porphyria, epilepsy (other sources)","Do not combine chloroquine with HCQ (additive toxicity)"],
-  baseline:["Baseline eye exam (fundus; SD-OCT and visual fields) within the first year","Serum transaminases","CBC (other sources)"],
-  monitor:["Eye screening (SD-OCT + automated visual fields): baseline within the first year, then yearly after 5 years of use; yearly from the start if high risk (dose > 5 mg/kg, renal disease, tamoxifen, pre-existing macular disease)","Serum transaminases periodically (DYP: at 1, 5 and 6 months)","Watch for pigmentation, bleaching of hair, psoriasis flare, neuropsychiatric effects"],
-  inter:["Raises digoxin and D-penicillamine levels","Reduces ampicillin bioavailability","Kaolin and magnesium trisilicate → reduced absorption","Never give chloroquine and HCQ together","QT-prolonging drugs, tamoxifen (other sources)"],
-  preg:"Considered compatible (continue in lupus) — other sources; not covered in DYP.", lact:"Compatible — other sources.",
-  dose:"HCQ ≤ 5 mg/kg actual body weight per day (usually 200–400 mg/day); chloroquine ≤ 2.3 mg/kg/day. Onset 2–8 weeks. (Older texts, incl. DYP, quoted 6.5 mg/kg ideal weight — now superseded.)",
+ hcq:{src:"",
+  ci_abs:["Pre-existing retinopathy / maculopathy","Hypersensitivity"],
+  ci_rel:["Psoriasis (may flare)","Renal or hepatic impairment","G6PD deficiency, porphyria, epilepsy","Do not combine chloroquine with HCQ (additive toxicity)"],
+  baseline:["Baseline eye exam (fundus; SD-OCT and visual fields) within the first year","Serum transaminases","CBC"],
+  monitor:["Eye screening (SD-OCT + automated visual fields): baseline within the first year, then yearly after 5 years of use; yearly from the start if high risk (dose > 5 mg/kg, renal disease, tamoxifen, pre-existing macular disease)","Serum transaminases periodically (e.g. at 1, 5 and 6 months)","Watch for pigmentation, bleaching of hair, psoriasis flare, neuropsychiatric effects"],
+  inter:["Raises digoxin and D-penicillamine levels","Reduces ampicillin bioavailability","Kaolin and magnesium trisilicate → reduced absorption","Never give chloroquine and HCQ together","QT-prolonging drugs, tamoxifen"],
+  preg:"Considered compatible (continue in lupus).", lact:"Compatible .",
+  dose:"HCQ ≤ 5 mg/kg actual body weight per day (usually 200–400 mg/day); chloroquine ≤ 2.3 mg/kg/day. Onset 2–8 weeks. (Older texts quoted 6.5 mg/kg ideal weight — now superseded.)",
   rules:{ixAdd:"chloroquin => Chloroquine: never combine with HCQ\npenicillamin => D-penicillamine: levels rise\nampicil => Ampicillin: lower bioavailability\nkaolin|trisilicate => Kaolin / Mg trisilicate: lower absorption", wt:{lo:0, hi:5, unit:"mg/day maximum (actual body weight)"}}},
- steroids:{src:"DYP pp. 464–473",
+ steroids:{src:"",
   ci_abs:["Systemic fungal infections","Herpes simplex keratitis","Hypersensitivity"],
   ci_rel:["Hypertension, congestive heart failure","Prior psychosis, severe depression","Active peptic ulcer, recent bowel anastomosis","Active TB (may give with ATT), positive tuberculin test","Diabetes mellitus","Osteoporosis","Cataract, glaucoma","Pregnancy","(Advanced HIV is not a contraindication to short courses)"],
   baseline:["BP, weight; height and weight on a growth chart in children","Ophthalmoscopy for cataract","TB screen: tuberculin test and chest X-ray","Fasting glucose, triglycerides, potassium","DEXA scan in predisposed patients","Before pulse therapy: CBC, ESR, electrolytes, ECG, 2D echo, sugars, CXR, HIV, HBsAg, BUN"],
   monitor:["At 1 month, then every 3 months: BP, weight, growth in children, history for adverse effects","Fasting glucose, triglycerides, potassium every 3 months","Eye exam for cataract and glaucoma every 6 months","DEXA yearly; calcium 1.5 g + vitamin D 800 IU; bisphosphonate if high risk or T-score −1 to −3","Morning cortisol near the end of long-term therapy","Taper: −20 mg steps > 60 mg/day, −10 mg at 30–60 mg, −5 mg below 30 mg, −1 mg below ~5 mg; consider alternate-day dosing at 20–30 mg","Pulse therapy: pulse and BP every 15 min for the 1st hour, then every 30 min"],
   inter:["Raise steroid levels: azole antifungals, macrolides, sex steroids","Lower steroid levels: phenytoin, phenobarbital, rifampicin, aminoglutethimide, cholestyramine, ephedrine","Steroids raise toxicity of K⁺-depleting diuretics, immunosuppressants, digitalis","Steroids lower effect of isoniazid, insulin, salicylates","Warfarin activity may rise or fall; theophylline interactions"],
-  preg:"Category C; relative contraindication. Prednisolone preferred (fetal growth retardation more with dexamethasone).", lact:"Compatible with prednisolone (other sources).",
+  preg:"Category C; relative contraindication. Prednisolone preferred (fetal growth retardation more with dexamethasone).", lact:"Compatible with prednisolone.",
   dose:"Short course (≤ 3 weeks): prednisolone 40–60 mg/day as a single morning dose. Equivalents: prednisolone 5 mg = methylprednisolone 4 mg = deflazacort 6 mg = dexamethasone / betamethasone 0.75 mg = hydrocortisone 20 mg.",
   rules:{comorbAdd:"herpes keratit|hsv keratit => Herpes simplex keratitis: contraindicated\npsychos|schizo => Prior psychosis: relative contraindication\nanastomos => Recent anastomosis: relative contraindication",
    ixAdd:"contracep|\\bocp\\b|estrogen|oestrogen|progest => Sex steroid: raises steroid levels\ndigoxin|digitalis => Digoxin: toxicity (hypokalaemia)\nisoniazid => Isoniazid: effect reduced\ntheophyl => Theophylline: altered levels"}},
- terbinafine:{src:"DYP pp. 483–484, 492",
+ terbinafine:{src:"",
   ci_abs:["Hypersensitivity","Active or chronic liver disease","Lactation"],
-  ci_rel:["Renal impairment (other sources)","SLE / psoriasis — may trigger or flare (other sources)"],
-  baseline:["LFT (other sources — DYP gives no formal schedule)","CBC for long courses (neutropenia reported)"],
-  monitor:["Potentially fatal: liver failure, Stevens–Johnson syndrome, neutropenia — stop and report jaundice, dark urine, fever, rash","LFT at 4–6 weeks if the course is longer than 6 weeks (other sources)","Taste disturbance, GI upset"],
-  inter:["Lowers ciclosporin levels","CYP2D6 substrates rise: TCAs, SSRIs, metoprolol (other sources)","Rifampicin lowers, cimetidine raises terbinafine (other sources)"],
-  preg:"Category B (DYP); elective treatment is usually deferred in pregnancy.", lact:"Contraindicated.",
+  ci_rel:["Renal impairment","SLE / psoriasis — may trigger or flare"],
+  baseline:["LFT","CBC for long courses (neutropenia reported)"],
+  monitor:["Potentially fatal: liver failure, Stevens–Johnson syndrome, neutropenia — stop and report jaundice, dark urine, fever, rash","LFT at 4–6 weeks if the course is longer than 6 weeks","Taste disturbance, GI upset"],
+  inter:["Lowers ciclosporin levels","CYP2D6 substrates rise: TCAs, SSRIs, metoprolol","Rifampicin lowers, cimetidine raises terbinafine"],
+  preg:"Category B; elective treatment is usually deferred in pregnancy.", lact:"Contraindicated.",
   dose:"Adults 250 mg once daily: tinea cruris 2–4 wk, corporis 4 wk, pedis 6 wk, nails 6–12 wk; pulse 250 mg BD 1 wk/month × 3 for nails (off-label). Children: 10–20 kg 62.5 mg, 20–40 kg 125 mg, > 40 kg 250 mg.",
   rules:{pregAvoid:false, pregNote:true, lactAvoid:true}},
- itraconazole:{src:"DYP pp. 484–486, 493",
+ itraconazole:{src:"",
   ci_abs:["Hypersensitivity to azoles","Pregnancy and lactation","Hepatic disease","IV form if creatinine clearance < 30 mL/min","With lovastatin, simvastatin, triazolam, midazolam, ergot alkaloids; quinidine, dofetilide, cisapride, pimozide (arrhythmias)"],
   ci_rel:["Heart failure — potentially fatal heart failure / pulmonary oedema reported","Renal impairment","QT prolongation","Absorption needs acidic pH — PPIs / antacids reduce it"],
-  baseline:["LFT","ECG if cardiac risk (other sources)","Pregnancy test if indicated"],
-  monitor:["LFT monthly if the course is longer than 1 month (other sources)","Watch for oedema / breathlessness, jaundice, rash","Take capsules with a full meal"],
-  inter:["Life-threatening: lovastatin, simvastatin, triazolam, midazolam, ergot alkaloids","Arrhythmias: quinidine, dofetilide, cisapride, pimozide","Raises ciclosporin, tacrolimus, steroids, warfarin, digoxin, calcium-channel blockers (other sources)","Acid suppressants reduce absorption"],
-  preg:"Category C — contraindicated in pregnancy (DYP).", lact:"Contraindicated.",
+  baseline:["LFT","ECG if cardiac risk","Pregnancy test if indicated"],
+  monitor:["LFT monthly if the course is longer than 1 month","Watch for oedema / breathlessness, jaundice, rash","Take capsules with a full meal"],
+  inter:["Life-threatening: lovastatin, simvastatin, triazolam, midazolam, ergot alkaloids","Arrhythmias: quinidine, dofetilide, cisapride, pimozide","Raises ciclosporin, tacrolimus, steroids, warfarin, digoxin, calcium-channel blockers","Acid suppressants reduce absorption"],
+  preg:"Category C — contraindicated in pregnancy.", lact:"Contraindicated.",
   dose:"Tinea corporis / cruris 100 mg/day × 15 days or 200 mg/day × 7 days; pedis / manuum 100 mg × 30 days or 200 mg BD × 7 days; pityriasis versicolor 200 mg × 7 days; nails 200 mg/day × 3 months or pulse 200 mg BD × 7 days monthly (2 pulses fingers, 3 toes); children 5 mg/kg/day.",
   rules:{terato:"Woman of childbearing age: contraindicated in pregnancy — exclude pregnancy, contraception until the next period after stopping",
    ixAdd:"!triazol|quinidin|dofetil|cisaprid|pimozid|ergot => Contraindicated combination (arrhythmia / toxicity)"}},
- fluconazole:{src:"DYP pp. 486–488",
+ fluconazole:{src:"",
   ci_abs:["Hypersensitivity"],
-  ci_rel:["Renal impairment — half dose if CrCl < 50 mL/min (not on dialysis)","Liver impairment (hepatotoxicity reported)","QT prolongation (other sources)","Pregnancy (Category D)"],
-  baseline:["LFT and RFT for long courses (other sources)"],
+  ci_rel:["Renal impairment — half dose if CrCl < 50 mL/min (not on dialysis)","Liver impairment (hepatotoxicity reported)","QT prolongation","Pregnancy (Category D)"],
+  baseline:["LFT and RFT for long courses"],
   monitor:["LFT in prolonged therapy","Rash, exfoliative dermatitis; rare thrombocytopenia, anaphylaxis, SJS"],
-  inter:["Raises warfarin, phenytoin, sulfonylureas, ciclosporin, statins (other sources)","QT-prolonging drugs (other sources)"],
-  preg:"Category D — avoid.", lact:"Compatible at usual single doses (other sources).",
+  inter:["Raises warfarin, phenytoin, sulfonylureas, ciclosporin, statins","QT-prolonging drugs"],
+  preg:"Category D — avoid.", lact:"Compatible at usual single doses.",
   dose:"Dermatophytosis / PV / cutaneous candidiasis: 50 mg/day up to 6 wk or 150 mg/week up to 6 wk; PV 400 mg stat; vaginal candidiasis / candidal balanitis 150 mg single dose. Children > 4 wk: 6 mg/kg loading, then 3 mg/kg/day.",
   rules:{pregAvoid:true}},
- griseofulvin:{src:"DYP pp. 491–492",
+ griseofulvin:{src:"",
   ci_abs:["Severe liver disease","Porphyria","SLE","Pregnancy","Monilial (candida) infection"],
-  ci_rel:["Hepatic impairment","Photosensitive disorders","Penicillin allergy (other sources)"],
-  baseline:["Pregnancy test in women of childbearing age","CBC and LFT for prolonged courses (other sources)"],
+  ci_rel:["Hepatic impairment","Photosensitive disorders","Penicillin allergy"],
+  baseline:["Pregnancy test in women of childbearing age","CBC and LFT for prolonged courses"],
   monitor:["CBC (leucopenia), urine (proteinuria), LFT in long courses","Headache (very common), dizziness, photosensitivity, peripheral neuritis","Potentially fatal: hepatotoxicity, angioedema; may precipitate acute intermittent porphyria"],
-  inter:["Oral contraceptives less effective — add barrier (other sources)","Warfarin effect reduced; alcohol → flushing (other sources)","Phenobarbital lowers absorption (other sources)"],
-  preg:"Category C; contraindicated in pregnancy (DYP). Men: avoid fathering a child for 6 months after (other sources).", lact:"Avoid (other sources).",
-  dose:"Adults 0.5–1 g/day for 2–8 weeks (skin, hair); fingernails 6 months, toenails ≥ 12 months. Children 10 mg/kg/day (DYP); 20–25 mg/kg/day microsize is used for tinea capitis (other sources). Take with a fatty meal.",
-  rules:{comorbAdd:"candid|monilia|thrush => Candida infection: contraindicated (DYP)", wt:{lo:10, hi:20, unit:"mg/day"}}},
- ivermectin:{src:"DYP pp. 520, 568–569",
-  ci_abs:["Hypersensitivity","Children < 15 kg / pregnancy — safety not established (other sources)"],
-  ci_rel:["Loa loa co-infection (other sources)","Breastfeeding (other sources)"],
+  inter:["Oral contraceptives less effective — add barrier","Warfarin effect reduced; alcohol → flushing","Phenobarbital lowers absorption"],
+  preg:"Category C; contraindicated in pregnancy. Men: avoid fathering a child for 6 months after.", lact:"Avoid.",
+  dose:"Adults 0.5–1 g/day for 2–8 weeks (skin, hair); fingernails 6 months, toenails ≥ 12 months. Children 10 mg/kg/day; 20–25 mg/kg/day microsize is used for tinea capitis. Take with a fatty meal.",
+  rules:{comorbAdd:"candid|monilia|thrush => Candida infection: contraindicated", wt:{lo:10, hi:20, unit:"mg/day"}}},
+ ivermectin:{src:"",
+  ci_abs:["Hypersensitivity","Children < 15 kg / pregnancy — safety not established"],
+  ci_rel:["Loa loa co-infection","Breastfeeding"],
   baseline:["Weigh the patient"],
   monitor:["Scabies: single dose cures 60–70%; a second dose after 2 weeks improves cure","Transient worsening of itch at the start","Headache, giddiness; very rarely SJS / TEN"],
-  inter:["Warfarin → INR rises; CNS depressants potentiated (other sources)"],
-  preg:"Category C — avoid; use permethrin (DYP category; avoidance per other sources).", lact:"Avoid — use permethrin (other sources).",
+  inter:["Warfarin → INR rises; CNS depressants potentiated"],
+  preg:"Category C — avoid; use permethrin.", lact:"Avoid — use permethrin.",
   dose:"Adults 12 mg single dose, repeated after 2 weeks; children 200 µg/kg single dose.",
   rules:{}},
- tetracyclines:{src:"DYP pp. 448–449",
-  ci_abs:["Children < 9 years (tooth discolouration, depressed bone growth)","Pregnancy (other sources)","Concurrent oral retinoids"],
+ tetracyclines:{src:"",
+  ci_abs:["Children < 9 years (tooth discolouration, depressed bone growth)","Pregnancy","Concurrent oral retinoids"],
   ci_rel:["Renal disease (may aggravate; doxycycline is safe in renal failure)","Liver disease","SLE (minocycline-induced lupus)","Photosensitive disorders"],
-  baseline:["None routinely; minocycline long-term: LFT ± ANA if symptoms (other sources)"],
+  baseline:["None routinely; minocycline long-term: LFT ± ANA if symptoms"],
   monitor:["Severe phototoxic reactions (doxycycline, demeclocycline)","Oesophagitis — swallow upright with water","Minocycline: blue-black pigmentation, lupus and hepatitis (fairly common), pneumonitis","Pancreatitis, hepatotoxicity, candidal vaginitis"],
   inter:["Oral retinoids → benign intracranial hypertension — do not combine","Reduce effectiveness of oral contraceptive pills","Increase effect of oral anticoagulants","Raise methotrexate levels","Antacids, calcium, iron, milk reduce absorption of tetracycline (doxycycline can be taken with food)"],
-  preg:"Avoid (other sources).", lact:"Short courses acceptable; avoid prolonged use (other sources).",
+  preg:"Avoid.", lact:"Short courses acceptable; avoid prolonged use.",
   dose:"Doxycycline 100 mg 12-hourly; minocycline 200 mg stat then 100 mg 12-hourly; tetracycline 250–500 mg 6-hourly on an empty stomach; rosacea: doxycycline 40 mg OD.",
-  rules:{minAge:9, ageMsg:"Under 9 years: contraindicated (DYP — teeth and bone)",
-   ixAdd:"contracep|\\bocp\\b|levonorg|ethinyl|ovral => Oral contraceptive: effectiveness reduced (DYP)\nmethotrexat => Methotrexate: levels rise"}},
- thalidomide:{src:"DYP pp. 461–463",
-  ci_abs:["Pregnancy (embryopathy if taken 20–40 days of gestation)","Women of childbearing potential without 2 contraceptive methods","Breastfeeding (other sources)"],
-  ci_rel:["Peripheral neuropathy","History of thromboembolism","Bradycardia, hypotension","Seizures (other sources)"],
-  baseline:["Two pregnancy tests (different methods) before starting","Counselling","Baseline neurological exam / nerve conduction (other sources)","CBC"],
+  rules:{minAge:9, ageMsg:"Under 9 years: contraindicated (teeth and bone)",
+   ixAdd:"contracep|\\bocp\\b|levonorg|ethinyl|ovral => Oral contraceptive: effectiveness reduced\nmethotrexat => Methotrexate: levels rise"}},
+ thalidomide:{src:"",
+  ci_abs:["Pregnancy (embryopathy if taken 20–40 days of gestation)","Women of childbearing potential without 2 contraceptive methods","Breastfeeding"],
+  ci_rel:["Peripheral neuropathy","History of thromboembolism","Bradycardia, hypotension","Seizures"],
+  baseline:["Two pregnancy tests (different methods) before starting","Counselling","Baseline neurological exam / nerve conduction","CBC"],
   monitor:["Monthly pregnancy tests, the last 4 weeks after stopping","Neuropathy (sensory glove-and-stocking) — not dose related","Somnolence (give at bedtime), constipation, oedema, thromboembolism, leucopenia, bradycardia","Rash, brittle nails; stop for TEN / erythroderma"],
-  inter:["Not metabolised by CYP450 — few metabolic interactions","CNS depressants add to sedation; thrombogenic drugs add VTE risk (other sources)"],
-  preg:"Contraindicated. Two contraceptive methods during therapy and for 1 month after stopping.", lact:"Contraindicated (other sources).",
+  inter:["Not metabolised by CYP450 — few metabolic interactions","CNS depressants add to sedation; thrombogenic drugs add VTE risk"],
+  preg:"Contraindicated. Two contraceptive methods during therapy and for 1 month after stopping.", lact:"Contraindicated.",
   dose:"Dermatology: start 200 mg at night, taper to 50–100 mg/day. ENL: 100 mg 3–4 times daily for 2 weeks, then reduce by 100 mg each month to 50–100 mg/day; try stopping every 6 months. Aphthae 100 mg/day for 5–28 days.",
   rules:{terato:"Woman of childbearing age: 2 pregnancy tests, 2 contraceptive methods during and 1 month after stopping, monthly pregnancy tests", male:"Men: condoms during therapy and for 1 month after stopping"}},
- "5ari":{src:"DYP pp. 531–533",
+ "5ari":{src:"",
   ci_abs:["Women of childbearing age / pregnancy (Category X — feminisation of male fetus)","Children","Hypersensitivity"],
-  ci_rel:["Depression, sexual dysfunction","Liver disease (other sources)"],
+  ci_rel:["Depression, sexual dysfunction","Liver disease"],
   baseline:["Men > 45–50: PSA (finasteride lowers PSA — adjust interpretation)","Counsel about sexual side effects and mood"],
   monitor:["Loss of libido, erectile / ejaculatory dysfunction, gynaecomastia, depression, myopathy","No blood donation for 6 months after the last dose (finasteride and dutasteride)"],
   inter:["Nevirapine reduces finasteride levels","Dutasteride raised by CYP3A4 inhibitors: azoles, macrolides, calcium-channel blockers, anti-HIV drugs"],
   preg:"Category X — contraindicated; pregnant women must not handle crushed tablets.", lact:"Contraindicated.",
   dose:"Finasteride 1 mg OD (AGA; 5 mg for BPH); dutasteride 0.5 mg capsule.",
-  rules:{terato:"Woman of childbearing age: contraindicated (DYP) — feminisation of a male fetus", ixAdd:"nevirapin => Nevirapine: lowers finasteride\nclarithro|erythromyc|amlodip|diltiaz|verapam|ritonav => CYP3A4 inhibitor: raises dutasteride"}},
- spironolactone:{src:"DYP pp. 530–531",
+  rules:{terato:"Woman of childbearing age: contraindicated — feminisation of a male fetus", ixAdd:"nevirapin => Nevirapine: lowers finasteride\nclarithro|erythromyc|amlodip|diltiaz|verapam|ritonav => CYP3A4 inhibitor: raises dutasteride"}},
+ spironolactone:{src:"",
   ci_abs:["Renal insufficiency, anuria","Hyperkalaemia","Pregnancy (Category D)","Abnormal uterine bleeding","Personal or family history of oestrogen-dependent malignancy"],
-  ci_rel:["Addison's disease, ACEi / ARB use, elderly (other sources)"],
-  baseline:["Serum potassium and creatinine","Pregnancy test","BP (other sources)"],
-  monitor:["Potassium if risk factors","DHEAS every 3–4 months (DYP) for androgen suppression","Menstrual abnormalities, breast tenderness; rare agranulocytosis"],
-  inter:["Hyperkalaemia with ACE inhibitors, aliskiren, ARBs, aldosterone inhibitors","Digoxin, lithium levels rise (other sources)"],
-  preg:"Category D — contraindicated (feminisation of male fetus); contraception needed.", lact:"Generally compatible (other sources).",
+  ci_rel:["Addison's disease, ACEi / ARB use, elderly"],
+  baseline:["Serum potassium and creatinine","Pregnancy test","BP"],
+  monitor:["Potassium if risk factors","DHEAS every 3–4 months for androgen suppression","Menstrual abnormalities, breast tenderness; rare agranulocytosis"],
+  inter:["Hyperkalaemia with ACE inhibitors, aliskiren, ARBs, aldosterone inhibitors","Digoxin, lithium levels rise"],
+  preg:"Category D — contraindicated (feminisation of male fetus); contraception needed.", lact:"Generally compatible.",
   dose:"50–200 mg/day for 2–3 months (acne, hirsutism, AGA, HS).",
-  rules:{comorbAdd:"!uterine bleed|menorrhag|metrorrhag => Abnormal uterine bleeding: contraindicated (DYP)\n!breast cancer|endometrial|ovarian cancer|oestrogen-dependent|estrogen-dependent => Oestrogen-dependent malignancy: contraindicated (DYP)", ixAdd:"aliskiren => Aliskiren: hyperkalaemia"}},
- jak:{src:"Not covered in DYP — other sources"}, apremilast:{src:"Not covered in DYP — other sources"}, colchicine:{src:"Not covered in DYP — other sources"},
- minoxidil:{src:"DYP covers topical minoxidil only (pp. 569–570) — oral data from other sources"},
+  rules:{comorbAdd:"!uterine bleed|menorrhag|metrorrhag => Abnormal uterine bleeding: contraindicated\n!breast cancer|endometrial|ovarian cancer|oestrogen-dependent|estrogen-dependent => Oestrogen-dependent malignancy: contraindicated", ixAdd:"aliskiren => Aliskiren: hyperkalaemia"}},
+ jak:{src:""}, apremilast:{src:""}, colchicine:{src:""},
+ minoxidil:{src:""},
 };
-const DS_KETO = {k:"ketoconazole", name:"Ketoconazole (oral)", cls:"Imidazole antifungal", match:"ketoconaz|nizral", src:"DYP pp. 488–489",
+const DS_KETO = {k:"ketoconazole", name:"Ketoconazole (oral)", cls:"Imidazole antifungal", match:"ketoconaz|nizral", src:"",
   ci_abs:["Hypersensitivity","Pre-existing liver disease","Porphyria","With cisapride, terfenadine or astemizole"],
   ci_rel:["Prolonged use — silent hepatotoxicity","Gynaecomastia, impotence concerns"],
   baseline:["LFT"],
   monitor:["LFT regularly — hepatotoxicity may be silent / anicteric (mortality ≈ 1 in 10,000)","Gynaecomastia, impotence, raised intracranial pressure, thrombocytopenia"],
-  inter:["Strong CYP3A4 inhibitor: raises ciclosporin, steroids, statins, warfarin (other sources)","Contraindicated with cisapride, terfenadine, astemizole","Acid suppressants reduce absorption (other sources)"],
-  preg:"Category C — avoid (other sources).", lact:"Avoid (other sources).",
+  inter:["Strong CYP3A4 inhibitor: raises ciclosporin, steroids, statins, warfarin","Contraindicated with cisapride, terfenadine, astemizole","Acid suppressants reduce absorption"],
+  preg:"Category C — avoid.", lact:"Avoid.",
   dose:"200 mg once daily, up to 400 mg; usually 14 days and ≥ 1 week after clinical / mycological cure; chronic vaginal candidiasis 400 mg × 5 days.",
   rules:{pregAvoid:true, lactAvoid:true, comorb:"!liver|hepat|cirrhos|alcohol => Liver disease: contraindicated\n!porphyr => Porphyria: contraindicated", ix:"!cisaprid|terfenad|astemiz => Contraindicated combination\nciclospor|cyclospor|tacrolim => Ciclosporin / tacrolimus: levels rise\nsimvast|lovast|atorvast => Statin: myopathy\nwarfarin => Warfarin: INR rises\nomeprazol|pantopraz|esomepraz|rabepraz|ranitid|famotid|antacid => Acid suppressant: lower absorption"}};
 DS_DEFAULTS.push(DS_KETO);
-DS_DEFAULTS.forEach(d=>{ const p=DS_DYP[d.k]; if(!p) return; const {rules:pr, ...rest}=p; Object.assign(d, rest);
+DS_DEFAULTS.forEach(d=>{ const p=DS_REF[d.k]; if(!p) return; const {rules:pr, ...rest}=p; Object.assign(d, rest);
   if(pr){ const r={...(d.rules||{})}; const {comorbAdd, ixAdd, ...prr}=pr; Object.assign(r, prr); if(prr.wt===null) delete r.wt; if(comorbAdd) r.comorb=[r.comorb, comorbAdd].filter(Boolean).join("\n"); if(ixAdd) r.ix=[r.ix, ixAdd].filter(Boolean).join("\n"); d.rules=r; } });
 
 const DS_TOPICAL = /\b(cream|gel|oint(ment)?|lotion|solution|shampoo|soap|wash|serum|spray|powder|foam|topical|paint|lacquer|scalp|drops?)\b/i;
@@ -1993,7 +1993,6 @@ function dsDetailHTML(d){
   return `${DS_SECS.map(([k,l])=>(d[k]||[]).length?`<div class="dsx dsx-${k}"><h4>${l}</h4><ul>${d[k].map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`:"").join("")}
     <div class="dsx dsx-pl"><h4>Pregnancy &amp; lactation</h4><ul><li><b>Pregnancy:</b> ${esc(d.preg||"—")}</li><li><b>Lactation:</b> ${esc(d.lact||"—")}</li></ul></div>
     ${d.dose?`<div class="dsx dsx-dose"><h4>Usual dose</h4><p>${esc(d.dose)}</p></div>`:""}
-    <div class="dssrc ${/^DYP/.test(d.src||"")?"ok":""}">${/^DYP/.test(d.src||"")?"✓ Checked against ":"ⓘ "}${esc(d.src||"Source not recorded")}${/^DYP/.test(d.src||"")?" · items marked “other sources” are not in the book":""}</div>
     <div class="dsverify">⚠ Verify against current guidelines before use.${d.edited?` <span class="pill rose">Edited by you</span>`:""} <button type="button" class="btn sm" data-dsedit="${esc(d.k)}">Edit</button></div>`;
 }
 function dsCardHTML(d, alerts, sub){
@@ -2008,7 +2007,7 @@ function safetyForRx(rx, ctx){
 }
 /* reference panel (Cases page) and editor */
 function openDrugSafety(q=""){
-  const body=panelOpen("Drug safety", `<div class="dsbanner">Reference for systemic drugs, cross-checked with the DYP survival guide drug chapter. Opens automatically for each patient’s prescription. <b>Verify against current guidelines.</b> Tap Edit on any drug to change it — your edits are saved.</div>
+  const body=panelOpen("Drug safety", `<div class="dsbanner">Reference for systemic drugs, based on standard texts and current guidelines. Opens automatically for each patient’s prescription. <b>Verify against current guidelines.</b> Tap Edit on any drug to change it — your edits are saved.</div>
     <label class="search" style="margin-top:10px">${ICON.search}<input id="dsQ" type="search" placeholder="Search drug, test or interaction" autocomplete="off" aria-label="Search drugs" value="${esc(q)}"></label>
     <div id="dsList" style="margin-top:10px"></div><div style="margin-top:12px"><button class="btn sm" type="button" id="dsAdd">${ICON.plus} Add a drug</button></div>`);
   const draw=()=>{ const w=$("#dsQ").value.toLowerCase().split(/\s+/).filter(Boolean); const arr=dsList().filter(d=>!w.length||w.every(x=>JSON.stringify(d).toLowerCase().includes(x)));
