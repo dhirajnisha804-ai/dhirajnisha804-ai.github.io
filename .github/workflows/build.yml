@@ -44,11 +44,20 @@ jobs:
           openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in ../keys/dermrx.jks.enc -out $RUNNER_TEMP/dermrx.jks -pass env:DRX_KEYPASS
           export DRX_KEYSTORE=$RUNNER_TEMP/dermrx.jks
           export DRX_HOST=$(echo "${{ github.repository_owner }}.github.io" | tr 'A-Z' 'a-z')
-          gradle --no-daemon assembleRelease
-          cp app/build/outputs/apk/release/app-release.apk $RUNNER_TEMP/DermRx-Desk.apk
+          set -o pipefail
+          gradle --no-daemon --console=plain assembleRelease 2>&1 | tee $RUNNER_TEMP/gradle.log
+          cp app/build/outputs/apk/release/app-release.apk $RUNNER_TEMP/DermaDesk.apk
+      - if: failure()
+        name: Publish build log (for troubleshooting)
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          tail -n 300 $RUNNER_TEMP/gradle.log > $RUNNER_TEMP/build-log.txt || echo "no log" > $RUNNER_TEMP/build-log.txt
+          gh release delete build-log -y --cleanup-tag >/dev/null 2>&1 || true
+          gh release create build-log $RUNNER_TEMP/build-log.txt --title "Last failed build log" --notes "Automatic log of the last failed APK build." --prerelease
       - if: steps.changed.outputs.build == '1'
         name: Publish APK download
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
           gh release delete apk-latest -y --cleanup-tag >/dev/null 2>&1 || true
-          gh release create apk-latest "$RUNNER_TEMP/DermRx-Desk.apk" --title "DermRx Desk (Android)" --notes "Install on Android: download DermRx-Desk.apk, open it, allow 'Install unknown apps' if asked. The app updates itself from the website — no need to reinstall for new features or medicines." --latest
+          cp "$RUNNER_TEMP/DermaDesk.apk" "$RUNNER_TEMP/DermRx-Desk.apk"
+          gh release create apk-latest "$RUNNER_TEMP/DermaDesk.apk" "$RUNNER_TEMP/DermRx-Desk.apk" --title "Derma Desk (Android)" --notes "Install on Android: download DermaDesk.apk, open it, allow 'Install unknown apps' if asked. The app updates itself from the website — no need to reinstall for new features or medicines." --latest

@@ -1,6 +1,6 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#14324d">
 <link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<meta name="drx-build" content="202610031539">
+<meta name="drx-build" content="202610032019">
 <script src="config.js"></script>
 <script src="vendor/firebase-app-compat.js"></script><script src="vendor/firebase-auth-compat.js"></script><script src="vendor/firebase-firestore-compat.js"></script>
 <script src="drx-shim.js"></script>
@@ -96,6 +96,7 @@ nav.tabs button[aria-selected="true"]{color:var(--accent)}
 .comp{font-size:12.5px;color:var(--muted);line-height:1.35}
 .price{font-family:var(--f-mono);font-size:15px;font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
 .price small{font-family:var(--f-body);color:var(--muted);font-size:11.5px;display:block;max-width:120px;white-space:normal}
+.price small.pdate{font-size:10.5px;opacity:.85}
 .star{border:0;background:none;cursor:pointer;font-size:18px;line-height:1;color:var(--line);padding:2px}
 .star[aria-pressed="true"]{color:#d99a1e}
 .mr{display:flex;align-items:center;gap:8px;border-top:1px dashed var(--line);padding-top:8px;margin-top:2px;font-size:13px}
@@ -881,10 +882,11 @@ function openPatientPage(pid, vid, {tpl}={}){
     <div class="section" id="ppScores"><div class="lbl"><span>Severity scores</span><button class="btn sm primary" type="button" id="ppScoreAdd">${ICON.plus} Score</button></div><div id="ppSugg"></div><div id="ppScoreBody" style="margin-top:8px"></div></div>
     <div class="section"><div class="lbl"><span>Prescription</span><span class="actions"><button class="btn sm" type="button" id="ppTpl">Use template</button><button class="btn sm primary" type="button" id="ppAdd">+ Add medicine</button></span></div>
       <div id="ppRx"></div></div>
+    <div class="section"><div class="grid"><div class="field"><label for="ppFu">Follow-up date</label><input id="ppFu" type="date" value="${esc(v?.fu?.date||"")}"></div></div><p class="hint" style="margin:6px 0 0">Printed on the prescription.</p></div>
     <div class="section dsec" id="ppSafe"><div class="lbl"><span>Drug safety <small class="np">not printed</small></span><button class="btn sm" type="button" id="ppSafeAll">${ICON.pill} All drugs</button></div><div id="ppSafeBody"></div></div>
     ${others.length?`<div class="group"><h3>Other visits</h3><div class="list">${others.map(x=>`<button class="row" data-visit="${esc(x.id)}"><span class="main"><span class="t">${esc(x.dx||"Visit")}</span><span class="s">${esc(x.complaint||"")}</span></span><span class="aside">${esc(fmtDate(x.date))}</span></button>`).join("")}</div></div>`:""}
     ${isNew?"":`<div class="actions"><button class="btn danger" id="ppDel">Delete patient</button></div>`}
-  </div>`, `${isNew?"":`<button class="btn" id="ppPdf">Prescription PDF</button>`}<button class="btn primary" id="ppSave">Save</button>`);
+  </div>`, `<button class="btn" id="ppPdf">Prescription PDF</button><button class="btn primary" id="ppSave">Save</button>`);
   S.sheetHook = () => { fresh.forEach(delAsset); fresh.clear(); S.scoreHook=null; S.safeHook=null; };
   const ctxP = () => ({pid:p?.id, pname:p?.name, dx:$("#ppDx")?.value.trim()||W.dx});
   const drawSugg = () => { $("#ppSugg").innerHTML = scoreSuggestHTML($("#ppDx").value.trim(), 'data-ctxp="1"').replace('class="ssug"','class="ssug" style="margin-top:0"'); };
@@ -923,7 +925,7 @@ function openPatientPage(pid, vid, {tpl}={}){
     if(!(await save("people", pidN, pd))) return null;
     const vidN = v?.id || newId("visits");
     const {id:_v, ...vBase} = v||{};
-    const vd = {...vBase, patientId:pidN, date:W.date, complaint:W.complaint, duration:"", history:W.history, photos:W.photos, dx:W.dx, rx:W.rx, status:"completed", createdAt:vBase.createdAt||Date.now(), updatedAt:Date.now()};
+    const vd = {...vBase, patientId:pidN, date:W.date, complaint:W.complaint, duration:"", history:W.history, photos:W.photos, dx:W.dx, rx:W.rx, fu:$("#ppFu").value?{...(vBase.fu||{}), date:$("#ppFu").value}:null, status:"completed", createdAt:vBase.createdAt||Date.now(), updatedAt:Date.now()};
     if(!(await save("visits", vidN, vd))) return null;
     const keep=new Set(assetsOfVisit(vd)); [...orig, ...fresh].filter(x=>!keep.has(x)).forEach(delAsset); fresh.clear();
     return {pd:{...pd,id:pidN}, vd:{...vd,id:vidN}};
@@ -1130,9 +1132,9 @@ function fillMeds(){
   let list=pool.filter(b=> (S.medCat==="All"||catOf(b)===S.medCat) && (!words.length || words.every(w=>[b.product,b.composition,b.brand,b.company,catOf(b),b.mrName].join(" ").toLowerCase().includes(w))));
   list.sort((a,b)=>(b.preferred?1:0)-(a.preferred?1:0) || catOf(a).localeCompare(catOf(b)) || (a.product||"").localeCompare(b.product||""));
   if(!list.length){ el.innerHTML=`<div class="empty">${pool.length?"No match.":"Nothing here yet."}</div>`; return; }
-  const card = b => `<div class="card mcard ${hueOf(catOf(b))}"><div class="top"><div style="min-width:0"><div class="prod">${esc(b.product||"Untitled")}</div><div class="brandn">${esc([b.brand,b.company&&b.company!==b.brand?b.company:""].filter(Boolean).join(" · "))}</div></div><div style="display:flex;gap:6px;align-items:flex-start"><div class="price">${rupee(b.price)}${b.pack?`<small>${esc(b.pack)}</small>`:""}</div><button class="star" data-star="${esc(b.id)}" aria-pressed="${!!b.preferred}" aria-label="${b.preferred?"Remove from preferred":"Mark as preferred"}">★</button></div></div>
+  const card = b => `<div class="card mcard ${hueOf(catOf(b))}"><div class="top"><div style="min-width:0"><div class="prod">${esc(b.product||"Untitled")}</div><div class="brandn">${esc([b.brand,b.company&&b.company!==b.brand?b.company:""].filter(Boolean).join(" · "))}</div></div><div style="display:flex;gap:6px;align-items:flex-start"><div class="price">${rupee(b.price)}${b.pack?`<small>${esc(b.pack)}</small>`:""}${priceWhen(b)?`<small class="pdate">Updated ${esc(priceWhen(b))}</small>`:""}</div><button class="star" data-star="${esc(b.id)}" aria-pressed="${!!b.preferred}" aria-label="${b.preferred?"Remove from preferred":"Mark as preferred"}">★</button></div></div>
     ${b.composition?`<div class="comp">${esc(b.composition)}</div>`:""}<div><span class="pill cat">${esc(catOf(b))}</span></div>
-    ${b.mrPhone?`<div class="mr"><span class="who">MR · ${esc(b.mrName||"Representative")}</span><span class="num">${esc(b.mrPhone)}</span><button class="btn sm ghost" data-copy="${esc(b.mrPhone)}">Copy</button></div>`:`<div class="mr none"><span class="who" style="color:inherit">MR contact not added</span></div>`}
+    ${b.mrPhone?`<div class="mr"><span class="who">MR · ${esc(b.mrName||"Representative")}</span><span class="num">${esc(b.mrPhone)}</span><button class="btn sm ghost" data-copy="${esc(b.mrPhone)}">Copy</button></div>`:`<div class="mr none"><span class="who" style="color:inherit">Add your MR contact (Edit)</span></div>`}
     <div class="actions"><button class="btn sm" data-br="${esc(b.id)}">Edit</button></div></div>`;
   const shown=list.slice(0,S.medShow);
   if(words.length){
@@ -1141,6 +1143,8 @@ function fillMeds(){
   } else el.innerHTML = `<div class="cards">${shown.map(card).join("")}</div>`;
   if(list.length>S.medShow) el.insertAdjacentHTML("beforeend", `<div style="text-align:center;margin-top:14px"><button class="btn" data-act="medmore">Show more (${list.length-S.medShow} left)</button></div>`);
 }
+function priceWhen(b){ if(b.price===""||b.price==null) return ""; const d=b.priceDate||""; if(d) return fmtMonth(d); const m=/(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* (\d{4})/.exec(b.priceSource||""); return m?m[1]+" "+m[2]:""; }
+function fmtMonth(iso){ const d=new Date(iso+"T00:00:00"); return isNaN(d)?iso:d.toLocaleDateString("en-IN",{day:"numeric",month:"short",year:"numeric"}); }
 function openBrandEditor(b){
   const isNew=!b; b=b||{brand:"",product:"",composition:"",category:S.medCat!=="All"?S.medCat:"Other",company:"",price:"",pack:"",mrName:"",mrPhone:"",notes:"",preferred:false};
   const bcat=catOf(b);
@@ -1153,13 +1157,14 @@ function openBrandEditor(b){
     <div class="field"><label for="bPrice">MRP (₹)</label><input id="bPrice" type="number" inputmode="decimal" min="0" value="${esc(b.price)}"></div>
     <div class="field"><label for="bPack">Pack size</label><input id="bPack" value="${esc(b.pack)}"></div></div>
     <label style="display:flex;gap:8px;align-items:center;font-weight:600"><input type="checkbox" id="bPref" ${b.preferred?"checked":""}> ★ My preferred brand for this generic</label>
-    <div class="section"><div class="lbl">Medical representative</div><div class="grid">
+    <div class="section"><div class="lbl"><span>Medical representative</span><small class="np">only on this phone</small></div><div class="grid">
       <div class="field"><label for="bMrName">Name</label><input id="bMrName" value="${esc(b.mrName)}"></div>
       <div class="field"><label for="bMrPhone">Phone</label><input id="bMrPhone" type="tel" inputmode="tel" value="${esc(b.mrPhone)}"></div></div></div>
     <div class="field"><label for="bNotes">Your notes</label><textarea id="bNotes" placeholder="Key ingredients, who it suits, offers">${esc(b.notes)}</textarea></div>
     <p class="hint">${b.priceSource?`Price source: ${esc(b.priceSource)}. `:""}Prices change often; confirm with the MR or pharmacy.</p>
     ${isNew?"":`<div class="actions"><button class="btn danger" id="bDel">Delete</button></div>`}</div>`,
     `<button class="btn primary" id="bSave">Save</button>`);
+  if(!isNew && window.DRX?.lockShared?.(b.id)){ ["bProduct","bComp","bBrand","bCompany","bCat","bPrice","bPack"].forEach(i=>{ const el=$("#"+i); if(el){ el.disabled=true; } }); $("#bDel")?.closest(".actions")?.remove(); $("#bNotes").insertAdjacentHTML("afterend",`<p class="hint">Product details and price are kept up to date by the list owner. Your MR contact, notes and ★ stay on this phone only.</p>`); }
   $("#bSave").onclick = async () => {
     const d={...b, composition:$("#bComp").value.trim(), brand:$("#bBrand").value.trim(), company:$("#bCompany").value.trim(), product:$("#bProduct").value.trim(), category:$("#bCat").value, price:$("#bPrice").value===""?"":Number($("#bPrice").value), pack:$("#bPack").value.trim(), mrName:$("#bMrName").value.trim(), mrPhone:$("#bMrPhone").value.trim(), notes:$("#bNotes").value.trim(), preferred:$("#bPref").checked, updatedAt:Date.now()};
     delete d.id; if(!d.product){ toast("Add the product name"); return; }
@@ -1229,6 +1234,7 @@ function fillMore(){
   </div></div>
   <div class="group"><h3>Data</h3><div class="list">
     <button class="row" data-act="sync"><span class="main"><span class="t">Sync &amp; sharing</span><span class="s">${window.DRX?.isAdmin?"Signed in as list owner":"Shared medicines and templates update automatically"}</span></span></button>
+    <button class="row" data-act="help"><span class="main"><span class="t">Help &amp; contact</span><span class="s">Quick help, report a problem, email us</span></span></button>
     <button class="row" data-act="backup"><span class="main"><span class="t">Backup</span><span class="s">Download all patients, visits, templates and medicines as a file</span></span></button>
     <div class="row" style="cursor:default"><span class="main"><span class="t">Storage</span><span class="s" id="storageLine">Checking…</span></span></div>
     <div class="row" style="cursor:default"><span class="main"><span class="t">Privacy</span><span class="s" style="white-space:normal">Only you can open this app’s records. Sharing the link does not give others access to your patients.</span></span></div>
@@ -1247,6 +1253,25 @@ function openSettings(){
     <div class="field" style="grid-column:1/-1"><label for="sAd">Address</label><textarea id="sAd">${esc(s.address)}</textarea></div></div></div>`,
     `<button class="btn primary" id="sSave">Save</button>`);
   $("#sSave").onclick = async () => { const d={...S.settings, doctor:$("#sDr").value.trim(), quals:$("#sQ").value.trim(), regNo:$("#sReg").value.trim(), phone:$("#sPh").value.trim(), clinic:$("#sCl").value.trim(), address:$("#sAd").value.trim()}; if(await save("settings","clinic",d)){ toast("Saved"); closeSheet(); } };
+}
+const HELP_EMAIL="dhirajnisha804@gmail.com";
+function appVersion(){ return document.querySelector('meta[name="drx-build"]')?.content||"web"; }
+function openHelp(){
+  const mail=(subj)=>`mailto:${HELP_EMAIL}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent("\n\n—\nDerma Desk version "+appVersion())}`;
+  const qa=[
+   ["Install or update the app","Download DermaDesk.apk from the link you were sent and install it over the old one; your patients stay. New features, medicines and templates arrive by themselves whenever the phone is online."],
+   ["Where are my patients saved?","Only on this phone: patients, photos, scores, MR contacts, notes and your doctor profile never leave it. Use More → Backup regularly and keep the file safe; More → Sync & sharing → Restore brings it back on a new phone."],
+   ["Medicines and templates","The shared list is kept up to date by the list owner and syncs to everyone. Prices show when they were last updated. Your own MR contacts, notes and ★ preferred brands are private to your phone."],
+   ["Write a prescription","Patients → New patient → fill complaints, diagnosis, add medicines or a template, set the follow-up date, then Prescription PDF. Name, age, date, medicines and follow-up are filled in automatically."],
+   ["Drug safety and scores","On the Cases page, Drug safety checks the current prescription against the patient's age, sex, pregnancy and other medicines. Always verify against current guidelines."]];
+  openSheet("Help & contact", `<div class="stack">
+    <div class="section stack"><div class="lbl">Contact</div>
+      <p class="hint" style="margin:0">Questions, problems or ideas for Derma Desk:</p>
+      <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><b style="user-select:all;word-break:break-all">${HELP_EMAIL}</b><button class="btn sm" data-copy="${HELP_EMAIL}">Copy</button></div>
+      <div class="actions"><a class="btn primary" href="${mail("Derma Desk – help")}">Email for help</a><a class="btn" href="${mail("Derma Desk – problem report")}">Report a problem</a><a class="btn" href="${mail("Derma Desk – feature idea")}">Suggest a feature</a></div></div>
+    <div class="group"><h3>Quick help</h3>${qa.map(([q,a])=>`<details class="sec" style="margin-top:8px"><summary>${esc(q)}</summary><div class="in"><p style="margin:0">${esc(a)}</p></div></details>`).join("")}</div>
+    <div class="section"><div class="lbl">About</div><p class="hint" style="margin:0">Derma Desk · version ${esc(appVersion())}<br>For registered medical practitioners. A reference and prescription aid, not a substitute for clinical judgement; verify doses and drug information against current guidelines. Clinical photos are from Wikimedia Commons under free licences, credited with each photo.</p></div>
+  </div>`);
 }
 function openSync(){
   const D=window.DRX||{}; const st=D.status||{};
@@ -2107,6 +2132,7 @@ document.addEventListener("click", async e => {
   else if(a==="cases") openCases();
   else if(a==="backup") exportBackup();
   else if(a==="sync") openSync();
+  else if(a==="help") openHelp();
   else if(a==="exportanon") exportAnon();
 });
 /* ---------- data ---------- */

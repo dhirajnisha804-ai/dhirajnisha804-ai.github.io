@@ -67,6 +67,8 @@ for col in ["brands", "templates"]:
     arr = []
     for f in sorted(glob.glob(f"{DB}/{col}/*.json")):
         d = json.load(open(f, encoding="utf-8")); d = d.get("data", d)
+        if col == "brands":
+            for k in ("mrName", "mrPhone", "notes", "preferred"): d.pop(k, None)  # personal: kept on each phone, never shared
         arr.append({"id": os.path.basename(f)[:-5], **d})
     seed[col] = arr
 json.dump(seed, open(OUT + "/seed.json", "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
@@ -76,3 +78,12 @@ print("built", BUILD, {k: len(v) for k, v in seed.items()})
 os.makedirs(OUT + "/.well-known", exist_ok=True)
 FP = "37:23:48:67:AD:A0:60:DF:9F:CE:15:FF:84:51:46:68:26:E3:A1:82:54:A3:FA:7F:C2:32:27:10:BC:9E:97:B6"
 json.dump([{"relation": ["delegate_permission/common.handle_all_urls"], "target": {"namespace": "android_app", "package_name": "in.dermrx.desk", "sha256_cert_fingerprints": [FP]}}], open(OUT + "/.well-known/assetlinks.json", "w"), indent=1)
+
+# Monthly price refresh file (overwritten by the scheduled price check in the repo)
+pj = os.path.join(HERE, "src", "prices.json")
+if os.path.exists(pj): shutil.copy(pj, OUT + "/prices.json")
+else: json.dump({"checkedAt": None, "items": {}}, open(OUT + "/prices.json", "w"))
+# Case photo review page
+rv = os.path.join(HERE, "src", "review_photos.html")
+if os.path.exists(rv):
+    os.makedirs(OUT + "/review", exist_ok=True); shutil.copy(rv, OUT + "/review/photos.html")

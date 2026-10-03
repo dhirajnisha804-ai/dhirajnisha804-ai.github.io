@@ -118,8 +118,103 @@
     };
   }
 
+  /* ---------------- medicines: shared product list + a private layer on each phone ----------------
+     Product details and prices come from the shared list (owner edits them).
+     MR contact, notes and ★ preferred are personal: stored only on this phone, never shared. */
+  const PERSONAL = ["mrName", "mrPhone", "notes", "preferred"];
+  const pick = (o, keys) => { const r = {}; keys.forEach(k => { if (o && o[k] !== undefined) r[k] = o[k]; }); return r; };
+  const omit = (o, keys) => { const r = { ...o }; keys.forEach(k => delete r[k]); return r; };
+  let lastShared = new Map(), brandCbs = [], PR = {};
+  // Monthly price refresh file (written by the scheduled price check); newer prices override the list.
+  fetch("prices.json", { cache: "no-cache" }).then(r => r.ok ? r.json() : {}).catch(() => ({})).then(p => { PR = (p && p.items) || {}; DRX.pricesCheckedAt = p && p.checkedAt; emitBrands(); });
+  function effShared(id) {
+    const d = lastShared.get(id); if (!d) return null;
+    let x = omit(d, PERSONAL); const pr = PR[id];
+    if (pr && pr.price != null && pr.price !== "" && (!x.priceDate || String(pr.date) > String(x.priceDate))) x = { ...x, price: pr.price, priceDate: pr.date, priceSource: pr.source || x.priceSource, ...(pr.pack ? { pack: pr.pack } : {}) };
+    return x;
+  }
+  function mergedBrandSnap() {
+    const pers = map("brandlocal"), mine = map("mybrands"), docs = [];
+    lastShared.forEach((d, id) => { docs.push({ id, data: { ...effShared(id), ...(pers.get(id) || {}) } }); });
+    mine.forEach((d, id) => { if (!lastShared.has(id)) docs.push({ id, data: { ...d, ...(pers.get(id) || {}), mine: true } }); });
+    return { docs: docs.map(({ id, data }) => ({ id, exists: true, data: () => clone(data) })), size: docs.length, empty: !docs.length };
+  }
+  let emitT = null;
+  function emitBrands() { clearTimeout(emitT); emitT = setTimeout(() => { const s = mergedBrandSnap(); brandCbs.forEach(f => { try { f(s); } catch {} }); }, 0); }
+  (L.subs.brandlocal ||= []).push(emitBrands); (L.subs.mybrands ||= []).push(emitBrands);
+  const sameShared = (a, b) => { const k = o => JSON.stringify(Object.keys(o).filter(x => !["updatedAt", "priceDate", "mine"].includes(x) && !PERSONAL.includes(x)).sort().map(x => [x, o[x]])); return k(a) === k(b); };
+  async function putLocal(col, id, val) { await persist(col, id, val); if (val === undefined) map(col).delete(id); else map(col).set(id, val); }
+  function brandsCol() {
+    const base = sharedCol("brands");
+    return {
+      doc(id0) {
+        const sd = base.doc(id0); const id = sd.id;
+        const write = async (v, isUpdate) => {
+          await ready;
+          const per = pick(v, PERSONAL);
+          if (Object.keys(per).length) await putLocal("brandlocal", id, { ...(map("brandlocal").get(id) || {}), ...per });
+          const rest = omit(v, [...PERSONAL, "mine"]);
+          const shared = lastShared.get(id);
+          const today = new Date().toISOString().slice(0, 10);
+          if (shared) {
+            const cur = effShared(id), target = isUpdate ? { ...cur, ...rest } : rest;
+            if (sameShared(target, cur)) { emitBrands(); return; }
+            if (!DRX.isAdmin) { emitBrands(); if (Object.keys(per).length) return; throw err("admin_only", "Only the list owner can change product details."); }
+            if (rest.price !== undefined && rest.price !== cur.price) rest.priceDate = today;
+            await (isUpdate ? sd.update(rest) : sd.set(rest));
+          } else if (DRX.isAdmin && fs) {
+            if (rest.price != null && rest.price !== "") rest.priceDate = today;
+            await (isUpdate ? sd.update(rest) : sd.set(rest));
+          } else {
+            // A colleague's own product: kept on their phone only.
+            await putLocal("mybrands", id, isUpdate ? { ...(map("mybrands").get(id) || {}), ...rest } : rest);
+          }
+          emitBrands();
+        };
+        return {
+          id, get: () => sd.get(),
+          set: v => write(clone(v), false), update: v => write(clone(v), true),
+          async delete() {
+            await ready;
+            if (map("mybrands").has(id) && !lastShared.has(id)) { await putLocal("mybrands", id, undefined); await putLocal("brandlocal", id, undefined); emitBrands(); return; }
+            await sd.delete();
+          },
+          onSnapshot: (cb, e) => sd.onSnapshot(cb, e)
+        };
+      },
+      onSnapshot(cb, e) {
+        brandCbs.push(cb);
+        const un = base.onSnapshot(snap => {
+          const m = new Map(); snap.docs.forEach(d => m.set(d.id, d.data())); lastShared = m;
+          ready.then(() => { emitBrands(); maybeMigrate(); });
+        }, e);
+        return () => { brandCbs = brandCbs.filter(f => f !== cb); un && un(); };
+      }
+    };
+  }
+  DRX.lockShared = id => lastShared.has(id) && !DRX.isAdmin;
+  // One-time move of MR contacts / notes / ★ that were stored in the shared list onto the owner's phone.
+  let migrating = false;
+  async function maybeMigrate() {
+    if (migrating || !fs || !DRX.isAdmin || !lastShared.size) return;
+    await ready; if (map("meta").get("mrMigrated")) return;
+    migrating = true;
+    try {
+      const withP = [...lastShared].filter(([, d]) => PERSONAL.some(k => d[k] !== undefined));
+      for (const [id, d] of withP) {
+        const keep = {}; PERSONAL.forEach(k => { if (d[k] !== undefined && d[k] !== "" && d[k] !== false) keep[k] = d[k]; });
+        if (Object.keys(keep).length) await putLocal("brandlocal", id, { ...keep, ...(map("brandlocal").get(id) || {}) });
+      }
+      const del = {}; PERSONAL.forEach(k => { del[k] = firebase.firestore.FieldValue.delete(); });
+      for (let i = 0; i < withP.length; i += 400) { const b = fs.batch(); withP.slice(i, i + 400).forEach(([id]) => b.update(fs.collection("brands").doc(id), del)); await b.commit(); }
+      await putLocal("meta", "mrMigrated", { at: Date.now(), n: withP.length });
+      emitBrands();
+    } catch (e) { console.warn("MR contact move failed; will retry", e); }
+    migrating = false;
+  }
+
   const db = {
-    collection: col => (SHARED.has(col) ? sharedCol(col) : localCol(col)),
+    collection: col => (col === "brands" ? brandsCol() : SHARED.has(col) ? sharedCol(col) : localCol(col)),
     doc(path) { const [col, id] = path.split("/"); return SHARED.has(col) ? sharedCol(col).doc(id) : localDoc(col, id); }
   };
 
@@ -127,6 +222,7 @@
   DRX.onAuth = f => { DRX.authSubs.push(f); return () => { DRX.authSubs = DRX.authSubs.filter(g => g !== f); }; };
   DRX.signIn = (email, pw) => { if (!auth) return Promise.reject(err("not_configured")); return auth.signInWithEmailAndPassword(email.trim(), pw); };
   DRX.signOut = () => auth ? auth.signOut() : Promise.resolve();
+  DRX.onAuth(() => { maybeMigrate(); emitBrands(); });
   DRX.adminEmail = adminEmail;
   DRX.cloudCount = async col => { if (!fs) return null; try { const s = await fs.collection(col).get({ source: "server" }); return s.size; } catch { return null; } };
   /* Upload the bundled list to the cloud. mode "missing" = add only items not already there; "all" = overwrite all. */
@@ -152,6 +248,14 @@
     if (data.settings && Object.keys(data.settings).length) { const st = clone(data.settings); delete st.signatureId; await persist("settings", "clinic", st); map("settings").set("clinic", st); emit("settings", "clinic"); }
     if (data.drugSafetyEdits) for (const [k, v] of Object.entries(data.drugSafetyEdits)) { const { k: _k, ...d } = v || {}; await persist("drugsafety", k, clone(d)); map("drugsafety").set(k, clone(d)); n++; }
     emit("drugsafety");
+    // MR contacts, notes, ★ and the person's own products
+    for (const x of data.brands || []) {
+      const { id, ...d } = x || {}; if (!id) continue;
+      const per = {}; PERSONAL.forEach(k => { if (d[k] !== undefined && d[k] !== "" && d[k] !== false) per[k] = d[k]; });
+      if (Object.keys(per).length) { await putLocal("brandlocal", id, { ...(map("brandlocal").get(id) || {}), ...per }); n++; }
+      if (d.mine && !lastShared.has(id)) { await putLocal("mybrands", id, omit(d, [...PERSONAL, "mine"])); n++; }
+    }
+    emitBrands();
     return n;
   };
 
@@ -180,6 +284,12 @@
   const downloads = {
     async save({ filename, data }) {
       const blob = data instanceof Blob ? data : new Blob([data], { type: /\.json$/.test(filename) ? "application/json" : /\.csv$/.test(filename) ? "text/csv" : /\.html$/.test(filename) ? "text/html" : "application/octet-stream" });
+      if (window.DermaAndroid && window.DermaAndroid.saveFile) {
+        // Inside the Android app: hand the file to the phone (share sheet: WhatsApp, Files, Drive…)
+        const b64 = await new Promise((res, rej) => { const fr = new FileReader(); fr.onload = () => res(String(fr.result).split(",")[1] || ""); fr.onerror = rej; fr.readAsDataURL(blob); });
+        window.DermaAndroid.saveFile(b64, filename, blob.type || "application/octet-stream");
+        return { status: "saved" };
+      }
       const url = URL.createObjectURL(blob); const a = document.createElement("a");
       a.href = url; a.download = filename; document.body.appendChild(a); a.click(); a.remove();
       setTimeout(() => URL.revokeObjectURL(url), 60000);
@@ -205,6 +315,16 @@
       }
     }
   }).observe(document.documentElement, { childList: true, subtree: true, attributes: true, attributeFilter: ["src"] });
+
+  /* Android back button: close whatever is open inside the app first. */
+  window.DRX_back = () => {
+    for (const sel of ["#lightbox:not([hidden]) #lbClose", "#out:not([hidden]) #close", "#pnl:not([hidden]) #pnlBack:not([hidden])", "#pnl:not([hidden]) #pnlClose", "#sheet2:not([hidden]) #sheet2Close", "#sheet:not([hidden]) #sheetClose"]) {
+      const b = document.querySelector(sel); if (b) { b.click(); return true; }
+    }
+    const home = document.querySelector('nav.tabs [data-tab="cases"]');
+    if (home && home.getAttribute("aria-selected") !== "true") { home.click(); return true; }
+    return false;
+  };
 
   window.claude = {
     use: async name => (name === "db" ? db : name === "assets" ? assets : name === "downloads" ? downloads : null)

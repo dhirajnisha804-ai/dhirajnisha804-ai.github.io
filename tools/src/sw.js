@@ -2,7 +2,7 @@
    and serves locally stored photos at /_blob/<id>. */
 const VERSION = "__BUILD__";
 const SHELL = "drx-shell-" + VERSION;
-const FILES = ["./", "index.html", "drx-shim.js", "config.js", "seed.json", "manifest.webmanifest",
+const FILES = ["./", "index.html", "drx-shim.js", "config.js", "seed.json", "prices.json", "manifest.webmanifest",
   "vendor/firebase-app-compat.js", "vendor/firebase-auth-compat.js", "vendor/firebase-firestore-compat.js",
   "vendor/html2pdf.bundle.min.js", "icons/icon-192.png", "icons/icon-512.png"];
 
@@ -33,12 +33,12 @@ self.addEventListener("fetch", e => {
   }
   if (url.origin !== location.origin) {
     // Fonts and other CDN files: cache as we go so the app keeps its look offline.
-    if (/fonts\.(googleapis|gstatic)\.com|cdnjs\.cloudflare\.com|cdn\.jsdelivr\.net/.test(url.host)) {
+    if (/fonts\.(googleapis|gstatic)\.com|cdnjs\.cloudflare\.com|cdn\.jsdelivr\.net|upload\.wikimedia\.org/.test(url.host)) {
       e.respondWith(caches.open("drx-runtime").then(async c => { const hit = await c.match(e.request); const net = fetch(e.request).then(r => { if (r.ok || r.type === "opaque") c.put(e.request, r.clone()); return r; }).catch(() => hit); return hit || net; }));
     }
     return; // Firestore / auth traffic goes straight to the network.
   }
-  const fresh = e.request.mode === "navigate" || /(\/|index\.html|seed\.json|config\.js|drx-shim\.js|manifest\.webmanifest)$/.test(url.pathname);
+  const fresh = e.request.mode === "navigate" || /(\/|index\.html|seed\.json|prices\.json|config\.js|drx-shim\.js|manifest\.webmanifest)$/.test(url.pathname);
   if (fresh) {
     // Network first: whenever the phone is online it gets the newest app.
     e.respondWith(fetch(e.request, { cache: "no-cache" }).then(r => { if (r.ok) { const cp = r.clone(); caches.open(SHELL).then(c => c.put(e.request, cp)); } return r; })

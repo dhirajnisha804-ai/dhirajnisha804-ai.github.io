@@ -1,18 +1,18 @@
 plugins { id 'com.android.application' }
-def host = System.getenv("DRX_HOST") ?: "example.github.io"
+def host = System.getenv("DRX_HOST") ?: "dhirajnisha804-ai.github.io"
 android {
-    namespace 'in.dermrx.desk'
+    namespace 'com.dermadesk.app'
     compileSdk 34
     defaultConfig {
         applicationId "in.dermrx.desk"
-        minSdk 21
+        minSdk 24
         targetSdk 34
         versionCode((System.getenv("GITHUB_RUN_NUMBER") ?: "1").toInteger())
-        versionName "1." + (System.getenv("GITHUB_RUN_NUMBER") ?: "0")
-        resValue "string", "host", host
-        resValue "string", "launch_url", "https://" + host + "/"
-        resValue "string", "asset_statements", '[{\\"relation\\": [\\"delegate_permission/common.handle_all_urls\\"], \\"target\\": {\\"namespace\\": \\"web\\", \\"site\\": \\"https://' + host + '\\"}}]'
+        versionName "2." + (System.getenv("GITHUB_RUN_NUMBER") ?: "0")
+        buildConfigField "String", "APP_URL", "\"https://" + host + "/\""
+        buildConfigField "String", "APP_HOST", "\"" + host + "\""
     }
+    buildFeatures { buildConfig true }
     signingConfigs {
         release {
             storeFile file(System.getenv("DRX_KEYSTORE") ?: "../../keys/dermrx.jks")
@@ -24,4 +24,4 @@ android {
     buildTypes { release { minifyEnabled false; signingConfig signingConfigs.release } }
     compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
 }
-dependencies { implementation 'com.google.androidbrowserhelper:androidbrowserhelper:2.5.0' }
+dependencies { implementation 'androidx.core:core:1.13.1' }
