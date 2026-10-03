@@ -18,7 +18,7 @@ def rep(old, new, count=1):
     s = s.replace(old, new)
 
 BUILD = time.strftime("%Y%m%d%H%M")
-head = f"""<link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#b0336a">
+head = f"""<link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#14324d">
 <link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
 <meta name="drx-build" content="{BUILD}">
 <script src="config.js"></script>
