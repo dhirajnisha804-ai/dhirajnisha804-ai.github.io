@@ -1,11 +1,11 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#14324d">
 <link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<meta name="drx-build" content="202610031536">
+<meta name="drx-build" content="202610031539">
 <script src="config.js"></script>
 <script src="vendor/firebase-app-compat.js"></script><script src="vendor/firebase-auth-compat.js"></script><script src="vendor/firebase-firestore-compat.js"></script>
 <script src="drx-shim.js"></script>
 </head><body>
-<title>DermRx Desk</title>
+<title>Derma Desk</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,650&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
 <style>
@@ -475,7 +475,7 @@ nav.tabs .t1,nav.tabs .t2,nav.tabs .t3,nav.tabs .t4,nav.tabs .t5{--tc:var(--acce
 </style>
 
 <header class="top"><div class="in">
-  <div class="brandmark"><h1>Derm<b>Rx</b> Desk</h1><small id="drline">Dermatology consultations and prescriptions</small></div>
+  <div class="brandmark"><h1>Derma <b>Desk</b></h1><small id="drline">Dermatology consultations and prescriptions</small></div>
   <button class="iconbtn" id="btnNewTop" aria-label="New consultation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
 </div></header>
 
@@ -688,7 +688,7 @@ function caseDetailHTML(c){
     <div class="case-meta"><span class="pill">${esc(c.g)}</span><span class="pill ${c.t==="Long case"?"rose":""}">${esc(c.t)}</span></div></div>
     ${scoreSuggestHTML(c.n)}
     ${list("cc","Presenting complaints","1",c.cc)}${list("hx","History to ask","2",c.hx)}${list("ex","Examination","3",c.ex)}${(c.inv||[]).length?list("inv","Investigations","4",c.inv):""}${ddx}${fmt}${pearls}
-    <p class="csrc">Written in original wording for DermRx Desk. Based on standard references: Rook's Textbook of Dermatology, Fitzpatrick's Dermatology, Bolognia Dermatology, the IADVL Textbook of Dermatology and current IADVL / WHO / national STI and leprosy guidelines. Verify before clinical decisions.</p>`;
+    <p class="csrc">Written in original wording for Derma Desk. Based on standard references: Rook's Textbook of Dermatology, Fitzpatrick's Dermatology, Bolognia Dermatology, the IADVL Textbook of Dermatology and current IADVL / WHO / national STI and leprosy guidelines. Verify before clinical decisions.</p>`;
 }
 function caseRowsHTML(arr, grouped, open){
   const row = c => `<button class="row" data-case="${c.i}"><span class="main"><span class="t">${esc(c.n)}</span><span class="s">${esc(cleanLine((c.cc||[])[0]||""))}</span></span><span class="aside">${c.t==="Long case"?`<span class="pill rose">Long</span>`:""}</span></button>`;
@@ -1277,7 +1277,7 @@ function openSync(){
   $("#syOut")?.addEventListener("click", async()=>{ await D.signOut(); setTimeout(openSync,200); });
   $("#syPub")?.addEventListener("click", async e=>{ const b=e.currentTarget; b.disabled=true; msg("Publishing…"); try{ const n=await D.publishSeed("missing",(d,t)=>msg(`Publishing… ${d} of ${t}`)); msg(`Done. ${n} items checked; anything missing was added to the shared list.`); }catch(er){ msg(er?.code==="admin_only"?er.message:"Couldn’t publish. Check your connection."); } b.disabled=false; });
   $("#syReload").addEventListener("click", ()=>location.reload());
-  $("#syRestore").addEventListener("change", async e=>{ const f=e.target.files[0]; e.target.value=""; if(!f) return; const el=$("#syRMsg"); try{ const data=JSON.parse(await f.text()); const n=await D.restoreLocal(data); el.textContent=`Restored ${n} records to this phone. Photos aren’t part of backup files.`; }catch{ el.textContent="That file couldn’t be read. Choose a DermRx backup (.json)."; } });
+  $("#syRestore").addEventListener("change", async e=>{ const f=e.target.files[0]; e.target.value=""; if(!f) return; const el=$("#syRMsg"); try{ const data=JSON.parse(await f.text()); const n=await D.restoreLocal(data); el.textContent=`Restored ${n} records to this phone. Photos aren’t part of backup files.`; }catch{ el.textContent="That file couldn’t be read. Choose a Derma Desk backup (.json)."; } });
   D.statusHook=()=>{};
 }
 function openSignature(){
@@ -1306,14 +1306,14 @@ async function exportBackup(){
   const dl=S.downloads; if(!dl){ toast("Downloads aren’t available in this view"); return; }
   const strip=a=>a.map(x=>{const {id,...r}=x; return {id,...r};});
   const data={exportedAt:new Date().toISOString(), settings:S.settings, people:strip(S.people), visits:strip(S.visits), templates:strip(S.templates), brands:strip(S.brands), scores:strip(S.scores||[]), drugSafetyEdits:S.dsOver||{}};
-  try{ const r=await dl.save({filename:`dermrx-backup-${today()}.json`, data:JSON.stringify(data,null,1)}); toast(r.status==="saved"?"Backup saved":"Backup sent"); }catch(e){ if(e?.code!=="declined") toast("Couldn’t save the backup"); }
+  try{ const r=await dl.save({filename:`derma-desk-backup-${today()}.json`, data:JSON.stringify(data,null,1)}); toast(r.status==="saved"?"Backup saved":"Backup sent"); }catch(e){ if(e?.code!=="declined") toast("Couldn’t save the backup"); }
 }
 async function exportAnon(){
   const dl=S.downloads; if(!dl){ toast("Downloads aren’t available in this view"); return; }
   const q=v=>`"${String(v??"").replace(/"/g,'""')}"`;
   const rows=[["visit_date","age","sex","diagnosis","differentials","morphology","sites","medicines","investigations","follow_up_days","tags"].join(",")];
   S.visits.forEach(v=>{ const p=personById(v.patientId)||{}; rows.push([v.date,p.age,p.sex,v.dx,(v.ddx||[]).join("; "),(v.morph||[]).join("; "),(v.sites||[]).join("; "),(v.rx||[]).map(r=>r.generic||r.drug).join("; "),(v.inv||[]).map(x=>x.name+(x.result?": "+x.result:"")).join("; "),v.fu?.days||"",v.tags].map(q).join(",")); });
-  try{ const r=await dl.save({filename:`dermrx-anonymized-${today()}.csv`, data:rows.join("\n")}); toast(r.status==="saved"?"Export saved":"Export sent"); }catch(e){ if(e?.code!=="declined") toast("Couldn’t create the export"); }
+  try{ const r=await dl.save({filename:`derma-desk-anonymized-${today()}.csv`, data:rows.join("\n")}); toast(r.status==="saved"?"Export saved":"Export sent"); }catch(e){ if(e?.code!=="declined") toast("Couldn’t create the export"); }
 }
 
 /* ---------- SEVERITY SCORES ---------- */

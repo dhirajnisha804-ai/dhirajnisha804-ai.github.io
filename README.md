@@ -1,4 +1,4 @@
-# DermRx Desk
+# Derma Desk
 
 Dermatology cases, prescriptions, medicines and Rx templates — as an installable Android app.
 

@@ -27,6 +27,6 @@ function openSync(){
   $("#syOut")?.addEventListener("click", async()=>{ await D.signOut(); setTimeout(openSync,200); });
   $("#syPub")?.addEventListener("click", async e=>{ const b=e.currentTarget; b.disabled=true; msg("Publishing…"); try{ const n=await D.publishSeed("missing",(d,t)=>msg(`Publishing… ${d} of ${t}`)); msg(`Done. ${n} items checked; anything missing was added to the shared list.`); }catch(er){ msg(er?.code==="admin_only"?er.message:"Couldn’t publish. Check your connection."); } b.disabled=false; });
   $("#syReload").addEventListener("click", ()=>location.reload());
-  $("#syRestore").addEventListener("change", async e=>{ const f=e.target.files[0]; e.target.value=""; if(!f) return; const el=$("#syRMsg"); try{ const data=JSON.parse(await f.text()); const n=await D.restoreLocal(data); el.textContent=`Restored ${n} records to this phone. Photos aren’t part of backup files.`; }catch{ el.textContent="That file couldn’t be read. Choose a DermRx backup (.json)."; } });
+  $("#syRestore").addEventListener("change", async e=>{ const f=e.target.files[0]; e.target.value=""; if(!f) return; const el=$("#syRMsg"); try{ const data=JSON.parse(await f.text()); const n=await D.restoreLocal(data); el.textContent=`Restored ${n} records to this phone. Photos aren’t part of backup files.`; }catch{ el.textContent="That file couldn’t be read. Choose a Derma Desk backup (.json)."; } });
   D.statusHook=()=>{};
 }
