@@ -10,10 +10,17 @@ permissions:
 concurrency: { group: drx, cancel-in-progress: false }
 jobs:
   site:
+    needs: apk
+    if: always()
     runs-on: ubuntu-latest
     environment: { name: github-pages, url: "${{ steps.deploy.outputs.page_url }}" }
     steps:
       - uses: actions/checkout@v4
+      - name: Put the latest APK on the site (direct download)
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          gh release download apk-latest -p DermaDesk.apk -D www --clobber || true
+          ls -la www/*.apk || true
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with: { path: www }
