@@ -79,3 +79,10 @@ until she approves each:
 10. Comedone extraction  11. DPN (dermatosis papulosa nigra) removal — RF/electrocautery  12. Intralesional steroid injection
 Each SOP: indications · contraindications · pre-procedure (consent, counselling, priming, test patch) · equipment
 · step-by-step · endpoints · post-care · complications & management · follow-up/sessions. Paid content? — default free.
+
+## Extra features approved (4 Oct)
+- **Voice typing**: mic button on History, Chief complaints, Diagnosis and instruction fields (Android speech-to-text
+  via the WebView / Web Speech API; works with English, Hindi, Marathi). Needs RECORD_AUDIO permission in the APK.
+- **Before/after photo comparison**: on a patient, pick two visit photos → side-by-side and slider view with dates;
+  when taking a new follow-up photo show a faint "ghost" overlay of the previous photo to match the angle.
+  Photos stay on the phone.
