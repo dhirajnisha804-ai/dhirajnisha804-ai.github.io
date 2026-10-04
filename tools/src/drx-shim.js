@@ -228,17 +228,19 @@
   /* Upload the bundled list to the cloud. mode "missing" = add only items not already there; "all" = overwrite all. */
   DRX.publishSeed = async (mode, onProgress) => {
     guardWrite(); await seedP;
-    let done = 0; const total = ["brands", "templates"].reduce((n, c) => n + ((DRX.seed[c] || []).length), 0);
+    let done = 0, added = 0; const total = ["brands", "templates"].reduce((n, c) => n + ((DRX.seed[c] || []).length), 0);
     for (const col of ["brands", "templates"]) {
       const items = DRX.seed[col] || [];
-      const existing = new Set(); if (mode === "missing") { const s = await fs.collection(col).get(); s.forEach(d => existing.add(d.id)); }
+      // "missing": add items not yet shared, and refresh corrected items (seed newer) that nobody has edited since the old version
+      const existing = new Map(); if (mode === "missing") { const s = await fs.collection(col).get(); s.forEach(d => existing.set(d.id, d.data() || {})); }
+      const want = ({ id, ...d }) => { if (!existing.has(id)) return true; const r = existing.get(id); const ru = +r.updatedAt || 0; return !!d.prevUpdatedAt && ru <= d.prevUpdatedAt && (+d.updatedAt || 0) > ru; };
       for (let i = 0; i < items.length; i += 400) {
         const b = fs.batch();
-        items.slice(i, i + 400).forEach(({ id, ...d }) => { if (!existing.has(id)) b.set(fs.collection(col).doc(id), clone(d)); });
+        items.slice(i, i + 400).forEach(it => { if (want(it)) { const { id, ...d } = it; b.set(fs.collection(col).doc(id), clone(d)); added++; } });
         await b.commit(); done += Math.min(400, items.length - i); onProgress && onProgress(done, total);
       }
     }
-    return total;
+    DRX.lastPublishAdded = added; return total;
   };
   /* Restore a backup file (from the Claude version or this app) into this phone. */
   DRX.restoreLocal = async data => {
