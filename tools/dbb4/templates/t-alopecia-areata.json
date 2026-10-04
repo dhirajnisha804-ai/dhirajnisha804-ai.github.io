@@ -1,0 +1,25 @@
+{
+  "advice": "Regrowth may be white at first. Check thyroid function. Good prognosis for limited patches.",
+  "group": "Hair disorders",
+  "name": "Alopecia areata",
+  "rx": [
+    {
+      "drug": "Inj. Triamcinolone acetonide 10 mg/ml",
+      "sig": "Intralesional, every 4-6 weeks (in clinic)"
+    },
+    {
+      "drug": "Lotion / cream Clobetasol propionate 0.05%",
+      "dur": "6 weeks",
+      "freq": "HS",
+      "instr": "Apply on patches at night, 5 days a week"
+    },
+    {
+      "drug": "Minoxidil 5% solution",
+      "freq": "BD",
+      "instr": "Apply twice daily on patches"
+    }
+  ],
+  "starter": true,
+  "updatedAt": 1791097612453,
+  "prevUpdatedAt": 1791097530255
+}

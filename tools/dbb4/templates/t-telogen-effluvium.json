@@ -1,0 +1,21 @@
+{
+  "advice": "Usually follows illness, fever, surgery, crash dieting or delivery 2-3 months earlier. Hair fall settles in 3-6 months. Balanced protein-rich diet.",
+  "group": "Hair disorders",
+  "name": "Telogen effluvium",
+  "rx": [
+    {
+      "drug": "Tab. Iron + folic acid",
+      "freq": "OD",
+      "dose": "1 tab",
+      "instr": "If ferritin low"
+    },
+    {
+      "drug": "Minoxidil 2% solution",
+      "freq": "BD",
+      "instr": "Apply 1 ml twice daily (optional)"
+    }
+  ],
+  "starter": true,
+  "updatedAt": 1791097612453,
+  "prevUpdatedAt": 1791097530255
+}

@@ -1,0 +1,67 @@
+{
+  "advice": "Hormone tests (testosterone, DHEAS, 17-OH progesterone, prolactin, TSH) and pelvic ultrasound as advised. Weight loss helps. Results of tablets take 6 months.",
+  "adviceText": "Hormone tests (testosterone, DHEAS, 17-OH progesterone, prolactin, TSH) and pelvic ultrasound as advised. Weight loss helps. Results of tablets take 6 months.",
+  "dx": "Hirsutism",
+  "fuDays": "84",
+  "group": "Hair disorders",
+  "name": "Hirsutism",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab",
+      "drug": "Tab. Ethinylestradiol 0.03 mg + Drospirenone 3 mg",
+      "dur": "6 months",
+      "freq": "OD",
+      "generic": "",
+      "instr": "21 days on, 7 off",
+      "route": "Oral",
+      "timing": "Night"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab",
+      "drug": "Tab. Spironolactone 50 mg",
+      "dur": "6 months",
+      "freq": "BD",
+      "generic": "",
+      "instr": "Only with reliable contraception (feminisation of male fetus). Combined with a drospirenone pill: check serum potassium at baseline if renal disease, ACE-inhibitor/ARB use or age >45",
+      "route": "Oral",
+      "timing": "After food"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "Thin layer",
+      "drug": "Cream Eflornithine 13.9%",
+      "dur": "Ongoing",
+      "freq": "BD",
+      "generic": "",
+      "instr": "Face",
+      "route": "Topical",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Laser hair reduction",
+      "dur": "6–8 sessions",
+      "freq": "Every 4–6 weeks",
+      "generic": "",
+      "instr": "",
+      "route": "Other",
+      "timing": ""
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791095614971,
+  "prevUpdatedAt": 1791035262768,
+  "wcheck": "Wolverton 4e (2020)"
+}

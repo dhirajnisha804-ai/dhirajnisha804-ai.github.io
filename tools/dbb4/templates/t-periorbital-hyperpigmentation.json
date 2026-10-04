@@ -1,0 +1,53 @@
+{
+  "advice": "Avoid rubbing the eyes; treat allergy and sinus problems. Adequate sleep. Peels / laser only after stable response.",
+  "adviceText": "Avoid rubbing the eyes; treat allergy and sinus problems. Adequate sleep. Peels / laser only after stable response.",
+  "dx": "Periorbital hyperpigmentation",
+  "fuDays": "56",
+  "group": "Pigmentary disorders",
+  "name": "Periorbital hyperpigmentation",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab",
+      "drug": "Tab. Levocetirizine 5 mg",
+      "dur": "2 weeks",
+      "freq": "HS",
+      "generic": "",
+      "instr": "If allergic rhinitis / eye rubbing",
+      "route": "Oral",
+      "timing": "Night"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Under-eye cream with Niacinamide 4% / Vitamin C",
+      "dur": "12 weeks",
+      "freq": "HS",
+      "generic": "",
+      "instr": "",
+      "route": "Topical",
+      "timing": "Night"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Mineral sunscreen SPF 30+",
+      "dur": "Ongoing",
+      "freq": "OD",
+      "generic": "",
+      "instr": "Include eyelids",
+      "route": "Topical",
+      "timing": "Morning"
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791097530255,
+  "prevUpdatedAt": 1791035262768
+}

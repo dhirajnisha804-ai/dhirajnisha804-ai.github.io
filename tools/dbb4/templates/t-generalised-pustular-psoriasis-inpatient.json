@@ -1,0 +1,67 @@
+{
+  "advice": "Admit. Do NOT give systemic steroids (risk of rebound). Watch for sepsis, hypocalcaemia, hypoalbuminaemia. Avoid known triggers (steroid withdrawal, infections, pregnancy).",
+  "adviceText": "Admit. Do NOT give systemic steroids (risk of rebound). Watch for sepsis, hypocalcaemia, hypoalbuminaemia. Avoid known triggers (steroid withdrawal, infections, pregnancy).",
+  "dx": "Generalised pustular psoriasis (inpatient)",
+  "fuDays": "7",
+  "group": "Papulosquamous disorders",
+  "name": "Generalised pustular psoriasis (inpatient)",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "0.5–1 mg/kg/day",
+      "drug": "Cap. Acitretin 25 mg",
+      "dur": "Ongoing",
+      "freq": "OD",
+      "generic": "",
+      "instr": "First line in men/non-childbearing women (women of child-bearing potential: pregnancy must be avoided for 3 years after stopping — prefer cyclosporine 3–5 mg/kg/day). Baseline and 2–4-weekly lipids, LFT. Cyclosporine: monitor BP and creatinine; methotrexate weekly only",
+      "route": "Oral",
+      "timing": "After food"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab",
+      "drug": "Tab. Paracetamol 650 mg",
+      "dur": "",
+      "freq": "SOS",
+      "generic": "",
+      "instr": "Fever",
+      "route": "Oral",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Liquid paraffin / white soft paraffin",
+      "dur": "Ongoing",
+      "freq": "QID",
+      "generic": "",
+      "instr": "Whole body",
+      "route": "Topical",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "IV fluids / oral fluids as per output",
+      "dur": "",
+      "freq": "",
+      "generic": "",
+      "instr": "Monitor temperature, pulse, BP, urine output, electrolytes, calcium, albumin",
+      "route": "Other",
+      "timing": ""
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791097530255,
+  "prevUpdatedAt": 1791095614971,
+  "wcheck": "Wolverton 4e (2020)"
+}

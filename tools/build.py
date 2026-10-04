@@ -3,9 +3,18 @@
 import json, os, glob, shutil, time, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 SP = os.path.dirname(HERE)
-OUT = os.path.join(HERE, "www")
-SRC_APP = sys.argv[1] if len(sys.argv) > 1 else os.path.join(SP, "app.html")
-DB = os.path.join(SP, "dbb4")
+# In the repo: python3 tools/build.py  (source tools/app.html, data tools/dbb4, output ../www)
+OUT = os.environ.get("DRX_OUT") or (os.path.join(SP, "www") if os.path.isdir(os.path.join(SP, ".git")) else os.path.join(HERE, "www"))
+SRC_APP = sys.argv[1] if len(sys.argv) > 1 else (os.path.join(HERE, "app.html") if os.path.exists(os.path.join(HERE, "app.html")) else os.path.join(SP, "app.html"))
+DB = os.path.join(HERE, "dbb4") if os.path.isdir(os.path.join(HERE, "dbb4")) else os.path.join(SP, "dbb4")
+# vendor libraries: use tools/vend if present, otherwise reuse the ones already published in www/vendor
+import tempfile
+_VSTASH = None
+if not os.path.isdir(os.path.join(HERE, "vend", "x_firebase-10.12.2")) and os.path.isdir(os.path.join(OUT, "vendor")):
+    _VSTASH = tempfile.mkdtemp(); shutil.copytree(os.path.join(OUT, "vendor"), os.path.join(_VSTASH, "vendor"))
+# keep the monthly price file written by the scheduled task
+_PRICES = os.path.join(OUT, "prices.json")
+if os.path.exists(_PRICES): shutil.copy(_PRICES, os.path.join(HERE, "src", "prices.json"))
 
 shutil.rmtree(OUT, ignore_errors=True)
 os.makedirs(OUT + "/vendor"); os.makedirs(OUT + "/icons")
@@ -55,11 +64,14 @@ open(OUT + "/sw.js", "w").write(open(HERE + "/src/sw.js").read().replace("__BUIL
 cfg = HERE + "/src/config.js"
 shutil.copy(cfg if os.path.exists(cfg) else HERE + "/src/config.example.js", OUT + "/config.js")
 V = HERE + "/vend"
-for f in ["firebase-app-compat.js", "firebase-auth-compat.js", "firebase-firestore-compat.js"]:
-    shutil.copy(f"{V}/x_firebase-10.12.2/package/{f}", OUT + "/vendor/")
-shutil.copy(f"{V}/x_html2pdf.js-0.10.1/package/dist/html2pdf.bundle.min.js", OUT + "/vendor/")
-os.makedirs(OUT + "/vendor/tesseract")
-for f in glob.glob(V + "/tesseract/*"): shutil.copy(f, OUT + "/vendor/tesseract/")
+if _VSTASH:
+    shutil.rmtree(OUT + "/vendor", ignore_errors=True); shutil.copytree(_VSTASH + "/vendor", OUT + "/vendor")
+else:
+    for f in ["firebase-app-compat.js", "firebase-auth-compat.js", "firebase-firestore-compat.js"]:
+        shutil.copy(f"{V}/x_firebase-10.12.2/package/{f}", OUT + "/vendor/")
+    shutil.copy(f"{V}/x_html2pdf.js-0.10.1/package/dist/html2pdf.bundle.min.js", OUT + "/vendor/")
+    os.makedirs(OUT + "/vendor/tesseract")
+    for f in glob.glob(V + "/tesseract/*"): shutil.copy(f, OUT + "/vendor/tesseract/")
 for f in glob.glob(HERE + "/src/icons/*.png"): shutil.copy(f, OUT + "/icons/")
 shutil.copy(HERE + "/src/manifest.webmanifest", OUT)
 open(OUT + "/.nojekyll", "w").write("")

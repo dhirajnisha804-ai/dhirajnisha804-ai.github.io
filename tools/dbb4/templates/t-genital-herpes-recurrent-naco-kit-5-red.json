@@ -1,0 +1,39 @@
+{
+  "advice": "Avoid sex during episodes; use condoms always. Frequent recurrences (≥ 6/year) can be prevented with daily suppressive acyclovir 400 mg BD.",
+  "adviceText": "Avoid sex during episodes; use condoms always. Frequent recurrences (≥ 6/year) can be prevented with daily suppressive acyclovir 400 mg BD.",
+  "dx": "Genital herpes (recurrent) — NACO Kit 5 (red)",
+  "fuDays": "7",
+  "group": "STI (Venereology)",
+  "name": "Genital herpes (recurrent) — NACO Kit 5 (red)",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab",
+      "drug": "Tab. Acyclovir 400 mg",
+      "dur": "5 days",
+      "freq": "TDS",
+      "generic": "",
+      "instr": "Recurrent episode (first episode: 7–10 days)",
+      "route": "Oral",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Saline / povidone-iodine sitz bath",
+      "dur": "1 week",
+      "freq": "BD",
+      "generic": "",
+      "instr": "",
+      "route": "Topical",
+      "timing": ""
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791035262768
+}

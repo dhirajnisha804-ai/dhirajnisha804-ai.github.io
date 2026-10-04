@@ -1,0 +1,80 @@
+{
+  "id": "t-hidradenitis-suppurativa-severe-hurley-ii-iii",
+  "name": "Hidradenitis suppurativa — severe (Hurley II–III)",
+  "dx": "Hidradenitis suppurativa — severe (Hurley II–III)",
+  "group": "Acne & Rosacea",
+  "advice": "Lose weight and stop smoking. Rifampicin turns urine orange and reduces pill efficacy — use condoms. Report diarrhoea (clindamycin). Before adalimumab: CBC, LFT, IGRA/Mantoux and chest X-ray, HBsAg, anti-HCV, HIV. Plan deroofing / wide excision of tunnels with surgery.",
+  "adviceText": "Lose weight and stop smoking. Rifampicin turns urine orange and reduces pill efficacy — use condoms. Report diarrhoea (clindamycin). Before adalimumab: CBC, LFT, IGRA/Mantoux and chest X-ray, HBsAg, anti-HCV, HIV. Plan deroofing / wide excision of tunnels with surgery.",
+  "fuDays": "28",
+  "source": "wolverton-2026-10",
+  "starter": true,
+  "ref": "Wolverton 4e ch 9, 26; BAD 2018; EHSF/ North American HS guidelines",
+  "rx": [
+    {
+      "drug": "Cap. Clindamycin 300 mg",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 cap",
+      "route": "Oral",
+      "freq": "BD",
+      "timing": "After food",
+      "dur": "10–12 weeks",
+      "instr": "With rifampicin"
+    },
+    {
+      "drug": "Cap. Rifampicin 300 mg",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 cap",
+      "route": "Oral",
+      "freq": "BD",
+      "timing": "Empty stomach",
+      "dur": "10–12 weeks",
+      "instr": "Many drug interactions; LFT at 4 weeks"
+    },
+    {
+      "drug": "Inj. Adalimumab 40 mg",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "160 mg wk 0, 80 mg wk 2, then 40 mg weekly from wk 4",
+      "route": "Injection",
+      "freq": "Weekly",
+      "timing": "",
+      "dur": "Review at 12 weeks",
+      "instr": "SC; If antibiotics fail / Hurley III; after TB and hepatitis screening"
+    },
+    {
+      "drug": "Inj. Triamcinolone acetonide 10 mg/ml",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "0.2–1 ml per nodule",
+      "route": "Intralesional",
+      "freq": "SOS",
+      "timing": "",
+      "dur": "",
+      "instr": "Painful acute nodules, in clinic"
+    },
+    {
+      "drug": "Chlorhexidine 4% body wash",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "route": "Topical",
+      "freq": "OD",
+      "timing": "",
+      "dur": "Ongoing",
+      "instr": "Folds, leave 2 minutes, rinse"
+    }
+  ],
+  "updatedAt": 1791095614971
+}

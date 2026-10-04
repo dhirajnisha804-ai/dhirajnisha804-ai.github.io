@@ -1,0 +1,55 @@
+{
+  "id": "t-granuloma-annulare-localised",
+  "name": "Granuloma annulare (localised)",
+  "dx": "Granuloma annulare (localised)",
+  "group": "Other dermatoses",
+  "advice": "Harmless and often clears on its own within 2 years. Avoid repeated trauma to the area. Check fasting sugar, lipids and thyroid if many lesions appear.",
+  "adviceText": "Harmless and often clears on its own within 2 years. Avoid repeated trauma to the area. Check fasting sugar, lipids and thyroid if many lesions appear.",
+  "fuDays": "42",
+  "source": "wolverton-2026-10",
+  "starter": true,
+  "ref": "Wolverton 4e ch 45, 48",
+  "rx": [
+    {
+      "drug": "Inj. Triamcinolone acetonide 10 mg/ml",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "Diluted to 2.5–5 mg/ml",
+      "route": "Intralesional",
+      "freq": "Every 4–6 weeks",
+      "timing": "",
+      "dur": "2–3 sessions",
+      "instr": "Into the active border, in clinic"
+    },
+    {
+      "drug": "Cream Clobetasol 0.05%",
+      "generic": "",
+      "brand": "Viclob",
+      "brandId": "p-kivi-viclob",
+      "cost": "146.25",
+      "dose": "Thin layer",
+      "route": "Topical",
+      "freq": "HS",
+      "timing": "Night",
+      "dur": "4 weeks",
+      "instr": "Under cling-film occlusion on the ring edge; not on face"
+    },
+    {
+      "drug": "Ointment Tacrolimus 0.1%",
+      "generic": "",
+      "brand": "Kivitro 0.03 / 0.1",
+      "brandId": "p-kivi-kivitro-0-03-0-1",
+      "cost": "310",
+      "dose": "Thin layer",
+      "route": "Topical",
+      "freq": "BD",
+      "timing": "",
+      "dur": "8–12 weeks",
+      "instr": "Maintenance / face"
+    }
+  ],
+  "updatedAt": 1791097530255,
+  "prevUpdatedAt": 1791095614971
+}

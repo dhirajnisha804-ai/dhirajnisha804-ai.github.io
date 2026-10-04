@@ -1,0 +1,28 @@
+{
+  "advice": "Phototherapy (NB-UVB) 2-3 times a week if widespread. Avoid friction and injury on skin (Koebner). Repigmentation is slow; review every 2-3 months. Check thyroid function.",
+  "group": "Pigmentary disorders",
+  "name": "Vitiligo",
+  "rx": [
+    {
+      "drug": "Tab. Dexamethasone 2.5 mg",
+      "sig": "Oral mini-pulse: 1 tab on 2 consecutive days per week (only for active disease)"
+    },
+    {
+      "drug": "Cream Mometasone furoate 0.1%",
+      "freq": "OD",
+      "instr": "Apply once daily on body patches, 2 weeks on / 1 week off"
+    },
+    {
+      "drug": "Ointment Tacrolimus 0.1%",
+      "freq": "BD",
+      "instr": "Apply twice daily on face, neck and genital patches"
+    },
+    {
+      "drug": "Sunscreen SPF 30+",
+      "sig": "Apply on exposed patches"
+    }
+  ],
+  "starter": true,
+  "updatedAt": 1791097612453,
+  "prevUpdatedAt": 1791097530255
+}

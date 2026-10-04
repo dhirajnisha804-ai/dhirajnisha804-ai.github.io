@@ -1,0 +1,68 @@
+{
+  "id": "t-acute-paronychia",
+  "name": "Acute paronychia",
+  "dx": "Acute paronychia",
+  "group": "Bacterial infections",
+  "advice": "Warm water soaks 3–4 times a day help pus drain. Come back the same day if pus collects under the skin — it needs a small drainage cut. Avoid nail biting, finger sucking and cutting the cuticle.",
+  "adviceText": "Warm water soaks 3–4 times a day help pus drain. Come back the same day if pus collects under the skin — it needs a small drainage cut. Avoid nail biting, finger sucking and cutting the cuticle.",
+  "fuDays": "5",
+  "source": "wolverton-2026-10",
+  "starter": true,
+  "ref": "Wolverton 4e ch 9, 41",
+  "rx": [
+    {
+      "drug": "Cap. Cephalexin 500 mg",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 cap",
+      "route": "Oral",
+      "freq": "QID",
+      "timing": "",
+      "dur": "7 days",
+      "instr": "If spreading redness / not settling with soaks; amoxicillin-clavulanate 625 mg TDS if finger-sucking (oral flora)"
+    },
+    {
+      "drug": "Tab. Paracetamol 650 mg",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab",
+      "route": "Oral",
+      "freq": "SOS",
+      "timing": "After food",
+      "dur": "",
+      "instr": "For pain"
+    },
+    {
+      "drug": "Warm water / saline soaks",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "15 minutes",
+      "route": "Topical",
+      "freq": "QID",
+      "timing": "",
+      "dur": "5–7 days",
+      "instr": ""
+    },
+    {
+      "drug": "Cream Fusidic acid 2%",
+      "generic": "",
+      "brand": "FusiRose cream / lotion",
+      "brandId": "p-galcare-fusirose-cream-lotion",
+      "cost": "",
+      "dose": "Thin layer",
+      "route": "Topical",
+      "freq": "TDS",
+      "timing": "",
+      "dur": "7 days",
+      "instr": "Around the nail fold after soaks"
+    }
+  ],
+  "updatedAt": 1791097530255,
+  "prevUpdatedAt": 1791095614971
+}

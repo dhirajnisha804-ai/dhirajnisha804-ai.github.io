@@ -1,0 +1,19 @@
+{
+  "advice": "Treat all affected family members. Do not share combs, pillows, scarves. Wash bedding in hot water.",
+  "group": "Parasitic infestations",
+  "name": "Pediculosis capitis",
+  "rx": [
+    {
+      "drug": "Permethrin 1% lotion",
+      "sig": "Apply on dry hair and scalp, wash after 10 minutes; repeat on day 9"
+    },
+    {
+      "drug": "Fine-tooth nit comb",
+      "dur": "2 weeks",
+      "instr": "Comb wet hair daily"
+    }
+  ],
+  "starter": true,
+  "updatedAt": 1791097612453,
+  "prevUpdatedAt": 1790929700000
+}

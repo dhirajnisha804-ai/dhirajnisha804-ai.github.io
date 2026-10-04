@@ -1,0 +1,39 @@
+{
+  "advice": "Fluctuant buboes should be aspirated through healthy skin (not incised). Test for HIV and syphilis; treat partner. Return weekly.",
+  "adviceText": "Fluctuant buboes should be aspirated through healthy skin (not incised). Test for HIV and syphilis; treat partner. Return weekly.",
+  "dx": "Inguinal bubo — NACO Kit 7 (black)",
+  "fuDays": "7",
+  "group": "STI (Venereology)",
+  "name": "Inguinal bubo — NACO Kit 7 (black)",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 cap",
+      "drug": "Cap. Doxycycline 100 mg",
+      "dur": "21 days",
+      "freq": "BD",
+      "generic": "",
+      "instr": "",
+      "route": "Oral",
+      "timing": "After food"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1",
+      "drug": "Tab. Azithromycin 1 g",
+      "dur": "3 weeks",
+      "freq": "Weekly",
+      "generic": "",
+      "instr": "",
+      "route": "Oral",
+      "timing": "After food"
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791035262768
+}

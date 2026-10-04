@@ -1,0 +1,53 @@
+{
+  "advice": "Do not squeeze boils. Use separate towels and wash clothes in hot water. Family members with boils should also be treated. Check blood sugar.",
+  "adviceText": "Do not squeeze boils. Use separate towels and wash clothes in hot water. Family members with boils should also be treated. Check blood sugar.",
+  "dx": "Recurrent furunculosis — decolonisation",
+  "fuDays": "28",
+  "group": "Bacterial infections",
+  "name": "Recurrent furunculosis — decolonisation",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 cap",
+      "drug": "Cap. Cephalexin 500 mg",
+      "dur": "7 days",
+      "freq": "QID",
+      "generic": "",
+      "instr": "For active boils (or Cloxacillin 500 mg QID)",
+      "route": "Oral",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "Small amount",
+      "drug": "Ointment Mupirocin 2%",
+      "dur": "5 days",
+      "freq": "BD",
+      "generic": "",
+      "instr": "Inside both nostrils; repeat monthly × 3",
+      "route": "Topical",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Chlorhexidine 4% body wash",
+      "dur": "2 weeks",
+      "freq": "OD",
+      "generic": "",
+      "instr": "Then twice weekly",
+      "route": "Topical",
+      "timing": ""
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791097530255,
+  "prevUpdatedAt": 1791035262768
+}

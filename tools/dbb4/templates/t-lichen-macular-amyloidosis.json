@@ -1,0 +1,68 @@
+{
+  "id": "t-lichen-macular-amyloidosis",
+  "name": "Lichen / macular amyloidosis",
+  "dx": "Lichen / macular amyloidosis",
+  "group": "Other dermatoses",
+  "advice": "Stop rubbing with nylon scrubbers, loofah or towels — friction causes this. Itch control is the key. Improvement is slow over months; pigment may persist.",
+  "adviceText": "Stop rubbing with nylon scrubbers, loofah or towels — friction causes this. Itch control is the key. Improvement is slow over months; pigment may persist.",
+  "fuDays": "42",
+  "source": "wolverton-2026-10",
+  "starter": true,
+  "ref": "Wolverton 4e ch 45, 49, 22",
+  "rx": [
+    {
+      "drug": "Cap. Acitretin 25 mg",
+      "generic": "",
+      "brand": "Acipsor 10 / 25",
+      "brandId": "p-kivi-acipsor-10-25",
+      "cost": "664.69",
+      "dose": "0.3–0.5 mg/kg/day",
+      "route": "Oral",
+      "freq": "OD",
+      "timing": "After food",
+      "dur": "3 months",
+      "instr": "Severe lichen amyloidosis only; LFT/lipids; avoid pregnancy for 3 years after"
+    },
+    {
+      "drug": "Tab. Hydroxyzine 25 mg",
+      "generic": "",
+      "brand": "Prutrip 10 / 25",
+      "brandId": "p-kivi-prutrip-10-25",
+      "cost": "47.38",
+      "dose": "1 tab",
+      "route": "Oral",
+      "freq": "HS",
+      "timing": "Night",
+      "dur": "4 weeks",
+      "instr": "For itch; causes drowsiness"
+    },
+    {
+      "drug": "Ointment Clobetasol 0.05% + Salicylic acid 6%",
+      "generic": "",
+      "brand": "Viclob-SF",
+      "brandId": "p-kivi-viclob-sf",
+      "cost": "",
+      "dose": "Thin layer",
+      "route": "Topical",
+      "freq": "HS",
+      "timing": "Night",
+      "dur": "4–6 weeks",
+      "instr": "Lichen amyloidosis papules, under occlusion; not on face"
+    },
+    {
+      "drug": "Ointment Tacrolimus 0.1%",
+      "generic": "",
+      "brand": "Kivitro 0.03 / 0.1",
+      "brandId": "p-kivi-kivitro-0-03-0-1",
+      "cost": "310",
+      "dose": "Thin layer",
+      "route": "Topical",
+      "freq": "BD",
+      "timing": "",
+      "dur": "8–12 weeks",
+      "instr": "Macular amyloidosis / maintenance"
+    }
+  ],
+  "updatedAt": 1791097530255,
+  "prevUpdatedAt": 1791095614971
+}

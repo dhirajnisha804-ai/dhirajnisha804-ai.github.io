@@ -1,0 +1,53 @@
+{
+  "advice": "Stop the suspected drug. Come back immediately for fever, face swelling, blisters, mouth sores or yellow eyes (possible DRESS/SJS). Baseline CBC with eosinophils and LFT.",
+  "adviceText": "Stop the suspected drug. Come back immediately for fever, face swelling, blisters, mouth sores or yellow eyes (possible DRESS/SJS). Baseline CBC with eosinophils and LFT.",
+  "dx": "Maculopapular drug eruption",
+  "fuDays": "7",
+  "group": "Drug reactions",
+  "name": "Maculopapular drug eruption",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab",
+      "drug": "Tab. Fexofenadine 180 mg",
+      "dur": "1 week",
+      "freq": "OD",
+      "generic": "",
+      "instr": "",
+      "route": "Oral",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "Thin layer",
+      "drug": "Cream Mometasone 0.1%",
+      "dur": "1 week",
+      "freq": "BD",
+      "generic": "",
+      "instr": "",
+      "route": "Topical",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Calamine lotion",
+      "dur": "1 week",
+      "freq": "TDS",
+      "generic": "",
+      "instr": "",
+      "route": "Topical",
+      "timing": ""
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791097530255,
+  "prevUpdatedAt": 1791035262768
+}

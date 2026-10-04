@@ -1,0 +1,67 @@
+{
+  "id": "t-cutaneous-lupus-sle-skin-care",
+  "name": "Cutaneous lupus / SLE — skin care",
+  "dx": "Cutaneous lupus / SLE — skin care",
+  "group": "Connective tissue disorders",
+  "advice": "Strict sun protection all year (also from tube lights/windows). Stop smoking — it reduces hydroxychloroquine benefit. Tests: CBC, ANA, anti-dsDNA, anti-Ro, C3/C4, urine routine, creatinine. Eye examination at baseline and yearly after 5 years of hydroxychloroquine.",
+  "adviceText": "Strict sun protection all year (also from tube lights/windows). Stop smoking — it reduces hydroxychloroquine benefit. Tests: CBC, ANA, anti-dsDNA, anti-Ro, C3/C4, urine routine, creatinine. Eye examination at baseline and yearly after 5 years of hydroxychloroquine.",
+  "fuDays": "42",
+  "source": "wolverton-2026-10",
+  "starter": true,
+  "ref": "Wolverton 4e ch 21, 45, 48, 50; EULAR SLE 2023",
+  "rx": [
+    {
+      "drug": "Tab. Hydroxychloroquine 200 mg",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "≤5 mg/kg real body weight",
+      "route": "Oral",
+      "freq": "BD",
+      "timing": "After food",
+      "dur": "Long-term",
+      "instr": "Usually 200 mg BD (once daily if <60 kg)"
+    },
+    {
+      "drug": "Tinted sunscreen SPF 50 (iron oxide)",
+      "generic": "",
+      "brand": "Solasafe Tinted sunscreen – Ivory",
+      "brandId": "p-regaliz-solasafe-tinted-ivory",
+      "cost": "599",
+      "dose": "",
+      "route": "Topical",
+      "freq": "OD",
+      "timing": "Morning",
+      "dur": "Ongoing",
+      "instr": "Reapply every 2–3 hours"
+    },
+    {
+      "drug": "Cream Mometasone 0.1%",
+      "generic": "",
+      "brand": "Vimet",
+      "brandId": "p-kivi-vimet",
+      "cost": "106.88",
+      "dose": "Thin layer",
+      "route": "Topical",
+      "freq": "OD",
+      "timing": "",
+      "dur": "4 weeks",
+      "instr": "Body lesions"
+    },
+    {
+      "drug": "Ointment Tacrolimus 0.1%",
+      "generic": "",
+      "brand": "Kivitro 0.03 / 0.1",
+      "brandId": "p-kivi-kivitro-0-03-0-1",
+      "cost": "310",
+      "dose": "Thin layer",
+      "route": "Topical",
+      "freq": "BD",
+      "timing": "",
+      "dur": "Ongoing",
+      "instr": "Face"
+    }
+  ],
+  "updatedAt": 1791095614971
+}

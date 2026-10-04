@@ -1,0 +1,32 @@
+{
+  "advice": "Short lukewarm baths with mild syndet soap. Cotton clothes, avoid wool. Keep nails short. Avoid known triggers. Emollient is the main long-term treatment.",
+  "group": "Eczema & dermatitis",
+  "name": "Atopic dermatitis",
+  "rx": [
+    {
+      "drug": "Tab. Hydroxyzine 10 mg",
+      "freq": "HS",
+      "dose": "1 tab",
+      "instr": "For itching (weight-based in children)"
+    },
+    {
+      "drug": "Emollient cream (ceramide / liquid paraffin)",
+      "freq": "BD",
+      "instr": "Apply generously twice daily on whole body, within 3 minutes of bath"
+    },
+    {
+      "drug": "Cream Mometasone furoate 0.1%",
+      "dur": "2 weeks",
+      "freq": "OD",
+      "instr": "Apply once daily on body lesions, then twice a week"
+    },
+    {
+      "drug": "Ointment Tacrolimus 0.03%",
+      "freq": "BD",
+      "instr": "Apply twice daily on face and folds (0.1% for adults)"
+    }
+  ],
+  "starter": true,
+  "updatedAt": 1791097612453,
+  "prevUpdatedAt": 1791097530255
+}

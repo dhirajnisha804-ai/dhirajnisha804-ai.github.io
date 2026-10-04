@@ -1,0 +1,52 @@
+{
+  "advice": "Keep the leg elevated and rest. Mark the edge of redness — come back urgently if it spreads, blisters, turns dark, or fever persists (may need injections / admission). Recurrent cellulitis needs long-term prevention.",
+  "adviceText": "Keep the leg elevated and rest. Mark the edge of redness — come back urgently if it spreads, blisters, turns dark, or fever persists (may need injections / admission). Recurrent cellulitis needs long-term prevention.",
+  "dx": "Cellulitis / erysipelas",
+  "fuDays": "5",
+  "group": "Bacterial infections",
+  "name": "Cellulitis / erysipelas",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab",
+      "drug": "Tab. Amoxicillin + Clavulanic acid 625 mg",
+      "dur": "7–10 days",
+      "freq": "TDS",
+      "generic": "",
+      "instr": "Penicillin allergy: Clindamycin 300 mg QID",
+      "route": "Oral",
+      "timing": "After food"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab",
+      "drug": "Tab. Paracetamol 650 mg",
+      "dur": "",
+      "freq": "SOS",
+      "generic": "",
+      "instr": "Fever / pain",
+      "route": "Oral",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "Thin layer",
+      "drug": "Cream Luliconazole 1%",
+      "dur": "4 weeks",
+      "freq": "OD",
+      "generic": "",
+      "instr": "Treat toe-web fungal infection (portal of entry)",
+      "route": "Topical",
+      "timing": ""
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791035262768
+}

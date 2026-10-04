@@ -1,0 +1,66 @@
+{
+  "advice": "Keep room warm; watch for hypothermia, dehydration and infection. Stop all non-essential drugs. Definitive treatment depends on the cause (psoriasis, eczema, drug, lymphoma) — biopsy as advised.",
+  "adviceText": "Keep room warm; watch for hypothermia, dehydration and infection. Stop all non-essential drugs. Definitive treatment depends on the cause (psoriasis, eczema, drug, lymphoma) — biopsy as advised.",
+  "dx": "Erythroderma — initial supportive care (inpatient)",
+  "fuDays": "7",
+  "group": "Papulosquamous disorders",
+  "name": "Erythroderma — initial supportive care (inpatient)",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab",
+      "drug": "Tab. Hydroxyzine 25 mg",
+      "dur": "2 weeks",
+      "freq": "HS",
+      "generic": "",
+      "instr": "Itch",
+      "route": "Oral",
+      "timing": "Night"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Liquid paraffin / white soft paraffin",
+      "dur": "Ongoing",
+      "freq": "QID",
+      "generic": "",
+      "instr": "Whole body",
+      "route": "Topical",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "Thin layer",
+      "drug": "Cream Hydrocortisone 1% / Mometasone 0.1% (diluted)",
+      "dur": "2 weeks",
+      "freq": "BD",
+      "generic": "",
+      "instr": "Low–mid potency; avoid potent steroid over large area",
+      "route": "Topical",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "High-protein diet + fluids",
+      "dur": "",
+      "freq": "",
+      "generic": "",
+      "instr": "Monitor temp, intake–output, weight, albumin, electrolytes",
+      "route": "Other",
+      "timing": ""
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791097530255,
+  "prevUpdatedAt": 1791035262768
+}

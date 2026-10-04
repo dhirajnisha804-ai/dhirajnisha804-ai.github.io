@@ -1,0 +1,54 @@
+{
+  "advice": "Usually improves over months to a few years. Methotrexate is an alternative. Avoid strong sun; report eye irritation or lip cracking.",
+  "adviceText": "Usually improves over months to a few years. Methotrexate is an alternative. Avoid strong sun; report eye irritation or lip cracking.",
+  "dx": "Pityriasis rubra pilaris",
+  "fuDays": "28",
+  "group": "Papulosquamous disorders",
+  "name": "Pityriasis rubra pilaris",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "0.5–0.75 mg/kg/day",
+      "drug": "Cap. Acitretin 25 mg",
+      "dur": "4–6 months",
+      "freq": "OD",
+      "generic": "",
+      "instr": "Women: avoid pregnancy during and for 3 years after stopping acitretin (two contraceptive methods); avoid alcohol during and 2 months after. Check fasting lipids, LFT at baseline and every 4–8 weeks",
+      "route": "Oral",
+      "timing": "After food"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Urea 10% + Lactic acid cream",
+      "dur": "Ongoing",
+      "freq": "BD",
+      "generic": "",
+      "instr": "Whole body",
+      "route": "Topical",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Salicylic acid 6% ointment",
+      "dur": "Ongoing",
+      "freq": "HS",
+      "generic": "",
+      "instr": "Palms and soles",
+      "route": "Topical",
+      "timing": "Night"
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791095614971,
+  "prevUpdatedAt": 1791035262768,
+  "wcheck": "Wolverton 4e (2020)"
+}

@@ -1,0 +1,52 @@
+{
+  "advice": "Stop any new painkiller or antibiotic taken recently. Go to emergency immediately for lip/tongue swelling, breathing difficulty, or dizziness.",
+  "adviceText": "Stop any new painkiller or antibiotic taken recently. Go to emergency immediately for lip/tongue swelling, breathing difficulty, or dizziness.",
+  "dx": "Acute urticaria",
+  "fuDays": "14",
+  "group": "Urticaria",
+  "name": "Acute urticaria",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab",
+      "drug": "Tab. Levocetirizine 5 mg",
+      "dur": "2 weeks",
+      "freq": "BD",
+      "generic": "",
+      "instr": "May increase up to 4 times daily",
+      "route": "Oral",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "0.5 mg/kg/day",
+      "drug": "Tab. Prednisolone 20 mg",
+      "dur": "3–5 days",
+      "freq": "OD",
+      "generic": "",
+      "instr": "Only if severe / angioedema",
+      "route": "Oral",
+      "timing": "After food, morning"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Calamine lotion",
+      "dur": "",
+      "freq": "SOS",
+      "generic": "",
+      "instr": "",
+      "route": "Topical",
+      "timing": ""
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791035262768
+}

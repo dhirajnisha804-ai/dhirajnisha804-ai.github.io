@@ -1,0 +1,33 @@
+{
+  "advice": "Review drug history (DPP-4 inhibitors). Drain tense blisters with sterile needle, keep roof intact. Monitor sugar and BP. If oral prednisolone is used: add calcium + vitamin D, PPI if GI risk; check sugar and BP regularly. Doxycycline and nicotinamide: avoid antacids/iron within 2 hours of doxycycline.",
+  "group": "Immunobullous disorders",
+  "name": "Bullous pemphigoid",
+  "rx": [
+    {
+      "drug": "Cap. Doxycycline 100 mg",
+      "freq": "BD",
+      "dose": "1 cap",
+      "instr": ""
+    },
+    {
+      "drug": "Tab. Nicotinamide 500 mg",
+      "freq": "TDS",
+      "dose": "1 tab",
+      "instr": ""
+    },
+    {
+      "drug": "Tab. Prednisolone",
+      "sig": "0.5 mg/kg/day if extensive"
+    },
+    {
+      "drug": "Cream Clobetasol propionate 0.05%",
+      "freq": "OD",
+      "instr": "Apply on whole body (sparing face) once daily; taper over months"
+    }
+  ],
+  "starter": true,
+  "updatedAt": 1791097612453,
+  "adviceText": "Review drug history (DPP-4 inhibitors). Drain tense blisters with sterile needle, keep roof intact. Monitor sugar and BP. If oral prednisolone is used: add calcium + vitamin D, PPI if GI risk; check sugar and BP regularly. Doxycycline and nicotinamide: avoid antacids/iron within 2 hours of doxycycline.",
+  "prevUpdatedAt": 1791097530255,
+  "wcheck": "Wolverton 4e (2020)"
+}

@@ -1,0 +1,28 @@
+{
+  "advice": "Condition tends to recur; continue shampoo once weekly for maintenance. Avoid heavy hair oils.",
+  "group": "Eczema & dermatitis",
+  "name": "Seborrheic dermatitis",
+  "rx": [
+    {
+      "drug": "Ketoconazole 2% shampoo",
+      "dur": "4 weeks",
+      "freq": "Weekly",
+      "instr": "Apply on scalp, leave 5 minutes; 3 times a week then once a week"
+    },
+    {
+      "drug": "Cream Ketoconazole 2%",
+      "dur": "2–4 weeks",
+      "freq": "BD",
+      "instr": "Apply on face lesions twice daily"
+    },
+    {
+      "drug": "Cream Hydrocortisone 1%",
+      "dur": "5–7 days",
+      "freq": "OD",
+      "instr": "Apply on red patches once daily only"
+    }
+  ],
+  "starter": true,
+  "updatedAt": 1791097612453,
+  "prevUpdatedAt": 1790929700000
+}

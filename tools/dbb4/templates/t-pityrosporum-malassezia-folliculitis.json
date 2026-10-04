@@ -1,0 +1,53 @@
+{
+  "advice": "Bathe after sweating; avoid oily lotions on the trunk. Recurs in summer — use the shampoo as body wash weekly for prevention.",
+  "adviceText": "Bathe after sweating; avoid oily lotions on the trunk. Recurs in summer — use the shampoo as body wash weekly for prevention.",
+  "dx": "Pityrosporum (Malassezia) folliculitis",
+  "fuDays": "28",
+  "group": "Fungal infections",
+  "name": "Pityrosporum (Malassezia) folliculitis",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 cap",
+      "drug": "Cap. Itraconazole 200 mg",
+      "dur": "7 days",
+      "freq": "OD",
+      "generic": "",
+      "instr": "Or Fluconazole 300 mg weekly × 3 weeks",
+      "route": "Oral",
+      "timing": "After food"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Ketoconazole 2% shampoo",
+      "dur": "4 weeks",
+      "freq": "OD",
+      "generic": "",
+      "instr": "Use as body wash on chest/back, leave 5 minutes",
+      "route": "Topical",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Lotion Ketoconazole 2% / Clotrimazole",
+      "dur": "4 weeks",
+      "freq": "HS",
+      "generic": "",
+      "instr": "",
+      "route": "Topical",
+      "timing": ""
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791097530255,
+  "prevUpdatedAt": 1791035262768
+}

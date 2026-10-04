@@ -1,0 +1,66 @@
+{
+  "advice": "Rest the affected limb; splint for neuritis. Record nerve function (VMT/ST) at each visit. Screen sugar, BP and treat worms before steroids.",
+  "adviceText": "Rest the affected limb; splint for neuritis. Record nerve function (VMT/ST) at each visit. Screen sugar, BP and treat worms before steroids.",
+  "dx": "Leprosy type 1 (reversal) reaction",
+  "fuDays": "14",
+  "group": "Leprosy",
+  "name": "Leprosy type 1 (reversal) reaction",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "40 mg/day (≈0.5–1 mg/kg)",
+      "drug": "Tab. Prednisolone 40 mg",
+      "dur": "20 weeks (tapering)",
+      "freq": "OD",
+      "generic": "",
+      "instr": "Typical WHO taper: 40→30→20→15→10→5 mg, each step 2–4 weeks",
+      "route": "Oral",
+      "timing": "After food, morning"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab",
+      "drug": "Tab. Paracetamol 650 mg / NSAID",
+      "dur": "1 week",
+      "freq": "TDS",
+      "generic": "",
+      "instr": "Pain",
+      "route": "Oral",
+      "timing": "After food"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab",
+      "drug": "Tab. Calcium 500 mg + Vit D3",
+      "dur": "During steroids",
+      "freq": "OD",
+      "generic": "",
+      "instr": "",
+      "route": "Oral",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Continue MDT",
+      "dur": "",
+      "freq": "",
+      "generic": "",
+      "instr": "Do not stop MDT",
+      "route": "Oral",
+      "timing": ""
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791097530255,
+  "prevUpdatedAt": 1791035262768
+}

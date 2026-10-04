@@ -1,0 +1,32 @@
+{
+  "advice": "Strict sun protection, including indoor light near windows. Use umbrella and cap. Do not use steroid creams on face on your own. Melasma tends to recur.",
+  "group": "Pigmentary disorders",
+  "name": "Melasma",
+  "rx": [
+    {
+      "drug": "Tab. Tranexamic acid 250 mg",
+      "dur": "3 months",
+      "freq": "BD",
+      "dose": "1 tab",
+      "instr": "(rule out history of clotting, smoking, OCP use)"
+    },
+    {
+      "drug": "Cream Hydroquinone 2% + Tretinoin 0.025% + Fluocinolone 0.01%",
+      "dur": "8 weeks",
+      "freq": "HS",
+      "instr": "Apply thin layer on patches at night max, then stop"
+    },
+    {
+      "drug": "Broad-spectrum sunscreen SPF 50 (tinted preferred)",
+      "sig": "Apply every morning and reapply every 3 hours"
+    },
+    {
+      "drug": "Cream Azelaic acid 20%",
+      "freq": "BD",
+      "instr": "Maintenance: apply twice daily after stopping triple combination"
+    }
+  ],
+  "starter": true,
+  "updatedAt": 1791097612453,
+  "prevUpdatedAt": 1791097530255
+}

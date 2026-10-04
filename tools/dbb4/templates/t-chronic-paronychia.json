@@ -1,0 +1,53 @@
+{
+  "advice": "Keep hands dry — use cotton-lined rubber gloves for wet work. Do not push back or cut the cuticle. Healing takes months.",
+  "adviceText": "Keep hands dry — use cotton-lined rubber gloves for wet work. Do not push back or cut the cuticle. Healing takes months.",
+  "dx": "Chronic paronychia",
+  "fuDays": "28",
+  "group": "Fungal infections",
+  "name": "Chronic paronychia",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 cap",
+      "drug": "Cap. Itraconazole 200 mg",
+      "dur": "4 weeks",
+      "freq": "OD",
+      "generic": "",
+      "instr": "If KOH/culture shows Candida or nail involved",
+      "route": "Oral",
+      "timing": "After food"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "Thin layer",
+      "drug": "Cream Mometasone 0.1%",
+      "dur": "3 weeks",
+      "freq": "BD",
+      "generic": "",
+      "instr": "To nail folds",
+      "route": "Topical",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "Thin layer",
+      "drug": "Cream Clotrimazole 1% / Luliconazole 1%",
+      "dur": "6 weeks",
+      "freq": "BD",
+      "generic": "",
+      "instr": "To nail folds",
+      "route": "Topical",
+      "timing": ""
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791097530255,
+  "prevUpdatedAt": 1791035262768
+}

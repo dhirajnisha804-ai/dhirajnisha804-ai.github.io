@@ -1,0 +1,54 @@
+{
+  "id": "t-pityriasis-lichenoides-chronica",
+  "name": "Pityriasis lichenoides chronica",
+  "dx": "Pityriasis lichenoides chronica",
+  "group": "Papulosquamous disorders",
+  "advice": "Harmless but relapses over months to years. Sunlight / narrowband UVB phototherapy helps widespread disease. Biopsy if lesions ulcerate or look unusual.",
+  "adviceText": "Harmless but relapses over months to years. Sunlight / narrowband UVB phototherapy helps widespread disease. Biopsy if lesions ulcerate or look unusual.",
+  "fuDays": "42",
+  "source": "wolverton-2026-10",
+  "starter": true,
+  "ref": "Wolverton 4e ch 9, 23",
+  "rx": [
+    {
+      "drug": "Cap. Doxycycline 100 mg",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 cap",
+      "route": "Oral",
+      "freq": "BD",
+      "timing": "After food",
+      "dur": "8–12 weeks",
+      "instr": "Children: erythromycin 30–50 mg/kg/day; minocycline 100 mg OD alternative"
+    },
+    {
+      "drug": "Cream Mometasone 0.1%",
+      "generic": "",
+      "brand": "Vimet",
+      "brandId": "p-kivi-vimet",
+      "cost": "106.88",
+      "dose": "Thin layer",
+      "route": "Topical",
+      "freq": "OD",
+      "timing": "",
+      "dur": "4 weeks",
+      "instr": "Itchy / inflamed lesions"
+    },
+    {
+      "drug": "Light liquid paraffin + white soft paraffin lotion",
+      "generic": "",
+      "brand": "Celidac-LP",
+      "brandId": "p-indchemie-celidac-lp",
+      "cost": "",
+      "dose": "",
+      "route": "Topical",
+      "freq": "BD",
+      "timing": "",
+      "dur": "Ongoing",
+      "instr": ""
+    }
+  ],
+  "updatedAt": 1791095614971
+}

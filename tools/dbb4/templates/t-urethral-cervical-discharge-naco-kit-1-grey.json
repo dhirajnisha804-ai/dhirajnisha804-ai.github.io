@@ -1,0 +1,17 @@
+{
+  "advice": "Treat partner. Avoid sex for 7 days after treatment of both. Test for HIV and syphilis. Use condoms.",
+  "group": "STI (Venereology)",
+  "name": "Urethral / cervical discharge (NACO kit 1, grey)",
+  "rx": [
+    {
+      "drug": "Tab. Azithromycin 1 g",
+      "sig": "Single dose, directly observed"
+    },
+    {
+      "drug": "Tab. Cefixime 400 mg",
+      "sig": "Single dose, directly observed"
+    }
+  ],
+  "starter": true,
+  "updatedAt": 1790929700000
+}

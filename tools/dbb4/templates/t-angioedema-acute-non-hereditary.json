@@ -1,0 +1,54 @@
+{
+  "id": "t-angioedema-acute-non-hereditary",
+  "name": "Angioedema (acute, non-hereditary)",
+  "dx": "Angioedema (acute, non-hereditary)",
+  "group": "Urticaria",
+  "advice": "EMERGENCY if tongue/throat swelling, hoarse voice, breathing or swallowing difficulty, or faintness — go to casualty (adrenaline). Stop ACE-inhibitors (e.g. enalapril, ramipril) and avoid painkillers like aspirin/ibuprofen. If swelling recurs without hives, test C4 and C1-esterase inhibitor.",
+  "adviceText": "EMERGENCY if tongue/throat swelling, hoarse voice, breathing or swallowing difficulty, or faintness — go to casualty (adrenaline). Stop ACE-inhibitors (e.g. enalapril, ramipril) and avoid painkillers like aspirin/ibuprofen. If swelling recurs without hives, test C4 and C1-esterase inhibitor.",
+  "fuDays": "7",
+  "source": "wolverton-2026-10",
+  "starter": true,
+  "ref": "Wolverton 4e ch 13, 32; EAACI/GA²LEN/WAO 2022",
+  "rx": [
+    {
+      "drug": "Tab. Fexofenadine 180 mg",
+      "generic": "",
+      "brand": "Finide",
+      "brandId": "p-indchemie-finide",
+      "cost": "187.03",
+      "dose": "1 tab",
+      "route": "Oral",
+      "freq": "BD",
+      "timing": "",
+      "dur": "1–2 weeks",
+      "instr": "Not effective for ACE-inhibitor angioedema"
+    },
+    {
+      "drug": "Tab. Prednisolone 20 mg",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "40 mg",
+      "route": "Oral",
+      "freq": "OD",
+      "timing": "After food, morning",
+      "dur": "3–5 days",
+      "instr": "Short course, no taper needed"
+    },
+    {
+      "drug": "Inj. Adrenaline 1 mg/ml (1:1000)",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "0.5 ml (0.01 ml/kg in children)",
+      "route": "Injection",
+      "freq": "SOS",
+      "timing": "",
+      "dur": "",
+      "instr": "IM; Anterolateral thigh for airway swelling/anaphylaxis; repeat after 5 min if needed"
+    }
+  ],
+  "updatedAt": 1791095614971
+}

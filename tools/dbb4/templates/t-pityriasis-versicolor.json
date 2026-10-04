@@ -1,0 +1,25 @@
+{
+  "advice": "White patches take weeks to months to regain colour after cure. Repeat the shampoo once a month in summer to prevent recurrence.",
+  "group": "Fungal infections",
+  "name": "Pityriasis versicolor",
+  "rx": [
+    {
+      "drug": "Cap. Fluconazole 400 mg",
+      "sig": "Single dose (extensive disease)"
+    },
+    {
+      "drug": "Ketoconazole 2% shampoo",
+      "dur": "1–2 weeks",
+      "instr": "Apply over whole trunk, leave 5-10 minutes, wash off; daily"
+    },
+    {
+      "drug": "Cream Clotrimazole 1%",
+      "dur": "2 weeks",
+      "freq": "BD",
+      "instr": "Apply twice daily"
+    }
+  ],
+  "starter": true,
+  "updatedAt": 1791097612453,
+  "prevUpdatedAt": 1791097530255
+}

@@ -1,0 +1,66 @@
+{
+  "advice": "Bathe with lukewarm water; avoid soap on patches. Recurrences are common in winter — keep moisturising.",
+  "adviceText": "Bathe with lukewarm water; avoid soap on patches. Recurrences are common in winter — keep moisturising.",
+  "dx": "Nummular (discoid) eczema",
+  "fuDays": "21",
+  "group": "Eczema & dermatitis",
+  "name": "Nummular (discoid) eczema",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab",
+      "drug": "Tab. Levocetirizine 5 mg",
+      "dur": "2 weeks",
+      "freq": "HS",
+      "generic": "",
+      "instr": "",
+      "route": "Oral",
+      "timing": "Night"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "Thin layer",
+      "drug": "Cream Betamethasone valerate 0.1% / Clobetasol 0.05%",
+      "dur": "3 weeks",
+      "freq": "BD",
+      "generic": "",
+      "instr": "On patches only; then taper",
+      "route": "Topical",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "Thin layer",
+      "drug": "Cream Fusidic acid 2%",
+      "dur": "1 week",
+      "freq": "BD",
+      "generic": "",
+      "instr": "If oozing / crusted",
+      "route": "Topical",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Emollient (paraffin / ceramide)",
+      "dur": "Ongoing",
+      "freq": "BD",
+      "generic": "",
+      "instr": "Whole body after bath",
+      "route": "Topical",
+      "timing": ""
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791097530255,
+  "prevUpdatedAt": 1791035262768
+}

@@ -1,0 +1,54 @@
+{
+  "id": "t-phrynoderma",
+  "name": "Phrynoderma",
+  "dx": "Phrynoderma",
+  "group": "Other dermatoses",
+  "advice": "Eat vitamin A-rich foods (green leafy vegetables, carrots, papaya, mango, milk, eggs). Report night blindness or dry eyes — needs eye check. High-dose vitamin A is not given in pregnancy (use low daily dose). Check for fat malabsorption and other deficiencies.",
+  "adviceText": "Eat vitamin A-rich foods (green leafy vegetables, carrots, papaya, mango, milk, eggs). Report night blindness or dry eyes — needs eye check. High-dose vitamin A is not given in pregnancy (use low daily dose). Check for fat malabsorption and other deficiencies.",
+  "fuDays": "28",
+  "source": "wolverton-2026-10",
+  "starter": true,
+  "ref": "Wolverton 4e ch 55; WHO vitamin A deficiency protocol",
+  "rx": [
+    {
+      "drug": "Cap. Vitamin A 2,00,000 IU",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 cap (6–12 mo: 1,00,000 IU)",
+      "route": "Oral",
+      "freq": "Stat",
+      "timing": "",
+      "dur": "Day 1, day 2 and day 14",
+      "instr": "Not in pregnancy — use ≤10,000 IU/day instead"
+    },
+    {
+      "drug": "Tab. Vitamin B-complex",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab",
+      "route": "Oral",
+      "freq": "OD",
+      "timing": "After food",
+      "dur": "1 month",
+      "instr": ""
+    },
+    {
+      "drug": "Cream Urea 10% + Glycolic acid 10%",
+      "generic": "",
+      "brand": "Olesoft PPK",
+      "brandId": "p-alkem-olesoft-ppk",
+      "cost": "",
+      "dose": "",
+      "route": "Topical",
+      "freq": "BD",
+      "timing": "",
+      "dur": "6 weeks",
+      "instr": "On rough follicular papules"
+    }
+  ],
+  "updatedAt": 1791095614971
+}

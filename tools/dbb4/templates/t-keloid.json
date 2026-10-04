@@ -1,0 +1,39 @@
+{
+  "advice": "Avoid ear piercing, tattoos and elective surgery. Possible side effects of injections: thinning, lightening of skin. Recurrence is common after excision alone.",
+  "adviceText": "Avoid ear piercing, tattoos and elective surgery. Possible side effects of injections: thinning, lightening of skin. Recurrence is common after excision alone.",
+  "dx": "Keloid",
+  "fuDays": "28",
+  "group": "Other dermatoses",
+  "name": "Keloid",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "0.1–0.2 ml per cm",
+      "drug": "Inj. Triamcinolone acetonide 10–40 mg/ml",
+      "dur": "4–6 sessions",
+      "freq": "Every 3–4 weeks",
+      "generic": "",
+      "instr": "Strength by thickness and site",
+      "route": "Intralesional",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "Thin layer",
+      "drug": "Silicone gel",
+      "dur": "3–6 months",
+      "freq": "BD",
+      "generic": "",
+      "instr": "",
+      "route": "Topical",
+      "timing": ""
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791035262768
+}

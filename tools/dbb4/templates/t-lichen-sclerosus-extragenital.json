@@ -1,0 +1,54 @@
+{
+  "id": "t-lichen-sclerosus-extragenital",
+  "name": "Lichen sclerosus (extragenital)",
+  "dx": "Lichen sclerosus (extragenital)",
+  "group": "Connective tissue disorders",
+  "advice": "Extragenital patches are harmless but respond more slowly than genital disease. Avoid friction and tight clothes over patches. Phototherapy is an option for widespread disease; check for genital involvement too.",
+  "adviceText": "Extragenital patches are harmless but respond more slowly than genital disease. Avoid friction and tight clothes over patches. Phototherapy is an option for widespread disease; check for genital involvement too.",
+  "fuDays": "84",
+  "source": "wolverton-2026-10",
+  "starter": true,
+  "ref": "Wolverton 4e ch 45, 48; BAD LS 2018",
+  "rx": [
+    {
+      "drug": "Ointment Clobetasol 0.05%",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "Thin layer",
+      "route": "Topical",
+      "freq": "OD",
+      "timing": "Night",
+      "dur": "3 months (taper)",
+      "instr": "Daily 4 weeks, alternate days 4 weeks, twice weekly 4 weeks"
+    },
+    {
+      "drug": "Ointment Tacrolimus 0.1%",
+      "generic": "",
+      "brand": "Kivitro 0.03 / 0.1",
+      "brandId": "p-kivi-kivitro-0-03-0-1",
+      "cost": "310",
+      "dose": "Thin layer",
+      "route": "Topical",
+      "freq": "BD",
+      "timing": "",
+      "dur": "3 months",
+      "instr": "Maintenance / thin skin areas"
+    },
+    {
+      "drug": "Light liquid paraffin + white soft paraffin lotion",
+      "generic": "",
+      "brand": "Celidac-LP",
+      "brandId": "p-indchemie-celidac-lp",
+      "cost": "",
+      "dose": "",
+      "route": "Topical",
+      "freq": "BD",
+      "timing": "",
+      "dur": "Ongoing",
+      "instr": ""
+    }
+  ],
+  "updatedAt": 1791095614971
+}

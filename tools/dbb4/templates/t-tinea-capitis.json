@@ -1,0 +1,24 @@
+{
+  "advice": "Do not share combs, caps or pillows. Examine and treat siblings and family. Child may attend school once treatment has started.",
+  "group": "Fungal infections",
+  "name": "Tinea capitis",
+  "rx": [
+    {
+      "drug": "Tab. Griseofulvin 500 mg",
+      "dur": "6–8 weeks",
+      "instr": "20-25 mg/kg/day after a fatty meal (dose by weight)"
+    },
+    {
+      "drug": "Tab. Terbinafine 250 mg",
+      "dur": "4 weeks",
+      "instr": "Alternative for Trichophyton: weight-based dosing"
+    },
+    {
+      "drug": "Ketoconazole 2% shampoo",
+      "sig": "Apply on scalp, leave 5 minutes, wash; 3 times a week"
+    }
+  ],
+  "starter": true,
+  "updatedAt": 1791097612453,
+  "prevUpdatedAt": 1791097530255
+}

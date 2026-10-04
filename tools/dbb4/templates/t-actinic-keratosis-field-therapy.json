@@ -1,0 +1,54 @@
+{
+  "id": "t-actinic-keratosis-field-therapy",
+  "name": "Actinic keratosis (field therapy)",
+  "dx": "Actinic keratosis (field therapy)",
+  "group": "Other dermatoses",
+  "advice": "Expect redness, crusting and soreness during treatment — this shows it is working; stop and return if very painful. Daily sunscreen and hat. Any thick, tender, bleeding or fast-growing spot needs biopsy (skin cancer).",
+  "adviceText": "Expect redness, crusting and soreness during treatment — this shows it is working; stop and return if very painful. Daily sunscreen and hat. Any thick, tender, bleeding or fast-growing spot needs biopsy (skin cancer).",
+  "fuDays": "28",
+  "source": "wolverton-2026-10",
+  "starter": true,
+  "ref": "Wolverton 4e ch 47, 50; BAD AK 2017",
+  "rx": [
+    {
+      "drug": "Cream 5-Fluorouracil 5%",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "Thin layer",
+      "route": "Topical",
+      "freq": "BD",
+      "timing": "",
+      "dur": "2–4 weeks",
+      "instr": "Face/scalp field; wash hands after"
+    },
+    {
+      "drug": "Cream Imiquimod 5%",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 sachet",
+      "route": "Topical",
+      "freq": "3 times a week",
+      "timing": "Night",
+      "dur": "4 weeks; repeat cycle after 4-week rest",
+      "instr": "Alternative to 5-FU; wash off after 8 hours"
+    },
+    {
+      "drug": "Broad-spectrum sunscreen SPF 50",
+      "generic": "",
+      "brand": "Sunkage",
+      "brandId": "p-galcare-sunkage",
+      "cost": "459.37",
+      "dose": "",
+      "route": "Topical",
+      "freq": "OD",
+      "timing": "Morning",
+      "dur": "Ongoing",
+      "instr": ""
+    }
+  ],
+  "updatedAt": 1791095614971
+}

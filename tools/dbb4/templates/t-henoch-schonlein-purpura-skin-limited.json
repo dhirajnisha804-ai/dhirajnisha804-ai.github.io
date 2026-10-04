@@ -1,0 +1,54 @@
+{
+  "id": "t-henoch-schonlein-purpura-skin-limited",
+  "name": "Henoch–Schönlein purpura (IgA vasculitis) — skin-limited",
+  "dx": "Henoch–Schönlein purpura (IgA vasculitis) — skin-limited",
+  "group": "Other dermatoses",
+  "advice": "Rest with legs raised; spots usually fade in 2–4 weeks. Urine dipstick (blood/protein) and BP weekly for 1 month, then monthly up to 6 months, even if skin clears. Come urgently for severe tummy pain, blood in stool/urine, swelling of face/feet or reduced urine. Tests: CBC, creatinine, urine routine, skin biopsy with DIF (IgA).",
+  "adviceText": "Rest with legs raised; spots usually fade in 2–4 weeks. Urine dipstick (blood/protein) and BP weekly for 1 month, then monthly up to 6 months, even if skin clears. Come urgently for severe tummy pain, blood in stool/urine, swelling of face/feet or reduced urine. Tests: CBC, creatinine, urine routine, skin biopsy with DIF (IgA).",
+  "fuDays": "7",
+  "source": "wolverton-2026-10",
+  "starter": true,
+  "ref": "Wolverton 4e ch 13, 20, 40; EULAR/SHARE 2019",
+  "rx": [
+    {
+      "drug": "Tab. Paracetamol 650 mg",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab (child 15 mg/kg/dose)",
+      "route": "Oral",
+      "freq": "SOS",
+      "timing": "After food",
+      "dur": "",
+      "instr": "For joint pain; avoid NSAIDs if kidney involvement"
+    },
+    {
+      "drug": "Tab. Colchicine 0.5 mg",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab",
+      "route": "Oral",
+      "freq": "BD",
+      "timing": "After food",
+      "dur": "4–6 weeks",
+      "instr": "Adults with persistent / recurrent skin lesions only; stop if diarrhoea"
+    },
+    {
+      "drug": "Crepe bandage / leg elevation",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "route": "Topical",
+      "freq": "OD",
+      "timing": "",
+      "dur": "Until purpura clears",
+      "instr": ""
+    }
+  ],
+  "updatedAt": 1791095614971
+}

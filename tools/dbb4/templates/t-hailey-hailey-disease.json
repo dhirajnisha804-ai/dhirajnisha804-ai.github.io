@@ -1,0 +1,68 @@
+{
+  "id": "t-hailey-hailey-disease",
+  "name": "Hailey–Hailey disease",
+  "dx": "Hailey–Hailey disease",
+  "group": "Other dermatoses",
+  "advice": "Keep folds cool and dry; avoid tight clothes, friction and heavy sweating; lose weight if overweight. Flares are often triggered by infection — treat early. Botulinum toxin, dermabrasion or laser are options for persistent plaques.",
+  "adviceText": "Keep folds cool and dry; avoid tight clothes, friction and heavy sweating; lose weight if overweight. Flares are often triggered by infection — treat early. Botulinum toxin, dermabrasion or laser are options for persistent plaques.",
+  "fuDays": "28",
+  "source": "wolverton-2026-10",
+  "starter": true,
+  "ref": "Wolverton 4e ch 9, 45, 48",
+  "rx": [
+    {
+      "drug": "Cap. Doxycycline 100 mg",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 cap",
+      "route": "Oral",
+      "freq": "BD",
+      "timing": "After food",
+      "dur": "4–8 weeks",
+      "instr": "For flares"
+    },
+    {
+      "drug": "Cream Mometasone 0.1% + Fusidic acid 2%",
+      "generic": "",
+      "brand": "Mosovira F",
+      "brandId": "p-indchemie-mosovira-f",
+      "cost": "",
+      "dose": "Thin layer",
+      "route": "Topical",
+      "freq": "BD",
+      "timing": "",
+      "dur": "2 weeks",
+      "instr": "On eroded fold lesions"
+    },
+    {
+      "drug": "Cream Ketoconazole 2%",
+      "generic": "",
+      "brand": "Myket cream / lotion",
+      "brandId": "p-kivi-myket-cream-lotion",
+      "cost": "132.19",
+      "dose": "Thin layer",
+      "route": "Topical",
+      "freq": "OD",
+      "timing": "",
+      "dur": "2 weeks",
+      "instr": "If candida suspected"
+    },
+    {
+      "drug": "Ointment Tacrolimus 0.1%",
+      "generic": "",
+      "brand": "Kivitro 0.03 / 0.1",
+      "brandId": "p-kivi-kivitro-0-03-0-1",
+      "cost": "310",
+      "dose": "Thin layer",
+      "route": "Topical",
+      "freq": "BD",
+      "timing": "",
+      "dur": "Ongoing",
+      "instr": "Maintenance"
+    }
+  ],
+  "updatedAt": 1791097530255,
+  "prevUpdatedAt": 1791095614971
+}

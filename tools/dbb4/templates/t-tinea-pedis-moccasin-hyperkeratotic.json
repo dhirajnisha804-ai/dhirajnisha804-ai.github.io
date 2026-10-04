@@ -1,0 +1,67 @@
+{
+  "id": "t-tinea-pedis-moccasin-hyperkeratotic",
+  "name": "Tinea pedis (moccasin / hyperkeratotic)",
+  "dx": "Tinea pedis (moccasin / hyperkeratotic)",
+  "group": "Fungal infections",
+  "advice": "This type needs tablets plus a scale-softening cream. Wash and dry feet well, change cotton socks daily, dust powder in shoes and treat nails and groin if affected. LFT before and during oral treatment if longer than 4 weeks.",
+  "adviceText": "This type needs tablets plus a scale-softening cream. Wash and dry feet well, change cotton socks daily, dust powder in shoes and treat nails and groin if affected. LFT before and during oral treatment if longer than 4 weeks.",
+  "fuDays": "28",
+  "source": "wolverton-2026-10",
+  "starter": true,
+  "ref": "Wolverton 4e ch 10, 42, 55; IADVL dermatophytosis consensus 2019",
+  "rx": [
+    {
+      "drug": "Tab. Terbinafine 250 mg",
+      "generic": "",
+      "brand": "Tebina 250 / 500 / 125 DT",
+      "brandId": "p-intas-tebina-250-500-125-dt",
+      "cost": "139.69",
+      "dose": "1 tab",
+      "route": "Oral",
+      "freq": "OD",
+      "timing": "After food",
+      "dur": "4–6 weeks",
+      "instr": "Itraconazole 100 mg BD × 4–6 weeks if terbinafine fails"
+    },
+    {
+      "drug": "Cream Luliconazole 1%",
+      "generic": "",
+      "brand": "Lulinol XL",
+      "brandId": "p-galcare-lulinol-xl",
+      "cost": "397.61",
+      "dose": "Thin layer",
+      "route": "Topical",
+      "freq": "OD",
+      "timing": "Morning",
+      "dur": "6 weeks",
+      "instr": "Soles, sides of feet and between toes"
+    },
+    {
+      "drug": "Whitfield's ointment (Benzoic acid 6% + Salicylic acid 3%)",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "Thin layer",
+      "route": "Topical",
+      "freq": "HS",
+      "timing": "Night",
+      "dur": "4 weeks",
+      "instr": "On thick scaling of soles"
+    },
+    {
+      "drug": "Clotrimazole dusting powder",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "route": "Topical",
+      "freq": "OD",
+      "timing": "Morning",
+      "dur": "Ongoing",
+      "instr": "In socks and shoes"
+    }
+  ],
+  "updatedAt": 1791095614971
+}

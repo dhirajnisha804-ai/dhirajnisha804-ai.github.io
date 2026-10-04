@@ -1,0 +1,31 @@
+{
+  "advice": "Treat all family members and close contacts at the same time. Wash clothes, bedsheets and towels in hot water and dry in sun; seal unwashable items in a bag for 3 days. Itching can continue for 2-4 weeks after cure.",
+  "group": "Parasitic infestations",
+  "name": "Scabies",
+  "rx": [
+    {
+      "drug": "Tab. Ivermectin 12 mg",
+      "sig": "200 mcg/kg single dose on day 1 and day 8 (not in pregnancy or child < 15 kg)"
+    },
+    {
+      "drug": "Tab. Levocetirizine 5 mg",
+      "dur": "2 weeks",
+      "freq": "HS",
+      "dose": "1 tab",
+      "instr": ""
+    },
+    {
+      "drug": "Permethrin 5% cream",
+      "freq": "HS",
+      "instr": "Apply from neck to toes at night, wash after 8-12 hours; repeat after 7 days"
+    },
+    {
+      "drug": "Calamine lotion",
+      "freq": "BD",
+      "instr": "Apply on itchy areas twice daily"
+    }
+  ],
+  "starter": true,
+  "updatedAt": 1791097612453,
+  "prevUpdatedAt": 1791097530255
+}

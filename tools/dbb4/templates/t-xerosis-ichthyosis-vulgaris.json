@@ -1,0 +1,19 @@
+{
+  "advice": "Short lukewarm baths, mild syndet soap. Avoid hot water and harsh scrubbing.",
+  "group": "Other dermatoses",
+  "name": "Xerosis / ichthyosis vulgaris",
+  "rx": [
+    {
+      "drug": "Cream Urea 10%",
+      "freq": "BD",
+      "instr": "Apply twice daily on whole body"
+    },
+    {
+      "drug": "Emollient (liquid paraffin + white soft paraffin)",
+      "sig": "Apply within 3 minutes of bath"
+    }
+  ],
+  "starter": true,
+  "updatedAt": 1791097612453,
+  "prevUpdatedAt": 1790929700000
+}

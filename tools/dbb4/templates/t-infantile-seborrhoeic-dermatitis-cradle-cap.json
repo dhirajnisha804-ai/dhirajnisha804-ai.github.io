@@ -1,0 +1,52 @@
+{
+  "advice": "Harmless and self-limiting. Do not pick scales forcefully. Return if rash spreads widely, oozes, or the baby is unwell.",
+  "adviceText": "Harmless and self-limiting. Do not pick scales forcefully. Return if rash spreads widely, oozes, or the baby is unwell.",
+  "dx": "Infantile seborrhoeic dermatitis (cradle cap)",
+  "fuDays": "21",
+  "group": "Eczema & dermatitis",
+  "name": "Infantile seborrhoeic dermatitis (cradle cap)",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Coconut oil / liquid paraffin",
+      "dur": "2 weeks",
+      "freq": "OD",
+      "generic": "",
+      "instr": "Apply, then gently comb off scales next morning",
+      "route": "Scalp",
+      "timing": "Night"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "Thin layer",
+      "drug": "Cream Ketoconazole 2%",
+      "dur": "2 weeks",
+      "freq": "OD",
+      "generic": "",
+      "instr": "Scalp, eyebrows, folds",
+      "route": "Topical",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Mild baby shampoo",
+      "dur": "Ongoing",
+      "freq": "Alternate days",
+      "generic": "",
+      "instr": "",
+      "route": "Scalp",
+      "timing": ""
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791035262768
+}

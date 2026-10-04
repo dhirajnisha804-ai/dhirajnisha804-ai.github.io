@@ -1,0 +1,67 @@
+{
+  "id": "t-ecthyma",
+  "name": "Ecthyma",
+  "dx": "Ecthyma",
+  "group": "Bacterial infections",
+  "advice": "Soak and gently remove crusts before applying cream. Keep nails short and treat any scabies or insect bites in the family. Heals with a scar. Report puffy face, dark urine or reduced urine (post-streptococcal nephritis).",
+  "adviceText": "Soak and gently remove crusts before applying cream. Keep nails short and treat any scabies or insect bites in the family. Heals with a scar. Report puffy face, dark urine or reduced urine (post-streptococcal nephritis).",
+  "fuDays": "7",
+  "source": "wolverton-2026-10",
+  "starter": true,
+  "ref": "Wolverton 4e ch 9, 41; IADVL pyoderma guideline",
+  "rx": [
+    {
+      "drug": "Cap. Cephalexin 500 mg",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 cap",
+      "route": "Oral",
+      "freq": "QID",
+      "timing": "",
+      "dur": "10 days",
+      "instr": "Children 25–50 mg/kg/day in 4 divided doses"
+    },
+    {
+      "drug": "Tab. Amoxicillin + Clavulanic acid 625 mg",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab",
+      "route": "Oral",
+      "freq": "TDS",
+      "timing": "After food",
+      "dur": "10 days",
+      "instr": "Alternative to cephalexin"
+    },
+    {
+      "drug": "Potassium permanganate soaks 1:10,000",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "route": "Topical",
+      "freq": "BD",
+      "timing": "",
+      "dur": "5–7 days",
+      "instr": "Pale pink solution, 10 minutes, to lift crusts"
+    },
+    {
+      "drug": "Ointment Mupirocin 2%",
+      "generic": "",
+      "brand": "Serbact ointment",
+      "brandId": "p-kivi-serbact-ointment",
+      "cost": "108.36",
+      "dose": "Thin layer",
+      "route": "Topical",
+      "freq": "TDS",
+      "timing": "",
+      "dur": "7–10 days",
+      "instr": "After crust removal"
+    }
+  ],
+  "updatedAt": 1791095614971
+}

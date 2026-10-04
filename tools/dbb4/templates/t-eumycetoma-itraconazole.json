@@ -1,0 +1,41 @@
+{
+  "id": "t-eumycetoma-itraconazole",
+  "name": "Eumycetoma (itraconazole)",
+  "dx": "Eumycetoma (itraconazole)",
+  "group": "Fungal infections",
+  "advice": "Confirm fungal grains (black/white) by microscopy/culture; X-ray/MRI to check bone. Itraconazole is continued for at least 9–12 months and surgical debulking is planned after about 6 months. LFT monthly; report breathlessness or leg swelling. Wear footwear; avoid thorn injuries.",
+  "adviceText": "Confirm fungal grains (black/white) by microscopy/culture; X-ray/MRI to check bone. Itraconazole is continued for at least 9–12 months and surgical debulking is planned after about 6 months. LFT monthly; report breathlessness or leg swelling. Wear footwear; avoid thorn injuries.",
+  "fuDays": "30",
+  "source": "wolverton-2026-10",
+  "starter": true,
+  "ref": "Wolverton 4e ch 10; WHO mycetoma 2017; Khartoum MRC protocol",
+  "rx": [
+    {
+      "drug": "Cap. Itraconazole 200 mg",
+      "generic": "",
+      "brand": "Tinitraz 200",
+      "brandId": "p-mohrish-tinitraz-200",
+      "cost": "",
+      "dose": "1 cap",
+      "route": "Oral",
+      "freq": "BD",
+      "timing": "After food",
+      "dur": "9–12 months (minimum)",
+      "instr": "With full meal; check drug interactions; avoid in heart failure"
+    },
+    {
+      "drug": "Tab. Terbinafine 250 mg",
+      "generic": "",
+      "brand": "Tebina 250 / 500 / 125 DT",
+      "brandId": "p-intas-tebina-250-500-125-dt",
+      "cost": "139.69",
+      "dose": "2 tabs (500 mg)",
+      "route": "Oral",
+      "freq": "OD",
+      "timing": "After food",
+      "dur": "As advised",
+      "instr": "Alternative if itraconazole not tolerated"
+    }
+  ],
+  "updatedAt": 1791095614971
+}

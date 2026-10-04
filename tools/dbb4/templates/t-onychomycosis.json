@@ -1,0 +1,23 @@
+{
+  "advice": "Baseline LFT before oral therapy. Keep feet dry, change socks daily, avoid tight footwear. Nail looks normal only after it grows out fully (6-12 months).",
+  "group": "Fungal infections",
+  "name": "Onychomycosis",
+  "rx": [
+    {
+      "drug": "Tab. Terbinafine 250 mg",
+      "dur": "6 weeks",
+      "freq": "OD",
+      "dose": "1 tab",
+      "instr": "(fingernails) / 12 weeks (toenails)"
+    },
+    {
+      "drug": "Amorolfine 5% nail lacquer",
+      "dur": "6–12 months",
+      "freq": "Weekly",
+      "instr": "File nail and apply once weekly"
+    }
+  ],
+  "starter": true,
+  "updatedAt": 1791097612453,
+  "prevUpdatedAt": 1790929700000
+}

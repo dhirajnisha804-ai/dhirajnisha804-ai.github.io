@@ -1,0 +1,54 @@
+{
+  "advice": "Wear cotton gloves for wet work; avoid detergents and cement. Report lip cracking, bone pain or headache on acitretin. Alternative systemic: methotrexate.",
+  "adviceText": "Wear cotton gloves for wet work; avoid detergents and cement. Report lip cracking, bone pain or headache on acitretin. Alternative systemic: methotrexate.",
+  "dx": "Palmoplantar psoriasis",
+  "fuDays": "28",
+  "group": "Papulosquamous disorders",
+  "name": "Palmoplantar psoriasis",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 cap",
+      "drug": "Cap. Acitretin 25 mg",
+      "dur": "3 months",
+      "freq": "OD",
+      "generic": "",
+      "instr": "Not in women who may become pregnant (contraception for 3 years after stopping); women avoid alcohol during and 2 months after. Check lipids, LFT",
+      "route": "Oral",
+      "timing": "After food"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "Thin layer",
+      "drug": "Ointment Clobetasol 0.05% + Salicylic acid 6%",
+      "dur": "4 weeks",
+      "freq": "HS",
+      "generic": "",
+      "instr": "Under cling-film occlusion at night; reduce to alternate days after 4 weeks",
+      "route": "Topical",
+      "timing": "Night"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Urea 10–20% cream",
+      "dur": "Ongoing",
+      "freq": "BD",
+      "generic": "",
+      "instr": "For cracks",
+      "route": "Topical",
+      "timing": ""
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791097530255,
+  "prevUpdatedAt": 1791095614971,
+  "wcheck": "Wolverton 4e (2020)"
+}

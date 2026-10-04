@@ -1,0 +1,66 @@
+{
+  "advice": "Avoid kissing and sharing utensils while sores are present. Avoid triggers such as sun, fever and stress.",
+  "adviceText": "Avoid kissing and sharing utensils while sores are present. Avoid triggers such as sun, fever and stress.",
+  "dx": "Recurrent herpes labialis",
+  "fuDays": "",
+  "group": "Viral infections",
+  "name": "Recurrent herpes labialis",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "2 g",
+      "drug": "Tab. Valacyclovir 1 g",
+      "dur": "1 day",
+      "freq": "BD",
+      "generic": "",
+      "instr": "Episodic: start at first tingling",
+      "route": "Oral",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab",
+      "drug": "Tab. Acyclovir 400 mg",
+      "dur": "6–12 months",
+      "freq": "BD",
+      "generic": "",
+      "instr": "Suppressive therapy only if ≥ 6 episodes/year or associated erythema multiforme",
+      "route": "Oral",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "Thin layer",
+      "drug": "Cream Acyclovir 5%",
+      "dur": "5 days",
+      "freq": "5 times a day",
+      "generic": "",
+      "instr": "",
+      "route": "Topical",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Lip balm with SPF 30",
+      "dur": "Ongoing",
+      "freq": "TDS",
+      "generic": "",
+      "instr": "Sun is a common trigger",
+      "route": "Topical",
+      "timing": ""
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791097530255,
+  "prevUpdatedAt": 1791035262768
+}

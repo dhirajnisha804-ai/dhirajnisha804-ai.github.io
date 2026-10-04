@@ -1,0 +1,39 @@
+{
+  "advice": "Long-term maintenance (1–2 times a week) prevents scarring. Annual check-up — report any lump, ulcer or non-healing area (small cancer risk).",
+  "adviceText": "Long-term maintenance (1–2 times a week) prevents scarring. Annual check-up — report any lump, ulcer or non-healing area (small cancer risk).",
+  "dx": "Genital lichen sclerosus",
+  "fuDays": "84",
+  "group": "Connective tissue disorders",
+  "name": "Genital lichen sclerosus",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "Fingertip unit",
+      "drug": "Ointment Clobetasol 0.05%",
+      "dur": "12 weeks (tapering)",
+      "freq": "OD",
+      "generic": "",
+      "instr": "Daily × 4 weeks, alternate days × 4 weeks, twice weekly × 4 weeks",
+      "route": "Topical",
+      "timing": "Night"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Emollient / white soft paraffin",
+      "dur": "Ongoing",
+      "freq": "BD",
+      "generic": "",
+      "instr": "Also as soap substitute",
+      "route": "Topical",
+      "timing": ""
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791035262768
+}

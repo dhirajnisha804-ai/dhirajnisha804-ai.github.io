@@ -1,0 +1,53 @@
+{
+  "advice": "Never apply steroid or mixed creams on the face. Treat pets and family members with similar lesions. Use separate towel.",
+  "adviceText": "Never apply steroid or mixed creams on the face. Treat pets and family members with similar lesions. Use separate towel.",
+  "dx": "Tinea faciei",
+  "fuDays": "28",
+  "group": "Fungal infections",
+  "name": "Tinea faciei",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 cap",
+      "drug": "Cap. Itraconazole 100 mg",
+      "dur": "4 weeks",
+      "freq": "BD",
+      "generic": "",
+      "instr": "If extensive or steroid-modified",
+      "route": "Oral",
+      "timing": "After food"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab",
+      "drug": "Tab. Levocetirizine 5 mg",
+      "dur": "2 weeks",
+      "freq": "HS",
+      "generic": "",
+      "instr": "",
+      "route": "Oral",
+      "timing": "Night"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "Thin layer",
+      "drug": "Cream Luliconazole 1% / Sertaconazole 2%",
+      "dur": "4 weeks",
+      "freq": "OD",
+      "generic": "",
+      "instr": "Continue 2 weeks after clearance",
+      "route": "Topical",
+      "timing": ""
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791097530255,
+  "prevUpdatedAt": 1791035262768
+}

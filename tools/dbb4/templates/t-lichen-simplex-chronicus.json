@@ -1,0 +1,53 @@
+{
+  "advice": "Break the itch–scratch habit: cover the area, keep nails short, press rather than scratch. Stress control helps.",
+  "adviceText": "Break the itch–scratch habit: cover the area, keep nails short, press rather than scratch. Stress control helps.",
+  "dx": "Lichen simplex chronicus",
+  "fuDays": "21",
+  "group": "Eczema & dermatitis",
+  "name": "Lichen simplex chronicus",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab",
+      "drug": "Tab. Hydroxyzine 25 mg",
+      "dur": "4 weeks",
+      "freq": "HS",
+      "generic": "",
+      "instr": "",
+      "route": "Oral",
+      "timing": "Night"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "Thin layer",
+      "drug": "Ointment Clobetasol 0.05%",
+      "dur": "3 weeks",
+      "freq": "HS",
+      "generic": "",
+      "instr": "Under cling-film occlusion; then alternate days",
+      "route": "Topical",
+      "timing": "Night"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Emollient",
+      "dur": "Ongoing",
+      "freq": "BD",
+      "generic": "",
+      "instr": "",
+      "route": "Topical",
+      "timing": ""
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791097530255,
+  "prevUpdatedAt": 1791035262768
+}

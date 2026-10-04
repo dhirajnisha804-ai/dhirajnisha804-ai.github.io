@@ -1,0 +1,53 @@
+{
+  "advice": "Dry between toes after bathing; change cotton socks daily; avoid closed shoes for long hours. Treat nails and groin if also involved.",
+  "adviceText": "Dry between toes after bathing; change cotton socks daily; avoid closed shoes for long hours. Treat nails and groin if also involved.",
+  "dx": "Tinea pedis (interdigital)",
+  "fuDays": "28",
+  "group": "Fungal infections",
+  "name": "Tinea pedis (interdigital)",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab",
+      "drug": "Tab. Terbinafine 250 mg",
+      "dur": "2–4 weeks",
+      "freq": "OD",
+      "generic": "",
+      "instr": "Only if extensive / moccasin type; check LFT if prolonged",
+      "route": "Oral",
+      "timing": "After food"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "Thin layer",
+      "drug": "Cream Luliconazole 1%",
+      "dur": "4 weeks",
+      "freq": "OD",
+      "generic": "",
+      "instr": "Between toes and 2 cm beyond",
+      "route": "Topical",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Clotrimazole dusting powder",
+      "dur": "Ongoing",
+      "freq": "OD",
+      "generic": "",
+      "instr": "In socks and shoes",
+      "route": "Topical",
+      "timing": "Morning"
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791097530255,
+  "prevUpdatedAt": 1791035262768
+}

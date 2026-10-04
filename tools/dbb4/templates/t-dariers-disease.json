@@ -1,0 +1,68 @@
+{
+  "id": "t-dariers-disease",
+  "name": "Darier's disease",
+  "dx": "Darier's disease",
+  "group": "Other dermatoses",
+  "advice": "Heat, sweating, friction and sun worsen it — wear loose cotton clothes and use sunscreen. Come immediately for painful punched-out sores or sudden spreading blisters (herpes infection). Acitretin needs LFT and lipids, and women must avoid pregnancy during and for 3 years after.",
+  "adviceText": "Heat, sweating, friction and sun worsen it — wear loose cotton clothes and use sunscreen. Come immediately for painful punched-out sores or sudden spreading blisters (herpes infection). Acitretin needs LFT and lipids, and women must avoid pregnancy during and for 3 years after.",
+  "fuDays": "56",
+  "source": "wolverton-2026-10",
+  "starter": true,
+  "ref": "Wolverton 4e ch 22, 46",
+  "rx": [
+    {
+      "drug": "Cap. Acitretin 10 mg",
+      "generic": "",
+      "brand": "Acipsor 10 / 25",
+      "brandId": "p-kivi-acipsor-10-25",
+      "cost": "",
+      "dose": "10–25 mg",
+      "route": "Oral",
+      "freq": "OD",
+      "timing": "After food",
+      "dur": "3–6 months",
+      "instr": "Extensive disease; start low (flare possible)"
+    },
+    {
+      "drug": "Cream Tretinoin 0.025%",
+      "generic": "",
+      "brand": "Katinol 0.025 / 0.05",
+      "brandId": "p-kivi-katinol-0-025-0-05",
+      "cost": "66.5",
+      "dose": "Thin layer",
+      "route": "Topical",
+      "freq": "HS",
+      "timing": "Night",
+      "dur": "3 months",
+      "instr": "Alternate nights initially; stop if irritated"
+    },
+    {
+      "drug": "Chlorhexidine 4% body wash",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "route": "Topical",
+      "freq": "OD",
+      "timing": "",
+      "dur": "Ongoing",
+      "instr": "Reduces odour and infection"
+    },
+    {
+      "drug": "Cream Mometasone 0.1%",
+      "generic": "",
+      "brand": "Vimet",
+      "brandId": "p-kivi-vimet",
+      "cost": "106.88",
+      "dose": "Thin layer",
+      "route": "Topical",
+      "freq": "OD",
+      "timing": "",
+      "dur": "2 weeks",
+      "instr": "Inflamed / itchy flares"
+    }
+  ],
+  "updatedAt": 1791097530255,
+  "prevUpdatedAt": 1791095614971
+}

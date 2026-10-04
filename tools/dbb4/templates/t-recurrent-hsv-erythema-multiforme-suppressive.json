@@ -1,0 +1,54 @@
+{
+  "id": "t-recurrent-hsv-erythema-multiforme-suppressive",
+  "name": "Recurrent HSV-associated erythema multiforme (suppressive)",
+  "dx": "Recurrent HSV-associated erythema multiforme (suppressive)",
+  "group": "Other dermatoses",
+  "advice": "Daily antiviral is taken continuously (not only during attacks) for at least 6 months, then tapered to see if attacks return. Use lip sunscreen — sunlight triggers cold sores. Creatinine at baseline if kidney disease or elderly.",
+  "adviceText": "Daily antiviral is taken continuously (not only during attacks) for at least 6 months, then tapered to see if attacks return. Use lip sunscreen — sunlight triggers cold sores. Creatinine at baseline if kidney disease or elderly.",
+  "fuDays": "60",
+  "source": "wolverton-2026-10",
+  "starter": true,
+  "ref": "Wolverton 4e ch 11 (suppressive antivirals)",
+  "rx": [
+    {
+      "drug": "Tab. Acyclovir 400 mg",
+      "generic": "",
+      "brand": "Acicet 400 / 800",
+      "brandId": "p-kivi-acicet-400-800",
+      "cost": "",
+      "dose": "1 tab",
+      "route": "Oral",
+      "freq": "BD",
+      "timing": "",
+      "dur": "6–12 months",
+      "instr": "Continuous suppression"
+    },
+    {
+      "drug": "Tab. Valacyclovir 500 mg",
+      "generic": "",
+      "brand": "Valcet 500 / 1",
+      "brandId": "p-kivi-valcet-500-1",
+      "cost": "",
+      "dose": "1 tab",
+      "route": "Oral",
+      "freq": "BD",
+      "timing": "",
+      "dur": "6–12 months",
+      "instr": "Alternative to acyclovir (or 1 g once daily)"
+    },
+    {
+      "drug": "Lip balm with SPF 30",
+      "generic": "",
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "route": "Topical",
+      "freq": "TDS",
+      "timing": "",
+      "dur": "Ongoing",
+      "instr": "Before sun exposure"
+    }
+  ],
+  "updatedAt": 1791095614971
+}

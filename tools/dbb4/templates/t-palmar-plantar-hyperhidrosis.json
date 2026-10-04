@@ -1,0 +1,53 @@
+{
+  "advice": "Botulinum toxin injections are an option for resistant cases. Check thyroid if sweating is generalised.",
+  "adviceText": "Botulinum toxin injections are an option for resistant cases. Check thyroid if sweating is generalised.",
+  "dx": "Palmar / plantar hyperhidrosis",
+  "fuDays": "28",
+  "group": "Other dermatoses",
+  "name": "Palmar / plantar hyperhidrosis",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab",
+      "drug": "Tab. Glycopyrrolate 1 mg",
+      "dur": "3 months",
+      "freq": "BD",
+      "generic": "",
+      "instr": "If topical fails; dry mouth common",
+      "route": "Oral",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Aluminium chloride hexahydrate 20% solution",
+      "dur": "Ongoing",
+      "freq": "HS",
+      "generic": "",
+      "instr": "On completely dry skin; wash off in morning; reduce to weekly once controlled",
+      "route": "Topical",
+      "timing": "Night"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Tap-water iontophoresis",
+      "dur": "4 weeks, then maintenance",
+      "freq": "3 times a week",
+      "generic": "",
+      "instr": "",
+      "route": "Other",
+      "timing": ""
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791097530255,
+  "prevUpdatedAt": 1791035262768
+}

@@ -1,0 +1,39 @@
+{
+  "advice": "Change socks twice daily; use cotton socks; rotate shoes and air them; avoid occlusive footwear.",
+  "adviceText": "Change socks twice daily; use cotton socks; rotate shoes and air them; avoid occlusive footwear.",
+  "dx": "Pitted keratolysis",
+  "fuDays": "21",
+  "group": "Bacterial infections",
+  "name": "Pitted keratolysis",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "Thin layer",
+      "drug": "Gel Clindamycin 1% / Erythromycin 2%",
+      "dur": "3 weeks",
+      "freq": "BD",
+      "generic": "",
+      "instr": "On soles",
+      "route": "Topical",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Aluminium chloride hexahydrate 20% solution",
+      "dur": "Ongoing",
+      "freq": "HS",
+      "generic": "",
+      "instr": "On dry soles for sweating",
+      "route": "Topical",
+      "timing": "Night"
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791035262768
+}

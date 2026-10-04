@@ -1,0 +1,66 @@
+{
+  "advice": "Stay isolated until all spots crust (about 7 days). Keep nails short. Come back urgently for breathlessness, cough, chest pain, severe headache or drowsiness. Pregnant contacts should see their doctor.",
+  "adviceText": "Stay isolated until all spots crust (about 7 days). Keep nails short. Come back urgently for breathlessness, cough, chest pain, severe headache or drowsiness. Pregnant contacts should see their doctor.",
+  "dx": "Varicella (chickenpox) — adolescent / adult",
+  "fuDays": "7",
+  "group": "Viral infections",
+  "name": "Varicella (chickenpox) — adolescent / adult",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab",
+      "drug": "Tab. Valacyclovir 1 g",
+      "dur": "7 days",
+      "freq": "TDS",
+      "generic": "",
+      "instr": "Start within 24–72 h of rash (or Acyclovir 800 mg 5 times/day)",
+      "route": "Oral",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab",
+      "drug": "Tab. Levocetirizine 5 mg",
+      "dur": "1 week",
+      "freq": "HS",
+      "generic": "",
+      "instr": "",
+      "route": "Oral",
+      "timing": "Night"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab",
+      "drug": "Tab. Paracetamol 650 mg",
+      "dur": "",
+      "freq": "SOS",
+      "generic": "",
+      "instr": "Fever — avoid aspirin / NSAIDs",
+      "route": "Oral",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Calamine lotion",
+      "dur": "1 week",
+      "freq": "TDS",
+      "generic": "",
+      "instr": "",
+      "route": "Topical",
+      "timing": ""
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791097530255,
+  "prevUpdatedAt": 1791035262768
+}

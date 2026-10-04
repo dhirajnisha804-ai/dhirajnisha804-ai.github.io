@@ -1,0 +1,32 @@
+{
+  "advice": "Avoid triggers: sun, heat, spicy food, hot drinks, alcohol. Use gentle soap-free cleanser. Avoid topical steroids on face.",
+  "group": "Acne & Rosacea",
+  "name": "Rosacea",
+  "rx": [
+    {
+      "drug": "Cap. Doxycycline 40 mg modified release",
+      "dur": "8–12 weeks",
+      "freq": "OD",
+      "dose": "1 cap",
+      "instr": "For papulopustular rosacea"
+    },
+    {
+      "drug": "Cream Ivermectin 1%",
+      "dur": "12 weeks",
+      "freq": "OD",
+      "instr": "Apply once daily at night"
+    },
+    {
+      "drug": "Gel Metronidazole 0.75%",
+      "freq": "BD",
+      "instr": "Alternative: apply twice daily"
+    },
+    {
+      "drug": "Mineral sunscreen SPF 30+",
+      "sig": "Every morning"
+    }
+  ],
+  "starter": true,
+  "updatedAt": 1791097612453,
+  "prevUpdatedAt": 1791097530255
+}

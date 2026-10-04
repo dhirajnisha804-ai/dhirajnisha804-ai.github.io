@@ -1,0 +1,53 @@
+{
+  "advice": "Keep folds dry; lose weight if overweight; check sugar if recurrent.",
+  "adviceText": "Keep folds dry; lose weight if overweight; check sugar if recurrent.",
+  "dx": "Erythrasma",
+  "fuDays": "14",
+  "group": "Bacterial infections",
+  "name": "Erythrasma",
+  "rx": [
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "1 tab",
+      "drug": "Tab. Erythromycin 250 mg",
+      "dur": "14 days",
+      "freq": "QID",
+      "generic": "",
+      "instr": "Extensive disease (or Clarithromycin 1 g single dose)",
+      "route": "Oral",
+      "timing": "After food"
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "Thin layer",
+      "drug": "Cream Fusidic acid 2% / Clindamycin 1% gel",
+      "dur": "2 weeks",
+      "freq": "BD",
+      "generic": "",
+      "instr": "",
+      "route": "Topical",
+      "timing": ""
+    },
+    {
+      "brand": "",
+      "brandId": "",
+      "cost": "",
+      "dose": "",
+      "drug": "Antiseptic soap / benzoyl peroxide wash",
+      "dur": "Ongoing",
+      "freq": "OD",
+      "generic": "",
+      "instr": "Prevention",
+      "route": "Topical",
+      "timing": ""
+    }
+  ],
+  "source": "std-books-2026-10",
+  "starter": true,
+  "updatedAt": 1791097530255,
+  "prevUpdatedAt": 1791035262768
+}
