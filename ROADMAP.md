@@ -69,3 +69,13 @@ The owner approved everything below ("done" given). Build it in stages, test, de
 ## Needs the owner (ask, don't guess)
 - Husband's email for admin access. Price, payment method, help-email wording, Play account holder name.
 - Firebase console: confirm Email/Password sign-in is enabled (it is for the owner) — no other console step for stages 1–2.
+
+## Resident Corner — launch content (owner request, 4 Oct)
+Write standard SOPs (own words; Wolverton 4e ch 53 peels, ch 23 phototherapy, ch 58 local anaesthetics,
+plus IADVL/standard procedural texts — never copy text) as Procedures posts, marked "Draft — owner to review"
+until she approves each:
+1. Salicylic acid (SA) peel  2. Glycolic acid (GA) peel  3. TCA peel  4. NB-UVB phototherapy  5. Excimer (308 nm)
+6. Paring of warts and corns  7. Punch biopsy  8. Milia extraction  9. Molluscum extraction
+10. Comedone extraction  11. DPN (dermatosis papulosa nigra) removal — RF/electrocautery  12. Intralesional steroid injection
+Each SOP: indications · contraindications · pre-procedure (consent, counselling, priming, test patch) · equipment
+· step-by-step · endpoints · post-care · complications & management · follow-up/sessions. Paid content? — default free.
