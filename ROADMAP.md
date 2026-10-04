@@ -86,3 +86,13 @@ Each SOP: indications · contraindications · pre-procedure (consent, counsellin
 - **Before/after photo comparison**: on a patient, pick two visit photos → side-by-side and slider view with dates;
   when taking a new follow-up photo show a faint "ghost" overlay of the previous photo to match the angle.
   Photos stay on the phone.
+
+## Play Store consents & documents (stage 4)
+- Play Console: privacy policy URL, Data safety form, Health apps declaration (clinical tool for HCPs, not a medical
+  device), account deletion (in-app + web link), target audience 18+, content rating, "No ads", reviewer test login,
+  permissions = camera + microphone only (use Android photo picker, no broad media permission).
+- In-app: DPDP notice + unticked "I agree to Terms & Privacy" at sign-up; separate consent for proof documents
+  (deleted after verification); one-time medical disclaimer; one-line reason before each permission prompt;
+  "Patient consent taken" tick when adding clinical photos + printable photo-consent form (EN/HI/MR).
+- Draft for owner review (and a lawyer): privacy policy, terms of use (subscription terms once priced),
+  medical disclaimer, photo-consent form.
