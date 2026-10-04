@@ -1,6 +1,6 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#14324d">
 <link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<meta name="drx-build" content="202610040651">
+<meta name="drx-build" content="202610040706">
 <script src="config.js"></script>
 <script>window.DRX_OCR=(b=>({lib:b+"tesseract.min.js",worker:b+"worker.min.js",core:b,lang:b}))(new URL("vendor/tesseract/",location.href).href);</script>
 <script src="vendor/firebase-app-compat.js"></script><script src="vendor/firebase-auth-compat.js"></script><script src="vendor/firebase-firestore-compat.js"></script>
@@ -266,23 +266,21 @@ details.sec > .in{padding:0 14px 14px;display:flex;flex-direction:column;gap:12p
 /* Rx table: medicine · brand available · cost */
 .rxt{display:flex;flex-direction:column}
 .rxt-head{display:none}
-.rxt-row{display:grid;grid-template-columns:22px 1fr auto;gap:6px 8px;align-items:start;padding:10px 0;border-top:1px solid var(--line)}
+.rxt-row{display:grid;grid-template-columns:22px 1fr;gap:4px 8px;align-items:start;padding:10px 0;border-top:1px solid var(--line)}
 .rxt-head+.rxt-row{border-top:0}
 .rxt-row .n{font-family:var(--f-mono);font-size:12px;color:var(--muted);padding-top:3px;grid-row:1}
-.rxt-row .med{grid-column:2;grid-row:1;min-width:0;display:flex;flex-direction:column}
+.rxt-row .med{grid-column:2;grid-row:1;min-width:0;display:flex;flex-direction:column;gap:1px}
+.rxt-row .med .l1{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 8px}
 .rxt-row .med .d{font-weight:650}
+.rxt-row .med .fq{font-weight:700;color:var(--accent);font-size:13.5px;white-space:nowrap}
 .rxt-row .med .g,.rxt-row .med .sig{font-size:12.5px;color:var(--muted)}
-.rxt-row .ctl{grid-column:3;grid-row:1;display:flex;gap:2px}
-.rxt-row .rb{grid-column:2;grid-row:2}
-.rxt-row .rc{grid-column:3;grid-row:2;width:92px}
-.rxt-row .inp{padding:8px 9px;font-size:14px}
+.rxt-row .act{grid-column:2;grid-row:2;display:flex;gap:6px;align-items:center;margin-top:4px}
+.rxt-row .act .mini{flex:none}
+.rxt-row .rb{flex:1;min-width:0}
+.rxt-row .rc{width:88px;flex:none}
+.rxt-row .inp{padding:7px 9px;font-size:14px}
 .rxt-total{text-align:right;font-size:13.5px;color:var(--muted);padding-top:8px;border-top:1px solid var(--line)}
 .rxt-total b{color:var(--fg);font-family:var(--f-mono)}
-@media (min-width:640px){
-  .rxt-head{display:grid;grid-template-columns:22px minmax(0,1.4fr) minmax(0,1fr) 92px 70px;gap:8px;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-bottom:6px;border-bottom:1px solid var(--line)}
-  .rxt-row{grid-template-columns:22px minmax(0,1.4fr) minmax(0,1fr) 92px 70px;align-items:center}
-  .rxt-head+.rxt-row{border-top:0}
-  .rxt-row .rb{grid-column:3;grid-row:1}.rxt-row .rc{grid-column:4;grid-row:1;width:auto}.rxt-row .ctl{grid-column:5;justify-content:flex-end}
 }
 .addrow .t{color:var(--accent)!important}
 @media (min-width:700px){.viewhead h2,.hello h2{font-size:28px}.stats{grid-template-columns:repeat(4,1fr)}.quick{grid-template-columns:repeat(4,1fr)}}
@@ -608,6 +606,8 @@ const drName = () => S.settings.doctor || "Doctor";
 /* rx item helpers (supports legacy {drug,sig}) */
 const normRx = r => r ? ({drug:r.drug||"", generic:r.generic||"", brandId:r.brandId||"", dose:r.dose||"", route:r.route||"", freq:r.freq||"", timing:r.timing||"", dur:r.dur||"", instr:r.instr ?? r.sig ?? "", brand:r.brand||"", cost:r.cost??""}) : null;
 const sigOf = r => [r.dose, r.route && !["Topical","Oral"].includes(r.route) ? r.route : "", r.freq, r.timing, r.dur ? "× "+r.dur : "", r.instr].filter(Boolean).join(" · ");
+const rxRank = r => { const d=String(r.drug||"").trim().toLowerCase(), ro=String(r.route||"").toLowerCase(); if(/^cap\b|\bcap(sule)?s?\b/.test(d)) return 0; if(/^tab\b|\btab(let)?s?\b/.test(d)) return 1; if(ro==="oral"||/^(syp|syr|syrup|sachet|susp|oral)\b/.test(d)) return 2; if(ro==="injection"||ro==="intralesional"||/^inj\b/.test(d)) return 3; return 4; };
+const sortRx = list => list.map((r,i)=>[rxRank(r),i,r]).sort((a,b)=>a[0]-b[0]||a[1]-b[1]).map(x=>x[2]);
 const normTpl = t => ({...t, rx:(t.rx||[]).map(normRx), adviceList:t.adviceList||[], adviceText: t.adviceText ?? t.advice ?? "", fuDays: t.fuDays ?? "", dx: t.dx || t.name});
 
 /* ---------- photos / assets ---------- */
@@ -1192,10 +1192,9 @@ function rxTableHTML(list){
   if(!list.length) return `<p class="hint" style="margin:0">No medicines yet. Use a template or add a medicine.</p>`;
   const total = list.reduce((n,r)=>{ const c=parseFloat(String(r.cost??"").replace(/[^\d.]/g,"")); return n+(isNaN(c)?0:c); },0);
   return `<div class="rxt"><div class="rxt-head"><span></span><span>Medicine</span><span>Brand available</span><span>Cost (₹)</span><span></span></div>
-  ${list.map((r,i)=>`<div class="rxt-row"><span class="n">${i+1}.</span><span class="med"><span class="d">${esc(r.drug)}</span>${r.generic?`<span class="g">${esc(r.generic)}</span>`:""}<span class="sig">${esc(sigOf(r))||'<span class="hint">Tap edit to add dose and timing</span>'}</span></span>
-    <input class="inp rb" data-rxb="${i}" value="${esc(r.brand||"")}" placeholder="Brand available" aria-label="Brand available for ${esc(r.drug)}">
-    <input class="inp rc" data-rxc="${i}" value="${esc(r.cost??"")}" placeholder="Cost ₹" inputmode="decimal" aria-label="Cost for ${esc(r.drug)}">
-    <span class="ctl"><button class="mini" type="button" data-rxed="${i}" aria-label="Edit">${ICON.edit}</button><button class="mini del" type="button" data-rxrm="${i}" aria-label="Remove">${ICON.x}</button></span></div>`).join("")}
+  ${list.map((r,i)=>{ const fq=[r.freq, r.dur?"× "+r.dur:""].filter(Boolean).join(" · "); const rest=[r.dose, r.route && !["Topical","Oral"].includes(r.route) ? r.route : "", r.timing, r.instr].filter(Boolean).join(" · ");
+    return `<div class="rxt-row"><span class="n">${i+1}.</span><span class="med"><span class="l1"><span class="d">${esc(r.drug)}</span>${fq?`<span class="fq">${esc(fq)}</span>`:""}</span>${r.generic?`<span class="g">${esc(r.generic)}</span>`:""}${rest?`<span class="sig">${esc(rest)}</span>`:(fq?"":'<span class="sig"><span class="hint">Tap edit to add dose and timing</span></span>')}</span>
+    <span class="act"><button class="mini" type="button" data-rxed="${i}" aria-label="Edit">${ICON.edit}</button><button class="mini del" type="button" data-rxrm="${i}" aria-label="Remove">${ICON.x}</button><input class="inp rb" data-rxb="${i}" value="${esc(r.brand||"")}" placeholder="Brand available" aria-label="Brand available for ${esc(r.drug)}"><input class="inp rc" data-rxc="${i}" value="${esc(r.cost??"")}" placeholder="Cost ₹" inputmode="decimal" aria-label="Cost for ${esc(r.drug)}"></span></div>`; }).join("")}
   ${total?`<div class="rxt-total">Approx. total <b>${rupee(Math.round(total))}</b></div>`:""}</div>`;
 }
 function wireRxTable(box, getList, redraw){
@@ -1424,11 +1423,11 @@ function openBrandEditor(b){
 
 /* ---------- TEMPLATES ---------- */
 function tplShell(){
-  return `${banner()}<div class="viewhead"><div><h2>Templates</h2><p id="tplCount"></p></div><button class="btn primary" data-act="newtpl">${ICON.plus}Add template</button></div>
+  return `${banner()}<div class="viewhead"><div><h2>Prescription templates</h2><p id="tplCount"></p></div><button class="btn primary" data-act="newtpl">${ICON.plus}Add template</button></div>
   <label class="search">${ICON.search}<input id="qTpl" type="search" placeholder="Search diseases or drugs" aria-label="Search templates" autocomplete="off"></label><div id="tplList"></div>`;
 }
 function fillTemplates(){
-  $("#tplCount").textContent = `${S.templates.length} prescription templates`;
+  $("#tplCount").textContent = `${S.templates.length} templates`;
   const el=$("#tplList"); if(!S.loaded.templates && S.db){ el.innerHTML=`<div class="empty">Loading…</div>`; return; }
   const q=$("#qTpl").value.trim().toLowerCase();
   const arr=S.templates.filter(t=>!q||[t.name,t.group,(t.rx||[]).map(r=>[r.drug,r.brand].join(" ")).join(" ")].join(" ").toLowerCase().includes(q));
@@ -1449,7 +1448,7 @@ function openTemplateEditor(t, {group}={}){
   const drawRx=()=>{ $("#tRx").innerHTML = rxTableHTML(T.rx); };
   wireRxTable($("#tRx"), ()=>T.rx, drawRx); drawRx();
   $("#tAdd").onclick=()=>openMedPicker(null, item=>{ T.rx.push(item); drawRx(); });
-  const collect=()=>({...(t?(({id,...r})=>r)(t):{}), name:$("#tName").value.trim(), group:$("#tGroup").value.trim()||"Other", dx:$("#tDx").value.trim(), rx:T.rx, updatedAt:Date.now()});
+  const collect=()=>({...(t?(({id,...r})=>r)(t):{}), name:$("#tName").value.trim(), group:$("#tGroup").value.trim()||"Other", dx:$("#tDx").value.trim(), rx:sortRx(T.rx), updatedAt:Date.now()});
   $("#tSave").onclick = async () => { const d=collect(); if(!d.name){ toast("Add a template name"); $("#tName").focus(); return; } if(await save("templates", t?.id||newId("templates"), d)){ toast("Template saved"); closeSheet(); } };
   if(!isNew){
     $("#tUse").onclick = () => openPatientPage(null, null, {tpl:{...t, ...collect()}});
