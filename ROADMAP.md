@@ -96,3 +96,9 @@ Each SOP: indications · contraindications · pre-procedure (consent, counsellin
   "Patient consent taken" tick when adding clinical photos + printable photo-consent form (EN/HI/MR).
 - Draft for owner review (and a lawyer): privacy policy, terms of use (subscription terms once priced),
   medical disclaimer, photo-consent form.
+
+## Review before launch (owner taking 1–2 weeks to recheck and add ideas)
+- Add "Needs review" badge + Review queue for every new/changed template, drug-safety entry and weight-dose entry;
+  owner taps ✓ Reviewed; unreviewed items are not published to colleagues.
+- Run an independent second check (fresh reviewer agent) of the 42 new templates, 101 drug-safety corrections and
+  65 weight-dose entries against Wolverton 4e; give the owner a list of doubtful items first.
