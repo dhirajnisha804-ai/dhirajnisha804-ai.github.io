@@ -80,6 +80,12 @@ until she approves each:
 13. Wood's lamp examination (room prep, findings by condition, documentation)
 14. Whole-body phototherapy (cabin NB-UVB ± PUVA: skin typing/MED, starting dose & increments, eye/genital
     protection, missed-dose rules, cumulative dose log, stopping criteria) — #4 covers NB-UVB basics/targeted units
+Owner wants the chat summaries of Excimer (#5) and RF vs EC (#15) given on 5 Oct used as the base of those SOPs:
+  Excimer — 308 nm targeted; indications (vitiligo face/neck best, acral poor; localised/scalp/palmoplantar psoriasis;
+  patchy AA; localised AD/prurigo); CI (photosensitivity disorders, photosensitising drugs, melanoma/NMSC at site);
+  goggles; start ~100 (face/neck) / 150–200 (trunk, limbs) / 250–300 (hands, feet) mJ/cm² for vitiligo, MED-based for
+  psoriasis; twice weekly non-consecutive; +10–20% until 24–48 h faint erythema; blister → skip, restart 20–25% lower;
+  missed → reduce 10–25%; combine tacrolimus/steroid; response 8–12 sessions, assess at 24, up to ~6 months.
 15. Radiofrequency (RF) vs electrocautery (EC): principle, modes, indications, pacemaker precautions, electrode
     choice, operating steps, plume safety, aftercare, complications (settings per machine manual)
 Each SOP: indications · contraindications · pre-procedure (consent, counselling, priming, test patch) · equipment
