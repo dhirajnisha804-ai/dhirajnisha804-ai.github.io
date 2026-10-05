@@ -113,3 +113,11 @@ Each SOP: indications · contraindications · pre-procedure (consent, counsellin
   owner taps ✓ Reviewed; unreviewed items are not published to colleagues.
 - Run an independent second check (fresh reviewer agent) of the 42 new templates, 101 drug-safety corrections and
   65 weight-dose entries against Wolverton 4e; give the owner a list of doubtful items first.
+
+## Drug safety additions (owner request, 5 Oct)
+- **Upadacitinib — separate entry** (currently only inside the combined "JAK inhibitors" entry). Check against current
+  label (AD: 15 mg OD, 30 mg if inadequate response <65 y; ≥65 y 15 mg; adolescents ≥12 y & ≥40 kg 15 mg; strong CYP3A4
+  inhibitors → max 15 mg), boxed warnings (serious infection, mortality, malignancy, MACE, thrombosis — esp. ≥65,
+  smokers, CV risk), baseline TB/HBV/HCV/CBC/LFT/lipids, lipids at ~12 wk, interrupt if ALC <500, ANC <1000, Hb <8,
+  no live vaccines, pregnancy contraindicated (contraception during and 4 wk after), no breastfeeding (during + 6 days).
+  Mark "Needs review".
