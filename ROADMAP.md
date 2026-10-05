@@ -77,6 +77,9 @@ until she approves each:
 1. Salicylic acid (SA) peel  2. Glycolic acid (GA) peel  3. TCA peel  4. NB-UVB phototherapy  5. Excimer (308 nm)
 6. Paring of warts and corns  7. Punch biopsy  8. Milia extraction  9. Molluscum extraction
 10. Comedone extraction  11. DPN (dermatosis papulosa nigra) removal — RF/electrocautery  12. Intralesional steroid injection
+13. Wood's lamp examination (room prep, findings by condition, documentation)
+14. Whole-body phototherapy (cabin NB-UVB ± PUVA: skin typing/MED, starting dose & increments, eye/genital
+    protection, missed-dose rules, cumulative dose log, stopping criteria) — #4 covers NB-UVB basics/targeted units
 Each SOP: indications · contraindications · pre-procedure (consent, counselling, priming, test patch) · equipment
 · step-by-step · endpoints · post-care · complications & management · follow-up/sessions. Paid content? — default free.
 
