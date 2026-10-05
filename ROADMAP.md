@@ -80,6 +80,8 @@ until she approves each:
 13. Wood's lamp examination (room prep, findings by condition, documentation)
 14. Whole-body phototherapy (cabin NB-UVB ± PUVA: skin typing/MED, starting dose & increments, eye/genital
     protection, missed-dose rules, cumulative dose log, stopping criteria) — #4 covers NB-UVB basics/targeted units
+15. Radiofrequency (RF) vs electrocautery (EC): principle, modes, indications, pacemaker precautions, electrode
+    choice, operating steps, plume safety, aftercare, complications (settings per machine manual)
 Each SOP: indications · contraindications · pre-procedure (consent, counselling, priming, test patch) · equipment
 · step-by-step · endpoints · post-care · complications & management · follow-up/sessions. Paid content? — default free.
 
