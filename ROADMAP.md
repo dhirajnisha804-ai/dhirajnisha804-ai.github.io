@@ -130,3 +130,11 @@ Each SOP: indications · contraindications · pre-procedure (consent, counsellin
    references: …</p>` completely.
 3. Drug safety page: remove the whole line "Checked against Wolverton 4e (2020), ch N. ⚠ Verify against current
    guidelines before use." (the `dsverify` text) — keep only the Edit button / "Edited by you" pill.
+
+
+## Status 7 Oct 2026
+- DONE Batch A (web): back-nav fix, csrc + Wolverton lines removed, tagline, header ⋯, bottom bar (Cases·Patients·Drugs·Templates·Resident Corner), Drugs tab (Interactions default · Brands · Dose · Safety), interaction checker (292 pairs, /tmp data in app as IX), auto alerts on patient page, Resident Corner (posts collection, 15 SOP drafts, admin editor/approve), banner carousel, slide-in, loading tips, tour, Review queue + "Needs review" badges (templates field `reviewed`; DS/WT in local meta/reviewed), upadacitinib DS entry, photo compare, ghost camera, voice typing (web + bridge).
+- DONE Batch B (APK, built 7 Oct): native splash until page ready, DermaAndroid.secure(bool) FLAG_SECURE (templates + Drugs non-brand tabs), DermaAndroid.listen(id, lang) speech → window.DRX_voiceResult, CAMERA permission + WebView getUserMedia grant.
+- DONE Batch C (accounts): shim role model (none/unverified/new/pending/rejected/verified/admin), sign-up + email verification + profile + proof (Firestore users/{uid}, verifications/{uid} ≤700 KB JPEG), admin Approvals (approve/reject + mailto), templates query free-only for non-verified (FREE_TPL ids + `free:true`), locks on Drugs tools / dose / safety / interactions, My account (sign out, delete). Rules in tools/firestore.rules — OWNER MUST PUBLISH THEM. Husband's email → add to adminEmails in tools/src/config.js AND to rules isAdmin list.
+- KNOWN GAP: repo is public (GitHub Pages) → tools/dbb4 + www/seed.json expose all templates. Fix in stage 4: private repo + Firebase Hosting, strip non-free templates from public seed, publish templates from a private source.
+- Tests: tools/tests (mockfb3.js, test_acct.py, test_v2.py, v3_test_b1.py) — run from a folder containing www/ and the mock.

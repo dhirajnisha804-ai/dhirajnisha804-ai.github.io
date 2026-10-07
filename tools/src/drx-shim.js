@@ -61,6 +61,7 @@
   const DRX = window.DRX = { configured: false, user: null, isAdmin: false, authSubs: [], seed: null, status: {} };
   let fs = null, auth = null;
   const adminEmail = String(CFG.adminEmail || "").toLowerCase();
+  const adminEmails = [adminEmail, ...((CFG.adminEmails || []).map(x => String(x).toLowerCase()))].filter(Boolean);
   if (CFG.firebase && CFG.firebase.apiKey && window.firebase) {
     try {
       firebase.initializeApp(CFG.firebase);
@@ -69,8 +70,9 @@
       auth = firebase.auth();
       DRX.configured = true;
       auth.onAuthStateChanged(u => {
-        DRX.user = u ? { email: u.email } : null;
-        DRX.isAdmin = !!(u && u.email && u.email.toLowerCase() === adminEmail);
+        DRX.authReady = true;
+        DRX.user = u ? { email: u.email, uid: u.uid, verified: !!u.emailVerified } : null;
+        DRX.isAdmin = !!(u && u.email && adminEmails.includes(u.email.toLowerCase()));
         DRX.authSubs.forEach(f => { try { f(); } catch {} });
       });
     } catch (e) { console.warn("Firebase init failed", e); fs = null; }
@@ -213,8 +215,92 @@
     migrating = false;
   }
 
+
+  /* ---------------- accounts, verification and access (stage 2) ---------------- */
+  // role: "none" (signed out) · "unverified" (email not confirmed) · "new" (no profile yet) · "pending" · "rejected" · "verified" · "admin"
+  DRX.role = "none"; DRX.profile = null; DRX.roleSubs = [];
+  const FREE_TPL = new Set(["t-tinea-corporis-cruris-dermatophytosis", "t-scabies", "t-acute-urticaria", "t-acne-vulgaris-mild-to-moderate", "t-pityriasis-versicolor"]);
+  DRX.freeTemplates = FREE_TPL;
+  const fullAccess = () => !DRX.configured || DRX.role === "admin" || DRX.role === "verified";
+  DRX.fullAccess = fullAccess;
+  let profUnsub = null;
+  function setRole(r) { if (r === DRX.role) return; DRX.role = r; DRX.roleSubs.forEach(f => { try { f(r); } catch {} }); }
+  DRX.onRole = f => { DRX.roleSubs.push(f); return () => { DRX.roleSubs = DRX.roleSubs.filter(g => g !== f); }; };
+  function watchProfile() {
+    profUnsub && profUnsub(); profUnsub = null; DRX.profile = null;
+    const u = auth && auth.currentUser;
+    if (!u) return setRole("none");
+    if (DRX.isAdmin) setRole("admin");
+    else if (!u.emailVerified) return setRole("unverified");
+    profUnsub = fs.collection("users").doc(u.uid).onSnapshot(d => {
+      DRX.profile = d.exists ? d.data() : null;
+      if (DRX.isAdmin) { setRole("admin"); DRX.roleSubs.forEach(f => { try { f("admin"); } catch {} }); return; }
+      setRole(!d.exists ? "new" : (d.data().status || "pending"));
+      DRX.roleSubs.forEach(f => { try { f(DRX.role); } catch {} });
+    }, () => setRole(DRX.isAdmin ? "admin" : "new"));
+  }
+  if (auth) auth.onAuthStateChanged(() => watchProfile());
+  DRX.signUp = async (email, pw) => {
+    if (!auth) throw err("not_configured");
+    const c = await auth.createUserWithEmailAndPassword(email.trim(), pw);
+    try { await c.user.sendEmailVerification(); } catch {}
+    return c.user;
+  };
+  DRX.resendVerification = () => auth && auth.currentUser ? auth.currentUser.sendEmailVerification() : Promise.reject(err("signed_out"));
+  DRX.resetPassword = email => auth ? auth.sendPasswordResetEmail(email.trim()) : Promise.reject(err("not_configured"));
+  DRX.checkVerified = async () => {
+    const u = auth && auth.currentUser; if (!u) return false;
+    await u.reload(); await u.getIdToken(true);
+    DRX.user = { email: u.email, uid: u.uid, verified: !!u.emailVerified }; watchProfile(); return !!u.emailVerified;
+  };
+  DRX.saveProfile = async data => {
+    const u = auth.currentUser; if (!u) throw err("signed_out");
+    const ref = fs.collection("users").doc(u.uid); const cur = await ref.get();
+    const base = { ...clone(data), email: u.email, updatedAt: Date.now() };
+    if (cur.exists) { const { status, ...rest } = base; if (cur.data().status === "rejected") rest.status = "pending"; await ref.update(rest); }
+    else await ref.set({ ...base, status: "pending", createdAt: Date.now() });
+  };
+  DRX.uploadProof = async (dataUrl, kind) => {
+    const u = auth.currentUser; if (!u) throw err("signed_out");
+    await fs.collection("verifications").doc(u.uid).set({ img: dataUrl, kind: kind || "", at: Date.now() });
+    await fs.collection("users").doc(u.uid).update({ proofAt: Date.now(), status: DRX.profile && DRX.profile.status === "rejected" ? "rejected" : (DRX.profile && DRX.profile.status) || "pending" });
+  };
+  DRX.resubmit = async () => { const u = auth.currentUser; if (!u) return; await fs.collection("users").doc(u.uid).delete(); };
+  // admin side
+  DRX.watchUsers = cb => fs ? fs.collection("users").onSnapshot(s => cb(s.docs.map(d => ({ uid: d.id, ...d.data() }))), () => cb([])) : () => {};
+  DRX.getProof = async uid => { const d = await fs.collection("verifications").doc(uid).get(); return d.exists ? d.data() : null; };
+  DRX.decide = async (uid, status, reason) => {
+    if (!DRX.isAdmin) throw err("admin_only");
+    await fs.collection("users").doc(uid).update({ status, reason: reason || "", decidedAt: Date.now(), decidedBy: DRX.user.email });
+    try { await fs.collection("verifications").doc(uid).delete(); } catch {}
+  };
+  DRX.deleteAccount = async () => {
+    const u = auth && auth.currentUser; if (!u) return;
+    try { await fs.collection("verifications").doc(u.uid).delete(); } catch {}
+    try { await fs.collection("users").doc(u.uid).delete(); } catch {}
+    await u.delete();
+  };
+  // templates: verified members get the full shared list; everyone else only the free ones
+  function templatesCol() {
+    const base = sharedCol("templates");
+    return {
+      doc: id => base.doc(id),
+      onSnapshot(cb, e) {
+        let un = null;
+        const filt = snap => fullAccess() ? snap : { docs: snap.docs.filter(d => FREE_TPL.has(d.id) || (d.data() || {}).free), get size() { return this.docs.length; }, get empty() { return !this.docs.length; } };
+        const start = () => {
+          un && un(); un = null;
+          if (fs && !fullAccess()) {
+            un = fs.collection("templates").where("free", "==", true).onSnapshot(s => { if (s.empty) seedP.then(() => cb(filt(seedSnap("templates")))); else cb(s); }, () => seedP.then(() => cb(filt(seedSnap("templates")))));
+          } else un = base.onSnapshot(s => cb(filt(s)), e);
+        };
+        start(); const off = DRX.onRole(start);
+        return () => { off(); un && un(); };
+      }
+    };
+  }
   const db = {
-    collection: col => (col === "brands" ? brandsCol() : SHARED.has(col) ? sharedCol(col) : localCol(col)),
+    collection: col => (col === "brands" ? brandsCol() : col === "templates" ? templatesCol() : SHARED.has(col) ? sharedCol(col) : localCol(col)),
     doc(path) { const [col, id] = path.split("/"); return SHARED.has(col) ? sharedCol(col).doc(id) : localDoc(col, id); }
   };
 

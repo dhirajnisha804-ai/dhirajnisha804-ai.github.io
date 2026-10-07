@@ -194,6 +194,14 @@ details.sec > .in{padding:0 14px 14px;display:flex;flex-direction:column;gap:12p
 .wtwarn{margin:0 0 6px;color:#9a3412;font-weight:600;font-size:13px}
 .wtd{border:1px dashed var(--accent);border-radius:8px;padding:8px 10px}.wtd summary{cursor:pointer;font-weight:600;color:var(--accent)}
 
+.lockcard{text-align:center;background:var(--surface);border:1px dashed var(--line);border-radius:14px;padding:26px 18px;margin-top:14px}.lockcard .lk-ico{font-size:34px}.lockcard h3{font-family:var(--f-display);margin:8px 0 6px}.lockcard p{color:var(--muted);margin:0 0 12px}
+.lockban{display:flex;flex-direction:column;gap:3px;margin-top:14px;padding:12px 14px;border-radius:12px;background:linear-gradient(135deg,#14324d,#1f6f78);color:#fff;cursor:pointer}.lockban span{font-size:13px;opacity:.9}
+.acbar{margin-top:12px;padding:9px 12px;border-radius:10px;font-size:13px;cursor:pointer}.acbar.pend{background:var(--warn-soft);color:var(--warn)}.acbar.rej{background:var(--danger-soft);color:var(--danger)}
+.acct{position:fixed;inset:0;z-index:80;background:var(--bg);overflow-y:auto;padding:calc(20px + env(safe-area-inset-top,0px)) 18px 40px}
+.acct .acin{max-width:460px;margin:0 auto}.acct h2{font-family:var(--f-display);margin:18px 0 6px}
+.aclogo{font-family:var(--f-display);font-size:24px;font-weight:650;color:#14324d;text-align:center}.aclogo b{color:#1f8a84}.aclogo small{display:block;font-family:var(--f-body);font-size:12.5px;font-weight:500;color:var(--muted)}
+.linkbtn{background:none;border:0;color:var(--accent);font-weight:600;cursor:pointer;padding:4px;align-self:center}
+.acsep{text-align:center;color:var(--muted);font-size:13px;margin-top:6px}
 /* ---- v2 ---- */
 #boot{position:fixed;inset:0;z-index:100;background:#14324d;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity .3s}
 #boot.bye{opacity:0;pointer-events:none}
@@ -724,7 +732,7 @@ function render(full){
   ({cases:fillCases, patients:fillPatients, patient:fillProfile, meds:fillMeds, templates:fillTemplates, more:fillMore, corner:fillCorner}[S.view]||fillCases)();
 }
 const loading = () => !S.db ? false : !(S.loaded.people && S.loaded.visits);
-function banner(){ return S.noDb ? `<div class="banner">Saving is unavailable in this view. Open this page from your Claude account to add and keep records.</div>` : ""; }
+function banner(){ return acctBanner() + (S.noDb ? `<div class="banner">Saving is unavailable in this view. Open this page from your Claude account to add and keep records.</div>` : ""); }
 
 /* ---------- CASE FORMATS (replaces Home) ---------- */
 const CASES = (() => { try{ return JSON.parse(document.getElementById("casesData").textContent); }catch{ return []; } })();
@@ -1201,13 +1209,14 @@ function drugsTop(){ return `<div class="viewhead"><div><h2>Drugs</h2></div>${S.
   <div class="chips segs">${DRUG_TABS.map(([k,l])=>`<button class="chip" data-dtab="${k}" aria-pressed="${S.drugTab===k}">${esc(l)}</button>`).join("")}</div>`; }
 function drugsPane(){
   const t=S.drugTab;
+  if(!hasFull()) return lockHTML(({ix:"The interaction checker",dose:"Dose by weight",safety:"Drug safety"})[t]||"This tool");
   if(t==="ix") return ixWidgetHTML();
   if(t==="dose") return `<div id="dwBox"></div>`;
   if(t==="safety") return `<label class="search">${ICON.search}<input id="dsQ2" type="search" placeholder="Search drug, test or interaction" autocomplete="off" aria-label="Search drugs"></label><div id="dsList2" style="margin-top:10px"></div><div style="margin-top:12px"><button class="btn sm" type="button" data-act="dsadd">${ICON.plus} Add a drug</button></div>`;
   return "";
 }
 function fillDrugsExtra(){
-  const t=S.drugTab;
+  const t=S.drugTab; if(!hasFull()) return;
   if(t==="ix"){ S.ixList ||= []; wireIx($("#main"), S.ixList); }
   else if(t==="dose"){ const box=$("#dwBox"); box.innerHTML=wtCalcHTML(WT_DOSE,{})+`<p class="hint">Doses from standard dermatology references, WHO, BNF for Children and IADVL. Always confirm before prescribing.</p>`; wireWtCalc(box, WT_DOSE, null); }
   else if(t==="safety"){ const draw=()=>{ const w=$("#dsQ2").value.toLowerCase().split(/\s+/).filter(Boolean); const arr=dsList().filter(d=>!w.length||w.every(x=>JSON.stringify(d).toLowerCase().includes(x))); $("#dsList2").innerHTML = arr.length ? arr.map(d=>dsCardHTML(d, [], d.cls)).join("") : `<div class="empty">No drug matches.</div>`; }; draw(); $("#dsQ2").addEventListener("input", draw);
@@ -1356,6 +1365,149 @@ function openReviewQueue(){
     <div class="group"><h3>Dose by weight · ${wt.length}</h3><div class="list">${wt.map(e=>`<div class="row" style="cursor:default"><span class="main"><span class="t">${esc(e.drug)}</span><span class="s">${esc(e.ind)} · ${esc(e.lo??"")}${e.hi!=null&&e.hi!==e.lo?"–"+esc(e.hi):""} ${esc(e.unit)}${e.basis==="kg"?"/kg":e.basis==="m2"?"/m²":""} ${esc(e.per)}${e.max?` · max ${esc(e.max)}`:""}</span></span><button class="btn sm" data-rvk="wt:${esc(e.id)}">✓</button></div>`).join("")}</div></div>`);
   $("#sheetBody").addEventListener("click", async e=>{ const b=e.target.closest("[data-rvk]"); if(!b) return; await markReviewed(b.dataset.rvk); b.closest(".row").remove(); });
 }
+/* ================= accounts: sign-up, email verification, registration proof, approvals, locks ================= */
+const ACC = () => window.DRX && window.DRX.configured ? window.DRX : null;
+const hasFull = () => { const D=ACC(); return !D || D.fullAccess(); };
+const roleNow = () => { const D=ACC(); return D ? D.role : "admin"; };
+const COUNCILS=["Maharashtra Medical Council","National Medical Commission (IMR)","Andhra Pradesh","Assam","Bihar","Chhattisgarh","Delhi","Goa","Gujarat","Haryana","Himachal Pradesh","Jharkhand","Karnataka","Kerala","Madhya Pradesh","Odisha","Punjab","Rajasthan","Tamil Nadu","Telangana","Uttar Pradesh","Uttarakhand","West Bengal","Other state council"];
+const ROLES=[["resident","Dermatology resident (MD/DNB/DVD)"],["dermatologist","Practising dermatologist"],["other","Other doctor / GP"]];
+function lockHTML(what){ return `<div class="lockcard"><div class="lk-ico">🔒</div><h3>${esc(what)} is for verified members</h3><p>${roleNow()==="pending"?"Your registration is being reviewed. You’ll get access as soon as it’s approved.":roleNow()==="rejected"?"Your verification needs another look — see the message at the top.":"Verify your registration as a dermatology resident or dermatologist to unlock it."}</p>${["new","pending","rejected"].includes(roleNow())?`<button class="btn primary" data-act="acct">${roleNow()==="new"?"Verify my registration":"View my verification"}</button>`:""}</div>`; }
+function acctBanner(){
+  const r=roleNow();
+  if(r==="pending") return `<div class="acbar pend" data-act="acct">⏳ Verification under review — free features are open meanwhile.${ACC()?.profile?.proofAt?"":" <b>Add your proof →</b>"}</div>`;
+  if(r==="rejected") return `<div class="acbar rej" data-act="acct">⚠ Verification not approved${ACC()?.profile?.reason?": "+esc(ACC().profile.reason):""}. <b>Fix and resubmit →</b></div>`;
+  return "";
+}
+/* full-screen account flow */
+function acctScreen(html){ let ov=$("#acctOv"); if(!ov){ ov=document.createElement("div"); ov.id="acctOv"; ov.className="acct"; document.body.appendChild(ov); } ov.innerHTML=`<div class="acin"><div class="aclogo">Derma <b>Desk</b><small>Dermatology Made Easy</small></div>${html}</div>`; return ov; }
+function closeAcct(){ $("#acctOv")?.remove(); }
+const acMsg = t => { const e=$("#acMsg"); if(e) e.textContent=t; };
+const fbErr = e => ({"auth/email-already-in-use":"An account with this email already exists — sign in instead.","auth/invalid-email":"That email doesn’t look right.","auth/weak-password":"Use a password of at least 6 characters.","auth/invalid-credential":"Email or password is wrong.","auth/wrong-password":"Email or password is wrong.","auth/user-not-found":"No account with this email.","auth/network-request-failed":"No internet. Try again when online.","auth/too-many-requests":"Too many tries. Wait a few minutes.","auth/requires-recent-login":"Please sign in again, then delete the account."}[e?.code]||"Something went wrong. Try again.");
+function showSignIn(){
+  const ov=acctScreen(`<h2>Sign in</h2><div class="stack">
+    <div class="field"><label for="acE">Email</label><input id="acE" type="email" autocomplete="username"></div>
+    <div class="field"><label for="acP">Password</label><input id="acP" type="password" autocomplete="current-password"></div>
+    <button class="btn primary big" id="acGo">Sign in</button><p class="hint" id="acMsg"></p>
+    <button class="linkbtn" id="acForgot">Forgot password?</button>
+    <div class="acsep">New to Derma Desk?</div><button class="btn big" id="acNew">Create an account</button></div>`);
+  $("#acGo").onclick=async()=>{ acMsg("Signing in…"); try{ await ACC().signIn($("#acE").value,$("#acP").value); acMsg(""); }catch(e){ acMsg(fbErr(e)); } };
+  $("#acForgot").onclick=async()=>{ const em=$("#acE").value.trim(); if(!em){ acMsg("Type your email first."); return; } try{ await ACC().resetPassword(em); acMsg("Password reset email sent."); }catch(e){ acMsg(fbErr(e)); } };
+  $("#acNew").onclick=showSignUp;
+}
+function showSignUp(){
+  let d={}; try{ d=JSON.parse(localStorage.getItem("drx.signup")||"{}"); }catch{}
+  acctScreen(`<h2>Create your account</h2><p class="hint">For doctors only. Your registration is verified before full access.</p><div class="stack"><div class="grid">
+    <div class="field" style="grid-column:1/-1"><label for="suN">Full name (as on registration)</label><input id="suN" value="${esc(d.name||"")}" autocomplete="name"></div>
+    <div class="field"><label for="suD">Date of birth</label><input id="suD" type="date" value="${esc(d.dob||"")}"></div>
+    <div class="field"><label for="suS">Sex</label><select id="suS">${["","Female","Male","Other"].map(x=>`<option ${x===d.sex?"selected":""} value="${x}">${x||"Select"}</option>`).join("")}</select></div>
+    <div class="field" style="grid-column:1/-1"><label for="suPh">Mobile number</label><input id="suPh" type="tel" inputmode="tel" value="${esc(d.phone||"")}" autocomplete="tel"></div>
+    <div class="field" style="grid-column:1/-1"><label for="suE">Email</label><input id="suE" type="email" value="${esc(d.email||"")}" autocomplete="email"></div>
+    <div class="field" style="grid-column:1/-1"><label for="suP">Password (6+ characters)</label><input id="suP" type="password" autocomplete="new-password"></div></div>
+    <label class="scrow"><input type="checkbox" id="suC1"><span class="main"><span class="s">I agree to the Terms of use and Privacy policy. I understand Derma Desk is a reference and prescription aid; I remain responsible for every prescription.</span></span></label>
+    <label class="scrow"><input type="checkbox" id="suC2"><span class="main"><span class="s">I confirm I am a registered medical practitioner.</span></span></label>
+    <button class="btn primary big" id="suGo">Create account</button><p class="hint" id="acMsg"></p>
+    <button class="linkbtn" id="suBack">I already have an account</button></div>`);
+  $("#suBack").onclick=showSignIn;
+  $("#suGo").onclick=async()=>{
+    const v={name:$("#suN").value.trim(), dob:$("#suD").value, sex:$("#suS").value, phone:$("#suPh").value.trim(), email:$("#suE").value.trim()};
+    if(!v.name||!v.dob||!v.sex||!v.phone||!v.email){ acMsg("Please fill every field."); return; }
+    if(!/^[+0-9 -]{10,15}$/.test(v.phone)){ acMsg("Check the mobile number."); return; }
+    if(!$("#suC1").checked||!$("#suC2").checked){ acMsg("Please tick both boxes to continue."); return; }
+    try{ localStorage.setItem("drx.signup", JSON.stringify(v)); }catch{}
+    acMsg("Creating your account…");
+    try{ await ACC().signUp(v.email, $("#suP").value); }catch(e){ acMsg(fbErr(e)); }
+  };
+}
+function showVerifyEmail(){
+  acctScreen(`<h2>Confirm your email</h2><p>We sent a link to <b>${esc(ACC().user?.email||"")}</b>. Open it, then come back and tap the button below.</p><div class="stack">
+    <button class="btn primary big" id="veOk">I’ve confirmed my email</button><button class="btn" id="veRe">Send the link again</button><p class="hint" id="acMsg">Check spam or promotions if you can’t see it.</p>
+    <button class="linkbtn" id="veOut">Use a different email</button></div>`);
+  $("#veOk").onclick=async()=>{ acMsg("Checking…"); try{ const ok=await ACC().checkVerified(); if(!ok) acMsg("Not confirmed yet — open the link in the email first."); }catch(e){ acMsg(fbErr(e)); } };
+  $("#veRe").onclick=async()=>{ try{ await ACC().resendVerification(); acMsg("Sent again."); }catch(e){ acMsg(fbErr(e)); } };
+  $("#veOut").onclick=()=>ACC().signOut();
+}
+async function shrinkProof(file){
+  const url=URL.createObjectURL(file);
+  try{ const img=await new Promise((ok,no)=>{ const i=new Image(); i.onload=()=>ok(i); i.onerror=no; i.src=url; });
+    const max=1400, sc=Math.min(1,max/Math.max(img.naturalWidth,img.naturalHeight)); const c=document.createElement("canvas"); c.width=Math.round(img.naturalWidth*sc); c.height=Math.round(img.naturalHeight*sc); c.getContext("2d").drawImage(img,0,0,c.width,c.height);
+    let q=0.8, out=c.toDataURL("image/jpeg",q); while(out.length>700000 && q>0.35){ q-=0.1; out=c.toDataURL("image/jpeg",q); } return out; }
+  finally{ URL.revokeObjectURL(url); }
+}
+function showProfileForm(inSheet){
+  const D=ACC(); let d={}; try{ d=JSON.parse(localStorage.getItem("drx.signup")||"{}"); }catch{} const P={...d, ...(D.profile||{})};
+  const html=`<h2>${inSheet?"My verification":"Verify your registration"}</h2><p class="hint">Needed for full access to templates, drug tools and procedures. Your proof is seen only by the Derma Desk admins and deleted after review.</p><div class="stack"><div class="grid">
+    <div class="field" style="grid-column:1/-1"><label for="pfN">Full name</label><input id="pfN" value="${esc(P.name||"")}"></div>
+    <div class="field"><label for="pfD">Date of birth</label><input id="pfD" type="date" value="${esc(P.dob||"")}"></div>
+    <div class="field"><label for="pfS">Sex</label><select id="pfS">${["","Female","Male","Other"].map(x=>`<option ${x===P.sex?"selected":""} value="${x}">${x||"Select"}</option>`).join("")}</select></div>
+    <div class="field" style="grid-column:1/-1"><label for="pfPh">Mobile number</label><input id="pfPh" type="tel" value="${esc(P.phone||"")}"></div>
+    <div class="field" style="grid-column:1/-1"><label for="pfR">I am a</label><select id="pfR">${ROLES.map(([k,l])=>`<option value="${k}" ${k===P.role?"selected":""}>${l}</option>`).join("")}</select></div>
+    <div class="field" style="grid-column:1/-1"><label for="pfC">Medical council</label><select id="pfC">${COUNCILS.map(c=>`<option ${c===P.council?"selected":""}>${c}</option>`).join("")}</select></div>
+    <div class="field" style="grid-column:1/-1"><label for="pfReg">Registration number</label><input id="pfReg" value="${esc(P.regNo||"")}"></div>
+    <div class="field" style="grid-column:1/-1"><label for="pfI">College / hospital</label><input id="pfI" value="${esc(P.institute||"")}" placeholder="e.g. HBT Medical College, Mumbai"></div></div>
+    <div class="section"><div class="lbl" style="margin-bottom:6px"><span>Proof</span></div><p class="hint" id="pfHint" style="margin:0 0 8px">Resident: college ID card or residency joining letter. Practising dermatologist: MD / DNB / DVD degree certificate. Plus your registration certificate if you have it.</p>
+      <div class="actions"><label class="btn sm filebtn"><input type="file" id="pfCam" accept="image/*" capture="environment">Camera</label><label class="btn sm filebtn"><input type="file" id="pfGal" accept="image/*">Gallery</label></div>
+      <div id="pfPrev" class="hint" style="margin-top:8px">${P.proofAt?"✓ Proof already submitted — add a new one only if asked.":"No proof added yet."}</div></div>
+    <label class="scrow"><input type="checkbox" id="pfOk"><span class="main"><span class="s">I consent to my registration proof being reviewed by the Derma Desk admins and deleted after verification.</span></span></label>
+    <button class="btn primary big" id="pfGo">Submit for verification</button><p class="hint" id="acMsg"></p>
+    ${inSheet?"":`<button class="linkbtn" id="pfLater">Skip for now — use the free features</button>`}<button class="linkbtn" id="pfOut">Sign out</button></div>`;
+  const root = inSheet ? (openSheet("My verification", html), $("#sheetBody")) : acctScreen(html);
+  let proof=null;
+  const take=async e=>{ const f=e.target.files[0]; e.target.value=""; if(!f) return; $("#pfPrev").textContent="Preparing…"; try{ proof=await shrinkProof(f); $("#pfPrev").innerHTML=`<img src="${proof}" alt="Proof" style="max-height:160px;border-radius:8px">`; }catch{ $("#pfPrev").textContent="Couldn’t read that photo — try again."; } };
+  root.querySelector("#pfCam").addEventListener("change",take); root.querySelector("#pfGal").addEventListener("change",take);
+  root.querySelector("#pfOut").onclick=()=>{ closeSheet(); ACC().signOut(); };
+  root.querySelector("#pfLater")?.addEventListener("click",async()=>{ const v=collectPf(); if(!v) return; try{ await D.saveProfile(v); closeAcct(); }catch(e){ acMsg(fbErr(e)); } });
+  function collectPf(){ const v={name:$("#pfN").value.trim(), dob:$("#pfD").value, sex:$("#pfS").value, phone:$("#pfPh").value.trim(), role:$("#pfR").value, council:$("#pfC").value, regNo:$("#pfReg").value.trim(), institute:$("#pfI").value.trim()}; if(!v.name||!v.regNo){ acMsg("Name and registration number are needed."); return null; } return v; }
+  root.querySelector("#pfGo").onclick=async()=>{
+    const v=collectPf(); if(!v) return;
+    if(!proof && !P.proofAt){ acMsg("Add a photo of your proof."); return; }
+    if(!$("#pfOk").checked){ acMsg("Please tick the consent box."); return; }
+    acMsg("Submitting…");
+    try{ await D.saveProfile(v); if(proof) await D.uploadProof(proof, v.role); try{ localStorage.removeItem("drx.signup"); }catch{} acMsg(""); if(inSheet){ closeSheet(); toast("Submitted — we’ll review it soon"); } else closeAcct(); }
+    catch(e){ acMsg(fbErr(e)); }
+  };
+}
+function gate(){
+  const D=ACC(); if(!D) return;
+  const r=D.role;
+  if(r==="none") showSignIn();
+  else if(r==="unverified") showVerifyEmail();
+  else if(r==="new") showProfileForm(false);
+  else closeAcct();
+  try{ render(true); }catch{}
+}
+function openAccountSheet(){
+  const D=ACC(); if(!D) return;
+  const r=D.role;
+  if(["new","pending","rejected"].includes(r)) return showProfileForm(true);
+  openSheet("My account", `<div class="stack"><div class="section"><div class="t"><b>${esc(D.profile?.name||D.user?.email||"")}</b></div><p class="hint" style="margin:4px 0 0">${esc(D.user?.email||"")} · ${r==="admin"?"Admin":r==="verified"?"Verified member":r}</p></div>
+    <div class="actions"><button class="btn" id="amOut">Sign out</button><button class="btn danger" id="amDel">Delete my account</button></div><p class="hint">Deleting removes your account and verification details. Patient records on this phone are not affected.</p></div>`);
+  $("#amOut").onclick=()=>{ closeSheet(); D.signOut(); };
+  armDelete($("#amDel"), async()=>{ try{ await D.deleteAccount(); closeSheet(); toast("Account deleted"); }catch(e){ toast(fbErr(e)); } });
+}
+/* admin approvals */
+let USERS=[]; let usersUnsub=null;
+function watchUsersIfAdmin(){ const D=ACC(); usersUnsub&&usersUnsub(); usersUnsub=null; if(D && D.role==="admin") usersUnsub=D.watchUsers(u=>{ USERS=u; S.view==="more" && render(); }); }
+const pendingUsers = () => USERS.filter(u=>u.status==="pending");
+function openApprovals(){
+  const draw=()=>{ const sec=(t,arr)=>`<div class="group"><h3>${t} · ${arr.length}</h3><div class="list">${arr.map(u=>`<button class="row" data-apu="${esc(u.uid)}"><span class="main"><span class="t">${esc(u.name||u.email)}</span><span class="s">${esc([ROLES.find(x=>x[0]===u.role)?.[1]||u.role, u.council, u.regNo].filter(Boolean).join(" · "))}</span></span><span class="aside">${u.proofAt?"📎":""}</span></button>`).join("")||`<div class="empty">None</div>`}</div></div>`;
+    $("#sheetBody").innerHTML = sec("Waiting for approval", pendingUsers()) + sec("Approved", USERS.filter(u=>u.status==="verified")) + sec("Not approved", USERS.filter(u=>u.status==="rejected")); };
+  openSheet("Approvals", ""); draw();
+  $("#sheetBody").addEventListener("click", e=>{ const b=e.target.closest("[data-apu]"); if(b) openApplicant(b.dataset.apu); });
+}
+async function openApplicant(uid){
+  const u=USERS.find(x=>x.uid===uid); if(!u) return; const D=ACC();
+  openSheet2(u.name||u.email, `<div class="stack"><dl class="kv"><dt>Email</dt><dd>${esc(u.email||"")}</dd><dt>Mobile</dt><dd>${esc(u.phone||"")}</dd><dt>Date of birth</dt><dd>${esc(u.dob||"")}</dd><dt>Sex</dt><dd>${esc(u.sex||"")}</dd><dt>Role</dt><dd>${esc(ROLES.find(x=>x[0]===u.role)?.[1]||u.role||"")}</dd><dt>Council</dt><dd>${esc(u.council||"")}</dd><dt>Registration no.</dt><dd>${esc(u.regNo||"")}</dd><dt>College / hospital</dt><dd>${esc(u.institute||"")}</dd><dt>Status</dt><dd>${esc(u.status||"")}${u.decidedBy?` · by ${esc(u.decidedBy)}`:""}</dd></dl>
+    <div class="section"><div class="lbl">Proof</div><div id="apProof" class="hint">Loading…</div></div>
+    <p class="hint">Cross-check the registration number on the NMC Indian Medical Register or the state council website.</p>
+    <div class="field"><label for="apWhy">Message to the doctor (needed if not approving)</label><input id="apWhy" placeholder="e.g. Please upload a clearer degree certificate"></div>
+    <div class="actions"><button class="btn primary" id="apOk">✓ Approve</button><button class="btn danger" id="apNo">Not approve</button><a class="btn" id="apMail" href="#">Email the doctor</a></div><p class="hint" id="apMsg"></p></div>`);
+  D.getProof(uid).then(p=>{ const el=$("#apProof"); if(el) el.innerHTML = p?.img ? `<img src="${p.img}" alt="Proof" style="max-width:100%;border-radius:8px" data-lbsrc="1">` : "No proof uploaded (or already deleted after review)."; }).catch(()=>{ const el=$("#apProof"); if(el) el.textContent="Couldn’t load the proof."; });
+  const mail=(subj,body)=>`mailto:${encodeURIComponent(u.email||"")}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body)}`;
+  const upd=()=>{ $("#apMail").href = mail("Derma Desk verification", `Dear Dr. ${u.name||""},\n\n${$("#apWhy").value||"Your Derma Desk verification has been reviewed."}\n\n— Derma Desk`); }; upd(); $("#apWhy").addEventListener("input",upd);
+  $("#apOk").onclick=async()=>{ try{ await D.decide(uid,"verified",""); location.href=mail("Derma Desk: verification approved", `Dear Dr. ${u.name||""},\n\nYour registration has been verified. Open Derma Desk to start using all features.\n\n— Derma Desk`); closeSheet2(); toast("Approved"); }catch(e){ $("#apMsg").textContent="Couldn’t save — check the Firestore rules / connection."; } };
+  $("#apNo").onclick=async()=>{ const why=$("#apWhy").value.trim(); if(!why){ $("#apMsg").textContent="Write a short message so the doctor knows what to fix."; return; } try{ await D.decide(uid,"rejected",why); location.href=mail("Derma Desk: verification needs another look", `Dear Dr. ${u.name||""},\n\n${why}\n\nOpen Derma Desk → My verification to resubmit.\n\n— Derma Desk`); closeSheet2(); toast("Saved"); }catch(e){ $("#apMsg").textContent="Couldn’t save — check the Firestore rules / connection."; } };
+}
+
 function openPatientPage(pid, vid, {tpl}={}){
   const p = pid ? personById(pid) : null;
   if(pid && !p){ toast("This patient record isn’t available"); return; }
@@ -1417,7 +1569,7 @@ function openPatientPage(pid, vid, {tpl}={}){
   $("#ppPhotos").addEventListener("input", e=>{ const i=e.target.dataset.phcap; if(i!=null) W.photos[+i].caption=e.target.value; });
   drawPhotos();
   const safeCtx = () => ({age:$("#ppAge").value, sex:$("#ppSex").value, weight:$("#ppWt").value, preg:$("#ppSex").value==="Male"?"":$("#ppPreg").value, comorb:$("#ppCom").value, meds:$("#ppMeds").value, history:$("#ppHx").value});
-  const drawSafe = () => { const el=$("#ppSafeBody"); if(!el) return; const open=[...el.querySelectorAll("details[open]")].map(x=>x.dataset.k); el.innerHTML=ixPatientHTML(W.rx, $("#ppMeds").value)+safetyForRx(W.rx, safeCtx()); open.forEach(k=>el.querySelector(`details[data-k="${CSS.escape(k)}"]`)?.setAttribute("open","")); $("#ppPregF").hidden = $("#ppSex").value==="Male"; };
+  const drawSafe = () => { const el=$("#ppSafeBody"); if(!el) return; const open=[...el.querySelectorAll("details[open]")].map(x=>x.dataset.k); el.innerHTML=hasFull() ? ixPatientHTML(W.rx, $("#ppMeds").value)+safetyForRx(W.rx, safeCtx()) : `<p class="hint" style="margin:0">🔒 Drug safety and interaction alerts are for verified members.</p>`; open.forEach(k=>el.querySelector(`details[data-k="${CSS.escape(k)}"]`)?.setAttribute("open","")); $("#ppPregF").hidden = $("#ppSex").value==="Male"; };
   const drawRx = () => { $("#ppRx").innerHTML = rxTableHTML(W.rx); drawSafe(); };
   wireRxTable($("#ppRx"), () => W.rx, drawRx); drawRx();
   ["#ppAge","#ppWt","#ppCom","#ppMeds","#ppHx"].forEach(sel=>$(sel).addEventListener("input", drawSafe));
@@ -1426,8 +1578,8 @@ function openPatientPage(pid, vid, {tpl}={}){
   $("#ppSafeAll").onclick = () => openDrugSafety();
   S.safeHook = drawSafe;
   $("#ppAdd").onclick = () => openMedPicker(null, item => { W.rx.push(item); drawRx(); });
-  $("#ppWtc").onclick = () => openWtCalc(v => { if(v.weight && !$("#ppWt").value){ $("#ppWt").value=v.weight; } W.rx.push(normRx({drug:v.drug, dose:v.dose, freq:v.freq, dur:v.dur, instr:v.instr, route:v.route})); drawRx(); toast("Added to prescription"); });
-  $("#ppIx").onclick = () => openIxSheet([...W.rx.map(r=>({label:r.drug||r.brand, text:dsRxText(r)})), ...$("#ppMeds").value.split(/[,;\n]+/).map(x=>x.trim()).filter(Boolean).map(m=>({label:m+" (current)", text:m}))].filter(x=>x.label));
+  $("#ppWtc").onclick = () => !hasFull() ? toast("Dose by weight is for verified members") : openWtCalc(v => { if(v.weight && !$("#ppWt").value){ $("#ppWt").value=v.weight; } W.rx.push(normRx({drug:v.drug, dose:v.dose, freq:v.freq, dur:v.dur, instr:v.instr, route:v.route})); drawRx(); toast("Added to prescription"); });
+  $("#ppIx").onclick = () => !hasFull() ? toast("Interaction checker is for verified members") : openIxSheet([...W.rx.map(r=>({label:r.drug||r.brand, text:dsRxText(r)})), ...$("#ppMeds").value.split(/[,;\n]+/).map(x=>x.trim()).filter(Boolean).map(m=>({label:m+" (current)", text:m}))].filter(x=>x.label));
   $("#ppGhost")?.addEventListener("click", () => { const last=vs.flatMap(v=>(v.photos||[]).map(x=>x.id))[0]; openGhostCamera(last, f=>addPhotos([f])); });
   $("#ppTpl").onclick = () => openTplPicker(t => { applyTpl(t); drawRx(); toast(`Applied ${t.name}`); });
   $("#ppGuide").onclick = () => openCaseRef($("#ppDx").value.trim());
@@ -1525,7 +1677,7 @@ function openDrugDetails(item, onDone){
     <div class="field"><label for="ddDrug">Medicine</label><input id="ddDrug" value="${esc(r.drug)}"></div>
     ${r.generic?`<p class="hint" style="margin:-6px 0 0">${esc(r.generic)}</p>`:""}
     <div class="field"><label for="ddDose">Dose</label><input id="ddDose" value="${esc(r.dose)}" placeholder="e.g. Pea-sized amount, 1 tablet, 20 mg"></div>
-    ${wtFor([r.drug,r.generic,r.brand].join(" ")).length?`<details class="wtd" id="ddWtD"><summary>Calculate dose by weight</summary><div id="ddWt" style="margin-top:8px"></div></details>`:""}
+    ${hasFull()&&wtFor([r.drug,r.generic,r.brand].join(" ")).length?`<details class="wtd" id="ddWtD"><summary>Calculate dose by weight</summary><div id="ddWt" style="margin-top:8px"></div></details>`:""}
     <div class="field"><label for="ddRoute">Route</label><select id="ddRoute"><option value="">—</option>${ROUTES.map(o=>`<option ${r.route===o?"selected":""}>${o}</option>`).join("")}</select></div>
     <div class="field"><label for="ddFreq">Frequency</label>${qb("freq",FREQ,r.freq)}<input id="ddFreq" value="${esc(r.freq)}" placeholder="Custom frequency"></div>
     <div class="field"><label for="ddTime">Timing</label>${qb("timing",TIMING,r.timing)}<input id="ddTime" value="${esc(r.timing)}" placeholder="Custom timing"></div>
@@ -1703,7 +1855,7 @@ function openBrandEditor(b){
 
 /* ---------- TEMPLATES ---------- */
 function tplShell(){
-  return `${banner()}<div class="viewhead"><div><h2>Prescription templates</h2><p id="tplCount"></p></div><button class="btn primary" data-act="newtpl">${ICON.plus}Add template</button></div>
+  return `${banner()}${hasFull()?"":`<div class="lockban" data-act="acct"><b>🔒 Unlock all templates</b><span>${roleNow()==="pending"?"Your verification is under review.":"Verify your registration as a dermatology resident or dermatologist."}</span></div>`}<div class="viewhead"><div><h2>Prescription templates</h2><p id="tplCount"></p></div><button class="btn primary" data-act="newtpl">${ICON.plus}Add template</button></div>
   <label class="search">${ICON.search}<input id="qTpl" type="search" placeholder="Search diseases or drugs" aria-label="Search templates" autocomplete="off"></label><div id="tplList"></div>`;
 }
 function fillTemplates(){
@@ -1748,6 +1900,10 @@ function fillMore(){
   const starred=S.visits.filter(v=>v.starred).length;
   const photos=S.visits.reduce((n,v)=>n+(v.photos||[]).length+(v.derm||[]).filter(d=>d.photoId).length,0);
   $("#moreBody").innerHTML = `
+  ${ACC()?`<div class="group"><h3>Account</h3><div class="list">
+    <button class="row" data-act="acct"><span class="main"><span class="t">My account</span><span class="s">${esc(ACC().user?.email||"")} · ${roleNow()==="admin"?"Admin":roleNow()==="verified"?"Verified member":roleNow()==="pending"?"Verification under review":roleNow()==="rejected"?"Verification not approved":"Not verified"}</span></span></button>
+    ${roleNow()==="admin"?`<button class="row" data-act="approvals"><span class="main"><span class="t">Approvals</span><span class="s">Doctors waiting for verification</span></span><span class="aside">${pendingUsers().length?`<span class="pill rose">${pendingUsers().length}</span>`:""}</span></button>`:""}
+  </div></div>`:""}
   <div class="group"><h3>Settings</h3><div class="list">
     <button class="row" data-act="settings"><span class="main"><span class="t">Doctor profile &amp; clinic details</span><span class="s">${esc([S.settings.doctor, S.settings.clinic].filter(Boolean).join(" · ")||"Letterhead for prescriptions")}</span></span></button>
     <button class="row" data-act="signature"><span class="main"><span class="t">Signature</span><span class="s">${S.settings.signatureId?"Added · printed on every prescription":"Upload a photo of your signature"}</span></span></button>
@@ -2743,15 +2899,18 @@ document.addEventListener("click", async e => {
   else if(a==="backup") exportBackup();
   else if(a==="help") openHelp();
   else if(a==="newpost") openPostEditor(null);
+  else if(a==="acct") openAccountSheet();
+  else if(a==="approvals") openApprovals();
   else if(a==="compare") openCompare(S._cmp||[]);
   else if(a==="dsadd") openDsEditor(null, ()=>render(true));
   else if(a==="tour") { closeSheet(); showTour(true); }
   else if(a==="reviewq") openReviewQueue();
-  else if(a==="wtcalc") openWtCalc(null, "", true);
+  else if(a==="wtcalc") { if(hasFull()) openWtCalc(null, "", true); else toast("Dose by weight is for verified members"); }
   else if(a==="exportanon") exportAnon();
 });
 /* ---------- data ---------- */
 bootTips();
+if(ACC()){ ACC().onAuth(()=>{ if(ACC().authReady) gate(); }); ACC().onRole(()=>{ gate(); watchUsersIfAdmin(); }); if(ACC().authReady){ gate(); watchUsersIfAdmin(); } }
 render(true);
 setTimeout(()=>{ hideBoot(); setTimeout(()=>showTour(false),400); }, 1200);
 (async () => { try{ S.downloads = await window.claude?.use?.("downloads"); }catch{ S.downloads=null; } })();

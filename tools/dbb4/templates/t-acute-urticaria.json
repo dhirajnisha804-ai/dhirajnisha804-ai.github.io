@@ -48,5 +48,7 @@
   ],
   "source": "std-books-2026-10",
   "starter": true,
-  "updatedAt": 1791035262768
+  "updatedAt": 1791382880529,
+  "free": true,
+  "prevUpdatedAt": 1791035262768
 }

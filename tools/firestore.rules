@@ -1,0 +1,27 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() { return request.auth != null; }
+    function isAdmin() { return signedIn() && request.auth.token.email in ['dhirajnisha804@gmail.com']; }
+    function me() { return get(/databases/$(database)/documents/users/$(request.auth.uid)).data; }
+    function isVerified() { return isAdmin() || (signedIn() && exists(/databases/$(database)/documents/users/$(request.auth.uid)) && me().status == 'verified'); }
+
+    match /brands/{id}    { allow read: if true;  allow write: if isAdmin(); }
+    match /posts/{id}     { allow read: if true;  allow write: if isAdmin(); }
+    match /templates/{id} { allow read: if isVerified() || resource.data.free == true; allow write: if isAdmin(); }
+
+    match /users/{uid} {
+      allow read: if isAdmin() || (signedIn() && request.auth.uid == uid);
+      allow create: if signedIn() && request.auth.uid == uid && request.auth.token.email_verified == true
+                    && request.resource.data.status == 'pending';
+      allow update: if isAdmin() || (signedIn() && request.auth.uid == uid && (
+                      request.resource.data.status == resource.data.status ||
+                      (resource.data.status == 'rejected' && request.resource.data.status == 'pending')));
+      allow delete: if isAdmin() || (signedIn() && request.auth.uid == uid);
+    }
+    match /verifications/{uid} {
+      allow read, delete: if isAdmin() || (signedIn() && request.auth.uid == uid);
+      allow create, update: if signedIn() && request.auth.uid == uid && request.resource.size() < 1048000;
+    }
+  }
+}
