@@ -1,6 +1,6 @@
 /* DermRx Desk service worker: works offline, always prefers the latest version when online,
    and serves locally stored photos at /_blob/<id>. */
-const VERSION = "202610071443";
+const VERSION = "202610071504";
 const SHELL = "drx-shell-" + VERSION;
 const FILES = ["./", "index.html", "drx-shim.js", "config.js", "seed.json", "prices.json", "manifest.webmanifest",
   "vendor/firebase-app-compat.js", "vendor/firebase-auth-compat.js", "vendor/firebase-firestore-compat.js",
@@ -25,6 +25,8 @@ function idbGet(id) {
 self.addEventListener("fetch", e => {
   const url = new URL(e.request.url);
   if (e.request.method !== "GET") return;
+  // Never touch file downloads (the app installer, backups, review pages): let the browser fetch them directly.
+  if (/\.(apk|aab|zip|pdf)$/i.test(url.pathname) || url.pathname.includes("/review/")) return;
   const bi = url.pathname.indexOf("/_blob/");
   if (url.origin === location.origin && bi >= 0) {
     const id = decodeURIComponent(url.pathname.slice(bi + 7));

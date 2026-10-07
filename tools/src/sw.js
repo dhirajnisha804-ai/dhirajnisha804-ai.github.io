@@ -25,6 +25,8 @@ function idbGet(id) {
 self.addEventListener("fetch", e => {
   const url = new URL(e.request.url);
   if (e.request.method !== "GET") return;
+  // Never touch file downloads (the app installer, backups, review pages): let the browser fetch them directly.
+  if (/\.(apk|aab|zip|pdf)$/i.test(url.pathname) || url.pathname.includes("/review/")) return;
   const bi = url.pathname.indexOf("/_blob/");
   if (url.origin === location.origin && bi >= 0) {
     const id = decodeURIComponent(url.pathname.slice(bi + 7));
