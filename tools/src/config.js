@@ -1,6 +1,7 @@
 /* DermRx Desk cloud settings (Firebase project dermrx-4fa87). */
 window.DRX_CONFIG = {
   adminEmail: "dhirajnisha804@gmail.com",
+  adminEmails: ["dalal.dhiraj6@gmail.com"],
   firebase: {
     apiKey: "AIzaSyBRQUB-pE9qWOP5PK-77faEtayu2xWSMys",
     authDomain: "dermrx-4fa87.firebaseapp.com",
