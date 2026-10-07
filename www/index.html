@@ -1,6 +1,6 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#14324d">
 <link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<meta name="drx-build" content="202610071731">
+<meta name="drx-build" content="202610071740">
 <script src="config.js"></script>
 <script>window.DRX_OCR=(b=>({lib:b+"tesseract.min.js",worker:b+"worker.min.js",core:b,lang:b}))(new URL("vendor/tesseract/",location.href).href);</script>
 <script src="vendor/firebase-app-compat.js"></script><script src="vendor/firebase-auth-compat.js"></script><script src="vendor/firebase-firestore-compat.js"></script>
@@ -1524,33 +1524,37 @@ async function openApplicant(uid){
 
 /* spotlight walkthrough: highlights each control and explains it */
 const COACH=[
- ["#btnNewTop","New patient","Start a consultation: patient details, photos, diagnosis and prescription — or scan a printed prescription to fill it in."],
- ["#btnMoreTop","More","Your account, doctor profile and signature, backup, approvals, review queue, help and the dose calculator."],
- ['nav.tabs [data-tab="cases"]',"Cases","140 case formats: history to ask, examination, differentials, viva pearls and severity scores."],
- ['nav.tabs [data-tab="patients"]',"Patients","Your patient records, visits, photos and follow-ups. They stay only on this phone."],
- ['nav.tabs [data-tab="meds"]',"Drugs","Interaction checker, brands & prices with your MR contacts, dose by weight and drug safety."],
- ['nav.tabs [data-tab="templates"]',"Templates","Ready-made prescriptions you can apply to a patient in one tap."],
- ['nav.tabs [data-tab="corner"]',"Resident Corner","Step-by-step procedure SOPs, articles and updates."],
- ["#car","Highlights","New posts and tools appear here — swipe or tap."],
- ["#qCases","Search","Find any disease by name, symptom or examination finding."]];
+ ["#btnNewTop","New patient","Start a consultation: patient details, photos, diagnosis and prescription — or scan a printed prescription to fill it in.","cases"],
+ ['[data-act="scores"]',"Severity scores","PASI, SCORAD, EASI, DLQI, CDLQI, SALT, VASI, MASI, UAS7 and more — answer item by item and the score is calculated. Save it to a patient to track progress.","cases"],
+ ['[data-act="drugsafety"]',"Drug safety","50 drugs A–Z with baseline tests, monitoring schedule, contraindications and pregnancy advice — isotretinoin, methotrexate, biologics, JAK inhibitors and more.","cases"],
+ ['nav.tabs [data-tab="cases"]',"Cases","140 case formats: history to ask, examination, differentials, viva pearls and severity scores.","cases"],
+ ['nav.tabs [data-tab="patients"]',"Patients","Your patient records, visits, photos and follow-ups. They stay only on this phone.","cases"],
+ ['nav.tabs [data-tab="meds"]',"Drugs","All drug tools in one place — the next steps show each one.","meds"],
+ ['[data-dtab="ix"]',"Interaction checker","Add the drugs a patient takes — risky combinations are flagged as contraindicated, major or moderate, with what to do. Checked automatically on every prescription too.","meds"],
+ ['[data-dtab="dose"]',"Dose by weight","Enter weight (and height for m² doses) — get the mg/kg dose, the practical tablet strength and syrup volume for adults and children.","meds"],
+ ['[data-dtab="brands"]',"Brands & prices","Indian brands with price and pack size, plus your own MR contacts.","meds"],
+ ['nav.tabs [data-tab="templates"]',"Templates","Ready-made prescriptions you can apply to a patient in one tap.","cases"],
+ ['nav.tabs [data-tab="corner"]',"Resident Corner","Step-by-step procedure SOPs, articles and updates.","cases"]];
 function showCoach(){
   if(S.view!=="cases"){ go("cases"); }
-  const steps=COACH.filter(([sel])=>{ const el=document.querySelector(sel); return el && el.offsetParent!==null; });
-  if(!steps.length) return;
+  const steps=COACH;
   let i=0; const ov=document.createElement("div"); ov.className="coach"; ov.innerHTML=`<div class="chole"></div><div class="ctip"></div>`; document.body.appendChild(ov);
   const hole=ov.querySelector(".chole"), tip=ov.querySelector(".ctip");
-  const end=()=>{ ov.remove(); try{ localStorage.setItem("drx.coach","1"); }catch{} window.removeEventListener("resize",draw); };
+  const end=()=>{ ov.remove(); try{ localStorage.setItem("drx.coach","1"); }catch{} window.removeEventListener("resize",draw); if(S.view!=="cases") go("cases"); };
+  let dir=1;
   function draw(){
-    const [sel,h,p]=steps[i]; const el=document.querySelector(sel); if(!el){ return next(); }
+    const [sel,h,p,vw]=steps[i];
+    if(vw && S.view!==vw){ go(vw); return setTimeout(draw,120); }
+    const el=document.querySelector(sel); if(!el || el.offsetParent===null){ return dir>0 ? next() : (i>0 ? (i--, draw()) : next()); }
     el.scrollIntoView({block:"nearest"}); const r=el.getBoundingClientRect(); const pad=6;
     Object.assign(hole.style,{left:(r.left-pad)+"px", top:(r.top-pad)+"px", width:(r.width+pad*2)+"px", height:(r.height+pad*2)+"px"});
     tip.innerHTML=`<b>${esc(h)}</b><p>${esc(p)}</p><div class="cbar"><span class="cstep">${i+1} / ${steps.length}</span><button type="button" class="tskip" id="cSkip">Skip</button>${i?`<button type="button" class="btn sm" id="cBack">Back</button>`:""}<button type="button" class="btn primary sm" id="cNext">${i===steps.length-1?"Done":"Next"}</button></div>`;
     const below = r.top < window.innerHeight/2;
     tip.style.left="16px"; tip.style.right="16px";
     if(below){ tip.style.top=(r.bottom+pad+12)+"px"; tip.style.bottom="auto"; } else { tip.style.bottom=(window.innerHeight-r.top+pad+12)+"px"; tip.style.top="auto"; }
-    tip.querySelector("#cSkip").onclick=end; tip.querySelector("#cNext").onclick=next; tip.querySelector("#cBack")?.addEventListener("click",()=>{ i--; draw(); });
+    tip.querySelector("#cSkip").onclick=end; tip.querySelector("#cNext").onclick=next; tip.querySelector("#cBack")?.addEventListener("click",()=>{ dir=-1; i--; draw(); });
   }
-  function next(){ if(i<steps.length-1){ i++; draw(); } else end(); }
+  function next(){ dir=1; if(i<steps.length-1){ i++; draw(); } else end(); }
   window.addEventListener("resize",draw); setTimeout(draw,60);
 }
 
