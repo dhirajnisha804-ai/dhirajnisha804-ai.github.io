@@ -121,3 +121,12 @@ Each SOP: indications · contraindications · pre-procedure (consent, counsellin
   smokers, CV risk), baseline TB/HBV/HCV/CBC/LFT/lipids, lipids at ~12 wk, interrupt if ALC <500, ANC <1000, Hb <8,
   no live vaccines, pregnancy contraindicated (contraception during and 4 wk after), no breastfeeding (during + 6 days).
   Mark "Needs review".
+
+## Small fixes requested 5 Oct (do first after usage reset)
+1. **Back button**: Cases → open a topic → back must return to the previous screen (the case list / group),
+   not jump all the way out. Check `window.DRX_back()` and in-app back arrows keep a proper history stack
+   (same for nested sheets everywhere).
+2. Remove the case-format source line `<p class="csrc">Written in original wording for Derma Desk. Based on standard
+   references: …</p>` completely.
+3. Drug safety page: remove the whole line "Checked against Wolverton 4e (2020), ch N. ⚠ Verify against current
+   guidelines before use." (the `dsverify` text) — keep only the Edit button / "Edited by you" pill.
