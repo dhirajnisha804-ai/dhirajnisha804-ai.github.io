@@ -78,7 +78,7 @@ open(OUT + "/.nojekyll", "w").write("")
 
 # seed: current shared lists
 seed = {}
-for col in ["brands", "templates"]:
+for col in ["brands", "templates", "posts"]:
     arr = []
     for f in sorted(glob.glob(f"{DB}/{col}/*.json")):
         d = json.load(open(f, encoding="utf-8")); d = d.get("data", d)

@@ -1,0 +1,13 @@
+{
+ "data": {
+  "section": "Procedures",
+  "title": "Wood's lamp examination",
+  "summary": "365 nm UVA examination: fluorescence patterns and pigment depth",
+  "icon": "🔦",
+  "body": "A Wood's lamp emits long-wave UVA (peak about 365 nm) through a nickel oxide filter. Under it, some organisms and compounds fluoresce, and differences in epidermal pigment become easier to see. It is a quick, painless bedside test.\n\n## Indications\n- Vitiligo: diagnosis, extent, and activity in fair or early lesions\n- Fungal and bacterial infections: tinea capitis, pityriasis versicolor, erythrasma, Pseudomonas\n- Pigmentary disorders: depth of pigment in melasma, ash-leaf macules in tuberous sclerosis, hypopigmented macules\n- Porphyria: urine, stool or teeth fluorescence\n- Comedones and acne bacteria (orange-red fluorescence)\n\n## Contraindications\n- None important\n- Do not look directly into the lamp\n- Do not use on recently washed or treated skin (topicals and soaps alter or mask fluorescence)\n\n## Pre-procedure\n- Explain that the room will be dark and the test is painless\n- Ask the patient not to apply topicals or wash the area before the test\n- Warm up the lamp for about 1 minute\n\n## Equipment\n- Wood's lamp (with magnifier if possible)\n- Dark room\n- Comparison normal skin\n\n## Procedure step by step\n1. Darken the room fully; allow the examiner's eyes to adapt for about 1 minute.\n2. Hold the lamp 10–15 cm from the skin.\n3. Examine the lesion and compare with normal skin.\n4. **Interpret findings**:\n- Vitiligo: sharp, bright blue-white (milky) depigmentation\n- Hypopigmentation (pityriasis alba, leprosy, post-inflammatory): less contrast, off-white\n- Ash-leaf macules: more visible\n- Epidermal pigment (e.g. epidermal melasma): accentuated; dermal pigment is not\n- Tinea capitis (Microsporum): bright green; T. schoenleinii: dull blue-green; T. tonsurans: none\n- Pityriasis versicolor: yellow to coppery-orange\n- Erythrasma: coral red\n- Pseudomonas: green\n- Porphyria: pink-red urine or teeth\n5. Record the findings; photograph if possible.\n\n## Post-procedure care\n- None needed\n\n## Complications & management\n- None significant\n- False positives: lint, soap, creams, cosmetics, ink\n- False negatives: recent washing, topical antifungals, non-fluorescent species\n- In skin types IV–V, epidermal vs dermal melasma differentiation is less reliable; use dermoscopy as well\n\n## Sessions & follow-up\n- Repeat at follow-up visits to track vitiligo extent and response\n- Recheck tinea capitis fluorescence after treatment\n\n_Draft — awaiting review by Dr. Nisha_",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791381828137,
+  "updatedAt": 1791381840137
+ }
+}

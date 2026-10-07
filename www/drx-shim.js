@@ -6,7 +6,7 @@
 (function () {
   "use strict";
   const CFG = window.DRX_CONFIG || {};
-  const SHARED = new Set(["brands", "templates"]);
+  const SHARED = new Set(["brands", "templates", "posts"]);
   const clone = o => JSON.parse(JSON.stringify(o ?? null));
   const rid = () => Array.from(crypto.getRandomValues(new Uint8Array(10)), b => b.toString(16).padStart(2, "0")).join("");
   const err = (code, message) => Object.assign(new Error(message || code), { code });
@@ -228,8 +228,8 @@
   /* Upload the bundled list to the cloud. mode "missing" = add only items not already there; "all" = overwrite all. */
   DRX.publishSeed = async (mode, onProgress) => {
     guardWrite(); await seedP;
-    let done = 0, added = 0; const total = ["brands", "templates"].reduce((n, c) => n + ((DRX.seed[c] || []).length), 0);
-    for (const col of ["brands", "templates"]) {
+    let done = 0, added = 0; const total = ["brands", "templates", "posts"].reduce((n, c) => n + ((DRX.seed[c] || []).length), 0);
+    for (const col of ["brands", "templates", "posts"]) {
       const items = DRX.seed[col] || [];
       // "missing": add items not yet shared, and refresh corrected items (seed newer) that nobody has edited since the old version
       const existing = new Map(); if (mode === "missing") { const s = await fs.collection(col).get(); s.forEach(d => existing.set(d.id, d.data() || {})); }
