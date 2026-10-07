@@ -1,6 +1,14 @@
 package com.dermadesk.app;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.pm.PackageManager;
+import android.speech.RecognizerIntent;
+import android.view.WindowManager;
+import android.webkit.PermissionRequest;
+import android.widget.FrameLayout;
+import org.json.JSONObject;
+import java.util.ArrayList;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -31,8 +39,12 @@ import java.io.FileOutputStream;
  * the website's service worker keeps it working offline.
  */
 public class MainActivity extends Activity {
-    private static final int REQ_FILE = 41;
+    private static final int REQ_FILE = 41, REQ_VOICE = 42, REQ_CAM_CAPTURE = 43, REQ_CAM_LIVE = 44;
     private WebView web;
+    private View splash;
+    private String voiceField;
+    private PermissionRequest pendingWebPerm;
+    private WebChromeClient.FileChooserParams pendingParams;
     private ValueCallback<Uri[]> fileCallback;
     private Uri cameraUri;
 
@@ -42,7 +54,14 @@ public class MainActivity extends Activity {
         super.onCreate(saved);
         web = new WebView(this);
         web.setBackgroundColor(Color.parseColor("#14324D"));
-        setContentView(web);
+        FrameLayout root = new FrameLayout(this);
+        root.addView(web, new FrameLayout.LayoutParams(-1, -1));
+        View sp = new View(this);
+        sp.setBackgroundResource(R.drawable.splash_bg);
+        splash = sp;
+        root.addView(sp, new FrameLayout.LayoutParams(-1, -1));
+        setContentView(root);
+        web.postDelayed(this::hideSplash, 8000);
 
         WebSettings s = web.getSettings();
         s.setJavaScriptEnabled(true);
@@ -70,14 +89,50 @@ public class MainActivity extends Activity {
             @Override
             public void onPageFinished(WebView view, String url) {
                 view.setBackgroundColor(Color.WHITE);
+                view.postDelayed(MainActivity.this::hideSplash, 250);
             }
         });
 
         web.setWebChromeClient(new WebChromeClient() {
             @Override
+            public void onPermissionRequest(PermissionRequest request) {
+                runOnUiThread(() -> {
+                    boolean wantsCam = false;
+                    for (String r : request.getResources()) if (PermissionRequest.RESOURCE_VIDEO_CAPTURE.equals(r)) wantsCam = true;
+                    if (!wantsCam) { request.deny(); return; }
+                    if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
+                        request.grant(new String[]{PermissionRequest.RESOURCE_VIDEO_CAPTURE});
+                    } else {
+                        pendingWebPerm = request;
+                        requestPermissions(new String[]{Manifest.permission.CAMERA}, REQ_CAM_LIVE);
+                    }
+                });
+            }
+
+            @Override
             public boolean onShowFileChooser(WebView view, ValueCallback<Uri[]> callback, FileChooserParams params) {
                 if (fileCallback != null) fileCallback.onReceiveValue(null);
                 fileCallback = callback;
+                if (params.isCaptureEnabled() && checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+                    pendingParams = params;
+                    requestPermissions(new String[]{Manifest.permission.CAMERA}, REQ_CAM_CAPTURE);
+                    return true;
+                }
+                return launchChooser(params);
+            }
+        });
+
+        if (saved != null) web.restoreState(saved);
+        else web.loadUrl(BuildConfig.APP_URL);
+    }
+
+    private void hideSplash() {
+        if (splash == null) return;
+        final View v = splash; splash = null;
+        v.animate().alpha(0f).setDuration(250).withEndAction(() -> ((FrameLayout) v.getParent()).removeView(v)).start();
+    }
+
+    private boolean launchChooser(WebChromeClient.FileChooserParams params) {
                 try {
                     Intent intent;
                     if (params.isCaptureEnabled()) {
@@ -91,20 +146,31 @@ public class MainActivity extends Activity {
                     } else {
                         cameraUri = null;
                         intent = params.createIntent();
-                        if (params.getMode() == FileChooserParams.MODE_OPEN_MULTIPLE) intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
+                        if (params.getMode() == WebChromeClient.FileChooserParams.MODE_OPEN_MULTIPLE) intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
                     }
                     startActivityForResult(intent, REQ_FILE);
                     return true;
                 } catch (Exception e) {
+                    if (fileCallback != null) fileCallback.onReceiveValue(null);
                     fileCallback = null;
                     Toast.makeText(MainActivity.this, "Couldn't open the camera or gallery", Toast.LENGTH_SHORT).show();
                     return false;
                 }
-            }
-        });
+    }
 
-        if (saved != null) web.restoreState(saved);
-        else web.loadUrl(BuildConfig.APP_URL);
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] perms, int[] results) {
+        super.onRequestPermissionsResult(requestCode, perms, results);
+        boolean ok = results.length > 0 && results[0] == PackageManager.PERMISSION_GRANTED;
+        if (requestCode == REQ_CAM_CAPTURE && pendingParams != null) {
+            WebChromeClient.FileChooserParams p = pendingParams; pendingParams = null;
+            if (ok) launchChooser(p);
+            else { if (fileCallback != null) fileCallback.onReceiveValue(null); fileCallback = null;
+                Toast.makeText(this, "Camera permission is needed to take photos", Toast.LENGTH_SHORT).show(); }
+        } else if (requestCode == REQ_CAM_LIVE && pendingWebPerm != null) {
+            PermissionRequest r = pendingWebPerm; pendingWebPerm = null;
+            if (ok) r.grant(new String[]{PermissionRequest.RESOURCE_VIDEO_CAPTURE}); else r.deny();
+        }
     }
 
     /** Links: stay inside the app for our own pages; email, phone and other sites open in their own apps. */
@@ -126,6 +192,17 @@ public class MainActivity extends Activity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQ_VOICE) {
+            String text = "";
+            if (resultCode == RESULT_OK && data != null) {
+                ArrayList<String> r = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+                if (r != null && !r.isEmpty()) text = r.get(0);
+            }
+            String js = "window.DRX_voiceResult&&window.DRX_voiceResult(" + JSONObject.quote(voiceField == null ? "" : voiceField) + "," + JSONObject.quote(text) + ")";
+            web.evaluateJavascript(js, null);
+            voiceField = null;
+            return;
+        }
         if (requestCode != REQ_FILE || fileCallback == null) return;
         Uri[] result = null;
         if (resultCode == RESULT_OK) {
@@ -197,5 +274,35 @@ public class MainActivity extends Activity {
 
         @JavascriptInterface
         public String version() { return BuildConfig.VERSION_NAME; }
+
+        /** Block screenshots / screen recording while sensitive screens are open. */
+        @JavascriptInterface
+        public void secure(boolean on) {
+            runOnUiThread(() -> {
+                if (on) getWindow().addFlags(WindowManager.LayoutParams.FLAG_SECURE);
+                else getWindow().clearFlags(WindowManager.LayoutParams.FLAG_SECURE);
+            });
+        }
+
+        /** Voice typing through the phone's speech recogniser; result returns to window.DRX_voiceResult. */
+        @JavascriptInterface
+        public void listen(String fieldId, String lang) {
+            runOnUiThread(() -> {
+                try {
+                    voiceField = fieldId;
+                    Intent i = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+                    i.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+                    String l = lang == null || lang.isEmpty() ? "en-IN" : lang;
+                    i.putExtra(RecognizerIntent.EXTRA_LANGUAGE, l);
+                    i.putExtra(RecognizerIntent.EXTRA_LANGUAGE_PREFERENCE, l);
+                    i.putExtra(RecognizerIntent.EXTRA_PROMPT, "Speak now");
+                    startActivityForResult(i, REQ_VOICE);
+                } catch (ActivityNotFoundException e) {
+                    voiceField = null;
+                    web.evaluateJavascript("window.DRX_voiceResult&&window.DRX_voiceResult('','')", null);
+                    Toast.makeText(MainActivity.this, "Voice typing needs the Google app on this phone", Toast.LENGTH_LONG).show();
+                }
+            });
+        }
     }
 }
