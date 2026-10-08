@@ -1,6 +1,6 @@
 {
   "brand": "Alkem (DermaCare)",
-  "category": "Depigmenting (topical)",
+  "category": "Other",
   "company": "Alkem Laboratories",
   "composition": "Basic fibroblast growth factor–derived decapeptide solution",
   "mrName": "",
@@ -10,5 +10,6 @@
   "price": "",
   "product": "Melbild",
   "source": "Company brochure (Oct 2026)",
-  "updatedAt": 1791050000000
+  "updatedAt": 1791490000000,
+  "prevUpdatedAt": 1791050000000
 }
