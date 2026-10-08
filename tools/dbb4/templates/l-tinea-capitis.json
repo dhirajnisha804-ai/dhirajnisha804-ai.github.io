@@ -16,7 +16,7 @@
      "drug": "Tab. Griseofulvin (ultramicrosize)",
      "dose": "10–15 mg/kg/day (microsize 20–25 mg/kg/day)",
      "freq": "OD",
-     "dur": "6–8 weeks",
+     "dur": "6–12 weeks",
      "route": "Oral",
      "instr": "After a fatty meal; best for Microsporum",
      "timing": "",
@@ -60,9 +60,9 @@
     },
     {
      "drug": "Cap. Itraconazole",
-     "dose": "3–5 mg/kg/day",
+     "dose": "5 mg/kg/day",
      "freq": "OD",
-     "dur": "4–6 weeks",
+     "dur": "4–8 weeks",
      "route": "Oral",
      "instr": "Alternative",
      "timing": "",
@@ -112,7 +112,7 @@
    "drug": "Tab. Griseofulvin (ultramicrosize)",
    "dose": "10–15 mg/kg/day (microsize 20–25 mg/kg/day)",
    "freq": "OD",
-   "dur": "6–8 weeks",
+   "dur": "6–12 weeks",
    "route": "Oral",
    "instr": "After a fatty meal; best for Microsporum",
    "timing": "",
@@ -141,5 +141,5 @@
  "review": true,
  "free": false,
  "source": "slot1.py",
- "updatedAt": 1791446921197
+ "updatedAt": 1791454325676
 }

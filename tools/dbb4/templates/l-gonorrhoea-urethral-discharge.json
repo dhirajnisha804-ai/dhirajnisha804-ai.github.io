@@ -57,6 +57,19 @@
      "brandId": "",
      "generic": "",
      "cost": ""
+    },
+    {
+     "drug": "If injection not possible: Tab. Cefixime 800 mg",
+     "dose": "800 mg",
+     "freq": "Single dose",
+     "dur": "Once",
+     "route": "Oral",
+     "instr": "NACO 2024 alternative",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
     }
    ]
   },
@@ -115,5 +128,5 @@
  "review": true,
  "free": false,
  "source": "slot1.py",
- "updatedAt": 1791446921207
+ "updatedAt": 1791454325685
 }

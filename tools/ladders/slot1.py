@@ -175,11 +175,11 @@ L("Tinea corporis / cruris / faciei","Fungal infections",
 L("Tinea capitis","Fungal infections",
   "Always systemic treatment. Ketoconazole/selenium shampoo for patient and household to reduce spread. Examine and treat contacts; brushes, combs and caps to be cleaned.",
   ("First line",[
-   "Tab. Griseofulvin (ultramicrosize) | 10–15 mg/kg/day (microsize 20–25 mg/kg/day) | OD | 6–8 weeks | Oral | After a fatty meal; best for Microsporum",
+   "Tab. Griseofulvin (ultramicrosize) | 10–15 mg/kg/day (microsize 20–25 mg/kg/day) | OD | 6–12 weeks | Oral | After a fatty meal; best for Microsporum",
    "Shampoo Ketoconazole 2% | Leave 5 min | 3×/week | 4 weeks | Topical | Patient and contacts"]),
   ("Alternative / Trichophyton",[
    "Tab. Terbinafine | <20 kg 62.5 mg, 20–40 kg 125 mg, >40 kg 250 mg | OD | 4 weeks | Oral | Better for Trichophyton",
-   "Cap. Itraconazole | 3–5 mg/kg/day | OD | 4–6 weeks | Oral | Alternative"]),
+   "Cap. Itraconazole | 5 mg/kg/day | OD | 4–8 weeks | Oral | Alternative"]),
   ("Kerion",[
    "Tab. Prednisolone | 1 mg/kg | OD | 1–2 weeks | Oral | With antifungal; do not incise",
    "Antibiotic only if proven bacterial superinfection | | | | Oral | "]))
@@ -359,7 +359,8 @@ L("Gonorrhoea / urethral discharge","Sexually transmitted infections",
    "Inj. Ceftriaxone 500 mg | 500 mg | Single dose | Once | IM | (1 g if >150 kg)",
    "Cap. Doxycycline 100 mg | 1 cap | BD | 7 days | Oral | Chlamydia cover"]),
   ("Pregnancy / doxycycline not possible",[
-   "Tab. Azithromycin 1 g | 1 g | Single dose | Once | Oral | With ceftriaxone"]),
+   "Tab. Azithromycin 1 g | 1 g | Single dose | Once | Oral | With ceftriaxone",
+   "If injection not possible: Tab. Cefixime 800 mg | 800 mg | Single dose | Once | Oral | NACO 2024 alternative"]),
   ("Persistent discharge",[
    "Tab. Metronidazole 2 g | 2 g | Single dose | Once | Oral | Trichomonas; re-test, check adherence and re-exposure"]))
 
