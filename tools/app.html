@@ -1326,10 +1326,10 @@ function wireCarousel(){
 }
 
 /* ---------- loading tips + first-run tour ---------- */
-const TIPS=["Tip: scan a printed prescription to fill patient details automatically.","Tip: open Drugs → Interactions to check a prescription for risky combinations.","Tip: Dose by weight works for children — enter weight and age.","Tip: tap ★ on a medicine to keep it at the top of your list.","Tip: Back always returns to the previous screen.","Tip: add follow-up dates — they appear on the printed prescription.","Tip: Resident Corner has step-by-step procedure SOPs."];
+const TIPS=["Tip: open Drugs → Interactions to check a prescription for risky combinations.","Tip: Dose by weight works for children — enter weight and age.","Tip: tap ★ on a medicine to keep it at the top of your list.","Tip: Back always returns to the previous screen.","Tip: add follow-up dates — they appear on the printed prescription.","Tip: Resident Corner has step-by-step procedure SOPs."];
 function bootTips(){ const el=$("#bootTip"); if(!el) return; let i=Math.floor(Math.random()*TIPS.length); el.textContent=TIPS[i]; bootTips._t=setInterval(()=>{ i=(i+1)%TIPS.length; el.textContent=TIPS[i]; },2500); }
 function hideBoot(){ const b=$("#boot"); if(!b || b.dataset.gone) return; b.dataset.gone=1; clearInterval(bootTips._t); b.classList.add("bye"); setTimeout(()=>b.remove(),350); }
-const TOUR=[["🩺","Welcome to Derma Desk","Dermatology made easy — case formats, prescriptions, drugs and procedures in your pocket."],["📋","Prescribe in seconds","140+ ready templates, a prescription PDF with your letterhead, and photo scanning of printed prescriptions."],["💊","Safer drugs","Interaction checker, dose by weight and drug safety alerts appear as you write."],["🎓","Resident Corner","Step-by-step procedure SOPs, articles and updates. Patient records stay only on this phone."]];
+const TOUR=[["🩺","Welcome to Derma Desk","Dermatology made easy — case formats, prescriptions, drugs and procedures in your pocket."],["📋","Prescribe in seconds","1st, 2nd and 3rd line treatment for 130+ diseases, and a prescription PDF with your letterhead you can send in one tap."],["💊","Safer drugs","Interaction checker, dose by weight and drug safety alerts appear as you write."],["🎓","Resident Corner","Step-by-step procedure SOPs, articles and updates. Patient records stay only on this phone."]];
 function showTour(force){
   try{ if(!force && localStorage.getItem("drx.tour")) return; }catch{}
   let i=0; const ov=document.createElement("div"); ov.className="tour"; document.body.appendChild(ov);
@@ -1837,7 +1837,6 @@ function openPatientPage(pid, vid, {tpl}={}){
   const dxList = uniq([...CASES.map(c=>c.n), ...S.templates.map(t=>t.dx||t.name), ...DX]).sort();
   const others = vs.filter(x=>x!==v);
   openSheet(isNew?"New patient":(p.name||"Patient"), `<div class="stack">
-    <div class="section scan"><div class="lbl" style="margin:0;flex-wrap:wrap;gap:8px"><span>Scan a prescription</span><span class="actions"><label class="btn sm filebtn"><input type="file" id="ppScCam" accept="image/*" capture="environment">Camera</label><label class="btn sm filebtn"><input type="file" id="ppScGal" accept="image/*">Gallery</label></span></div><p class="hint" style="margin:6px 0 0">Fills name, age, date and medicines from a photo. You check them before anything is filled.</p></div>
     <div class="section"><div class="grid">
       <div class="field" style="grid-column:1/-1"><label for="ppName">Name *</label><input id="ppName" value="${esc(W.name)}" autocomplete="off"></div>
       <div class="field"><label for="ppAge">Age (years)</label><input id="ppAge" type="number" inputmode="numeric" min="0" max="120" value="${esc(W.age)}"></div>
@@ -1901,7 +1900,7 @@ function openPatientPage(pid, vid, {tpl}={}){
     const n=Object.keys(v).length+meds.length; toast(n?`Filled ${n} item${n>1?"s":""} from the scan — please check`:"Nothing was filled");
   };
   scanApply.again = () => $("#ppScGal").click();
-  ["#ppScCam","#ppScGal"].forEach(sel=>$(sel).addEventListener("change", e=>{ const f=e.target.files[0]; e.target.value=""; if(f) scanRxPhoto(f, scanApply); }));
+  ["#ppScCam","#ppScGal"].forEach(sel=>$(sel)?.addEventListener("change", e=>{ const f=e.target.files[0]; e.target.value=""; if(f) scanRxPhoto(f, scanApply); }));
   const collect = () => { W.name=$("#ppName").value.trim(); W.age=$("#ppAge").value; W.sex=$("#ppSex").value; W.date=$("#ppDate").value||today(); W.complaint=$("#ppCc").value.trim(); W.history=$("#ppHx").value.trim(); W.dx=$("#ppDx").value.trim(); };
   const doSave = async () => {
     if(busy){ toast("Wait for photos to finish uploading"); return null; }
