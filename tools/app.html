@@ -245,6 +245,9 @@ header.top #btnMoreTop{margin-left:-4px}
 .lockov{position:fixed;inset:0;z-index:9500;display:grid;place-items:center;background:linear-gradient(160deg,#0f3550,#1f5f8b)}.lkbox{background:var(--card,#fff);color:var(--ink,#1d2733);border-radius:20px;padding:24px 20px;width:min(340px,88vw);text-align:center;box-shadow:0 20px 50px rgba(0,0,0,.35)}.lklogo{font:700 24px/1.2 Georgia,serif;margin-bottom:6px}.lkbox input{font-size:24px;letter-spacing:10px;text-align:center;width:100%;padding:10px;border:1px solid var(--line);border-radius:12px;margin:6px 0;background:var(--bg,#fff);color:inherit}.lkmsg{min-height:20px;color:#c0443a;font-size:13.5px;margin:4px 0}.lkbox .tskip{margin-top:10px}.shake{animation:shk .35s}@keyframes shk{20%,60%{transform:translateX(-8px)}40%,80%{transform:translateX(8px)}}
 .netban{position:fixed;left:0;right:0;bottom:calc(64px + env(safe-area-inset-bottom));z-index:800;background:#5b4a1d;color:#fff;font-size:12.5px;text-align:center;padding:6px 12px}
 .updban{position:fixed;left:12px;right:12px;bottom:calc(76px + env(safe-area-inset-bottom));z-index:850;display:flex;gap:10px;align-items:center;justify-content:space-between;background:var(--card,#fff);border:1px solid var(--line);border-radius:14px;padding:10px 12px;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.rptlink{display:inline-block;margin:10px 0 4px;font-size:12.5px;color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+.ptf{display:flex;gap:8px;margin:8px 0 0}.ptf select,.ptf label{flex:1;min-width:0}.ptf label{font-size:12.5px;color:var(--muted);display:flex;flex-direction:column;gap:2px}.ptf input[type=date]{width:100%}
+.favrow{display:flex;align-items:center;gap:4px}.favrow .pick{flex:1;min-width:0}
 .rvbadge{display:inline-block;font-size:10.5px;font-weight:700;color:#9a3412;background:#ffedd5;border-radius:5px;padding:1px 6px;margin-left:6px;vertical-align:middle}
 .newb{font-size:10px;font-weight:700;color:#fff;background:#3fb5ad;border-radius:5px;padding:1px 6px;margin-left:6px;vertical-align:middle}
 .pcard{display:flex;gap:12px;align-items:center;text-align:left;width:100%;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:11px 12px;cursor:pointer;color:var(--fg)}
@@ -779,7 +782,7 @@ function caseDetailHTML(c){
     <div class="case-meta"><span class="pill">${esc(c.g)}</span><span class="pill ${c.t==="Long case"?"rose":""}">${esc(c.t)}</span></div></div>
     ${ladderFor(c.n)?`<button class="btn primary sm txbtn" type="button" data-txcase="${esc(c.n)}">💊 Treatment · 1st / 2nd / 3rd line</button>`:(!hasFull()&&S.templates.length?`<button class="btn sm txbtn" type="button" data-act="acct">🔒 Treatment guide · verified doctors</button>`:"")}
     ${scoreSuggestHTML(c.n)}
-    ${list("cc","Presenting complaints","1",c.cc)}${list("hx","History to ask","2",c.hx)}${list("ex","Examination","3",c.ex)}${(c.inv||[]).length?list("inv","Investigations","4",c.inv):""}${ddx}${fmt}${pearls}`;
+    ${list("cc","Presenting complaints","1",c.cc)}${list("hx","History to ask","2",c.hx)}${list("ex","Examination","3",c.ex)}${(c.inv||[]).length?list("inv","Investigations","4",c.inv):""}${ddx}${fmt}${pearls}${reportBtn("Case format: "+c.n)}`;
 }
 function caseRowsHTML(arr, grouped, open){
   const row = c => `<button class="row" data-case="${c.i}"><span class="main"><span class="t">${esc(c.n)}</span><span class="s">${esc(cleanLine((c.cc||[])[0]||""))}</span></span><span class="aside">${c.t==="Long case"?`<span class="pill rose">Long</span>`:""}</span></button>`;
@@ -848,13 +851,17 @@ function peopleRows(arr, emptyMsg){
 function patientsShell(){
   return `${banner()}<div class="viewhead"><div><h2>Patients</h2><p id="ptCount"></p></div><button class="btn primary" data-act="newpatient">${ICON.plus}New patient</button></div>
   <label class="search">${ICON.search}<input id="qPatients" type="search" placeholder="Search name / mobile / ID / diagnosis" aria-label="Search patients" autocomplete="off"></label>
-  <div id="ptList"></div>`;
+  <div id="ptFil"></div><div id="ptList"></div>`;
 }
 function fillPatients(){
   $("#ptCount").textContent = `${S.people.length} patient${S.people.length===1?"":"s"}`;
   if(loading()){ $("#ptList").innerHTML=`<div class="empty">Loading…</div>`; return; }
   if(!S.people.length){ $("#ptList").innerHTML=`<div class="empty"><strong>No patients yet</strong>Add a patient to record their complaints, history, photos, diagnosis and prescription on one page.<br><button class="btn primary" data-act="newpatient">New patient</button></div>`; return; }
-  const q=$("#qPatients").value.trim(); let arr = q? searchPeople(q) : S.people.slice();
+  const fb=$("#ptFil"); if(fb && !fb.dataset.on){ fb.dataset.on=1; fb.innerHTML=ptFilterHTML();
+    fb.addEventListener("change",e=>{ const t=e.target; if(t.id==="ptDx") S.ptF.dx=t.value; if(t.id==="ptWhen") S.ptF.when=t.value; if(t.id==="ptFrom") S.ptF.from=t.value; if(t.id==="ptTo") S.ptF.to=t.value; fb.innerHTML=ptFilterHTML(); fillPatients(); });
+    fb.addEventListener("click",e=>{ if(e.target.id==="ptClear"){ S.ptF={dx:"",when:"",from:"",to:""}; fb.innerHTML=ptFilterHTML(); fillPatients(); } }); }
+  const q=$("#qPatients").value.trim(); let arr = (q? searchPeople(q) : S.people.slice()).filter(ptFilterMatch);
+  if(S.ptF.dx||S.ptF.when) $("#ptCount").textContent = `${arr.length} of ${S.people.length} patients`;
   arr.sort((a,b)=>((latestVisit(b.id)?.createdAt||b.createdAt||0)-(latestVisit(a.id)?.createdAt||a.createdAt||0)));
   $("#ptList").innerHTML = peopleRows(arr, "No patients match.");
 }
@@ -1581,7 +1588,7 @@ function ladderHTML(t, {pick}={}){
     <ul class="lxrx">${(l.rx||[]).map(rxRow).join("")}</ul>
     <button class="btn ${i?"":"primary"} sm" type="button" data-useline="${i}">${pick?"Add these to the prescription":"Start a patient with this line"}</button></section>`).join("")}
   ${t.special?`<div class="lxgen lxsp"><b>Pregnancy, children & special cases</b><p>${esc(t.special)}</p></div>`:""}
-  <p class="hint" style="font-size:11.5px">Draft from standard textbooks — check doses, contraindications and interactions for each patient before prescribing.</p>`;
+  <p class="hint" style="font-size:11.5px">Draft from standard textbooks — check doses, contraindications and interactions for each patient before prescribing.</p>${reportBtn("Treatment guide: "+t.name)}`;
 }
 function openLadder(t, {onPick}={}){
   if(!t) return;
@@ -1777,6 +1784,36 @@ window.DRX_back=()=>{
 };
 window.addEventListener("beforeunload",e=>{ if(S.guard?.()){ e.preventDefault(); e.returnValue=""; } });
 
+
+/* ---------- report a problem (pre-filled email) ---------- */
+function reportLink(what){ const body=`Item: ${what}\nWhat is wrong / what should it say:\n\n\n—\nDerma Desk ${typeof appVersion==="function"?appVersion():""}`; return `mailto:${HELP_EMAIL}?subject=${encodeURIComponent("Derma Desk – problem in "+what)}&body=${encodeURIComponent(body)}`; }
+const reportBtn = what => `<a class="rptlink" href="${reportLink(what)}">⚑ Report a problem</a>`;
+
+/* ---------- favourite medicines (private to this phone) ---------- */
+S.favMeds = [];
+async function loadFavMeds(){ try{ const d=await S.db?.collection("meta").doc("favmeds").get(); const v=d?.data?.(); if(Array.isArray(v?.list)) S.favMeds=v.list; }catch{} }
+async function saveFavMeds(){ try{ await S.db?.collection("meta").doc("favmeds").set({list:S.favMeds}); }catch{} }
+function addFavMed(r){ const k=(r.drug+"|"+(r.brand||"")).toLowerCase(); S.favMeds=[{...r, favAt:Date.now()}, ...S.favMeds.filter(x=>(x.drug+"|"+(x.brand||"")).toLowerCase()!==k)].slice(0,60); saveFavMeds(); toast("★ Saved to favourite medicines"); }
+
+/* ---------- patient filters: diagnosis + visit date ---------- */
+S.ptF = {dx:"", when:"", from:"", to:""};
+const DATE_OPTS=[["","Any date"],["0","Today"],["7","Last 7 days"],["30","Last 30 days"],["90","Last 3 months"],["365","Last 12 months"],["custom","Choose dates…"]];
+function ptFilterHTML(){
+  const dxs=[...new Set(S.visits.map(v=>String(v.dx||"").trim()).filter(Boolean).map(x=>x.replace(/\s+/g," ")))].sort((a,b)=>a.localeCompare(b));
+  const f=S.ptF;
+  return `<div class="ptf"><select id="ptDx" class="inp" aria-label="Filter by diagnosis"><option value="">All diagnoses</option>${dxs.map(d=>`<option ${d===f.dx?"selected":""}>${esc(d)}</option>`).join("")}</select>
+    <select id="ptWhen" class="inp" aria-label="Filter by visit date">${DATE_OPTS.map(([k,l])=>`<option value="${k}" ${k===f.when?"selected":""}>${l}</option>`).join("")}</select></div>
+    <div class="ptf" id="ptRange" ${f.when==="custom"?"":"hidden"}><label>From <input type="date" id="ptFrom" value="${esc(f.from)}"></label><label>To <input type="date" id="ptTo" value="${esc(f.to)}"></label></div>
+    ${f.dx||f.when?`<button class="tskip" id="ptClear" type="button">Clear filters</button>`:""}`;
+}
+function ptFilterMatch(p){
+  const f=S.ptF; if(!f.dx && !f.when) return true;
+  let lo="", hi="9999-12-31";
+  if(f.when==="custom"){ lo=f.from||""; hi=f.to||hi; }
+  else if(f.when){ const d=new Date(); d.setDate(d.getDate()-(+f.when)); lo=d.toISOString().slice(0,10); }
+  const dxq=f.dx.toLowerCase();
+  return S.visits.some(v=>v.patientId===p.id && (!dxq || String(v.dx||"").toLowerCase().replace(/\s+/g," ").trim()===dxq) && (!f.when || ((v.date||"")>=lo && (v.date||"")<=hi)));
+}
 function openPatientPage(pid, vid, {tpl}={}){
   const p = pid ? personById(pid) : null;
   if(pid && !p){ toast("This patient record isn’t available"); return; }
@@ -1923,6 +1960,8 @@ function openMedPicker(_, onDone, {skincare=false}={}){
     const typed=q.trim();
     // group by composition when searching
     let html="";
+    const favs=skincare?[]:S.favMeds.map((f,i)=>({f,i})).filter(({f})=>!typed||[f.drug,f.brand].join(" ").toLowerCase().includes(typed.toLowerCase()));
+    if(favs.length) html += `<div class="lbl" style="margin:0 0 4px">★ My favourite medicines</div>${favs.slice(0,typed?6:30).map(({f,i})=>`<div class="favrow"><button class="pick" data-mpfav="${i}"><span class="main"><span class="t">★ ${esc(f.drug)}</span><span class="s">${esc([f.brand,f.dose,f.freq,f.dur].filter(Boolean).join(" · "))}</span></span></button><button class="iconbtn sm" data-favdel="${i}" aria-label="Remove from favourites">✕</button></div>`).join("")}${typed?"":`<div class="lbl" style="margin:10px 0 4px">All products</div>`}`;
     if(typed && !skincare) html += `<button class="pick" data-mpfree="1"><span class="main"><span class="t">Use “${esc(typed)}”</span><span class="s">Prescribe by generic name, without a brand</span></span></button>`;
     if(typed){
       const groups={}; res.forEach(b=>{ const k=(b.composition||b.product||"").trim(); (groups[k] ||= []).push(b); });
@@ -1933,6 +1972,8 @@ function openMedPicker(_, onDone, {skincare=false}={}){
   const pickRow = b => `<button class="pick" data-mpb="${esc(b.id)}"><span class="main"><span class="t">${b.preferred?"★ ":""}${esc(b.product)}</span><span class="s">${esc([b.composition, b.brand].filter(Boolean).join(" · "))}</span></span><span class="price">${rupee(b.price)}${b.pack?`<small>${esc(b.pack)}</small>`:""}</span></button>`;
   draw(); $("#mpQ").addEventListener("input", draw); setTimeout(()=>$("#mpQ")?.focus(),50);
   $("#mpRes").addEventListener("click", e=>{
+    const fd=e.target.closest("[data-favdel]"); if(fd){ S.favMeds.splice(+fd.dataset.favdel,1); saveFavMeds(); draw(); toast("Removed from favourites"); return; }
+    const fv=e.target.closest("[data-mpfav]"); if(fv){ const {favAt,...r}=S.favMeds[+fv.dataset.mpfav]||{}; if(r.drug){ onDone(normRx(r)); closeSheet2(); toast(`Added ${r.drug}`); } return; }
     const f=e.target.closest("[data-mpfree]"); if(f){ openDrugDetails({drug:$("#mpQ").value.trim()}, onDone); return; }
     const b=e.target.closest("[data-mpb]"); if(!b) return; const br=S.brands.find(x=>x.id===b.dataset.mpb); if(!br) return;
     const cat=catOf(br); const oral=/oral|Antihistamine|Oral|Supplement|Tofacitinib|Methotrexate|Psoralen/.test(cat) && !/topical/i.test(cat);
@@ -1957,12 +1998,14 @@ function openDrugDetails(item, onDone){
     <div class="field"><label for="ddInstr">Instructions ${micBtn("ddInstr")}</label><textarea id="ddInstr" placeholder="e.g. Apply over affected area">${esc(r.instr)}</textarea></div>
     <div class="actions"><button class="btn primary" id="ddSave">Save medicine</button></div>
   </div>`);
+  $("#sheet2Body .stack")?.insertAdjacentHTML("beforeend", `<label class="scrow"><input type="checkbox" id="ddFav"><span class="main"><span class="t">★ Save to my favourite medicines</span><span class="s">With this dose, frequency and duration — one tap next time</span></span></label>`);
   const map={freq:"#ddFreq", timing:"#ddTime", dur:"#ddDur"};
   $("#ddWtD")?.addEventListener("toggle", ev=>{ const box=$("#ddWt"); if(!ev.target.open || box.dataset.on) return; box.dataset.on=1; const L=wtFor([r.drug,r.generic,r.brand].join(" ")); box.innerHTML=wtCalcHTML(L, patientCtx()); wireWtCalc(box, L, v=>{ $("#ddDose").value=v.dose; if(!$("#ddFreq").value) $("#ddFreq").value=v.freq; if(!$("#ddDur").value) $("#ddDur").value=v.dur; if(!$("#ddRoute").value) $("#ddRoute").value=v.route; const ins=$("#ddInstr"); if(!ins.value.includes(v.instr)) ins.value=[ins.value.trim(), v.instr].filter(Boolean).join(" · "); $("#ddWtD").open=false; toast("Dose filled — check before saving"); }); });
   $("#sheet2Body").addEventListener("click", e=>{ const b=e.target.closest("[data-qb]"); if(!b) return; const inp=$(map[b.dataset.qb]); inp.value=b.dataset.v; b.parentElement.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed", c===b)); });
   $("#ddSave").onclick = () => {
     const out={...r, drug:$("#ddDrug").value.trim(), dose:$("#ddDose").value.trim(), route:$("#ddRoute").value, freq:$("#ddFreq").value.trim(), timing:$("#ddTime").value.trim(), dur:$("#ddDur").value.trim(), instr:$("#ddInstr").value.trim(), brand:$("#ddBrand").value.trim(), cost:$("#ddCost").value.trim()};
     if(!out.drug){ toast("Add the medicine name"); return; }
+    if($("#ddFav")?.checked) addFavMed(out);
     onDone(out); closeSheet2();
   };
 }
@@ -2211,7 +2254,6 @@ function fillMore(){
   </div></div>
   <div class="group"><h3>Data</h3><div class="list">
     ${isAdmin()?`<button class="row" data-act="reviewq"><span class="main"><span class="t">Review queue</span><span class="s">Approve AI-written templates, doses, drug entries and SOP drafts</span></span></button>`:""}
-    <button class="row" data-act="wtcalc"><span class="main"><span class="t">Dose by weight</span><span class="s">mg/kg and m² doses for adults and children</span></span></button>
     <button class="row" data-act="help"><span class="main"><span class="t">Help &amp; contact</span><span class="s">Quick help, report a problem, email us</span></span></button>
     <button class="row" data-act="backup"><span class="main"><span class="t">Backup</span><span class="s">Download all patients, visits, templates and medicines as a file</span></span></button>
     <div class="row" style="cursor:default"><span class="main"><span class="t">Storage</span><span class="s" id="storageLine">Checking…</span></span></div>
@@ -2241,7 +2283,17 @@ function openHelp(){
    ["Where are my patients saved?","Only on this phone: patients, photos, scores, MR contacts, notes and your doctor profile never leave it. Use More → Backup regularly and keep the file safe; More → Sync & sharing → Restore brings it back on a new phone."],
    ["Medicines and templates","The shared list is kept up to date by the list owner and syncs to everyone. Prices show when they were last updated. Your own MR contacts, notes and ★ preferred brands are private to your phone."],
    ["Write a prescription","Patients → New patient → fill complaints, diagnosis, add medicines or a template, set the follow-up date, then Prescription PDF. Name, age, date, medicines and follow-up are filled in automatically."],
-   ["Drug safety and scores","On the Cases page, Drug safety checks the current prescription against the patient's age, sex, pregnancy and other medicines. Always verify against current guidelines."]];
+   ["Drug safety and scores","On the Cases page, Drug safety checks the current prescription against the patient's age, sex, pregnancy and other medicines. Always verify against current guidelines."],
+   ["Treatment guides (1st / 2nd / 3rd line)","Templates tab, or the 💊 Treatment button on a case format. Tap “Start a patient with this line”, or in a consultation use “Use template” and pick a line. Guides marked “Needs review” are still being checked."],
+   ["Search everything","The 🔍 at the top searches cases, treatment guides, drug safety, products, your patients and SOPs at once. Typing a drug name also shows every guide that uses it."],
+   ["Favourite medicines","When adding a medicine, tick “★ Save to my favourite medicines”. Next time it appears at the top of Add medicine with your dose — one tap adds it. Tap ✕ to remove it. Favourites stay on your phone."],
+   ["Find patients by diagnosis or date","Patients tab → choose a diagnosis and/or a visit period (today, last 7 days … or your own dates)."],
+   ["Send a prescription","Open the visit → Send shares the PDF to WhatsApp, email or any app; ⬇ Download saves it to print."],
+   ["App lock and forgotten PIN","More → App lock sets a PIN (and fingerprint in the latest Android app). Forgot the PIN? Tap “Forgot PIN?” and enter your account password; the lock turns off and you can set a new one."],
+   ["Verification and free features","Everyone can use cases, scores, a few common treatment guides and the prescription pad. Other guides and drug tools open after your registration is verified (usually within a few days)."],
+   ["Change or reset password","More → Account → Change password. Forgot it? Log out and tap “Forgot password” on the sign-in screen for a reset email."],
+   ["Delete my data","More → Account → Delete account removes your account. Patients on the phone are removed when you uninstall the app — export a backup first if you want to keep them."],
+   ["Something is wrong in a guide or drug entry","Tap “⚑ Report a problem” at the bottom of that page — an email opens with the item name filled in."]];
   openSheet("Help & contact", `<div class="stack">
     <div class="section stack"><div class="lbl">Contact</div>
       <p class="hint" style="margin:0">Questions, problems or ideas for Derma Desk:</p>
@@ -3111,7 +3163,7 @@ function dsDetailHTML(d){
   return `${DS_SECS.map(([k,l])=>(d[k]||[]).length?`<div class="dsx dsx-${k}"><h4>${l}</h4><ul>${d[k].map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`:"").join("")}
     <div class="dsx dsx-pl"><h4>Pregnancy &amp; lactation</h4><ul><li><b>Pregnancy:</b> ${esc(d.preg||"—")}</li><li><b>Lactation:</b> ${esc(d.lact||"—")}</li></ul></div>
     ${d.dose?`<div class="dsx dsx-dose"><h4>Usual dose</h4><p>${esc(d.dose)}</p></div>`:""}
-    <div class="dsverify">${d.edited?`<span class="pill rose">Edited by you</span>`:""}${reviewBadge("ds:"+d.k)}${isAdmin()?`${isReviewed("ds:"+d.k)?"":` <button type="button" class="btn sm" data-rvk="ds:${esc(d.k)}">✓ Reviewed</button>`} <button type="button" class="btn sm" data-dsedit="${esc(d.k)}">Edit</button>`:""}</div>`;
+    <div class="dsverify">${d.edited?`<span class="pill rose">Edited by you</span>`:""}${reviewBadge("ds:"+d.k)}${isAdmin()?`${isReviewed("ds:"+d.k)?"":` <button type="button" class="btn sm" data-rvk="ds:${esc(d.k)}">✓ Reviewed</button>`} <button type="button" class="btn sm" data-dsedit="${esc(d.k)}">Edit</button>`:""} ${reportBtn("Drug safety: "+d.name)}</div>`;
 }
 function dsCardHTML(d, alerts, sub){
   const red=alerts.some(x=>x.lv==="danger"); const nWarn=alerts.filter(x=>x.lv!=="info").length;
@@ -3248,7 +3300,7 @@ setTimeout(()=>{ hideBoot(); setTimeout(()=>showTour(false),400); }, 1200);
   S.db=db;
   let t=null; const soon=()=>{ clearTimeout(t); t=setTimeout(()=>{ if($("#sheet").hidden) render(); else if(S.view) render(); },60); };
   const sub=(col,key)=>db.collection(col).onSnapshot(snap=>{ S[key]=snap.docs.map(d=>({id:d.id, ...d.data()})); S.loaded[key]=true; soon(); }, ()=>{});
-  sub("people","people"); sub("visits","visits"); sub("templates","templates"); sub("brands","brands"); sub("posts","posts"); loadReviewed();
+  sub("people","people"); sub("visits","visits"); sub("templates","templates"); sub("brands","brands"); sub("posts","posts"); loadReviewed(); loadFavMeds();
   db.collection("drugsafety").onSnapshot(snap=>{ const o={}; snap.docs.forEach(d=>{ o[d.id]={...d.data(), k:d.id}; }); S.dsOver=o; S.safeHook?.(); }, ()=>{});
   db.collection("scores").onSnapshot(snap=>{ S.scores=snap.docs.map(d=>({id:d.id, ...d.data()})); S.loaded.scores=true; S.scoreHook?.(); }, ()=>{});
   db.doc("settings/clinic").onSnapshot(d=>{ S.settings = d.exists?{...d.data()}:{}; updateDrLine(); soon(); }, ()=>{});
