@@ -1,0 +1,132 @@
+{
+ "kind": "ladder",
+ "name": "Erysipelas and cellulitis",
+ "dx": "Erysipelas and cellulitis",
+ "caseName": "Erysipelas and cellulitis",
+ "group": "Bacterial infections",
+ "general": "Rest and elevate limb, mark the edge, look for and treat a portal of entry (tinea pedis, fissures). Admit if systemic toxicity, rapid spread, immunocompromise or facial involvement.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Mild – outpatient",
+   "rx": [
+    {
+     "drug": "Tab. Amoxicillin-clavulanate 625 mg",
+     "dose": "1 tab",
+     "freq": "TDS",
+     "dur": "7–10 days",
+     "route": "Oral",
+     "instr": "Or cephalexin / cloxacillin 500 mg QID",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Paracetamol 650 mg",
+     "dose": "1 tab",
+     "freq": "SOS",
+     "dur": "3–5 days",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Moderate–severe – admit",
+   "rx": [
+    {
+     "drug": "Inj. Ceftriaxone 1 g",
+     "dose": "1–2 g",
+     "freq": "OD",
+     "dur": "Till afebrile, then oral",
+     "route": "IV",
+     "instr": "Or IV cloxacillin / cefazolin",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Penicillin allergy: Inj./Tab. Clindamycin 300–600 mg",
+     "dose": "",
+     "freq": "TDS–QID",
+     "dur": "10–14 days",
+     "route": "IV/Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Recurrent (≥2 episodes/yr)",
+   "rx": [
+    {
+     "drug": "Inj. Benzathine penicillin 1.2 MU",
+     "dose": "1 dose",
+     "freq": "Every 3–4 weeks",
+     "dur": "6–12 months",
+     "route": "IM",
+     "instr": "Or oral penicillin V 250 mg BD prophylaxis",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Tab. Amoxicillin-clavulanate 625 mg",
+   "dose": "1 tab",
+   "freq": "TDS",
+   "dur": "7–10 days",
+   "route": "Oral",
+   "instr": "Or cephalexin / cloxacillin 500 mg QID",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Paracetamol 650 mg",
+   "dose": "1 tab",
+   "freq": "SOS",
+   "dur": "3–5 days",
+   "route": "Oral",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Rest and elevate limb, mark the edge, look for and treat a portal of entry (tinea pedis, fissures). Admit if systemic toxicity, rapid spread, immunocompromise or facial involvement.",
+ "adviceText": "Rest and elevate limb, mark the edge, look for and treat a portal of entry (tinea pedis, fissures). Admit if systemic toxicity, rapid spread, immunocompromise or facial involvement.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224662
+}

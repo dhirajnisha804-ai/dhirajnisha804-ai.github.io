@@ -1,0 +1,112 @@
+{
+ "kind": "ladder",
+ "name": "Folliculitis",
+ "dx": "Folliculitis",
+ "caseName": "Folliculitis",
+ "group": "Bacterial infections",
+ "general": "Stop shaving, waxing, oils and occlusive clothing for a few weeks. Antiseptic wash (chlorhexidine / BPO wash). Rule out fungal (Malassezia) and gram-negative causes if not responding.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Superficial, limited",
+   "rx": [
+    {
+     "drug": "Cream Mupirocin 2% / Fusidic acid 2%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "7–10 days",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Benzoyl peroxide 5% wash",
+     "dose": "Lather 2 min",
+     "freq": "OD",
+     "dur": "2–4 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Extensive or recurrent",
+   "rx": [
+    {
+     "drug": "Cap. Cephalexin 500 mg",
+     "dose": "1 cap",
+     "freq": "QID",
+     "dur": "7–10 days",
+     "route": "Oral",
+     "instr": "Or cloxacillin",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Recurrent: Mupirocin nasal ointment",
+     "dose": "Small amount",
+     "freq": "BD",
+     "dur": "5 days each month",
+     "route": "Nasal",
+     "instr": "Decolonise; also family members",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Mupirocin 2% / Fusidic acid 2%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "7–10 days",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Benzoyl peroxide 5% wash",
+   "dose": "Lather 2 min",
+   "freq": "OD",
+   "dur": "2–4 weeks",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Stop shaving, waxing, oils and occlusive clothing for a few weeks. Antiseptic wash (chlorhexidine / BPO wash). Rule out fungal (Malassezia) and gram-negative causes if not responding.",
+ "adviceText": "Stop shaving, waxing, oils and occlusive clothing for a few weeks. Antiseptic wash (chlorhexidine / BPO wash). Rule out fungal (Malassezia) and gram-negative causes if not responding.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224661
+}

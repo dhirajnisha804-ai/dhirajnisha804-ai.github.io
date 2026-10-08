@@ -1,0 +1,145 @@
+{
+ "kind": "ladder",
+ "name": "Tinea corporis / cruris / faciei",
+ "dx": "Tinea corporis / cruris / faciei",
+ "caseName": "Tinea corporis / cruris / faciei",
+ "group": "Fungal infections",
+ "general": "Loose cotton clothes, dry folds after bathing, wash clothes in hot water and sun-dry, treat all family members, no topical steroid combinations. Treat 2 weeks beyond clinical cure.",
+ "special": "Pregnancy: topicals only (clotrimazole, luliconazole); avoid oral azoles. Children: terbinafine 3–6 mg/kg or itraconazole 3–5 mg/kg.",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Limited, first episode",
+   "rx": [
+    {
+     "drug": "Cream Luliconazole 1% / Sertaconazole 2%",
+     "dose": "Thin layer, 2 cm beyond edge",
+     "freq": "OD–BD",
+     "dur": "4 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Levocetirizine 5 mg",
+     "dose": "1 tab",
+     "freq": "HS",
+     "dur": "2 weeks",
+     "route": "Oral",
+     "instr": "For itch",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Extensive, recurrent or chronic",
+   "rx": [
+    {
+     "drug": "Cap. Itraconazole 100 mg",
+     "dose": "2 caps (200 mg)",
+     "freq": "OD",
+     "dur": "4–6 weeks",
+     "route": "Oral",
+     "instr": "After a fatty meal, avoid antacids/PPIs; check interactions",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Terbinafine 250 mg",
+     "dose": "1 tab",
+     "freq": "BD (500 mg/day)",
+     "dur": "4–6 weeks",
+     "route": "Oral",
+     "instr": "Alternative; check LFT if prolonged",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Not responding",
+   "rx": [
+    {
+     "drug": "Cap. Itraconazole 100 mg",
+     "dose": "2 caps",
+     "freq": "BD (400 mg/day)",
+     "dur": "4 weeks",
+     "route": "Oral",
+     "instr": "Check adherence, formulation, contacts; send KOH/culture ± sensitivity",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Amorolfine 0.25%",
+     "dose": "Thin layer",
+     "freq": "OD",
+     "dur": "4 weeks",
+     "route": "Topical",
+     "instr": "Combine with oral",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Luliconazole 1% / Sertaconazole 2%",
+   "dose": "Thin layer, 2 cm beyond edge",
+   "freq": "OD–BD",
+   "dur": "4 weeks",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Levocetirizine 5 mg",
+   "dose": "1 tab",
+   "freq": "HS",
+   "dur": "2 weeks",
+   "route": "Oral",
+   "instr": "For itch",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Loose cotton clothes, dry folds after bathing, wash clothes in hot water and sun-dry, treat all family members, no topical steroid combinations. Treat 2 weeks beyond clinical cure.",
+ "adviceText": "Loose cotton clothes, dry folds after bathing, wash clothes in hot water and sun-dry, treat all family members, no topical steroid combinations. Treat 2 weeks beyond clinical cure.",
+ "fuDays": "",
+ "review": true,
+ "free": true,
+ "source": "slot1.py",
+ "updatedAt": 1791445224663
+}

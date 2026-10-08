@@ -1,0 +1,145 @@
+{
+ "kind": "ladder",
+ "name": "Acne vulgaris",
+ "dx": "Acne vulgaris",
+ "caseName": "Acne vulgaris",
+ "group": "Acne & appendageal disorders",
+ "general": "Gentle non-comedogenic cleanser twice daily, oil-free moisturiser and sunscreen. Do not squeeze lesions. Topicals take 8–12 weeks to work.",
+ "special": "Pregnancy: azelaic acid 20% or topical clindamycin + BPO; erythromycin/azithromycin if oral needed. No retinoids, no tetracyclines. Children under 8: no tetracyclines.",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Mild–moderate (comedones, papulopustules)",
+   "rx": [
+    {
+     "drug": "Gel Adapalene 0.1% + Benzoyl peroxide 2.5%",
+     "dose": "Pea-size",
+     "freq": "HS",
+     "dur": "12 weeks",
+     "route": "Topical",
+     "instr": "Whole face, not just spots",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Gel Clindamycin 1%",
+     "dose": "Thin layer",
+     "freq": "Morning",
+     "dur": "12 weeks",
+     "route": "Topical",
+     "instr": "Always with benzoyl peroxide; avoid antibiotic alone",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Moderate–severe papulopustular / truncal",
+   "rx": [
+    {
+     "drug": "Cap. Doxycycline 100 mg",
+     "dose": "1 cap",
+     "freq": "OD",
+     "dur": "8–12 weeks",
+     "route": "Oral",
+     "instr": "After food with water, stay upright 30 min; with a topical retinoid + BPO",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Gel Adapalene 0.1% + Benzoyl peroxide 2.5%",
+     "dose": "Pea-size",
+     "freq": "HS",
+     "dur": "12 weeks",
+     "route": "Topical",
+     "instr": "Continue as maintenance after antibiotic",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Severe nodulocystic, scarring or failed oral antibiotic",
+   "rx": [
+    {
+     "drug": "Cap. Isotretinoin 20 mg",
+     "dose": "0.25–0.5 mg/kg",
+     "freq": "OD",
+     "dur": "Till 120–150 mg/kg cumulative",
+     "route": "Oral",
+     "instr": "After a fatty meal; pregnancy test, LFT, lipids at baseline; strict contraception",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Women with hormonal features: Tab. Spironolactone 50 mg",
+     "dose": "1 tab",
+     "freq": "OD",
+     "dur": "3–6 months",
+     "route": "Oral",
+     "instr": "Or combined OCP; check potassium if renal disease",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Gel Adapalene 0.1% + Benzoyl peroxide 2.5%",
+   "dose": "Pea-size",
+   "freq": "HS",
+   "dur": "12 weeks",
+   "route": "Topical",
+   "instr": "Whole face, not just spots",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Gel Clindamycin 1%",
+   "dose": "Thin layer",
+   "freq": "Morning",
+   "dur": "12 weeks",
+   "route": "Topical",
+   "instr": "Always with benzoyl peroxide; avoid antibiotic alone",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Gentle non-comedogenic cleanser twice daily, oil-free moisturiser and sunscreen. Do not squeeze lesions. Topicals take 8–12 weeks to work.",
+ "adviceText": "Gentle non-comedogenic cleanser twice daily, oil-free moisturiser and sunscreen. Do not squeeze lesions. Topicals take 8–12 weeks to work.",
+ "fuDays": "",
+ "review": true,
+ "free": true,
+ "source": "slot1.py",
+ "updatedAt": 1791445224658
+}

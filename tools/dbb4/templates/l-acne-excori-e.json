@@ -1,0 +1,112 @@
+{
+ "kind": "ladder",
+ "name": "Acne excoriée",
+ "dx": "Acne excoriée",
+ "caseName": "Acne excoriée",
+ "group": "Acne & appendageal disorders",
+ "general": "Explain the picking–scarring cycle. Keep nails short. Treat the underlying acne and screen for anxiety, depression or OCD.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Treat acne + habit reversal",
+   "rx": [
+    {
+     "drug": "Gel Adapalene 0.1% + Benzoyl peroxide 2.5%",
+     "dose": "Pea-size",
+     "freq": "HS",
+     "dur": "12 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Mupirocin 2%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "7 days",
+     "route": "Topical",
+     "instr": "Open excoriations only",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Persistent picking",
+   "rx": [
+    {
+     "drug": "Tab. N-acetylcysteine 600 mg",
+     "dose": "1 tab",
+     "freq": "BD",
+     "dur": "3 months",
+     "route": "Oral",
+     "instr": "Some evidence in skin-picking",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Fluoxetine 20 mg",
+     "dose": "1 tab",
+     "freq": "OD",
+     "dur": "3–6 months",
+     "route": "Oral",
+     "instr": "With psychiatry input; or CBT / habit-reversal therapy",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Gel Adapalene 0.1% + Benzoyl peroxide 2.5%",
+   "dose": "Pea-size",
+   "freq": "HS",
+   "dur": "12 weeks",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Mupirocin 2%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "7 days",
+   "route": "Topical",
+   "instr": "Open excoriations only",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Explain the picking–scarring cycle. Keep nails short. Treat the underlying acne and screen for anxiety, depression or OCD.",
+ "adviceText": "Explain the picking–scarring cycle. Keep nails short. Treat the underlying acne and screen for anxiety, depression or OCD.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224659
+}

@@ -138,3 +138,12 @@ Each SOP: indications · contraindications · pre-procedure (consent, counsellin
 - DONE Batch C (accounts): shim role model (none/unverified/new/pending/rejected/verified/admin), sign-up + email verification + profile + proof (Firestore users/{uid}, verifications/{uid} ≤700 KB JPEG), admin Approvals (approve/reject + mailto), templates query free-only for non-verified (FREE_TPL ids + `free:true`), locks on Drugs tools / dose / safety / interactions, My account (sign out, delete). Rules in tools/firestore.rules — OWNER MUST PUBLISH THEM. Husband's email → add to adminEmails in tools/src/config.js AND to rules isAdmin list.
 - KNOWN GAP: repo is public (GitHub Pages) → tools/dbb4 + www/seed.json expose all templates. Fix in stage 4: private repo + Firebase Hosting, strip non-free templates from public seed, publish templates from a private source.
 - Tests: tools/tests (mockfb3.js, test_acct.py, test_v2.py, v3_test_b1.py) — run from a folder containing www/ and the mock.
+
+## Treatment ladders (1st / 2nd / 3rd line) — replaces old templates, done in slots
+Data: `tools/ladders/slotN.py` (one `L(case, group, general, l1, l2, l3, special)` per disease; rx line = "Drug | dose | freq | dur | route | note").
+Build: `python3 tools/ladders/make.py` → `tools/dbb4/templates/l-*.json` (kind:"ladder", review:true, free for acne/scabies/tinea/PV/urticaria), then `python3 tools/build.py`.
+UI: Templates tab lists ladders, old templates under "Older templates (being replaced)"; case page "💊 Treatment" button; patient Rx "Use template" opens the ladder to pick a line.
+- Slot 1 (8 Oct) DONE: framework + 35 ladders — Acne & appendageal, Bacterial, Fungal, Infestations, Viral, STI. Source: Wolverton 4e + standard practice.
+- Slot 2: Eczemas, Papulosquamous, Reactive & drug, Hair & nail, Pigmentary (treatable ones). Read IADVL 3e + Rook's 10e from user's computer: folder "attachment" → "Dermatology books" → "New IADVL" (and Rook's there).
+- Slot 3: Connective tissue, Vesicobullous, Leprosy & TB, Vascular, Nutritional, Keratinisation, tumours, oral, granulomatous, psychocutaneous, + extra conditions from the 42 newer templates. Skip: genodermatoses/nevi without real drug ladders (note "No standard drug treatment" instead).
+- Slot 4: cross-check slot 1–3 against IADVL/Rook's, list doubts for Dr Nisha, retire old templates (delete from seed + Firestore), sync artifact DB (ArtifactData templates), publish artifact, admin Publish in app.

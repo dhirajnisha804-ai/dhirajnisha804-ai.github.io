@@ -1,0 +1,112 @@
+{
+ "kind": "ladder",
+ "name": "Perioral dermatitis",
+ "dx": "Perioral dermatitis",
+ "caseName": "Perioral dermatitis",
+ "group": "Acne & appendageal disorders",
+ "general": "Stop all topical steroids (expect a flare for 1–2 weeks), stop heavy creams and fluoridated toothpaste if implicated. 'Zero therapy' alone often works.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Mild",
+   "rx": [
+    {
+     "drug": "Gel Metronidazole 0.75%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "8 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Pimecrolimus 1% / Tacrolimus 0.03%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "4–6 weeks",
+     "route": "Topical",
+     "instr": "Eases steroid-withdrawal flare",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Moderate–severe",
+   "rx": [
+    {
+     "drug": "Cap. Doxycycline 100 mg",
+     "dose": "1 cap",
+     "freq": "OD",
+     "dur": "6–8 weeks",
+     "route": "Oral",
+     "instr": "Taper once clear",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Children / pregnancy: Tab. Erythromycin 250 mg / Azithromycin",
+     "dose": "per weight",
+     "freq": "",
+     "dur": "4–6 weeks",
+     "route": "Oral",
+     "instr": "Avoid tetracyclines",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Gel Metronidazole 0.75%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "8 weeks",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Pimecrolimus 1% / Tacrolimus 0.03%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "4–6 weeks",
+   "route": "Topical",
+   "instr": "Eases steroid-withdrawal flare",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Stop all topical steroids (expect a flare for 1–2 weeks), stop heavy creams and fluoridated toothpaste if implicated. 'Zero therapy' alone often works.",
+ "adviceText": "Stop all topical steroids (expect a flare for 1–2 weeks), stop heavy creams and fluoridated toothpaste if implicated. 'Zero therapy' alone often works.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224660
+}

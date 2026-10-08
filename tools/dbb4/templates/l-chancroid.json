@@ -1,0 +1,86 @@
+{
+ "kind": "ladder",
+ "name": "Chancroid",
+ "dx": "Chancroid",
+ "caseName": "Chancroid",
+ "group": "Sexually transmitted infections",
+ "general": "Treat partners of the past 10 days. Test for HIV and syphilis. Re-examine in 3–7 days.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Tab. Azithromycin 1 g",
+     "dose": "1 g",
+     "freq": "Single dose",
+     "dur": "Once",
+     "route": "Oral",
+     "instr": "Or Inj. ceftriaxone 250 mg IM single dose",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Alternative",
+   "rx": [
+    {
+     "drug": "Tab. Ciprofloxacin 500 mg",
+     "dose": "1 tab",
+     "freq": "BD",
+     "dur": "3 days",
+     "route": "Oral",
+     "instr": "Not in pregnancy",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Fluctuant bubo: needle aspiration",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Tab. Azithromycin 1 g",
+   "dose": "1 g",
+   "freq": "Single dose",
+   "dur": "Once",
+   "route": "Oral",
+   "instr": "Or Inj. ceftriaxone 250 mg IM single dose",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Treat partners of the past 10 days. Test for HIV and syphilis. Re-examine in 3–7 days.",
+ "adviceText": "Treat partners of the past 10 days. Test for HIV and syphilis. Re-examine in 3–7 days.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224668
+}

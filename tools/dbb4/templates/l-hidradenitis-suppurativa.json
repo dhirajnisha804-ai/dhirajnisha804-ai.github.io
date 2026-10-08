@@ -1,0 +1,145 @@
+{
+ "kind": "ladder",
+ "name": "Hidradenitis suppurativa",
+ "dx": "Hidradenitis suppurativa",
+ "caseName": "Hidradenitis suppurativa",
+ "group": "Acne & appendageal disorders",
+ "general": "Weight loss, stop smoking, loose clothing, antiseptic wash (chlorhexidine 4%). Stage with Hurley; score with IHS4. Screen for diabetes, metabolic syndrome, depression.",
+ "special": "Women: consider metformin, spironolactone or anti-androgen OCP. Avoid isotretinoin (poor response).",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Hurley I / mild",
+   "rx": [
+    {
+     "drug": "Lotion Clindamycin 1%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "12 weeks",
+     "route": "Topical",
+     "instr": "To all lesions",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Inj. Triamcinolone 10 mg/mL",
+     "dose": "0.2–1 mL",
+     "freq": "Once",
+     "dur": "Repeat in 3–4 weeks",
+     "route": "Intralesional",
+     "instr": "For a painful inflamed nodule",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Hurley II / moderate",
+   "rx": [
+    {
+     "drug": "Cap. Doxycycline 100 mg",
+     "dose": "1 cap",
+     "freq": "BD",
+     "dur": "12 weeks",
+     "route": "Oral",
+     "instr": "Or tetracycline",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "If no response: Tab. Clindamycin 300 mg + Tab. Rifampicin 300 mg",
+     "dose": "1 tab each",
+     "freq": "BD",
+     "dur": "10–12 weeks",
+     "route": "Oral",
+     "instr": "Rifampicin colours urine orange; many interactions",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Hurley III / refractory",
+   "rx": [
+    {
+     "drug": "Inj. Adalimumab",
+     "dose": "160 mg wk 0, 80 mg wk 2, then 40 mg weekly",
+     "freq": "",
+     "dur": "Long-term",
+     "route": "Subcutaneous",
+     "instr": "TB screening first",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Deroofing or wide surgical excision of sinus tracts",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "Combine with medical therapy",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Lotion Clindamycin 1%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "12 weeks",
+   "route": "Topical",
+   "instr": "To all lesions",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Inj. Triamcinolone 10 mg/mL",
+   "dose": "0.2–1 mL",
+   "freq": "Once",
+   "dur": "Repeat in 3–4 weeks",
+   "route": "Intralesional",
+   "instr": "For a painful inflamed nodule",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Weight loss, stop smoking, loose clothing, antiseptic wash (chlorhexidine 4%). Stage with Hurley; score with IHS4. Screen for diabetes, metabolic syndrome, depression.",
+ "adviceText": "Weight loss, stop smoking, loose clothing, antiseptic wash (chlorhexidine 4%). Stage with Hurley; score with IHS4. Screen for diabetes, metabolic syndrome, depression.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224659
+}

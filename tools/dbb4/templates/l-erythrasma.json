@@ -1,0 +1,86 @@
+{
+ "kind": "ladder",
+ "name": "Erythrasma",
+ "dx": "Erythrasma",
+ "caseName": "Erythrasma",
+ "group": "Bacterial infections",
+ "general": "Confirm with coral-red Wood's lamp fluorescence. Keep folds dry; treat coexisting tinea / candida.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Localised",
+   "rx": [
+    {
+     "drug": "Gel Fusidic acid 2% / Clindamycin 1% / Erythromycin 2%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "2 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Extensive / recurrent",
+   "rx": [
+    {
+     "drug": "Tab. Clarithromycin 1 g",
+     "dose": "1 g",
+     "freq": "Single dose",
+     "dur": "Once",
+     "route": "Oral",
+     "instr": "Or erythromycin 250 mg QID × 14 days",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Benzoyl peroxide 5% wash",
+     "dose": "",
+     "freq": "3×/week",
+     "dur": "Ongoing",
+     "route": "Topical",
+     "instr": "Prevents relapse",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Gel Fusidic acid 2% / Clindamycin 1% / Erythromycin 2%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "2 weeks",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Confirm with coral-red Wood's lamp fluorescence. Keep folds dry; treat coexisting tinea / candida.",
+ "adviceText": "Confirm with coral-red Wood's lamp fluorescence. Keep folds dry; treat coexisting tinea / candida.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224663
+}

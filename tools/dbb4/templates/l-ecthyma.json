@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Ecthyma",
+ "dx": "Ecthyma",
+ "caseName": "Ecthyma",
+ "group": "Bacterial infections",
+ "general": "Clean ulcer, remove crust, treat insect bites and poor hygiene; heals with scarring.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Standard",
+   "rx": [
+    {
+     "drug": "Cap. Cloxacillin 500 mg / Cephalexin 500 mg",
+     "dose": "1 cap",
+     "freq": "QID",
+     "dur": "10 days",
+     "route": "Oral",
+     "instr": "Children: 50 mg/kg/day",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Mupirocin 2%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "10 days",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Penicillin allergy",
+   "rx": [
+    {
+     "drug": "Tab. Azithromycin 500 mg",
+     "dose": "1 tab",
+     "freq": "OD",
+     "dur": "5 days",
+     "route": "Oral",
+     "instr": "Or clindamycin 300 mg QID",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cap. Cloxacillin 500 mg / Cephalexin 500 mg",
+   "dose": "1 cap",
+   "freq": "QID",
+   "dur": "10 days",
+   "route": "Oral",
+   "instr": "Children: 50 mg/kg/day",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Mupirocin 2%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "10 days",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Clean ulcer, remove crust, treat insect bites and poor hygiene; heals with scarring.",
+ "adviceText": "Clean ulcer, remove crust, treat insect bites and poor hygiene; heals with scarring.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224662
+}

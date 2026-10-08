@@ -1,0 +1,112 @@
+{
+ "kind": "ladder",
+ "name": "Pediculosis",
+ "dx": "Pediculosis",
+ "caseName": "Pediculosis",
+ "group": "Infestations",
+ "general": "Treat all affected contacts. Wet-comb with a fine-tooth comb every 3 days for 2 weeks. Wash combs, caps, pillow covers in hot water.",
+ "special": "Pubic lice: permethrin 5% to all hairy areas, treat partner, screen for STIs. Eyelashes: petroleum jelly BD × 10 days.",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Head lice – first line",
+   "rx": [
+    {
+     "drug": "Lotion Permethrin 1%",
+     "dose": "Apply to damp hair",
+     "freq": "Leave 10 min, rinse",
+     "dur": "Repeat day 7–10",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Wet combing with nit comb",
+     "dose": "",
+     "freq": "Every 3 days",
+     "dur": "2 weeks",
+     "route": "",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Resistant / treatment failure",
+   "rx": [
+    {
+     "drug": "Tab. Ivermectin 6 mg",
+     "dose": "200 µg/kg",
+     "freq": "Single dose",
+     "dur": "Repeat day 8",
+     "route": "Oral",
+     "instr": "Not <15 kg or in pregnancy",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Dimeticone 4% lotion",
+     "dose": "Apply 8 h",
+     "freq": "Once",
+     "dur": "Repeat day 7",
+     "route": "Topical",
+     "instr": "Physical action, no resistance",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Lotion Permethrin 1%",
+   "dose": "Apply to damp hair",
+   "freq": "Leave 10 min, rinse",
+   "dur": "Repeat day 7–10",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Wet combing with nit comb",
+   "dose": "",
+   "freq": "Every 3 days",
+   "dur": "2 weeks",
+   "route": "",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Treat all affected contacts. Wet-comb with a fine-tooth comb every 3 days for 2 weeks. Wash combs, caps, pillow covers in hot water.",
+ "adviceText": "Treat all affected contacts. Wet-comb with a fine-tooth comb every 3 days for 2 weeks. Wash combs, caps, pillow covers in hot water.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224666
+}

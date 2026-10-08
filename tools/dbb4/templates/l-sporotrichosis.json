@@ -1,0 +1,106 @@
+{
+ "kind": "ladder",
+ "name": "Sporotrichosis",
+ "dx": "Sporotrichosis",
+ "caseName": "Sporotrichosis",
+ "group": "Fungal infections",
+ "general": "Usually lymphocutaneous after thorn/soil injury.",
+ "special": "Pregnancy: local heat therapy; avoid itraconazole and SSKI.",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Cap. Itraconazole 100 mg",
+     "dose": "2 caps (200 mg)",
+     "freq": "OD",
+     "dur": "2–4 weeks beyond cure (3–6 months)",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Alternative",
+   "rx": [
+    {
+     "drug": "Saturated solution of potassium iodide (SSKI)",
+     "dose": "5 drops TDS, increase to 40–50 drops TDS",
+     "freq": "TDS",
+     "dur": "3–6 months",
+     "route": "Oral",
+     "instr": "In milk/juice; watch for iodism, thyroid",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Terbinafine 250 mg",
+     "dose": "1 tab",
+     "freq": "BD",
+     "dur": "3–6 months",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Disseminated / immunocompromised",
+   "rx": [
+    {
+     "drug": "Inj. Amphotericin B",
+     "dose": "per protocol",
+     "freq": "",
+     "dur": "",
+     "route": "IV",
+     "instr": "Admit; specialist care",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cap. Itraconazole 100 mg",
+   "dose": "2 caps (200 mg)",
+   "freq": "OD",
+   "dur": "2–4 weeks beyond cure (3–6 months)",
+   "route": "Oral",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Usually lymphocutaneous after thorn/soil injury.",
+ "adviceText": "Usually lymphocutaneous after thorn/soil injury.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224665
+}

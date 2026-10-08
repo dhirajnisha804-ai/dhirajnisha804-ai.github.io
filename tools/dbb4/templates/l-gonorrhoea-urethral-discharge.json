@@ -1,0 +1,119 @@
+{
+ "kind": "ladder",
+ "name": "Gonorrhoea / urethral discharge",
+ "dx": "Gonorrhoea / urethral discharge",
+ "caseName": "Gonorrhoea / urethral discharge",
+ "group": "Sexually transmitted infections",
+ "general": "Treat for both gonorrhoea and chlamydia (syndromic). Abstain 7 days, treat partners of the past 60 days, test for HIV and syphilis.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Inj. Ceftriaxone 500 mg",
+     "dose": "500 mg",
+     "freq": "Single dose",
+     "dur": "Once",
+     "route": "IM",
+     "instr": "(1 g if >150 kg)",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cap. Doxycycline 100 mg",
+     "dose": "1 cap",
+     "freq": "BD",
+     "dur": "7 days",
+     "route": "Oral",
+     "instr": "Chlamydia cover",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Pregnancy / doxycycline not possible",
+   "rx": [
+    {
+     "drug": "Tab. Azithromycin 1 g",
+     "dose": "1 g",
+     "freq": "Single dose",
+     "dur": "Once",
+     "route": "Oral",
+     "instr": "With ceftriaxone",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Persistent discharge",
+   "rx": [
+    {
+     "drug": "Tab. Metronidazole 2 g",
+     "dose": "2 g",
+     "freq": "Single dose",
+     "dur": "Once",
+     "route": "Oral",
+     "instr": "Trichomonas; re-test, check adherence and re-exposure",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Inj. Ceftriaxone 500 mg",
+   "dose": "500 mg",
+   "freq": "Single dose",
+   "dur": "Once",
+   "route": "IM",
+   "instr": "(1 g if >150 kg)",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cap. Doxycycline 100 mg",
+   "dose": "1 cap",
+   "freq": "BD",
+   "dur": "7 days",
+   "route": "Oral",
+   "instr": "Chlamydia cover",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Treat for both gonorrhoea and chlamydia (syndromic). Abstain 7 days, treat partners of the past 60 days, test for HIV and syphilis.",
+ "adviceText": "Treat for both gonorrhoea and chlamydia (syndromic). Abstain 7 days, treat partners of the past 60 days, test for HIV and syphilis.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224668
+}

@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Pitted keratolysis",
+ "dx": "Pitted keratolysis",
+ "caseName": "Pitted keratolysis",
+ "group": "Bacterial infections",
+ "general": "Keep feet dry, change socks daily, cotton socks, alternate shoes, treat hyperhidrosis.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Gel Clindamycin 1% + Benzoyl peroxide 5%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "2–4 weeks",
+     "route": "Topical",
+     "instr": "Or erythromycin 2% / fusidic acid",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Aluminium chloride 20%",
+     "dose": "Thin layer",
+     "freq": "HS",
+     "dur": "Till dry, then weekly",
+     "route": "Topical",
+     "instr": "For hyperhidrosis",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Extensive / resistant",
+   "rx": [
+    {
+     "drug": "Tab. Erythromycin 500 mg",
+     "dose": "1 tab",
+     "freq": "BD",
+     "dur": "7–10 days",
+     "route": "Oral",
+     "instr": "Or clarithromycin",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Gel Clindamycin 1% + Benzoyl peroxide 5%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "2–4 weeks",
+   "route": "Topical",
+   "instr": "Or erythromycin 2% / fusidic acid",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Aluminium chloride 20%",
+   "dose": "Thin layer",
+   "freq": "HS",
+   "dur": "Till dry, then weekly",
+   "route": "Topical",
+   "instr": "For hyperhidrosis",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Keep feet dry, change socks daily, cotton socks, alternate shoes, treat hyperhidrosis.",
+ "adviceText": "Keep feet dry, change socks daily, cotton socks, alternate shoes, treat hyperhidrosis.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224663
+}

@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Cutaneous candidiasis / intertrigo",
+ "dx": "Cutaneous candidiasis / intertrigo",
+ "caseName": "Cutaneous candidiasis / intertrigo",
+ "group": "Fungal infections",
+ "general": "Keep folds dry and separated, weight loss, control diabetes, check for and treat oral/genital candida.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Localised",
+   "rx": [
+    {
+     "drug": "Cream Clotrimazole 1% / Miconazole 2%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "2 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Powder Clotrimazole 1%",
+     "dose": "Dust",
+     "freq": "BD",
+     "dur": "4 weeks",
+     "route": "Topical",
+     "instr": "To keep folds dry",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Extensive or recurrent",
+   "rx": [
+    {
+     "drug": "Tab. Fluconazole 150 mg",
+     "dose": "1 tab",
+     "freq": "Weekly",
+     "dur": "2–4 weeks",
+     "route": "Oral",
+     "instr": "Or 50–100 mg OD × 14 days",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Clotrimazole 1% / Miconazole 2%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "2 weeks",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Powder Clotrimazole 1%",
+   "dose": "Dust",
+   "freq": "BD",
+   "dur": "4 weeks",
+   "route": "Topical",
+   "instr": "To keep folds dry",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Keep folds dry and separated, weight loss, control diabetes, check for and treat oral/genital candida.",
+ "adviceText": "Keep folds dry and separated, weight loss, control diabetes, check for and treat oral/genital candida.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224664
+}

@@ -1,0 +1,119 @@
+{
+ "kind": "ladder",
+ "name": "Chickenpox (varicella)",
+ "dx": "Chickenpox (varicella)",
+ "caseName": "Chickenpox (varicella)",
+ "group": "Viral infections",
+ "general": "Isolate till all lesions crust, calamine, short nails, paracetamol for fever (no aspirin in children, avoid NSAIDs). Antivirals help most if started within 24 h.",
+ "special": "Exposed pregnant/immunocompromised non-immune: VZIG within 10 days of exposure.",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Adolescents, adults, smokers, chronic skin/lung disease",
+   "rx": [
+    {
+     "drug": "Tab. Acyclovir 800 mg",
+     "dose": "1 tab",
+     "freq": "5×/day",
+     "dur": "7 days",
+     "route": "Oral",
+     "instr": "Or valacyclovir 1 g TDS × 7 days",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Calamine lotion",
+     "dose": "Apply",
+     "freq": "TDS",
+     "dur": "1 week",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Healthy child",
+   "rx": [
+    {
+     "drug": "Syp. Acyclovir",
+     "dose": "20 mg/kg (max 800 mg)",
+     "freq": "QID",
+     "dur": "5 days",
+     "route": "Oral",
+     "instr": "Optional if seen within 24 h",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Pregnancy, immunocompromised, pneumonia or encephalitis",
+   "rx": [
+    {
+     "drug": "Inj. Acyclovir",
+     "dose": "10 mg/kg",
+     "freq": "8-hourly",
+     "dur": "7–10 days",
+     "route": "IV",
+     "instr": "Admit",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Tab. Acyclovir 800 mg",
+   "dose": "1 tab",
+   "freq": "5×/day",
+   "dur": "7 days",
+   "route": "Oral",
+   "instr": "Or valacyclovir 1 g TDS × 7 days",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Calamine lotion",
+   "dose": "Apply",
+   "freq": "TDS",
+   "dur": "1 week",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Isolate till all lesions crust, calamine, short nails, paracetamol for fever (no aspirin in children, avoid NSAIDs). Antivirals help most if started within 24 h.",
+ "adviceText": "Isolate till all lesions crust, calamine, short nails, paracetamol for fever (no aspirin in children, avoid NSAIDs). Antivirals help most if started within 24 h.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224667
+}

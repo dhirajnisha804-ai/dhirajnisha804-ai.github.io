@@ -1,0 +1,112 @@
+{
+ "kind": "ladder",
+ "name": "Fox–Fordyce disease",
+ "dx": "Fox–Fordyce disease",
+ "caseName": "Fox–Fordyce disease",
+ "group": "Acne & appendageal disorders",
+ "general": "Avoid heat, tight clothing and friction. Response is often partial.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Topical",
+   "rx": [
+    {
+     "drug": "Cream Tretinoin 0.025%",
+     "dose": "Thin layer",
+     "freq": "HS (alternate nights at first)",
+     "dur": "8–12 weeks",
+     "route": "Topical",
+     "instr": "Axillae; irritation common",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Clindamycin 1%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "8 weeks",
+     "route": "Topical",
+     "instr": "Or a mild topical steroid for itch flares",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Refractory",
+   "rx": [
+    {
+     "drug": "Topical Pimecrolimus 1% cream",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "8 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Botulinum toxin A, fractional laser or microwave thermolysis",
+     "dose": "",
+     "freq": "Once",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "Specialist procedures for refractory cases",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Tretinoin 0.025%",
+   "dose": "Thin layer",
+   "freq": "HS (alternate nights at first)",
+   "dur": "8–12 weeks",
+   "route": "Topical",
+   "instr": "Axillae; irritation common",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Clindamycin 1%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "8 weeks",
+   "route": "Topical",
+   "instr": "Or a mild topical steroid for itch flares",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Avoid heat, tight clothing and friction. Response is often partial.",
+ "adviceText": "Avoid heat, tight clothing and friction. Response is often partial.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224659
+}

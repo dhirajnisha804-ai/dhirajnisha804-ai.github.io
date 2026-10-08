@@ -1,0 +1,145 @@
+{
+ "kind": "ladder",
+ "name": "Rosacea",
+ "dx": "Rosacea",
+ "caseName": "Rosacea",
+ "group": "Acne & appendageal disorders",
+ "general": "Daily broad-spectrum sunscreen, gentle cleanser, avoid triggers (heat, spicy food, alcohol, steroids). Treat by phenotype.",
+ "special": "Pregnancy: azelaic acid, metronidazole; azithromycin if oral needed.",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Papulopustular – mild/moderate",
+   "rx": [
+    {
+     "drug": "Cream Ivermectin 1%",
+     "dose": "Thin layer",
+     "freq": "OD",
+     "dur": "12 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Gel Metronidazole 0.75% / Azelaic acid 15%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "12 weeks",
+     "route": "Topical",
+     "instr": "Alternatives",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Moderate–severe papulopustular / ocular",
+   "rx": [
+    {
+     "drug": "Cap. Doxycycline 40 mg MR (or 50–100 mg)",
+     "dose": "1 cap",
+     "freq": "OD",
+     "dur": "8–12 weeks",
+     "route": "Oral",
+     "instr": "With topical ivermectin",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Persistent erythema: Gel Brimonidine 0.33%",
+     "dose": "Pea-size",
+     "freq": "OD morning",
+     "dur": "As needed",
+     "route": "Topical",
+     "instr": "Effect lasts ~12 h; rebound possible",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Refractory / phymatous / telangiectasia",
+   "rx": [
+    {
+     "drug": "Cap. Isotretinoin 10 mg",
+     "dose": "0.1–0.3 mg/kg",
+     "freq": "OD",
+     "dur": "4–6 months",
+     "route": "Oral",
+     "instr": "Low dose; contraception",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Vascular laser / IPL; ablative laser or surgery for rhinophyma",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Ivermectin 1%",
+   "dose": "Thin layer",
+   "freq": "OD",
+   "dur": "12 weeks",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Gel Metronidazole 0.75% / Azelaic acid 15%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "12 weeks",
+   "route": "Topical",
+   "instr": "Alternatives",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Daily broad-spectrum sunscreen, gentle cleanser, avoid triggers (heat, spicy food, alcohol, steroids). Treat by phenotype.",
+ "adviceText": "Daily broad-spectrum sunscreen, gentle cleanser, avoid triggers (heat, spicy food, alcohol, steroids). Treat by phenotype.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224661
+}

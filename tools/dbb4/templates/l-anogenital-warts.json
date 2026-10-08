@@ -1,0 +1,132 @@
+{
+ "kind": "ladder",
+ "name": "Anogenital warts",
+ "dx": "Anogenital warts",
+ "caseName": "Anogenital warts",
+ "group": "Sexually transmitted infections",
+ "general": "Screen for other STIs (HIV, syphilis), examine partner, condoms. Biopsy atypical, pigmented or non-responding warts. Recurrence is common.",
+ "special": "Pregnancy: cryotherapy or TCA only; no podophyllin, podophyllotoxin or imiquimod.",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Few, soft, non-keratinised",
+   "rx": [
+    {
+     "drug": "Podophyllotoxin 0.5% solution",
+     "dose": "Apply to warts",
+     "freq": "BD × 3 days, then 4 days off",
+     "dur": "Up to 4 cycles",
+     "route": "Topical",
+     "instr": "Self-applied; not in pregnancy",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Imiquimod 5%",
+     "dose": "Thin layer at night, wash off after 6–10 h",
+     "freq": "3×/week",
+     "dur": "Up to 16 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Keratinised, many or failed topical",
+   "rx": [
+    {
+     "drug": "Cryotherapy",
+     "dose": "",
+     "freq": "Weekly",
+     "dur": "Till clear",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Trichloroacetic acid 80–90%",
+     "dose": "Apply in clinic",
+     "freq": "Weekly",
+     "dur": "Till clear",
+     "route": "Procedure",
+     "instr": "Safe in pregnancy",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Extensive / giant",
+   "rx": [
+    {
+     "drug": "Electrocautery / radiofrequency / CO₂ laser / surgical excision",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Podophyllotoxin 0.5% solution",
+   "dose": "Apply to warts",
+   "freq": "BD × 3 days, then 4 days off",
+   "dur": "Up to 4 cycles",
+   "route": "Topical",
+   "instr": "Self-applied; not in pregnancy",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Imiquimod 5%",
+   "dose": "Thin layer at night, wash off after 6–10 h",
+   "freq": "3×/week",
+   "dur": "Up to 16 weeks",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Screen for other STIs (HIV, syphilis), examine partner, condoms. Biopsy atypical, pigmented or non-responding warts. Recurrence is common.",
+ "adviceText": "Screen for other STIs (HIV, syphilis), examine partner, condoms. Biopsy atypical, pigmented or non-responding warts. Recurrence is common.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224668
+}

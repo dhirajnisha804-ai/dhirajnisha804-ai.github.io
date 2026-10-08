@@ -1,0 +1,86 @@
+{
+ "kind": "ladder",
+ "name": "Chromoblastomycosis",
+ "dx": "Chromoblastomycosis",
+ "caseName": "Chromoblastomycosis",
+ "group": "Fungal infections",
+ "general": "Chronic verrucous plaques; muriform (Medlar) bodies on KOH/biopsy. Small lesions are best excised or destroyed.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Small lesion",
+   "rx": [
+    {
+     "drug": "Cryotherapy / surgical excision",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "With antifungal cover",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Extensive",
+   "rx": [
+    {
+     "drug": "Cap. Itraconazole 200 mg",
+     "dose": "1 cap",
+     "freq": "BD",
+     "dur": "6–12 months",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Terbinafine 250 mg",
+     "dose": "1–2 tabs",
+     "freq": "OD",
+     "dur": "6–12 months",
+     "route": "Oral",
+     "instr": "Alone or with itraconazole",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cryotherapy / surgical excision",
+   "dose": "",
+   "freq": "",
+   "dur": "",
+   "route": "Procedure",
+   "instr": "With antifungal cover",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Chronic verrucous plaques; muriform (Medlar) bodies on KOH/biopsy. Small lesions are best excised or destroyed.",
+ "adviceText": "Chronic verrucous plaques; muriform (Medlar) bodies on KOH/biopsy. Small lesions are best excised or destroyed.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224665
+}

@@ -1,6 +1,6 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#14324d">
 <link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<meta name="drx-build" content="202610071740">
+<meta name="drx-build" content="202610080741">
 <script src="config.js"></script>
 <script>window.DRX_OCR=(b=>({lib:b+"tesseract.min.js",worker:b+"worker.min.js",core:b,lang:b}))(new URL("vendor/tesseract/",location.href).href);</script>
 <script src="vendor/firebase-app-compat.js"></script><script src="vendor/firebase-auth-compat.js"></script><script src="vendor/firebase-firestore-compat.js"></script>
@@ -242,6 +242,12 @@ header.top #btnMoreTop{margin-left:-4px}
 .sev-monitor{border-left-color:#2563eb}.sev-monitor .ixtag{background:#2563eb}
 .sev-none{border-left-color:#15803d}.sev-none .ixtag{background:#15803d}
 .ixauto{margin-bottom:10px}
+.txbtn{margin:10px 0 4px;width:100%;justify-content:center}
+.lxgen{background:var(--soft,#f3f6f8);border-radius:12px;padding:10px 12px;margin:10px 0}.lxgen p{margin:4px 0 0;font-size:13.5px;line-height:1.45}.lxsp{border-left:3px solid #c98a2b}
+.lxline{border:1px solid var(--line);border-radius:14px;padding:12px;margin:12px 0;border-left:5px solid #2e8b57}.lxline.l2{border-left-color:#d49a1f}.lxline.l3{border-left-color:#c0443a}
+.lxh{display:flex;gap:10px;align-items:flex-start;margin-bottom:6px}.lxh small{display:block;color:var(--muted);font-size:12.5px;margin-top:2px}
+.lxn1{flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-weight:700;color:#fff;background:#2e8b57}.l2 .lxn1{background:#d49a1f}.l3 .lxn1{background:#c0443a}
+.lxrx{margin:0 0 10px;padding-left:18px}.lxrx li{margin:7px 0;font-size:14px}.lxrx .lxd{display:block;font-size:13px}.lxrx .lxn{display:block;font-size:12.5px;color:var(--muted)}
 .rvbadge{display:inline-block;font-size:10.5px;font-weight:700;color:#9a3412;background:#ffedd5;border-radius:5px;padding:1px 6px;margin-left:6px;vertical-align:middle}
 .newb{font-size:10px;font-weight:700;color:#fff;background:#3fb5ad;border-radius:5px;padding:1px 6px;margin-left:6px;vertical-align:middle}
 .pcard{display:flex;gap:12px;align-items:center;text-align:left;width:100%;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:11px 12px;cursor:pointer;color:var(--fg)}
@@ -773,6 +779,7 @@ function caseDetailHTML(c){
   const pearls=(c.pearls||[]).length?`<section class="csec k-pearl"><h3><span class="kico">★</span>Viva pearls</h3><ul class="clist">${c.pearls.map(t=>`<li>${esc(t)}</li>`).join("")}</ul></section>`:"";
   return `<div class="case-head"><h2 class="case-title">${esc(c.n)}</h2>
     <div class="case-meta"><span class="pill">${esc(c.g)}</span><span class="pill ${c.t==="Long case"?"rose":""}">${esc(c.t)}</span></div></div>
+    ${ladderFor(c.n)?`<button class="btn primary sm txbtn" type="button" data-txcase="${esc(c.n)}">💊 Treatment · 1st / 2nd / 3rd line</button>`:(!hasFull()&&S.templates.length?`<button class="btn sm txbtn" type="button" data-act="acct">🔒 Treatment guide · verified doctors</button>`:"")}
     ${scoreSuggestHTML(c.n)}
     ${list("cc","Presenting complaints","1",c.cc)}${list("hx","History to ask","2",c.hx)}${list("ex","Examination","3",c.ex)}${(c.inv||[]).length?list("inv","Investigations","4",c.inv):""}${ddx}${fmt}${pearls}`;
 }
@@ -801,7 +808,8 @@ function openCase(i){
   const c=CASES[i]; if(!c) return;
   S._keepStack=true;
   openSheet("Case format", caseDetailHTML(c) + `<div class="casenav">${c.i>0?`<button class="btn sm" data-casego="${c.i-1}">‹ ${esc(CASES[c.i-1].n)}</button>`:""}${c.i<CASES.length-1?`<button class="btn sm" data-casego="${c.i+1}">${esc(CASES[c.i+1].n)} ›</button>`:""}</div>`);
-  $("#sheetBody").addEventListener("click", e=>{ const b=e.target.closest("[data-casego]"); if(b){ S.backStack.push(()=>openCase(i)); openCase(+b.dataset.casego); } });
+  $("#sheetBody").addEventListener("click", e=>{ const b=e.target.closest("[data-casego]"); if(b){ S.backStack.push(()=>openCase(i)); openCase(+b.dataset.casego); return; }
+    const tx=e.target.closest("[data-txcase]"); if(tx){ S.backStack.push(()=>openCase(i)); S._keepStack=true; openLadder(ladderFor(tx.dataset.txcase)); } });
 }
 /* case format inside a consultation (second layer, keeps the consultation open) */
 function openCaseRef(seed=""){
@@ -1558,6 +1566,30 @@ function showCoach(){
   window.addEventListener("resize",draw); setTimeout(draw,60);
 }
 
+
+/* ---------- treatment ladders (1st / 2nd / 3rd line) ---------- */
+const isLadder = t => t && t.kind==="ladder";
+const ladderFor = name => S.templates.find(t=>isLadder(t) && t.caseName===name);
+const LINE_CLS = ["l1","l2","l3"];
+function ladderHTML(t, {pick}={}){
+  const rxRow = r => `<li><b>${esc(r.drug)}</b>${[r.dose,r.freq,r.dur].filter(Boolean).length?`<span class="lxd">${esc([r.dose,r.freq,r.dur].filter(Boolean).join(" · "))}</span>`:""}${r.instr?`<span class="lxn">${esc(r.instr)}</span>`:""}</li>`;
+  return `<div class="case-head"><h2 class="case-title">${esc(t.name)}</h2><div class="case-meta"><span class="pill">${esc(t.group||"")}</span>${t.reviewed?"":`<span class="rvbadge">Needs review</span>`}</div></div>
+  ${t.general?`<div class="lxgen"><b>General measures</b><p>${esc(t.general)}</p></div>`:""}
+  ${(t.lines||[]).map((l,i)=>`<section class="lxline ${LINE_CLS[i]||""}"><div class="lxh"><span class="lxn1">${i+1}</span><div><b>${esc(l.label)}</b>${l.when?`<small>${esc(l.when)}</small>`:""}</div></div>
+    <ul class="lxrx">${(l.rx||[]).map(rxRow).join("")}</ul>
+    <button class="btn ${i?"":"primary"} sm" type="button" data-useline="${i}">${pick?"Add these to the prescription":"Start a patient with this line"}</button></section>`).join("")}
+  ${t.special?`<div class="lxgen lxsp"><b>Pregnancy, children & special cases</b><p>${esc(t.special)}</p></div>`:""}
+  <p class="hint" style="font-size:11.5px">Draft from standard textbooks — check doses, contraindications and interactions for each patient before prescribing.</p>`;
+}
+function openLadder(t, {onPick}={}){
+  if(!t) return;
+  const body = ladderHTML(t,{pick:!!onPick});
+  if(onPick){ openSheet2("Treatment", body); } else { openSheet("Treatment", body); }
+  const root = onPick ? $("#sheet2Body") : $("#sheetBody");
+  root.addEventListener("click", e=>{ const b=e.target.closest("[data-useline]"); if(!b) return;
+    const l=t.lines[+b.dataset.useline]; const tt={...t, rx:(l.rx||[]).map(r=>({...r}))};
+    if(onPick){ onPick(tt); closeSheet2(); } else { closeSheet(); openPatientPage(null, null, {tpl:tt}); } });
+}
 function openPatientPage(pid, vid, {tpl}={}){
   const p = pid ? personById(pid) : null;
   if(pid && !p){ toast("This patient record isn’t available"); return; }
@@ -1750,7 +1782,7 @@ function openTplPicker(onPick){
   const draw=()=>{ const q=$("#tpQ").value.toLowerCase(); const arr=S.templates.filter(t=>!q||[t.name,t.group].join(" ").toLowerCase().includes(q)); const by={}; arr.forEach(t=>(by[t.group||"Other"] ||= []).push(t));
     $("#tpRes").innerHTML = Object.keys(by).sort().map(g=>`<div class="group"><h3>${esc(g)}</h3><div class="list">${by[g].sort((a,b)=>a.name.localeCompare(b.name)).map(t=>`<button class="row" data-tp="${esc(t.id)}"><span class="main"><span class="t">${esc(t.name)}</span><span class="s">${esc((t.rx||[]).map(r=>r.drug).join(" · "))}</span></span></button>`).join("")}</div></div>`).join("") || `<div class="empty">No templates match.</div>`; };
   draw(); $("#tpQ").addEventListener("input", draw);
-  $("#tpRes").addEventListener("click", e=>{ const b=e.target.closest("[data-tp]"); if(!b) return; const t=S.templates.find(x=>x.id===b.dataset.tp); if(t){ onPick(t); closeSheet2(); } });
+  $("#tpRes").addEventListener("click", e=>{ const b=e.target.closest("[data-tp]"); if(!b) return; const t=S.templates.find(x=>x.id===b.dataset.tp); if(!t) return; if(isLadder(t)){ closeSheet2(); setTimeout(()=>openLadder(t,{onPick}),60); } else { onPick(t); closeSheet2(); } });
 }
 
 /* ---------- PRESCRIPTION VIEW / PDF ---------- */
@@ -1909,13 +1941,20 @@ function tplShell(){
   <label class="search">${ICON.search}<input id="qTpl" type="search" placeholder="Search diseases or drugs" aria-label="Search templates" autocomplete="off"></label><div id="tplList"></div>`;
 }
 function fillTemplates(){
-  $("#tplCount").textContent = `${S.templates.length} templates`;
+  const lad=S.templates.filter(isLadder), old=S.templates.filter(t=>!isLadder(t));
+  $("#tplCount").textContent = lad.length ? `First, second and third line treatment · ${lad.length} diseases` : `${S.templates.length} templates`;
   const el=$("#tplList"); if(!S.loaded.templates && S.db){ el.innerHTML=`<div class="empty">Loading…</div>`; return; }
   const q=$("#qTpl").value.trim().toLowerCase();
-  const arr=S.templates.filter(t=>!q||[t.name,t.group,(t.rx||[]).map(r=>[r.drug,r.brand].join(" ")).join(" ")].join(" ").toLowerCase().includes(q));
-  if(!arr.length){ el.innerHTML=`<div class="empty">${S.templates.length?"No templates match.":"No templates yet."}</div>`; return; }
+  const hit=t=>!q||[t.name,t.group,(t.rx||[]).map(r=>[r.drug,r.brand].join(" ")).join(" "),(t.lines||[]).map(l=>(l.rx||[]).map(r=>r.drug).join(" ")).join(" ")].join(" ").toLowerCase().includes(q);
+  const L=lad.filter(hit), O=old.filter(hit);
+  if(!L.length && !O.length){ el.innerHTML=`<div class="empty">${S.templates.length?"Nothing matches.":"No templates yet."}</div>`; return; }
+  const lby={}; L.forEach(t=>(lby[t.group||"Other"] ||= []).push(t));
+  const ladRows = Object.keys(lby).sort().map(g=>`<details class="sec grp ${hueOf(g)}" style="margin-top:10px" ${q?"open":""}><summary><span class="gdot"></span>${esc(g)}<span class="sum">${lby[g].length}</span></summary><div class="in" style="padding:0"><div class="list" style="border:0;border-top:1px solid var(--line);border-radius:0 0 var(--r) var(--r)">${lby[g].sort((a,b)=>a.name.localeCompare(b.name)).map(t=>`<button class="row" data-tpl="${esc(t.id)}"><span class="main"><span class="t">${esc(t.name)}${t.reviewed?"":` <span class="rvbadge">Needs review</span>`}</span><span class="s">1st: ${esc(((t.lines||[])[0]?.rx||[]).map(r=>r.drug.replace(/^(Tab|Cap|Cream|Gel|Lotion|Syp|Inj)\.?\s*/i,"")).slice(0,2).join(" · "))}</span></span><span class="aside"><span class="pill">${(t.lines||[]).length} lines</span></span></button>`).join("")}</div></div></details>`).join("");
+  el.innerHTML = ladRows + (O.length ? `<details class="sec" style="margin-top:18px" ${q&&!L.length?"open":""}><summary>Older templates (being replaced)<span class="sum">${O.length}</span></summary><div class="in">${oldTplGroups(O,q)}</div></details>` : "");
+}
+function oldTplGroups(arr,q){
   const by={}; arr.forEach(t=>(by[t.group||"Other"] ||= []).push(t));
-  el.innerHTML = Object.keys(by).sort().map(g=>`<details class="sec grp ${hueOf(g)}" style="margin-top:10px" ${q?"open":""}><summary><span class="gdot"></span>${esc(g)}<span class="sum">${by[g].length}</span></summary><div class="in" style="padding:0"><div class="list" style="border:0;border-top:1px solid var(--line);border-radius:0 0 var(--r) var(--r)">${by[g].sort((a,b)=>a.name.localeCompare(b.name)).map(t=>`<button class="row" data-tpl="${esc(t.id)}"><span class="main"><span class="t">${esc(t.name)}${t.reviewed?"":` <span class="rvbadge">Needs review</span>`}</span><span class="s">${esc((t.rx||[]).map(r=>r.drug).filter(Boolean).join(" · "))}</span></span><span class="aside">${(t.rx||[]).length} Rx</span></button>`).join("")}<button class="row addrow" data-newtplg="${esc(g)}"><span class="main"><span class="t">+ Add template in ${esc(g)}</span></span></button></div></div></details>`).join("");
+  return Object.keys(by).sort().map(g=>`<details class="sec grp ${hueOf(g)}" style="margin-top:10px" ${q?"open":""}><summary><span class="gdot"></span>${esc(g)}<span class="sum">${by[g].length}</span></summary><div class="in" style="padding:0"><div class="list" style="border:0;border-top:1px solid var(--line);border-radius:0 0 var(--r) var(--r)">${by[g].sort((a,b)=>a.name.localeCompare(b.name)).map(t=>`<button class="row" data-tpl="${esc(t.id)}"><span class="main"><span class="t">${esc(t.name)}${t.reviewed?"":` <span class="rvbadge">Needs review</span>`}</span><span class="s">${esc((t.rx||[]).map(r=>r.drug).filter(Boolean).join(" · "))}</span></span><span class="aside">${(t.rx||[]).length} Rx</span></button>`).join("")}<button class="row addrow" data-newtplg="${esc(g)}"><span class="main"><span class="t">+ Add template in ${esc(g)}</span></span></button></div></div></details>`).join("");;
 }
 function openTemplateEditor(t, {group}={}){
   const isNew=!t; const T = t ? normTpl(clone(t)) : {name:"", group:group||"", dx:"", rx:[]};
@@ -2987,7 +3026,7 @@ document.addEventListener("click", async e => {
   if(t.dataset.mc){ S.medCat=t.dataset.mc; S.medShow=60; fillMeds(); return; }
   if(t.dataset.star){ const b=S.brands.find(x=>x.id===t.dataset.star); if(b){ const v=!b.preferred; t.setAttribute("aria-pressed", v); await patch("brands", b.id, {preferred:v}); toast(v?"Marked as preferred ★":"Removed from preferred"); } return; }
   if(t.dataset.br){ openBrandEditor(S.brands.find(x=>x.id===t.dataset.br)); return; }
-  if(t.dataset.tpl){ openTemplateEditor(S.templates.find(x=>x.id===t.dataset.tpl)); return; }
+  if(t.dataset.tpl){ const tp=S.templates.find(x=>x.id===t.dataset.tpl); if(isLadder(tp)) openLadder(tp); else openTemplateEditor(tp); return; }
   if(t.dataset.copy){ copyText(t.dataset.copy); return; }
   const a=t.dataset.act;
   if(a==="newconsult"||a==="newpatient") openPatientPage(null);

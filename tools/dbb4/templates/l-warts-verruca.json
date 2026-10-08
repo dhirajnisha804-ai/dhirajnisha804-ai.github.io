@@ -1,0 +1,145 @@
+{
+ "kind": "ladder",
+ "name": "Warts (verruca)",
+ "dx": "Warts (verruca)",
+ "caseName": "Warts (verruca)",
+ "group": "Viral infections",
+ "general": "Many clear spontaneously in children. Pare thick warts before treatment. Choose by site and number; persistence matters more than agent.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Common / plantar – first line",
+   "rx": [
+    {
+     "drug": "Salicylic acid 16.7% + lactic acid 16.7% paint",
+     "dose": "Apply after soaking and paring",
+     "freq": "HS",
+     "dur": "12 weeks",
+     "route": "Topical",
+     "instr": "Protect surrounding skin",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cryotherapy (liquid nitrogen)",
+     "dose": "1–2 freeze-thaw cycles",
+     "freq": "Every 2–3 weeks",
+     "dur": "3–4 sessions",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Plane warts",
+   "rx": [
+    {
+     "drug": "Cream Tretinoin 0.05%",
+     "dose": "Thin layer",
+     "freq": "HS",
+     "dur": "8 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Imiquimod 5%",
+     "dose": "Thin layer",
+     "freq": "3×/week",
+     "dur": "8–12 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Recalcitrant / multiple",
+   "rx": [
+    {
+     "drug": "Intralesional immunotherapy (MMR / Candida antigen / PPD / vitamin D3)",
+     "dose": "0.1–0.5 mL into largest wart",
+     "freq": "Every 2–4 weeks",
+     "dur": "3–5 sessions",
+     "route": "Intralesional",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Radiofrequency ablation / electrocautery / CO₂ laser",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "Risk of scar on soles",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Salicylic acid 16.7% + lactic acid 16.7% paint",
+   "dose": "Apply after soaking and paring",
+   "freq": "HS",
+   "dur": "12 weeks",
+   "route": "Topical",
+   "instr": "Protect surrounding skin",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cryotherapy (liquid nitrogen)",
+   "dose": "1–2 freeze-thaw cycles",
+   "freq": "Every 2–3 weeks",
+   "dur": "3–4 sessions",
+   "route": "Procedure",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Many clear spontaneously in children. Pare thick warts before treatment. Choose by site and number; persistence matters more than agent.",
+ "adviceText": "Many clear spontaneously in children. Pare thick warts before treatment. Choose by site and number; persistence matters more than agent.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224667
+}

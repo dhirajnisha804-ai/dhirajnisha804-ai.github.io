@@ -1,0 +1,145 @@
+{
+ "kind": "ladder",
+ "name": "Tinea capitis",
+ "dx": "Tinea capitis",
+ "caseName": "Tinea capitis",
+ "group": "Fungal infections",
+ "general": "Always systemic treatment. Ketoconazole/selenium shampoo for patient and household to reduce spread. Examine and treat contacts; brushes, combs and caps to be cleaned.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Tab. Griseofulvin (ultramicrosize)",
+     "dose": "10–15 mg/kg/day (microsize 20–25 mg/kg/day)",
+     "freq": "OD",
+     "dur": "6–8 weeks",
+     "route": "Oral",
+     "instr": "After a fatty meal; best for Microsporum",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Shampoo Ketoconazole 2%",
+     "dose": "Leave 5 min",
+     "freq": "3×/week",
+     "dur": "4 weeks",
+     "route": "Topical",
+     "instr": "Patient and contacts",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Alternative / Trichophyton",
+   "rx": [
+    {
+     "drug": "Tab. Terbinafine",
+     "dose": "<20 kg 62.5 mg, 20–40 kg 125 mg, >40 kg 250 mg",
+     "freq": "OD",
+     "dur": "4 weeks",
+     "route": "Oral",
+     "instr": "Better for Trichophyton",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cap. Itraconazole",
+     "dose": "3–5 mg/kg/day",
+     "freq": "OD",
+     "dur": "4–6 weeks",
+     "route": "Oral",
+     "instr": "Alternative",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Kerion",
+   "rx": [
+    {
+     "drug": "Tab. Prednisolone",
+     "dose": "1 mg/kg",
+     "freq": "OD",
+     "dur": "1–2 weeks",
+     "route": "Oral",
+     "instr": "With antifungal; do not incise",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Antibiotic only if proven bacterial superinfection",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Tab. Griseofulvin (ultramicrosize)",
+   "dose": "10–15 mg/kg/day (microsize 20–25 mg/kg/day)",
+   "freq": "OD",
+   "dur": "6–8 weeks",
+   "route": "Oral",
+   "instr": "After a fatty meal; best for Microsporum",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Shampoo Ketoconazole 2%",
+   "dose": "Leave 5 min",
+   "freq": "3×/week",
+   "dur": "4 weeks",
+   "route": "Topical",
+   "instr": "Patient and contacts",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Always systemic treatment. Ketoconazole/selenium shampoo for patient and household to reduce spread. Examine and treat contacts; brushes, combs and caps to be cleaned.",
+ "adviceText": "Always systemic treatment. Ketoconazole/selenium shampoo for patient and household to reduce spread. Examine and treat contacts; brushes, combs and caps to be cleaned.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224663
+}

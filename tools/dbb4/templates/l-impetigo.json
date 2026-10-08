@@ -1,0 +1,106 @@
+{
+ "kind": "ladder",
+ "name": "Impetigo",
+ "dx": "Impetigo",
+ "caseName": "Impetigo",
+ "group": "Bacterial infections",
+ "general": "Gently remove crusts with saline soaks, separate towels, keep child off school until crusts dry or 48 h of antibiotic.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Localised (few lesions)",
+   "rx": [
+    {
+     "drug": "Cream Mupirocin 2% / Fusidic acid 2%",
+     "dose": "Thin layer",
+     "freq": "TDS",
+     "dur": "5–7 days",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Extensive, bullous or many contacts",
+   "rx": [
+    {
+     "drug": "Syp./Cap. Cephalexin",
+     "dose": "25–50 mg/kg/day in 3–4 doses (adult 500 mg QID)",
+     "freq": "QID",
+     "dur": "7 days",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Amoxicillin-clavulanate 625 mg",
+     "dose": "1 tab",
+     "freq": "BD",
+     "dur": "7 days",
+     "route": "Oral",
+     "instr": "Children: 25–45 mg/kg/day amoxicillin",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Penicillin allergy / suspected MRSA",
+   "rx": [
+    {
+     "drug": "Tab. Azithromycin 500 mg",
+     "dose": "10 mg/kg/day",
+     "freq": "OD",
+     "dur": "3–5 days",
+     "route": "Oral",
+     "instr": "Or clindamycin / cotrimoxazole per sensitivity",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Mupirocin 2% / Fusidic acid 2%",
+   "dose": "Thin layer",
+   "freq": "TDS",
+   "dur": "5–7 days",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Gently remove crusts with saline soaks, separate towels, keep child off school until crusts dry or 48 h of antibiotic.",
+ "adviceText": "Gently remove crusts with saline soaks, separate towels, keep child off school until crusts dry or 48 h of antibiotic.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224661
+}

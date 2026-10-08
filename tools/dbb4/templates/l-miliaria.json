@@ -1,0 +1,112 @@
+{
+ "kind": "ladder",
+ "name": "Miliaria",
+ "dx": "Miliaria",
+ "caseName": "Miliaria",
+ "group": "Acne & appendageal disorders",
+ "general": "Cool environment, loose cotton clothing, frequent cool baths, avoid occlusive creams and over-wrapping infants.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "All types",
+   "rx": [
+    {
+     "drug": "Calamine lotion",
+     "dose": "Apply",
+     "freq": "TDS",
+     "dur": "1 week",
+     "route": "Topical",
+     "instr": "Soothes miliaria rubra",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Lotion Clobetasone 0.05%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "3–5 days",
+     "route": "Topical",
+     "instr": "Short course for itchy miliaria rubra",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Miliaria pustulosa / profunda",
+   "rx": [
+    {
+     "drug": "Cream Clindamycin 1%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "7 days",
+     "route": "Topical",
+     "instr": "If secondary infection",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Anhydrous lanolin",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "1–2 weeks",
+     "route": "Topical",
+     "instr": "Helps miliaria profunda",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Calamine lotion",
+   "dose": "Apply",
+   "freq": "TDS",
+   "dur": "1 week",
+   "route": "Topical",
+   "instr": "Soothes miliaria rubra",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Lotion Clobetasone 0.05%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "3–5 days",
+   "route": "Topical",
+   "instr": "Short course for itchy miliaria rubra",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Cool environment, loose cotton clothing, frequent cool baths, avoid occlusive creams and over-wrapping infants.",
+ "adviceText": "Cool environment, loose cotton clothing, frequent cool baths, avoid occlusive creams and over-wrapping infants.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224660
+}

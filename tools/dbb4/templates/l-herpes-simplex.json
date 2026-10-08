@@ -1,0 +1,145 @@
+{
+ "kind": "ladder",
+ "name": "Herpes simplex",
+ "dx": "Herpes simplex",
+ "caseName": "Herpes simplex",
+ "group": "Viral infections",
+ "general": "Start antivirals within 72 h for best effect. Avoid contact with lesions; condoms for genital disease.",
+ "special": "Pregnancy: acyclovir is safe; suppression from 36 weeks for recurrent genital herpes.",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First episode",
+   "rx": [
+    {
+     "drug": "Tab. Acyclovir 400 mg",
+     "dose": "1 tab",
+     "freq": "TDS",
+     "dur": "7–10 days",
+     "route": "Oral",
+     "instr": "Or valacyclovir 1 g BD × 7–10 days",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Acyclovir 5%",
+     "dose": "Thin layer",
+     "freq": "5×/day",
+     "dur": "5 days",
+     "route": "Topical",
+     "instr": "Labial only; limited benefit",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Recurrent episode",
+   "rx": [
+    {
+     "drug": "Tab. Valacyclovir 500 mg",
+     "dose": "4 tabs (2 g)",
+     "freq": "BD",
+     "dur": "1 day",
+     "route": "Oral",
+     "instr": "Herpes labialis; genital: 500 mg BD × 3 days",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Acyclovir 400 mg",
+     "dose": "1 tab",
+     "freq": "TDS",
+     "dur": "5 days",
+     "route": "Oral",
+     "instr": "Alternative",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Frequent recurrences (≥6/yr) / erythema multiforme trigger",
+   "rx": [
+    {
+     "drug": "Tab. Acyclovir 400 mg",
+     "dose": "1 tab",
+     "freq": "BD",
+     "dur": "6–12 months",
+     "route": "Oral",
+     "instr": "Suppressive; or valacyclovir 500 mg OD",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Severe / immunocompromised / eczema herpeticum: Inj. Acyclovir 5–10 mg/kg",
+     "dose": "",
+     "freq": "8-hourly",
+     "dur": "7–10 days",
+     "route": "IV",
+     "instr": "Admit",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Tab. Acyclovir 400 mg",
+   "dose": "1 tab",
+   "freq": "TDS",
+   "dur": "7–10 days",
+   "route": "Oral",
+   "instr": "Or valacyclovir 1 g BD × 7–10 days",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Acyclovir 5%",
+   "dose": "Thin layer",
+   "freq": "5×/day",
+   "dur": "5 days",
+   "route": "Topical",
+   "instr": "Labial only; limited benefit",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Start antivirals within 72 h for best effect. Avoid contact with lesions; condoms for genital disease.",
+ "adviceText": "Start antivirals within 72 h for best effect. Avoid contact with lesions; condoms for genital disease.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224666
+}

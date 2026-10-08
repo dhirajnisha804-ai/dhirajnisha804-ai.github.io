@@ -1,0 +1,145 @@
+{
+ "kind": "ladder",
+ "name": "Furuncle and carbuncle",
+ "dx": "Furuncle and carbuncle",
+ "caseName": "Furuncle and carbuncle",
+ "group": "Bacterial infections",
+ "general": "Warm compresses; incision and drainage of fluctuant lesions is the key treatment. Check blood sugar.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Small furuncle",
+   "rx": [
+    {
+     "drug": "Warm compress",
+     "dose": "",
+     "freq": "QID",
+     "dur": "Till drains",
+     "route": "",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Mupirocin 2%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "7 days",
+     "route": "Topical",
+     "instr": "Surrounding skin",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Large, multiple, carbuncle or fever",
+   "rx": [
+    {
+     "drug": "Incision and drainage",
+     "dose": "",
+     "freq": "Once",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "Send pus for culture",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cap. Cloxacillin 500 mg / Cephalexin 500 mg",
+     "dose": "1 cap",
+     "freq": "QID",
+     "dur": "7–10 days",
+     "route": "Oral",
+     "instr": "Children: 50 mg/kg/day",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Recurrent / MRSA",
+   "rx": [
+    {
+     "drug": "Tab. Cotrimoxazole DS 960 mg",
+     "dose": "1 tab",
+     "freq": "BD",
+     "dur": "7–10 days",
+     "route": "Oral",
+     "instr": "Or clindamycin / doxycycline per culture",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Mupirocin nasal + chlorhexidine body wash",
+     "dose": "",
+     "freq": "",
+     "dur": "5 days",
+     "route": "Topical",
+     "instr": "Decolonise patient and household",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Warm compress",
+   "dose": "",
+   "freq": "QID",
+   "dur": "Till drains",
+   "route": "",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Mupirocin 2%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "7 days",
+   "route": "Topical",
+   "instr": "Surrounding skin",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Warm compresses; incision and drainage of fluctuant lesions is the key treatment. Check blood sugar.",
+ "adviceText": "Warm compresses; incision and drainage of fluctuant lesions is the key treatment. Check blood sugar.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224662
+}

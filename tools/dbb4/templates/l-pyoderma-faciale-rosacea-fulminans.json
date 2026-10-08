@@ -1,0 +1,112 @@
+{
+ "kind": "ladder",
+ "name": "Pyoderma faciale (rosacea fulminans)",
+ "dx": "Pyoderma faciale (rosacea fulminans)",
+ "caseName": "Pyoderma faciale (rosacea fulminans)",
+ "group": "Acne & appendageal disorders",
+ "general": "Sudden severe facial eruption in young women; check pregnancy and IBD. Stop cosmetics.",
+ "special": "Pregnancy: oral prednisolone ± azithromycin; no isotretinoin, no tetracyclines.",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Start",
+   "rx": [
+    {
+     "drug": "Tab. Prednisolone 20 mg",
+     "dose": "0.5–1 mg/kg",
+     "freq": "OD",
+     "dur": "1–2 weeks then taper",
+     "route": "Oral",
+     "instr": "Start 1–2 weeks before isotretinoin",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cap. Isotretinoin 10 mg",
+     "dose": "0.2–0.5 mg/kg",
+     "freq": "OD",
+     "dur": "3–4 months",
+     "route": "Oral",
+     "instr": "Pregnancy test and contraception mandatory",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "If isotretinoin cannot be used",
+   "rx": [
+    {
+     "drug": "Cap. Doxycycline 100 mg",
+     "dose": "1 cap",
+     "freq": "BD",
+     "dur": "4–6 weeks",
+     "route": "Oral",
+     "instr": "With systemic steroid",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Gel Metronidazole 0.75%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "8 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Tab. Prednisolone 20 mg",
+   "dose": "0.5–1 mg/kg",
+   "freq": "OD",
+   "dur": "1–2 weeks then taper",
+   "route": "Oral",
+   "instr": "Start 1–2 weeks before isotretinoin",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cap. Isotretinoin 10 mg",
+   "dose": "0.2–0.5 mg/kg",
+   "freq": "OD",
+   "dur": "3–4 months",
+   "route": "Oral",
+   "instr": "Pregnancy test and contraception mandatory",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Sudden severe facial eruption in young women; check pregnancy and IBD. Stop cosmetics.",
+ "adviceText": "Sudden severe facial eruption in young women; check pregnancy and IBD. Stop cosmetics.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224660
+}

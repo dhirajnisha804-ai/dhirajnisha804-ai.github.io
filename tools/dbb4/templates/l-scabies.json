@@ -1,0 +1,132 @@
+{
+ "kind": "ladder",
+ "name": "Scabies",
+ "dx": "Scabies",
+ "caseName": "Scabies",
+ "group": "Infestations",
+ "general": "Treat all household contacts at the same time. Apply from neck to toes (include scalp and face in infants and elderly), under nails. Wash clothes and bedding in hot water or seal in a bag for 3 days. Itch can continue 2–4 weeks.",
+ "special": "Infants <2 months and pregnancy: permethrin 5% (or precipitated sulphur 5–10% ointment for 3 nights).",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Cream Permethrin 5%",
+     "dose": "Whole body",
+     "freq": "Once, leave 8–12 h",
+     "dur": "Repeat after 7 days",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Levocetirizine 5 mg",
+     "dose": "1 tab",
+     "freq": "HS",
+     "dur": "2 weeks",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Alternative / crusted / institutional",
+   "rx": [
+    {
+     "drug": "Tab. Ivermectin 6 mg",
+     "dose": "200 µg/kg",
+     "freq": "Single dose",
+     "dur": "Repeat after 7–14 days",
+     "route": "Oral",
+     "instr": "Empty stomach; not <15 kg or in pregnancy",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Crusted scabies: ivermectin on days 1, 2, 8, 9, 15 (+22, 29) + permethrin",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Oral + Topical",
+     "instr": "Admit/isolate; keratolytic to crusts",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Nodular scabies",
+   "rx": [
+    {
+     "drug": "Cream Mometasone 0.1% / intralesional triamcinolone",
+     "dose": "",
+     "freq": "OD",
+     "dur": "2–3 weeks",
+     "route": "Topical",
+     "instr": "Nodules persist after cure",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Permethrin 5%",
+   "dose": "Whole body",
+   "freq": "Once, leave 8–12 h",
+   "dur": "Repeat after 7 days",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Levocetirizine 5 mg",
+   "dose": "1 tab",
+   "freq": "HS",
+   "dur": "2 weeks",
+   "route": "Oral",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Treat all household contacts at the same time. Apply from neck to toes (include scalp and face in infants and elderly), under nails. Wash clothes and bedding in hot water or seal in a bag for 3 days. Itch can continue 2–4 weeks.",
+ "adviceText": "Treat all household contacts at the same time. Apply from neck to toes (include scalp and face in infants and elderly), under nails. Wash clothes and bedding in hot water or seal in a bag for 3 days. Itch can continue 2–4 weeks.",
+ "fuDays": "",
+ "review": true,
+ "free": true,
+ "source": "slot1.py",
+ "updatedAt": 1791445224665
+}

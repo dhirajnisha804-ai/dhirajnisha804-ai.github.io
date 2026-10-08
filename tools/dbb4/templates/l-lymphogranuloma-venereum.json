@@ -1,0 +1,86 @@
+{
+ "kind": "ladder",
+ "name": "Lymphogranuloma venereum",
+ "dx": "Lymphogranuloma venereum",
+ "caseName": "Lymphogranuloma venereum",
+ "group": "Sexually transmitted infections",
+ "general": "Treat partners of the past 60 days. Test for HIV, syphilis, hepatitis B/C.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Cap. Doxycycline 100 mg",
+     "dose": "1 cap",
+     "freq": "BD",
+     "dur": "21 days",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Pregnancy / alternative",
+   "rx": [
+    {
+     "drug": "Tab. Erythromycin 500 mg",
+     "dose": "1 tab",
+     "freq": "QID",
+     "dur": "21 days",
+     "route": "Oral",
+     "instr": "Or azithromycin 1 g weekly × 3",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Fluctuant buboes: needle aspiration through healthy skin",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "Do not incise",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cap. Doxycycline 100 mg",
+   "dose": "1 cap",
+   "freq": "BD",
+   "dur": "21 days",
+   "route": "Oral",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Treat partners of the past 60 days. Test for HIV, syphilis, hepatitis B/C.",
+ "adviceText": "Treat partners of the past 60 days. Test for HIV, syphilis, hepatitis B/C.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224669
+}

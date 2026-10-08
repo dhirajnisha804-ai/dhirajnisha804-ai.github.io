@@ -1,0 +1,132 @@
+{
+ "kind": "ladder",
+ "name": "Tinea pedis & onychomycosis",
+ "dx": "Tinea pedis & onychomycosis",
+ "caseName": "Tinea pedis & onychomycosis",
+ "group": "Fungal infections",
+ "general": "Dry between toes, cotton socks, antifungal powder in shoes. Confirm nail infection by KOH/culture before oral treatment. Nails grow slowly: judge cure at 9–12 months.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Tinea pedis / ≤50% of nail, no matrix",
+   "rx": [
+    {
+     "drug": "Cream Luliconazole 1%",
+     "dose": "Thin layer",
+     "freq": "OD",
+     "dur": "4 weeks",
+     "route": "Topical",
+     "instr": "Feet",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Lacquer Amorolfine 5% / Ciclopirox 8%",
+     "dose": "Thin coat",
+     "freq": "Weekly / daily",
+     "dur": "6–12 months",
+     "route": "Topical",
+     "instr": "File nail first",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Nail – matrix involved or many nails",
+   "rx": [
+    {
+     "drug": "Tab. Terbinafine 250 mg",
+     "dose": "1 tab",
+     "freq": "OD",
+     "dur": "12 weeks toenails, 6 weeks fingernails",
+     "route": "Oral",
+     "instr": "Baseline LFT",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cap. Itraconazole 200 mg pulse",
+     "dose": "200 mg BD",
+     "freq": "1 week a month",
+     "dur": "3–4 pulses",
+     "route": "Oral",
+     "instr": "Alternative; check interactions",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Refractory / dermatophytoma",
+   "rx": [
+    {
+     "drug": "Nail avulsion (chemical / surgical) + oral antifungal",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "Or fluconazole 150–300 mg weekly × 6–12 months",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Luliconazole 1%",
+   "dose": "Thin layer",
+   "freq": "OD",
+   "dur": "4 weeks",
+   "route": "Topical",
+   "instr": "Feet",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Lacquer Amorolfine 5% / Ciclopirox 8%",
+   "dose": "Thin coat",
+   "freq": "Weekly / daily",
+   "dur": "6–12 months",
+   "route": "Topical",
+   "instr": "File nail first",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Dry between toes, cotton socks, antifungal powder in shoes. Confirm nail infection by KOH/culture before oral treatment. Nails grow slowly: judge cure at 9–12 months.",
+ "adviceText": "Dry between toes, cotton socks, antifungal powder in shoes. Confirm nail infection by KOH/culture before oral treatment. Nails grow slowly: judge cure at 9–12 months.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224664
+}

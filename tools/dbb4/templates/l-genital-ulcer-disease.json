@@ -1,0 +1,132 @@
+{
+ "kind": "ladder",
+ "name": "Genital ulcer disease",
+ "dx": "Genital ulcer disease",
+ "caseName": "Genital ulcer disease",
+ "group": "Sexually transmitted infections",
+ "general": "Syndromic management (NACO kit) when lab tests are not available; test for syphilis and HIV; treat partners.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Non-herpetic GUD (syphilis + chancroid)",
+   "rx": [
+    {
+     "drug": "Inj. Benzathine penicillin 2.4 MU",
+     "dose": "2.4 MU (1.2 MU each buttock)",
+     "freq": "Single dose",
+     "dur": "Once",
+     "route": "IM",
+     "instr": "After test dose per protocol",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Azithromycin 1 g",
+     "dose": "1 g",
+     "freq": "Single dose",
+     "dur": "Once",
+     "route": "Oral",
+     "instr": "Covers chancroid",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Penicillin allergy",
+   "rx": [
+    {
+     "drug": "Cap. Doxycycline 100 mg",
+     "dose": "1 cap",
+     "freq": "BD",
+     "dur": "14 days",
+     "route": "Oral",
+     "instr": "Not in pregnancy",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Azithromycin 1 g",
+     "dose": "1 g",
+     "freq": "Single dose",
+     "dur": "Once",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Herpetic GUD",
+   "rx": [
+    {
+     "drug": "Tab. Acyclovir 400 mg",
+     "dose": "1 tab",
+     "freq": "TDS",
+     "dur": "7 days",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Inj. Benzathine penicillin 2.4 MU",
+   "dose": "2.4 MU (1.2 MU each buttock)",
+   "freq": "Single dose",
+   "dur": "Once",
+   "route": "IM",
+   "instr": "After test dose per protocol",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Azithromycin 1 g",
+   "dose": "1 g",
+   "freq": "Single dose",
+   "dur": "Once",
+   "route": "Oral",
+   "instr": "Covers chancroid",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Syndromic management (NACO kit) when lab tests are not available; test for syphilis and HIV; treat partners.",
+ "adviceText": "Syndromic management (NACO kit) when lab tests are not available; test for syphilis and HIV; treat partners.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224668
+}

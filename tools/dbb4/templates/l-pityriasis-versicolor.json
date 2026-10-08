@@ -1,0 +1,112 @@
+{
+ "kind": "ladder",
+ "name": "Pityriasis versicolor",
+ "dx": "Pityriasis versicolor",
+ "caseName": "Pityriasis versicolor",
+ "group": "Fungal infections",
+ "general": "Explain colour takes months to return after cure. Prophylaxis in hot season prevents recurrence.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Shampoo Ketoconazole 2% / Selenium sulphide 2.5%",
+     "dose": "Lather on body, leave 10 min",
+     "freq": "OD",
+     "dur": "1–2 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Ketoconazole 2%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "2 weeks",
+     "route": "Topical",
+     "instr": "Small areas",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Extensive / recurrent",
+   "rx": [
+    {
+     "drug": "Cap. Itraconazole 100 mg",
+     "dose": "2 caps",
+     "freq": "OD",
+     "dur": "5–7 days",
+     "route": "Oral",
+     "instr": "Or fluconazole 300 mg weekly × 2",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Prophylaxis: ketoconazole shampoo",
+     "dose": "",
+     "freq": "Weekly",
+     "dur": "Hot months",
+     "route": "Topical",
+     "instr": "Or itraconazole 400 mg once a month",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Shampoo Ketoconazole 2% / Selenium sulphide 2.5%",
+   "dose": "Lather on body, leave 10 min",
+   "freq": "OD",
+   "dur": "1–2 weeks",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Ketoconazole 2%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "2 weeks",
+   "route": "Topical",
+   "instr": "Small areas",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Explain colour takes months to return after cure. Prophylaxis in hot season prevents recurrence.",
+ "adviceText": "Explain colour takes months to return after cure. Prophylaxis in hot season prevents recurrence.",
+ "fuDays": "",
+ "review": true,
+ "free": true,
+ "source": "slot1.py",
+ "updatedAt": 1791445224664
+}

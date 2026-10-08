@@ -1,0 +1,112 @@
+{
+ "kind": "ladder",
+ "name": "Molluscum contagiosum",
+ "dx": "Molluscum contagiosum",
+ "caseName": "Molluscum contagiosum",
+ "group": "Viral infections",
+ "general": "Self-limiting in 6–18 months; watchful waiting is acceptable in children. Avoid sharing towels, do not scratch. Genital lesions in adults: screen for STIs; extensive facial lesions: check HIV.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Few lesions",
+   "rx": [
+    {
+     "drug": "Curettage / needle extraction",
+     "dose": "",
+     "freq": "Once",
+     "dur": "Repeat as needed",
+     "route": "Procedure",
+     "instr": "Topical anaesthetic cream first in children",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cryotherapy",
+     "dose": "",
+     "freq": "Every 2–3 weeks",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Many lesions",
+   "rx": [
+    {
+     "drug": "Potassium hydroxide 10% solution",
+     "dose": "Dab on lesions",
+     "freq": "HS",
+     "dur": "Till inflamed",
+     "route": "Topical",
+     "instr": "Stop when lesions redden",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Tretinoin 0.05% / Cantharidin (in clinic)",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Topical",
+     "instr": "Alternatives",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Curettage / needle extraction",
+   "dose": "",
+   "freq": "Once",
+   "dur": "Repeat as needed",
+   "route": "Procedure",
+   "instr": "Topical anaesthetic cream first in children",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cryotherapy",
+   "dose": "",
+   "freq": "Every 2–3 weeks",
+   "dur": "",
+   "route": "Procedure",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Self-limiting in 6–18 months; watchful waiting is acceptable in children. Avoid sharing towels, do not scratch. Genital lesions in adults: screen for STIs; extensive facial lesions: check HIV.",
+ "adviceText": "Self-limiting in 6–18 months; watchful waiting is acceptable in children. Avoid sharing towels, do not scratch. Genital lesions in adults: screen for STIs; extensive facial lesions: check HIV.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224666
+}

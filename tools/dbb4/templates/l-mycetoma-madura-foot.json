@@ -1,0 +1,112 @@
+{
+ "kind": "ladder",
+ "name": "Mycetoma (Madura foot)",
+ "dx": "Mycetoma (Madura foot)",
+ "caseName": "Mycetoma (Madura foot)",
+ "group": "Fungal infections",
+ "general": "Grain colour, KOH, culture and biopsy decide actinomycetoma vs eumycetoma. MRI/X-ray for bone involvement. Long treatment; adherence is the key.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Actinomycetoma (bacterial)",
+   "rx": [
+    {
+     "drug": "Tab. Cotrimoxazole DS 960 mg",
+     "dose": "1 tab",
+     "freq": "BD",
+     "dur": "Till cure (months)",
+     "route": "Oral",
+     "instr": "Welsh regimen: + amikacin 15 mg/kg/day IV in 3-week cycles",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Dapsone 100 mg / Rifampicin 600 mg",
+     "dose": "",
+     "freq": "OD",
+     "dur": "Months",
+     "route": "Oral",
+     "instr": "Common alternatives / additions",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Eumycetoma (fungal)",
+   "rx": [
+    {
+     "drug": "Cap. Itraconazole 200 mg",
+     "dose": "1 cap",
+     "freq": "BD",
+     "dur": "9–12 months",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Surgical excision / debulking after 6 months",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "Itraconazole before and after surgery",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Tab. Cotrimoxazole DS 960 mg",
+   "dose": "1 tab",
+   "freq": "BD",
+   "dur": "Till cure (months)",
+   "route": "Oral",
+   "instr": "Welsh regimen: + amikacin 15 mg/kg/day IV in 3-week cycles",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Dapsone 100 mg / Rifampicin 600 mg",
+   "dose": "",
+   "freq": "OD",
+   "dur": "Months",
+   "route": "Oral",
+   "instr": "Common alternatives / additions",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Grain colour, KOH, culture and biopsy decide actinomycetoma vs eumycetoma. MRI/X-ray for bone involvement. Long treatment; adherence is the key.",
+ "adviceText": "Grain colour, KOH, culture and biopsy decide actinomycetoma vs eumycetoma. MRI/X-ray for bone involvement. Long treatment; adherence is the key.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot1.py",
+ "updatedAt": 1791445224665
+}
