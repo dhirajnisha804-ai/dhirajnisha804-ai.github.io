@@ -1,0 +1,184 @@
+{
+ "kind": "ladder",
+ "name": "Prurigo nodularis",
+ "dx": "Prurigo nodularis",
+ "caseName": "Prurigo nodularis",
+ "group": "Eczemas",
+ "general": "Look for the cause of itch: atopy, renal and liver disease, thyroid, HIV, iron deficiency, lymphoma, depression. Short nails, cover lesions.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Topical / intralesional",
+   "rx": [
+    {
+     "drug": "Ointment Clobetasol 0.05%",
+     "dose": "Thin layer",
+     "freq": "OD under occlusion",
+     "dur": "4–8 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Inj. Triamcinolone 10 mg/mL",
+     "dose": "Into nodules",
+     "freq": "Every 3–4 weeks",
+     "dur": "",
+     "route": "Intralesional",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Calcipotriol / capsaicin / cryotherapy",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Topical",
+     "instr": "Adjuncts",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Widespread",
+   "rx": [
+    {
+     "drug": "Narrowband UVB / PUVA",
+     "dose": "",
+     "freq": "3×/week",
+     "dur": "3 months",
+     "route": "Phototherapy",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Gabapentin 300 mg / Pregabalin 75 mg",
+     "dose": "Titrate",
+     "freq": "",
+     "dur": "3 months",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Methotrexate 7.5–15 mg / Cap. Cyclosporine 3–5 mg/kg",
+     "dose": "",
+     "freq": "",
+     "dur": "Months",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Refractory",
+   "rx": [
+    {
+     "drug": "Inj. Dupilumab",
+     "dose": "600 mg loading, then 300 mg",
+     "freq": "Every 2 weeks",
+     "dur": "Long-term",
+     "route": "Subcutaneous",
+     "instr": "Approved for prurigo nodularis",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Thalidomide 100 mg",
+     "dose": "50–100 mg",
+     "freq": "HS",
+     "dur": "Months",
+     "route": "Oral",
+     "instr": "Strict pregnancy prevention; neuropathy monitoring",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Ointment Clobetasol 0.05%",
+   "dose": "Thin layer",
+   "freq": "OD under occlusion",
+   "dur": "4–8 weeks",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Inj. Triamcinolone 10 mg/mL",
+   "dose": "Into nodules",
+   "freq": "Every 3–4 weeks",
+   "dur": "",
+   "route": "Intralesional",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Calcipotriol / capsaicin / cryotherapy",
+   "dose": "",
+   "freq": "",
+   "dur": "",
+   "route": "Topical",
+   "instr": "Adjuncts",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Look for the cause of itch: atopy, renal and liver disease, thyroid, HIV, iron deficiency, lymphoma, depression. Short nails, cover lesions.",
+ "adviceText": "Look for the cause of itch: atopy, renal and liver disease, thyroid, HIV, iron deficiency, lymphoma, depression. Short nails, cover lesions.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097950
+}

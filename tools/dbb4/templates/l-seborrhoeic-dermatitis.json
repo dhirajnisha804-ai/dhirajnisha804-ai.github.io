@@ -1,0 +1,171 @@
+{
+ "kind": "ladder",
+ "name": "Seborrhoeic dermatitis",
+ "dx": "Seborrhoeic dermatitis",
+ "caseName": "Seborrhoeic dermatitis",
+ "group": "Eczemas",
+ "general": "Chronic relapsing: control, not cure. Regular antifungal shampoo; stress, sleep loss and winter worsen. Severe or sudden-onset: check HIV, Parkinsonism.",
+ "special": "Infants (cradle cap): emollient / olive oil to soften scales, gentle brushing, mild shampoo; ketoconazole cream if needed.",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Scalp / face – first line",
+   "rx": [
+    {
+     "drug": "Shampoo Ketoconazole 2%",
+     "dose": "Leave 5 min",
+     "freq": "2–3×/week",
+     "dur": "4 weeks, then weekly",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Ketoconazole 2%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "4 weeks",
+     "route": "Topical",
+     "instr": "Face, folds",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Lotion Clobetasol (scalp) / Cream Hydrocortisone 1% (face)",
+     "dose": "",
+     "freq": "OD",
+     "dur": "1–2 weeks",
+     "route": "Topical",
+     "instr": "Short course for flares",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Frequent flares",
+   "rx": [
+    {
+     "drug": "Cream Tacrolimus 0.1% / Pimecrolimus 1%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "2–4 weeks",
+     "route": "Topical",
+     "instr": "Steroid-sparing for face",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Shampoo Ciclopirox 1% / Zinc pyrithione / Coal tar",
+     "dose": "",
+     "freq": "Alternate",
+     "dur": "Ongoing",
+     "route": "Topical",
+     "instr": "Rotate shampoos",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Severe / extensive",
+   "rx": [
+    {
+     "drug": "Cap. Itraconazole 100 mg",
+     "dose": "200 mg",
+     "freq": "OD",
+     "dur": "1 week, then 200 mg on 2 days a month",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cap. Isotretinoin 10 mg",
+     "dose": "0.1–0.3 mg/kg",
+     "freq": "OD",
+     "dur": "3–6 months",
+     "route": "Oral",
+     "instr": "Refractory; contraception",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Shampoo Ketoconazole 2%",
+   "dose": "Leave 5 min",
+   "freq": "2–3×/week",
+   "dur": "4 weeks, then weekly",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Ketoconazole 2%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "4 weeks",
+   "route": "Topical",
+   "instr": "Face, folds",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Lotion Clobetasol (scalp) / Cream Hydrocortisone 1% (face)",
+   "dose": "",
+   "freq": "OD",
+   "dur": "1–2 weeks",
+   "route": "Topical",
+   "instr": "Short course for flares",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Chronic relapsing: control, not cure. Regular antifungal shampoo; stress, sleep loss and winter worsen. Severe or sudden-onset: check HIV, Parkinsonism.",
+ "adviceText": "Chronic relapsing: control, not cure. Regular antifungal shampoo; stress, sleep loss and winter worsen. Severe or sudden-onset: check HIV, Parkinsonism.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097951
+}

@@ -1,0 +1,138 @@
+{
+ "kind": "ladder",
+ "name": "Pityriasis rosea",
+ "dx": "Pityriasis rosea",
+ "caseName": "Pityriasis rosea",
+ "group": "Papulosquamous & erythroderma",
+ "general": "Self-limiting in 6–8 weeks; reassure; exclude secondary syphilis (VDRL) and drug causes. In pregnancy, refer to obstetrician (early pregnancy risk).",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Itchy",
+   "rx": [
+    {
+     "drug": "Calamine lotion",
+     "dose": "Apply",
+     "freq": "TDS",
+     "dur": "2 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Mometasone 0.1%",
+     "dose": "Thin layer",
+     "freq": "OD",
+     "dur": "1–2 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Levocetirizine 5 mg",
+     "dose": "1 tab",
+     "freq": "HS",
+     "dur": "2 weeks",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Extensive or early with systemic symptoms",
+   "rx": [
+    {
+     "drug": "Tab. Acyclovir 800 mg",
+     "dose": "1 tab",
+     "freq": "5×/day",
+     "dur": "7 days",
+     "route": "Oral",
+     "instr": "Early in the course, may shorten it",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Narrowband UVB",
+     "dose": "",
+     "freq": "3×/week",
+     "dur": "2–4 weeks",
+     "route": "Phototherapy",
+     "instr": "For extensive itchy disease",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Calamine lotion",
+   "dose": "Apply",
+   "freq": "TDS",
+   "dur": "2 weeks",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Mometasone 0.1%",
+   "dose": "Thin layer",
+   "freq": "OD",
+   "dur": "1–2 weeks",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Levocetirizine 5 mg",
+   "dose": "1 tab",
+   "freq": "HS",
+   "dur": "2 weeks",
+   "route": "Oral",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Self-limiting in 6–8 weeks; reassure; exclude secondary syphilis (VDRL) and drug causes. In pregnancy, refer to obstetrician (early pregnancy risk).",
+ "adviceText": "Self-limiting in 6–8 weeks; reassure; exclude secondary syphilis (VDRL) and drug causes. In pregnancy, refer to obstetrician (early pregnancy risk).",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097953
+}

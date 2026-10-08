@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Lentigo",
+ "dx": "Lentigo",
+ "caseName": "Lentigo",
+ "group": "Pigmentary disorders",
+ "general": "Solar lentigines indicate sun damage; dermoscopy or biopsy for irregular or changing lesions (lentigo maligna).",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Sunscreen SPF 50",
+     "dose": "",
+     "freq": "Daily",
+     "dur": "Long-term",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Hydroquinone 4% / Tretinoin 0.05%",
+     "dose": "Thin layer",
+     "freq": "HS",
+     "dur": "3 months",
+     "route": "Topical",
+     "instr": "Partial lightening",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Procedural",
+   "rx": [
+    {
+     "drug": "Cryotherapy (light freeze) / Q-switched 532 nm / picosecond laser / TCA 25–35% spot peel",
+     "dose": "",
+     "freq": "",
+     "dur": "1–2 sessions",
+     "route": "Procedure",
+     "instr": "Risk of hypopigmentation in dark skin",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Sunscreen SPF 50",
+   "dose": "",
+   "freq": "Daily",
+   "dur": "Long-term",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Hydroquinone 4% / Tretinoin 0.05%",
+   "dose": "Thin layer",
+   "freq": "HS",
+   "dur": "3 months",
+   "route": "Topical",
+   "instr": "Partial lightening",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Solar lentigines indicate sun damage; dermoscopy or biopsy for irregular or changing lesions (lentigo maligna).",
+ "adviceText": "Solar lentigines indicate sun damage; dermoscopy or biopsy for irregular or changing lesions (lentigo maligna).",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097958
+}

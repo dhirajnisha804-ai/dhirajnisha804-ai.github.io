@@ -1,0 +1,184 @@
+{
+ "kind": "ladder",
+ "name": "Hand eczema & pompholyx",
+ "dx": "Hand eczema & pompholyx",
+ "caseName": "Hand eczema & pompholyx",
+ "group": "Eczemas",
+ "general": "Gloves for wet work (cotton liners), soap substitute, emollient after every wash, remove rings. Patch test if chronic. Treat tinea of feet if dermatophytide suspected.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Mild–moderate",
+   "rx": [
+    {
+     "drug": "Ointment Clobetasol 0.05% / Mometasone 0.1%",
+     "dose": "Thin layer",
+     "freq": "OD",
+     "dur": "2–4 weeks, then twice weekly",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Potassium permanganate 1:10,000 soaks",
+     "dose": "15 min",
+     "freq": "BD",
+     "dur": "Acute vesicular stage",
+     "route": "Topical",
+     "instr": "Then aspirate large blisters",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Emollient (paraffin-based)",
+     "dose": "",
+     "freq": "After each wash",
+     "dur": "Long-term",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Severe or chronic",
+   "rx": [
+    {
+     "drug": "Tab. Prednisolone 20 mg",
+     "dose": "0.5 mg/kg",
+     "freq": "OD",
+     "dur": "1–2 weeks taper",
+     "route": "Oral",
+     "instr": "Short course for acute pompholyx flare",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Hand PUVA / NB-UVB (local)",
+     "dose": "",
+     "freq": "3×/week",
+     "dur": "2–3 months",
+     "route": "Phototherapy",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Refractory chronic",
+   "rx": [
+    {
+     "drug": "Tab. Methotrexate 7.5 mg",
+     "dose": "7.5–15 mg",
+     "freq": "Weekly",
+     "dur": "Months",
+     "route": "Oral",
+     "instr": "With folic acid",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cap. Acitretin 25 mg / Alitretinoin 30 mg",
+     "dose": "1 cap",
+     "freq": "OD",
+     "dur": "3–6 months",
+     "route": "Oral",
+     "instr": "Hyperkeratotic type; strict contraception (acitretin 3 years)",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cap. Cyclosporine",
+     "dose": "3 mg/kg/day",
+     "freq": "BD",
+     "dur": "3 months",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Ointment Clobetasol 0.05% / Mometasone 0.1%",
+   "dose": "Thin layer",
+   "freq": "OD",
+   "dur": "2–4 weeks, then twice weekly",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Potassium permanganate 1:10,000 soaks",
+   "dose": "15 min",
+   "freq": "BD",
+   "dur": "Acute vesicular stage",
+   "route": "Topical",
+   "instr": "Then aspirate large blisters",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Emollient (paraffin-based)",
+   "dose": "",
+   "freq": "After each wash",
+   "dur": "Long-term",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Gloves for wet work (cotton liners), soap substitute, emollient after every wash, remove rings. Patch test if chronic. Treat tinea of feet if dermatophytide suspected.",
+ "adviceText": "Gloves for wet work (cotton liners), soap substitute, emollient after every wash, remove rings. Patch test if chronic. Treat tinea of feet if dermatophytide suspected.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097950
+}

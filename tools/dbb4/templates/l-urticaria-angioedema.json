@@ -1,0 +1,132 @@
+{
+ "kind": "ladder",
+ "name": "Urticaria & angioedema",
+ "dx": "Urticaria & angioedema",
+ "caseName": "Urticaria & angioedema",
+ "group": "Reactive & drug eruptions",
+ "general": "Find and avoid triggers (NSAIDs, foods only if clearly linked, infections). Acute: usually no tests. Chronic (>6 weeks): CBC, ESR/CRP; thyroid antibodies if indicated. Score with UAS7, control with UCT. Angioedema without wheals: check for ACE inhibitor, C4 (hereditary).",
+ "special": "Anaphylaxis/laryngeal angioedema: Inj. adrenaline 0.5 mg IM (1:1000) and emergency care. Pregnancy: loratadine/cetirizine preferred.",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Standard-dose non-sedating H1 antihistamine",
+   "rx": [
+    {
+     "drug": "Tab. Levocetirizine 5 mg / Fexofenadine 180 mg / Bilastine 20 mg",
+     "dose": "1 tab",
+     "freq": "OD",
+     "dur": "Daily till 3 months symptom-free",
+     "route": "Oral",
+     "instr": "Regular, not as needed",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Not controlled in 2–4 weeks: up-dose",
+   "rx": [
+    {
+     "drug": "Same H1 antihistamine",
+     "dose": "Up to 4 tabs a day",
+     "freq": "BD",
+     "dur": "2–4 weeks, then step down",
+     "route": "Oral",
+     "instr": "Avoid mixing different antihistamines",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Severe acute flare: Tab. Prednisolone 20 mg",
+     "dose": "0.5 mg/kg",
+     "freq": "OD",
+     "dur": "3–7 days",
+     "route": "Oral",
+     "instr": "Short course only",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Still not controlled",
+   "rx": [
+    {
+     "drug": "Inj. Omalizumab",
+     "dose": "300 mg",
+     "freq": "Every 4 weeks",
+     "dur": "6 months, reassess",
+     "route": "Subcutaneous",
+     "instr": "Observe 2 h after dose; can increase to 600 mg / every 2 weeks",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cap. Cyclosporine 100 mg",
+     "dose": "3–5 mg/kg/day",
+     "freq": "BD",
+     "dur": "3–6 months",
+     "route": "Oral",
+     "instr": "If omalizumab not available or not effective; BP, creatinine",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Dapsone / Hydroxychloroquine / Montelukast",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Oral",
+     "instr": "Add-on options with weaker evidence",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Tab. Levocetirizine 5 mg / Fexofenadine 180 mg / Bilastine 20 mg",
+   "dose": "1 tab",
+   "freq": "OD",
+   "dur": "Daily till 3 months symptom-free",
+   "route": "Oral",
+   "instr": "Regular, not as needed",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Find and avoid triggers (NSAIDs, foods only if clearly linked, infections). Acute: usually no tests. Chronic (>6 weeks): CBC, ESR/CRP; thyroid antibodies if indicated. Score with UAS7, control with UCT. Angioedema without wheals: check for ACE inhibitor, C4 (hereditary).",
+ "adviceText": "Find and avoid triggers (NSAIDs, foods only if clearly linked, infections). Acute: usually no tests. Chronic (>6 weeks): CBC, ESR/CRP; thyroid antibodies if indicated. Score with UAS7, control with UCT. Angioedema without wheals: check for ACE inhibitor, C4 (hereditary).",
+ "fuDays": "",
+ "review": true,
+ "free": true,
+ "source": "slot2.py",
+ "updatedAt": 1791446097953
+}

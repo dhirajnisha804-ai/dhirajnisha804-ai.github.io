@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Pityriasis alba",
+ "dx": "Pityriasis alba",
+ "caseName": "Pityriasis alba",
+ "group": "Pigmentary disorders",
+ "general": "Common in atopic children; reassure — repigments in months. Emollients and sunscreen, avoid harsh soaps.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Emollient",
+     "dose": "",
+     "freq": "BD",
+     "dur": "Long-term",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Hydrocortisone 1%",
+     "dose": "Thin layer",
+     "freq": "OD",
+     "dur": "1–2 weeks",
+     "route": "Topical",
+     "instr": "If scaly/inflamed",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Persistent",
+   "rx": [
+    {
+     "drug": "Ointment Tacrolimus 0.03% / Cream Pimecrolimus 1%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "4–8 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Emollient",
+   "dose": "",
+   "freq": "BD",
+   "dur": "Long-term",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Hydrocortisone 1%",
+   "dose": "Thin layer",
+   "freq": "OD",
+   "dur": "1–2 weeks",
+   "route": "Topical",
+   "instr": "If scaly/inflamed",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Common in atopic children; reassure — repigments in months. Emollients and sunscreen, avoid harsh soaps.",
+ "adviceText": "Common in atopic children; reassure — repigments in months. Emollients and sunscreen, avoid harsh soaps.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097959
+}

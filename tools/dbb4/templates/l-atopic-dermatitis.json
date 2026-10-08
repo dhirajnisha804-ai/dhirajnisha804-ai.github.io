@@ -1,0 +1,197 @@
+{
+ "kind": "ladder",
+ "name": "Atopic dermatitis",
+ "dx": "Atopic dermatitis",
+ "caseName": "Atopic dermatitis",
+ "group": "Eczemas",
+ "general": "Daily emollient (at least twice, and after bathing), short lukewarm baths, soap-free cleanser, cotton clothes, short nails. Treat infection. Proactive twice-weekly anti-inflammatory on usual sites once controlled.",
+ "special": "Avoid oral steroids except as a short bridge (rebound flare). Pregnancy: emollients, topical steroids, NB-UVB; cyclosporine if essential. Eczema herpeticum: IV/oral acyclovir urgently.",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Mild–moderate: topical",
+   "rx": [
+    {
+     "drug": "Cream Mometasone 0.1% (body) / Hydrocortisone 1% (face, folds)",
+     "dose": "Thin layer (fingertip units)",
+     "freq": "OD",
+     "dur": "1–2 weeks, then twice weekly",
+     "route": "Topical",
+     "instr": "Step down once clear",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Ointment Tacrolimus 0.03% (child) / 0.1% (adult)",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "Till clear, then twice weekly",
+     "route": "Topical",
+     "instr": "Face, eyelids, folds; burning in first week",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Levocetirizine 5 mg / Syp. Hydroxyzine",
+     "dose": "",
+     "freq": "HS",
+     "dur": "2–4 weeks",
+     "route": "Oral",
+     "instr": "Sedating antihistamine helps sleep only",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Moderate–severe or not controlled",
+   "rx": [
+    {
+     "drug": "Narrowband UVB phototherapy",
+     "dose": "",
+     "freq": "2–3×/week",
+     "dur": "3–6 months",
+     "route": "Phototherapy",
+     "instr": "Adults and older children",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cap. Cyclosporine 100 mg",
+     "dose": "3–5 mg/kg/day in 2 doses",
+     "freq": "BD",
+     "dur": "3–6 months, then taper",
+     "route": "Oral",
+     "instr": "BP and creatinine every 2 weeks at first; fastest acting",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Methotrexate 7.5 mg",
+     "dose": "7.5–15 mg (child 0.3–0.5 mg/kg)",
+     "freq": "Once weekly",
+     "dur": "Months",
+     "route": "Oral",
+     "instr": "With folic acid 5 mg on other days; CBC, LFT",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Severe, refractory",
+   "rx": [
+    {
+     "drug": "Inj. Dupilumab",
+     "dose": "600 mg loading, then 300 mg",
+     "freq": "Every 2 weeks",
+     "dur": "Long-term",
+     "route": "Subcutaneous",
+     "instr": "Conjunctivitis common; children by weight",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Upadacitinib 15 mg / Abrocitinib 100 mg",
+     "dose": "1 tab",
+     "freq": "OD",
+     "dur": "Long-term",
+     "route": "Oral",
+     "instr": "≥12 yr; TB, hepatitis, lipids, CBC screening — see Drug safety",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Azathioprine 50 mg",
+     "dose": "1–2.5 mg/kg (by TPMT)",
+     "freq": "OD",
+     "dur": "Months",
+     "route": "Oral",
+     "instr": "Adults only; slow onset",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Mometasone 0.1% (body) / Hydrocortisone 1% (face, folds)",
+   "dose": "Thin layer (fingertip units)",
+   "freq": "OD",
+   "dur": "1–2 weeks, then twice weekly",
+   "route": "Topical",
+   "instr": "Step down once clear",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Ointment Tacrolimus 0.03% (child) / 0.1% (adult)",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "Till clear, then twice weekly",
+   "route": "Topical",
+   "instr": "Face, eyelids, folds; burning in first week",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Levocetirizine 5 mg / Syp. Hydroxyzine",
+   "dose": "",
+   "freq": "HS",
+   "dur": "2–4 weeks",
+   "route": "Oral",
+   "instr": "Sedating antihistamine helps sleep only",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Daily emollient (at least twice, and after bathing), short lukewarm baths, soap-free cleanser, cotton clothes, short nails. Treat infection. Proactive twice-weekly anti-inflammatory on usual sites once controlled.",
+ "adviceText": "Daily emollient (at least twice, and after bathing), short lukewarm baths, soap-free cleanser, cotton clothes, short nails. Treat infection. Proactive twice-weekly anti-inflammatory on usual sites once controlled.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097947
+}

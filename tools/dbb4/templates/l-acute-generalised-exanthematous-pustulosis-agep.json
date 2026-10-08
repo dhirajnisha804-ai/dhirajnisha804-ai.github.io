@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Acute generalised exanthematous pustulosis (AGEP)",
+ "dx": "Acute generalised exanthematous pustulosis (AGEP)",
+ "caseName": "Acute generalised exanthematous pustulosis (AGEP)",
+ "group": "Reactive & drug eruptions",
+ "general": "Stop the drug (beta-lactams, macrolides, hydroxychloroquine, terbinafine, diltiazem). Usually resolves in 1–2 weeks. Check CBC, renal and liver function.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Cream Mometasone 0.1%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "1 week",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Emollients, antipyretics, fluids",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Severe / systemic involvement",
+   "rx": [
+    {
+     "drug": "Tab. Prednisolone 20 mg",
+     "dose": "0.5–1 mg/kg",
+     "freq": "OD",
+     "dur": "Short taper",
+     "route": "Oral",
+     "instr": "Or cyclosporine short course",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Mometasone 0.1%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "1 week",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Emollients, antipyretics, fluids",
+   "dose": "",
+   "freq": "",
+   "dur": "",
+   "route": "",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Stop the drug (beta-lactams, macrolides, hydroxychloroquine, terbinafine, diltiazem). Usually resolves in 1–2 weeks. Check CBC, renal and liver function.",
+ "adviceText": "Stop the drug (beta-lactams, macrolides, hydroxychloroquine, terbinafine, diltiazem). Usually resolves in 1–2 weeks. Check CBC, renal and liver function.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097955
+}

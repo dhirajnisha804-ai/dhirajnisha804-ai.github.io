@@ -1,0 +1,158 @@
+{
+ "kind": "ladder",
+ "name": "Lichen planus pigmentosus",
+ "dx": "Lichen planus pigmentosus",
+ "caseName": "Lichen planus pigmentosus",
+ "group": "Pigmentary disorders",
+ "general": "Avoid triggers: mustard/amla oils, hair dyes, henna, fragrances (patch test), sun. Chronic; partial response. Check hepatitis C, thyroid.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Ointment Tacrolimus 0.1%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "3–6 months",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Sunscreen SPF 50",
+     "dose": "",
+     "freq": "Every 3 h",
+     "dur": "Long-term",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Azelaic acid 20% / Niacinamide",
+     "dose": "",
+     "freq": "BD",
+     "dur": "Months",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Active / spreading",
+   "rx": [
+    {
+     "drug": "Tab. Betamethasone / Dexamethasone oral mini-pulse 5 mg",
+     "dose": "",
+     "freq": "2 consecutive days a week",
+     "dur": "3 months",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Tranexamic acid 250 mg",
+     "dose": "1 tab",
+     "freq": "BD",
+     "dur": "3 months",
+     "route": "Oral",
+     "instr": "Some evidence",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Refractory",
+   "rx": [
+    {
+     "drug": "Low-fluence Q-switched Nd:YAG / chemical peels",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "Limited evidence; post-inflammatory risk",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Ointment Tacrolimus 0.1%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "3–6 months",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Sunscreen SPF 50",
+   "dose": "",
+   "freq": "Every 3 h",
+   "dur": "Long-term",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Azelaic acid 20% / Niacinamide",
+   "dose": "",
+   "freq": "BD",
+   "dur": "Months",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Avoid triggers: mustard/amla oils, hair dyes, henna, fragrances (patch test), sun. Chronic; partial response. Check hepatitis C, thyroid.",
+ "adviceText": "Avoid triggers: mustard/amla oils, hair dyes, henna, fragrances (patch test), sun. Chronic; partial response. Check hepatitis C, thyroid.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097958
+}

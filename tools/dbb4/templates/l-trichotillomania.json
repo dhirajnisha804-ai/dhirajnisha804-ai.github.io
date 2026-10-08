@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Trichotillomania",
+ "dx": "Trichotillomania",
+ "caseName": "Trichotillomania",
+ "group": "Hair & nail disorders",
+ "general": "Explain, without blame. Habit-reversal therapy / CBT is first line. Look for anxiety, OCD, depression. Children often grow out of it.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Habit-reversal therapy / CBT",
+     "dose": "",
+     "freq": "Weekly",
+     "dur": "8–12 weeks",
+     "route": "",
+     "instr": "Keep a pulling diary, competing response",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. N-acetylcysteine 600 mg",
+     "dose": "1–2 tabs",
+     "freq": "BD",
+     "dur": "3 months",
+     "route": "Oral",
+     "instr": "Some evidence",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "With anxiety / OCD",
+   "rx": [
+    {
+     "drug": "Tab. Fluoxetine 20 mg",
+     "dose": "1 tab",
+     "freq": "OD",
+     "dur": "3–6 months",
+     "route": "Oral",
+     "instr": "With psychiatry input; or clomipramine",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Habit-reversal therapy / CBT",
+   "dose": "",
+   "freq": "Weekly",
+   "dur": "8–12 weeks",
+   "route": "",
+   "instr": "Keep a pulling diary, competing response",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. N-acetylcysteine 600 mg",
+   "dose": "1–2 tabs",
+   "freq": "BD",
+   "dur": "3 months",
+   "route": "Oral",
+   "instr": "Some evidence",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Explain, without blame. Habit-reversal therapy / CBT is first line. Look for anxiety, OCD, depression. Children often grow out of it.",
+ "adviceText": "Explain, without blame. Habit-reversal therapy / CBT is first line. Look for anxiety, OCD, depression. Children often grow out of it.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097956
+}

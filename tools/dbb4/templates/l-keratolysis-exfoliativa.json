@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Keratolysis exfoliativa",
+ "dx": "Keratolysis exfoliativa",
+ "caseName": "Keratolysis exfoliativa",
+ "group": "Eczemas",
+ "general": "Self-limiting peeling of palms; avoid soap, detergents and friction. Reassure.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Cream Urea 10–20% / Lactic acid 12%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "4 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Emollient / barrier cream",
+     "dose": "",
+     "freq": "Frequently",
+     "dur": "Ongoing",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Persistent",
+   "rx": [
+    {
+     "drug": "Cream Tacrolimus 0.1% / mild steroid",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "2 weeks",
+     "route": "Topical",
+     "instr": "If inflamed",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Urea 10–20% / Lactic acid 12%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "4 weeks",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Emollient / barrier cream",
+   "dose": "",
+   "freq": "Frequently",
+   "dur": "Ongoing",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Self-limiting peeling of palms; avoid soap, detergents and friction. Reassure.",
+ "adviceText": "Self-limiting peeling of palms; avoid soap, detergents and friction. Reassure.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097949
+}

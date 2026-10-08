@@ -1,0 +1,132 @@
+{
+ "kind": "ladder",
+ "name": "Pityriasis rubra pilaris",
+ "dx": "Pityriasis rubra pilaris",
+ "caseName": "Pityriasis rubra pilaris",
+ "group": "Papulosquamous & erythroderma",
+ "general": "Emollients and keratolytics; rule out HIV in atypical (type VI). Slow response; type I often clears in 3 years.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Limited",
+   "rx": [
+    {
+     "drug": "Urea 10–20% / Salicylic acid 6% ointment",
+     "dose": "",
+     "freq": "BD",
+     "dur": "Long-term",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Ointment Clobetasol 0.05% / Calcipotriol",
+     "dose": "Thin layer",
+     "freq": "OD",
+     "dur": "4–8 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Extensive – first systemic",
+   "rx": [
+    {
+     "drug": "Cap. Isotretinoin 20 mg",
+     "dose": "0.5–1 mg/kg",
+     "freq": "OD",
+     "dur": "4–6 months",
+     "route": "Oral",
+     "instr": "Or acitretin 25–50 mg/day; contraception",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Methotrexate 10–25 mg",
+     "dose": "",
+     "freq": "Weekly",
+     "dur": "Months",
+     "route": "Oral",
+     "instr": "Alone or with retinoid (watch liver)",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Refractory",
+   "rx": [
+    {
+     "drug": "Biologics: IL-17 / IL-23 inhibitors / TNF inhibitors",
+     "dose": "per label",
+     "freq": "",
+     "dur": "",
+     "route": "Subcutaneous",
+     "instr": "Case-series evidence",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Urea 10–20% / Salicylic acid 6% ointment",
+   "dose": "",
+   "freq": "BD",
+   "dur": "Long-term",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Ointment Clobetasol 0.05% / Calcipotriol",
+   "dose": "Thin layer",
+   "freq": "OD",
+   "dur": "4–8 weeks",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Emollients and keratolytics; rule out HIV in atypical (type VI). Slow response; type I often clears in 3 years.",
+ "adviceText": "Emollients and keratolytics; rule out HIV in atypical (type VI). Slow response; type I often clears in 3 years.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097953
+}

@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Parapsoriasis",
+ "dx": "Parapsoriasis",
+ "caseName": "Parapsoriasis",
+ "group": "Papulosquamous & erythroderma",
+ "general": "Small-plaque type is usually benign; large-plaque type can progress to mycosis fungoides — biopsy and follow every 6–12 months.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Emollients + Cream Mometasone 0.1%",
+     "dose": "Thin layer",
+     "freq": "OD",
+     "dur": "4–8 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Narrowband UVB",
+     "dose": "",
+     "freq": "2–3×/week",
+     "dur": "2–3 months",
+     "route": "Phototherapy",
+     "instr": "Most effective",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Large-plaque / persistent",
+   "rx": [
+    {
+     "drug": "PUVA",
+     "dose": "",
+     "freq": "2–3×/week",
+     "dur": "",
+     "route": "Phototherapy",
+     "instr": "Biopsy repeated if lesions change",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Emollients + Cream Mometasone 0.1%",
+   "dose": "Thin layer",
+   "freq": "OD",
+   "dur": "4–8 weeks",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Narrowband UVB",
+   "dose": "",
+   "freq": "2–3×/week",
+   "dur": "2–3 months",
+   "route": "Phototherapy",
+   "instr": "Most effective",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Small-plaque type is usually benign; large-plaque type can progress to mycosis fungoides — biopsy and follow every 6–12 months.",
+ "adviceText": "Small-plaque type is usually benign; large-plaque type can progress to mycosis fungoides — biopsy and follow every 6–12 months.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097952
+}

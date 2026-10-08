@@ -1,0 +1,112 @@
+{
+ "kind": "ladder",
+ "name": "Fixed drug eruption",
+ "dx": "Fixed drug eruption",
+ "caseName": "Fixed drug eruption",
+ "group": "Reactive & drug eruptions",
+ "general": "Identify and stop the drug (cotrimoxazole, NSAIDs, fluoroquinolones, tetracyclines, paracetamol); give a written drug-allergy card. Oral provocation only under supervision and not after generalised bullous FDE.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Localised",
+   "rx": [
+    {
+     "drug": "Cream Mometasone 0.1%",
+     "dose": "Thin layer",
+     "freq": "OD",
+     "dur": "1–2 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Levocetirizine 5 mg",
+     "dose": "1 tab",
+     "freq": "HS",
+     "dur": "1 week",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Generalised bullous FDE",
+   "rx": [
+    {
+     "drug": "Manage as for SJS/TEN: admit, supportive care",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cap. Cyclosporine",
+     "dose": "3–5 mg/kg/day",
+     "freq": "BD",
+     "dur": "7–10 days",
+     "route": "Oral",
+     "instr": "Or short course of oral steroid",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Mometasone 0.1%",
+   "dose": "Thin layer",
+   "freq": "OD",
+   "dur": "1–2 weeks",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Levocetirizine 5 mg",
+   "dose": "1 tab",
+   "freq": "HS",
+   "dur": "1 week",
+   "route": "Oral",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Identify and stop the drug (cotrimoxazole, NSAIDs, fluoroquinolones, tetracyclines, paracetamol); give a written drug-allergy card. Oral provocation only under supervision and not after generalised bullous FDE.",
+ "adviceText": "Identify and stop the drug (cotrimoxazole, NSAIDs, fluoroquinolones, tetracyclines, paracetamol); give a written drug-allergy card. Oral provocation only under supervision and not after generalised bullous FDE.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097954
+}

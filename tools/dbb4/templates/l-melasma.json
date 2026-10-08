@@ -1,0 +1,145 @@
+{
+ "kind": "ladder",
+ "name": "Melasma",
+ "dx": "Melasma",
+ "caseName": "Melasma",
+ "group": "Pigmentary disorders",
+ "general": "Daily broad-spectrum sunscreen (SPF 30+, tinted / iron oxide for visible light) every 3 hours outdoors, hat. Stop hormonal pills if possible, avoid irritant cosmetics and steroid creams. Score with MASI. Relapse is common — maintenance needed.",
+ "special": "Pregnancy: sunscreen and azelaic acid only.",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Cream Hydroquinone 2% + Tretinoin 0.025% + Fluocinolone 0.01% (Kligman's triple)",
+     "dose": "Pea-size",
+     "freq": "HS",
+     "dur": "8–12 weeks, then taper",
+     "route": "Topical",
+     "instr": "Not beyond 12 weeks continuously (ochronosis, steroid damage)",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Sunscreen SPF 50 (tinted)",
+     "dose": "",
+     "freq": "Every 3 h",
+     "dur": "Long-term",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Maintenance / add-on",
+   "rx": [
+    {
+     "drug": "Cream Azelaic acid 20% / Kojic acid / Cysteamine 5% / Thiamidol",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "Long-term",
+     "route": "Topical",
+     "instr": "Non-hydroquinone maintenance",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Tranexamic acid 250 mg",
+     "dose": "1 tab",
+     "freq": "BD",
+     "dur": "3–6 months",
+     "route": "Oral",
+     "instr": "Exclude clotting history, pregnancy, OCP use, smoking",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Refractory",
+   "rx": [
+    {
+     "drug": "Chemical peels (glycolic 20–70%, salicylic 20–30%, TCA 10–15%)",
+     "dose": "",
+     "freq": "Every 2–3 weeks",
+     "dur": "4–6 sessions",
+     "route": "Procedure",
+     "instr": "With priming",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Q-switched / picosecond Nd:YAG low-fluence laser",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "Rebound and mottled hypopigmentation risk",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Hydroquinone 2% + Tretinoin 0.025% + Fluocinolone 0.01% (Kligman's triple)",
+   "dose": "Pea-size",
+   "freq": "HS",
+   "dur": "8–12 weeks, then taper",
+   "route": "Topical",
+   "instr": "Not beyond 12 weeks continuously (ochronosis, steroid damage)",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Sunscreen SPF 50 (tinted)",
+   "dose": "",
+   "freq": "Every 3 h",
+   "dur": "Long-term",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Daily broad-spectrum sunscreen (SPF 30+, tinted / iron oxide for visible light) every 3 hours outdoors, hat. Stop hormonal pills if possible, avoid irritant cosmetics and steroid creams. Score with MASI. Relapse is common — maintenance needed.",
+ "adviceText": "Daily broad-spectrum sunscreen (SPF 30+, tinted / iron oxide for visible light) every 3 hours outdoors, hat. Stop hormonal pills if possible, avoid irritant cosmetics and steroid creams. Score with MASI. Relapse is common — maintenance needed.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097957
+}

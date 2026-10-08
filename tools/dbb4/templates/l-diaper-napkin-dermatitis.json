@@ -1,0 +1,132 @@
+{
+ "kind": "ladder",
+ "name": "Diaper (napkin) dermatitis",
+ "dx": "Diaper (napkin) dermatitis",
+ "caseName": "Diaper (napkin) dermatitis",
+ "group": "Eczemas",
+ "general": "Change diapers often (every 2–3 h), diaper-free time daily, superabsorbent diapers, wipe with water or alcohol-free wipes, thick barrier paste at every change. No powders, no potent steroids, no combination steroid–antifungal creams.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Irritant",
+   "rx": [
+    {
+     "drug": "Zinc oxide paste / petrolatum",
+     "dose": "Thick layer",
+     "freq": "Every change",
+     "dur": "Till clear",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Hydrocortisone 1%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "5–7 days",
+     "route": "Topical",
+     "instr": "Only if inflamed",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Candida (satellite lesions, fold involvement)",
+   "rx": [
+    {
+     "drug": "Cream Clotrimazole 1% / Nystatin",
+     "dose": "Thin layer",
+     "freq": "BD–TDS",
+     "dur": "2 weeks",
+     "route": "Topical",
+     "instr": "Under the barrier paste",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Oral thrush: Nystatin oral suspension 1 mL",
+     "dose": "1 mL",
+     "freq": "QID",
+     "dur": "7–14 days",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Bacterial / not responding",
+   "rx": [
+    {
+     "drug": "Cream Mupirocin 2%",
+     "dose": "Thin layer",
+     "freq": "TDS",
+     "dur": "5–7 days",
+     "route": "Topical",
+     "instr": "If impetiginised; rethink diagnosis (psoriasis, LCH, zinc deficiency)",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Zinc oxide paste / petrolatum",
+   "dose": "Thick layer",
+   "freq": "Every change",
+   "dur": "Till clear",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Hydrocortisone 1%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "5–7 days",
+   "route": "Topical",
+   "instr": "Only if inflamed",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Change diapers often (every 2–3 h), diaper-free time daily, superabsorbent diapers, wipe with water or alcohol-free wipes, thick barrier paste at every change. No powders, no potent steroids, no combination steroid–antifungal creams.",
+ "adviceText": "Change diapers often (every 2–3 h), diaper-free time daily, superabsorbent diapers, wipe with water or alcohol-free wipes, thick barrier paste at every change. No powders, no potent steroids, no combination steroid–antifungal creams.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097949
+}

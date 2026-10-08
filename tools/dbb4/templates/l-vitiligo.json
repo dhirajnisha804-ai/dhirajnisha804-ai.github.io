@@ -1,0 +1,184 @@
+{
+ "kind": "ladder",
+ "name": "Vitiligo",
+ "dx": "Vitiligo",
+ "caseName": "Vitiligo",
+ "group": "Pigmentary disorders",
+ "general": "Explain the course; counselling and camouflage. Assess activity (VIDA, trichrome/confetti lesions, Koebner) and extent (VASI). Check thyroid. Sunscreen for patches, avoid friction and trauma.",
+ "special": "Children: topical steroids / tacrolimus, NB-UVB; mini-pulse 2.5 mg. Depigmentation (monobenzone) only for >80% involvement.",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Limited / stable",
+   "rx": [
+    {
+     "drug": "Cream Mometasone 0.1% / Clobetasol 0.05%",
+     "dose": "Thin layer",
+     "freq": "OD",
+     "dur": "2–3 months (or 2 weeks on, 1 week off)",
+     "route": "Topical",
+     "instr": "Body",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Ointment Tacrolimus 0.1%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "6 months",
+     "route": "Topical",
+     "instr": "Face, eyelids, folds, genitals",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Ruxolitinib 1.5% (if available)",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "6 months",
+     "route": "Topical",
+     "instr": "Non-segmental, ≥12 years",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Active / spreading or extensive",
+   "rx": [
+    {
+     "drug": "Tab. Betamethasone / Dexamethasone 2.5–5 mg oral mini-pulse",
+     "dose": "",
+     "freq": "On 2 consecutive days a week",
+     "dur": "3–6 months",
+     "route": "Oral",
+     "instr": "Stops spread",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Narrowband UVB (whole body) / targeted excimer",
+     "dose": "",
+     "freq": "2–3×/week",
+     "dur": "6–12 months",
+     "route": "Phototherapy",
+     "instr": "Combine with topicals",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Methotrexate 10 mg / Tab. Azathioprine",
+     "dose": "",
+     "freq": "Weekly / OD",
+     "dur": "Months",
+     "route": "Oral",
+     "instr": "Steroid-sparing for active disease",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Stable ≥1 year, not responding (segmental, acral)",
+   "rx": [
+    {
+     "drug": "Surgery: suction blister / punch / split-thickness graft / non-cultured epidermal cell suspension",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "After 1 year of stability",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Ritlecitinib / Upadacitinib / Baricitinib + NB-UVB",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Oral",
+     "instr": "Emerging; specialist use",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Mometasone 0.1% / Clobetasol 0.05%",
+   "dose": "Thin layer",
+   "freq": "OD",
+   "dur": "2–3 months (or 2 weeks on, 1 week off)",
+   "route": "Topical",
+   "instr": "Body",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Ointment Tacrolimus 0.1%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "6 months",
+   "route": "Topical",
+   "instr": "Face, eyelids, folds, genitals",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Ruxolitinib 1.5% (if available)",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "6 months",
+   "route": "Topical",
+   "instr": "Non-segmental, ≥12 years",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Explain the course; counselling and camouflage. Assess activity (VIDA, trichrome/confetti lesions, Koebner) and extent (VASI). Check thyroid. Sunscreen for patches, avoid friction and trauma.",
+ "adviceText": "Explain the course; counselling and camouflage. Assess activity (VIDA, trichrome/confetti lesions, Koebner) and extent (VASI). Check thyroid. Sunscreen for patches, avoid friction and trauma.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097957
+}

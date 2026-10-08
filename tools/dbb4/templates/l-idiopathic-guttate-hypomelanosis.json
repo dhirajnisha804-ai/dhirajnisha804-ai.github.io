@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Idiopathic guttate hypomelanosis",
+ "dx": "Idiopathic guttate hypomelanosis",
+ "caseName": "Idiopathic guttate hypomelanosis",
+ "group": "Pigmentary disorders",
+ "general": "Benign, sun-related, age-related. Reassure; sun protection.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "If treatment desired",
+   "rx": [
+    {
+     "drug": "Ointment Tacrolimus 0.1%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "3 months",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Spot cryotherapy / fractional CO₂ / spot dermabrasion",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "Limited evidence",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Alternative",
+   "rx": [
+    {
+     "drug": "Cream Tretinoin 0.025%",
+     "dose": "Thin layer",
+     "freq": "HS",
+     "dur": "3 months",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Ointment Tacrolimus 0.1%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "3 months",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Spot cryotherapy / fractional CO₂ / spot dermabrasion",
+   "dose": "",
+   "freq": "",
+   "dur": "",
+   "route": "Procedure",
+   "instr": "Limited evidence",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Benign, sun-related, age-related. Reassure; sun protection.",
+ "adviceText": "Benign, sun-related, age-related. Reassure; sun protection.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097958
+}

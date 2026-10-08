@@ -1,0 +1,151 @@
+{
+ "kind": "ladder",
+ "name": "Erythroderma",
+ "dx": "Erythroderma",
+ "caseName": "Erythroderma",
+ "group": "Papulosquamous & erythroderma",
+ "general": "Admit if unwell. Fluids, temperature, nutrition (high protein), skin care: bland emollients, wet wraps. Find the cause: psoriasis, eczema, drugs, CTCL (Sézary), PRP, scabies. Stop all non-essential drugs.",
+ "special": "Check albumin, electrolytes, renal function, CBC; watch for sepsis, hypothermia, high-output cardiac failure.",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "All patients",
+   "rx": [
+    {
+     "drug": "Liquid paraffin / white soft paraffin",
+     "dose": "Liberal",
+     "freq": "QID",
+     "dur": "Throughout",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Mometasone 0.1% (diluted / mid-potency)",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "2 weeks",
+     "route": "Topical",
+     "instr": "Under wet wraps",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Hydroxyzine 25 mg",
+     "dose": "1 tab",
+     "freq": "HS",
+     "dur": "",
+     "route": "Oral",
+     "instr": "Itch; sedation",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Treat the cause",
+   "rx": [
+    {
+     "drug": "Psoriatic: Cap. Cyclosporine 3–5 mg/kg/day or Tab. Methotrexate",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Oral",
+     "instr": "Avoid oral steroids",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Drug-induced: Tab. Prednisolone 0.5–1 mg/kg",
+     "dose": "",
+     "freq": "OD",
+     "dur": "Taper 2–4 weeks",
+     "route": "Oral",
+     "instr": "After stopping the drug",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Eczematous: NB-UVB / methotrexate / cyclosporine once stable",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Liquid paraffin / white soft paraffin",
+   "dose": "Liberal",
+   "freq": "QID",
+   "dur": "Throughout",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Mometasone 0.1% (diluted / mid-potency)",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "2 weeks",
+   "route": "Topical",
+   "instr": "Under wet wraps",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Hydroxyzine 25 mg",
+   "dose": "1 tab",
+   "freq": "HS",
+   "dur": "",
+   "route": "Oral",
+   "instr": "Itch; sedation",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Admit if unwell. Fluids, temperature, nutrition (high protein), skin care: bland emollients, wet wraps. Find the cause: psoriasis, eczema, drugs, CTCL (Sézary), PRP, scabies. Stop all non-essential drugs.",
+ "adviceText": "Admit if unwell. Fluids, temperature, nutrition (high protein), skin care: bland emollients, wet wraps. Find the cause: psoriasis, eczema, drugs, CTCL (Sézary), PRP, scabies. Stop all non-essential drugs.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097952
+}

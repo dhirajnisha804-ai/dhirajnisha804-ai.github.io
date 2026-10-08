@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Yellow nail syndrome",
+ "dx": "Yellow nail syndrome",
+ "caseName": "Yellow nail syndrome",
+ "group": "Hair & nail disorders",
+ "general": "Associated lymphoedema and pleural effusion / bronchiectasis — refer for chest evaluation; screen for malignancy if adult onset.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Tab. Vitamin E 400–800 IU",
+     "dose": "1",
+     "freq": "OD",
+     "dur": "6 months",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cap. Itraconazole 100 mg pulse / Fluconazole 150 mg weekly",
+     "dose": "",
+     "freq": "",
+     "dur": "6 months",
+     "route": "Oral",
+     "instr": "May improve nail growth",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Add-on",
+   "rx": [
+    {
+     "drug": "Zinc sulphate / clarithromycin (for sinus/lung infection)",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Oral",
+     "instr": "Treat associated conditions",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Tab. Vitamin E 400–800 IU",
+   "dose": "1",
+   "freq": "OD",
+   "dur": "6 months",
+   "route": "Oral",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cap. Itraconazole 100 mg pulse / Fluconazole 150 mg weekly",
+   "dose": "",
+   "freq": "",
+   "dur": "6 months",
+   "route": "Oral",
+   "instr": "May improve nail growth",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Associated lymphoedema and pleural effusion / bronchiectasis — refer for chest evaluation; screen for malignancy if adult onset.",
+ "adviceText": "Associated lymphoedema and pleural effusion / bronchiectasis — refer for chest evaluation; screen for malignancy if adult onset.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097957
+}

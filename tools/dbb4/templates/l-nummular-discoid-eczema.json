@@ -1,0 +1,132 @@
+{
+ "kind": "ladder",
+ "name": "Nummular (discoid) eczema",
+ "dx": "Nummular (discoid) eczema",
+ "caseName": "Nummular (discoid) eczema",
+ "group": "Eczemas",
+ "general": "Emollients, soap substitute; often secondarily infected — treat staph. Look for xerosis, venous disease, contact allergy.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Ointment Clobetasol 0.05% / Mometasone 0.1%",
+     "dose": "Thin layer",
+     "freq": "OD",
+     "dur": "2–4 weeks",
+     "route": "Topical",
+     "instr": "Potent steroid needed",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Fusidic acid 2%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "1 week",
+     "route": "Topical",
+     "instr": "If crusted / oozing",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Extensive or infected",
+   "rx": [
+    {
+     "drug": "Cap. Cephalexin 500 mg",
+     "dose": "1 cap",
+     "freq": "QID",
+     "dur": "7 days",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Narrowband UVB",
+     "dose": "",
+     "freq": "2–3×/week",
+     "dur": "2–3 months",
+     "route": "Phototherapy",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Refractory",
+   "rx": [
+    {
+     "drug": "Tab. Methotrexate 7.5–15 mg",
+     "dose": "",
+     "freq": "Weekly",
+     "dur": "Months",
+     "route": "Oral",
+     "instr": "Or cyclosporine short course",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Ointment Clobetasol 0.05% / Mometasone 0.1%",
+   "dose": "Thin layer",
+   "freq": "OD",
+   "dur": "2–4 weeks",
+   "route": "Topical",
+   "instr": "Potent steroid needed",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Fusidic acid 2%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "1 week",
+   "route": "Topical",
+   "instr": "If crusted / oozing",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Emollients, soap substitute; often secondarily infected — treat staph. Look for xerosis, venous disease, contact allergy.",
+ "adviceText": "Emollients, soap substitute; often secondarily infected — treat staph. Look for xerosis, venous disease, contact allergy.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097950
+}

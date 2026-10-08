@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Freckles (ephelides)",
+ "dx": "Freckles (ephelides)",
+ "caseName": "Freckles (ephelides)",
+ "group": "Pigmentary disorders",
+ "general": "Harmless; darken in summer. Sun protection is the main treatment.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Sunscreen SPF 50",
+     "dose": "",
+     "freq": "Every 3 h",
+     "dur": "Long-term",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Hydroquinone 2% / Azelaic acid 20%",
+     "dose": "Thin layer",
+     "freq": "HS",
+     "dur": "2–3 months",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Cosmetic removal",
+   "rx": [
+    {
+     "drug": "Q-switched Nd:YAG 532 nm / picosecond laser / IPL",
+     "dose": "",
+     "freq": "",
+     "dur": "1–3 sessions",
+     "route": "Procedure",
+     "instr": "Recur without sun protection",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Sunscreen SPF 50",
+   "dose": "",
+   "freq": "Every 3 h",
+   "dur": "Long-term",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Hydroquinone 2% / Azelaic acid 20%",
+   "dose": "Thin layer",
+   "freq": "HS",
+   "dur": "2–3 months",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Harmless; darken in summer. Sun protection is the main treatment.",
+ "adviceText": "Harmless; darken in summer. Sun protection is the main treatment.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097958
+}

@@ -1,0 +1,145 @@
+{
+ "kind": "ladder",
+ "name": "Lichen planus",
+ "dx": "Lichen planus",
+ "caseName": "Lichen planus",
+ "group": "Papulosquamous & erythroderma",
+ "general": "Stop suspected drugs; check hepatitis C. Oral LP: avoid spicy food, tobacco; dental check, metallic restorations. Pigmentation fades slowly.",
+ "special": "Oral erosive LP needs long-term follow-up (small SCC risk).",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Limited cutaneous",
+   "rx": [
+    {
+     "drug": "Ointment Clobetasol 0.05%",
+     "dose": "Thin layer",
+     "freq": "OD",
+     "dur": "4 weeks",
+     "route": "Topical",
+     "instr": "Hypertrophic: under occlusion or intralesional triamcinolone",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Levocetirizine 5 mg / Hydroxyzine 25 mg",
+     "dose": "",
+     "freq": "HS",
+     "dur": "4 weeks",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Widespread or rapidly progressive",
+   "rx": [
+    {
+     "drug": "Tab. Prednisolone 20 mg",
+     "dose": "0.5 mg/kg",
+     "freq": "OD",
+     "dur": "4–6 weeks taper",
+     "route": "Oral",
+     "instr": "Or betamethasone/dexamethasone oral mini-pulse 5 mg on 2 consecutive days a week",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Narrowband UVB",
+     "dose": "",
+     "freq": "3×/week",
+     "dur": "2–3 months",
+     "route": "Phototherapy",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Refractory / chronic",
+   "rx": [
+    {
+     "drug": "Tab. Methotrexate 7.5–15 mg / Cap. Acitretin 25 mg",
+     "dose": "",
+     "freq": "Weekly / OD",
+     "dur": "Months",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Hydroxychloroquine 200 mg / Cap. Cyclosporine",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Oral",
+     "instr": "Oral LP: also topical tacrolimus 0.1%, clobetasol in orabase",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Ointment Clobetasol 0.05%",
+   "dose": "Thin layer",
+   "freq": "OD",
+   "dur": "4 weeks",
+   "route": "Topical",
+   "instr": "Hypertrophic: under occlusion or intralesional triamcinolone",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Levocetirizine 5 mg / Hydroxyzine 25 mg",
+   "dose": "",
+   "freq": "HS",
+   "dur": "4 weeks",
+   "route": "Oral",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Stop suspected drugs; check hepatitis C. Oral LP: avoid spicy food, tobacco; dental check, metallic restorations. Pigmentation fades slowly.",
+ "adviceText": "Stop suspected drugs; check hepatitis C. Oral LP: avoid spicy food, tobacco; dental check, metallic restorations. Pigmentation fades slowly.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097952
+}

@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Lichen striatus",
+ "dx": "Lichen striatus",
+ "caseName": "Lichen striatus",
+ "group": "Papulosquamous & erythroderma",
+ "general": "Self-limiting in 6–12 months in most children; reassure. Treatment is for itch or appearance.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "If symptomatic",
+   "rx": [
+    {
+     "drug": "Cream Mometasone 0.1%",
+     "dose": "Thin layer",
+     "freq": "OD",
+     "dur": "2–4 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Ointment Tacrolimus 0.03%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "4–8 weeks",
+     "route": "Topical",
+     "instr": "Face; hypopigmentation",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Persistent",
+   "rx": [
+    {
+     "drug": "Watchful waiting",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "",
+     "instr": "Residual hypopigmentation recovers slowly",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Mometasone 0.1%",
+   "dose": "Thin layer",
+   "freq": "OD",
+   "dur": "2–4 weeks",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Ointment Tacrolimus 0.03%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "4–8 weeks",
+   "route": "Topical",
+   "instr": "Face; hypopigmentation",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Self-limiting in 6–12 months in most children; reassure. Treatment is for itch or appearance.",
+ "adviceText": "Self-limiting in 6–12 months in most children; reassure. Treatment is for itch or appearance.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097952
+}

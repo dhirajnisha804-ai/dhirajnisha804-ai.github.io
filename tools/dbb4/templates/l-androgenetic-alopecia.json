@@ -1,0 +1,158 @@
+{
+ "kind": "ladder",
+ "name": "Androgenetic alopecia",
+ "dx": "Androgenetic alopecia",
+ "caseName": "Androgenetic alopecia",
+ "group": "Hair & nail disorders",
+ "general": "Check iron/ferritin, thyroid, vitamin D; in women look for PCOS (menstrual history, acne, hirsutism). Results need 6 months; stopping treatment loses the gain.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Solution Minoxidil 5% (men) / 2–5% (women)",
+     "dose": "1 mL",
+     "freq": "BD (foam OD)",
+     "dur": "Long-term",
+     "route": "Topical",
+     "instr": "Initial shedding for 4–8 weeks is expected",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Men: Tab. Finasteride 1 mg",
+     "dose": "1 tab",
+     "freq": "OD",
+     "dur": "Long-term",
+     "route": "Oral",
+     "instr": "Discuss sexual adverse effects, mood; not for women of child-bearing age",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Add-on / alternatives",
+   "rx": [
+    {
+     "drug": "Tab. Minoxidil 2.5 mg (low-dose oral)",
+     "dose": "0.625–2.5 mg (women) / 2.5–5 mg (men)",
+     "freq": "OD",
+     "dur": "Long-term",
+     "route": "Oral",
+     "instr": "Check BP, pedal oedema, hypertrichosis",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Women: Tab. Spironolactone 50–100 mg",
+     "dose": "",
+     "freq": "OD",
+     "dur": "Long-term",
+     "route": "Oral",
+     "instr": "Contraception; potassium if renal disease",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Platelet-rich plasma / microneedling",
+     "dose": "",
+     "freq": "Monthly",
+     "dur": "3–4 sessions",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Advanced / stable",
+   "rx": [
+    {
+     "drug": "Hair transplantation (FUE / FUT)",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "After 6–12 months of medical therapy",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Dutasteride 0.5 mg",
+     "dose": "1 tab",
+     "freq": "OD",
+     "dur": "Long-term",
+     "route": "Oral",
+     "instr": "Men; off-label",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Solution Minoxidil 5% (men) / 2–5% (women)",
+   "dose": "1 mL",
+   "freq": "BD (foam OD)",
+   "dur": "Long-term",
+   "route": "Topical",
+   "instr": "Initial shedding for 4–8 weeks is expected",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Men: Tab. Finasteride 1 mg",
+   "dose": "1 tab",
+   "freq": "OD",
+   "dur": "Long-term",
+   "route": "Oral",
+   "instr": "Discuss sexual adverse effects, mood; not for women of child-bearing age",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Check iron/ferritin, thyroid, vitamin D; in women look for PCOS (menstrual history, acne, hirsutism). Results need 6 months; stopping treatment loses the gain.",
+ "adviceText": "Check iron/ferritin, thyroid, vitamin D; in women look for PCOS (menstrual history, acne, hirsutism). Results need 6 months; stopping treatment loses the gain.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097956
+}

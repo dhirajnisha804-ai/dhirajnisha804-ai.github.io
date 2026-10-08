@@ -1,0 +1,197 @@
+{
+ "kind": "ladder",
+ "name": "Alopecia areata",
+ "dx": "Alopecia areata",
+ "caseName": "Alopecia areata",
+ "group": "Hair & nail disorders",
+ "general": "Explain unpredictable course and that hair often regrows. Check thyroid, vitamin D, B12, ferritin if indicated. Score with SALT. Wigs or caps are a valid choice.",
+ "special": "Children: topical steroids, minoxidil, intralesional only if cooperative, short-contact anthralin.",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Patchy (<50% scalp)",
+   "rx": [
+    {
+     "drug": "Inj. Triamcinolone 10 mg/mL (2.5–5 mg/mL for face)",
+     "dose": "0.1 mL per site, 1 cm apart",
+     "freq": "Every 4–6 weeks",
+     "dur": "3–6 months",
+     "route": "Intralesional",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Lotion Clobetasol 0.05%",
+     "dose": "Few drops",
+     "freq": "OD",
+     "dur": "3 months",
+     "route": "Topical",
+     "instr": "Children, or with intralesional",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Solution Minoxidil 5%",
+     "dose": "1 mL",
+     "freq": "BD",
+     "dur": "6 months",
+     "route": "Topical",
+     "instr": "Adjunct",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Extensive or rapidly progressive",
+   "rx": [
+    {
+     "drug": "Tab. Betamethasone / Dexamethasone 5 mg oral mini-pulse",
+     "dose": "5 mg",
+     "freq": "On 2 consecutive days a week",
+     "dur": "3–6 months",
+     "route": "Oral",
+     "instr": "Adults; children 2.5 mg",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Diphenylcyclopropenone (DPCP) / Squaric acid contact immunotherapy",
+     "dose": "",
+     "freq": "Weekly",
+     "dur": "6 months",
+     "route": "Topical",
+     "instr": "Specialist centres",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Methotrexate 15–25 mg",
+     "dose": "",
+     "freq": "Weekly",
+     "dur": "6 months",
+     "route": "Oral",
+     "instr": "± low-dose prednisolone",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Severe (SALT ≥50) / totalis / universalis",
+   "rx": [
+    {
+     "drug": "Tab. Baricitinib 4 mg",
+     "dose": "1 tab",
+     "freq": "OD",
+     "dur": "Long-term",
+     "route": "Oral",
+     "instr": "Approved for severe AA in adults; see Drug safety",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Tofacitinib 5 mg / Cap. Ritlecitinib 50 mg",
+     "dose": "",
+     "freq": "BD / OD",
+     "dur": "",
+     "route": "Oral",
+     "instr": "Ritlecitinib from 12 years",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cap. Cyclosporine / Azathioprine",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Oral",
+     "instr": "Older alternatives",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Inj. Triamcinolone 10 mg/mL (2.5–5 mg/mL for face)",
+   "dose": "0.1 mL per site, 1 cm apart",
+   "freq": "Every 4–6 weeks",
+   "dur": "3–6 months",
+   "route": "Intralesional",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Lotion Clobetasol 0.05%",
+   "dose": "Few drops",
+   "freq": "OD",
+   "dur": "3 months",
+   "route": "Topical",
+   "instr": "Children, or with intralesional",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Solution Minoxidil 5%",
+   "dose": "1 mL",
+   "freq": "BD",
+   "dur": "6 months",
+   "route": "Topical",
+   "instr": "Adjunct",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Explain unpredictable course and that hair often regrows. Check thyroid, vitamin D, B12, ferritin if indicated. Score with SALT. Wigs or caps are a valid choice.",
+ "adviceText": "Explain unpredictable course and that hair often regrows. Check thyroid, vitamin D, B12, ferritin if indicated. Score with SALT. Wigs or caps are a valid choice.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097955
+}

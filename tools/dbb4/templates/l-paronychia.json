@@ -1,0 +1,145 @@
+{
+ "kind": "ladder",
+ "name": "Paronychia",
+ "dx": "Paronychia",
+ "caseName": "Paronychia",
+ "group": "Hair & nail disorders",
+ "general": "Acute: usually staph — drain if pus. Chronic: wet work, candida, irritants — keep hands dry, gloves with cotton liners, do not push cuticles.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Acute",
+   "rx": [
+    {
+     "drug": "Warm soaks",
+     "dose": "15 min",
+     "freq": "TDS",
+     "dur": "3–5 days",
+     "route": "",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cap. Cephalexin 500 mg / Amoxicillin-clavulanate 625 mg",
+     "dose": "1",
+     "freq": "QID / BD",
+     "dur": "7 days",
+     "route": "Oral",
+     "instr": "Incision and drainage if fluctuant",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Chronic",
+   "rx": [
+    {
+     "drug": "Cream Clobetasol 0.05% / Mometasone 0.1%",
+     "dose": "Thin layer",
+     "freq": "OD",
+     "dur": "3–4 weeks",
+     "route": "Topical",
+     "instr": "Anti-inflammatory is the key",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Clotrimazole 1% / Lotion Amorolfine",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "6 weeks",
+     "route": "Topical",
+     "instr": "Candida",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Fluconazole 150 mg",
+     "dose": "1 tab",
+     "freq": "Weekly",
+     "dur": "4–6 weeks",
+     "route": "Oral",
+     "instr": "Resistant candidal",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Refractory chronic",
+   "rx": [
+    {
+     "drug": "Inj. Triamcinolone into proximal nail fold / en bloc excision of nail fold",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Warm soaks",
+   "dose": "15 min",
+   "freq": "TDS",
+   "dur": "3–5 days",
+   "route": "",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cap. Cephalexin 500 mg / Amoxicillin-clavulanate 625 mg",
+   "dose": "1",
+   "freq": "QID / BD",
+   "dur": "7 days",
+   "route": "Oral",
+   "instr": "Incision and drainage if fluctuant",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Acute: usually staph — drain if pus. Chronic: wet work, candida, irritants — keep hands dry, gloves with cotton liners, do not push cuticles.",
+ "adviceText": "Acute: usually staph — drain if pus. Chronic: wet work, candida, irritants — keep hands dry, gloves with cotton liners, do not push cuticles.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097956
+}

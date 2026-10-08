@@ -1,0 +1,112 @@
+{
+ "kind": "ladder",
+ "name": "Nipple eczema",
+ "dx": "Nipple eczema",
+ "caseName": "Nipple eczema",
+ "group": "Eczemas",
+ "general": "Unilateral, persistent, non-responding nipple eczema in an adult needs biopsy to exclude Paget's disease. Avoid irritants; breastfeeding mothers: check latch, treat candida.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Cream Hydrocortisone 1% / Mometasone 0.1%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "1–2 weeks",
+     "route": "Topical",
+     "instr": "Wipe off before breastfeeding",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Emollient / white soft paraffin",
+     "dose": "",
+     "freq": "After feeds",
+     "dur": "Ongoing",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Not responding",
+   "rx": [
+    {
+     "drug": "Ointment Tacrolimus 0.03%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "2–4 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Clotrimazole 1% / Mupirocin 2%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "2 weeks",
+     "route": "Topical",
+     "instr": "If candida / bacterial infection",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Hydrocortisone 1% / Mometasone 0.1%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "1–2 weeks",
+   "route": "Topical",
+   "instr": "Wipe off before breastfeeding",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Emollient / white soft paraffin",
+   "dose": "",
+   "freq": "After feeds",
+   "dur": "Ongoing",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Unilateral, persistent, non-responding nipple eczema in an adult needs biopsy to exclude Paget's disease. Avoid irritants; breastfeeding mothers: check latch, treat candida.",
+ "adviceText": "Unilateral, persistent, non-responding nipple eczema in an adult needs biopsy to exclude Paget's disease. Avoid irritants; breastfeeding mothers: check latch, treat candida.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097950
+}

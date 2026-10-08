@@ -1,0 +1,112 @@
+{
+ "kind": "ladder",
+ "name": "Asteatotic eczema",
+ "dx": "Asteatotic eczema",
+ "caseName": "Asteatotic eczema",
+ "group": "Eczemas",
+ "general": "Fewer, shorter, lukewarm baths, soap substitute, avoid scrubbing; humidify room. Liberal greasy emollient within 3 minutes of bathing. Look for hypothyroidism, malnutrition, drugs (diuretics, statins).",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Emollient (white soft paraffin / urea 10% / lactic acid 12%)",
+     "dose": "Liberal",
+     "freq": "BD–TDS",
+     "dur": "Long-term",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Ointment Mometasone 0.1%",
+     "dose": "Thin layer",
+     "freq": "OD",
+     "dur": "1–2 weeks",
+     "route": "Topical",
+     "instr": "Inflamed areas only",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Itchy, widespread",
+   "rx": [
+    {
+     "drug": "Tab. Levocetirizine 5 mg",
+     "dose": "1 tab",
+     "freq": "HS",
+     "dur": "2 weeks",
+     "route": "Oral",
+     "instr": "Avoid strongly sedating antihistamines in elderly",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Narrowband UVB",
+     "dose": "",
+     "freq": "2–3×/week",
+     "dur": "6–8 weeks",
+     "route": "Phototherapy",
+     "instr": "For generalised pruritus",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Emollient (white soft paraffin / urea 10% / lactic acid 12%)",
+   "dose": "Liberal",
+   "freq": "BD–TDS",
+   "dur": "Long-term",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Ointment Mometasone 0.1%",
+   "dose": "Thin layer",
+   "freq": "OD",
+   "dur": "1–2 weeks",
+   "route": "Topical",
+   "instr": "Inflamed areas only",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Fewer, shorter, lukewarm baths, soap substitute, avoid scrubbing; humidify room. Liberal greasy emollient within 3 minutes of bathing. Look for hypothyroidism, malnutrition, drugs (diuretics, statins).",
+ "adviceText": "Fewer, shorter, lukewarm baths, soap substitute, avoid scrubbing; humidify room. Liberal greasy emollient within 3 minutes of bathing. Look for hypothyroidism, malnutrition, drugs (diuretics, statins).",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097948
+}

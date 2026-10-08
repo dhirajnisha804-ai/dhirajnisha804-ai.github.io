@@ -1,6 +1,6 @@
 /* DermRx Desk service worker: works offline, always prefers the latest version when online,
    and serves locally stored photos at /_blob/<id>. */
-const VERSION = "202610080741";
+const VERSION = "202610080754";
 const SHELL = "drx-shell-" + VERSION;
 const FILES = ["./", "index.html", "drx-shim.js", "config.js", "seed.json", "prices.json", "manifest.webmanifest",
   "vendor/firebase-app-compat.js", "vendor/firebase-auth-compat.js", "vendor/firebase-firestore-compat.js",

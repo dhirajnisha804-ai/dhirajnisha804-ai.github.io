@@ -1,0 +1,145 @@
+{
+ "kind": "ladder",
+ "name": "Lichen simplex chronicus",
+ "dx": "Lichen simplex chronicus",
+ "caseName": "Lichen simplex chronicus",
+ "group": "Eczemas",
+ "general": "Break the itch–scratch cycle: explain habit, keep nails short, cover at night, look for and treat anxiety, underlying eczema or nerve-related itch.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Ointment Clobetasol 0.05%",
+     "dose": "Thin layer",
+     "freq": "OD–BD",
+     "dur": "2–4 weeks",
+     "route": "Topical",
+     "instr": "Under occlusion (cling film) at night speeds response",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Hydroxyzine 25 mg",
+     "dose": "1 tab",
+     "freq": "HS",
+     "dur": "4 weeks",
+     "route": "Oral",
+     "instr": "Sedation helps night scratching",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Thick plaques",
+   "rx": [
+    {
+     "drug": "Inj. Triamcinolone 10 mg/mL",
+     "dose": "0.1 mL per cm²",
+     "freq": "Every 3–4 weeks",
+     "dur": "2–3 sessions",
+     "route": "Intralesional",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Ointment Tacrolimus 0.1% / Capsaicin 0.025%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "4–8 weeks",
+     "route": "Topical",
+     "instr": "Steroid-sparing",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Refractory",
+   "rx": [
+    {
+     "drug": "Tab. Doxepin 10 mg / Amitriptyline 10 mg",
+     "dose": "1 tab",
+     "freq": "HS",
+     "dur": "1–3 months",
+     "route": "Oral",
+     "instr": "Or SSRI if anxious / obsessive",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Gabapentin 300 mg / Pregabalin 75 mg",
+     "dose": "",
+     "freq": "HS",
+     "dur": "1–3 months",
+     "route": "Oral",
+     "instr": "Neuropathic itch (e.g. brachioradial)",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Ointment Clobetasol 0.05%",
+   "dose": "Thin layer",
+   "freq": "OD–BD",
+   "dur": "2–4 weeks",
+   "route": "Topical",
+   "instr": "Under occlusion (cling film) at night speeds response",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Hydroxyzine 25 mg",
+   "dose": "1 tab",
+   "freq": "HS",
+   "dur": "4 weeks",
+   "route": "Oral",
+   "instr": "Sedation helps night scratching",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Break the itch–scratch cycle: explain habit, keep nails short, cover at night, look for and treat anxiety, underlying eczema or nerve-related itch.",
+ "adviceText": "Break the itch–scratch cycle: explain habit, keep nails short, cover at night, look for and treat anxiety, underlying eczema or nerve-related itch.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097949
+}

@@ -1,0 +1,112 @@
+{
+ "kind": "ladder",
+ "name": "Acanthosis nigricans",
+ "dx": "Acanthosis nigricans",
+ "caseName": "Acanthosis nigricans",
+ "group": "Pigmentary disorders",
+ "general": "Treat the cause: weight loss and exercise in insulin resistance; screen for diabetes, PCOS, thyroid; sudden extensive or oral/palmar involvement in adults — look for internal malignancy. Stop causative drugs.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Cream Tretinoin 0.025–0.05% / Urea 10–20% / Salicylic acid 6%",
+     "dose": "Thin layer",
+     "freq": "HS",
+     "dur": "3 months",
+     "route": "Topical",
+     "instr": "Neck, axillae; avoid scrubbing",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Weight loss + exercise",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "",
+     "instr": "Most effective",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Add-on",
+   "rx": [
+    {
+     "drug": "Tab. Metformin 500 mg",
+     "dose": "1 tab",
+     "freq": "BD",
+     "dur": "3–6 months",
+     "route": "Oral",
+     "instr": "If insulin resistance / PCOS confirmed (check renal function)",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Chemical peel (TCA 15% / glycolic) / Q-switched laser",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Tretinoin 0.025–0.05% / Urea 10–20% / Salicylic acid 6%",
+   "dose": "Thin layer",
+   "freq": "HS",
+   "dur": "3 months",
+   "route": "Topical",
+   "instr": "Neck, axillae; avoid scrubbing",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Weight loss + exercise",
+   "dose": "",
+   "freq": "",
+   "dur": "",
+   "route": "",
+   "instr": "Most effective",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Treat the cause: weight loss and exercise in insulin resistance; screen for diabetes, PCOS, thyroid; sudden extensive or oral/palmar involvement in adults — look for internal malignancy. Stop causative drugs.",
+ "adviceText": "Treat the cause: weight loss and exercise in insulin resistance; screen for diabetes, PCOS, thyroid; sudden extensive or oral/palmar involvement in adults — look for internal malignancy. Stop causative drugs.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097958
+}

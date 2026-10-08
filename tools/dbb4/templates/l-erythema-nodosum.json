@@ -1,0 +1,132 @@
+{
+ "kind": "ladder",
+ "name": "Erythema nodosum",
+ "dx": "Erythema nodosum",
+ "caseName": "Erythema nodosum",
+ "group": "Reactive & drug eruptions",
+ "general": "Find the cause: streptococcal throat (ASO), TB (Mantoux, chest X-ray), sarcoid, IBD, pregnancy/OCP, drugs; in India also ENL (leprosy) to be excluded. Rest, elevate legs, compression stockings.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Tab. Ibuprofen 400 mg / Naproxen 250 mg",
+     "dose": "1 tab",
+     "freq": "TDS / BD",
+     "dur": "2–3 weeks",
+     "route": "Oral",
+     "instr": "After food",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Treat the cause (e.g. penicillin for strep, ATT for TB)",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Persistent / painful",
+   "rx": [
+    {
+     "drug": "Saturated solution of potassium iodide (SSKI)",
+     "dose": "300–900 mg/day",
+     "freq": "TDS",
+     "dur": "3–4 weeks",
+     "route": "Oral",
+     "instr": "Check thyroid",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Colchicine 0.5 mg",
+     "dose": "1 tab",
+     "freq": "BD",
+     "dur": "4 weeks",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Severe, after excluding infection",
+   "rx": [
+    {
+     "drug": "Tab. Prednisolone 20 mg",
+     "dose": "0.5 mg/kg",
+     "freq": "OD",
+     "dur": "Taper 2–3 weeks",
+     "route": "Oral",
+     "instr": "Only once TB and other infection excluded",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Tab. Ibuprofen 400 mg / Naproxen 250 mg",
+   "dose": "1 tab",
+   "freq": "TDS / BD",
+   "dur": "2–3 weeks",
+   "route": "Oral",
+   "instr": "After food",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Treat the cause (e.g. penicillin for strep, ATT for TB)",
+   "dose": "",
+   "freq": "",
+   "dur": "",
+   "route": "",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Find the cause: streptococcal throat (ASO), TB (Mantoux, chest X-ray), sarcoid, IBD, pregnancy/OCP, drugs; in India also ENL (leprosy) to be excluded. Rest, elevate legs, compression stockings.",
+ "adviceText": "Find the cause: streptococcal throat (ASO), TB (Mantoux, chest X-ray), sarcoid, IBD, pregnancy/OCP, drugs; in India also ENL (leprosy) to be excluded. Rest, elevate legs, compression stockings.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097954
+}

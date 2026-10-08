@@ -1,0 +1,171 @@
+{
+ "kind": "ladder",
+ "name": "Erythema multiforme",
+ "dx": "Erythema multiforme",
+ "caseName": "Erythema multiforme",
+ "group": "Reactive & drug eruptions",
+ "general": "Most cases follow herpes simplex; others mycoplasma or drugs. Mouth care: antiseptic and anaesthetic mouthwash, soft diet.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Minor",
+   "rx": [
+    {
+     "drug": "Cream Mometasone 0.1%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "1 week",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Levocetirizine 5 mg",
+     "dose": "1 tab",
+     "freq": "HS",
+     "dur": "1–2 weeks",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Benzydamine / lignocaine 2% viscous mouthwash",
+     "dose": "10 mL",
+     "freq": "Before meals",
+     "dur": "",
+     "route": "Oral rinse",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Major / mucosal",
+   "rx": [
+    {
+     "drug": "Tab. Prednisolone 20 mg",
+     "dose": "0.5–1 mg/kg",
+     "freq": "OD",
+     "dur": "Short taper over 1–2 weeks",
+     "route": "Oral",
+     "instr": "Early in severe mucosal disease",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Mycoplasma: Tab. Azithromycin 500 mg",
+     "dose": "10 mg/kg",
+     "freq": "OD",
+     "dur": "3–5 days",
+     "route": "Oral",
+     "instr": "If proven/suspected",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Recurrent (≥6/yr)",
+   "rx": [
+    {
+     "drug": "Tab. Acyclovir 400 mg",
+     "dose": "1 tab",
+     "freq": "BD",
+     "dur": "6–12 months",
+     "route": "Oral",
+     "instr": "Or valacyclovir 500 mg BD; continuous suppression",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Dapsone / Azathioprine / Thalidomide",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Oral",
+     "instr": "If antivirals fail",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Mometasone 0.1%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "1 week",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Levocetirizine 5 mg",
+   "dose": "1 tab",
+   "freq": "HS",
+   "dur": "1–2 weeks",
+   "route": "Oral",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Benzydamine / lignocaine 2% viscous mouthwash",
+   "dose": "10 mL",
+   "freq": "Before meals",
+   "dur": "",
+   "route": "Oral rinse",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Most cases follow herpes simplex; others mycoplasma or drugs. Mouth care: antiseptic and anaesthetic mouthwash, soft diet.",
+ "adviceText": "Most cases follow herpes simplex; others mycoplasma or drugs. Mouth care: antiseptic and anaesthetic mouthwash, soft diet.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097954
+}

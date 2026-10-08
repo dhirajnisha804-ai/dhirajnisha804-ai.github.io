@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Twenty-nail dystrophy (trachyonychia)",
+ "dx": "Twenty-nail dystrophy (trachyonychia)",
+ "caseName": "Twenty-nail dystrophy (trachyonychia)",
+ "group": "Hair & nail disorders",
+ "general": "Often benign and self-limiting in children (alopecia areata, LP, psoriasis association). Reassure; nail polish/keep nails short.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "If treatment desired",
+   "rx": [
+    {
+     "drug": "Lotion Clobetasol 0.05%",
+     "dose": "Apply to nail folds",
+     "freq": "OD",
+     "dur": "3–6 months",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Inj. Triamcinolone 2.5–5 mg/mL into proximal nail fold",
+     "dose": "",
+     "freq": "Monthly",
+     "dur": "4–6 sessions",
+     "route": "Intralesional",
+     "instr": "Adults",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Treat the associated disease",
+   "rx": [
+    {
+     "drug": "Systemic therapy only if associated LP / psoriasis / AA needs it",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Lotion Clobetasol 0.05%",
+   "dose": "Apply to nail folds",
+   "freq": "OD",
+   "dur": "3–6 months",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Inj. Triamcinolone 2.5–5 mg/mL into proximal nail fold",
+   "dose": "",
+   "freq": "Monthly",
+   "dur": "4–6 sessions",
+   "route": "Intralesional",
+   "instr": "Adults",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Often benign and self-limiting in children (alopecia areata, LP, psoriasis association). Reassure; nail polish/keep nails short.",
+ "adviceText": "Often benign and self-limiting in children (alopecia areata, LP, psoriasis association). Reassure; nail polish/keep nails short.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097957
+}

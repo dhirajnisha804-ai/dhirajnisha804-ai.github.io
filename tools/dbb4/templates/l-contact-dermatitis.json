@@ -1,0 +1,171 @@
+{
+ "kind": "ladder",
+ "name": "Contact dermatitis",
+ "dx": "Contact dermatitis",
+ "caseName": "Contact dermatitis",
+ "group": "Eczemas",
+ "general": "Identify and avoid the cause — patch test (Indian Standard Series) for suspected allergic contact dermatitis. Gloves with cotton liners, barrier creams, substitution of the product.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Localised",
+   "rx": [
+    {
+     "drug": "Cream Mometasone 0.1% / Clobetasol 0.05% (hands, feet)",
+     "dose": "Thin layer",
+     "freq": "OD–BD",
+     "dur": "2–3 weeks",
+     "route": "Topical",
+     "instr": "Then taper",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Wet compresses (saline / potassium permanganate 1:10,000)",
+     "dose": "",
+     "freq": "BD",
+     "dur": "Acute oozing stage",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Emollient / barrier cream",
+     "dose": "",
+     "freq": "Frequently",
+     "dur": "Ongoing",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Widespread / acute severe",
+   "rx": [
+    {
+     "drug": "Tab. Prednisolone 20 mg",
+     "dose": "0.5–1 mg/kg",
+     "freq": "OD",
+     "dur": "Taper over 2–3 weeks",
+     "route": "Oral",
+     "instr": "Short taper to avoid rebound (e.g. Parthenium)",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Levocetirizine 5 mg",
+     "dose": "1 tab",
+     "freq": "HS",
+     "dur": "2–4 weeks",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Chronic (e.g. airborne Parthenium dermatitis)",
+   "rx": [
+    {
+     "drug": "Tab. Azathioprine 50 mg",
+     "dose": "50–100 mg (TPMT-guided)",
+     "freq": "OD",
+     "dur": "6 months",
+     "route": "Oral",
+     "instr": "Or weekly 300 mg 'pulse' regimen used in India",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Methotrexate / Cap. Cyclosporine / PUVA",
+     "dose": "",
+     "freq": "",
+     "dur": "Months",
+     "route": "Oral",
+     "instr": "Steroid-sparing alternatives",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Mometasone 0.1% / Clobetasol 0.05% (hands, feet)",
+   "dose": "Thin layer",
+   "freq": "OD–BD",
+   "dur": "2–3 weeks",
+   "route": "Topical",
+   "instr": "Then taper",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Wet compresses (saline / potassium permanganate 1:10,000)",
+   "dose": "",
+   "freq": "BD",
+   "dur": "Acute oozing stage",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Emollient / barrier cream",
+   "dose": "",
+   "freq": "Frequently",
+   "dur": "Ongoing",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Identify and avoid the cause — patch test (Indian Standard Series) for suspected allergic contact dermatitis. Gloves with cotton liners, barrier creams, substitution of the product.",
+ "adviceText": "Identify and avoid the cause — patch test (Indian Standard Series) for suspected allergic contact dermatitis. Gloves with cotton liners, barrier creams, substitution of the product.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097948
+}

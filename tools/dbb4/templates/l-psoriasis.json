@@ -1,0 +1,210 @@
+{
+ "kind": "ladder",
+ "name": "Psoriasis",
+ "dx": "Psoriasis",
+ "caseName": "Psoriasis",
+ "group": "Papulosquamous & erythroderma",
+ "general": "Assess BSA, PASI, DLQI, nails, joints, metabolic syndrome, depression. Emollients, stop smoking and alcohol, weight loss. Avoid systemic steroids (pustular flare). Check triggers: beta-blockers, lithium, antimalarials, infections.",
+ "special": "Pregnancy: emollients, topical steroids, NB-UVB; cyclosporine or certolizumab if systemic needed. No methotrexate (stop 3 months before conception) or acitretin. Children: topicals, NB-UVB, methotrexate 0.2–0.4 mg/kg/week.",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Limited (BSA <10%, PASI <10)",
+   "rx": [
+    {
+     "drug": "Ointment Clobetasol 0.05% + Calcipotriol",
+     "dose": "Thin layer",
+     "freq": "OD",
+     "dur": "4 weeks, then weekends",
+     "route": "Topical",
+     "instr": "Calcipotriol–betamethasone gel for scalp",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Coal tar 5% / Salicylic acid 3–6% ointment",
+     "dose": "",
+     "freq": "HS",
+     "dur": "4–8 weeks",
+     "route": "Topical",
+     "instr": "Thick scale",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Tacrolimus 0.1%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "",
+     "route": "Topical",
+     "instr": "Face, flexures, genitals",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Moderate–severe (BSA >10%, PASI >10, DLQI >10) or difficult sites",
+   "rx": [
+    {
+     "drug": "Tab. Methotrexate 2.5 mg",
+     "dose": "7.5 → 15–25 mg",
+     "freq": "Once weekly",
+     "dur": "Long-term",
+     "route": "Oral",
+     "instr": "Folic acid 5 mg; CBC, LFT, creatinine — see Drug safety",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Narrowband UVB / PUVA",
+     "dose": "",
+     "freq": "2–3×/week",
+     "dur": "2–3 months",
+     "route": "Phototherapy",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cap. Cyclosporine 100 mg",
+     "dose": "2.5–5 mg/kg/day",
+     "freq": "BD",
+     "dur": "Up to 12 months",
+     "route": "Oral",
+     "instr": "Quick control (erythrodermic, pustular); BP, creatinine",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cap. Acitretin 25 mg",
+     "dose": "0.3–0.5 mg/kg",
+     "freq": "OD",
+     "dur": "Months",
+     "route": "Oral",
+     "instr": "Pustular / palmoplantar; contraception for 3 years after",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Failed / unsuitable for conventional systemics, or psoriatic arthritis",
+   "rx": [
+    {
+     "drug": "Tab. Apremilast 30 mg",
+     "dose": "Titrate over 5 days",
+     "freq": "BD",
+     "dur": "Long-term",
+     "route": "Oral",
+     "instr": "No lab monitoring; GI upset, low mood",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Biologics: Adalimumab / Secukinumab / Itolizumab / Ustekinumab / Guselkumab / Risankizumab",
+     "dose": "per label",
+     "freq": "",
+     "dur": "Long-term",
+     "route": "Subcutaneous",
+     "instr": "TB, hepatitis B/C, HIV screening first",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Tofacitinib / Deucravacitinib",
+     "dose": "per label",
+     "freq": "",
+     "dur": "",
+     "route": "Oral",
+     "instr": "Alternative small molecules",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Ointment Clobetasol 0.05% + Calcipotriol",
+   "dose": "Thin layer",
+   "freq": "OD",
+   "dur": "4 weeks, then weekends",
+   "route": "Topical",
+   "instr": "Calcipotriol–betamethasone gel for scalp",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Coal tar 5% / Salicylic acid 3–6% ointment",
+   "dose": "",
+   "freq": "HS",
+   "dur": "4–8 weeks",
+   "route": "Topical",
+   "instr": "Thick scale",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Tacrolimus 0.1%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "",
+   "route": "Topical",
+   "instr": "Face, flexures, genitals",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Assess BSA, PASI, DLQI, nails, joints, metabolic syndrome, depression. Emollients, stop smoking and alcohol, weight loss. Avoid systemic steroids (pustular flare). Check triggers: beta-blockers, lithium, antimalarials, infections.",
+ "adviceText": "Assess BSA, PASI, DLQI, nails, joints, metabolic syndrome, depression. Emollients, stop smoking and alcohol, weight loss. Avoid systemic steroids (pustular flare). Check triggers: beta-blockers, lithium, antimalarials, infections.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097951
+}

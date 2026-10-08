@@ -1,0 +1,112 @@
+{
+ "kind": "ladder",
+ "name": "Telogen effluvium",
+ "dx": "Telogen effluvium",
+ "caseName": "Telogen effluvium",
+ "group": "Hair & nail disorders",
+ "general": "Find the trigger 2–3 months earlier: fever (incl. COVID, dengue), childbirth, crash diet, surgery, stress, drugs, thyroid, iron deficiency. Reassure: regrowth in 3–6 months.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Correct deficiencies (iron if ferritin <40, vitamin D, B12)",
+     "dose": "",
+     "freq": "",
+     "dur": "3 months",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Adequate protein diet (1 g/kg/day)",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Chronic (>6 months)",
+   "rx": [
+    {
+     "drug": "Solution Minoxidil 2–5%",
+     "dose": "1 mL",
+     "freq": "BD",
+     "dur": "6 months",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Minoxidil 1.25 mg (low-dose oral)",
+     "dose": "",
+     "freq": "OD",
+     "dur": "6 months",
+     "route": "Oral",
+     "instr": "Check BP",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Correct deficiencies (iron if ferritin <40, vitamin D, B12)",
+   "dose": "",
+   "freq": "",
+   "dur": "3 months",
+   "route": "Oral",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Adequate protein diet (1 g/kg/day)",
+   "dose": "",
+   "freq": "",
+   "dur": "",
+   "route": "",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Find the trigger 2–3 months earlier: fever (incl. COVID, dengue), childbirth, crash diet, surgery, stress, drugs, thyroid, iron deficiency. Reassure: regrowth in 3–6 months.",
+ "adviceText": "Find the trigger 2–3 months earlier: fever (incl. COVID, dengue), childbirth, crash diet, surgery, stress, drugs, thyroid, iron deficiency. Reassure: regrowth in 3–6 months.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097956
+}

@@ -1,0 +1,171 @@
+{
+ "kind": "ladder",
+ "name": "Stevens–Johnson syndrome / TEN",
+ "dx": "Stevens–Johnson syndrome / TEN",
+ "caseName": "Stevens–Johnson syndrome / TEN",
+ "group": "Reactive & drug eruptions",
+ "general": "Stop all suspect drugs immediately (allopurinol, carbamazepine, phenytoin, lamotrigine, nevirapine, sulfonamides). Admit — ICU/burns unit if >10% BSA. SCORTEN on day 1 and 3. Barrier nursing, warm room, fluids, nutrition, eye, mouth and genital care daily (ophthalmology review).",
+ "special": "Give a drug-allergy card; avoid the culprit and related drugs for life; HLA-B*15:02 screening before carbamazepine in at-risk groups.",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Supportive care (all)",
+   "rx": [
+    {
+     "drug": "Liquid paraffin / non-adherent dressings",
+     "dose": "",
+     "freq": "BD",
+     "dur": "Till re-epithelialised",
+     "route": "Topical",
+     "instr": "Leave detached epidermis in place",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Eye: lubricant + topical steroid–antibiotic drops",
+     "dose": "",
+     "freq": "QID",
+     "dur": "",
+     "route": "Ophthalmic",
+     "instr": "Daily ophthalmology review",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Mouth: chlorhexidine + lignocaine viscous rinse",
+     "dose": "",
+     "freq": "QID",
+     "dur": "",
+     "route": "Oral rinse",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Immunomodulation (early)",
+   "rx": [
+    {
+     "drug": "Cap. Cyclosporine 100 mg",
+     "dose": "3–5 mg/kg/day",
+     "freq": "BD",
+     "dur": "7–10 days, then taper",
+     "route": "Oral",
+     "instr": "Preferred in many Indian centres",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Inj. Dexamethasone pulse / IV methylprednisolone",
+     "dose": "",
+     "freq": "",
+     "dur": "3 days",
+     "route": "IV",
+     "instr": "Early, short; avoid prolonged steroids",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Severe or progressing",
+   "rx": [
+    {
+     "drug": "Inj. Etanercept 50 mg",
+     "dose": "25–50 mg",
+     "freq": "Single dose (repeat if needed)",
+     "dur": "",
+     "route": "Subcutaneous",
+     "instr": "Growing evidence",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Inj. IVIG",
+     "dose": "0.5–1 g/kg/day",
+     "freq": "OD",
+     "dur": "3–4 days",
+     "route": "IV",
+     "instr": "Evidence mixed",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Liquid paraffin / non-adherent dressings",
+   "dose": "",
+   "freq": "BD",
+   "dur": "Till re-epithelialised",
+   "route": "Topical",
+   "instr": "Leave detached epidermis in place",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Eye: lubricant + topical steroid–antibiotic drops",
+   "dose": "",
+   "freq": "QID",
+   "dur": "",
+   "route": "Ophthalmic",
+   "instr": "Daily ophthalmology review",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Mouth: chlorhexidine + lignocaine viscous rinse",
+   "dose": "",
+   "freq": "QID",
+   "dur": "",
+   "route": "Oral rinse",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Stop all suspect drugs immediately (allopurinol, carbamazepine, phenytoin, lamotrigine, nevirapine, sulfonamides). Admit — ICU/burns unit if >10% BSA. SCORTEN on day 1 and 3. Barrier nursing, warm room, fluids, nutrition, eye, mouth and genital care daily (ophthalmology review).",
+ "adviceText": "Stop all suspect drugs immediately (allopurinol, carbamazepine, phenytoin, lamotrigine, nevirapine, sulfonamides). Admit — ICU/burns unit if >10% BSA. SCORTEN on day 1 and 3. Barrier nursing, warm room, fluids, nutrition, eye, mouth and genital care daily (ophthalmology review).",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot2.py",
+ "updatedAt": 1791446097955
+}
