@@ -25,7 +25,7 @@ try:
     print('   stored profile status:', pg.evaluate("__store.users.get(__accounts['test@doc.in'].uid).status"), '| proof stored:', pg.evaluate("__store.verifications.has(__accounts['test@doc.in'].uid)"))
     pg.click('[data-tab=templates]'); pg.wait_for_timeout(500)
     print('5 templates for pending user:', pg.locator('#tplCount').inner_text(), '| lock banner:', pg.locator('.lockban').count()==1)
-    pg.click('[data-tab=meds]'); pg.wait_for_timeout(400); pg.click('[data-dtab=ix]'); pg.wait_for_timeout(300); print('   drugs locked:', pg.locator('.lockcard').count()==1)
+    pg.click('[data-tab=meds]'); pg.wait_for_timeout(400); pg.click('[data-dtab=safety]'); pg.wait_for_timeout(300); print('   drugs locked:', pg.locator('.lockcard').count()==1)
     pg.screenshot(path='acct_locked.png')
     # admin approves
     pg.click('#btnMoreTop'); pg.wait_for_timeout(300); pg.click('[data-act=acct]'); pg.wait_for_timeout(300)
@@ -43,6 +43,6 @@ try:
     pg.fill('#acE','test@doc.in'); pg.fill('#acP','secret1'); pg.click('#acGo'); pg.wait_for_timeout(1500)
     pg.click('[data-tab=templates]'); pg.wait_for_timeout(600)
     print('8 verified user templates:', pg.locator('#tplCount').inner_text(), '| lock banner gone:', pg.locator('.lockban').count()==0)
-    pg.click('[data-tab=meds]'); pg.wait_for_timeout(300); pg.click('[data-dtab=ix]'); pg.wait_for_timeout(300); print('   interactions open:', pg.locator('#ixQ').count()==1)
+    pg.click('[data-tab=cases]'); pg.wait_for_timeout(300); pg.click('[data-act=ixopen]'); pg.wait_for_timeout(300); print('   interactions open:', pg.locator('#ixQ').count()==1)
     print('errors', errs)
 finally: srv.kill()

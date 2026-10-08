@@ -1,6 +1,6 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#14324d">
 <link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<meta name="drx-build" content="202610081423">
+<meta name="drx-build" content="202610081426">
 <script src="config.js"></script>
 <script>window.DRX_OCR=(b=>({lib:b+"tesseract.min.js",worker:b+"worker.min.js",core:b,lang:b}))(new URL("vendor/tesseract/",location.href).href);</script>
 <script src="vendor/firebase-app-compat.js"></script><script src="vendor/firebase-auth-compat.js"></script><script src="vendor/firebase-firestore-compat.js"></script>
@@ -799,7 +799,7 @@ function caseRowsHTML(arr, grouped, open){
 }
 function casesShell(){
   const n=k=>CASES.filter(c=>caseKind(c)===k).length;
-  return `${banner()}${carouselHTML()}<div class="viewhead"><div><h2>Case formats</h2><p>History-taking guide for ${CASES.length} diseases · long and short case formats</p></div><div class="actions"><button class="btn sm dsbtn" data-act="drugsafety">${ICON.pill} Drug safety</button><button class="btn primary sm" data-act="scores">${ICON.plus} Score</button></div></div>
+  return `${banner()}${carouselHTML()}<div class="viewhead"><div><h2>Case formats</h2><p>History-taking guide for ${CASES.length} diseases · long and short case formats</p></div><div class="actions"><button class="btn sm dsbtn" data-act="ixopen">${ICON.pill} Drug interactions</button><button class="btn primary sm" data-act="scores">${ICON.plus} Score</button></div></div>
   <label class="search">${ICON.search}<input id="qCases" type="search" placeholder="Search disease, symptom or finding" aria-label="Search case formats" autocomplete="off"></label>
   <div class="chips">${[["All","All",CASES.length],["Long case","Long cases",n("Long case")],["Short case","Short cases",n("Short case")]].map(([k,l,c])=>`<button class="chip" data-cf="${k}" aria-pressed="${S.caseF===k}">${l} <span style="opacity:.6">${c}</span></button>`).join("")}</div>
   <div id="caseList"></div>`;
@@ -1237,7 +1237,7 @@ function secureFor(on){ try{ window.DermaAndroid?.secure?.(!!on); }catch{} }
 function secureForView(){ secureFor(S.view==="templates" || (S.view==="meds" && S.drugTab!=="brands")); }
 
 /* ---------- Drugs tab ---------- */
-const DRUG_TABS=[["ix","Interactions"],["brands","Brands & prices"],["dose","Dose by weight"],["safety","Drug safety"]];
+const DRUG_TABS=[["brands","Brands & prices"],["dose","Dose by weight"],["safety","Drug safety"]];
 function drugsTop(){ return `<div class="viewhead"><div><h2>Drugs</h2></div>${S.drugTab==="brands"&&isAdmin()?`<button class="btn primary" data-act="newbrand">${ICON.plus}Add</button>`:""}</div>
   <div class="chips segs">${DRUG_TABS.map(([k,l])=>`<button class="chip" data-dtab="${k}" aria-pressed="${S.drugTab===k}">${esc(l)}</button>`).join("")}</div>`; }
 function drugsPane(){
@@ -1328,12 +1328,12 @@ function carouselHTML(){ const it=carouselItems(); if(!it.length) return "";
 function wireCarousel(){
   const car=$("#car"); if(!car || car.dataset.w) return; car.dataset.w=1; const it=carouselItems(); const dots=[...car.nextElementSibling.children];
   car.addEventListener("scroll",()=>{ const i=Math.round(car.scrollLeft/(car.firstElementChild.offsetWidth+10)); dots.forEach((d,j)=>d.classList.toggle("on",i===j)); },{passive:true});
-  car.addEventListener("click",e=>{ const b=e.target.closest("[data-cari]"); if(!b) return; const x=it[+b.dataset.cari]; if(x.post){ openPost(x.post); } else { S.drugTab=x.k; go("meds"); } });
+  car.addEventListener("click",e=>{ const b=e.target.closest("[data-cari]"); if(!b) return; const x=it[+b.dataset.cari]; if(x.post){ openPost(x.post); } else if(x.k==="ix"){ if(hasFull()) openIxSheet(); else toast("Drug interaction checker is for verified doctors"); } else { S.drugTab=x.k; go("meds"); } });
   clearInterval(wireCarousel._t); wireCarousel._t=setInterval(()=>{ if(!document.body.contains(car)) return clearInterval(wireCarousel._t); if(document.hidden || !$("#sheet").hidden) return; const w=car.firstElementChild.offsetWidth+10; const n=car.children.length; const i=Math.round(car.scrollLeft/w); car.scrollTo({left:((i+1)%n)*w, behavior:"smooth"}); }, 5000);
 }
 
 /* ---------- loading tips + first-run tour ---------- */
-const TIPS=["Tip: open Drugs → Interactions to check a prescription for risky combinations.","Tip: Dose by weight works for children — enter weight and age.","Tip: tap ★ on a medicine to keep it at the top of your list.","Tip: Back always returns to the previous screen.","Tip: add follow-up dates — they appear on the printed prescription.","Tip: Resident Corner has step-by-step procedure SOPs."];
+const TIPS=["Tip: Drug interactions on the Cases page checks a prescription for risky combinations.","Tip: Dose by weight works for children — enter weight and age.","Tip: tap ★ on a medicine to keep it at the top of your list.","Tip: Back always returns to the previous screen.","Tip: add follow-up dates — they appear on the printed prescription.","Tip: Resident Corner has step-by-step procedure SOPs."];
 function bootTips(){ const el=$("#bootTip"); if(!el) return; let i=Math.floor(Math.random()*TIPS.length); el.textContent=TIPS[i]; bootTips._t=setInterval(()=>{ i=(i+1)%TIPS.length; el.textContent=TIPS[i]; },2500); }
 function hideBoot(){ const b=$("#boot"); if(!b || b.dataset.gone) return; b.dataset.gone=1; clearInterval(bootTips._t); b.classList.add("bye"); setTimeout(()=>b.remove(),350); }
 const TOUR=[["🩺","Welcome to Derma Desk","Dermatology made easy — case formats, prescriptions, drugs and procedures in your pocket."],["📋","Prescribe in seconds","1st, 2nd and 3rd line treatment for 130+ diseases, and a prescription PDF with your letterhead you can send in one tap."],["💊","Safer drugs","Interaction checker, dose by weight and drug safety alerts appear as you write."],["🎓","Resident Corner","Step-by-step procedure SOPs, articles and updates. Patient records stay only on this phone."]];
@@ -1548,11 +1548,11 @@ async function openApplicant(uid){
 const COACH=[
  ["#btnNewTop","Search everything","One search for cases, treatment guides, drugs, products, patients and SOPs.","cases"],
  ['[data-act="scores"]',"Severity scores","PASI, SCORAD, EASI, DLQI, CDLQI, SALT, VASI, MASI, UAS7 and more — answer item by item and the score is calculated. Save it to a patient to track progress.","cases"],
- ['[data-act="drugsafety"]',"Drug safety","50 drugs A–Z with baseline tests, monitoring schedule, contraindications and pregnancy advice — isotretinoin, methotrexate, biologics, JAK inhibitors and more.","cases"],
+ ['[data-act="ixopen"]',"Drug interactions","Add the drugs a patient takes — risky combinations are flagged as contraindicated, major or moderate, with what to do. Also checked automatically on every prescription.","cases"],
  ['nav.tabs [data-tab="cases"]',"Cases","140 case formats: history to ask, examination, differentials, viva pearls and severity scores.","cases"],
  ['nav.tabs [data-tab="patients"]',"Patients","Your patient records, visits, photos and follow-ups. They stay only on this phone.","cases"],
- ['nav.tabs [data-tab="meds"]',"Drugs","All drug tools in one place — the next steps show each one.","meds"],
- ['[data-dtab="ix"]',"Interaction checker","Add the drugs a patient takes — risky combinations are flagged as contraindicated, major or moderate, with what to do. Checked automatically on every prescription too.","meds"],
+ ['nav.tabs [data-tab="meds"]',"Drugs","Brands & prices, dose by weight and drug safety — the next steps show each one.","meds"],
+ ['[data-dtab="safety"]',"Drug safety","50 drugs A–Z with baseline tests, monitoring, contraindications and pregnancy advice — isotretinoin, methotrexate, biologics, JAK inhibitors and more.","meds"],
  ['[data-dtab="dose"]',"Dose by weight","Enter weight (and height for m² doses) — get the mg/kg dose, the practical tablet strength and syrup volume for adults and children.","meds"],
  ['[data-dtab="brands"]',"Brands & prices","Indian brands with price and pack size, plus your own MR contacts.","meds"],
  ['nav.tabs [data-tab="templates"]',"Templates","Ready-made prescriptions you can apply to a patient in one tap.","cases"],
@@ -2127,7 +2127,8 @@ function openVisitView(v){
 
 /* ---------- MEDICINES ---------- */
 function medsShell(){
-  if(!S.drugTab){ try{ S.drugTab=localStorage.getItem("drx.dtab")||"ix"; }catch{ S.drugTab="ix"; } }
+  if(!S.drugTab){ try{ S.drugTab=localStorage.getItem("drx.dtab")||"brands"; }catch{ S.drugTab="brands"; } }
+  if(!DRUG_TABS.some(([k])=>k===S.drugTab)) S.drugTab="brands";
   if(S.drugTab!=="brands") return `${banner()}${drugsTop()}${drugsPane()}`;
   return `${banner()}${drugsTop()}<p class="hint" id="medCount" style="margin:4px 0 0"></p>
   <label class="search">${ICON.search}<input id="qMed" type="search" placeholder="Search medicine, product, generic, brand, company or MR" aria-label="Search medicines" autocomplete="off"></label>
@@ -2297,7 +2298,7 @@ function openHelp(){
    ["Where are my patients saved?","Only on this phone: patients, photos, scores, MR contacts, notes and your doctor profile never leave it. Use More → Backup regularly and keep the file safe; More → Sync & sharing → Restore brings it back on a new phone."],
    ["Medicines and templates","The shared list is kept up to date by the list owner and syncs to everyone. Prices show when they were last updated. Your own MR contacts, notes and ★ preferred brands are private to your phone."],
    ["Write a prescription","Patients → New patient → fill complaints, diagnosis, add medicines or a template, set the follow-up date, then Prescription PDF. Name, age, date, medicines and follow-up are filled in automatically."],
-   ["Drug safety and scores","On the Cases page, Drug safety checks the current prescription against the patient's age, sex, pregnancy and other medicines. Always verify against current guidelines."],
+   ["Drug interactions, drug safety and scores","Drug interactions and Score are on the Cases page. Drug safety (monitoring, contraindications, pregnancy) is in the Drugs tab, and inside each consultation it checks the prescription against the patient's age, sex, pregnancy and other medicines. Always verify against current guidelines."],
    ["Treatment guides (1st / 2nd / 3rd line)","Templates tab, or the 💊 Treatment button on a case format. Tap “Start a patient with this line”, or in a consultation use “Use template” and pick a line. Guides marked “Needs review” are still being checked."],
    ["Search everything","The 🔍 at the top searches cases, treatment guides, drug safety, products, your patients and SOPs at once. Typing a drug name also shows every guide that uses it."],
    ["Favourite medicines","When adding a medicine, tick “★ Save to my favourite medicines”. Next time it appears at the top of Add medicine with your dose — one tap adds it. Tap ✕ to remove it. Favourites stay on your phone."],
@@ -3327,6 +3328,7 @@ document.addEventListener("click", async e => {
   else if(a==="applock") openLockSettings();
   else if(a==="chpw") openChangePassword();
   else if(a==="about") openAbout();
+  else if(a==="ixopen"){ if(!hasFull()){ toast("Drug interaction checker is for verified doctors"); return; } openIxSheet(); }
   else if(a==="logout"){ if(inSheet) closeSheet(); ACC()?.signOut(); toast("Logged out"); }
   else if(a==="delacct"){ openSheet("Delete account", `<div class="stack"><p>This permanently deletes your Derma Desk account and your verification details. Patient records saved on this phone are not deleted.</p><div class="actions"><button class="btn danger" id="daDel">Delete my account</button></div></div>`); armDelete($("#daDel"), async()=>{ try{ await ACC().deleteAccount(); closeSheet(); toast("Account deleted"); }catch(e){ toast(fbErr(e)); } }); }
   else if(a==="wtcalc") { if(hasFull()) openWtCalc(null, "", true); else toast("Dose by weight is for verified members"); }
