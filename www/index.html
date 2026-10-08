@@ -1,6 +1,6 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#14324d">
 <link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<meta name="drx-build" content="202610081541">
+<meta name="drx-build" content="202610081552">
 <script src="config.js"></script>
 <script>window.DRX_OCR=(b=>({lib:b+"tesseract.min.js",worker:b+"worker.min.js",core:b,lang:b}))(new URL("vendor/tesseract/",location.href).href);</script>
 <script src="vendor/firebase-app-compat.js"></script><script src="vendor/firebase-auth-compat.js"></script><script src="vendor/firebase-firestore-compat.js"></script>
@@ -256,7 +256,7 @@ header.top #btnMoreTop{margin-left:-4px}
 .ptf{display:flex;gap:8px;margin:8px 0 0}.ptf select,.ptf label{flex:1;min-width:0}.ptf label{font-size:12.5px;color:var(--muted);display:flex;flex-direction:column;gap:2px}.ptf input[type=date]{width:100%}
 .favrow{display:flex;align-items:center;gap:4px}.favrow .pick{flex:1;min-width:0}
 .dxsug{border:1px solid var(--line);border-radius:12px;background:var(--card,#fff);margin-top:4px;max-height:260px;overflow:auto;box-shadow:0 6px 18px rgba(0,0,0,.12)}.dxopt{display:block;width:100%;text-align:left;padding:10px 12px;border:0;border-bottom:1px solid var(--line);background:none;font:inherit;color:inherit;cursor:pointer}.dxopt:last-child{border-bottom:0}.dxnew{color:var(--accent,#1f5f8b);font-weight:600}
-.lxpick{display:flex;gap:10px;align-items:flex-start;cursor:pointer}.lxpick input{margin-top:3px;width:18px;height:18px;flex:none}.lxrx{list-style:none;padding-left:0}
+.lxpick{display:flex;gap:10px;align-items:flex-start;cursor:pointer}.lxview{cursor:default}.lxpick input{margin-top:3px;width:18px;height:18px;flex:none}.lxrx{list-style:none;padding-left:0}
 .rvbadge{display:inline-block;font-size:10.5px;font-weight:700;color:#9a3412;background:#ffedd5;border-radius:5px;padding:1px 6px;margin-left:6px;vertical-align:middle}
 .newb{font-size:10px;font-weight:700;color:#fff;background:#3fb5ad;border-radius:5px;padding:1px 6px;margin-left:6px;vertical-align:middle}
 .pcard{display:flex;gap:12px;align-items:center;text-align:left;width:100%;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:11px 12px;cursor:pointer;color:var(--fg)}
@@ -1592,14 +1592,14 @@ const isLadder = t => t && t.kind==="ladder";
 const ladderFor = name => S.templates.find(t=>isLadder(t) && t.caseName===name);
 const LINE_CLS = ["l1","l2","l3"];
 function ladderHTML(t, {pick}={}){
-  const rxRow = (r,j,i) => `<li><label class="lxpick"><input type="checkbox" data-pick="${i}:${j}" ${j===0?"checked":""}><span><b>${esc(r.drug)}</b>${[r.dose,r.freq,r.dur].filter(Boolean).length?`<span class="lxd">${esc([r.dose,r.freq,r.dur].filter(Boolean).join(" · "))}</span>`:""}${r.instr?`<span class="lxn">${esc(r.instr)}</span>`:""}</span></label></li>`;
+  const rxRow = (r,j,i) => `<li>${pick?`<label class="lxpick"><input type="checkbox" data-pick="${i}:${j}" ${j===0?"checked":""}>`:`<label class="lxpick lxview">`}<span><b>${esc(r.drug)}</b>${[r.dose,r.freq,r.dur].filter(Boolean).length?`<span class="lxd">${esc([r.dose,r.freq,r.dur].filter(Boolean).join(" · "))}</span>`:""}${r.instr?`<span class="lxn">${esc(r.instr)}</span>`:""}</span></label></li>`;
   return `<div class="case-head"><h2 class="case-title">${esc(t.name)}</h2><div class="case-meta"><span class="pill">${esc(t.group||"")}</span>${t.reviewed?"":`<span class="rvbadge">Needs review</span>`}</div></div>
   ${t.general?`<div class="lxgen"><b>General measures</b><p>${esc(t.general)}</p></div>`:""}
   ${(t.lines||[]).map((l,i)=>`<section class="lxline ${LINE_CLS[i]||""}"><div class="lxh"><span class="lxn1">${i+1}</span><div><b>${esc(l.label)}</b>${l.when?`<small>${esc(l.when)}</small>`:""}</div></div>
     <ul class="lxrx">${(l.rx||[]).map((r,j)=>rxRow(r,j,i)).join("")}</ul>
-    <button class="btn ${i?"":"primary"} sm" type="button" data-useline="${i}">${pick?"Add ticked medicines":"Start a patient with ticked medicines"}</button></section>`).join("")}
+    ${pick?`<button class="btn ${i?"":"primary"} sm" type="button" data-useline="${i}">Add ticked medicines</button>`:""}</section>`).join("")}
   ${t.special?`<div class="lxgen lxsp"><b>Pregnancy, children & special cases</b><p>${esc(t.special)}</p></div>`:""}
-  <p class="hint" style="font-size:11.5px">Medicines within a line are alternatives or add-ons — tick the ones you want. Draft from standard textbooks — check doses, contraindications and interactions for each patient before prescribing.</p>${reportBtn("Treatment guide: "+t.name)}`;
+  <p class="hint" style="font-size:11.5px">${pick?"Medicines within a line are alternatives or add-ons — tick the ones you want. ":"To prescribe, open a patient → Use template. "}Draft from standard textbooks — check doses, contraindications and interactions for each patient before prescribing.</p>${reportBtn("Treatment guide: "+t.name)}`;
 }
 function openLadder(t, {onPick}={}){
   if(!t) return;
