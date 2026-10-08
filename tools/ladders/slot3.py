@@ -102,14 +102,15 @@ L("Striae distensae",C,
 V="Vesicobullous diseases"
 L("Vesicobullous diseases (pemphigus / pemphigoid)",V,
   "Confirm with biopsy + DIF (and ELISA for Dsg1/Dsg3, BP180/230). Score PDAI/BPDAI. Wound care, oral hygiene, nutrition; screen TB, hepatitis B, diabetes, bone health; PPI, calcium + vitamin D with steroids.",
-  ("Pemphigus – first line",[
-   "Inj. Rituximab | 1 g IV, repeat after 2 weeks (RA protocol) | | Maintenance 500 mg at 6 and 12 months if needed | IV | First-line in moderate–severe pemphigus",
-   "Tab. Prednisolone 20 mg | 0.5–1 mg/kg | OD | Taper over 3–6 months | Oral | With rituximab"]),
-  ("Pemphigus – steroid-sparing / no rituximab",[
-   "Tab. Azathioprine 50 mg | 2–2.5 mg/kg (TPMT) | OD | Long-term | Oral | ",
-   "Tab. Mycophenolate mofetil 500 mg | 2–3 g/day | BD | Long-term | Oral | ",
-   "Dexamethasone–cyclophosphamide pulse (DCP) | | Monthly | | IV | Indian regimen, still used where rituximab is not affordable"]),
-  ("Refractory",[
+  ("Pemphigus – first line: systemic steroid",[
+   "Tab. Prednisolone 20 mg | 1 mg/kg (0.5 mg/kg in mild) | OD | Till no new lesions ~2 weeks, then slow taper over months | Oral | PPI, calcium + vitamin D; check sugar, BP",
+   "Tab. Azathioprine 50 mg | 2–2.5 mg/kg (TPMT) | OD | Long-term | Oral | Steroid-sparing adjuvant from the start",
+   "Mupirocin / antiseptic dressings; oral care with chlorhexidine + triamcinolone in orabase | | | | Topical | "]),
+  ("Second line: rituximab or other adjuvants",[
+   "Inj. Rituximab | 1 g IV, repeat after 2 weeks (RA protocol) | | Maintenance 500 mg at 6 and 12 months if needed | IV | Moderate–severe, steroid-dependent or relapsing disease",
+   "Tab. Mycophenolate mofetil 500 mg | 2–3 g/day | BD | Long-term | Oral | If azathioprine not tolerated"]),
+  ("Third line / refractory",[
+   "Dexamethasone–cyclophosphamide pulse (DCP) | | Monthly | | IV | Indian regimen where rituximab is not affordable",
    "Inj. IVIG 2 g/kg / Immunoadsorption / repeat rituximab | | | | IV | "]),
   "Bullous pemphigoid: Ointment Clobetasol 0.05% whole body (≤40 g/day, taper over 4 months) is first line; oral prednisolone 0.5 mg/kg if extensive; doxycycline 200 mg/day + nicotinamide as steroid-sparing; methotrexate, dupilumab or omalizumab if refractory. Stop DPP-4 inhibitors (gliptins).")
 

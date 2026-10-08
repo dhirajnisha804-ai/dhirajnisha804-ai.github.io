@@ -53,7 +53,8 @@ L("Hirsutism","Hair & nail disorders",
    "Tab. Spironolactone 50 mg | 50–100 mg | BD | ≥6 months | Oral | Always with contraception",
    "Tab. Finasteride 2.5–5 mg | | OD | | Oral | Only with reliable contraception"]))
 
-L("Palmar / plantar hyperhidrosis","Acne & appendageal disorders",
+HOLD=1
+if False: L("Palmar / plantar hyperhidrosis","Acne & appendageal disorders",
   "Check for secondary causes if generalised, unilateral, night sweats or late onset (thyroid, diabetes, TB, lymphoma, drugs). Score with HDSS.",
   ("First line",[
    "Aluminium chloride hexahydrate 15–20% | Apply to dry skin | HS | Daily till dry, then 1–2×/week | Topical | Wash off in morning; irritation"]),
