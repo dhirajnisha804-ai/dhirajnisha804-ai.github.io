@@ -1,6 +1,6 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#14324d">
 <link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<meta name="drx-build" content="202610081426">
+<meta name="drx-build" content="202610081432">
 <script src="config.js"></script>
 <script>window.DRX_OCR=(b=>({lib:b+"tesseract.min.js",worker:b+"worker.min.js",core:b,lang:b}))(new URL("vendor/tesseract/",location.href).href);</script>
 <script src="vendor/firebase-app-compat.js"></script><script src="vendor/firebase-auth-compat.js"></script><script src="vendor/firebase-firestore-compat.js"></script>
@@ -2264,6 +2264,7 @@ function fillMore(){
     <button class="row" data-act="exportanon"><span class="main"><span class="t">Export anonymized data</span><span class="s">CSV of diagnoses, age, sex and treatment, without names or mobile numbers</span></span></button>
   </div></div>
   <div class="group"><h3>About</h3><div class="list">
+    <button class="row" data-act="tour"><span class="main"><span class="t">App tour</span><span class="s">See the welcome slides and where every feature is</span></span></button>
     <button class="row" data-act="about"><span class="main"><span class="t">About, updates & support</span><span class="s">Version, terms, privacy policy, contact</span></span>${apkOutdated()?`<span class="aside"><span class="pill rose">Update</span></span>`:""}</button>
   </div></div>
   <div class="group"><h3>Data</h3><div class="list">
