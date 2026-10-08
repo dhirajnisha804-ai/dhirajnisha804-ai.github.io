@@ -319,6 +319,7 @@ header.top #btnMoreTop{margin-left:-4px}
 .csub{margin:10px 0 2px;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--sc,var(--muted))}
 .csec h3+.csub{margin-top:2px}
 .ddxt{display:flex;flex-direction:column}
+.ddxl{width:100%;text-align:left;background:none;border:0;font:inherit;color:inherit;cursor:pointer;padding:inherit}.ddxl b{color:var(--accent,#1f5f8b);text-decoration:underline;text-underline-offset:2px}
 .ddxr{display:grid;grid-template-columns:minmax(0,40%) 1fr;gap:4px 12px;padding:7px 0;border-top:1px solid var(--line);font-size:14px}
 .ddxr:first-child{border-top:0}
 .ddxr span{color:var(--muted)}
@@ -555,7 +556,7 @@ nav.tabs .t1,nav.tabs .t2,nav.tabs .t3,nav.tabs .t4,nav.tabs .t5{--tc:var(--acce
 <div id="boot"><div class="blogo"><svg viewBox="0 0 100 100"><path d="M22 14h26c22 0 36 15 36 36S70 86 48 86H22z" fill="none" stroke="#fff" stroke-width="7"/><path d="M30 60c12-8 24 8 46-4M30 70c12-8 24 8 44-4" stroke="#3fb5ad" stroke-width="5" fill="none" stroke-linecap="round"/></svg></div><h1>Derma <b>Desk</b></h1><p>Dermatology Made Easy</p><div class="bbar"><i></i></div><p class="btip" id="bootTip"></p></div>
 <header class="top"><div class="in">
   <div class="brandmark"><h1>Derma <b>Desk</b></h1><small id="drline">Dermatology Made Easy</small></div>
-  <button class="iconbtn" id="btnNewTop" aria-label="New consultation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+  <button class="iconbtn" id="btnNewTop" aria-label="Search everything"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg></button>
   <button class="iconbtn" id="btnMoreTop" aria-label="More"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="12" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="19" cy="12" r="1.8"/></svg></button>
 </div></header>
 
@@ -727,14 +728,14 @@ document.addEventListener("keydown", e => { if(e.key!=="Escape") return; if(!$("
 /* ---------- navigation ---------- */
 function go(view, opts={}){ S.view=view; if(opts.pid) S.pid=opts.pid; if(opts.tab) S.ptTab=opts.tab; try{ localStorage.setItem("dermrx.view", view==="patient"?"patients":view); }catch{} render(true); window.scrollTo(0,0); secureForView(); }
 document.querySelectorAll("nav.tabs button").forEach(b => b.addEventListener("click", () => go(b.dataset.tab)));
-$("#btnNewTop").addEventListener("click", () => startConsultFlow());
+$("#btnNewTop").addEventListener("click", () => openSearch());
 $("#btnMoreTop").addEventListener("click", () => go("more"));
 try{ const v=localStorage.getItem("dermrx.view"); if(v && ["cases","patients","meds","templates","more","corner"].includes(v)) S.view=v; }catch{}
 
 function render(full){
   const tab = S.view==="patient" ? "patients" : S.view;
   document.querySelectorAll("nav.tabs button").forEach(b => b.setAttribute("aria-selected", b.dataset.tab===tab));
-  $("#drline").textContent = TAGLINE;
+  updateDrLine();
   const main=$("#main");
   if(full || S.view==="patient" || main.dataset.vw!==S.view || main.dataset.vp!==(S.pid||"")){
     main.dataset.vw=S.view; main.dataset.vp=S.pid||""; delete main.dataset.dx;
@@ -767,7 +768,7 @@ function caseDetailHTML(c){
   const secs=a=>(a||[]).map(x=>typeof x==="string"?{h:"",i:[x]}:x);
   const list=(k,label,ico,arr)=>{ const ss=secs(arr); if(!ss.length) return "";
     return `<section class="csec k-${k}"><h3><span class="kico">${ico}</span>${esc(label)}</h3>${ss.map(x=>`${x.h?`<h4 class="csub">${esc(x.h)}</h4>`:""}<ul class="clist">${x.i.map(t=>Array.isArray(t)?`<li>${esc(t[0])}${t[1]?`<span class="cwhy"><b>Why ask:</b> ${esc(t[1])}</span>`:""}</li>`:`<li>${esc(t)}</li>`).join("")}</ul>`).join("")}</section>`; };
-  const ddx=(c.ddx||[]).length?`<section class="csec k-ddx"><h3><span class="kico">${(c.inv||[]).length?5:4}</span>Differential diagnosis</h3><div class="ddxt">${c.ddx.map(d=>Array.isArray(d)?`<div class="ddxr"><b>${esc(d[0])}</b><span>${esc(d[1]||"")}</span></div>`:`<div class="ddxr"><b>${esc(d)}</b><span></span></div>`).join("")}</div></section>`:"";
+  const ddx=(c.ddx||[]).length?`<section class="csec k-ddx"><h3><span class="kico">${(c.inv||[]).length?5:4}</span>Differential diagnosis</h3><div class="ddxt">${c.ddx.map(d=>Array.isArray(d)?(()=>{ const m=caseForDdx(d[0]); return m&&m.n!==c.n?`<button type="button" class="ddxr ddxl" data-casego="${m.i}"><b>${esc(d[0])} ›</b><span>${esc(d[1]||"")}</span></button>`:`<div class="ddxr"><b>${esc(d[0])}</b><span>${esc(d[1]||"")}</span></div>`; })():(()=>{ const m=caseForDdx(d); return m&&m.n!==c.n?`<button type="button" class="ddxr ddxl" data-casego="${m.i}"><b>${esc(d)} ›</b><span></span></button>`:`<div class="ddxr"><b>${esc(d)}</b><span></span></div>`; })()).join("")}</div></section>`:"";
   const fmt=c.fmt?`<section class="csec k-fmt"><h3><span class="kico">✓</span>How to present the case</h3><blockquote class="cfmt">${esc(Array.isArray(c.fmt)?c.fmt.join(" "):c.fmt)}</blockquote></section>`:"";
   const pearls=(c.pearls||[]).length?`<section class="csec k-pearl"><h3><span class="kico">★</span>Viva pearls</h3><ul class="clist">${c.pearls.map(t=>`<li>${esc(t)}</li>`).join("")}</ul></section>`:"";
   return `<div class="case-head"><h2 class="case-title">${esc(c.n)}</h2>
@@ -1219,7 +1220,7 @@ function secureForView(){ secureFor(S.view==="templates" || (S.view==="meds" && 
 
 /* ---------- Drugs tab ---------- */
 const DRUG_TABS=[["ix","Interactions"],["brands","Brands & prices"],["dose","Dose by weight"],["safety","Drug safety"]];
-function drugsTop(){ return `<div class="viewhead"><div><h2>Drugs</h2></div>${S.drugTab==="brands"?`<button class="btn primary" data-act="newbrand">${ICON.plus}Add</button>`:""}</div>
+function drugsTop(){ return `<div class="viewhead"><div><h2>Drugs</h2></div>${S.drugTab==="brands"&&isAdmin()?`<button class="btn primary" data-act="newbrand">${ICON.plus}Add</button>`:""}</div>
   <div class="chips segs">${DRUG_TABS.map(([k,l])=>`<button class="chip" data-dtab="${k}" aria-pressed="${S.drugTab===k}">${esc(l)}</button>`).join("")}</div>`; }
 function drugsPane(){
   const t=S.drugTab;
@@ -1457,7 +1458,9 @@ function showProfileForm(inSheet){
     <div class="field" style="grid-column:1/-1"><label for="pfR">I am a</label><select id="pfR">${ROLES.map(([k,l])=>`<option value="${k}" ${k===P.role?"selected":""}>${l}</option>`).join("")}</select></div>
     <div class="field" style="grid-column:1/-1"><label for="pfC">Medical council</label><select id="pfC">${COUNCILS.map(c=>`<option ${c===P.council?"selected":""}>${c}</option>`).join("")}</select></div>
     <div class="field" style="grid-column:1/-1"><label for="pfReg">Registration number</label><input id="pfReg" value="${esc(P.regNo||"")}"></div>
-    <div class="field" style="grid-column:1/-1"><label for="pfI">College / hospital</label><input id="pfI" value="${esc(P.institute||"")}" placeholder="e.g. HBT Medical College, Mumbai"></div></div>
+    <div class="field" style="grid-column:1/-1"><label for="pfI">College / hospital</label><input id="pfI" value="${esc(P.institute||"")}" placeholder="e.g. HBT Medical College, Mumbai"></div>
+    <div class="field"><label for="pfQ">Qualification</label><input id="pfQ" value="${esc(P.qualification||"")}" placeholder="e.g. MBBS, MD (DVL)"></div>
+    <div class="field"><label for="pfA">Clinic address <small class="hint">optional</small></label><input id="pfA" value="${esc(P.clinicAddress||"")}" placeholder="Printed on prescriptions"></div></div>
     <div class="section"><div class="lbl" style="margin-bottom:6px"><span>Proof</span></div><p class="hint" id="pfHint" style="margin:0 0 8px">Resident: college ID card or residency joining letter. Practising dermatologist: MD / DNB / DVD degree certificate. Plus your registration certificate if you have it.</p>
       <div class="actions"><label class="btn sm filebtn"><input type="file" id="pfCam" accept="image/*" capture="environment">Camera</label><label class="btn sm filebtn"><input type="file" id="pfGal" accept="image/*">Gallery</label></div>
       <div id="pfPrev" class="hint" style="margin-top:8px">${P.proofAt?"✓ Proof already submitted — add a new one only if asked.":"No proof added yet."}</div></div>
@@ -1469,14 +1472,14 @@ function showProfileForm(inSheet){
   const take=async e=>{ const f=e.target.files[0]; e.target.value=""; if(!f) return; $("#pfPrev").textContent="Preparing…"; try{ proof=await shrinkProof(f); $("#pfPrev").innerHTML=`<img src="${proof}" alt="Proof" style="max-height:160px;border-radius:8px">`; }catch{ $("#pfPrev").textContent="Couldn’t read that photo — try again."; } };
   root.querySelector("#pfCam").addEventListener("change",take); root.querySelector("#pfGal").addEventListener("change",take);
   root.querySelector("#pfOut").onclick=()=>{ closeSheet(); ACC().signOut(); };
-  root.querySelector("#pfLater")?.addEventListener("click",async()=>{ const v=collectPf(); if(!v) return; try{ await D.saveProfile(v); closeAcct(); }catch(e){ acMsg(fbErr(e)); } });
-  function collectPf(){ const v={name:$("#pfN").value.trim(), dob:$("#pfD").value, sex:$("#pfS").value, phone:$("#pfPh").value.trim(), role:$("#pfR").value, council:$("#pfC").value, regNo:$("#pfReg").value.trim(), institute:$("#pfI").value.trim()}; if(!v.name||!v.regNo){ acMsg("Name and registration number are needed."); return null; } return v; }
+  root.querySelector("#pfLater")?.addEventListener("click",async()=>{ const v=collectPf(); if(!v) return; try{ await D.saveProfile(v); await fillSettingsFromProfile(v); closeAcct(); }catch(e){ acMsg(fbErr(e)); } });
+  function collectPf(){ const v={name:$("#pfN").value.trim(), dob:$("#pfD").value, sex:$("#pfS").value, phone:$("#pfPh").value.trim(), role:$("#pfR").value, council:$("#pfC").value, regNo:$("#pfReg").value.trim(), institute:$("#pfI").value.trim(), qualification:($("#pfQ")?.value||"").trim(), clinicAddress:($("#pfA")?.value||"").trim()}; if(!v.name||!v.regNo){ acMsg("Name and registration number are needed."); return null; } return v; }
   root.querySelector("#pfGo").onclick=async()=>{
     const v=collectPf(); if(!v) return;
     if(!proof && !P.proofAt){ acMsg("Add a photo of your proof."); return; }
     if(!$("#pfOk").checked){ acMsg("Please tick the consent box."); return; }
     acMsg("Submitting…");
-    try{ await D.saveProfile(v); if(proof) await D.uploadProof(proof, v.role); try{ localStorage.removeItem("drx.signup"); }catch{} acMsg(""); if(inSheet){ closeSheet(); toast("Submitted — we’ll review it soon"); } else closeAcct(); }
+    try{ await D.saveProfile(v); await fillSettingsFromProfile(v); if(proof) await D.uploadProof(proof, v.role); try{ localStorage.removeItem("drx.signup"); }catch{} acMsg(""); if(inSheet){ closeSheet(); toast("Submitted — we’ll review it soon"); } else closeAcct(); }
     catch(e){ acMsg(fbErr(e)); }
   };
 }
@@ -1525,7 +1528,7 @@ async function openApplicant(uid){
 
 /* spotlight walkthrough: highlights each control and explains it */
 const COACH=[
- ["#btnNewTop","New patient","Start a consultation: patient details, photos, diagnosis and prescription — or scan a printed prescription to fill it in.","cases"],
+ ["#btnNewTop","Search everything","One search for cases, treatment guides, drugs, products, patients and SOPs.","cases"],
  ['[data-act="scores"]',"Severity scores","PASI, SCORAD, EASI, DLQI, CDLQI, SALT, VASI, MASI, UAS7 and more — answer item by item and the score is calculated. Save it to a patient to track progress.","cases"],
  ['[data-act="drugsafety"]',"Drug safety","50 drugs A–Z with baseline tests, monitoring schedule, contraindications and pregnancy advice — isotretinoin, methotrexate, biologics, JAK inhibitors and more.","cases"],
  ['nav.tabs [data-tab="cases"]',"Cases","140 case formats: history to ask, examination, differentials, viva pearls and severity scores.","cases"],
@@ -1585,6 +1588,60 @@ function openLadder(t, {onPick}={}){
     const l=t.lines[+b.dataset.useline]; const tt={...t, rx:(l.rx||[]).map(r=>({...r}))};
     if(onPick){ onPick(tt); closeSheet2(); } else { closeSheet(); openPatientPage(null, null, {tpl:tt}); } });
 }
+
+/* ---------- universal search ---------- */
+function openSearch(){
+  openSheet("Search", `<label class="search" style="margin-top:0">${ICON.search}<input id="usQ" type="search" placeholder="Disease, drug, product, patient or SOP" autocomplete="off" aria-label="Search everything"></label><div id="usRes"><p class="hint">Type at least 2 letters.</p></div>`);
+  const q=$("#usQ"); setTimeout(()=>q.focus(),60);
+  const row=(attr,t,sub,tag)=>`<button class="row" ${attr}><span class="main"><span class="t">${esc(t)}</span>${sub?`<span class="s">${esc(sub)}</span>`:""}</span>${tag?`<span class="aside"><span class="pill">${esc(tag)}</span></span>`:""}</button>`;
+  const grp=(h,rows)=>rows.length?`<div class="group"><h3>${esc(h)}</h3><div class="list">${rows.slice(0,6).join("")}</div></div>`:"";
+  const draw=()=>{
+    const v=q.value.trim().toLowerCase(); const out=$("#usRes");
+    if(v.length<2){ out.innerHTML=`<p class="hint">Type at least 2 letters.</p>`; return; }
+    const has=(...xs)=>xs.join(" ").toLowerCase().includes(v);
+    const cases=CASES.filter(c=>has(c.n,c.g)).map(c=>row(`data-us="case" data-k="${c.i}"`,c.n,c.g,ladderFor(c.n)?"+ treatment":""));
+    const lad=S.templates.filter(t=>isLadder(t)&&!CASES.some(c=>c.n===t.caseName)&&has(t.name,t.group)).map(t=>row(`data-us="lad" data-k="${esc(t.id)}"`,t.name,t.group,"treatment"));
+    const drugs=hasFull()?dsList().filter(d=>has(d.name,d.cls||"",d.match||"")).map(d=>row(`data-us="ds" data-k="${esc(d.name)}"`,d.name,"Drug safety","")):[];
+    const tx=S.templates.filter(t=>isLadder(t)&&(t.lines||[]).some(l=>(l.rx||[]).some(r=>has(r.drug)))).map(t=>row(`data-us="lad" data-k="${esc(t.id)}"`,t.name,"Uses "+((t.lines||[]).flatMap(l=>l.rx||[]).find(r=>has(r.drug))?.drug||""),""));
+    const br=S.brands.filter(b=>has(b.product||"",b.composition||"",b.brand||"")).map(b=>row(`data-us="br" data-k="${esc(b.id)}"`,b.product,[b.composition,b.price?"₹"+b.price:""].filter(Boolean).join(" · "),""));
+    const pts=S.people.filter(x=>has(x.name||"",x.phone||"")).map(x=>row(`data-us="pt" data-k="${esc(x.id)}"`,x.name,[x.age,x.sex,x.phone].filter(Boolean).join(" · "),""));
+    const posts=(S.posts||[]).filter(x=>(!x.draft||isAdmin())&&has(x.title||"",x.section||"")).map(x=>row(`data-us="post" data-k="${esc(x.id)}"`,x.title,x.section||"Resident Corner",""));
+    const html=grp("Case formats",cases)+grp("Treatment guides",lad)+grp("Drug safety",drugs)+grp("Treatment guides using this drug",tx)+grp("Brands & prices",br)+grp("Patients",pts)+grp("Resident Corner",posts);
+    out.innerHTML=html||`<div class="empty">Nothing found.</div>`;
+  };
+  q.addEventListener("input",draw);
+  $("#usRes").addEventListener("click",e=>{ const b=e.target.closest("[data-us]"); if(!b) return; const k=b.dataset.k, ty=b.dataset.us;
+    S.backStack.push(()=>{ openSearch(); setTimeout(()=>{ const i=$("#usQ"); if(i){ i.value=q.value; i.dispatchEvent(new Event("input")); } },80); }); S._keepStack=true;
+    if(ty==="case") openCase(+k);
+    else if(ty==="lad") openLadder(S.templates.find(t=>t.id===k));
+    else if(ty==="ds"){ closeSheet(); openDrugSafety(k); }
+    else if(ty==="br") openBrandEditor(S.brands.find(x=>x.id===k));
+    else if(ty==="pt"){ closeSheet(); openPatientPage(k); }
+    else if(ty==="post") openPost(k);
+  });
+}
+/* doctor line under the logo: logged-in doctor's name, else the tagline */
+async function fillSettingsFromProfile(v){
+  try{ const st=S.settings||{}; const d={...st};
+    if(!st.doctor && v.name) d.doctor=v.name; if(!st.quals && v.qualification) d.quals=v.qualification; if(!st.regNo && v.regNo) d.regNo=v.regNo;
+    if(!st.address && v.clinicAddress) d.address=v.clinicAddress; if(!st.phone && v.phone) d.phone=v.phone;
+    if(JSON.stringify(d)!==JSON.stringify(st)){ await S.db?.collection("settings").doc("clinic").set(d); S.settings=d; }
+  }catch{} updateDrLine();
+}
+function drLineText(){
+  const s=S.settings||{}; const pr=window.DRX?.profile||ACC()?.profile||{};
+  const name=s.doctor||pr.name||""; const q=s.quals||pr.qualification||pr.degree||"";
+  return name ? [name.startsWith("Dr")?name:"Dr. "+name, q].filter(Boolean).join(", ") : TAGLINE;
+}
+function updateDrLine(){ const el=$("#drline"); if(el) el.textContent=drLineText(); }
+/* differential diagnosis → matching case format */
+const normCase = x => String(x||"").toLowerCase().replace(/\(.*?\)/g,"").replace(/[^a-z0-9 ]+/g," ").replace(/\s+/g," ").trim();
+function caseForDdx(d){
+  const n=normCase(d); if(n.length<4) return null;
+  let c=CASES.find(c=>normCase(c.n)===n); if(c) return c;
+  c=CASES.find(c=>normCase(c.n).split(" / ")[0]===n || c.n.split(/\s*\/\s*|\s+and\s+|\s*&\s*/).some(part=>normCase(part)===n)); if(c) return c;
+  return CASES.find(c=>{ const cn=normCase(c.n); return (n.length>=6 && cn.startsWith(n)) || (cn.length>=6 && n.startsWith(cn)); }) || null;
+}
 function openPatientPage(pid, vid, {tpl}={}){
   const p = pid ? personById(pid) : null;
   if(pid && !p){ toast("This patient record isn’t available"); return; }
@@ -1628,7 +1685,7 @@ function openPatientPage(pid, vid, {tpl}={}){
     <div class="section dsec" id="ppSafe"><div class="lbl"><span>Drug safety <small class="np">not printed</small></span><button class="btn sm" type="button" id="ppSafeAll">${ICON.pill} All drugs</button></div><div id="ppSafeBody"></div></div>
     ${others.length?`<div class="group"><h3>Other visits</h3><div class="list">${others.map(x=>`<button class="row" data-visit="${esc(x.id)}"><span class="main"><span class="t">${esc(x.dx||"Visit")}</span><span class="s">${esc(x.complaint||"")}</span></span><span class="aside">${esc(fmtDate(x.date))}</span></button>`).join("")}</div></div>`:""}
     ${isNew?"":`<div class="actions"><button class="btn danger" id="ppDel">Delete patient</button></div>`}
-  </div>`, `<button class="btn" id="ppPdf">Prescription PDF</button><button class="btn primary" id="ppSave">Save</button>`);
+  </div>`, `<button class="btn" id="ppPdf">⬇ PDF</button><button class="btn" id="ppSend">Send</button><button class="btn primary" id="ppSave">Save</button>`);
   S.sheetHook = () => { fresh.forEach(delAsset); fresh.clear(); S.scoreHook=null; S.safeHook=null; };
   const ctxP = () => ({pid:p?.id, pname:p?.name, dx:$("#ppDx")?.value.trim()||W.dx});
   const drawSugg = () => { $("#ppSugg").innerHTML = scoreSuggestHTML($("#ppDx").value.trim(), 'data-ctxp="1"').replace('class="ssug"','class="ssug" style="margin-top:0"'); };
@@ -1685,6 +1742,7 @@ function openPatientPage(pid, vid, {tpl}={}){
   };
   $("#ppSave").onclick = async () => { const r=await doSave(); if(r){ toast(isNew?"Patient saved":"Saved"); S.view="patients"; closeSheet(); } };
   if($("#ppPdf")) $("#ppPdf").onclick = async () => { const r=await doSave(); if(r) savePdf(r.vd, r.pd); };
+  if($("#ppSend")) $("#ppSend").onclick = async () => { const r=await doSave(); if(r) savePdf(r.vd, r.pd, {send:true}); };
   armDelete($("#ppDel"), async () => {
     for(const x of vs){ assetsOfVisit(x).forEach(delAsset); await remove("visits", x.id); }
     for(const x of scoresOf(p.id)) await remove("scores", x.id);
@@ -1824,8 +1882,8 @@ function loadPdfLib(){
   pdfLib.catch(()=>{ pdfLib=null; });
   return pdfLib;
 }
-async function savePdf(v,p){
-  const dl=S.downloads; if(!dl){ toast("Downloads aren’t available in this view"); return; }
+async function savePdf(v,p,{send=false}={}){
+  const dl=S.downloads; if(!dl && !send){ toast("Downloads aren’t available in this view"); return; }
   const name=`Rx-${(p?.name||"patient").replace(/[^\w]+/g,"-")}-${v.date}`;
   toast("Preparing PDF…");
   try{
@@ -1834,6 +1892,12 @@ async function savePdf(v,p){
     await Promise.all([...box.querySelectorAll("img")].map(i=>i.complete?0:new Promise(r=>{i.onload=i.onerror=r;})));
     const blob=await lib().set({margin:8, image:{type:"jpeg",quality:0.95}, html2canvas:{scale:2, useCORS:true, backgroundColor:"#ffffff"}, jsPDF:{unit:"mm",format:"a4",orientation:"portrait"}}).from(box.firstElementChild).outputPdf("blob");
     box.innerHTML="";
+    if(send){
+      const file=new File([blob], name+".pdf", {type:"application/pdf"});
+      if(navigator.canShare?.({files:[file]})){ const doShare=()=>navigator.share({files:[file], title:"Prescription", text:`Prescription for ${p?.name||"patient"}`});
+        try{ await doShare(); }catch(e){ if(e?.name==="NotAllowedError"){ openSheet2("Prescription ready", `<p>The PDF is ready.</p><div class="actions"><button class="btn primary" id="shNow">Share PDF</button></div>`); $("#shNow").onclick=async()=>{ try{ await doShare(); }catch{} closeSheet2(); }; } else if(e?.name!=="AbortError") toast("Couldn’t open sharing"); } return; }
+      if(!window.DermaAndroid){ const mob=String(p?.mobile||p?.phone||"").replace(/\D/g,""); if(dl) await dl.save({filename:name+".pdf", data:blob}); toast("PDF downloaded — attach it in WhatsApp"); if(mob) window.open(`https://wa.me/${mob.length===10?"91"+mob:mob}?text=${encodeURIComponent(rxText(v,p))}`,"_blank","noopener"); return; }
+    }
     const r=await dl.save({filename:name+".pdf", data:blob}); toast(r.status==="saved"?"PDF saved. Open it to print.":"PDF sent");
   }catch(e){
     if(e?.code==="declined") return;
@@ -1858,11 +1922,12 @@ function openVisitView(v){
       ${v.tags?`<div><b>Tags:</b> ${esc(v.tags)}</div>`:""}
       ${(v.photos||[]).length?`<div class="photos" style="margin-top:4px">${v.photos.map(x=>`<div class="ph"><img src="/_blob/${esc(x.id)}" alt="${esc(x.caption||x.tag||"Clinical photo")}" data-lb="${esc(x.id)}" data-cap="${esc([x.tag,x.caption].filter(Boolean).join(" · "))}" loading="lazy"><div class="cap">${esc([x.tag,x.caption].filter(Boolean).join(" · "))}</div></div>`).join("")}</div>`:""}
     </div>
-    <p class="hint">PDF opens on your phone or computer, where you can print it. Copy pastes the prescription into WhatsApp.</p>`,
-    `<button class="btn" id="vEdit">Edit</button><button class="btn" id="vStar">${v.starred?"★ Case":"☆ Case"}</button><button class="btn" id="vCopy">Copy for WhatsApp</button><button class="btn primary" id="vPdf">PDF</button>`);
+    <p class="hint">Download saves the PDF to print. Send shares the PDF straight to WhatsApp, email or any app.</p>`,
+    `<button class="btn" id="vEdit">Edit</button><button class="btn" id="vStar">${v.starred?"★ Case":"☆ Case"}</button><button class="btn" id="vCopy">Copy text</button><button class="btn" id="vPdf">⬇ Download</button><button class="btn primary" id="vSend">Send</button>`);
   $("#vEdit").onclick = () => openPatientPage(v.patientId, v.id);
   $("#vCopy").onclick = () => copyText(rxText(v,p));
   $("#vPdf").onclick = () => savePdf(v,p);
+  $("#vSend").onclick = () => savePdf(v,p,{send:true});
   $("#vStar").onclick = async () => { v.starred=!v.starred; if(await patch("visits", v.id, {starred:v.starred})){ $("#vStar").textContent=v.starred?"★ Case":"☆ Case"; toast(v.starred?"Marked as interesting case":"Removed from cases"); } };
   if(S.downloads) loadPdfLib().catch(()=>{});
 }
@@ -1921,7 +1986,7 @@ function openBrandEditor(b){
     <p class="hint">${b.priceSource?`Price source: ${esc(b.priceSource)}. `:""}Prices change often; confirm with the MR or pharmacy.</p>
     ${isNew?"":`<div class="actions"><button class="btn danger" id="bDel">Delete</button></div>`}</div>`,
     `<button class="btn primary" id="bSave">Save</button>`);
-  if(!isNew && window.DRX?.lockShared?.(b.id)){ ["bProduct","bComp","bBrand","bCompany","bCat","bPrice","bPack"].forEach(i=>{ const el=$("#"+i); if(el){ el.disabled=true; } }); $("#bDel")?.closest(".actions")?.remove(); $("#bNotes").insertAdjacentHTML("afterend",`<p class="hint">Product details and price are kept up to date by the list owner. Your MR contact, notes and ★ stay on this phone only.</p>`); }
+  if(!isNew && (!isAdmin() || window.DRX?.lockShared?.(b.id))){ ["bProduct","bComp","bBrand","bCompany","bCat","bPrice","bPack"].forEach(i=>{ const el=$("#"+i); if(el){ el.disabled=true; } }); $("#bDel")?.closest(".actions")?.remove(); $("#bNotes").insertAdjacentHTML("afterend",`<p class="hint">Product details and price are kept up to date by the list owner. Your MR contact, notes and ★ stay on this phone only.</p>`); }
   $("#bSave").onclick = async () => {
     const d={...b, composition:$("#bComp").value.trim(), brand:$("#bBrand").value.trim(), company:$("#bCompany").value.trim(), product:$("#bProduct").value.trim(), category:$("#bCat").value, price:$("#bPrice").value===""?"":Number($("#bPrice").value), pack:$("#bPack").value.trim(), mrName:$("#bMrName").value.trim(), mrPhone:$("#bMrPhone").value.trim(), notes:$("#bNotes").value.trim(), preferred:$("#bPref").checked, updatedAt:Date.now()};
     delete d.id; if(!d.product){ toast("Add the product name"); return; }
@@ -1932,7 +1997,7 @@ function openBrandEditor(b){
 
 /* ---------- TEMPLATES ---------- */
 function tplShell(){
-  return `${banner()}${hasFull()?"":`<div class="lockban" data-act="acct"><b>🔒 Unlock all templates</b><span>${roleNow()==="pending"?"Your verification is under review.":"Verify your registration as a dermatology resident or dermatologist."}</span></div>`}<div class="viewhead"><div><h2>Prescription templates</h2><p id="tplCount"></p></div><button class="btn primary" data-act="newtpl">${ICON.plus}Add template</button></div>
+  return `${banner()}${hasFull()?"":`<div class="lockban" data-act="acct"><b>🔒 Unlock all templates</b><span>${roleNow()==="pending"?"Your verification is under review.":"Verify your registration as a dermatology resident or dermatologist."}</span></div>`}<div class="viewhead"><div><h2>Prescription templates</h2><p id="tplCount"></p></div>${isAdmin()?`<button class="btn primary" data-act="newtpl">${ICON.plus}Add template</button>`:""}</div>
   <label class="search">${ICON.search}<input id="qTpl" type="search" placeholder="Search diseases or drugs" aria-label="Search templates" autocomplete="off"></label><div id="tplList"></div>`;
 }
 function fillTemplates(){
@@ -1949,7 +2014,7 @@ function fillTemplates(){
 }
 function oldTplGroups(arr,q){
   const by={}; arr.forEach(t=>(by[t.group||"Other"] ||= []).push(t));
-  return Object.keys(by).sort().map(g=>`<details class="sec grp ${hueOf(g)}" style="margin-top:10px" ${q?"open":""}><summary><span class="gdot"></span>${esc(g)}<span class="sum">${by[g].length}</span></summary><div class="in" style="padding:0"><div class="list" style="border:0;border-top:1px solid var(--line);border-radius:0 0 var(--r) var(--r)">${by[g].sort((a,b)=>a.name.localeCompare(b.name)).map(t=>`<button class="row" data-tpl="${esc(t.id)}"><span class="main"><span class="t">${esc(t.name)}${t.reviewed?"":` <span class="rvbadge">Needs review</span>`}</span><span class="s">${esc((t.rx||[]).map(r=>r.drug).filter(Boolean).join(" · "))}</span></span><span class="aside">${(t.rx||[]).length} Rx</span></button>`).join("")}<button class="row addrow" data-newtplg="${esc(g)}"><span class="main"><span class="t">+ Add template in ${esc(g)}</span></span></button></div></div></details>`).join("");;
+  return Object.keys(by).sort().map(g=>`<details class="sec grp ${hueOf(g)}" style="margin-top:10px" ${q?"open":""}><summary><span class="gdot"></span>${esc(g)}<span class="sum">${by[g].length}</span></summary><div class="in" style="padding:0"><div class="list" style="border:0;border-top:1px solid var(--line);border-radius:0 0 var(--r) var(--r)">${by[g].sort((a,b)=>a.name.localeCompare(b.name)).map(t=>`<button class="row" data-tpl="${esc(t.id)}"><span class="main"><span class="t">${esc(t.name)}${t.reviewed?"":` <span class="rvbadge">Needs review</span>`}</span><span class="s">${esc((t.rx||[]).map(r=>r.drug).filter(Boolean).join(" · "))}</span></span><span class="aside">${(t.rx||[]).length} Rx</span></button>`).join("")}${isAdmin()?`<button class="row addrow" data-newtplg="${esc(g)}"><span class="main"><span class="t">+ Add template in ${esc(g)}</span></span></button>`:""}</div></div></details>`).join("");;
 }
 function openTemplateEditor(t, {group}={}){
   const isNew=!t; const T = t ? normTpl(clone(t)) : {name:"", group:group||"", dx:"", rx:[]};
@@ -1987,6 +2052,8 @@ function fillMore(){
   ${ACC()?`<div class="group"><h3>Account</h3><div class="list">
     <button class="row" data-act="acct"><span class="main"><span class="t">My account</span><span class="s">${esc(ACC().user?.email||"")} · ${roleNow()==="admin"?"Admin":roleNow()==="verified"?"Verified member":roleNow()==="pending"?"Verification under review":roleNow()==="rejected"?"Verification not approved":"Not verified"}</span></span></button>
     ${roleNow()==="admin"?`<button class="row" data-act="approvals"><span class="main"><span class="t">Approvals</span><span class="s">Doctors waiting for verification</span></span><span class="aside">${pendingUsers().length?`<span class="pill rose">${pendingUsers().length}</span>`:""}</span></button>`:""}
+    ${ACC().user?`    <button class="row" data-act="logout"><span class="main"><span class="t">Log out</span><span class="s">${esc(ACC().user.email||"")}</span></span></button>
+    <button class="row" data-act="delacct"><span class="main"><span class="t" style="color:var(--danger,#b3261e)">Delete account</span><span class="s">Removes your account and verification details</span></span></button>`:""}
   </div></div>`:""}
   <div class="group"><h3>Settings</h3><div class="list">
     <button class="row" data-act="settings"><span class="main"><span class="t">Doctor profile &amp; clinic details</span><span class="s">${esc([S.settings.doctor, S.settings.clinic].filter(Boolean).join(" · ")||"Letterhead for prescriptions")}</span></span></button>
@@ -2903,7 +2970,7 @@ function dsDetailHTML(d){
   return `${DS_SECS.map(([k,l])=>(d[k]||[]).length?`<div class="dsx dsx-${k}"><h4>${l}</h4><ul>${d[k].map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`:"").join("")}
     <div class="dsx dsx-pl"><h4>Pregnancy &amp; lactation</h4><ul><li><b>Pregnancy:</b> ${esc(d.preg||"—")}</li><li><b>Lactation:</b> ${esc(d.lact||"—")}</li></ul></div>
     ${d.dose?`<div class="dsx dsx-dose"><h4>Usual dose</h4><p>${esc(d.dose)}</p></div>`:""}
-    <div class="dsverify">${d.edited?`<span class="pill rose">Edited by you</span>`:""}${reviewBadge("ds:"+d.k)}${isReviewed("ds:"+d.k)?"":` <button type="button" class="btn sm" data-rvk="ds:${esc(d.k)}">✓ Reviewed</button>`} <button type="button" class="btn sm" data-dsedit="${esc(d.k)}">Edit</button></div>`;
+    <div class="dsverify">${d.edited?`<span class="pill rose">Edited by you</span>`:""}${reviewBadge("ds:"+d.k)}${isAdmin()?`${isReviewed("ds:"+d.k)?"":` <button type="button" class="btn sm" data-rvk="ds:${esc(d.k)}">✓ Reviewed</button>`} <button type="button" class="btn sm" data-dsedit="${esc(d.k)}">Edit</button>`:""}</div>`;
 }
 function dsCardHTML(d, alerts, sub){
   const red=alerts.some(x=>x.lv==="danger"); const nWarn=alerts.filter(x=>x.lv!=="info").length;
@@ -3018,12 +3085,14 @@ document.addEventListener("click", async e => {
   else if(a==="dsadd") openDsEditor(null, ()=>render(true));
   else if(a==="tour") { closeSheet(); showTour(true); }
   else if(a==="reviewq") openReviewQueue();
+  else if(a==="logout"){ if(inSheet) closeSheet(); ACC()?.signOut(); toast("Logged out"); }
+  else if(a==="delacct"){ openSheet("Delete account", `<div class="stack"><p>This permanently deletes your Derma Desk account and your verification details. Patient records saved on this phone are not deleted.</p><div class="actions"><button class="btn danger" id="daDel">Delete my account</button></div></div>`); armDelete($("#daDel"), async()=>{ try{ await ACC().deleteAccount(); closeSheet(); toast("Account deleted"); }catch(e){ toast(fbErr(e)); } }); }
   else if(a==="wtcalc") { if(hasFull()) openWtCalc(null, "", true); else toast("Dose by weight is for verified members"); }
   else if(a==="exportanon") exportAnon();
 });
 /* ---------- data ---------- */
 bootTips();
-if(ACC()){ ACC().onAuth(()=>{ if(ACC().authReady) gate(); }); ACC().onRole(()=>{ gate(); watchUsersIfAdmin(); }); if(ACC().authReady){ gate(); watchUsersIfAdmin(); } }
+if(ACC()){ ACC().onAuth(()=>{ if(ACC().authReady) gate(); }); ACC().onRole(()=>{ gate(); watchUsersIfAdmin(); updateDrLine(); }); if(ACC().authReady){ gate(); watchUsersIfAdmin(); } }
 render(true);
 setTimeout(()=>{ hideBoot(); setTimeout(()=>showTour(false),400); }, 1200);
 (async () => { try{ S.downloads = await window.claude?.use?.("downloads"); }catch{ S.downloads=null; } })();
@@ -3037,7 +3106,7 @@ setTimeout(()=>{ hideBoot(); setTimeout(()=>showTour(false),400); }, 1200);
   sub("people","people"); sub("visits","visits"); sub("templates","templates"); sub("brands","brands"); sub("posts","posts"); loadReviewed();
   db.collection("drugsafety").onSnapshot(snap=>{ const o={}; snap.docs.forEach(d=>{ o[d.id]={...d.data(), k:d.id}; }); S.dsOver=o; S.safeHook?.(); }, ()=>{});
   db.collection("scores").onSnapshot(snap=>{ S.scores=snap.docs.map(d=>({id:d.id, ...d.data()})); S.loaded.scores=true; S.scoreHook?.(); }, ()=>{});
-  db.doc("settings/clinic").onSnapshot(d=>{ S.settings = d.exists?{...d.data()}:{}; soon(); }, ()=>{});
+  db.doc("settings/clinic").onSnapshot(d=>{ S.settings = d.exists?{...d.data()}:{}; updateDrLine(); soon(); }, ()=>{});
 })();
 })();
 </script>
