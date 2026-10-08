@@ -1,0 +1,132 @@
+{
+ "kind": "ladder",
+ "name": "Hailey–Hailey disease",
+ "dx": "Hailey–Hailey disease",
+ "caseName": "Hailey–Hailey disease",
+ "group": "Genodermatoses",
+ "general": "Reduce sweating and friction (weight loss, cotton, keep folds dry); treat infection (bacterial, candida, HSV).",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Flares",
+   "rx": [
+    {
+     "drug": "Cream Mometasone 0.1% + Clotrimazole / Fusidic acid",
+     "dose": "",
+     "freq": "BD",
+     "dur": "2 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cap. Doxycycline 100 mg",
+     "dose": "1 cap",
+     "freq": "BD",
+     "dur": "4 weeks",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Chronic / recurrent",
+   "rx": [
+    {
+     "drug": "Ointment Tacrolimus 0.1%",
+     "dose": "",
+     "freq": "BD",
+     "dur": "",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Botulinum toxin A to folds (reduces sweating)",
+     "dose": "",
+     "freq": "Every 4–6 months",
+     "dur": "",
+     "route": "Intradermal",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Refractory",
+   "rx": [
+    {
+     "drug": "CO₂ / Er:YAG laser, dermabrasion / Tab. Naltrexone 4.5 mg (low dose)",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "",
+     "instr": "Low-dose naltrexone: case series",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Mometasone 0.1% + Clotrimazole / Fusidic acid",
+   "dose": "",
+   "freq": "BD",
+   "dur": "2 weeks",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cap. Doxycycline 100 mg",
+   "dose": "1 cap",
+   "freq": "BD",
+   "dur": "4 weeks",
+   "route": "Oral",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Reduce sweating and friction (weight loss, cotton, keep folds dry); treat infection (bacterial, candida, HSV).",
+ "adviceText": "Reduce sweating and friction (weight loss, cotton, keep folds dry); treat infection (bacterial, candida, HSV).",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467909
+}

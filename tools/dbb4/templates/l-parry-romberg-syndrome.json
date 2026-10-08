@@ -1,0 +1,73 @@
+{
+ "kind": "ladder",
+ "name": "Parry–Romberg syndrome",
+ "dx": "Parry–Romberg syndrome",
+ "caseName": "Parry–Romberg syndrome",
+ "group": "Connective tissue diseases",
+ "general": "Progressive hemifacial atrophy; check eye and brain (MRI, seizures). Treat while active; reconstruct once stable 1–2 years.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Active disease",
+   "rx": [
+    {
+     "drug": "Tab. Methotrexate 15 mg/m² (child) / 15–25 mg",
+     "dose": "",
+     "freq": "Weekly",
+     "dur": "1–2 years",
+     "route": "Oral",
+     "instr": "With oral or pulse steroid initially (as for linear morphea)",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Stable – reconstruction",
+   "rx": [
+    {
+     "drug": "Autologous fat grafting / dermal fillers (hyaluronic acid) / flaps",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "After 1–2 years without progression",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Tab. Methotrexate 15 mg/m² (child) / 15–25 mg",
+   "dose": "",
+   "freq": "Weekly",
+   "dur": "1–2 years",
+   "route": "Oral",
+   "instr": "With oral or pulse steroid initially (as for linear morphea)",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Progressive hemifacial atrophy; check eye and brain (MRI, seizures). Treat while active; reconstruct once stable 1–2 years.",
+ "adviceText": "Progressive hemifacial atrophy; check eye and brain (MRI, seizures). Treat while active; reconstruct once stable 1–2 years.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467901
+}

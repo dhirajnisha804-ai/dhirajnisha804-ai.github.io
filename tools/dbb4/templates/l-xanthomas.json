@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Xanthomas",
+ "dx": "Xanthomas",
+ "caseName": "Xanthomas",
+ "group": "Nutritional & metabolic",
+ "general": "Fasting lipid profile, sugar, thyroid, liver and renal function (secondary causes). Treat the lipid disorder with physician; diet, exercise, weight loss.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Treat the lipid disorder",
+   "rx": [
+    {
+     "drug": "Tab. Atorvastatin 10–40 mg / Rosuvastatin 5–20 mg",
+     "dose": "",
+     "freq": "HS",
+     "dur": "Long-term",
+     "route": "Oral",
+     "instr": "Hypercholesterolaemia",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Fenofibrate 145–160 mg",
+     "dose": "",
+     "freq": "OD",
+     "dur": "",
+     "route": "Oral",
+     "instr": "Hypertriglyceridaemia (eruptive xanthomas)",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Persistent lesions (xanthelasma, tuberous)",
+   "rx": [
+    {
+     "drug": "TCA 35–50% / Q-switched or CO₂ / Er:YAG laser / surgical excision",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "Recurrence common",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Tab. Atorvastatin 10–40 mg / Rosuvastatin 5–20 mg",
+   "dose": "",
+   "freq": "HS",
+   "dur": "Long-term",
+   "route": "Oral",
+   "instr": "Hypercholesterolaemia",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Fenofibrate 145–160 mg",
+   "dose": "",
+   "freq": "OD",
+   "dur": "",
+   "route": "Oral",
+   "instr": "Hypertriglyceridaemia (eruptive xanthomas)",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Fasting lipid profile, sugar, thyroid, liver and renal function (secondary causes). Treat the lipid disorder with physician; diet, exercise, weight loss.",
+ "adviceText": "Fasting lipid profile, sugar, thyroid, liver and renal function (secondary causes). Treat the lipid disorder with physician; diet, exercise, weight loss.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467904
+}

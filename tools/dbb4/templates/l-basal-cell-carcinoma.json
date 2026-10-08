@@ -1,0 +1,145 @@
+{
+ "kind": "ladder",
+ "name": "Basal cell carcinoma",
+ "dx": "Basal cell carcinoma",
+ "caseName": "Basal cell carcinoma",
+ "group": "Premalignant & malignant tumours",
+ "general": "Biopsy; classify low vs high risk (site H-zone, size, aggressive subtype, recurrence). Sun protection, full-skin check yearly. Tumour board for advanced cases.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Standard",
+   "rx": [
+    {
+     "drug": "Surgical excision with 4 mm margins",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "Low-risk BCC",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Mohs micrographic surgery",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "High-risk / H-zone / recurrent",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Superficial / low-risk, or not fit for surgery",
+   "rx": [
+    {
+     "drug": "Cream Imiquimod 5%",
+     "dose": "Thin layer",
+     "freq": "5×/week",
+     "dur": "6 weeks",
+     "route": "Topical",
+     "instr": "Superficial BCC",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream 5-FU 5% / PDT / curettage-cautery / cryosurgery / radiotherapy",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Locally advanced / metastatic",
+   "rx": [
+    {
+     "drug": "Cap. Vismodegib 150 mg / Sonidegib 200 mg",
+     "dose": "1",
+     "freq": "OD",
+     "dur": "",
+     "route": "Oral",
+     "instr": "Hedgehog inhibitor; contraception (see Drug safety)",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Inj. Cemiplimab",
+     "dose": "per label",
+     "freq": "",
+     "dur": "",
+     "route": "IV",
+     "instr": "After hedgehog-inhibitor failure",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Surgical excision with 4 mm margins",
+   "dose": "",
+   "freq": "",
+   "dur": "",
+   "route": "Procedure",
+   "instr": "Low-risk BCC",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Mohs micrographic surgery",
+   "dose": "",
+   "freq": "",
+   "dur": "",
+   "route": "Procedure",
+   "instr": "High-risk / H-zone / recurrent",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Biopsy; classify low vs high risk (site H-zone, size, aggressive subtype, recurrence). Sun protection, full-skin check yearly. Tumour board for advanced cases.",
+ "adviceText": "Biopsy; classify low vs high risk (site H-zone, size, aggressive subtype, recurrence). Sun protection, full-skin check yearly. Tumour board for advanced cases.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467906
+}

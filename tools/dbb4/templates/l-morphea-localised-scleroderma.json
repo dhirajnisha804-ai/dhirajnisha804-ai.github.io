@@ -1,0 +1,145 @@
+{
+ "kind": "ladder",
+ "name": "Morphea (localised scleroderma)",
+ "dx": "Morphea (localised scleroderma)",
+ "caseName": "Morphea (localised scleroderma)",
+ "group": "Connective tissue diseases",
+ "general": "Assess activity (erythema, new lesions) vs damage. Linear morphea on face/limb in children needs early systemic treatment (growth, joint, eye, brain involvement). Physiotherapy for contractures.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Limited plaque, active",
+   "rx": [
+    {
+     "drug": "Ointment Clobetasol 0.05% / Tacrolimus 0.1%",
+     "dose": "Thin layer",
+     "freq": "OD–BD",
+     "dur": "3 months",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Calcipotriol 0.005% ointment",
+     "dose": "",
+     "freq": "BD",
+     "dur": "3 months",
+     "route": "Topical",
+     "instr": "Alone or with steroid",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Generalised plaque",
+   "rx": [
+    {
+     "drug": "UVA1 / PUVA / NB-UVB",
+     "dose": "",
+     "freq": "3–4×/week",
+     "dur": "2–3 months",
+     "route": "Phototherapy",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Methotrexate 15 mg/m² (child) or 15–25 mg (adult)",
+     "dose": "",
+     "freq": "Weekly",
+     "dur": "1–2 years",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Linear / deep / pansclerotic",
+   "rx": [
+    {
+     "drug": "Tab. Methotrexate weekly + Tab. Prednisolone 0.5–1 mg/kg (or IV methylprednisolone pulses)",
+     "dose": "",
+     "freq": "",
+     "dur": "Steroid 3 months",
+     "route": "Oral/IV",
+     "instr": "Standard combination",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Mycophenolate mofetil",
+     "dose": "1–2 g/day",
+     "freq": "BD",
+     "dur": "",
+     "route": "Oral",
+     "instr": "If methotrexate fails",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Ointment Clobetasol 0.05% / Tacrolimus 0.1%",
+   "dose": "Thin layer",
+   "freq": "OD–BD",
+   "dur": "3 months",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Calcipotriol 0.005% ointment",
+   "dose": "",
+   "freq": "BD",
+   "dur": "3 months",
+   "route": "Topical",
+   "instr": "Alone or with steroid",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Assess activity (erythema, new lesions) vs damage. Linear morphea on face/limb in children needs early systemic treatment (growth, joint, eye, brain involvement). Physiotherapy for contractures.",
+ "adviceText": "Assess activity (erythema, new lesions) vs damage. Linear morphea on face/limb in children needs early systemic treatment (growth, joint, eye, brain involvement). Physiotherapy for contractures.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467900
+}

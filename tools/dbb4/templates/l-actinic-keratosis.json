@@ -1,0 +1,145 @@
+{
+ "kind": "ladder",
+ "name": "Actinic keratosis",
+ "dx": "Actinic keratosis",
+ "caseName": "Actinic keratosis",
+ "group": "Premalignant & malignant tumours",
+ "general": "Strict sun protection; examine whole skin; biopsy thick, tender or rapidly growing lesions (SCC). Immunosuppressed: closer follow-up.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Single / few lesions",
+   "rx": [
+    {
+     "drug": "Cryotherapy",
+     "dose": "1 freeze–thaw",
+     "freq": "Once",
+     "dur": "Repeat in 4–6 weeks",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Curettage and cautery",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "Hypertrophic",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Field (many lesions)",
+   "rx": [
+    {
+     "drug": "Cream 5-fluorouracil 5%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "3–4 weeks",
+     "route": "Topical",
+     "instr": "Expect inflammation",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Imiquimod 5% / 3.75%",
+     "dose": "Thin layer",
+     "freq": "2–3×/week",
+     "dur": "4–16 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Refractory / extensive",
+   "rx": [
+    {
+     "drug": "Photodynamic therapy (ALA / MAL)",
+     "dose": "",
+     "freq": "",
+     "dur": "1–2 sessions",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Nicotinamide 500 mg",
+     "dose": "1 tab",
+     "freq": "BD",
+     "dur": "Long-term",
+     "route": "Oral",
+     "instr": "Reduces new keratinocyte cancers in high-risk",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cryotherapy",
+   "dose": "1 freeze–thaw",
+   "freq": "Once",
+   "dur": "Repeat in 4–6 weeks",
+   "route": "Procedure",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Curettage and cautery",
+   "dose": "",
+   "freq": "",
+   "dur": "",
+   "route": "Procedure",
+   "instr": "Hypertrophic",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Strict sun protection; examine whole skin; biopsy thick, tender or rapidly growing lesions (SCC). Immunosuppressed: closer follow-up.",
+ "adviceText": "Strict sun protection; examine whole skin; biopsy thick, tender or rapidly growing lesions (SCC). Immunosuppressed: closer follow-up.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467906
+}

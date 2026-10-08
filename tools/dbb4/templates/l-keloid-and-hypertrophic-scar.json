@@ -1,0 +1,145 @@
+{
+ "kind": "ladder",
+ "name": "Keloid and hypertrophic scar",
+ "dx": "Keloid and hypertrophic scar",
+ "caseName": "Keloid and hypertrophic scar",
+ "group": "Benign tumours & cysts",
+ "general": "Prevent: avoid elective surgery/piercing in keloid-prone patients, silicone after wounds. Combination treatment works best; recurrence common.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Inj. Triamcinolone 10–40 mg/mL",
+     "dose": "0.1–0.2 mL per cm",
+     "freq": "Every 3–4 weeks",
+     "dur": "4–6 sessions",
+     "route": "Intralesional",
+     "instr": "Atrophy, hypopigmentation, telangiectasia",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Silicone gel / sheet",
+     "dose": "",
+     "freq": "12–24 h a day",
+     "dur": "3–6 months",
+     "route": "Topical",
+     "instr": "Pressure garments for burn scars",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Add-on",
+   "rx": [
+    {
+     "drug": "Inj. 5-fluorouracil 50 mg/mL (+ triamcinolone)",
+     "dose": "",
+     "freq": "Weekly–monthly",
+     "dur": "",
+     "route": "Intralesional",
+     "instr": "Not in pregnancy",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cryotherapy (intralesional / contact) + steroid",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Refractory / large",
+   "rx": [
+    {
+     "drug": "Excision + immediate post-op radiotherapy or intralesional steroid",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "Never excise alone",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Pulsed dye / fractional laser, botulinum toxin, verapamil IL",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Inj. Triamcinolone 10–40 mg/mL",
+   "dose": "0.1–0.2 mL per cm",
+   "freq": "Every 3–4 weeks",
+   "dur": "4–6 sessions",
+   "route": "Intralesional",
+   "instr": "Atrophy, hypopigmentation, telangiectasia",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Silicone gel / sheet",
+   "dose": "",
+   "freq": "12–24 h a day",
+   "dur": "3–6 months",
+   "route": "Topical",
+   "instr": "Pressure garments for burn scars",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Prevent: avoid elective surgery/piercing in keloid-prone patients, silicone after wounds. Combination treatment works best; recurrence common.",
+ "adviceText": "Prevent: avoid elective surgery/piercing in keloid-prone patients, silicone after wounds. Combination treatment works best; recurrence common.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467907
+}

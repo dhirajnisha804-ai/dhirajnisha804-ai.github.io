@@ -1,0 +1,132 @@
+{
+ "kind": "ladder",
+ "name": "Squamous cell carcinoma",
+ "dx": "Squamous cell carcinoma",
+ "caseName": "Squamous cell carcinoma",
+ "group": "Premalignant & malignant tumours",
+ "general": "Biopsy; stage; examine regional lymph nodes; ultrasound/CT if high risk. In India also consider arsenic, chronic scars/ulcers (Marjolin), HPV. Oncology/surgery co-management.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Standard",
+   "rx": [
+    {
+     "drug": "Surgical excision with 4–6 mm margins (≥6 mm high-risk)",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "Mohs for high-risk sites",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "SCC in situ (Bowen's): 5-FU / imiquimod / PDT / cryotherapy / curettage",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Not fit for surgery / adjuvant",
+   "rx": [
+    {
+     "drug": "Radiotherapy",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "",
+     "instr": "Perineural invasion, positive margins, elderly",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Advanced / metastatic",
+   "rx": [
+    {
+     "drug": "Inj. Cemiplimab / Pembrolizumab",
+     "dose": "per label",
+     "freq": "",
+     "dur": "",
+     "route": "IV",
+     "instr": "Immunotherapy first line",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cetuximab / platinum chemotherapy",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "IV",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Surgical excision with 4–6 mm margins (≥6 mm high-risk)",
+   "dose": "",
+   "freq": "",
+   "dur": "",
+   "route": "Procedure",
+   "instr": "Mohs for high-risk sites",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "SCC in situ (Bowen's): 5-FU / imiquimod / PDT / cryotherapy / curettage",
+   "dose": "",
+   "freq": "",
+   "dur": "",
+   "route": "",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Biopsy; stage; examine regional lymph nodes; ultrasound/CT if high risk. In India also consider arsenic, chronic scars/ulcers (Marjolin), HPV. Oncology/surgery co-management.",
+ "adviceText": "Biopsy; stage; examine regional lymph nodes; ultrasound/CT if high risk. In India also consider arsenic, chronic scars/ulcers (Marjolin), HPV. Oncology/surgery co-management.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467906
+}

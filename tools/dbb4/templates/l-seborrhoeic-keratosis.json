@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Seborrhoeic keratosis",
+ "dx": "Seborrhoeic keratosis",
+ "caseName": "Seborrhoeic keratosis",
+ "group": "Benign tumours & cysts",
+ "general": "Benign; reassure. Sudden eruption of many (Leser–Trélat) needs check for internal malignancy. Biopsy atypical lesions.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Cosmetic removal",
+   "rx": [
+    {
+     "drug": "Cryotherapy / curettage / shave removal",
+     "dose": "",
+     "freq": "Once",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Radiofrequency / electrocautery / CO₂ laser",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "DPN in dark skin: fine-tip electrodesiccation",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Topical (limited evidence)",
+   "rx": [
+    {
+     "drug": "Hydrogen peroxide 40% / Tazarotene 0.1%",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cryotherapy / curettage / shave removal",
+   "dose": "",
+   "freq": "Once",
+   "dur": "",
+   "route": "Procedure",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Radiofrequency / electrocautery / CO₂ laser",
+   "dose": "",
+   "freq": "",
+   "dur": "",
+   "route": "Procedure",
+   "instr": "DPN in dark skin: fine-tip electrodesiccation",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Benign; reassure. Sudden eruption of many (Leser–Trélat) needs check for internal malignancy. Biopsy atypical lesions.",
+ "adviceText": "Benign; reassure. Sudden eruption of many (Leser–Trélat) needs check for internal malignancy. Biopsy atypical lesions.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467908
+}

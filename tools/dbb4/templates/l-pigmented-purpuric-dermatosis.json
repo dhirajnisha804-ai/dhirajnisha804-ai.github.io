@@ -1,0 +1,112 @@
+{
+ "kind": "ladder",
+ "name": "Pigmented purpuric dermatosis",
+ "dx": "Pigmented purpuric dermatosis",
+ "caseName": "Pigmented purpuric dermatosis",
+ "group": "Vascular & ulcers",
+ "general": "Benign and chronic; look for venous insufficiency, drugs (paracetamol, aspirin), contact allergy (dyes, rubber). Compression if on legs.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Cream Mometasone 0.1%",
+     "dose": "Thin layer",
+     "freq": "OD",
+     "dur": "4 weeks",
+     "route": "Topical",
+     "instr": "Itch",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Rutoside 50 mg + Ascorbic acid 500 mg",
+     "dose": "1 each",
+     "freq": "BD",
+     "dur": "3 months",
+     "route": "Oral",
+     "instr": "Capillary-stabilising",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Extensive",
+   "rx": [
+    {
+     "drug": "Narrowband UVB / PUVA",
+     "dose": "",
+     "freq": "3×/week",
+     "dur": "2–3 months",
+     "route": "Phototherapy",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Pentoxifylline 400 mg",
+     "dose": "1 tab",
+     "freq": "TDS",
+     "dur": "2–3 months",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Mometasone 0.1%",
+   "dose": "Thin layer",
+   "freq": "OD",
+   "dur": "4 weeks",
+   "route": "Topical",
+   "instr": "Itch",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Rutoside 50 mg + Ascorbic acid 500 mg",
+   "dose": "1 each",
+   "freq": "BD",
+   "dur": "3 months",
+   "route": "Oral",
+   "instr": "Capillary-stabilising",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Benign and chronic; look for venous insufficiency, drugs (paracetamol, aspirin), contact allergy (dyes, rubber). Compression if on legs.",
+ "adviceText": "Benign and chronic; look for venous insufficiency, drugs (paracetamol, aspirin), contact allergy (dyes, rubber). Compression if on legs.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467903
+}

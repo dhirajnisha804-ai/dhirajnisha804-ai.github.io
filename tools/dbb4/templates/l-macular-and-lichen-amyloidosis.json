@@ -1,0 +1,132 @@
+{
+ "kind": "ladder",
+ "name": "Macular and lichen amyloidosis",
+ "dx": "Macular and lichen amyloidosis",
+ "caseName": "Macular and lichen amyloidosis",
+ "group": "Nutritional & metabolic",
+ "general": "Stop friction (nylon scrubs, towels); treat itch. Chronic; partial response.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Ointment Clobetasol 0.05% under occlusion / Tacrolimus 0.1%",
+     "dose": "Thin layer",
+     "freq": "OD",
+     "dur": "4–8 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Levocetirizine 5 mg / Hydroxyzine 25 mg",
+     "dose": "",
+     "freq": "HS",
+     "dur": "",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Lichen amyloidosis (thick)",
+   "rx": [
+    {
+     "drug": "Cap. Acitretin 25 mg",
+     "dose": "0.5 mg/kg",
+     "freq": "OD",
+     "dur": "3 months",
+     "route": "Oral",
+     "instr": "Contraception",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Salicylic acid / urea / DMSO / calcipotriol topical; NB-UVB / PUVA",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Refractory",
+   "rx": [
+    {
+     "drug": "Dermabrasion / fractional CO₂ / Q-switched Nd:YAG",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Ointment Clobetasol 0.05% under occlusion / Tacrolimus 0.1%",
+   "dose": "Thin layer",
+   "freq": "OD",
+   "dur": "4–8 weeks",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Levocetirizine 5 mg / Hydroxyzine 25 mg",
+   "dose": "",
+   "freq": "HS",
+   "dur": "",
+   "route": "Oral",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Stop friction (nylon scrubs, towels); treat itch. Chronic; partial response.",
+ "adviceText": "Stop friction (nylon scrubs, towels); treat itch. Chronic; partial response.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467904
+}

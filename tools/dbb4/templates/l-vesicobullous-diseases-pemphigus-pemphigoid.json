@@ -1,0 +1,145 @@
+{
+ "kind": "ladder",
+ "name": "Vesicobullous diseases (pemphigus / pemphigoid)",
+ "dx": "Vesicobullous diseases (pemphigus / pemphigoid)",
+ "caseName": "Vesicobullous diseases (pemphigus / pemphigoid)",
+ "group": "Vesicobullous diseases",
+ "general": "Confirm with biopsy + DIF (and ELISA for Dsg1/Dsg3, BP180/230). Score PDAI/BPDAI. Wound care, oral hygiene, nutrition; screen TB, hepatitis B, diabetes, bone health; PPI, calcium + vitamin D with steroids.",
+ "special": "Bullous pemphigoid: Ointment Clobetasol 0.05% whole body (≤40 g/day, taper over 4 months) is first line; oral prednisolone 0.5 mg/kg if extensive; doxycycline 200 mg/day + nicotinamide as steroid-sparing; methotrexate, dupilumab or omalizumab if refractory. Stop DPP-4 inhibitors (gliptins).",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Pemphigus – first line",
+   "rx": [
+    {
+     "drug": "Inj. Rituximab",
+     "dose": "1 g IV, repeat after 2 weeks (RA protocol)",
+     "freq": "",
+     "dur": "Maintenance 500 mg at 6 and 12 months if needed",
+     "route": "IV",
+     "instr": "First-line in moderate–severe pemphigus",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Prednisolone 20 mg",
+     "dose": "0.5–1 mg/kg",
+     "freq": "OD",
+     "dur": "Taper over 3–6 months",
+     "route": "Oral",
+     "instr": "With rituximab",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Pemphigus – steroid-sparing / no rituximab",
+   "rx": [
+    {
+     "drug": "Tab. Azathioprine 50 mg",
+     "dose": "2–2.5 mg/kg (TPMT)",
+     "freq": "OD",
+     "dur": "Long-term",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Mycophenolate mofetil 500 mg",
+     "dose": "2–3 g/day",
+     "freq": "BD",
+     "dur": "Long-term",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Dexamethasone–cyclophosphamide pulse (DCP)",
+     "dose": "",
+     "freq": "Monthly",
+     "dur": "",
+     "route": "IV",
+     "instr": "Indian regimen, still used where rituximab is not affordable",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Refractory",
+   "rx": [
+    {
+     "drug": "Inj. IVIG 2 g/kg / Immunoadsorption / repeat rituximab",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "IV",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Inj. Rituximab",
+   "dose": "1 g IV, repeat after 2 weeks (RA protocol)",
+   "freq": "",
+   "dur": "Maintenance 500 mg at 6 and 12 months if needed",
+   "route": "IV",
+   "instr": "First-line in moderate–severe pemphigus",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Prednisolone 20 mg",
+   "dose": "0.5–1 mg/kg",
+   "freq": "OD",
+   "dur": "Taper over 3–6 months",
+   "route": "Oral",
+   "instr": "With rituximab",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Confirm with biopsy + DIF (and ELISA for Dsg1/Dsg3, BP180/230). Score PDAI/BPDAI. Wound care, oral hygiene, nutrition; screen TB, hepatitis B, diabetes, bone health; PPI, calcium + vitamin D with steroids.",
+ "adviceText": "Confirm with biopsy + DIF (and ELISA for Dsg1/Dsg3, BP180/230). Score PDAI/BPDAI. Wound care, oral hygiene, nutrition; screen TB, hepatitis B, diabetes, bone health; PPI, calcium + vitamin D with steroids.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467901
+}

@@ -1,0 +1,158 @@
+{
+ "kind": "ladder",
+ "name": "Granuloma annulare",
+ "dx": "Granuloma annulare",
+ "caseName": "Granuloma annulare",
+ "group": "Granulomatous disorders",
+ "general": "Localised GA often clears in 2 years — reassure. Generalised: check sugar, lipids, thyroid; HIV/hepatitis if risk factors.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Localised",
+   "rx": [
+    {
+     "drug": "Ointment Clobetasol 0.05% under occlusion",
+     "dose": "Thin layer",
+     "freq": "OD",
+     "dur": "4–8 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Inj. Triamcinolone 2.5–5 mg/mL",
+     "dose": "0.1 mL per site",
+     "freq": "Every 4–6 weeks",
+     "dur": "",
+     "route": "Intralesional",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cryotherapy",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Generalised",
+   "rx": [
+    {
+     "drug": "Narrowband UVB / PUVA",
+     "dose": "",
+     "freq": "3×/week",
+     "dur": "3 months",
+     "route": "Phototherapy",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Hydroxychloroquine 200 mg",
+     "dose": "1 tab",
+     "freq": "BD",
+     "dur": "3–6 months",
+     "route": "Oral",
+     "instr": "Or dapsone 100 mg; doxycycline",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Refractory",
+   "rx": [
+    {
+     "drug": "Isotretinoin / Methotrexate / Tofacitinib / TNF inhibitors",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Oral/SC",
+     "instr": "Limited evidence",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Ointment Clobetasol 0.05% under occlusion",
+   "dose": "Thin layer",
+   "freq": "OD",
+   "dur": "4–8 weeks",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Inj. Triamcinolone 2.5–5 mg/mL",
+   "dose": "0.1 mL per site",
+   "freq": "Every 4–6 weeks",
+   "dur": "",
+   "route": "Intralesional",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cryotherapy",
+   "dose": "",
+   "freq": "",
+   "dur": "",
+   "route": "Procedure",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Localised GA often clears in 2 years — reassure. Generalised: check sugar, lipids, thyroid; HIV/hepatitis if risk factors.",
+ "adviceText": "Localised GA often clears in 2 years — reassure. Generalised: check sugar, lipids, thyroid; HIV/hepatitis if risk factors.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467907
+}

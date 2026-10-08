@@ -1,0 +1,132 @@
+{
+ "kind": "ladder",
+ "name": "Ichthyosis",
+ "dx": "Ichthyosis",
+ "caseName": "Ichthyosis",
+ "group": "Disorders of keratinisation",
+ "general": "Daily bath then emollient within 3 minutes; humidify; avoid hot water and soaps. Collodion baby: incubator humidity, emollient, watch hypernatraemia and infection.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Emollient (white soft paraffin / liquid paraffin)",
+     "dose": "Liberal",
+     "freq": "BD–TDS",
+     "dur": "Lifelong",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Urea 10% / Lactic acid 12% / Propylene glycol 40–60%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "Long-term",
+     "route": "Topical",
+     "instr": "Not urea on infants' broken skin",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Thick scale",
+   "rx": [
+    {
+     "drug": "Salicylic acid 3–6% ointment",
+     "dose": "",
+     "freq": "OD",
+     "dur": "",
+     "route": "Topical",
+     "instr": "Limit area in children (salicylism)",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Tretinoin 0.025% / Tazarotene 0.05%",
+     "dose": "",
+     "freq": "HS",
+     "dur": "",
+     "route": "Topical",
+     "instr": "Small areas",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Severe (lamellar, epidermolytic, Harlequin)",
+   "rx": [
+    {
+     "drug": "Cap. Acitretin 10–25 mg",
+     "dose": "0.3–0.5 mg/kg",
+     "freq": "OD",
+     "dur": "Long-term, lowest dose",
+     "route": "Oral",
+     "instr": "Monitor growth, lipids, LFT; contraception",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Emollient (white soft paraffin / liquid paraffin)",
+   "dose": "Liberal",
+   "freq": "BD–TDS",
+   "dur": "Lifelong",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Urea 10% / Lactic acid 12% / Propylene glycol 40–60%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "Long-term",
+   "route": "Topical",
+   "instr": "Not urea on infants' broken skin",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Daily bath then emollient within 3 minutes; humidify; avoid hot water and soaps. Collodion baby: incubator humidity, emollient, watch hypernatraemia and infection.",
+ "adviceText": "Daily bath then emollient within 3 minutes; humidify; avoid hot water and soaps. Collodion baby: incubator humidity, emollient, watch hypernatraemia and infection.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467904
+}

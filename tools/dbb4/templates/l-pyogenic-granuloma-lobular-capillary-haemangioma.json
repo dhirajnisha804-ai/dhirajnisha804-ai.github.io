@@ -1,0 +1,112 @@
+{
+ "kind": "ladder",
+ "name": "Pyogenic granuloma (lobular capillary haemangioma)",
+ "dx": "Pyogenic granuloma (lobular capillary haemangioma)",
+ "caseName": "Pyogenic granuloma (lobular capillary haemangioma)",
+ "group": "Vascular & ulcers",
+ "general": "Bleeds easily; send for histology. Check for causes: pregnancy, isotretinoin, ingrown nail, drugs (EGFR inhibitors).",
+ "special": "Pregnancy: often regresses after delivery — treat only if bleeding.",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Small",
+   "rx": [
+    {
+     "drug": "Timolol 0.5% drops / Imiquimod 5% cream",
+     "dose": "",
+     "freq": "BD",
+     "dur": "4–6 weeks",
+     "route": "Topical",
+     "instr": "Small lesions, children",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Silver nitrate cautery",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Standard",
+   "rx": [
+    {
+     "drug": "Shave excision + electrocautery / curettage of base",
+     "dose": "",
+     "freq": "Once",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "Low recurrence",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Full-thickness excision / pulsed dye laser / Nd:YAG",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "Recurrent lesions",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Timolol 0.5% drops / Imiquimod 5% cream",
+   "dose": "",
+   "freq": "BD",
+   "dur": "4–6 weeks",
+   "route": "Topical",
+   "instr": "Small lesions, children",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Silver nitrate cautery",
+   "dose": "",
+   "freq": "",
+   "dur": "",
+   "route": "Procedure",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Bleeds easily; send for histology. Check for causes: pregnancy, isotretinoin, ingrown nail, drugs (EGFR inhibitors).",
+ "adviceText": "Bleeds easily; send for histology. Check for causes: pregnancy, isotretinoin, ingrown nail, drugs (EGFR inhibitors).",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467903
+}

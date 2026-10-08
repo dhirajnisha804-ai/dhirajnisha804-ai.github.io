@@ -93,11 +93,11 @@
    "rx": [
     {
      "drug": "Tab. Azathioprine 50 mg",
-     "dose": "50–100 mg (TPMT-guided)",
-     "freq": "OD",
+     "dose": "300 mg (6 tabs)",
+     "freq": "Once weekly",
      "dur": "6 months",
      "route": "Oral",
-     "instr": "Or weekly 300 mg 'pulse' regimen used in India",
+     "instr": "Weekly pulse regimen; CBC and LFT before and monthly",
      "timing": "",
      "brand": "",
      "brandId": "",
@@ -167,5 +167,5 @@
  "review": true,
  "free": false,
  "source": "slot2.py",
- "updatedAt": 1791446097948
+ "updatedAt": 1791446467860
 }

@@ -1,0 +1,171 @@
+{
+ "kind": "ladder",
+ "name": "Dermatomyositis",
+ "dx": "Dermatomyositis",
+ "caseName": "Dermatomyositis",
+ "group": "Connective tissue diseases",
+ "general": "Screen for malignancy in adults (age-appropriate + CT chest/abdomen, CA-125 in women) at diagnosis and yearly for 3 years; check CK, aldolase, LFT, pulmonary function (ILD), myositis antibodies. Strict photoprotection; physiotherapy.",
+ "special": "Juvenile DM: steroids + methotrexate early; watch for calcinosis.",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Tab. Prednisolone 20 mg",
+     "dose": "1 mg/kg",
+     "freq": "OD",
+     "dur": "4–6 weeks then slow taper over 6–12 months",
+     "route": "Oral",
+     "instr": "Calcium, vitamin D, PPI; IV methylprednisolone if severe",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Hydroxychloroquine 200 mg",
+     "dose": "≤5 mg/kg",
+     "freq": "OD",
+     "dur": "Long-term",
+     "route": "Oral",
+     "instr": "Skin disease; higher drug-rash rate in DM",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Ointment Tacrolimus 0.1% / mid-potency steroid",
+     "dose": "",
+     "freq": "BD",
+     "dur": "",
+     "route": "Topical",
+     "instr": "Skin",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Steroid-sparing (start early)",
+   "rx": [
+    {
+     "drug": "Tab. Methotrexate 15–25 mg",
+     "dose": "",
+     "freq": "Weekly",
+     "dur": "Long-term",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Azathioprine 2 mg/kg / Mycophenolate mofetil 2 g/day",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Oral",
+     "instr": "MMF if ILD",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Refractory / severe",
+   "rx": [
+    {
+     "drug": "Inj. IVIG",
+     "dose": "2 g/kg",
+     "freq": "Over 2–5 days, monthly",
+     "dur": "3–6 months",
+     "route": "IV",
+     "instr": "Effective for skin and muscle",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Inj. Rituximab / Tab. Tofacitinib",
+     "dose": "per label",
+     "freq": "",
+     "dur": "",
+     "route": "IV/Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Tab. Prednisolone 20 mg",
+   "dose": "1 mg/kg",
+   "freq": "OD",
+   "dur": "4–6 weeks then slow taper over 6–12 months",
+   "route": "Oral",
+   "instr": "Calcium, vitamin D, PPI; IV methylprednisolone if severe",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Hydroxychloroquine 200 mg",
+   "dose": "≤5 mg/kg",
+   "freq": "OD",
+   "dur": "Long-term",
+   "route": "Oral",
+   "instr": "Skin disease; higher drug-rash rate in DM",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Ointment Tacrolimus 0.1% / mid-potency steroid",
+   "dose": "",
+   "freq": "BD",
+   "dur": "",
+   "route": "Topical",
+   "instr": "Skin",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Screen for malignancy in adults (age-appropriate + CT chest/abdomen, CA-125 in women) at diagnosis and yearly for 3 years; check CK, aldolase, LFT, pulmonary function (ILD), myositis antibodies. Strict photoprotection; physiotherapy.",
+ "adviceText": "Screen for malignancy in adults (age-appropriate + CT chest/abdomen, CA-125 in women) at diagnosis and yearly for 3 years; check CK, aldolase, LFT, pulmonary function (ILD), myositis antibodies. Strict photoprotection; physiotherapy.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467900
+}

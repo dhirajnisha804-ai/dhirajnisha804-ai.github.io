@@ -32,7 +32,7 @@ L("Contact dermatitis",E,
    "Tab. Prednisolone 20 mg | 0.5–1 mg/kg | OD | Taper over 2–3 weeks | Oral | Short taper to avoid rebound (e.g. Parthenium)",
    "Tab. Levocetirizine 5 mg | 1 tab | HS | 2–4 weeks | Oral | "]),
   ("Chronic (e.g. airborne Parthenium dermatitis)",[
-   "Tab. Azathioprine 50 mg | 50–100 mg (TPMT-guided) | OD | 6 months | Oral | Or weekly 300 mg 'pulse' regimen used in India",
+   "Tab. Azathioprine 50 mg | 300 mg (6 tabs) | Once weekly | 6 months | Oral | Weekly pulse regimen; CBC and LFT before and monthly",
    "Tab. Methotrexate / Cap. Cyclosporine / PUVA | | | Months | Oral | Steroid-sparing alternatives"]))
 
 L("Asteatotic eczema",E,
@@ -274,16 +274,16 @@ L("Acute generalised exanthematous pustulosis (AGEP)",R,
 
 L("Stevens–Johnson syndrome / TEN",R,
   "Stop all suspect drugs immediately (allopurinol, carbamazepine, phenytoin, lamotrigine, nevirapine, sulfonamides). Admit — ICU/burns unit if >10% BSA. SCORTEN on day 1 and 3. Barrier nursing, warm room, fluids, nutrition, eye, mouth and genital care daily (ophthalmology review).",
-  ("Supportive care (all)",[
+  ("Supportive care + cyclosporine (start early)",[
+   "Cap. Cyclosporine 100 mg | 3–5 mg/kg/day | BD | 7–10 days, then taper | Oral | First-line immunomodulator; check creatinine, BP",
    "Liquid paraffin / non-adherent dressings | | BD | Till re-epithelialised | Topical | Leave detached epidermis in place",
    "Eye: lubricant + topical steroid–antibiotic drops | | QID | | Ophthalmic | Daily ophthalmology review",
    "Mouth: chlorhexidine + lignocaine viscous rinse | | QID | | Oral rinse | "]),
-  ("Immunomodulation (early)",[
-   "Cap. Cyclosporine 100 mg | 3–5 mg/kg/day | BD | 7–10 days, then taper | Oral | Preferred in many Indian centres",
-   "Inj. Dexamethasone pulse / IV methylprednisolone | | | 3 days | IV | Early, short; avoid prolonged steroids"]),
-  ("Severe or progressing",[
-   "Inj. Etanercept 50 mg | 25–50 mg | Single dose (repeat if needed) | | Subcutaneous | Growing evidence",
-   "Inj. IVIG | 0.5–1 g/kg/day | OD | 3–4 days | IV | Evidence mixed"]),
+  ("If cyclosporine cannot be used / progressing",[
+   "Inj. Dexamethasone pulse / IV methylprednisolone | | | 3 days | IV | Early, short; avoid prolonged steroids",
+   "Inj. Etanercept 50 mg | 25–50 mg | Single dose (repeat if needed) | | Subcutaneous | Growing evidence"]),
+  ("Severe, refractory",[
+   "Inj. IVIG | 0.5–1 g/kg/day | OD | 3–4 days | IV | Evidence mixed; costly"]),
   "Give a drug-allergy card; avoid the culprit and related drugs for life; HLA-B*15:02 screening before carbamazepine in at-risk groups.")
 
 H="Hair & nail disorders"

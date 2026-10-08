@@ -1,0 +1,132 @@
+{
+ "kind": "ladder",
+ "name": "Porokeratosis",
+ "dx": "Porokeratosis",
+ "caseName": "Porokeratosis",
+ "group": "Disorders of keratinisation",
+ "general": "Sun protection; follow-up — small risk of SCC (higher in linear and large lesions). Check immunosuppression.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Cream 5-fluorouracil 5% / Imiquimod 5%",
+     "dose": "Thin layer",
+     "freq": "OD",
+     "dur": "4–6 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Calcipotriol / Tretinoin / Diclofenac 3% gel",
+     "dose": "",
+     "freq": "BD",
+     "dur": "3 months",
+     "route": "Topical",
+     "instr": "DSAP",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Limited lesions",
+   "rx": [
+    {
+     "drug": "Cryotherapy / CO₂ laser / excision",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Extensive",
+   "rx": [
+    {
+     "drug": "Cap. Acitretin 25 mg",
+     "dose": "",
+     "freq": "OD",
+     "dur": "Months",
+     "route": "Oral",
+     "instr": "Recurrence after stopping",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Topical 2% lovastatin + 2% cholesterol",
+     "dose": "",
+     "freq": "BD",
+     "dur": "3 months",
+     "route": "Topical",
+     "instr": "Compounded; newer pathogenesis-based",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream 5-fluorouracil 5% / Imiquimod 5%",
+   "dose": "Thin layer",
+   "freq": "OD",
+   "dur": "4–6 weeks",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Calcipotriol / Tretinoin / Diclofenac 3% gel",
+   "dose": "",
+   "freq": "BD",
+   "dur": "3 months",
+   "route": "Topical",
+   "instr": "DSAP",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Sun protection; follow-up — small risk of SCC (higher in linear and large lesions). Check immunosuppression.",
+ "adviceText": "Sun protection; follow-up — small risk of SCC (higher in linear and large lesions). Check immunosuppression.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467905
+}

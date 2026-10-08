@@ -1,0 +1,119 @@
+{
+ "kind": "ladder",
+ "name": "Darier's disease",
+ "dx": "Darier's disease",
+ "caseName": "Darier's disease",
+ "group": "Genodermatoses",
+ "general": "Avoid heat, sweating, sunburn, friction; cotton clothes. Treat secondary bacterial/HSV infection promptly. Genetic counselling (autosomal dominant).",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Mild",
+   "rx": [
+    {
+     "drug": "Emollient + Cream Tretinoin 0.025% / Adapalene 0.1%",
+     "dose": "",
+     "freq": "HS",
+     "dur": "",
+     "route": "Topical",
+     "instr": "Irritation common; alternate nights",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Mometasone 0.1% + antiseptic",
+     "dose": "",
+     "freq": "OD",
+     "dur": "Flares",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Moderate–severe",
+   "rx": [
+    {
+     "drug": "Cap. Acitretin 10–25 mg",
+     "dose": "0.2–0.5 mg/kg",
+     "freq": "OD",
+     "dur": "Long-term",
+     "route": "Oral",
+     "instr": "Contraception for 3 years after; or isotretinoin in women",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Refractory",
+   "rx": [
+    {
+     "drug": "Cap. Cyclosporine / CO₂ laser / dermabrasion (localised)",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Emollient + Cream Tretinoin 0.025% / Adapalene 0.1%",
+   "dose": "",
+   "freq": "HS",
+   "dur": "",
+   "route": "Topical",
+   "instr": "Irritation common; alternate nights",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Mometasone 0.1% + antiseptic",
+   "dose": "",
+   "freq": "OD",
+   "dur": "Flares",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Avoid heat, sweating, sunburn, friction; cotton clothes. Treat secondary bacterial/HSV infection promptly. Genetic counselling (autosomal dominant).",
+ "adviceText": "Avoid heat, sweating, sunburn, friction; cotton clothes. Treat secondary bacterial/HSV infection promptly. Genetic counselling (autosomal dominant).",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467908
+}

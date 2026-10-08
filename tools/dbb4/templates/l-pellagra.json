@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Pellagra",
+ "dx": "Pellagra",
+ "caseName": "Pellagra",
+ "group": "Nutritional & metabolic",
+ "general": "Look for cause: alcoholism, maize/jowar diet, malabsorption, isoniazid, carcinoid, Hartnup. Sun protection; high-protein diet; also give B-complex (other deficiencies coexist).",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Treatment",
+   "rx": [
+    {
+     "drug": "Tab. Nicotinamide 100 mg",
+     "dose": "100 mg",
+     "freq": "TDS (QID if severe)",
+     "dur": "Till symptoms resolve (2–4 weeks), then 50 mg BD",
+     "route": "Oral",
+     "instr": "Prefer nicotinamide — no flushing",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Vitamin B-complex + zinc",
+     "dose": "1",
+     "freq": "OD",
+     "dur": "3 months",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Severe / neurological",
+   "rx": [
+    {
+     "drug": "Admit; parenteral nicotinamide + fluids",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "IV",
+     "instr": "Dementia, diarrhoea",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Tab. Nicotinamide 100 mg",
+   "dose": "100 mg",
+   "freq": "TDS (QID if severe)",
+   "dur": "Till symptoms resolve (2–4 weeks), then 50 mg BD",
+   "route": "Oral",
+   "instr": "Prefer nicotinamide — no flushing",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Vitamin B-complex + zinc",
+   "dose": "1",
+   "freq": "OD",
+   "dur": "3 months",
+   "route": "Oral",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Look for cause: alcoholism, maize/jowar diet, malabsorption, isoniazid, carcinoid, Hartnup. Sun protection; high-protein diet; also give B-complex (other deficiencies coexist).",
+ "adviceText": "Look for cause: alcoholism, maize/jowar diet, malabsorption, isoniazid, carcinoid, Hartnup. Sun protection; high-protein diet; also give B-complex (other deficiencies coexist).",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467904
+}

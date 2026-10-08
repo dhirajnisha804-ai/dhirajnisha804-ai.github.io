@@ -1,0 +1,145 @@
+{
+ "kind": "ladder",
+ "name": "Lichen sclerosus et atrophicus",
+ "dx": "Lichen sclerosus et atrophicus",
+ "caseName": "Lichen sclerosus et atrophicus",
+ "group": "Connective tissue diseases",
+ "general": "Genital LS: lifelong follow-up (SCC risk, especially vulvar). Soap substitute, emollient, avoid irritants. Circumcision in men with phimosis.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Ointment Clobetasol 0.05%",
+     "dose": "Thin layer (fingertip unit for genital area per month as a guide)",
+     "freq": "OD",
+     "dur": "3 months (OD 1 month, alternate days 1 month, twice weekly 1 month)",
+     "route": "Topical",
+     "instr": "Then maintenance 1–2×/week",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Emollient / petrolatum",
+     "dose": "",
+     "freq": "",
+     "dur": "Long-term",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Not responding",
+   "rx": [
+    {
+     "drug": "Ointment Tacrolimus 0.1%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "3 months",
+     "route": "Topical",
+     "instr": "Second line",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Inj. Triamcinolone 10 mg/mL",
+     "dose": "",
+     "freq": "Monthly",
+     "dur": "",
+     "route": "Intralesional",
+     "instr": "Hypertrophic areas",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Refractory",
+   "rx": [
+    {
+     "drug": "Cap. Acitretin 25 mg / Methotrexate",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Oral",
+     "instr": "Extragenital extensive",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Surgery for complications (adhesions, meatal stenosis, circumcision)",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "Not a cure",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Ointment Clobetasol 0.05%",
+   "dose": "Thin layer (fingertip unit for genital area per month as a guide)",
+   "freq": "OD",
+   "dur": "3 months (OD 1 month, alternate days 1 month, twice weekly 1 month)",
+   "route": "Topical",
+   "instr": "Then maintenance 1–2×/week",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Emollient / petrolatum",
+   "dose": "",
+   "freq": "",
+   "dur": "Long-term",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Genital LS: lifelong follow-up (SCC risk, especially vulvar). Soap substitute, emollient, avoid irritants. Circumcision in men with phimosis.",
+ "adviceText": "Genital LS: lifelong follow-up (SCC risk, especially vulvar). Soap substitute, emollient, avoid irritants. Circumcision in men with phimosis.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467901
+}

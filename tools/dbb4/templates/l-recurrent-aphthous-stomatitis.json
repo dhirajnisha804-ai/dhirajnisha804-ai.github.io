@@ -1,0 +1,145 @@
+{
+ "kind": "ladder",
+ "name": "Recurrent aphthous stomatitis",
+ "dx": "Recurrent aphthous stomatitis",
+ "caseName": "Recurrent aphthous stomatitis",
+ "group": "Oral & mucosal disorders",
+ "general": "Check CBC, iron, B12, folate, coeliac screen if frequent; ask about genital ulcers, eye symptoms (Behçet's), HIV. Avoid trauma, spicy/acidic foods, SLS toothpaste.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Minor RAS",
+   "rx": [
+    {
+     "drug": "Triamcinolone 0.1% in orabase / Clobetasol 0.05% gel",
+     "dose": "Thin layer on ulcer",
+     "freq": "TDS–QID",
+     "dur": "5–7 days",
+     "route": "Oral mucosa",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Chlorhexidine 0.2% mouthwash + Benzydamine / lignocaine gel",
+     "dose": "10 mL",
+     "freq": "BD–TDS",
+     "dur": "1–2 weeks",
+     "route": "Oral rinse",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Frequent or major RAS",
+   "rx": [
+    {
+     "drug": "Tab. Colchicine 0.5 mg",
+     "dose": "1 tab",
+     "freq": "BD",
+     "dur": "3 months",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Dapsone 50–100 mg / Pentoxifylline 400 mg TDS",
+     "dose": "",
+     "freq": "",
+     "dur": "3 months",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Prednisolone 20–40 mg",
+     "dose": "",
+     "freq": "OD",
+     "dur": "5–7 days",
+     "route": "Oral",
+     "instr": "Major aphthae, short course",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Refractory / Behçet's",
+   "rx": [
+    {
+     "drug": "Tab. Apremilast 30 mg BD / Tab. Thalidomide 100 mg",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Oral",
+     "instr": "Apremilast for Behçet's oral ulcers; thalidomide with strict pregnancy prevention",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Triamcinolone 0.1% in orabase / Clobetasol 0.05% gel",
+   "dose": "Thin layer on ulcer",
+   "freq": "TDS–QID",
+   "dur": "5–7 days",
+   "route": "Oral mucosa",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Chlorhexidine 0.2% mouthwash + Benzydamine / lignocaine gel",
+   "dose": "10 mL",
+   "freq": "BD–TDS",
+   "dur": "1–2 weeks",
+   "route": "Oral rinse",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Check CBC, iron, B12, folate, coeliac screen if frequent; ask about genital ulcers, eye symptoms (Behçet's), HIV. Avoid trauma, spicy/acidic foods, SLS toothpaste.",
+ "adviceText": "Check CBC, iron, B12, folate, coeliac screen if frequent; ask about genital ulcers, eye symptoms (Behçet's), HIV. Avoid trauma, spicy/acidic foods, SLS toothpaste.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467906
+}

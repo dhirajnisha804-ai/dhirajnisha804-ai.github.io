@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Sebaceous hyperplasia",
+ "dx": "Sebaceous hyperplasia",
+ "caseName": "Sebaceous hyperplasia",
+ "group": "Benign tumours & cysts",
+ "general": "Benign; dermoscopy distinguishes from BCC. Treatment is cosmetic.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Cosmetic",
+   "rx": [
+    {
+     "drug": "Electrocautery / radiofrequency (fine needle) / CO₂ laser",
+     "dose": "",
+     "freq": "",
+     "dur": "1–2 sessions",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "TCA 35–50% spot application / cryotherapy",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Many lesions",
+   "rx": [
+    {
+     "drug": "Cream Tretinoin 0.05% / Adapalene 0.1%",
+     "dose": "",
+     "freq": "HS",
+     "dur": "3 months",
+     "route": "Topical",
+     "instr": "Partial response",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Electrocautery / radiofrequency (fine needle) / CO₂ laser",
+   "dose": "",
+   "freq": "",
+   "dur": "1–2 sessions",
+   "route": "Procedure",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "TCA 35–50% spot application / cryotherapy",
+   "dose": "",
+   "freq": "",
+   "dur": "",
+   "route": "Procedure",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Benign; dermoscopy distinguishes from BCC. Treatment is cosmetic.",
+ "adviceText": "Benign; dermoscopy distinguishes from BCC. Treatment is cosmetic.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467908
+}

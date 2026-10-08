@@ -1,0 +1,145 @@
+{
+ "kind": "ladder",
+ "name": "Infantile haemangioma & vascular malformations",
+ "dx": "Infantile haemangioma & vascular malformations",
+ "caseName": "Infantile haemangioma & vascular malformations",
+ "group": "Vascular & ulcers",
+ "general": "Most infantile haemangiomas involute; treat early (first 5 months is the proliferation window) if risk: periocular, airway (beard area), lip, nasal tip, large facial (PHACE — echo, MRI brain), ulcerated, multiple (>5 — liver ultrasound). Vascular malformations do not involute.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Small, superficial, low-risk",
+   "rx": [
+    {
+     "drug": "Timolol 0.5% gel-forming drops",
+     "dose": "1 drop",
+     "freq": "BD",
+     "dur": "6 months",
+     "route": "Topical",
+     "instr": "Thin superficial lesions",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Watchful waiting with photographs",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Problematic haemangioma",
+   "rx": [
+    {
+     "drug": "Syp. Propranolol",
+     "dose": "1 mg/kg/day → 2–3 mg/kg/day in 2 doses",
+     "freq": "BD",
+     "dur": "Till 12–18 months of age",
+     "route": "Oral",
+     "instr": "Give with feeds; hold if not eating (hypoglycaemia); check HR, BP at start",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Ulcer care: barrier dressings, topical antibiotic, pain relief",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Not responding / malformations",
+   "rx": [
+    {
+     "drug": "Pulsed dye laser (port-wine stain, residual telangiectasia)",
+     "dose": "",
+     "freq": "Every 4–8 weeks",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "Port-wine stain: start in infancy",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Oral prednisolone 2–3 mg/kg / Sirolimus (lymphatic & complex malformations) / sclerotherapy / surgery",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "",
+     "instr": "Specialist",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Timolol 0.5% gel-forming drops",
+   "dose": "1 drop",
+   "freq": "BD",
+   "dur": "6 months",
+   "route": "Topical",
+   "instr": "Thin superficial lesions",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Watchful waiting with photographs",
+   "dose": "",
+   "freq": "",
+   "dur": "",
+   "route": "",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Most infantile haemangiomas involute; treat early (first 5 months is the proliferation window) if risk: periocular, airway (beard area), lip, nasal tip, large facial (PHACE — echo, MRI brain), ulcerated, multiple (>5 — liver ultrasound). Vascular malformations do not involute.",
+ "adviceText": "Most infantile haemangiomas involute; treat early (first 5 months is the proliferation window) if risk: periocular, airway (beard area), lip, nasal tip, large facial (PHACE — echo, MRI brain), ulcerated, multiple (>5 — liver ultrasound). Vascular malformations do not involute.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467902
+}

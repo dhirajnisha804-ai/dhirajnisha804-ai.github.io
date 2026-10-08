@@ -1,0 +1,112 @@
+{
+ "kind": "ladder",
+ "name": "Palmoplantar keratoderma",
+ "dx": "Palmoplantar keratoderma",
+ "caseName": "Palmoplantar keratoderma",
+ "group": "Disorders of keratinisation",
+ "general": "Classify: hereditary vs acquired (eczema, psoriasis, tinea, hypothyroidism, arsenic, malignancy). Treat the cause; regular paring, comfortable footwear, treat fungal infection.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Salicylic acid 6–12% / Urea 20–40% ointment under occlusion",
+     "dose": "",
+     "freq": "HS",
+     "dur": "Long-term",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Mechanical paring / pumice after soaking",
+     "dose": "",
+     "freq": "Weekly",
+     "dur": "",
+     "route": "",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Thick / painful",
+   "rx": [
+    {
+     "drug": "Cap. Acitretin 10–25 mg",
+     "dose": "Low dose",
+     "freq": "OD",
+     "dur": "Long-term",
+     "route": "Oral",
+     "instr": "Contraception; low dose (blistering in epidermolytic PPK)",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Topical retinoid / calcipotriol",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Topical",
+     "instr": "Psoriasiform types",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Salicylic acid 6–12% / Urea 20–40% ointment under occlusion",
+   "dose": "",
+   "freq": "HS",
+   "dur": "Long-term",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Mechanical paring / pumice after soaking",
+   "dose": "",
+   "freq": "Weekly",
+   "dur": "",
+   "route": "",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Classify: hereditary vs acquired (eczema, psoriasis, tinea, hypothyroidism, arsenic, malignancy). Treat the cause; regular paring, comfortable footwear, treat fungal infection.",
+ "adviceText": "Classify: hereditary vs acquired (eczema, psoriasis, tinea, hypothyroidism, arsenic, malignancy). Treat the cause; regular paring, comfortable footwear, treat fungal infection.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467905
+}

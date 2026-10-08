@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Nevus of Ota / Ito / Hori",
+ "dx": "Nevus of Ota / Ito / Hori",
+ "caseName": "Nevus of Ota / Ito / Hori",
+ "group": "Nevi & hamartomas",
+ "general": "Check eye pressure (glaucoma) and eye pigmentation in nevus of Ota. Explain several sessions are needed; start earlier for better results.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Treatment",
+   "rx": [
+    {
+     "drug": "Q-switched Nd:YAG 1064 nm / picosecond laser",
+     "dose": "",
+     "freq": "Every 6–8 weeks",
+     "dur": "5–10 sessions",
+     "route": "Procedure",
+     "instr": "Risk of PIH; sun protection",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Camouflage cosmetics",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Hori's nevus",
+   "rx": [
+    {
+     "drug": "Q-switched Nd:YAG 1064 nm (± prior hydroquinone priming)",
+     "dose": "",
+     "freq": "",
+     "dur": "Several sessions",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Q-switched Nd:YAG 1064 nm / picosecond laser",
+   "dose": "",
+   "freq": "Every 6–8 weeks",
+   "dur": "5–10 sessions",
+   "route": "Procedure",
+   "instr": "Risk of PIH; sun protection",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Camouflage cosmetics",
+   "dose": "",
+   "freq": "",
+   "dur": "",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Check eye pressure (glaucoma) and eye pigmentation in nevus of Ota. Explain several sessions are needed; start earlier for better results.",
+ "adviceText": "Check eye pressure (glaucoma) and eye pigmentation in nevus of Ota. Explain several sessions are needed; start earlier for better results.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467909
+}

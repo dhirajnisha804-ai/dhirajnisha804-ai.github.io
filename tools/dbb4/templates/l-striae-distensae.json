@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Striae distensae",
+ "dx": "Striae distensae",
+ "caseName": "Striae distensae",
+ "group": "Connective tissue diseases",
+ "general": "Early red striae respond better than white ones. Treatment improves, does not erase.",
+ "special": "Pregnancy: emollients only (hyaluronic acid, centella); evidence for prevention is weak.",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Early (red)",
+   "rx": [
+    {
+     "drug": "Cream Tretinoin 0.05–0.1%",
+     "dose": "Thin layer",
+     "freq": "HS",
+     "dur": "3–6 months",
+     "route": "Topical",
+     "instr": "Not in pregnancy",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Pulsed dye laser / IPL",
+     "dose": "",
+     "freq": "Monthly",
+     "dur": "3–4 sessions",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Mature (white)",
+   "rx": [
+    {
+     "drug": "Fractional CO₂ / Er:YAG laser / microneedling ± PRP / radiofrequency",
+     "dose": "",
+     "freq": "Monthly",
+     "dur": "3–6 sessions",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Tretinoin 0.05–0.1%",
+   "dose": "Thin layer",
+   "freq": "HS",
+   "dur": "3–6 months",
+   "route": "Topical",
+   "instr": "Not in pregnancy",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Pulsed dye laser / IPL",
+   "dose": "",
+   "freq": "Monthly",
+   "dur": "3–4 sessions",
+   "route": "Procedure",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Early red striae respond better than white ones. Treatment improves, does not erase.",
+ "adviceText": "Early red striae respond better than white ones. Treatment improves, does not erase.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467901
+}

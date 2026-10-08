@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Corn (clavus)",
+ "dx": "Corn (clavus)",
+ "caseName": "Corn (clavus)",
+ "group": "Disorders of keratinisation",
+ "general": "Find and remove pressure point: footwear, toe spacers, padding; X-ray for bony prominence if recurrent.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Salicylic acid 40% plaster",
+     "dose": "",
+     "freq": "Every 48 h after soaking",
+     "dur": "2 weeks",
+     "route": "Topical",
+     "instr": "Not in diabetes or neuropathy",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Paring / enucleation of core",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Recurrent",
+   "rx": [
+    {
+     "drug": "Surgical correction of bony prominence (orthopaedics)",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Salicylic acid 40% plaster",
+   "dose": "",
+   "freq": "Every 48 h after soaking",
+   "dur": "2 weeks",
+   "route": "Topical",
+   "instr": "Not in diabetes or neuropathy",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Paring / enucleation of core",
+   "dose": "",
+   "freq": "",
+   "dur": "",
+   "route": "Procedure",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Find and remove pressure point: footwear, toe spacers, padding; X-ray for bony prominence if recurrent.",
+ "adviceText": "Find and remove pressure point: footwear, toe spacers, padding; X-ray for bony prominence if recurrent.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467906
+}

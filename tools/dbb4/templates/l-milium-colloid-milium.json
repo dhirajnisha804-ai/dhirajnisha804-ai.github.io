@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Milium / colloid milium",
+ "dx": "Milium / colloid milium",
+ "caseName": "Milium / colloid milium",
+ "group": "Benign tumours & cysts",
+ "general": "Primary milia in infants clear by themselves. Secondary milia follow blistering, steroid damage, trauma.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Milia",
+   "rx": [
+    {
+     "drug": "Extraction with needle / comedone extractor",
+     "dose": "",
+     "freq": "Once",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Tretinoin 0.025% / Adapalene 0.1%",
+     "dose": "",
+     "freq": "HS",
+     "dur": "2–3 months",
+     "route": "Topical",
+     "instr": "Many lesions",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Colloid milium",
+   "rx": [
+    {
+     "drug": "Sun protection; dermabrasion / CO₂ or Er:YAG laser",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "Limited evidence",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Extraction with needle / comedone extractor",
+   "dose": "",
+   "freq": "Once",
+   "dur": "",
+   "route": "Procedure",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Tretinoin 0.025% / Adapalene 0.1%",
+   "dose": "",
+   "freq": "HS",
+   "dur": "2–3 months",
+   "route": "Topical",
+   "instr": "Many lesions",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Primary milia in infants clear by themselves. Secondary milia follow blistering, steroid damage, trauma.",
+ "adviceText": "Primary milia in infants clear by themselves. Secondary milia follow blistering, steroid damage, trauma.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467908
+}

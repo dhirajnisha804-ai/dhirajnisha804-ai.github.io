@@ -1,0 +1,158 @@
+{
+ "kind": "ladder",
+ "name": "Hansen's disease (leprosy)",
+ "dx": "Hansen's disease (leprosy)",
+ "caseName": "Hansen's disease (leprosy)",
+ "group": "Leprosy & mycobacterial",
+ "general": "Notify; counsel (curable, not hereditary, stop discrimination). Examine contacts — single-dose rifampicin chemoprophylaxis for contacts per NLEP. Nerve function assessment at every visit; self-care for anaesthetic hands and feet. Check G6PD before dapsone if possible.",
+ "special": "Children 10–14 yr: rifampicin 450 mg monthly, clofazimine 150 mg monthly + 50 mg alternate days, dapsone 50 mg daily; under 10 yr: dose by weight (see NLEP chart / Dose by weight).",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Multidrug therapy (uniform 3-drug MDT, NLEP/WHO)",
+   "rx": [
+    {
+     "drug": "Rifampicin 600 mg",
+     "dose": "600 mg",
+     "freq": "Once a month, supervised",
+     "dur": "PB 6 months / MB 12 months",
+     "route": "Oral",
+     "instr": "Urine turns orange",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Clofazimine",
+     "dose": "300 mg once a month supervised + 50 mg",
+     "freq": "Daily",
+     "dur": "PB 6 months / MB 12 months",
+     "route": "Oral",
+     "instr": "Skin darkening, reversible",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Dapsone 100 mg",
+     "dose": "100 mg",
+     "freq": "Daily",
+     "dur": "PB 6 months / MB 12 months",
+     "route": "Oral",
+     "instr": "Watch for anaemia, hepatitis, DRESS",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Reactions",
+   "rx": [
+    {
+     "drug": "Type 1 (reversal): Tab. Prednisolone 40 mg",
+     "dose": "0.5–1 mg/kg",
+     "freq": "OD",
+     "dur": "Taper over 12–20 weeks",
+     "route": "Oral",
+     "instr": "Continue MDT",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Type 2 (ENL): Tab. Prednisolone 40 mg + Clofazimine 300 mg/day",
+     "dose": "",
+     "freq": "",
+     "dur": "Prednisolone 12 weeks; clofazimine up to 12 months tapering",
+     "route": "Oral",
+     "instr": "Thalidomide 100–400 mg/day if steroid-dependent (men, women not of child-bearing potential)",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Rifampicin resistance / intolerance",
+   "rx": [
+    {
+     "drug": "Ofloxacin 400 mg + Minocycline 100 mg + Clofazimine 50 mg",
+     "dose": "",
+     "freq": "Daily",
+     "dur": "6 months, then clofazimine + one of them for 18 months",
+     "route": "Oral",
+     "instr": "Specialist / NLEP referral",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Rifampicin 600 mg",
+   "dose": "600 mg",
+   "freq": "Once a month, supervised",
+   "dur": "PB 6 months / MB 12 months",
+   "route": "Oral",
+   "instr": "Urine turns orange",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Clofazimine",
+   "dose": "300 mg once a month supervised + 50 mg",
+   "freq": "Daily",
+   "dur": "PB 6 months / MB 12 months",
+   "route": "Oral",
+   "instr": "Skin darkening, reversible",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Dapsone 100 mg",
+   "dose": "100 mg",
+   "freq": "Daily",
+   "dur": "PB 6 months / MB 12 months",
+   "route": "Oral",
+   "instr": "Watch for anaemia, hepatitis, DRESS",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Notify; counsel (curable, not hereditary, stop discrimination). Examine contacts — single-dose rifampicin chemoprophylaxis for contacts per NLEP. Nerve function assessment at every visit; self-care for anaesthetic hands and feet. Check G6PD before dapsone if possible.",
+ "adviceText": "Notify; counsel (curable, not hereditary, stop discrimination). Examine contacts — single-dose rifampicin chemoprophylaxis for contacts per NLEP. Nerve function assessment at every visit; self-care for anaesthetic hands and feet. Check G6PD before dapsone if possible.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467901
+}

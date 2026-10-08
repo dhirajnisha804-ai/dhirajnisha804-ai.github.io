@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Tuberous sclerosis complex",
+ "dx": "Tuberous sclerosis complex",
+ "caseName": "Tuberous sclerosis complex",
+ "group": "Genodermatoses",
+ "general": "Multidisciplinary (neurology, renal, eye, cardiology); surveillance per international guidelines; genetic counselling.",
+ "special": "Systemic everolimus (specialist) for SEGA, renal angiomyolipoma, seizures — skin lesions also improve.",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Facial angiofibromas",
+   "rx": [
+    {
+     "drug": "Sirolimus 0.2–1% topical gel / ointment",
+     "dose": "Thin layer",
+     "freq": "OD–BD",
+     "dur": "Long-term",
+     "route": "Topical",
+     "instr": "Best started early in childhood; relapse on stopping",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Sun protection",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Established angiofibromas",
+   "rx": [
+    {
+     "drug": "CO₂ / pulsed dye laser, shave, electrocautery",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "Combine with topical sirolimus afterwards",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Sirolimus 0.2–1% topical gel / ointment",
+   "dose": "Thin layer",
+   "freq": "OD–BD",
+   "dur": "Long-term",
+   "route": "Topical",
+   "instr": "Best started early in childhood; relapse on stopping",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Sun protection",
+   "dose": "",
+   "freq": "",
+   "dur": "",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Multidisciplinary (neurology, renal, eye, cardiology); surveillance per international guidelines; genetic counselling.",
+ "adviceText": "Multidisciplinary (neurology, renal, eye, cardiology); surveillance per international guidelines; genetic counselling.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467909
+}

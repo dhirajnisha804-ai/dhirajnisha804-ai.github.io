@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Phrynoderma",
+ "dx": "Phrynoderma",
+ "caseName": "Phrynoderma",
+ "group": "Nutritional & metabolic",
+ "general": "Vitamin A and EFA deficiency (often with other nutritional deficiencies). Dietary counselling (green leafy vegetables, carrot, papaya, milk, eggs). Check night blindness, Bitot's spots.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Treatment",
+   "rx": [
+    {
+     "drug": "Vitamin A 2,00,000 IU (≥1 yr; 1,00,000 IU 6–12 months)",
+     "dose": "",
+     "freq": "Day 1, 2 and 14 (if eye signs)",
+     "dur": "",
+     "route": "Oral",
+     "instr": "NOT in pregnancy (use 10,000 IU daily)",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Urea 10% / Salicylic acid 3%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "4–8 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Add-on",
+   "rx": [
+    {
+     "drug": "Tab. Vitamin B-complex + Vitamin E + Zinc",
+     "dose": "",
+     "freq": "OD",
+     "dur": "3 months",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Vitamin A 2,00,000 IU (≥1 yr; 1,00,000 IU 6–12 months)",
+   "dose": "",
+   "freq": "Day 1, 2 and 14 (if eye signs)",
+   "dur": "",
+   "route": "Oral",
+   "instr": "NOT in pregnancy (use 10,000 IU daily)",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Urea 10% / Salicylic acid 3%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "4–8 weeks",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Vitamin A and EFA deficiency (often with other nutritional deficiencies). Dietary counselling (green leafy vegetables, carrot, papaya, milk, eggs). Check night blindness, Bitot's spots.",
+ "adviceText": "Vitamin A and EFA deficiency (often with other nutritional deficiencies). Dietary counselling (green leafy vegetables, carrot, papaya, milk, eggs). Check night blindness, Bitot's spots.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467904
+}

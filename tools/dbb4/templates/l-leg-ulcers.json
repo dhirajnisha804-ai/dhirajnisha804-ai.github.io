@@ -1,0 +1,171 @@
+{
+ "kind": "ladder",
+ "name": "Leg ulcers",
+ "dx": "Leg ulcers",
+ "caseName": "Leg ulcers",
+ "group": "Vascular & ulcers",
+ "general": "Find the type: venous (ABPI ≥0.8 before compression), arterial, neuropathic (diabetes, leprosy), vasculitic, pyoderma gangrenosum, infection, malignancy (biopsy non-healing). Leg elevation, walking, weight loss, nutrition, control diabetes.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Venous ulcer",
+   "rx": [
+    {
+     "drug": "Compression bandaging (4-layer / short-stretch)",
+     "dose": "",
+     "freq": "Change weekly",
+     "dur": "Till healed, then stockings",
+     "route": "",
+     "instr": "Only if ABPI ≥0.8",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Non-adherent dressing / hydrocolloid; Potassium permanganate soaks for exudate",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Topical",
+     "instr": "Avoid topical antibiotics/neomycin (sensitisation)",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Pentoxifylline 400 mg",
+     "dose": "1 tab",
+     "freq": "TDS",
+     "dur": "6 months",
+     "route": "Oral",
+     "instr": "Speeds healing with compression",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Infected or slow",
+   "rx": [
+    {
+     "drug": "Systemic antibiotic only if cellulitis (per culture)",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Topical steroid to surrounding stasis eczema",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Not healing in 12 weeks",
+   "rx": [
+    {
+     "drug": "Biopsy edge; Doppler and venous surgery / endovenous ablation",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Split-skin / punch grafting, NPWT",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Compression bandaging (4-layer / short-stretch)",
+   "dose": "",
+   "freq": "Change weekly",
+   "dur": "Till healed, then stockings",
+   "route": "",
+   "instr": "Only if ABPI ≥0.8",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Non-adherent dressing / hydrocolloid; Potassium permanganate soaks for exudate",
+   "dose": "",
+   "freq": "",
+   "dur": "",
+   "route": "Topical",
+   "instr": "Avoid topical antibiotics/neomycin (sensitisation)",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Pentoxifylline 400 mg",
+   "dose": "1 tab",
+   "freq": "TDS",
+   "dur": "6 months",
+   "route": "Oral",
+   "instr": "Speeds healing with compression",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Find the type: venous (ABPI ≥0.8 before compression), arterial, neuropathic (diabetes, leprosy), vasculitic, pyoderma gangrenosum, infection, malignancy (biopsy non-healing). Leg elevation, walking, weight loss, nutrition, control diabetes.",
+ "adviceText": "Find the type: venous (ABPI ≥0.8 before compression), arterial, neuropathic (diabetes, leprosy), vasculitic, pyoderma gangrenosum, infection, malignancy (biopsy non-healing). Leg elevation, walking, weight loss, nutrition, control diabetes.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467902
+}

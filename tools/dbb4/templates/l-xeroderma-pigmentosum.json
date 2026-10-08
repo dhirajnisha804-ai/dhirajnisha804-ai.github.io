@@ -1,0 +1,119 @@
+{
+ "kind": "ladder",
+ "name": "Xeroderma pigmentosum",
+ "dx": "Xeroderma pigmentosum",
+ "caseName": "Xeroderma pigmentosum",
+ "group": "Genodermatoses",
+ "general": "Strict lifelong UV protection: avoid daylight outdoors, UV-blocking clothing, visors, window films, SPF 50+; vitamin D supplements. Skin and eye checks every 3–6 months. Genetic counselling.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Prevention",
+   "rx": [
+    {
+     "drug": "Sunscreen SPF 50+ broad spectrum",
+     "dose": "",
+     "freq": "Every 2 h",
+     "dur": "Lifelong",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Nicotinamide 500 mg",
+     "dose": "1 tab",
+     "freq": "BD",
+     "dur": "Long-term",
+     "route": "Oral",
+     "instr": "Reduces new skin cancers (adults; limited data in XP)",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Premalignant lesions",
+   "rx": [
+    {
+     "drug": "Cryotherapy / 5-FU / Imiquimod",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Topical/Procedure",
+     "instr": "AKs",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Skin cancers",
+   "rx": [
+    {
+     "drug": "Excision / Mohs; oral retinoid (acitretin / isotretinoin) chemoprevention",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "",
+     "instr": "Specialist",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Sunscreen SPF 50+ broad spectrum",
+   "dose": "",
+   "freq": "Every 2 h",
+   "dur": "Lifelong",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Nicotinamide 500 mg",
+   "dose": "1 tab",
+   "freq": "BD",
+   "dur": "Long-term",
+   "route": "Oral",
+   "instr": "Reduces new skin cancers (adults; limited data in XP)",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Strict lifelong UV protection: avoid daylight outdoors, UV-blocking clothing, visors, window films, SPF 50+; vitamin D supplements. Skin and eye checks every 3–6 months. Genetic counselling.",
+ "adviceText": "Strict lifelong UV protection: avoid daylight outdoors, UV-blocking clothing, visors, window films, SPF 50+; vitamin D supplements. Skin and eye checks every 3–6 months. Genetic counselling.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467909
+}

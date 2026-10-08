@@ -10,8 +10,21 @@
   {
    "line": 1,
    "label": "First line",
-   "when": "Supportive care (all)",
+   "when": "Supportive care + cyclosporine (start early)",
    "rx": [
+    {
+     "drug": "Cap. Cyclosporine 100 mg",
+     "dose": "3–5 mg/kg/day",
+     "freq": "BD",
+     "dur": "7–10 days, then taper",
+     "route": "Oral",
+     "instr": "First-line immunomodulator; check creatinine, BP",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
     {
      "drug": "Liquid paraffin / non-adherent dressings",
      "dose": "",
@@ -56,21 +69,8 @@
   {
    "line": 2,
    "label": "Second line",
-   "when": "Immunomodulation (early)",
+   "when": "If cyclosporine cannot be used / progressing",
    "rx": [
-    {
-     "drug": "Cap. Cyclosporine 100 mg",
-     "dose": "3–5 mg/kg/day",
-     "freq": "BD",
-     "dur": "7–10 days, then taper",
-     "route": "Oral",
-     "instr": "Preferred in many Indian centres",
-     "timing": "",
-     "brand": "",
-     "brandId": "",
-     "generic": "",
-     "cost": ""
-    },
     {
      "drug": "Inj. Dexamethasone pulse / IV methylprednisolone",
      "dose": "",
@@ -83,14 +83,7 @@
      "brandId": "",
      "generic": "",
      "cost": ""
-    }
-   ]
-  },
-  {
-   "line": 3,
-   "label": "Third line",
-   "when": "Severe or progressing",
-   "rx": [
+    },
     {
      "drug": "Inj. Etanercept 50 mg",
      "dose": "25–50 mg",
@@ -103,14 +96,21 @@
      "brandId": "",
      "generic": "",
      "cost": ""
-    },
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Severe, refractory",
+   "rx": [
     {
      "drug": "Inj. IVIG",
      "dose": "0.5–1 g/kg/day",
      "freq": "OD",
      "dur": "3–4 days",
      "route": "IV",
-     "instr": "Evidence mixed",
+     "instr": "Evidence mixed; costly",
      "timing": "",
      "brand": "",
      "brandId": "",
@@ -121,6 +121,19 @@
   }
  ],
  "rx": [
+  {
+   "drug": "Cap. Cyclosporine 100 mg",
+   "dose": "3–5 mg/kg/day",
+   "freq": "BD",
+   "dur": "7–10 days, then taper",
+   "route": "Oral",
+   "instr": "First-line immunomodulator; check creatinine, BP",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
   {
    "drug": "Liquid paraffin / non-adherent dressings",
    "dose": "",
@@ -167,5 +180,5 @@
  "review": true,
  "free": false,
  "source": "slot2.py",
- "updatedAt": 1791446097955
+ "updatedAt": 1791446467883
 }

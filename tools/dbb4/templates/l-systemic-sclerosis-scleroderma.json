@@ -1,0 +1,145 @@
+{
+ "kind": "ladder",
+ "name": "Systemic sclerosis (scleroderma)",
+ "dx": "Systemic sclerosis (scleroderma)",
+ "caseName": "Systemic sclerosis (scleroderma)",
+ "group": "Connective tissue diseases",
+ "general": "Co-managed with rheumatology. Screen yearly: lungs (PFT, HRCT), heart (echo for pulmonary hypertension), kidneys (BP — renal crisis; avoid high-dose steroids >15 mg). Keep warm, stop smoking, emollients, physiotherapy for hands and mouth.",
+ "special": "GI reflux: PPI. Renal crisis: ACE inhibitor (captopril) urgently.",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Raynaud's / digital ulcers",
+   "rx": [
+    {
+     "drug": "Tab. Nifedipine SR 10–20 mg / Amlodipine 5–10 mg",
+     "dose": "",
+     "freq": "OD–BD",
+     "dur": "Long-term",
+     "route": "Oral",
+     "instr": "Warm gloves, avoid cold, beta-blockers",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Sildenafil 20 mg / Tadalafil 10–20 mg",
+     "dose": "",
+     "freq": "TDS / OD",
+     "dur": "",
+     "route": "Oral",
+     "instr": "Digital ulcers; or IV iloprost; bosentan prevents new ulcers",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Skin thickening (early diffuse)",
+   "rx": [
+    {
+     "drug": "Tab. Methotrexate 15–25 mg",
+     "dose": "",
+     "freq": "Weekly",
+     "dur": "",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Mycophenolate mofetil 500 mg",
+     "dose": "1–1.5 g",
+     "freq": "BD",
+     "dur": "Long-term",
+     "route": "Oral",
+     "instr": "Preferred if lung disease",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Progressive / organ disease",
+   "rx": [
+    {
+     "drug": "Inj. Cyclophosphamide / Rituximab / Tab. Nintedanib (ILD)",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "IV/Oral",
+     "instr": "Specialist",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Autologous stem-cell transplant",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "",
+     "instr": "Selected rapidly progressive diffuse disease",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Tab. Nifedipine SR 10–20 mg / Amlodipine 5–10 mg",
+   "dose": "",
+   "freq": "OD–BD",
+   "dur": "Long-term",
+   "route": "Oral",
+   "instr": "Warm gloves, avoid cold, beta-blockers",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Sildenafil 20 mg / Tadalafil 10–20 mg",
+   "dose": "",
+   "freq": "TDS / OD",
+   "dur": "",
+   "route": "Oral",
+   "instr": "Digital ulcers; or IV iloprost; bosentan prevents new ulcers",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Co-managed with rheumatology. Screen yearly: lungs (PFT, HRCT), heart (echo for pulmonary hypertension), kidneys (BP — renal crisis; avoid high-dose steroids >15 mg). Keep warm, stop smoking, emollients, physiotherapy for hands and mouth.",
+ "adviceText": "Co-managed with rheumatology. Screen yearly: lungs (PFT, HRCT), heart (echo for pulmonary hypertension), kidneys (BP — renal crisis; avoid high-dose steroids >15 mg). Keep warm, stop smoking, emollients, physiotherapy for hands and mouth.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467900
+}

@@ -1,0 +1,171 @@
+{
+ "kind": "ladder",
+ "name": "Systemic lupus erythematosus",
+ "dx": "Systemic lupus erythematosus",
+ "caseName": "Systemic lupus erythematosus",
+ "group": "Connective tissue diseases",
+ "general": "Co-managed with rheumatology/medicine. Assess organ involvement (kidney, blood, CNS). Photoprotection, vitamin D and calcium, vaccinations, contraception counselling. Hydroxychloroquine for all unless contraindicated.",
+ "special": "Pregnancy: continue hydroxychloroquine; azathioprine safe; no mycophenolate, methotrexate, cyclophosphamide. Check anti-Ro (neonatal lupus) and antiphospholipid antibodies.",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Skin and mild disease",
+   "rx": [
+    {
+     "drug": "Tab. Hydroxychloroquine 200 mg",
+     "dose": "≤5 mg/kg",
+     "freq": "OD–BD",
+     "dur": "Long-term",
+     "route": "Oral",
+     "instr": "Backbone of therapy",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Mometasone 0.1% / Ointment Tacrolimus 0.1%",
+     "dose": "Thin layer",
+     "freq": "OD–BD",
+     "dur": "",
+     "route": "Topical",
+     "instr": "Skin lesions",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Prednisolone 5–10 mg",
+     "dose": "Lowest effective",
+     "freq": "OD",
+     "dur": "Short",
+     "route": "Oral",
+     "instr": "For flares; taper",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Moderate (arthritis, serositis, resistant skin)",
+   "rx": [
+    {
+     "drug": "Tab. Methotrexate 7.5–15 mg",
+     "dose": "",
+     "freq": "Weekly",
+     "dur": "Months",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Azathioprine 50 mg / Mycophenolate mofetil 1–2 g/day",
+     "dose": "",
+     "freq": "",
+     "dur": "Months",
+     "route": "Oral",
+     "instr": "Steroid-sparing",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Severe organ disease (nephritis, CNS, haematological)",
+   "rx": [
+    {
+     "drug": "Inj. Methylprednisolone 500–1000 mg pulse × 3 days, then Mycophenolate or Cyclophosphamide (Euro-Lupus)",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "IV",
+     "instr": "Specialist care",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Inj. Belimumab / Rituximab / Anifrolumab",
+     "dose": "per label",
+     "freq": "",
+     "dur": "",
+     "route": "IV/SC",
+     "instr": "Refractory",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Tab. Hydroxychloroquine 200 mg",
+   "dose": "≤5 mg/kg",
+   "freq": "OD–BD",
+   "dur": "Long-term",
+   "route": "Oral",
+   "instr": "Backbone of therapy",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Mometasone 0.1% / Ointment Tacrolimus 0.1%",
+   "dose": "Thin layer",
+   "freq": "OD–BD",
+   "dur": "",
+   "route": "Topical",
+   "instr": "Skin lesions",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Prednisolone 5–10 mg",
+   "dose": "Lowest effective",
+   "freq": "OD",
+   "dur": "Short",
+   "route": "Oral",
+   "instr": "For flares; taper",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Co-managed with rheumatology/medicine. Assess organ involvement (kidney, blood, CNS). Photoprotection, vitamin D and calcium, vaccinations, contraception counselling. Hydroxychloroquine for all unless contraindicated.",
+ "adviceText": "Co-managed with rheumatology/medicine. Assess organ involvement (kidney, blood, CNS). Photoprotection, vitamin D and calcium, vaccinations, contraception counselling. Hydroxychloroquine for all unless contraindicated.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467899
+}

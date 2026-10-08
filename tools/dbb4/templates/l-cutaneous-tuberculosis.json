@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Cutaneous tuberculosis",
+ "dx": "Cutaneous tuberculosis",
+ "caseName": "Cutaneous tuberculosis",
+ "group": "Leprosy & mycobacterial",
+ "general": "Confirm (biopsy, culture/GeneXpert, IGRA/Mantoux); look for systemic TB (chest X-ray). Notify (Nikshay), HIV test, treat under NTEP with daily fixed-dose combinations.",
+ "special": "Tuberculids (lichen scrofulosorum, papulonecrotic): full ATT for underlying focus. Scrofuloderma/lupus vulgaris may need surgery after ATT for deformity.",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Drug-sensitive TB (NTEP)",
+   "rx": [
+    {
+     "drug": "Intensive phase: Isoniazid + Rifampicin + Pyrazinamide + Ethambutol (FDC)",
+     "dose": "by weight band",
+     "freq": "Daily",
+     "dur": "2 months",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Continuation phase: Isoniazid + Rifampicin + Ethambutol",
+     "dose": "by weight band",
+     "freq": "Daily",
+     "dur": "4 months (extend to 9–12 for extensive / bone)",
+     "route": "Oral",
+     "instr": "Pyridoxine 10–25 mg/day",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Response check / drug resistance",
+   "rx": [
+    {
+     "drug": "Reassess at 2 months; if no response — repeat biopsy, culture with sensitivity, GeneXpert for rifampicin resistance",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "",
+     "instr": "Refer to DR-TB centre",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Intensive phase: Isoniazid + Rifampicin + Pyrazinamide + Ethambutol (FDC)",
+   "dose": "by weight band",
+   "freq": "Daily",
+   "dur": "2 months",
+   "route": "Oral",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Continuation phase: Isoniazid + Rifampicin + Ethambutol",
+   "dose": "by weight band",
+   "freq": "Daily",
+   "dur": "4 months (extend to 9–12 for extensive / bone)",
+   "route": "Oral",
+   "instr": "Pyridoxine 10–25 mg/day",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Confirm (biopsy, culture/GeneXpert, IGRA/Mantoux); look for systemic TB (chest X-ray). Notify (Nikshay), HIV test, treat under NTEP with daily fixed-dose combinations.",
+ "adviceText": "Confirm (biopsy, culture/GeneXpert, IGRA/Mantoux); look for systemic TB (chest X-ray). Notify (Nikshay), HIV test, treat under NTEP with daily fixed-dose combinations.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467902
+}

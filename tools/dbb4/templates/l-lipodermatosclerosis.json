@@ -1,0 +1,112 @@
+{
+ "kind": "ladder",
+ "name": "Lipodermatosclerosis",
+ "dx": "Lipodermatosclerosis",
+ "caseName": "Lipodermatosclerosis",
+ "group": "Vascular & ulcers",
+ "general": "Sign of chronic venous insufficiency. Compression is essential once acute pain settles; venous duplex.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Compression stockings (class II, 20–30 mmHg)",
+     "dose": "",
+     "freq": "Daily",
+     "dur": "Long-term",
+     "route": "",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Pentoxifylline 400 mg",
+     "dose": "1 tab",
+     "freq": "TDS",
+     "dur": "3–6 months",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Acute painful / refractory",
+   "rx": [
+    {
+     "drug": "Tab. Stanozolol / Danazol 200 mg",
+     "dose": "",
+     "freq": "BD",
+     "dur": "2–3 months",
+     "route": "Oral",
+     "instr": "Androgens; monitor liver, lipids",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Venous ablation / surgery",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Compression stockings (class II, 20–30 mmHg)",
+   "dose": "",
+   "freq": "Daily",
+   "dur": "Long-term",
+   "route": "",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Pentoxifylline 400 mg",
+   "dose": "1 tab",
+   "freq": "TDS",
+   "dur": "3–6 months",
+   "route": "Oral",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Sign of chronic venous insufficiency. Compression is essential once acute pain settles; venous duplex.",
+ "adviceText": "Sign of chronic venous insufficiency. Compression is essential once acute pain settles; venous duplex.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467903
+}

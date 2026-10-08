@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Callus (callosity)",
+ "dx": "Callus (callosity)",
+ "caseName": "Callus (callosity)",
+ "group": "Disorders of keratinisation",
+ "general": "Remove pressure and friction: footwear, insoles, gloves; correct foot deformity (podiatry). Diabetics/leprosy: careful — no self-paring.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Salicylic acid 20–40% plaster / 12% ointment",
+     "dose": "",
+     "freq": "HS",
+     "dur": "2–4 weeks",
+     "route": "Topical",
+     "instr": "Not in diabetes or poor circulation",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Urea 40%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Persistent",
+   "rx": [
+    {
+     "drug": "Paring by doctor / podiatrist",
+     "dose": "",
+     "freq": "Every 4–6 weeks",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Salicylic acid 20–40% plaster / 12% ointment",
+   "dose": "",
+   "freq": "HS",
+   "dur": "2–4 weeks",
+   "route": "Topical",
+   "instr": "Not in diabetes or poor circulation",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Urea 40%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Remove pressure and friction: footwear, insoles, gloves; correct foot deformity (podiatry). Diabetics/leprosy: careful — no self-paring.",
+ "adviceText": "Remove pressure and friction: footwear, insoles, gloves; correct foot deformity (podiatry). Diabetics/leprosy: careful — no self-paring.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467905
+}

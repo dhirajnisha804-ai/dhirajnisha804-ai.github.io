@@ -1,0 +1,132 @@
+{
+ "kind": "ladder",
+ "name": "Henoch–Schönlein purpura (IgA vasculitis)",
+ "dx": "Henoch–Schönlein purpura (IgA vasculitis)",
+ "caseName": "Henoch–Schönlein purpura (IgA vasculitis)",
+ "group": "Vascular & ulcers",
+ "general": "Mostly self-limiting in children. Urine dipstick and BP at every visit for 6 months (nephritis). Rest, leg elevation.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Skin + joints",
+   "rx": [
+    {
+     "drug": "Tab. Paracetamol / Ibuprofen",
+     "dose": "",
+     "freq": "",
+     "dur": "As needed",
+     "route": "Oral",
+     "instr": "Avoid NSAIDs if renal involvement",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Rest, elevation",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Severe abdominal pain, scrotal or extensive skin necrosis",
+   "rx": [
+    {
+     "drug": "Tab. Prednisolone 20 mg",
+     "dose": "1–2 mg/kg",
+     "freq": "OD",
+     "dur": "2 weeks, taper",
+     "route": "Oral",
+     "instr": "Does not prevent nephritis",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Dapsone 50–100 mg / Colchicine 0.5 mg BD",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Oral",
+     "instr": "Persistent skin disease",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Nephritis",
+   "rx": [
+    {
+     "drug": "Nephrology: steroids ± mycophenolate / cyclophosphamide; ACE inhibitor for proteinuria",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Tab. Paracetamol / Ibuprofen",
+   "dose": "",
+   "freq": "",
+   "dur": "As needed",
+   "route": "Oral",
+   "instr": "Avoid NSAIDs if renal involvement",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Rest, elevation",
+   "dose": "",
+   "freq": "",
+   "dur": "",
+   "route": "",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Mostly self-limiting in children. Urine dipstick and BP at every visit for 6 months (nephritis). Rest, leg elevation.",
+ "adviceText": "Mostly self-limiting in children. Urine dipstick and BP at every visit for 6 months (nephritis). Rest, leg elevation.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467903
+}

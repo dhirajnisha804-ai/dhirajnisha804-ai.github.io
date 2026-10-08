@@ -1,0 +1,73 @@
+{
+ "kind": "ladder",
+ "name": "Lichen spinulosus",
+ "dx": "Lichen spinulosus",
+ "caseName": "Lichen spinulosus",
+ "group": "Disorders of keratinisation",
+ "general": "Often self-limiting in children; associated with atopy.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Salicylic acid 3–6% / Urea 10–20% / Lactic acid 12%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "4–8 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Persistent",
+   "rx": [
+    {
+     "drug": "Cream Tretinoin 0.025% / mild topical steroid",
+     "dose": "",
+     "freq": "HS",
+     "dur": "4 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Salicylic acid 3–6% / Urea 10–20% / Lactic acid 12%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "4–8 weeks",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Often self-limiting in children; associated with atopy.",
+ "adviceText": "Often self-limiting in children; associated with atopy.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467905
+}

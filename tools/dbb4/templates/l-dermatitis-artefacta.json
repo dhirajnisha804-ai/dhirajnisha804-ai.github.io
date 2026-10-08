@@ -1,0 +1,112 @@
+{
+ "kind": "ladder",
+ "name": "Dermatitis artefacta",
+ "dx": "Dermatitis artefacta",
+ "caseName": "Dermatitis artefacta",
+ "group": "Psychocutaneous disorders",
+ "general": "Non-confrontational, supportive approach; build trust and see regularly. Do not accuse. Involve psychiatry when the patient accepts. Look for stressors, depression, personality disorder, abuse.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Skin care",
+   "rx": [
+    {
+     "drug": "Occlusive dressings / zinc paste bandage",
+     "dose": "",
+     "freq": "",
+     "dur": "Weekly",
+     "route": "Topical",
+     "instr": "Protects and allows healing",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Mupirocin 2% for secondary infection",
+     "dose": "",
+     "freq": "BD",
+     "dur": "1 week",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Psychological",
+   "rx": [
+    {
+     "drug": "Tab. Fluoxetine 20 mg / Sertraline 50 mg",
+     "dose": "1 tab",
+     "freq": "OD",
+     "dur": "6 months",
+     "route": "Oral",
+     "instr": "With psychiatry; for associated depression/anxiety",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Low-dose atypical antipsychotic (e.g. aripiprazole)",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Oral",
+     "instr": "Psychiatrist-led",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Occlusive dressings / zinc paste bandage",
+   "dose": "",
+   "freq": "",
+   "dur": "Weekly",
+   "route": "Topical",
+   "instr": "Protects and allows healing",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Mupirocin 2% for secondary infection",
+   "dose": "",
+   "freq": "BD",
+   "dur": "1 week",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Non-confrontational, supportive approach; build trust and see regularly. Do not accuse. Involve psychiatry when the patient accepts. Look for stressors, depression, personality disorder, abuse.",
+ "adviceText": "Non-confrontational, supportive approach; build trust and see regularly. Do not accuse. Involve psychiatry when the patient accepts. Look for stressors, depression, personality disorder, abuse.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot3.py",
+ "updatedAt": 1791446467907
+}
