@@ -10,6 +10,7 @@ import android.widget.FrameLayout;
 import org.json.JSONObject;
 import java.util.ArrayList;
 import android.app.Activity;
+import android.app.KeyguardManager;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.graphics.Color;
@@ -39,7 +40,7 @@ import java.io.FileOutputStream;
  * the website's service worker keeps it working offline.
  */
 public class MainActivity extends Activity {
-    private static final int REQ_FILE = 41, REQ_VOICE = 42, REQ_CAM_CAPTURE = 43, REQ_CAM_LIVE = 44;
+    private static final int REQ_FILE = 41, REQ_VOICE = 42, REQ_CAM_CAPTURE = 43, REQ_CAM_LIVE = 44, REQ_UNLOCK = 45;
     private WebView web;
     private View splash;
     private String voiceField;
@@ -192,6 +193,10 @@ public class MainActivity extends Activity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQ_UNLOCK) {
+            web.evaluateJavascript("window.DRX_unlocked&&window.DRX_unlocked(" + (resultCode == RESULT_OK ? "true" : "false") + ")", null);
+            return;
+        }
         if (requestCode == REQ_VOICE) {
             String text = "";
             if (resultCode == RESULT_OK && data != null) {
@@ -274,6 +279,25 @@ public class MainActivity extends Activity {
 
         @JavascriptInterface
         public String version() { return BuildConfig.VERSION_NAME; }
+
+        /** True when the phone has a screen lock (fingerprint / face / PIN / pattern) set up. */
+        @JavascriptInterface
+        public boolean canUnlock() {
+            KeyguardManager km = (KeyguardManager) getSystemService(KEYGUARD_SERVICE);
+            return km != null && km.isDeviceSecure();
+        }
+
+        /** Ask for the phone's own fingerprint / screen lock; result returns to window.DRX_unlocked(ok). */
+        @JavascriptInterface
+        @SuppressWarnings("deprecation")
+        public void unlock(String title) {
+            runOnUiThread(() -> {
+                KeyguardManager km = (KeyguardManager) getSystemService(KEYGUARD_SERVICE);
+                Intent i = km == null ? null : km.createConfirmDeviceCredentialIntent(title == null || title.isEmpty() ? "Unlock Derma Desk" : title, "Use your fingerprint or screen lock");
+                if (i == null) { web.evaluateJavascript("window.DRX_unlocked&&window.DRX_unlocked(false)", null); return; }
+                startActivityForResult(i, REQ_UNLOCK);
+            });
+        }
 
         /** Block screenshots / screen recording while sensitive screens are open. */
         @JavascriptInterface

@@ -308,6 +308,19 @@
   DRX.onAuth = f => { DRX.authSubs.push(f); return () => { DRX.authSubs = DRX.authSubs.filter(g => g !== f); }; };
   DRX.signIn = (email, pw) => { if (!auth) return Promise.reject(err("not_configured")); return auth.signInWithEmailAndPassword(email.trim(), pw); };
   DRX.signOut = () => auth ? auth.signOut() : Promise.resolve();
+  // Change password: re-check the current password, then set the new one.
+  DRX.changePassword = async (current, next) => {
+    const u = auth && auth.currentUser; if (!u) throw err("not_signed_in");
+    const cred = firebase.auth.EmailAuthProvider.credential(u.email, current);
+    await u.reauthenticateWithCredential(cred);
+    await u.updatePassword(next);
+  };
+  // Check a password without changing anything (used to reset a forgotten app-lock PIN).
+  DRX.checkPassword = async pw => {
+    const u = auth && auth.currentUser; if (!u) throw err("not_signed_in");
+    await u.reauthenticateWithCredential(firebase.auth.EmailAuthProvider.credential(u.email, pw));
+    return true;
+  };
   DRX.onAuth(() => { maybeMigrate(); emitBrands(); });
   DRX.adminEmail = adminEmail;
   DRX.cloudCount = async col => { if (!fs) return null; try { const s = await fs.collection(col).get({ source: "server" }); return s.size; } catch { return null; } };
@@ -393,7 +406,13 @@
 
   /* ---------------- service worker (offline + /_blob/ photos) ---------------- */
   if ("serviceWorker" in navigator && location.protocol !== "file:") {
-    navigator.serviceWorker.register("sw.js").catch(() => {});
+    const hadController = !!navigator.serviceWorker.controller;
+    navigator.serviceWorker.register("sw.js").then(reg => {
+      DRX.swReg = reg;
+      setInterval(() => reg.update().catch(() => {}), 30 * 60 * 1000);
+    }).catch(() => {});
+    // A new version took over: tell the app so it can offer a reload.
+    navigator.serviceWorker.addEventListener("controllerchange", () => { if (hadController) window.dispatchEvent(new Event("drx-updated")); });
   }
   // Until the service worker controls the page, resolve /_blob/ images directly.
   const blobURL = async id => { const v = await tx("blobs", "readonly", s => s.get(id)); return v ? URL.createObjectURL(v.blob) : ""; };
