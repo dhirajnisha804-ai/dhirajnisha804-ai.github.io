@@ -25,7 +25,7 @@ window.firebase=(function(){
    onSnapshot(o,cb,er){ if(typeof o==='function'){er=cb;cb=o;} const f=()=>cb(snapOf(c,q)); subs.push(f); setTimeout(f,20); return()=>{const i=subs.indexOf(f);if(i>=0)subs.splice(i,1)}},
    async get(){return snapOf(c,q)}});
  const fsObj={enablePersistence:()=>Promise.resolve(),collection:c=>colRef(c),
-   batch(){const ops=[];return{set(r,d){ops.push(['s',r,d])},update(r,d){ops.push(['u',r,d])},async commit(){for(const[t,r,d] of ops) await (t==='s'?r.set(d):r.update(d))}}}};
+   batch(){const ops=[];return{set(r,d){ops.push(['s',r,d])},update(r,d){ops.push(['u',r,d])},delete(r){ops.push(['d',r])},async commit(){for(const[t,r,d] of ops) await (t==='s'?r.set(d):t==='d'?r.delete():r.update(d))}}}};
  const fire=()=>fsObj; fire.FieldValue={delete:()=>({__del:1})};
  window.__store=store; window.__accounts=accounts; window.__verify=e=>{accounts[e].verified=true;save()};
  const setCur=u=>{cur=u;localStorage.setItem('__mockuser',JSON.stringify(u?u.email:null));authSubs.forEach(f=>f(u))};

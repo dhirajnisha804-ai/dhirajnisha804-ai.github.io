@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Oral candidiasis",
+ "dx": "Oral candidiasis",
+ "caseName": "Oral candidiasis",
+ "group": "Oral & mucosal disorders",
+ "general": "Look for cause: dentures, inhaled steroids (rinse after use), diabetes, antibiotics, HIV. Clean dentures and remove at night.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Clotrimazole 10 mg troche / Nystatin suspension 1 mL (1 lakh IU)",
+     "dose": "",
+     "freq": "QID / 5×/day",
+     "dur": "7–14 days",
+     "route": "Oral",
+     "instr": "Swish and swallow",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Miconazole oral gel 2%",
+     "dose": "",
+     "freq": "QID",
+     "dur": "7 days",
+     "route": "Oral",
+     "instr": "Not with warfarin",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Extensive / immunocompromised",
+   "rx": [
+    {
+     "drug": "Tab. Fluconazole 150 mg",
+     "dose": "100–200 mg",
+     "freq": "OD",
+     "dur": "7–14 days",
+     "route": "Oral",
+     "instr": "Oesophageal: 14–21 days",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Clotrimazole 10 mg troche / Nystatin suspension 1 mL (1 lakh IU)",
+   "dose": "",
+   "freq": "QID / 5×/day",
+   "dur": "7–14 days",
+   "route": "Oral",
+   "instr": "Swish and swallow",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Miconazole oral gel 2%",
+   "dose": "",
+   "freq": "QID",
+   "dur": "7 days",
+   "route": "Oral",
+   "instr": "Not with warfarin",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Look for cause: dentures, inhaled steroids (rinse after use), diabetes, antibiotics, HIV. Clean dentures and remove at night.",
+ "adviceText": "Look for cause: dentures, inhaled steroids (rinse after use), diabetes, antibiotics, HIV. Clean dentures and remove at night.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot4.py",
+ "updatedAt": 1791446921264
+}

@@ -1,0 +1,112 @@
+{
+ "kind": "ladder",
+ "name": "Maculopapular drug eruption",
+ "dx": "Maculopapular drug eruption",
+ "caseName": "Maculopapular drug eruption",
+ "group": "Reactive & drug eruptions",
+ "general": "Identify and stop the culprit (onset 4–14 days after starting). Look for red flags of DRESS (fever, facial oedema, lymph nodes, eosinophilia, liver) or SJS (mucosa, blisters, skin pain). Give a drug-allergy card.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Mild",
+   "rx": [
+    {
+     "drug": "Cream Mometasone 0.1%",
+     "dose": "Thin layer",
+     "freq": "OD–BD",
+     "dur": "1 week",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Levocetirizine 5 mg",
+     "dose": "1 tab",
+     "freq": "HS",
+     "dur": "1–2 weeks",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Extensive / DRESS",
+   "rx": [
+    {
+     "drug": "Tab. Prednisolone 0.5–1 mg/kg",
+     "dose": "",
+     "freq": "OD",
+     "dur": "Slow taper over 6–8 weeks for DRESS",
+     "route": "Oral",
+     "instr": "Monitor liver, kidney, CBC, thyroid later",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cap. Cyclosporine 3–5 mg/kg/day",
+     "dose": "",
+     "freq": "BD",
+     "dur": "1–2 weeks",
+     "route": "Oral",
+     "instr": "Steroid-sparing alternative in DRESS",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Mometasone 0.1%",
+   "dose": "Thin layer",
+   "freq": "OD–BD",
+   "dur": "1 week",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Levocetirizine 5 mg",
+   "dose": "1 tab",
+   "freq": "HS",
+   "dur": "1–2 weeks",
+   "route": "Oral",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Identify and stop the culprit (onset 4–14 days after starting). Look for red flags of DRESS (fever, facial oedema, lymph nodes, eosinophilia, liver) or SJS (mucosa, blisters, skin pain). Give a drug-allergy card.",
+ "adviceText": "Identify and stop the culprit (onset 4–14 days after starting). Look for red flags of DRESS (fever, facial oedema, lymph nodes, eosinophilia, liver) or SJS (mucosa, blisters, skin pain). Give a drug-allergy card.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot4.py",
+ "updatedAt": 1791446921267
+}

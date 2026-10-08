@@ -1,0 +1,112 @@
+{
+ "kind": "ladder",
+ "name": "Post-inflammatory hyperpigmentation",
+ "dx": "Post-inflammatory hyperpigmentation",
+ "caseName": "Post-inflammatory hyperpigmentation",
+ "group": "Pigmentary disorders",
+ "general": "Treat and control the underlying disease first (acne, eczema, LP). Strict sun protection. Avoid harsh products; fades over months.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Sunscreen SPF 50 (tinted)",
+     "dose": "",
+     "freq": "Every 3 h",
+     "dur": "Long-term",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Azelaic acid 20% / Hydroquinone 2–4% / Retinoid",
+     "dose": "Thin layer",
+     "freq": "HS",
+     "dur": "2–3 months",
+     "route": "Topical",
+     "instr": "Hydroquinone not beyond 3 months",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Persistent",
+   "rx": [
+    {
+     "drug": "Superficial chemical peels (glycolic / salicylic / lactic)",
+     "dose": "",
+     "freq": "Every 2–3 weeks",
+     "dur": "4–6 sessions",
+     "route": "Procedure",
+     "instr": "Priming; dark skin — low concentrations",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Low-fluence Q-switched Nd:YAG",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "Dermal pigment; risk of worsening",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Sunscreen SPF 50 (tinted)",
+   "dose": "",
+   "freq": "Every 3 h",
+   "dur": "Long-term",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Azelaic acid 20% / Hydroquinone 2–4% / Retinoid",
+   "dose": "Thin layer",
+   "freq": "HS",
+   "dur": "2–3 months",
+   "route": "Topical",
+   "instr": "Hydroquinone not beyond 3 months",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Treat and control the underlying disease first (acne, eczema, LP). Strict sun protection. Avoid harsh products; fades over months.",
+ "adviceText": "Treat and control the underlying disease first (acne, eczema, LP). Strict sun protection. Avoid harsh products; fades over months.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot4.py",
+ "updatedAt": 1791446921265
+}

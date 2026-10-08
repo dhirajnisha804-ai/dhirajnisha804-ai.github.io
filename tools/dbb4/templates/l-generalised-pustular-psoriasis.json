@@ -1,0 +1,158 @@
+{
+ "kind": "ladder",
+ "name": "Generalised pustular psoriasis",
+ "dx": "Generalised pustular psoriasis",
+ "caseName": "Generalised pustular psoriasis",
+ "group": "Papulosquamous & erythroderma",
+ "general": "Admit. Fluids, electrolytes, calcium, albumin; watch sepsis, ARDS, hypocalcaemia. Stop triggers (steroid withdrawal, infection, drugs). Avoid systemic steroids. Bland emollients, wet dressings.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Cap. Cyclosporine 100 mg",
+     "dose": "3–5 mg/kg/day",
+     "freq": "BD",
+     "dur": "Till controlled, then taper",
+     "route": "Oral",
+     "instr": "Fastest",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cap. Acitretin 25 mg",
+     "dose": "0.5–1 mg/kg",
+     "freq": "OD",
+     "dur": "Months",
+     "route": "Oral",
+     "instr": "Contraception for 3 years",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Methotrexate",
+     "dose": "0.2–0.4 mg/kg",
+     "freq": "Weekly",
+     "dur": "",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Refractory / recurrent",
+   "rx": [
+    {
+     "drug": "Inj. Spesolimab 900 mg",
+     "dose": "900 mg",
+     "freq": "Single dose, repeat after 1 week if needed",
+     "dur": "",
+     "route": "IV",
+     "instr": "IL-36 receptor blocker; TB screening",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Infliximab / Adalimumab / Secukinumab / Ixekizumab",
+     "dose": "per label",
+     "freq": "",
+     "dur": "",
+     "route": "IV/SC",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "P",
+   "rx": [
+    {
+     "drug": "r",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cap. Cyclosporine 100 mg",
+   "dose": "3–5 mg/kg/day",
+   "freq": "BD",
+   "dur": "Till controlled, then taper",
+   "route": "Oral",
+   "instr": "Fastest",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cap. Acitretin 25 mg",
+   "dose": "0.5–1 mg/kg",
+   "freq": "OD",
+   "dur": "Months",
+   "route": "Oral",
+   "instr": "Contraception for 3 years",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Methotrexate",
+   "dose": "0.2–0.4 mg/kg",
+   "freq": "Weekly",
+   "dur": "",
+   "route": "Oral",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Admit. Fluids, electrolytes, calcium, albumin; watch sepsis, ARDS, hypocalcaemia. Stop triggers (steroid withdrawal, infection, drugs). Avoid systemic steroids. Bland emollients, wet dressings.",
+ "adviceText": "Admit. Fluids, electrolytes, calcium, albumin; watch sepsis, ARDS, hypocalcaemia. Stop triggers (steroid withdrawal, infection, drugs). Avoid systemic steroids. Bland emollients, wet dressings.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot4.py",
+ "updatedAt": 1791446921266
+}

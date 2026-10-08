@@ -1,0 +1,106 @@
+{
+ "kind": "ladder",
+ "name": "Syphilis",
+ "dx": "Syphilis",
+ "caseName": "Syphilis",
+ "group": "Sexually transmitted infections",
+ "general": "Confirm with VDRL/RPR (titre) + TPHA. Test for HIV; examine and treat partners (primary: 3 months, secondary: 6 months, early latent: 1 year). Follow titres at 3, 6, 12 months — expect 4-fold fall.",
+ "special": "Pregnancy: penicillin only — desensitise if allergic; treat partner; newborn evaluation.",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Early (primary, secondary, early latent <2 yr)",
+   "rx": [
+    {
+     "drug": "Inj. Benzathine penicillin 2.4 MU",
+     "dose": "1.2 MU in each buttock",
+     "freq": "Single dose",
+     "dur": "Once",
+     "route": "IM",
+     "instr": "After test dose per NACO; warn about Jarisch–Herxheimer reaction",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Late latent / unknown duration",
+   "rx": [
+    {
+     "drug": "Inj. Benzathine penicillin 2.4 MU",
+     "dose": "2.4 MU",
+     "freq": "Weekly",
+     "dur": "3 doses",
+     "route": "IM",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Penicillin allergy (non-pregnant)",
+   "rx": [
+    {
+     "drug": "Cap. Doxycycline 100 mg",
+     "dose": "1 cap",
+     "freq": "BD",
+     "dur": "14 days (early) / 28 days (late)",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Neurosyphilis: Inj. Aqueous crystalline penicillin 18–24 MU/day (3–4 MU 4-hourly)",
+     "dose": "",
+     "freq": "",
+     "dur": "14 days",
+     "route": "IV",
+     "instr": "Admit",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Inj. Benzathine penicillin 2.4 MU",
+   "dose": "1.2 MU in each buttock",
+   "freq": "Single dose",
+   "dur": "Once",
+   "route": "IM",
+   "instr": "After test dose per NACO; warn about Jarisch–Herxheimer reaction",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Confirm with VDRL/RPR (titre) + TPHA. Test for HIV; examine and treat partners (primary: 3 months, secondary: 6 months, early latent: 1 year). Follow titres at 3, 6, 12 months — expect 4-fold fall.",
+ "adviceText": "Confirm with VDRL/RPR (titre) + TPHA. Test for HIV; examine and treat partners (primary: 3 months, secondary: 6 months, early latent: 1 year). Follow titres at 3, 6, 12 months — expect 4-fold fall.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot4.py",
+ "updatedAt": 1791446921263
+}

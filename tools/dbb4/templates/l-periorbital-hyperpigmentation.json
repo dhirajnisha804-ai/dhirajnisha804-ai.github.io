@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Periorbital hyperpigmentation",
+ "dx": "Periorbital hyperpigmentation",
+ "caseName": "Periorbital hyperpigmentation",
+ "group": "Pigmentary disorders",
+ "general": "Mixed causes: pigment, vascular, shadowing, rubbing (atopy). Sleep, stop rubbing, sunscreen, treat allergy.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Cream Azelaic acid / Vitamin C / Niacinamide / Kojic acid",
+     "dose": "Thin layer",
+     "freq": "HS",
+     "dur": "3 months",
+     "route": "Topical",
+     "instr": "Gentle products only",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Sunscreen / sunglasses",
+     "dose": "",
+     "freq": "Daily",
+     "dur": "",
+     "route": "",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Procedural",
+   "rx": [
+    {
+     "drug": "Glycolic / lactic peel (low strength), Q-switched Nd:YAG, hyaluronic filler for tear trough",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Azelaic acid / Vitamin C / Niacinamide / Kojic acid",
+   "dose": "Thin layer",
+   "freq": "HS",
+   "dur": "3 months",
+   "route": "Topical",
+   "instr": "Gentle products only",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Sunscreen / sunglasses",
+   "dose": "",
+   "freq": "Daily",
+   "dur": "",
+   "route": "",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Mixed causes: pigment, vascular, shadowing, rubbing (atopy). Sleep, stop rubbing, sunscreen, treat allergy.",
+ "adviceText": "Mixed causes: pigment, vascular, shadowing, rubbing (atopy). Sleep, stop rubbing, sunscreen, treat allergy.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot4.py",
+ "updatedAt": 1791446921265
+}

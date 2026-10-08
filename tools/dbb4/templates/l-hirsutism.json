@@ -1,0 +1,145 @@
+{
+ "kind": "ladder",
+ "name": "Hirsutism",
+ "dx": "Hirsutism",
+ "caseName": "Hirsutism",
+ "group": "Hair & nail disorders",
+ "general": "Score (modified Ferriman–Gallwey). Check for PCOS (cycles, ultrasound), and if rapid onset/virilisation: testosterone, DHEAS, 17-OHP, prolactin, TSH. Weight loss if overweight. Results take 6 months.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Mild / cosmetic",
+   "rx": [
+    {
+     "drug": "Laser hair reduction (diode / Nd:YAG for dark skin)",
+     "dose": "",
+     "freq": "Every 4–6 weeks",
+     "dur": "6–8 sessions",
+     "route": "Procedure",
+     "instr": "Maintenance needed",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Eflornithine 13.9%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "2 months, continue if helpful",
+     "route": "Topical",
+     "instr": "Face",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Moderate–severe / PCOS",
+   "rx": [
+    {
+     "drug": "Combined OCP (ethinyl estradiol + cyproterone acetate / drospirenone)",
+     "dose": "1 tab",
+     "freq": "OD (21/7)",
+     "dur": "≥6 months",
+     "route": "Oral",
+     "instr": "Check contraindications (clots, migraine with aura, smoking)",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Metformin 500 mg",
+     "dose": "1 tab",
+     "freq": "BD",
+     "dur": "6 months",
+     "route": "Oral",
+     "instr": "Insulin resistance",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Add anti-androgen after 6 months",
+   "rx": [
+    {
+     "drug": "Tab. Spironolactone 50 mg",
+     "dose": "50–100 mg",
+     "freq": "BD",
+     "dur": "≥6 months",
+     "route": "Oral",
+     "instr": "Always with contraception",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Finasteride 2.5–5 mg",
+     "dose": "",
+     "freq": "OD",
+     "dur": "",
+     "route": "Oral",
+     "instr": "Only with reliable contraception",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Laser hair reduction (diode / Nd:YAG for dark skin)",
+   "dose": "",
+   "freq": "Every 4–6 weeks",
+   "dur": "6–8 sessions",
+   "route": "Procedure",
+   "instr": "Maintenance needed",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Eflornithine 13.9%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "2 months, continue if helpful",
+   "route": "Topical",
+   "instr": "Face",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Score (modified Ferriman–Gallwey). Check for PCOS (cycles, ultrasound), and if rapid onset/virilisation: testosterone, DHEAS, 17-OHP, prolactin, TSH. Weight loss if overweight. Results take 6 months.",
+ "adviceText": "Score (modified Ferriman–Gallwey). Check for PCOS (cycles, ultrasound), and if rapid onset/virilisation: testosterone, DHEAS, 17-OHP, prolactin, TSH. Weight loss if overweight. Results take 6 months.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot4.py",
+ "updatedAt": 1791446921264
+}

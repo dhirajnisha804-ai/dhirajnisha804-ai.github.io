@@ -1,0 +1,132 @@
+{
+ "kind": "ladder",
+ "name": "Polymorphic light eruption",
+ "dx": "Polymorphic light eruption",
+ "caseName": "Polymorphic light eruption",
+ "group": "Reactive & drug eruptions",
+ "general": "Sun protection (SPF 50, broad spectrum incl. UVA), clothing, avoid midday sun; gradual sun exposure in spring. Rule out lupus (ANA, Ro) if atypical.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Episodes",
+   "rx": [
+    {
+     "drug": "Cream Mometasone 0.1%",
+     "dose": "Thin layer",
+     "freq": "OD",
+     "dur": "1 week",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Levocetirizine 5 mg",
+     "dose": "1 tab",
+     "freq": "HS",
+     "dur": "1–2 weeks",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Severe or frequent",
+   "rx": [
+    {
+     "drug": "Prophylactic NB-UVB / PUVA hardening in early summer",
+     "dose": "",
+     "freq": "3×/week",
+     "dur": "4–6 weeks",
+     "route": "Phototherapy",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Prednisolone 20–30 mg",
+     "dose": "",
+     "freq": "OD",
+     "dur": "5–7 days",
+     "route": "Oral",
+     "instr": "Short course for severe flares",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Refractory",
+   "rx": [
+    {
+     "drug": "Tab. Hydroxychloroquine 200 mg",
+     "dose": "",
+     "freq": "BD",
+     "dur": "Summer months",
+     "route": "Oral",
+     "instr": "Or nicotinamide, beta-carotene (weak evidence)",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Mometasone 0.1%",
+   "dose": "Thin layer",
+   "freq": "OD",
+   "dur": "1 week",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Levocetirizine 5 mg",
+   "dose": "1 tab",
+   "freq": "HS",
+   "dur": "1–2 weeks",
+   "route": "Oral",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Sun protection (SPF 50, broad spectrum incl. UVA), clothing, avoid midday sun; gradual sun exposure in spring. Rule out lupus (ANA, Ro) if atypical.",
+ "adviceText": "Sun protection (SPF 50, broad spectrum incl. UVA), clothing, avoid midday sun; gradual sun exposure in spring. Rule out lupus (ANA, Ro) if atypical.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot4.py",
+ "updatedAt": 1791446921265
+}

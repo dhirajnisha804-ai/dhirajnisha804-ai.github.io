@@ -1,0 +1,119 @@
+{
+ "kind": "ladder",
+ "name": "Vaginal discharge",
+ "dx": "Vaginal discharge",
+ "caseName": "Vaginal discharge",
+ "group": "Sexually transmitted infections",
+ "general": "Syndromic management (NACO). Speculum exam; check pH, KOH whiff, wet mount if possible. Treat partner for trichomonas. Pregnancy: avoid single-dose 2 g metronidazole in first trimester per local protocol.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Vaginitis (BV + trichomonas + candida) – NACO kit 2",
+   "rx": [
+    {
+     "drug": "Tab. Secnidazole 2 g",
+     "dose": "2 g",
+     "freq": "Single dose",
+     "dur": "Once",
+     "route": "Oral",
+     "instr": "Or metronidazole 400 mg BD × 7 days; no alcohol for 48 h",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Fluconazole 150 mg",
+     "dose": "1 tab",
+     "freq": "Single dose",
+     "dur": "Once",
+     "route": "Oral",
+     "instr": "Candida",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Cervicitis also suspected – NACO kit 1",
+   "rx": [
+    {
+     "drug": "Tab. Cefixime 400 mg / Inj. Ceftriaxone 500 mg IM + Tab. Azithromycin 1 g",
+     "dose": "",
+     "freq": "Single dose",
+     "dur": "Once",
+     "route": "Oral/IM",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Recurrent candidiasis (≥4/yr)",
+   "rx": [
+    {
+     "drug": "Tab. Fluconazole 150 mg",
+     "dose": "1 tab",
+     "freq": "Day 1, 4, 7, then weekly",
+     "dur": "6 months",
+     "route": "Oral",
+     "instr": "Check diabetes",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Tab. Secnidazole 2 g",
+   "dose": "2 g",
+   "freq": "Single dose",
+   "dur": "Once",
+   "route": "Oral",
+   "instr": "Or metronidazole 400 mg BD × 7 days; no alcohol for 48 h",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Fluconazole 150 mg",
+   "dose": "1 tab",
+   "freq": "Single dose",
+   "dur": "Once",
+   "route": "Oral",
+   "instr": "Candida",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Syndromic management (NACO). Speculum exam; check pH, KOH whiff, wet mount if possible. Treat partner for trichomonas. Pregnancy: avoid single-dose 2 g metronidazole in first trimester per local protocol.",
+ "adviceText": "Syndromic management (NACO). Speculum exam; check pH, KOH whiff, wet mount if possible. Treat partner for trichomonas. Pregnancy: avoid single-dose 2 g metronidazole in first trimester per local protocol.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot4.py",
+ "updatedAt": 1791446921264
+}

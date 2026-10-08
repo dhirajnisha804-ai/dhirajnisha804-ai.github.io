@@ -1,0 +1,112 @@
+{
+ "kind": "ladder",
+ "name": "Pityrosporum (Malassezia) folliculitis",
+ "dx": "Pityrosporum (Malassezia) folliculitis",
+ "caseName": "Pityrosporum (Malassezia) folliculitis",
+ "group": "Fungal infections",
+ "general": "Itchy monomorphic papules on upper back/chest, worse with sweat, oils, antibiotics, steroids. KOH shows yeast. Prophylaxis to prevent relapse.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Shampoo Ketoconazole 2% as body wash",
+     "dose": "Leave 5 min",
+     "freq": "OD",
+     "dur": "2–4 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Ketoconazole 2%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "4 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Extensive / not responding",
+   "rx": [
+    {
+     "drug": "Cap. Itraconazole 100 mg",
+     "dose": "2 caps",
+     "freq": "OD",
+     "dur": "1–3 weeks",
+     "route": "Oral",
+     "instr": "Or fluconazole 100–200 mg/day × 1–4 weeks",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Prophylaxis: ketoconazole wash weekly / itraconazole 200 mg monthly",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Shampoo Ketoconazole 2% as body wash",
+   "dose": "Leave 5 min",
+   "freq": "OD",
+   "dur": "2–4 weeks",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Ketoconazole 2%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "4 weeks",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Itchy monomorphic papules on upper back/chest, worse with sweat, oils, antibiotics, steroids. KOH shows yeast. Prophylaxis to prevent relapse.",
+ "adviceText": "Itchy monomorphic papules on upper back/chest, worse with sweat, oils, antibiotics, steroids. KOH shows yeast. Prophylaxis to prevent relapse.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot4.py",
+ "updatedAt": 1791446921267
+}

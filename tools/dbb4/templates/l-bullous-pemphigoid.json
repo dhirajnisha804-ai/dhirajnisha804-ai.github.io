@@ -1,0 +1,132 @@
+{
+ "kind": "ladder",
+ "name": "Bullous pemphigoid",
+ "dx": "Bullous pemphigoid",
+ "caseName": "Bullous pemphigoid",
+ "group": "Vesicobullous diseases",
+ "general": "Elderly; biopsy + DIF, BP180/230 ELISA. Stop DPP-4 inhibitors (gliptins) and other suspect drugs. Wound care, bone protection, watch for infection; check sugar and BP on steroids.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Cream Clobetasol 0.05%",
+     "dose": "Whole body except face, up to 40 g/day (20–30 g if <45 kg)",
+     "freq": "OD",
+     "dur": "Taper over 4 months",
+     "route": "Topical",
+     "instr": "As effective as oral steroids, safer",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cap. Doxycycline 100 mg + Tab. Nicotinamide 500 mg",
+     "dose": "2 caps / 1–2 tabs",
+     "freq": "OD / TDS",
+     "dur": "Months",
+     "route": "Oral",
+     "instr": "Mild–moderate, steroid-sparing",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Extensive or not controlled",
+   "rx": [
+    {
+     "drug": "Tab. Prednisolone 20 mg",
+     "dose": "0.5 mg/kg",
+     "freq": "OD",
+     "dur": "Taper over months",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Methotrexate 5–15 mg / Azathioprine / Mycophenolate",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Oral",
+     "instr": "Steroid-sparing",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Refractory",
+   "rx": [
+    {
+     "drug": "Inj. Dupilumab / Omalizumab / Rituximab / IVIG",
+     "dose": "per label",
+     "freq": "",
+     "dur": "",
+     "route": "SC/IV",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Clobetasol 0.05%",
+   "dose": "Whole body except face, up to 40 g/day (20–30 g if <45 kg)",
+   "freq": "OD",
+   "dur": "Taper over 4 months",
+   "route": "Topical",
+   "instr": "As effective as oral steroids, safer",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cap. Doxycycline 100 mg + Tab. Nicotinamide 500 mg",
+   "dose": "2 caps / 1–2 tabs",
+   "freq": "OD / TDS",
+   "dur": "Months",
+   "route": "Oral",
+   "instr": "Mild–moderate, steroid-sparing",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Elderly; biopsy + DIF, BP180/230 ELISA. Stop DPP-4 inhibitors (gliptins) and other suspect drugs. Wound care, bone protection, watch for infection; check sugar and BP on steroids.",
+ "adviceText": "Elderly; biopsy + DIF, BP180/230 ELISA. Stop DPP-4 inhibitors (gliptins) and other suspect drugs. Wound care, bone protection, watch for infection; check sugar and BP on steroids.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot4.py",
+ "updatedAt": 1791446921267
+}

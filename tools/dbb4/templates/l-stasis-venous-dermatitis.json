@@ -1,0 +1,138 @@
+{
+ "kind": "ladder",
+ "name": "Stasis (venous) dermatitis",
+ "dx": "Stasis (venous) dermatitis",
+ "caseName": "Stasis (venous) dermatitis",
+ "group": "Eczemas",
+ "general": "Treat venous insufficiency: leg elevation, walking, compression stockings once eczema settles, weight loss; venous Doppler. Avoid neomycin and many topicals (high contact allergy risk) — patch test if not settling.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Ointment Mometasone 0.1%",
+     "dose": "Thin layer",
+     "freq": "OD",
+     "dur": "2 weeks",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Emollient (paraffin based)",
+     "dose": "",
+     "freq": "BD",
+     "dur": "Long-term",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Compression stockings (class II)",
+     "dose": "",
+     "freq": "Daily",
+     "dur": "Long-term",
+     "route": "",
+     "instr": "After acute phase; check ABPI",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Not settling / ulcerated",
+   "rx": [
+    {
+     "drug": "Treat infection per culture; patch test for contact allergy",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Venous ablation / surgery",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Ointment Mometasone 0.1%",
+   "dose": "Thin layer",
+   "freq": "OD",
+   "dur": "2 weeks",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Emollient (paraffin based)",
+   "dose": "",
+   "freq": "BD",
+   "dur": "Long-term",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Compression stockings (class II)",
+   "dose": "",
+   "freq": "Daily",
+   "dur": "Long-term",
+   "route": "",
+   "instr": "After acute phase; check ABPI",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Treat venous insufficiency: leg elevation, walking, compression stockings once eczema settles, weight loss; venous Doppler. Avoid neomycin and many topicals (high contact allergy risk) — patch test if not settling.",
+ "adviceText": "Treat venous insufficiency: leg elevation, walking, compression stockings once eczema settles, weight loss; venous Doppler. Avoid neomycin and many topicals (high contact allergy risk) — patch test if not settling.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot4.py",
+ "updatedAt": 1791446921266
+}

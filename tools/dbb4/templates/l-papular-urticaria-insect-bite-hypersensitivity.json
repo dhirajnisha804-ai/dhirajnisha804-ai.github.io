@@ -1,0 +1,138 @@
+{
+ "kind": "ladder",
+ "name": "Papular urticaria (insect bite hypersensitivity)",
+ "dx": "Papular urticaria (insect bite hypersensitivity)",
+ "caseName": "Papular urticaria (insect bite hypersensitivity)",
+ "group": "Infestations",
+ "general": "Insect control at home (bedbugs, fleas from pets, mosquitoes), bed nets, deworm and de-flea pets, light full-sleeve clothes. Explain recurrent crops till tolerance develops.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Cream Mometasone 0.1%",
+     "dose": "Thin layer",
+     "freq": "OD",
+     "dur": "1 week",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Levocetirizine 5 mg / Syp. Cetirizine",
+     "dose": "",
+     "freq": "HS",
+     "dur": "2 weeks",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Insect repellent (DEET / picaridin)",
+     "dose": "",
+     "freq": "Daily",
+     "dur": "",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Infected / nodular",
+   "rx": [
+    {
+     "drug": "Cream Mupirocin 2%",
+     "dose": "",
+     "freq": "BD",
+     "dur": "5–7 days",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Inj. Triamcinolone into persistent nodules",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Intralesional",
+     "instr": "Adults",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cream Mometasone 0.1%",
+   "dose": "Thin layer",
+   "freq": "OD",
+   "dur": "1 week",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Levocetirizine 5 mg / Syp. Cetirizine",
+   "dose": "",
+   "freq": "HS",
+   "dur": "2 weeks",
+   "route": "Oral",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Insect repellent (DEET / picaridin)",
+   "dose": "",
+   "freq": "Daily",
+   "dur": "",
+   "route": "Topical",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Insect control at home (bedbugs, fleas from pets, mosquitoes), bed nets, deworm and de-flea pets, light full-sleeve clothes. Explain recurrent crops till tolerance develops.",
+ "adviceText": "Insect control at home (bedbugs, fleas from pets, mosquitoes), bed nets, deworm and de-flea pets, light full-sleeve clothes. Explain recurrent crops till tolerance develops.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot4.py",
+ "updatedAt": 1791446921266
+}

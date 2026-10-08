@@ -1,0 +1,138 @@
+{
+ "kind": "ladder",
+ "name": "Topical steroid–damaged face",
+ "dx": "Topical steroid–damaged face",
+ "caseName": "Topical steroid–damaged face",
+ "group": "Acne & appendageal disorders",
+ "general": "Stop the steroid (taper potent steroids over 2–4 weeks to lessen rebound). Explain rebound flare, redness and burning for weeks. Gentle cleanser, moisturiser, sunscreen; no 'fairness' creams.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Withdrawal",
+   "rx": [
+    {
+     "drug": "Ointment Tacrolimus 0.03% / Cream Pimecrolimus 1%",
+     "dose": "Thin layer",
+     "freq": "BD",
+     "dur": "4–8 weeks",
+     "route": "Topical",
+     "instr": "Eases rebound",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cap. Doxycycline 100 mg",
+     "dose": "1 cap",
+     "freq": "OD",
+     "dur": "6–8 weeks",
+     "route": "Oral",
+     "instr": "Papulopustular rosacea-like eruption",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Levocetirizine 5 mg",
+     "dose": "1 tab",
+     "freq": "HS",
+     "dur": "2–4 weeks",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Persistent redness / pigmentation",
+   "rx": [
+    {
+     "drug": "Gel Brimonidine 0.33% / Azelaic acid 15% / Ivermectin 1%",
+     "dose": "",
+     "freq": "OD",
+     "dur": "",
+     "route": "Topical",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Vascular laser / IPL",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "Telangiectasia",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Ointment Tacrolimus 0.03% / Cream Pimecrolimus 1%",
+   "dose": "Thin layer",
+   "freq": "BD",
+   "dur": "4–8 weeks",
+   "route": "Topical",
+   "instr": "Eases rebound",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cap. Doxycycline 100 mg",
+   "dose": "1 cap",
+   "freq": "OD",
+   "dur": "6–8 weeks",
+   "route": "Oral",
+   "instr": "Papulopustular rosacea-like eruption",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Levocetirizine 5 mg",
+   "dose": "1 tab",
+   "freq": "HS",
+   "dur": "2–4 weeks",
+   "route": "Oral",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Stop the steroid (taper potent steroids over 2–4 weeks to lessen rebound). Explain rebound flare, redness and burning for weeks. Gentle cleanser, moisturiser, sunscreen; no 'fairness' creams.",
+ "adviceText": "Stop the steroid (taper potent steroids over 2–4 weeks to lessen rebound). Explain rebound flare, redness and burning for weeks. Gentle cleanser, moisturiser, sunscreen; no 'fairness' creams.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot4.py",
+ "updatedAt": 1791446921266
+}

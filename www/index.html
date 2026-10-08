@@ -1,6 +1,6 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#14324d">
 <link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<meta name="drx-build" content="202610080801">
+<meta name="drx-build" content="202610080810">
 <script src="config.js"></script>
 <script>window.DRX_OCR=(b=>({lib:b+"tesseract.min.js",worker:b+"worker.min.js",core:b,lang:b}))(new URL("vendor/tesseract/",location.href).href);</script>
 <script src="vendor/firebase-app-compat.js"></script><script src="vendor/firebase-auth-compat.js"></script><script src="vendor/firebase-firestore-compat.js"></script>
@@ -1568,6 +1568,8 @@ function showCoach(){
 
 
 /* ---------- treatment ladders (1st / 2nd / 3rd line) ---------- */
+/* the old built-in prescription templates (ids "t-…") are retired once treatment ladders are present */
+const RETIRED = t => String(t?.id||"").startsWith("t-") && S.templates.some(isLadder);
 const isLadder = t => t && t.kind==="ladder";
 const ladderFor = name => S.templates.find(t=>isLadder(t) && t.caseName===name);
 const LINE_CLS = ["l1","l2","l3"];
@@ -1779,7 +1781,7 @@ function openDrugDetails(item, onDone){
 }
 function openTplPicker(onPick){
   openSheet2("Use template", `<label class="search" style="margin-top:0">${ICON.search}<input id="tpQ" type="search" placeholder="Search templates" autocomplete="off" aria-label="Search templates"></label><div id="tpRes"></div>`);
-  const draw=()=>{ const q=$("#tpQ").value.toLowerCase(); const arr=S.templates.filter(t=>!q||[t.name,t.group].join(" ").toLowerCase().includes(q)); const by={}; arr.forEach(t=>(by[t.group||"Other"] ||= []).push(t));
+  const draw=()=>{ const q=$("#tpQ").value.toLowerCase(); const arr=S.templates.filter(t=>!RETIRED(t)).filter(t=>!q||[t.name,t.group].join(" ").toLowerCase().includes(q)); const by={}; arr.forEach(t=>(by[t.group||"Other"] ||= []).push(t));
     $("#tpRes").innerHTML = Object.keys(by).sort().map(g=>`<div class="group"><h3>${esc(g)}</h3><div class="list">${by[g].sort((a,b)=>a.name.localeCompare(b.name)).map(t=>`<button class="row" data-tp="${esc(t.id)}"><span class="main"><span class="t">${esc(t.name)}</span><span class="s">${esc((t.rx||[]).map(r=>r.drug).join(" · "))}</span></span></button>`).join("")}</div></div>`).join("") || `<div class="empty">No templates match.</div>`; };
   draw(); $("#tpQ").addEventListener("input", draw);
   $("#tpRes").addEventListener("click", e=>{ const b=e.target.closest("[data-tp]"); if(!b) return; const t=S.templates.find(x=>x.id===b.dataset.tp); if(!t) return; if(isLadder(t)){ closeSheet2(); setTimeout(()=>openLadder(t,{onPick}),60); } else { onPick(t); closeSheet2(); } });
@@ -1941,7 +1943,7 @@ function tplShell(){
   <label class="search">${ICON.search}<input id="qTpl" type="search" placeholder="Search diseases or drugs" aria-label="Search templates" autocomplete="off"></label><div id="tplList"></div>`;
 }
 function fillTemplates(){
-  const lad=S.templates.filter(isLadder), old=S.templates.filter(t=>!isLadder(t));
+  const lad=S.templates.filter(isLadder), old=S.templates.filter(t=>!isLadder(t) && !RETIRED(t));
   $("#tplCount").textContent = lad.length ? `First, second and third line treatment · ${lad.length} diseases` : `${S.templates.length} templates`;
   const el=$("#tplList"); if(!S.loaded.templates && S.db){ el.innerHTML=`<div class="empty">Loading…</div>`; return; }
   const q=$("#qTpl").value.trim().toLowerCase();

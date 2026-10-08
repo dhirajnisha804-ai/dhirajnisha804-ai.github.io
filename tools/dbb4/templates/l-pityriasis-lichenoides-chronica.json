@@ -1,0 +1,119 @@
+{
+ "kind": "ladder",
+ "name": "Pityriasis lichenoides chronica",
+ "dx": "Pityriasis lichenoides chronica",
+ "caseName": "Pityriasis lichenoides chronica",
+ "group": "Papulosquamous & erythroderma",
+ "general": "Chronic, relapsing; children often improve with time. Biopsy if atypical.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Cap. Doxycycline 100 mg (adults) / Tab. Erythromycin 30–50 mg/kg/day (children)",
+     "dose": "",
+     "freq": "BD",
+     "dur": "2–3 months",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Cream Mometasone 0.1% / Tacrolimus 0.1%",
+     "dose": "",
+     "freq": "OD",
+     "dur": "",
+     "route": "Topical",
+     "instr": "Itch",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Not responding",
+   "rx": [
+    {
+     "drug": "Narrowband UVB / natural sunlight",
+     "dose": "",
+     "freq": "3×/week",
+     "dur": "2–3 months",
+     "route": "Phototherapy",
+     "instr": "Most effective",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Refractory",
+   "rx": [
+    {
+     "drug": "Tab. Methotrexate 7.5–20 mg",
+     "dose": "",
+     "freq": "Weekly",
+     "dur": "",
+     "route": "Oral",
+     "instr": "Also for PLEVA / febrile ulceronecrotic (admit)",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Cap. Doxycycline 100 mg (adults) / Tab. Erythromycin 30–50 mg/kg/day (children)",
+   "dose": "",
+   "freq": "BD",
+   "dur": "2–3 months",
+   "route": "Oral",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Cream Mometasone 0.1% / Tacrolimus 0.1%",
+   "dose": "",
+   "freq": "OD",
+   "dur": "",
+   "route": "Topical",
+   "instr": "Itch",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Chronic, relapsing; children often improve with time. Biopsy if atypical.",
+ "adviceText": "Chronic, relapsing; children often improve with time. Biopsy if atypical.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot4.py",
+ "updatedAt": 1791446921267
+}

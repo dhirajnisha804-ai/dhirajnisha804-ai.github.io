@@ -1,0 +1,119 @@
+{
+ "kind": "ladder",
+ "name": "Palmar / plantar hyperhidrosis",
+ "dx": "Palmar / plantar hyperhidrosis",
+ "caseName": "Palmar / plantar hyperhidrosis",
+ "group": "Acne & appendageal disorders",
+ "general": "Check for secondary causes if generalised, unilateral, night sweats or late onset (thyroid, diabetes, TB, lymphoma, drugs). Score with HDSS.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "First line",
+   "rx": [
+    {
+     "drug": "Aluminium chloride hexahydrate 15–20%",
+     "dose": "Apply to dry skin",
+     "freq": "HS",
+     "dur": "Daily till dry, then 1–2×/week",
+     "route": "Topical",
+     "instr": "Wash off in morning; irritation",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Not controlled",
+   "rx": [
+    {
+     "drug": "Tap-water iontophoresis",
+     "dose": "15–20 mA, 20–30 min",
+     "freq": "3×/week, then weekly",
+     "dur": "",
+     "route": "Procedure",
+     "instr": "Palms and soles",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Glycopyrrolate 1 mg",
+     "dose": "1–2 mg",
+     "freq": "BD",
+     "dur": "As needed",
+     "route": "Oral",
+     "instr": "Dry mouth, blurred vision, urinary retention; avoid in glaucoma",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Refractory",
+   "rx": [
+    {
+     "drug": "Botulinum toxin A",
+     "dose": "50–100 U per palm/axilla (intradermal)",
+     "freq": "Every 6–9 months",
+     "dur": "",
+     "route": "Intradermal",
+     "instr": "Nerve block for palms",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Oxybutynin 2.5–5 mg / microwave thermolysis (axilla) / sympathectomy (last resort)",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "",
+     "instr": "Compensatory sweating after surgery",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Aluminium chloride hexahydrate 15–20%",
+   "dose": "Apply to dry skin",
+   "freq": "HS",
+   "dur": "Daily till dry, then 1–2×/week",
+   "route": "Topical",
+   "instr": "Wash off in morning; irritation",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Check for secondary causes if generalised, unilateral, night sweats or late onset (thyroid, diabetes, TB, lymphoma, drugs). Score with HDSS.",
+ "adviceText": "Check for secondary causes if generalised, unilateral, night sweats or late onset (thyroid, diabetes, TB, lymphoma, drugs). Score with HDSS.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot4.py",
+ "updatedAt": 1791446921265
+}

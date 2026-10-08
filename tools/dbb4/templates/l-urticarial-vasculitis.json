@@ -1,0 +1,119 @@
+{
+ "kind": "ladder",
+ "name": "Urticarial vasculitis",
+ "dx": "Urticarial vasculitis",
+ "caseName": "Urticarial vasculitis",
+ "group": "Reactive & drug eruptions",
+ "general": "Wheals lasting >24 h, burning, leaving bruising. Biopsy; check C3, C4, C1q (hypocomplementaemic type), ANA, hepatitis B/C, urine, renal function.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Normocomplementaemic, skin-limited",
+   "rx": [
+    {
+     "drug": "Tab. Levocetirizine 5 mg",
+     "dose": "1–4 tabs",
+     "freq": "OD–BD",
+     "dur": "",
+     "route": "Oral",
+     "instr": "Symptom relief",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Tab. Dapsone 100 mg / Colchicine 0.5 mg / Hydroxychloroquine 200 mg",
+     "dose": "",
+     "freq": "OD–BD",
+     "dur": "3 months",
+     "route": "Oral",
+     "instr": "Check G6PD before dapsone",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Systemic / hypocomplementaemic",
+   "rx": [
+    {
+     "drug": "Tab. Prednisolone 0.5–1 mg/kg + Azathioprine / Mycophenolate",
+     "dose": "",
+     "freq": "",
+     "dur": "",
+     "route": "Oral",
+     "instr": "With rheumatology/nephrology",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "label": "Third line",
+   "when": "Refractory",
+   "rx": [
+    {
+     "drug": "Inj. Omalizumab / Rituximab",
+     "dose": "per label",
+     "freq": "",
+     "dur": "",
+     "route": "SC/IV",
+     "instr": "Limited evidence",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Tab. Levocetirizine 5 mg",
+   "dose": "1–4 tabs",
+   "freq": "OD–BD",
+   "dur": "",
+   "route": "Oral",
+   "instr": "Symptom relief",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Tab. Dapsone 100 mg / Colchicine 0.5 mg / Hydroxychloroquine 200 mg",
+   "dose": "",
+   "freq": "OD–BD",
+   "dur": "3 months",
+   "route": "Oral",
+   "instr": "Check G6PD before dapsone",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Wheals lasting >24 h, burning, leaving bruising. Biopsy; check C3, C4, C1q (hypocomplementaemic type), ANA, hepatitis B/C, urine, renal function.",
+ "adviceText": "Wheals lasting >24 h, burning, leaving bruising. Biopsy; check C3, C4, C1q (hypocomplementaemic type), ANA, hepatitis B/C, urine, renal function.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot4.py",
+ "updatedAt": 1791446921267
+}

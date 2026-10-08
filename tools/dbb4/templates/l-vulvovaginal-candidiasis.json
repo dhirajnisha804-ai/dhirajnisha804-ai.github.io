@@ -1,0 +1,99 @@
+{
+ "kind": "ladder",
+ "name": "Vulvovaginal candidiasis",
+ "dx": "Vulvovaginal candidiasis",
+ "caseName": "Vulvovaginal candidiasis",
+ "group": "Sexually transmitted infections",
+ "general": "Check diabetes, antibiotics, steroids, pregnancy, HIV. Cotton underwear, avoid douching.",
+ "special": "",
+ "lines": [
+  {
+   "line": 1,
+   "label": "First line",
+   "when": "Uncomplicated",
+   "rx": [
+    {
+     "drug": "Tab. Fluconazole 150 mg",
+     "dose": "1 tab",
+     "freq": "Single dose",
+     "dur": "Once",
+     "route": "Oral",
+     "instr": "",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    },
+    {
+     "drug": "Clotrimazole 500 mg vaginal pessary / 2% vaginal cream",
+     "dose": "1",
+     "freq": "HS",
+     "dur": "Single dose / 7 days",
+     "route": "Vaginal",
+     "instr": "Pregnancy: topical only, 7 days",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "label": "Second line",
+   "when": "Recurrent / severe",
+   "rx": [
+    {
+     "drug": "Tab. Fluconazole 150 mg",
+     "dose": "1 tab",
+     "freq": "Every 72 h × 3, then weekly",
+     "dur": "6 months",
+     "route": "Oral",
+     "instr": "Culture for non-albicans if failing",
+     "timing": "",
+     "brand": "",
+     "brandId": "",
+     "generic": "",
+     "cost": ""
+    }
+   ]
+  }
+ ],
+ "rx": [
+  {
+   "drug": "Tab. Fluconazole 150 mg",
+   "dose": "1 tab",
+   "freq": "Single dose",
+   "dur": "Once",
+   "route": "Oral",
+   "instr": "",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  },
+  {
+   "drug": "Clotrimazole 500 mg vaginal pessary / 2% vaginal cream",
+   "dose": "1",
+   "freq": "HS",
+   "dur": "Single dose / 7 days",
+   "route": "Vaginal",
+   "instr": "Pregnancy: topical only, 7 days",
+   "timing": "",
+   "brand": "",
+   "brandId": "",
+   "generic": "",
+   "cost": ""
+  }
+ ],
+ "advice": "Check diabetes, antibiotics, steroids, pregnancy, HIV. Cotton underwear, avoid douching.",
+ "adviceText": "Check diabetes, antibiotics, steroids, pregnancy, HIV. Cotton underwear, avoid douching.",
+ "fuDays": "",
+ "review": true,
+ "free": false,
+ "source": "slot4.py",
+ "updatedAt": 1791446921264
+}

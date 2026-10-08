@@ -219,7 +219,7 @@
   /* ---------------- accounts, verification and access (stage 2) ---------------- */
   // role: "none" (signed out) · "unverified" (email not confirmed) · "new" (no profile yet) · "pending" · "rejected" · "verified" · "admin"
   DRX.role = "none"; DRX.profile = null; DRX.roleSubs = [];
-  const FREE_TPL = new Set(["t-tinea-corporis-cruris-dermatophytosis", "t-scabies", "t-acute-urticaria", "t-acne-vulgaris-mild-to-moderate", "t-pityriasis-versicolor"]);
+  const FREE_TPL = new Set(["l-tinea-corporis-cruris-faciei", "l-scabies", "l-urticaria-angioedema", "l-acne-vulgaris", "l-pityriasis-versicolor"]);
   DRX.freeTemplates = FREE_TPL;
   const fullAccess = () => !DRX.configured || DRX.role === "admin" || DRX.role === "verified";
   DRX.fullAccess = fullAccess;
@@ -324,6 +324,12 @@
         const b = fs.batch();
         items.slice(i, i + 400).forEach(it => { if (want(it)) { const { id, ...d } = it; b.set(fs.collection(col).doc(id), clone(d)); added++; } });
         await b.commit(); done += Math.min(400, items.length - i); onProgress && onProgress(done, total);
+      }
+      // retire old prescription templates (ids "t-…") that are no longer in the seed — replaced by treatment ladders
+      if (mode === "missing" && col === "templates") {
+        const keep = new Set(items.map(x => x.id)); const gone = [...existing.keys()].filter(id => id.startsWith("t-") && !keep.has(id));
+        for (let i = 0; i < gone.length; i += 400) { const b = fs.batch(); gone.slice(i, i + 400).forEach(id => b.delete(fs.collection("templates").doc(id))); await b.commit(); }
+        DRX.lastPublishRemoved = gone.length;
       }
     }
     DRX.lastPublishAdded = added; return total;
