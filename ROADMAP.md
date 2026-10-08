@@ -4,8 +4,8 @@ Owner: Dr. Nisha Pattewar (dhirajnisha804@gmail.com). Co-admin: her husband (ema
 The owner approved everything below ("done" given). Build it in stages, test, deploy, then report briefly.
 
 ## How the project works (read first)
-- **Source of truth:** `tools/app.html` (single-file app, also published as the Claude artifact
-  https://claude.ai/artifact/GLv7GJV7MV3MphjJehfFHQ). Shared data snapshot: `tools/dbb4/` (brands, templates).
+- **Source of truth:** `tools/app.html` in this repo — the ONLY version. Shared data snapshot: `tools/dbb4/`
+  (brands, templates).
 - **Build:** `python3 tools/build.py` → writes `www/` (keeps `www/prices.json` and `www/vendor/`). Push to `main`;
   GitHub Actions deploys Pages and rebuilds the APK only when `android/` changes (release tag `apk-latest`).
 - **Runtime:** `tools/src/drx-shim.js` emulates `window.claude.use(db|assets|downloads)`; brands/templates live in
@@ -13,8 +13,10 @@ The owner approved everything below ("done" given). Build it in stages, test, de
   Publish button (More → Sync & sharing) adds new templates and refreshes corrected ones (uses `prevUpdatedAt`).
 - **Android shell:** `android/` (WebView, applicationId `in.dermrx.desk`, package `com.dermadesk.app`,
   JS bridge `DermaAndroid.saveFile`, back → `window.DRX_back()`). Keystore decrypted in CI with secret DRX_KEYPASS.
-- **Artifact:** after changing `tools/app.html`, read the live artifact first and merge (other sessions edit it),
-  then publish to the same URL. Its own template DB is separate (ArtifactData collection `templates`).
+- **Old Claude artifact retired (5 Oct 2026):** https://claude.ai/artifact/GLv7GJV7MV3MphjJehfFHQ is no longer
+  edited or republished. On 5 Oct its page was identical to `tools/app.html`, and its 142 templates and 435 brands
+  matched `tools/dbb4/` (repo copies newer). It still holds 1 patient record (move via Backup → Restore if needed).
+  Make all changes here in the repo; do not publish app changes to the artifact.
 - **Tests:** `tools/tests/` (Playwright; run from a folder containing the built `www/` and `mockfb2.js`).
 - **Rules:** patient data never leaves the phone; Wolverton/IADVL text never copied (facts in own words only);
   no ads inside the app; monthly price task (trigger trig_01HagW6JbLSyApZTDdqQuywT) writes `www/prices.json`.
