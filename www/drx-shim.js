@@ -336,7 +336,8 @@
       for (let i = 0; i < items.length; i += 400) {
         const b = fs.batch();
         items.slice(i, i + 400).forEach(it => { if (want(it)) { const { id, ...d } = it; b.set(fs.collection(col).doc(id), clone(d)); added++; } });
-        await b.commit(); done += Math.min(400, items.length - i); onProgress && onProgress(done, total);
+        try { await b.commit(); } catch (e) { e.col = col; throw e; }
+        done += Math.min(400, items.length - i); onProgress && onProgress(done, total);
       }
       // retire old prescription templates (ids "t-…") that are no longer in the seed — replaced by treatment ladders
       if (mode === "missing" && col === "templates") {
