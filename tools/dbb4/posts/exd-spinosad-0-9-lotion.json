@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Spinosad 0.9% lotion",
+  "summary": "III Antiparasitics · Spinosyn insecticide (from fermentation of the soil bacterium Saccharopolyspora spinosa)",
+  "icon": "💊",
+  "category": "Topicals · III Antiparasitics",
+  "order": 4019,
+  "body": "_Topicals · III Antiparasitics_\n\n**Class:** Spinosyn insecticide (from fermentation of the soil bacterium Saccharopolyspora spinosa)\n\n## Mechanism of action\n- Activates nicotinic acetylcholine receptors in the insect nervous system → hyperexcitation, paralysis and death\n- Pediculicidal and ovicidal (contains benzyl alcohol) — often one application is enough\n\n## Indications in dermatology & STI\n- Head lice in patients 6 months and older (FDA)\n- Scabies (approved in the USA for age 4 years and older)\n\n## Dose & formulations\n- Head lice: cover dry scalp and hair, leave 10 min, rinse; repeat after 7 days only if live lice are seen\n- Scabies: apply to the whole body, leave 10 min (label) — check current label\n\n## Adverse effects\n- Redness and irritation of scalp and eyes\n\n## Contraindications\n- Infants under 6 months (benzyl alcohol — gasping syndrome)\n\n## Pregnancy & lactation\nMinimal absorption; considered acceptable.\n\n## Viva points\n- Ovicidal — nit combing not mandatory\n- Benzyl alcohol content — avoid under 6 months\n\n_Sources: Wolverton 4e ch.44 (spinosad, head lice); not in Khopkar. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791649634724,
+  "updatedAt": 1791649638743
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Clindamycin + Nicotinamide gel",
+  "summary": "II Antibacterials · Combination: lincosamide antibiotic + vitamin B3 (anti-inflammatory)",
+  "icon": "💊",
+  "category": "Topicals · II Antibacterials",
+  "order": 4012,
+  "body": "_Topicals · II Antibacterials_\n\n**Class:** Combination: lincosamide antibiotic + vitamin B3 (anti-inflammatory)\n\n## Mechanism of action\n- Clindamycin: 50S protein-synthesis inhibitor (anti-C. acnes)\n- Nicotinamide 4%: anti-inflammatory (inhibits neutrophil chemotaxis, IL-8, mast cells), reduces sebum, improves barrier\n- Nicotinamide is non-antibiotic, so the combination may reduce reliance on the antibiotic\n\n## Indications in dermatology & STI\n- Mild–moderate inflammatory acne\n\n## Dose & formulations\n- Usually clindamycin 1% + nicotinamide 4% gel once or twice daily; combine with BPO or a retinoid; limit antibiotic use to about 12 weeks\n\n## Adverse effects\n- Dryness, irritation, burning\n\n## Contraindications\n- As for clindamycin\n\n## Pregnancy & lactation\nAcceptable.\n\n## Viva points\n- Nicotinamide 4% gel alone is comparable to clindamycin 1% in some trials\n- Combination still needs BPO to prevent resistance\n\n_Sources: Wolverton 4e ch.41 and ch.57 (nicotinamide); Khopkar ch.28 (topical niacinamide). Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791649634731,
+  "updatedAt": 1791649638743
+ }
+}

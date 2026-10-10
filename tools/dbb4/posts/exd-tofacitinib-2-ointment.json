@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Tofacitinib 2% ointment",
+  "summary": "IX Immunomodulators · Topical Janus kinase (JAK1/3) inhibitor",
+  "icon": "💊",
+  "category": "Topicals · IX Immunomodulators",
+  "order": 5020,
+  "body": "_Topicals · IX Immunomodulators_\n\n**Class:** Topical Janus kinase (JAK1/3) inhibitor\n\n## Mechanism of action\n- Blocks JAK-STAT signalling of cytokines (IL-2, IL-4, IL-13, IL-15, IFN-γ) in skin\n- In vitiligo: reduces IFN-γ–CXCL10 signalling that recruits cytotoxic T cells; in AA: blocks the IFN-γ/IL-15 axis\n\n## Indications in dermatology & STI\n- Off-label/compounded in India: vitiligo (face), alopecia areata (limited areas), atopic dermatitis, plaque psoriasis (trials)\n- Note: ruxolitinib 1.5% cream is the approved topical JAK inhibitor (vitiligo and atopic dermatitis, USA)\n\n## Dose & formulations\n- Twice daily to limited areas (studies used up to about 10–20% BSA); combine with NB-UVB or sun exposure for vitiligo\n\n## Adverse effects\n- Local irritation, acne, folliculitis\n- Theoretical systemic JAK effects with large-area use (labs if used extensively)\n\n## Contraindications\n- Large body areas; active skin infection; pregnancy\n\n## Pregnancy & lactation\nAvoid.\n\n## Viva points\n- Topical JAK inhibitors — newer, best results on facial vitiligo\n- Ruxolitinib cream is the approved one; tofacitinib topical is mostly compounded/trial use\n\n## Note on sources\nTofacitinib 2% ointment is not an approved product in most countries; ruxolitinib cream is mentioned for comparison.\n\n_Sources: Wolverton 4e ch.18 (JAK inhibitors); published trials. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791649633723,
+  "updatedAt": 1791649638743
+ }
+}

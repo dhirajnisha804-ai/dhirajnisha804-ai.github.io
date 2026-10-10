@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Luliconazole 1% cream",
+  "summary": "I Antifungals — Azoles · Imidazole (ketene dithioacetal structure) — newest topical azole",
+  "icon": "💊",
+  "category": "Topicals · I Antifungals — Azoles",
+  "order": 4006,
+  "body": "_Topicals · I Antifungals — Azoles_\n\n**Class:** Imidazole (ketene dithioacetal structure) — newest topical azole\n\n## Mechanism of action\n- Inhibits 14-α-demethylase; very low MICs against dermatophytes (among the most potent topical azoles)\n- High stratum corneum retention → short, once-daily courses\n\n## Indications in dermatology & STI\n- Tinea corporis, cruris and pedis (approved)\n- Cutaneous candidiasis, pityriasis versicolor\n- Onychomycosis (10% solution in Japan)\n\n## Dose & formulations\n- Once daily: tinea corporis/cruris for 1 week, interdigital tinea pedis for 2 weeks (FDA label)\n- In Indian practice with chronic/recurrent tinea, courses of 2–4 weeks are common\n\n## Adverse effects\n- Application-site irritation, contact dermatitis (rare)\n\n## Contraindications\n- Hypersensitivity\n\n## Pregnancy & lactation\nMinimal absorption; animal data reassuring; use if needed.\n\n## Viva points\n- Most potent topical azole against dermatophytes\n- Once daily, short course\n- Widely used in India — rising resistance concerns with misuse\n\n_Sources: Wolverton 4e ch.42 (luliconazole); Khopkar edition predates it. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791649634737,
+  "updatedAt": 1791649638743
+ }
+}

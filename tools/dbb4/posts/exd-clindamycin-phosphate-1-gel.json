@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Clindamycin phosphate 1% gel",
+  "summary": "II Antibacterials · Lincosamide antibiotic (topical)",
+  "icon": "💊",
+  "category": "Topicals · II Antibacterials",
+  "order": 4011,
+  "body": "_Topicals · II Antibacterials_\n\n**Class:** Lincosamide antibiotic (topical)\n\n## Mechanism of action\n- Binds the 50S ribosomal subunit → inhibits bacterial protein synthesis (bacteriostatic)\n- Reduces C. acnes and the free fatty acids it produces; anti-inflammatory (reduces neutrophil chemotaxis)\n- Phosphate ester is inactive until hydrolysed in the skin\n\n## Indications in dermatology & STI\n- Inflammatory acne vulgaris (papules, pustules) — always combined with benzoyl peroxide (BPO) to prevent resistance\n- Folliculitis, hidradenitis suppurativa (mild, Hurley I), rosacea (alternative), pitted keratolysis, erythrasma\n- Also in the anti-acne list (group VII)\n\n## Dose & formulations\n- Thin layer once or twice daily\n- Fixed combinations: clindamycin 1% + BPO 2.5–5%; clindamycin 1.2% + tretinoin 0.025%; clindamycin + adapalene; clindamycin + nicotinamide\n- Do not use as monotherapy and limit to about 12 weeks\n\n## Adverse effects\n- Dryness, peeling, irritation\n- C. acnes and staphylococcal resistance with monotherapy\n- C. difficile colitis is very rare (case reports)\n\n## Contraindications\n- History of inflammatory bowel disease or antibiotic-associated colitis\n- Hypersensitivity to lincomycin/clindamycin\n\n## Drug interactions\n- Erythromycin topical — antagonism (both act at 50S)\n\n## Pregnancy & lactation\nSafe in pregnancy (preferred topical antibiotic with BPO).\n\n## Viva points\n- Never use topical antibiotics alone for acne — always with BPO (resistance)\n- Safe in pregnancy\n- Rare pseudomembranous colitis — ask about bowel disease\n\n_Sources: Wolverton 4e ch.41 (Topical antibacterials); Khopkar ch.18. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791649634732,
+  "updatedAt": 1791649638743
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Eberconazole 1% cream",
+  "summary": "I Antifungals — Azoles · Imidazole antifungal (newer, broad spectrum)",
+  "icon": "💊",
+  "category": "Topicals · I Antifungals — Azoles",
+  "order": 4002,
+  "body": "_Topicals · I Antifungals — Azoles_\n\n**Class:** Imidazole antifungal (newer, broad spectrum)\n\n## Mechanism of action\n- Inhibits ergosterol synthesis (14-α-demethylase)\n- Also active against some Gram-positive bacteria and has anti-inflammatory activity (inhibits 5-lipoxygenase, cyclo-oxygenase)\n- Useful in inflamed or secondarily infected tinea\n\n## Indications in dermatology & STI\n- Tinea corporis, cruris, pedis; cutaneous candidiasis; pityriasis versicolor\n- Inflamed/infected dermatophytosis (possibly avoiding steroid combinations)\n\n## Dose & formulations\n- Apply twice daily for 4 weeks (or 2 weeks after clinical cure)\n\n## Adverse effects\n- Mild burning, itching, erythema\n\n## Contraindications\n- Hypersensitivity to imidazoles\n\n## Pregnancy & lactation\nLimited data; avoid unless needed.\n\n## Viva points\n- Antifungal + antibacterial + anti-inflammatory\n- Developed in Spain; widely marketed in India\n\n## Note on sources\nEberconazole is in neither book; product data and published trials were used.\n\n_Sources: Not covered in Wolverton or Khopkar; product information and published trials. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791649634741,
+  "updatedAt": 1791649638743
+ }
+}

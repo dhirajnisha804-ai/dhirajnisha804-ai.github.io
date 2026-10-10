@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Decapeptide lotion (e.g. Melbild/Melgain)",
+  "summary": "VIII Pigmentary / depigmenting · Synthetic decapeptide (repigmenting agent) — a bFGF-related peptide",
+  "icon": "💊",
+  "category": "Topicals · VIII Pigmentary / depigmenting",
+  "order": 5016,
+  "body": "_Topicals · VIII Pigmentary / depigmenting_\n\n**Class:** Synthetic decapeptide (repigmenting agent) — a bFGF-related peptide\n\n## Mechanism of action\n- Mimics a part of basic fibroblast growth factor (bFGF), a natural mitogen for melanocytes\n- Stimulates melanocyte proliferation and migration, and melanogenesis\n- Used to support repigmentation (not depigmentation)\n\n## Indications in dermatology & STI\n- Stable vitiligo (localised and generalised) — adjunct to phototherapy, topical steroids or tacrolimus\n- Children and face (steroid-sparing)\n\n## Dose & formulations\n- Apply once daily to patches; many protocols advise sun exposure (morning) or NB-UVB after application\n- Response takes 3–6 months\n\n## Adverse effects\n- Mild itching, burning, redness; generally very well tolerated\n\n## Contraindications\n- Hypersensitivity\n\n## Pregnancy & lactation\nInsufficient data; low absorption.\n\n## Viva points\n- A repigmenting peptide, not a depigmenting agent — classified here with pigmentary agents\n- bFGF-mimicking decapeptide → melanocyte proliferation\n- Evidence is modest (Indian studies)\n\n## Note on sources\nDecapeptide is not in either book; product information and Indian studies were used.\n\n_Sources: Not covered in Wolverton or Khopkar; product information and Indian vitiligo studies. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791649633727,
+  "updatedAt": 1791649638743
+ }
+}

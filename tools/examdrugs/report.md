@@ -31,3 +31,12 @@ Discrepancies / doubts:
 - Vitamin D3 60,000 IU is mainly oral in India — oral and IM both covered.
 - Menadione (K3) vs phytomenadione (K1) — asked user which examiners mean.
 - PPSV23: adult pneumococcal schedule recently changed (PCV20/21) — flagged.
+
+## Slot 4 — Topicals I–XI (60 posts, drafts; files slot4.py = I–V, slot5.py = VI–XI)
+- Forms of one drug merged into one post (e.g. clotrimazole cream/solution/powder/paint/soap; clobetasol ointment/lotion/solution).
+- Added a "Topical corticosteroids — overview & potency" post (classes, FTU, side effects).
+- Triple combination cream (listed under both V and VIII) = one post in VIII.
+- Clindamycin gel (listed under II and VII) = one post in II; glycolic acid (VI and VII) = one post in VI.
+- Not in either book: eberconazole, ozenoxacin, minocycline topical, decapeptide, TXA+peptides+niacinamide combo, tofacitinib ointment → product data/trials.
+- "Melanotx Ultra" brand not confirmed — ingredients covered.
+- Minocycline: list says 4% gel; approved form is 4% foam.

@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Miconazole 2% cream",
+  "summary": "I Antifungals — Azoles · Imidazole antifungal",
+  "icon": "💊",
+  "category": "Topicals · I Antifungals — Azoles",
+  "order": 4004,
+  "body": "_Topicals · I Antifungals — Azoles_\n\n**Class:** Imidazole antifungal\n\n## Mechanism of action\n- Inhibits 14-α-demethylase; at higher concentrations directly damages membranes\n- Also active against Gram-positive bacteria\n\n## Indications in dermatology & STI\n- Cutaneous and mucosal candidiasis (cream, oral gel, vaginal)\n- Tinea corporis/cruris/pedis, pityriasis versicolor, angular cheilitis (Candida/staph)\n- Napkin candidiasis\n\n## Dose & formulations\n- Cream 2%: twice daily, continue 10–14 days after lesions clear\n- Oral gel: 4 times daily after food (oral thrush)\n\n## Adverse effects\n- Local irritation, contact dermatitis\n\n## Contraindications\n- Oral gel in infants under 4–6 months (choking risk)\n- Oral gel with warfarin (see interactions)\n\n## Drug interactions\n- Miconazole oral gel (and even vaginal/topical use in large amounts) is absorbed and inhibits CYP2C9 → markedly raised INR with warfarin; also raises sulfonylurea and phenytoin levels\n\n## Pregnancy & lactation\nTopical use safe.\n\n## Viva points\n- Miconazole oral gel + warfarin → bleeding (classic interaction)\n- Useful in angular cheilitis (antifungal + antibacterial)\n\n_Sources: Wolverton 4e ch.42 and ch.66 (Drug interactions); Khopkar ch.19. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791649634739,
+  "updatedAt": 1791649638743
+ }
+}
