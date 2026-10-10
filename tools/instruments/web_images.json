@@ -1,0 +1,8 @@
+{
+ "_note": "Openly licensed photos from Wikimedia Commons, shown by link (need internet). Keys match instrument names (case-insensitive substring).",
+ "wood": {"url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Wood%27s_UV_lamp.JPG/640px-Wood%27s_UV_lamp.JPG", "credit": "Photo: Seawind60, CC BY-SA 4.0, via Wikimedia Commons"},
+ "dermoscope": {"url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Dermatoscope.jpg", "credit": "Photo: Northerncedar, public domain, via Wikimedia Commons"},
+ "cryo": {"url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Wart_cryotherapy.jpg/640px-Wart_cryotherapy.jpg", "credit": "Photo: Tonicthebrown, public domain, via Wikimedia Commons"},
+ "patch test": {"url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Skin_patch_allergy_test_02.jpg/640px-Skin_patch_allergy_test_02.jpg", "credit": "Photo: Smirkybec, CC BY 4.0, via Wikimedia Commons"},
+ "prick test": {"url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Skin_prick_testing_for_allergies.jpg/640px-Skin_prick_testing_for_allergies.jpg", "credit": "Photo: National Institutes of Health, public domain, via Wikimedia Commons"}
+}

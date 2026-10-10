@@ -5,6 +5,7 @@ POSTS = os.path.join(HERE, "..", "dbb4", "posts")
 IMG_OUT = os.path.join(HERE, "..", "src", "instruments")
 os.makedirs(IMG_OUT, exist_ok=True)
 data = json.load(open(os.path.join(HERE, "instruments.json"), encoding="utf-8"))
+WEB = {k: v for k, v in json.load(open(os.path.join(HERE, "web_images.json"), encoding="utf-8")).items() if not k.startswith("_")}
 now = int(time.time() * 1000)
 
 def sec(title, items):
@@ -17,8 +18,12 @@ for i, d in enumerate(data):
     src = os.path.join(HERE, "img", slug + ".jpg")
     if d.get("image") and os.path.exists(src):
         shutil.copy(src, os.path.join(IMG_OUT, slug + ".jpg")); img = f"instruments/{slug}.jpg"
+    credit = ""
+    if not img:
+        for k, v in WEB.items():
+            if k in d["name"].lower(): img, credit = v["url"], v["credit"]; break
     body = ""
-    if img: body += f"![{d['name']}]({img})\n\n"
+    if img: body += f"![{d['name']}]({img})\n\n" + (f"_{credit}_\n\n" if credit else "")
     if d.get("aka"): body += f"_Also called: {', '.join(d['aka'])}_\n\n"
     if d.get("description"): body += d["description"] + "\n\n"
     body += sec("Parts", d.get("parts")) + sec("Types / variants", d.get("types")) + sec("Uses / indications", d.get("uses"))
