@@ -172,3 +172,7 @@ UI: Templates tab lists ladders, old templates under "Older templates (being rep
 
 ## TODO (user, 10 Oct — do later, not now)
 - Save a full record of our conversations/decisions into a file in the repo (e.g. docs/HISTORY.md: what was built, every decision she made, pending items) so work can be recovered if chat data is lost. Keep it updated after each session.
+
+## Play Store launch checklist (10 Oct)
+Tech (me): remove DLQI/CDLQI and link to Cardiff's free official DLQI app instead (decided 10 Oct, do Wed); raise targetSdk/compileSdk from 34 to Play's current minimum (35+, check 36); build signed AAB (bundleRelease) not only APK; app-access test account for reviewers; account-deletion web page/URL; final QA.
+Her: Play developer account; closed test with 12 testers for 14 days (new personal accounts); store listing (icon 512, feature graphic 1024x500, screenshots, descriptions); Data safety form; content rating; target audience 18+ professionals; health-app declaration; privacy policy URL; lawyer review of privacy/terms; make GitHub repo private; approve drafts.
