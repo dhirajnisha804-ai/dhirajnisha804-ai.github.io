@@ -171,7 +171,7 @@ UI: Templates tab lists ladders, old templates under "Older templates (being rep
 - See tools/viva/PLAN.md — 6 slots, new Resident Corner "Viva" section + "Viva questions" button on each case page.
 
 ## TODO (user, 10 Oct — do later, not now)
-- Save a full record of our conversations/decisions into a file in the repo (e.g. docs/HISTORY.md: what was built, every decision she made, pending items) so work can be recovered if chat data is lost. Keep it updated after each session.
+- [done 11 Oct] History file: docs/HISTORY.md — keep it updated after each session.
 
 ## Play Store launch checklist (10 Oct)
 Tech (me): remove DLQI/CDLQI and link to Cardiff's free official DLQI app instead (decided 10 Oct, do Wed); raise targetSdk/compileSdk from 34 to Play's current minimum (35+, check 36); build signed AAB (bundleRelease) not only APK; app-access test account for reviewers; account-deletion web page/URL; final QA.
