@@ -332,7 +332,7 @@ dict(name="Cyclophosphamide injection", group="Injectables · V Immunosuppressan
        "Fertility counselling before starting"],
  src=f"{W} ch.19 (Cytotoxic agents); {K} (Non-steroidal immunosuppressive drugs; DCP pulse)"),
 
-dict(name="5-Fluorouracil (5-FU) injection", group="Injectables · V Immunosuppressants",
+dict(name="5-Fluorouracil (5-FU) injection", title="5-Fluorouracil (injection + topical)", group="Injectables · V Immunosuppressants",
  cls="Pyrimidine analogue antimetabolite (antineoplastic)",
  moa=["Converted to fluorodeoxyuridine monophosphate, which inhibits thymidylate synthase → no thymidine → no DNA synthesis",
       "Also incorporated into RNA",

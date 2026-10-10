@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Topical vitamin D analogues: calcipotriol, tacalcitol, calcitriol",
+  "summary": "Topical immunomodulators & antipsoriatics · Vitamin D3 analogues for topical use",
+  "icon": "💊",
+  "category": "More from Khopkar · Topical immunomodulators & antipsoriatics",
+  "order": 9033,
+  "body": "_More from Khopkar · Topical immunomodulators & antipsoriatics_\n\n**Class:** Vitamin D3 analogues for topical use\n\n## Mechanism of action\n- Bind the vitamin D receptor (VDR) → inhibit keratinocyte proliferation, promote normal differentiation; reduce Th17 cytokines (IL-17, IL-8)\n- Do not cause skin atrophy\n\n## Indications in dermatology & STI\n- Chronic plaque psoriasis (first-line, especially with steroid: calcipotriol + betamethasone dipropionate gel/ointment/foam), scalp psoriasis, nail psoriasis\n- Off-label: vitiligo (with phototherapy), morphoea, disorders of keratinisation (ichthyoses, Darier), prurigo nodularis, seborrhoeic keratoses\n\n## Dose & formulations\n- Calcipotriol 0.005% twice daily (maximum 100 g/week adults; 50 g/week for children 6–12, 75 g/week for 12+)\n- Tacalcitol 4 µg/g once daily; calcitriol 3 µg/g twice daily (less irritating — face/flexures)\n- Calcipotriol + betamethasone once daily for 4 weeks, then as needed/twice weekly\n\n## Adverse effects\n- Local irritation (lesional and perilesional), especially on face and flexures (calcipotriol)\n- Hypercalcaemia and hypercalciuria if maximum weekly dose is exceeded or in renal disease\n- Photosensitivity is not typical, but UVA degrades calcipotriol — apply after phototherapy, not before\n\n## Contraindications\n- Disorders of calcium metabolism, severe renal/hepatic disease, generalised pustular/erythrodermic psoriasis (large areas)\n\n## Drug interactions\n- Salicylic acid inactivates calcipotriol — do not mix\n- Thiazides/calcium supplements: hypercalcaemia risk\n\n## Monitoring\n- Serum calcium if near maximum dose or with renal disease\n\n## Pregnancy & lactation\nLimited data — use small areas if needed.\n\n## Viva points\n- Calcipotriol maximum 100 g/week\n- Inactivated by salicylic acid and UVA\n- Combination with betamethasone improves efficacy and reduces irritation\n\n_Sources: Wolverton 4e ch.49 (Topical vitamin D3); Khopkar ch.23 (Topical calcipotriol). Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791654309603,
+  "updatedAt": 1791654318636
+ }
+}

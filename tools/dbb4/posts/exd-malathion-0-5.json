@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Malathion (0.5%)",
+  "summary": "Scabicides & pediculicides · Organophosphate (cholinesterase inhibitor) pediculicide",
+  "icon": "💊",
+  "category": "More from Khopkar · Scabicides & pediculicides",
+  "order": 9030,
+  "body": "_More from Khopkar · Scabicides & pediculicides_\n\n**Class:** Organophosphate (cholinesterase inhibitor) pediculicide\n\n## Mechanism of action\n- Irreversibly inhibits acetylcholinesterase in lice → paralysis; ovicidal; residual activity on hair\n\n## Indications in dermatology & STI\n- Head lice resistant to permethrin (age ≥6 years); pubic lice; scabies (aqueous lotion, some countries)\n\n## Dose & formulations\n- Apply 0.5% lotion to dry hair, leave 8–12 h, then wash; repeat after 7–9 days if lice still present\n\n## Adverse effects\n- Scalp irritation; alcohol-based lotion is flammable (no hairdryers/smoking); ingestion → cholinergic toxicity\n\n## Contraindications\n- Children under 6 (USA label), neonates; flammable\n\n## Pregnancy & lactation\nLimited data.\n\n## Viva points\n- Organophosphate — ovicidal; flammable lotion\n\n_Sources: Khopkar ch.21 (Topical ivermectin/malathion); Wolverton 4e ch.44. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791654309606,
+  "updatedAt": 1791654318636
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Intralesional vinblastine",
+  "summary": "Wart & antiviral agents · Vinca alkaloid (antimitotic)",
+  "icon": "💊",
+  "category": "More from Khopkar · Wart & antiviral agents",
+  "order": 9025,
+  "body": "_More from Khopkar · Wart & antiviral agents_\n\n**Class:** Vinca alkaloid (antimitotic)\n\n## Mechanism of action\n- Binds tubulin → blocks microtubule assembly → mitotic arrest\n\n## Indications in dermatology & STI\n- Kaposi sarcoma (localised lesions) — intralesional; warts (rarely)\n- Systemic: lymphomas, Langerhans cell histiocytosis\n\n## Dose & formulations\n- Intralesional 0.1–0.5 mg/mL (0.1 mL per 0.5 cm² lesion) every 2–3 weeks\n\n## Adverse effects\n- Pain at injection site, hyperpigmentation, ulceration; systemic: neuropathy, marrow suppression; extravasation necrosis\n\n## Contraindications\n- Pregnancy; IV only for systemic use (intrathecal fatal)\n\n## Pregnancy & lactation\nContraindicated.\n\n## Viva points\n- Intralesional vinblastine for Kaposi sarcoma\n\n_Sources: Wolverton 4e ch.47; Khopkar (intralesional agents). Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791654309611,
+  "updatedAt": 1791654318636
+ }
+}

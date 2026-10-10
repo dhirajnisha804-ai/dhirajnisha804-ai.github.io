@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Aminolevulinic acid (ALA) — photodynamic therapy",
+  "summary": "Miscellaneous topicals & wound care · Porphyrin precursor photosensitiser (5-ALA 20% solution/10% gel; methyl aminolevulinate 16% cream)",
+  "icon": "💊",
+  "category": "More from Khopkar · Miscellaneous topicals & wound care",
+  "order": 9050,
+  "body": "_More from Khopkar · Miscellaneous topicals & wound care_\n\n**Class:** Porphyrin precursor photosensitiser (5-ALA 20% solution/10% gel; methyl aminolevulinate 16% cream)\n\n## Mechanism of action\n- Taken up preferentially by dysplastic/neoplastic and sebaceous cells → converted to protoporphyrin IX\n- Light activation (blue 417 nm or red 630 nm, daylight) → reactive oxygen species → selective cell death\n\n## Indications in dermatology & STI\n- Approved: actinic keratoses (blue light/red light/daylight PDT), superficial BCC and Bowen disease (MAL red light, Europe)\n- Off-label: acne, photoageing, sebaceous hyperplasia, warts, actinic cheilitis, field cancerisation in transplant patients\n\n## Dose & formulations\n- Apply under occlusion for 1–3 h (incubation), then illuminate (blue 10 J/cm² or red 37 J/cm²); daylight PDT: 30 min incubation then 2 h daylight\n\n## Adverse effects\n- Pain/burning during illumination (main limitation), erythema, oedema, crusting, pigmentation; photosensitivity for 24–48 h (avoid sun)\n\n## Contraindications\n- Porphyria, photosensitive disorders, allergy to ALA/MAL (peanut/almond oil in MAL cream)\n\n## Pregnancy & lactation\nAvoid.\n\n## Viva points\n- ALA → protoporphyrin IX → light → ROS\n- Blue 417 nm (superficial) vs red 630 nm (deeper)\n- Pain during illumination\n\n_Sources: Wolverton 4e ch.25 (Photodynamic therapy); Khopkar (Photodynamic therapy — blue and red light). Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791654309586,
+  "updatedAt": 1791654318636
+ }
+}

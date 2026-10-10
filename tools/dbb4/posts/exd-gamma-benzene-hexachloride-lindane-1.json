@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Gamma benzene hexachloride (lindane, 1%)",
+  "summary": "Scabicides & pediculicides · Organochlorine insecticide",
+  "icon": "💊",
+  "category": "More from Khopkar · Scabicides & pediculicides",
+  "order": 9027,
+  "body": "_More from Khopkar · Scabicides & pediculicides_\n\n**Class:** Organochlorine insecticide\n\n## Mechanism of action\n- Blocks GABA-gated chloride channels in mite/louse nervous system → hyperexcitation, death; partly ovicidal\n\n## Indications in dermatology & STI\n- Formerly scabies and lice — now second-line only (banned in many countries; withdrawn in India for human use in 2013)\n\n## Dose & formulations\n- Historic: thin layer neck down, wash off after 8 h; single application\n\n## Adverse effects\n- Neurotoxicity: seizures, death (especially infants, elderly, malnourished, broken skin, repeated use); aplastic anaemia (rare); resistance\n\n## Contraindications\n- Infants, children under 50 kg, elderly, pregnancy, breastfeeding, seizure disorders, crusted scabies, broken skin\n\n## Pregnancy & lactation\nContraindicated.\n\n## Viva points\n- Neurotoxic — seizures; banned/withdrawn in many countries\n\n_Sources: Khopkar ch.21 (Gamma benzene hexachloride); Wolverton 4e ch.44. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791654309609,
+  "updatedAt": 1791654318636
+ }
+}

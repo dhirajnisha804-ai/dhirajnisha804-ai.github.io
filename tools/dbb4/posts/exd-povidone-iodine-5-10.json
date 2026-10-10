@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Povidone-iodine (5–10%)",
+  "summary": "Topical antibacterials & antiseptics · Iodophor (iodine complexed with polyvinylpyrrolidone)",
+  "icon": "💊",
+  "category": "More from Khopkar · Topical antibacterials & antiseptics",
+  "order": 9004,
+  "body": "_More from Khopkar · Topical antibacterials & antiseptics_\n\n**Class:** Iodophor (iodine complexed with polyvinylpyrrolidone)\n\n## Mechanism of action\n- Slowly releases free iodine → oxidises microbial proteins and nucleic acids → broad-spectrum killing of bacteria, fungi, viruses, spores\n\n## Indications in dermatology & STI\n- Skin antisepsis before procedures, wound cleansing, infected ulcers, mouth gargle, vaginal antisepsis\n\n## Dose & formulations\n- 10% solution/5% scrub; allow 2 min contact and to dry; ointment once or twice daily on wounds\n\n## Adverse effects\n- Irritant dermatitis (especially under occlusion), allergic contact dermatitis (rare), skin staining\n- Systemic iodine absorption from large wounds/neonates → hypothyroidism, metabolic acidosis, renal toxicity\n\n## Contraindications\n- Iodine allergy; thyroid disease (large areas); neonates and pregnancy (prolonged/large-area use)\n\n## Pregnancy & lactation\nAvoid prolonged or large-area use (fetal/neonatal hypothyroidism).\n\n## Viva points\n- Needs contact time and drying; caution in neonates (hypothyroidism)\n\n_Sources: Khopkar ch.30 (Povidone iodine); Wolverton 4e ch.54. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791654309632,
+  "updatedAt": 1791654318636
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Neomycin, bacitracin & polymyxin B",
+  "summary": "Topical antibacterials & antiseptics · Topical antibiotics often combined: neomycin (aminoglycoside), bacitracin (polypeptide), polymyxin B (cationic cyclic dec",
+  "icon": "💊",
+  "category": "More from Khopkar · Topical antibacterials & antiseptics",
+  "order": 9001,
+  "body": "_More from Khopkar · Topical antibacterials & antiseptics_\n\n**Class:** Topical antibiotics often combined: neomycin (aminoglycoside), bacitracin (polypeptide), polymyxin B (cationic cyclic decapeptide)\n\n## Mechanism of action\n- Neomycin: 30S ribosome — Gram-negatives and staphylococci\n- Bacitracin: blocks cell-wall synthesis (bactoprenol dephosphorylation) — Gram-positives\n- Polymyxin B: disrupts Gram-negative outer membrane phospholipids (detergent-like); Pseudomonas\n\n## Indications in dermatology & STI\n- Minor wounds, abrasions, superficial infections (triple antibiotic ointments)\n- Not first choice for impetigo (mupirocin, fusidic acid, ozenoxacin better)\n\n## Dose & formulations\n- 1–3 times daily for up to 7 days\n\n## Adverse effects\n- Allergic contact dermatitis — neomycin is one of the commonest contact allergens (patch-test series); cross-reacts with framycetin, gentamicin\n- Bacitracin: contact allergy and rare anaphylaxis/contact urticaria\n- Ototoxicity/nephrotoxicity if absorbed from large wounds\n\n## Contraindications\n- Known allergy; large raw areas; perforated ear drum (neomycin)\n\n## Pregnancy & lactation\nSmall areas acceptable.\n\n## Viva points\n- Neomycin — top contact allergen; avoid on stasis eczema/leg ulcers\n- Bacitracin — contact allergy and anaphylaxis\n\n_Sources: Khopkar ch.18 (Bacitracin, Polymyxin B); Wolverton 4e ch.41 and ch.56. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791654309635,
+  "updatedAt": 1791654318636
+ }
+}

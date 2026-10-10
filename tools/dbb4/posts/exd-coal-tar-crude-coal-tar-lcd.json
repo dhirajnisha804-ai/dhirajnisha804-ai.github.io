@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Coal tar (crude coal tar, LCD)",
+  "summary": "Topical immunomodulators & antipsoriatics · Distillation product of coal (crude coal tar 1–5%; liquor carbonis detergens 5–20%)",
+  "icon": "💊",
+  "category": "More from Khopkar · Topical immunomodulators & antipsoriatics",
+  "order": 9035,
+  "body": "_More from Khopkar · Topical immunomodulators & antipsoriatics_\n\n**Class:** Distillation product of coal (crude coal tar 1–5%; liquor carbonis detergens 5–20%)\n\n## Mechanism of action\n- Aryl hydrocarbon receptor agonist → normalises keratinocyte differentiation (restores filaggrin), antiproliferative, anti-inflammatory, antipruritic; photosensitises to UVA\n\n## Indications in dermatology & STI\n- Chronic plaque and scalp psoriasis, palmoplantar psoriasis, atopic dermatitis (lichenified), lichen simplex, seborrhoeic dermatitis\n- Goeckerman regimen (crude coal tar + UVB, inpatient)\n- Tar baths (Ingram regimen)\n\n## Dose & formulations\n- Crude coal tar 1–5% in petrolatum or zinc paste; LCD 5–20% in creams, shampoos and bath additives; apply at night\n\n## Adverse effects\n- Smell, staining, folliculitis (tar acne), irritant dermatitis, phototoxicity ('tar smarts'), keratoacanthomas/carcinogenicity (occupational, theoretical with therapy)\n\n## Contraindications\n- Erythrodermic/pustular psoriasis, infected skin, pregnancy (relative)\n\n## Pregnancy & lactation\nAvoid (theoretical carcinogenicity).\n\n## Viva points\n- AhR ligand; Goeckerman regimen (tar + UVB)\n- Tar folliculitis and phototoxicity\n\n_Sources: Khopkar ch.28 (Coal tar); Wolverton 4e ch.57. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791654309601,
+  "updatedAt": 1791654318636
+ }
+}

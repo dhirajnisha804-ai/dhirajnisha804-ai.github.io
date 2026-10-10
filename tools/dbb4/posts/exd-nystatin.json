@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Nystatin",
+  "summary": "Topical antifungals · Polyene antifungal (from Streptomyces noursei)",
+  "icon": "💊",
+  "category": "More from Khopkar · Topical antifungals",
+  "order": 9016,
+  "body": "_More from Khopkar · Topical antifungals_\n\n**Class:** Polyene antifungal (from Streptomyces noursei)\n\n## Mechanism of action\n- Binds ergosterol → membrane pores → leakage (fungicidal); not absorbed from gut or skin\n\n## Indications in dermatology & STI\n- Candidiasis only: oral thrush (suspension), intertrigo, napkin candidiasis, candidal paronychia, vaginal candidiasis\n- Combined with steroids/antibiotics in some creams\n\n## Dose & formulations\n- Cream/ointment 100,000 U/g two to three times daily; oral suspension 100,000 U/mL, 1–4 mL four times daily (swish and swallow)\n\n## Adverse effects\n- Very safe; irritation, GI upset with large oral doses\n\n## Contraindications\n- Dermatophyte infections (ineffective)\n\n## Pregnancy & lactation\nSafe (not absorbed).\n\n## Viva points\n- Polyene — Candida only, not dermatophytes; not absorbed orally\n\n_Sources: Khopkar ch.19; Wolverton 4e ch.42. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791654309620,
+  "updatedAt": 1791654318636
+ }
+}

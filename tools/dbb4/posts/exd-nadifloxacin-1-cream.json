@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Nadifloxacin 1% cream",
+  "summary": "Topical antibacterials & antiseptics · Topical fluoroquinolone",
+  "icon": "💊",
+  "category": "More from Khopkar · Topical antibacterials & antiseptics",
+  "order": 9000,
+  "body": "_More from Khopkar · Topical antibacterials & antiseptics_\n\n**Class:** Topical fluoroquinolone\n\n## Mechanism of action\n- Inhibits DNA gyrase and topoisomerase IV → bactericidal against C. acnes, S. aureus (including MRSA) and S. epidermidis; also anti-inflammatory (reduces cytokines)\n\n## Indications in dermatology & STI\n- Inflammatory acne (with BPO), impetigo, folliculitis, infected dermatoses\n\n## Dose & formulations\n- Twice daily; acne up to 8–12 weeks with BPO\n\n## Adverse effects\n- Itching, irritation, contact dermatitis (rare)\n\n## Contraindications\n- Hypersensitivity to quinolones\n\n## Pregnancy & lactation\nAvoid (limited data).\n\n## Viva points\n- Topical quinolone for acne in India/Japan; combine with BPO to prevent resistance\n\n_Sources: Khopkar ch.18; Wolverton 4e ch.41. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791654309636,
+  "updatedAt": 1791654318636
+ }
+}

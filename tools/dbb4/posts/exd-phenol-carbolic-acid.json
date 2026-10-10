@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Phenol (carbolic acid)",
+  "summary": "Chemical agents, peels & baths · Aromatic alcohol — antiseptic, anaesthetic, keratocoagulant",
+  "icon": "💊",
+  "category": "More from Khopkar · Chemical agents, peels & baths",
+  "order": 9051,
+  "body": "_More from Khopkar · Chemical agents, peels & baths_\n\n**Class:** Aromatic alcohol — antiseptic, anaesthetic, keratocoagulant\n\n## Mechanism of action\n- Low concentration: antiseptic and topical anaesthetic (antipruritic in calamine with phenol)\n- 88% phenol: keratocoagulation — denatures proteins instantly (paradoxically less penetration than 50%)\n- Baker–Gordon formula (phenol + croton oil + septisol + water): deep peel\n\n## Indications in dermatology & STI\n- Chemical matricectomy for ingrown toenails (88% phenol, 3 × 30 s)\n- Deep chemical peels for severe photoageing and wrinkles (Baker–Gordon — rarely now)\n- Antipruritic in lotions (0.5–1%); cautery of small lesions\n\n## Dose & formulations\n- Matricectomy: tourniquet, apply 88% phenol to matrix with cotton tip for 3 × 30 s, then irrigate with alcohol\n\n## Adverse effects\n- Systemic absorption (deep peels): cardiac arrhythmias — ECG monitoring, IV hydration, treat in segments over 60–90 min; renal and hepatic toxicity\n- Permanent hypopigmentation ('alabaster' skin) after deep peels, scarring, laryngeal oedema\n\n## Contraindications\n- Deep peels: cardiac, renal, hepatic disease; dark skin types\n\n## Pregnancy & lactation\nAvoid.\n\n## Viva points\n- Deep phenol peel → arrhythmia (ECG monitoring)\n- 88% phenol for ingrown nail matricectomy\n\n_Sources: Khopkar ch.30 (Phenol — carbolic acid) and ch.31 (Phenol peels); Wolverton 4e ch.53. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791654309585,
+  "updatedAt": 1791654318636
+ }
+}

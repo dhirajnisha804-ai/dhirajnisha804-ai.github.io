@@ -543,7 +543,7 @@ dict(name="Methoxsalen (8-MOP, oral)", title="Methoxsalen (8-MOP) — oral and t
  src=f"{W} ch.23 (PUVA photochemotherapy); {K} (Psoralens, PUVA and phototherapy)"),
 
 # ---------------- XI MISCELLANEOUS ----------------
-dict(name="Nicotinamide (niacinamide, oral)", group="Oral · XI Miscellaneous",
+dict(name="Nicotinamide (niacinamide, oral)", title="Nicotinamide (oral + topical)", group="Oral · XI Miscellaneous",
  cls="Amide form of vitamin B3",
  moa=["Precursor of NAD⁺ — restores cellular energy after UV damage, improving DNA repair",
       "Prevents UV-induced immunosuppression",
@@ -567,7 +567,7 @@ dict(name="Nicotinamide (niacinamide, oral)", group="Oral · XI Miscellaneous",
        "Nicotinamide + tetracycline for bullous pemphigoid"],
  src=f"{W} ch.40 (Miscellaneous systemic drugs); {K} (Vitamins and trace elements)"),
 
-dict(name="Zinc acetate (oral zinc)", group="Oral · XI Miscellaneous",
+dict(name="Zinc acetate (oral zinc)", title="Zinc (oral zinc acetate + topical zinc)", group="Oral · XI Miscellaneous",
  cls="Trace element supplement (zinc salt)",
  moa=["Zinc is a cofactor for over 300 enzymes — needed for epithelial repair, immune function and wound healing",
       "Anti-inflammatory: inhibits neutrophil chemotaxis and TNF-α; reduces sebum and C. acnes inflammation",
