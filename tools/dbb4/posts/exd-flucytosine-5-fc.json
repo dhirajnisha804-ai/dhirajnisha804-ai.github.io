@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Flucytosine (5-FC)",
+  "summary": "Other antifungals · Fluorinated pyrimidine antifungal",
+  "icon": "💊",
+  "category": "More from Khopkar · Other antifungals",
+  "order": 7013,
+  "body": "_More from Khopkar · Other antifungals_\n\n**Class:** Fluorinated pyrimidine antifungal\n\n## Mechanism of action\n- Taken up by fungal cytosine permease and converted by cytosine deaminase (absent in human cells) to 5-fluorouracil\n- 5-FU inhibits thymidylate synthase and is incorporated into fungal RNA\n- Rapid resistance when used alone — always combined\n\n## Pharmacokinetics\n- Well absorbed; excellent CSF penetration; renal excretion (adjust dose)\n\n## Indications in dermatology & STI\n- Cryptococcal meningitis (induction with amphotericin B or fluconazole)\n- Chromoblastomycosis (with itraconazole/amphotericin B)\n- Severe candidiasis (with amphotericin B)\n\n## Dose & formulations\n- 100 mg/kg/day orally in 4 divided doses (adjust to renal function and serum levels)\n\n## Adverse effects\n- Bone marrow suppression (leucopenia, thrombocytopenia), especially with renal failure\n- Hepatotoxicity, GI upset (enterocolitis)\n\n## Contraindications\n- Pregnancy; severe marrow suppression\n\n## Drug interactions\n- Amphotericin B reduces its renal clearance (synergy but toxicity); cytosine arabinoside antagonises\n\n## Monitoring\n- CBC, LFT, renal function; drug levels where available\n\n## Pregnancy & lactation\nContraindicated (teratogenic in animals; converted to 5-FU).\n\n## Viva points\n- Prodrug converted to 5-FU only in fungi (cytosine deaminase)\n- Never used alone — resistance\n- Chromoblastomycosis and cryptococcal meningitis\n\n_Sources: Khopkar ch.2; Wolverton 4e ch.10. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791653679853,
+  "updatedAt": 1791653686866
+ }
+}

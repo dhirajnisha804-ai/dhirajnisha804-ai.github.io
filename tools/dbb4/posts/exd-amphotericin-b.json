@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Amphotericin B",
+  "summary": "Other antifungals · Polyene macrolide antifungal (from Streptomyces nodosus); also antileishmanial",
+  "icon": "💊",
+  "category": "More from Khopkar · Other antifungals",
+  "order": 7012,
+  "body": "_More from Khopkar · Other antifungals_\n\n**Class:** Polyene macrolide antifungal (from Streptomyces nodosus); also antileishmanial\n\n## Mechanism of action\n- Binds ergosterol in fungal (and Leishmania) membranes → forms pores → leakage of ions → cell death (fungicidal)\n- Some binding to human cholesterol → toxicity\n- Lipid formulations (liposomal, lipid complex) deliver drug to tissues with much less nephrotoxicity\n\n## Pharmacokinetics\n- Not absorbed orally; IV only; long tissue half-life; poor CSF penetration but effective in cryptococcal meningitis\n\n## Indications in dermatology & STI\n- Life-threatening deep fungal infections: mucormycosis (drug of choice, liposomal), cryptococcal meningitis (with flucytosine), disseminated histoplasmosis, blastomycosis, coccidioidomycosis, disseminated sporotrichosis, invasive candidiasis/aspergillosis, penicilliosis (talaromycosis)\n- Leishmaniasis: visceral (kala-azar — India's programme uses single-dose liposomal amphotericin B 10 mg/kg), post-kala-azar dermal leishmaniasis (alternative to miltefosine), mucosal and refractory cutaneous leishmaniasis\n\n## Dose & formulations\n- Conventional (deoxycholate): 0.5–1 mg/kg/day IV in 5% dextrose over 4–6 h (test dose 1 mg historically)\n- Liposomal: 3–5 mg/kg/day (mucormycosis 5–10 mg/kg/day)\n- Kala-azar (India): liposomal 10 mg/kg single infusion\n\n## Adverse effects\n- Infusion reactions: fever, chills, rigors, hypotension (premedicate with paracetamol, antihistamine, hydrocortisone)\n- Nephrotoxicity (dose-limiting with conventional form) — saline loading helps\n- Hypokalaemia, hypomagnesaemia, renal tubular acidosis\n- Normocytic anaemia (reduced erythropoietin), thrombophlebitis\n\n## Contraindications\n- Hypersensitivity; caution with renal impairment (prefer liposomal)\n\n## Drug interactions\n- Nephrotoxic drugs (aminoglycosides, cyclosporine, vancomycin); corticosteroids and diuretics worsen hypokalaemia (digoxin toxicity)\n\n## Monitoring\n- Daily renal function, K⁺ and Mg²⁺ initially; CBC; LFT\n\n## Pregnancy & lactation\nDrug of choice for serious fungal infections in pregnancy.\n\n## Viva points\n- Binds ergosterol → pores\n- Liposomal form for mucormycosis and single-dose kala-azar\n- Nephrotoxicity and hypokalaemia\n\n_Sources: Khopkar ch.2 and ch.5 (antileishmanial); Wolverton 4e ch.10 and ch.12. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791653679854,
+  "updatedAt": 1791653686866
+ }
+}

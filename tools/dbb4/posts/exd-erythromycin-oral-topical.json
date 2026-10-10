@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Erythromycin (oral + topical)",
+  "summary": "Other antibacterials · Macrolide antibiotic (14-membered lactone ring; prototype macrolide)",
+  "icon": "💊",
+  "category": "More from Khopkar · Other antibacterials",
+  "order": 7003,
+  "body": "_More from Khopkar · Other antibacterials_\n\n**Class:** Macrolide antibiotic (14-membered lactone ring; prototype macrolide)\n\n## Mechanism of action\n- Binds 23S rRNA of the 50S ribosomal subunit → blocks translocation → bacteriostatic (bactericidal at high concentration)\n- Anti-inflammatory effects (reduces neutrophil chemotaxis) — used in some inflammatory dermatoses\n- Motilin receptor agonist → GI cramps\n\n## Pharmacokinetics\n- Destroyed by gastric acid — given as enteric-coated base, stearate or estolate (estolate best absorbed)\n- Metabolised by CYP3A4 (and inhibits it strongly); poor CSF penetration\n\n## Indications in dermatology & STI\n- Penicillin-allergic patients: streptococcal and staphylococcal skin infections, erysipelas\n- STIs in pregnancy or penicillin/tetracycline allergy: chlamydia, chancroid, LGV, donovanosis\n- Erythrasma, pitted keratolysis, acne in pregnancy and children under 8\n- Bullous pemphigoid (with nicotinamide), pityriasis rosea (controversial, early use)\n- Topical 2% gel/solution: acne (always with BPO — resistance very high), erythrasma\n\n## Dose & formulations\n- 500 mg four times daily (30–50 mg/kg/day in children)\n- Chlamydia: 500 mg four times daily × 7 days; chancroid: 500 mg three times daily × 7 days; LGV: 500 mg four times daily × 21 days\n- Topical 2–4% once or twice daily with BPO\n\n## Adverse effects\n- GI cramps, nausea, diarrhoea (motilin effect) — the main problem\n- Cholestatic hepatitis (mainly estolate; more in pregnancy)\n- QT prolongation, transient hearing loss with high IV doses\n- Infantile hypertrophic pyloric stenosis when given to young infants\n- Topical: dryness; resistant C. acnes and staphylococci\n\n## Contraindications\n- Liver disease (estolate); long QT\n- Concurrent CYP3A4 substrates with serious toxicity: simvastatin/lovastatin, pimozide, ergotamine, terfenadine/astemizole\n\n## Drug interactions\n- Strong CYP3A4 inhibitor: raises cyclosporine, tacrolimus, carbamazepine, warfarin, theophylline, statins, colchicine, benzodiazepines\n- Topical erythromycin and clindamycin antagonise each other (same 50S site)\n\n## Pregnancy & lactation\nBase and stearate are safe in pregnancy; avoid estolate (hepatotoxicity). Note: erythromycin does not adequately treat fetal syphilis.\n\n## Viva points\n- Estolate → cholestatic hepatitis\n- CYP3A4 inhibitor — cyclosporine and statin interactions\n- Safe acne antibiotic in pregnancy/children (oral)\n- Topical erythromycin — high resistance; always add BPO\n\n_Sources: Khopkar ch.1 (Macrolides — erythromycin; Table 1.6) and ch.18; Wolverton 4e ch.9 and ch.41. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791653679863,
+  "updatedAt": 1791653686866
+ }
+}

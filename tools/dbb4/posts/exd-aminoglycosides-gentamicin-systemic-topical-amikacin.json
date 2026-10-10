@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Aminoglycosides: gentamicin (systemic + topical) & amikacin",
+  "summary": "Other antibacterials · Aminoglycoside antibiotics",
+  "icon": "💊",
+  "category": "More from Khopkar · Other antibacterials",
+  "order": 7009,
+  "body": "_More from Khopkar · Other antibacterials_\n\n**Class:** Aminoglycoside antibiotics\n\n## Mechanism of action\n- Bind 30S ribosomal subunit → mRNA misreading → bactericidal (concentration-dependent; oxygen-dependent uptake, so inactive against anaerobes)\n- Amikacin is resistant to most aminoglycoside-inactivating enzymes — the most broad-spectrum\n\n## Pharmacokinetics\n- Not absorbed orally; IV/IM; renal excretion — dose by renal function; once-daily dosing exploits post-antibiotic effect\n\n## Indications in dermatology & STI\n- Gentamicin IV/IM: serious Gram-negative infections (Pseudomonas), with β-lactams in endocarditis; donovanosis (adjunct); plague, tularaemia\n- Gentamicin topical 0.1% cream/ointment: impetigo, infected wounds, Pseudomonas-infected toe webs/nails (resistance and sensitisation limit use)\n- Amikacin: actinomycetoma (Welsh regimen — amikacin 15 mg/kg/day in cycles with co-trimoxazole), rapid-growing NTM, MDR-TB (older regimens), Nocardia\n\n## Dose & formulations\n- Gentamicin 5–7 mg/kg IV once daily (adjust to levels)\n- Amikacin 15 mg/kg/day (e.g. 500 mg twice daily) IM/IV; Welsh regimen: 3-week cycles with 2-week gaps, up to 3–4 cycles, with co-trimoxazole\n- Topical gentamicin 3–4 times daily, short courses\n\n## Adverse effects\n- Nephrotoxicity (acute tubular necrosis, reversible)\n- Ototoxicity — cochlear (amikacin) and vestibular (gentamicin, streptomycin); often irreversible; mitochondrial gene variant increases risk\n- Neuromuscular blockade (avoid in myasthenia)\n- Topical: contact allergy (cross-reacts with neomycin/framycetin)\n\n## Contraindications\n- Pregnancy (fetal ototoxicity); myasthenia gravis; pre-existing hearing loss\n- Topical on large raw areas or perforated tympanic membrane\n\n## Drug interactions\n- Loop diuretics, vancomycin, amphotericin B, cisplatin, cyclosporine: additive oto/nephrotoxicity\n- Neuromuscular blockers potentiated\n\n## Monitoring\n- Renal function, trough levels, audiometry (baseline and during long amikacin courses — mycetoma)\n\n## Pregnancy & lactation\nAvoid (old FDA category D).\n\n## Viva points\n- Welsh regimen for actinomycetoma — amikacin + co-trimoxazole\n- Ototoxicity: amikacin cochlear, gentamicin/streptomycin vestibular\n- Topical gentamicin sensitises and cross-reacts with neomycin\n\n_Sources: Khopkar ch.1 (Aminoglycosides, Amikacin) and ch.18 (topical gentamicin); Wolverton 4e ch.9 and ch.41. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791653679857,
+  "updatedAt": 1791653686866
+ }
+}

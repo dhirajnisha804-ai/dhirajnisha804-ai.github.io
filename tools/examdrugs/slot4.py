@@ -2,7 +2,7 @@
 W = "Wolverton 4e"; K = "Khopkar"
 D = [
 # ---------------- I ANTIFUNGALS ----------------
-dict(name="Ketoconazole (cream, lotion, shampoo)", group="Topicals · I Antifungals — Azoles",
+dict(name="Ketoconazole (cream, lotion, shampoo)", title="Ketoconazole (topical + oral)", group="Topicals · I Antifungals — Azoles",
  cls="Imidazole antifungal",
  moa=["Inhibits lanosterol 14-α-demethylase (CYP51) → ergosterol deficiency and toxic sterol build-up → fungistatic",
       "Strong activity against Malassezia; also mild anti-inflammatory and anti-androgenic effects"],
@@ -173,7 +173,7 @@ dict(name="Ozenoxacin 1% cream", group="Topicals · II Antibacterials",
        "5-day course, twice daily"],
  src=f"{W} ch.41 (Topical antibacterial agents — ozenoxacin)"),
 
-dict(name="Clindamycin phosphate 1% gel", group="Topicals · II Antibacterials",
+dict(name="Clindamycin phosphate 1% gel", title="Clindamycin (topical gel + oral)", group="Topicals · II Antibacterials",
  cls="Lincosamide antibiotic (topical)",
  moa=["Binds the 50S ribosomal subunit → inhibits bacterial protein synthesis (bacteriostatic)",
       "Reduces C. acnes and the free fatty acids it produces; anti-inflammatory (reduces neutrophil chemotaxis)",

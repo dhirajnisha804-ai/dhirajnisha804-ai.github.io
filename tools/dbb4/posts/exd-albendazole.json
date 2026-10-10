@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Albendazole",
+  "summary": "Other antiparasitics · Benzimidazole anthelmintic (broad spectrum)",
+  "icon": "💊",
+  "category": "More from Khopkar · Other antiparasitics",
+  "order": 7028,
+  "body": "_More from Khopkar · Other antiparasitics_\n\n**Class:** Benzimidazole anthelmintic (broad spectrum)\n\n## Mechanism of action\n- Binds parasite β-tubulin → inhibits microtubule polymerisation → impaired glucose uptake and energy depletion → death of worms (larvicidal, some ovicidal action)\n\n## Pharmacokinetics\n- Poorly absorbed; a fatty meal increases absorption (needed for tissue infections); active metabolite albendazole sulfoxide\n\n## Indications in dermatology & STI\n- Cutaneous larva migrans (drug of choice with ivermectin): 400 mg daily for 3–7 days\n- Cysticercosis (including cysticercosis cutis and neurocysticercosis — with steroids and anticonvulsants)\n- Gnathostomiasis, larva currens (strongyloidiasis — ivermectin preferred), hookworm, ascariasis, hydatid disease\n- Lymphatic filariasis mass drug administration (with DEC ± ivermectin)\n- Deworming before starting long-term systemic steroids/immunosuppressants in endemic areas\n\n## Dose & formulations\n- Single dose 400 mg (worms; 200 mg in children 1–2 years)\n- CLM: 400 mg daily × 3–7 days\n- Neurocysticercosis: 15 mg/kg/day (max 800 mg) in 2 doses for 8–30 days, with steroids\n- Gnathostomiasis: 400 mg twice daily for 21 days\n\n## Adverse effects\n- Single dose: GI upset, headache\n- Long courses: raised transaminases, reversible alopecia, bone marrow suppression (rare)\n- Neurocysticercosis: seizures/raised ICP from dying cysts (cover with steroids)\n\n## Contraindications\n- Pregnancy (first trimester) — teratogenic in animals; ocular cysticercosis (treat surgically first)\n\n## Drug interactions\n- Dexamethasone and praziquantel raise albendazole levels; carbamazepine/phenytoin lower them\n\n## Monitoring\n- CBC and LFT every 2 weeks on long courses\n\n## Pregnancy & lactation\nAvoid in the first trimester; single doses in 2nd/3rd trimester allowed in deworming programmes.\n\n## Viva points\n- Drug of choice for CLM (with ivermectin)\n- Take with fatty food for tissue parasites\n- Steroid cover in neurocysticercosis\n\n_Sources: Khopkar ch.5 (Table 5.1); Wolverton 4e ch.12. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791653679838,
+  "updatedAt": 1791653686866
+ }
+}

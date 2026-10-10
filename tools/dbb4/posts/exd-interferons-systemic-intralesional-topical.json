@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Interferons (systemic, intralesional, topical)",
+  "summary": "Antivirals & ART · Cytokine immunomodulators — IFN-α (2a, 2b, pegylated), IFN-β, IFN-γ (1b); recombinant proteins",
+  "icon": "💊",
+  "category": "More from Khopkar · Antivirals & ART",
+  "order": 7021,
+  "body": "_More from Khopkar · Antivirals & ART_\n\n**Class:** Cytokine immunomodulators — IFN-α (2a, 2b, pegylated), IFN-β, IFN-γ (1b); recombinant proteins\n\n## Mechanism of action\n- Bind interferon receptors → JAK-STAT signalling → hundreds of interferon-stimulated genes\n- Antiviral: inhibit viral replication (2',5'-oligoadenylate synthetase, protein kinase R)\n- Antiproliferative and immunomodulatory: activate NK cells, cytotoxic T cells and macrophages, increase MHC expression; IFN-γ activates macrophage killing\n\n## Indications in dermatology & STI\n- Intralesional IFN-α2b: condylomata acuminata (refractory), keloids (after excision), BCC and SCC (selected), keratoacanthoma, common warts\n- Systemic IFN-α: cutaneous T-cell lymphoma (mycosis fungoides, Sézary — often with PUVA/retinoids), Kaposi sarcoma, melanoma (adjuvant — historical), Behçet disease, chronic hepatitis B/C (historical), life-threatening infantile haemangioma (historical — spastic diplegia risk)\n- IFN-γ-1b: chronic granulomatous disease (reduces infections — approved), severe atopic dermatitis (limited), osteopetrosis\n- Topical IFN gel/cream: genital warts, herpes (limited)\n\n## Dose & formulations\n- Intralesional IFN-α2b for genital warts: 1 million IU into each wart (up to 5 warts) three times a week for 3 weeks\n- Systemic IFN-α for CTCL: 3–9 million IU SC three times weekly\n- IFN-γ-1b (CGD): 50 µg/m² SC three times weekly\n\n## Adverse effects\n- Flu-like syndrome (fever, chills, myalgia, headache) — premedicate with paracetamol; tachyphylaxis over weeks\n- Fatigue, depression and suicidal ideation, cognitive changes\n- Cytopenias, raised LFT, thyroid dysfunction (hypo/hyper), autoimmunity\n- Skin: injection-site reactions/necrosis, alopecia, induction or flare of psoriasis, sarcoidosis, lichen planus, vitiligo, lupus\n\n## Contraindications\n- Severe depression or suicidal history; autoimmune hepatitis; decompensated liver disease; uncontrolled thyroid disease; pregnancy (relative)\n\n## Drug interactions\n- Theophylline levels rise; additive marrow suppression with zidovudine and other myelosuppressives\n\n## Monitoring\n- CBC, LFT, TSH, mood assessment during systemic use\n\n## Pregnancy & lactation\nAvoid (abortifacient in animals at high doses).\n\n## Viva points\n- IL IFN-α2b for genital warts — 1 MIU per wart thrice weekly × 3 weeks\n- IFN-γ for chronic granulomatous disease\n- IFN therapy can induce psoriasis and sarcoidosis\n- Flu-like illness and depression are the key side effects\n\n_Sources: Khopkar ch.3, ch.13 (Immunobiologicals — interferons) and ch.20 (topical/intralesional IFN); Wolverton 4e ch.43 and ch.37. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791653679845,
+  "updatedAt": 1791653686866
+ }
+}

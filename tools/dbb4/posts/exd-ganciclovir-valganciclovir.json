@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Ganciclovir & valganciclovir",
+  "summary": "Antivirals & ART · Guanosine analogue (ganciclovir) and its oral L-valyl ester prodrug (valganciclovir)",
+  "icon": "💊",
+  "category": "More from Khopkar · Antivirals & ART",
+  "order": 7018,
+  "body": "_More from Khopkar · Antivirals & ART_\n\n**Class:** Guanosine analogue (ganciclovir) and its oral L-valyl ester prodrug (valganciclovir)\n\n## Mechanism of action\n- In CMV-infected cells, phosphorylated by the viral UL97 kinase, then by host kinases → triphosphate inhibits viral DNA polymerase\n- Much more active against CMV than acyclovir\n\n## Indications in dermatology & STI\n- CMV infections in immunocompromised patients (retinitis, colitis, pneumonitis, CMV cutaneous ulcers in HIV/transplant)\n- Prevention of CMV in transplant recipients\n- HHV-6/CMV reactivation in severe DRESS (selected cases)\n\n## Dose & formulations\n- Ganciclovir 5 mg/kg IV every 12 h (induction), then 5 mg/kg daily\n- Valganciclovir 900 mg twice daily (induction), then 900 mg daily; adjust for renal function\n\n## Adverse effects\n- Bone marrow suppression (neutropenia, thrombocytopenia) — dose-limiting\n- Renal impairment, CNS effects, fever, rash\n- Carcinogenic, teratogenic and aspermatogenic in animals\n\n## Contraindications\n- Severe neutropenia (<500/mm³) or thrombocytopenia; pregnancy\n\n## Drug interactions\n- Zidovudine, MMF, other marrow suppressants: more myelosuppression; imipenem (seizures)\n\n## Monitoring\n- CBC 2–3 times a week during induction; renal function\n\n## Pregnancy & lactation\nAvoid (teratogenic); contraception during and after treatment (men 90 days).\n\n## Viva points\n- Activated by CMV UL97 kinase\n- Neutropenia is dose-limiting\n- Valganciclovir is the oral prodrug\n\n_Sources: Khopkar ch.3; Wolverton 4e ch.11. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791653679848,
+  "updatedAt": 1791653686866
+ }
+}

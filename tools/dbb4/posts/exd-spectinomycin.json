@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Spectinomycin",
+  "summary": "Other antibacterials · Aminocyclitol antibiotic (related to aminoglycosides)",
+  "icon": "💊",
+  "category": "More from Khopkar · Other antibacterials",
+  "order": 7010,
+  "body": "_More from Khopkar · Other antibacterials_\n\n**Class:** Aminocyclitol antibiotic (related to aminoglycosides)\n\n## Mechanism of action\n- Binds 30S ribosomal subunit → inhibits protein synthesis (bacteriostatic)\n\n## Indications in dermatology & STI\n- Gonorrhoea (urogenital/anorectal) in patients allergic to cephalosporins or in pregnancy — not effective for pharyngeal gonorrhoea\n- Disseminated gonococcal infection (older regimens)\n\n## Dose & formulations\n- 2 g IM single dose; DGI 2 g IM daily (older regimens)\n\n## Adverse effects\n- Injection-site pain, urticaria, fever, nausea (uncommon)\n\n## Contraindications\n- Hypersensitivity\n\n## Pregnancy & lactation\nConsidered safe (old FDA category B).\n\n## Viva points\n- Gonorrhoea alternative — poor pharyngeal activity; largely unavailable now\n\n_Sources: Khopkar ch.1 (Spectinomycin). Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791653679856,
+  "updatedAt": 1791653686866
+ }
+}

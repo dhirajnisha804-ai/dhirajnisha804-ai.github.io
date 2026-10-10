@@ -54,3 +54,6 @@ make.py: entries with merge_into are rendered as a "Topical form" section inside
 - Added: dapsone (+gel), clofazimine, rifampicin, MDT regimens, newer antileprosy drugs, INH, PZA, ethambutol, streptomycin, cutaneous TB regimens (NTEP daily), second-line ATT, NTM regimens.
 - Flags: MDT/NLEP regimen updates (3-drug PB); Khopkar DOTS thrice-weekly vs current NTEP daily — current given.
 - MDT updated to NLEP revised classification & 3-drug PB/MB regimen effective 1 Apr 2025 (MoHFW DGHS NLEP page; DO letter 6 Mar 2025). TB post: only current NTEP daily regimen (old DOTS note removed).
+### Slot 7 (done)
+- Added 30 posts: penicillins, oral cephalosporins, co-trimoxazole, erythromycin (oral+topical), roxithromycin, clarithromycin, fluoroquinolones, aminoglycosides (gentamicin sys+topical, amikacin), spectinomycin, vancomycin, amphotericin B, flucytosine, penciclovir cream, ganciclovir/valganciclovir, foscarnet, cidofovir (sys+topical), interferons, tenofovir/emtricitabine, efavirenz, stavudine/didanosine, other PIs, enfuvirtide, HIV PEP & PPTCT (current NACO only), albendazole, mebendazole, thiabendazole (oral+topical), DEC, praziquantel, antimonials, pentamidine.
+- Merged into exam posts: oral clindamycin, topical metronidazole, oral ketoconazole, terbinafine cream, acyclovir cream.

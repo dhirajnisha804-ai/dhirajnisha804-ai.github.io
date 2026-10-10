@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Stavudine & didanosine (older NRTIs)",
+  "summary": "Antivirals & ART · Nucleoside reverse transcriptase inhibitors — stavudine (d4T, thymidine analogue) and didanosine (ddI, adenosine analogue)",
+  "icon": "💊",
+  "category": "More from Khopkar · Antivirals & ART",
+  "order": 7024,
+  "body": "_More from Khopkar · Antivirals & ART_\n\n**Class:** Nucleoside reverse transcriptase inhibitors — stavudine (d4T, thymidine analogue) and didanosine (ddI, adenosine analogue)\n\n## Mechanism of action\n- Phosphorylated to triphosphates that terminate HIV DNA chains (mitochondrial DNA polymerase-γ inhibition explains toxicity)\n\n## Indications in dermatology & STI\n- Historical: stavudine-based first-line regimens (D4T/3TC/NVP, D4T/3TC/EFV) were widely used in India; phased out by WHO/NACO because of toxicity\n- Important for exams because of their adverse effects\n\n## Dose & formulations\n- Stavudine 30 mg twice daily (historic); didanosine 400 mg once daily on an empty stomach (historic)\n\n## Adverse effects\n- Stavudine: lipoatrophy (facial and limb fat loss — the classic cause), painful peripheral neuropathy, lactic acidosis with hepatic steatosis, pancreatitis\n- Didanosine: pancreatitis (can be fatal), peripheral neuropathy, lactic acidosis, non-cirrhotic portal hypertension\n- Stavudine + didanosine together: fatal lactic acidosis in pregnancy — never combined\n\n## Contraindications\n- Never combine stavudine with zidovudine (antagonism) or with didanosine (toxicity)\n\n## Drug interactions\n- Hydroxyurea, ribavirin increase didanosine toxicity; tenofovir raises didanosine levels\n\n## Pregnancy & lactation\nNot used now.\n\n## Viva points\n- Stavudine → lipoatrophy (facial wasting) and neuropathy — reason for its withdrawal\n- Mitochondrial toxicity of 'd-drugs' (d4T, ddI, ddC)\n\n_Sources: Khopkar ch.4 (Stavudine, Didanosine; D4T/3TC/NVP regimens); Wolverton 4e ch.11. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791653679842,
+  "updatedAt": 1791653686866
+ }
+}

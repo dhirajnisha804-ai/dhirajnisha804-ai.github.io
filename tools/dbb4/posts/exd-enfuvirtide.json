@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Enfuvirtide",
+  "summary": "Antivirals & ART · HIV fusion inhibitor (36-amino-acid synthetic peptide)",
+  "icon": "💊",
+  "category": "More from Khopkar · Antivirals & ART",
+  "order": 7026,
+  "body": "_More from Khopkar · Antivirals & ART_\n\n**Class:** HIV fusion inhibitor (36-amino-acid synthetic peptide)\n\n## Mechanism of action\n- Binds the HR1 region of HIV gp41 → prevents the conformational change needed for fusion of virus and cell membranes → virus cannot enter CD4 cells\n\n## Indications in dermatology & STI\n- Salvage therapy in heavily treatment-experienced patients with multidrug-resistant HIV (rarely used now)\n\n## Dose & formulations\n- 90 mg subcutaneously twice daily\n\n## Adverse effects\n- Injection-site reactions in almost all patients: painful erythematous nodules, induration, cysts (dermatology viva point)\n- Increased bacterial pneumonia; hypersensitivity (rare)\n\n## Contraindications\n- Hypersensitivity\n\n## Pregnancy & lactation\nLimited data.\n\n## Viva points\n- The only injectable fusion inhibitor — injection-site nodules in ~98%\n\n_Sources: Khopkar ch.4 (Enfuvirtide); Wolverton 4e ch.11. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791653679840,
+  "updatedAt": 1791653686866
+ }
+}
