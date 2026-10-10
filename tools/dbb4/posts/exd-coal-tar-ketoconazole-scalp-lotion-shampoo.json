@@ -5,11 +5,11 @@
   "summary": "I Antifungals — Other · Combination: keratoplastic/antiproliferative tar + imidazole antifungal",
   "icon": "💊",
   "category": "Topicals · I Antifungals — Other",
-  "order": 4009,
+  "order": 4008,
   "body": "_Topicals · I Antifungals — Other_\n\n**Class:** Combination: keratoplastic/antiproliferative tar + imidazole antifungal\n\n## Mechanism of action\n- Coal tar: antiproliferative (activates aryl hydrocarbon receptor → normalises keratinocyte differentiation), antipruritic, anti-inflammatory\n- Ketoconazole: reduces Malassezia load\n- Together they treat scaling, inflammation and the yeast driver in scalp disease\n\n## Indications in dermatology & STI\n- Seborrhoeic dermatitis and dandruff of scalp, especially thick scaling\n- Scalp psoriasis (mild) and sebopsoriasis\n\n## Dose & formulations\n- Lotion: apply to scalp at night, wash next morning (or as directed) 2–3 times weekly\n- Shampoo: lather, leave 3–5 min, rinse; 2–3 times weekly, then weekly for maintenance\n\n## Adverse effects\n- Tar: odour, staining of hair (especially grey/blonde) and fabrics, folliculitis, irritation, photosensitivity\n- Ketoconazole: irritation, dry hair\n\n## Contraindications\n- Acutely inflamed or broken scalp skin; infected scalp\n- Avoid tar in pustular or erythrodermic psoriasis\n\n## Pregnancy & lactation\nCoal tar: avoid in pregnancy (theoretical carcinogenicity); ketoconazole topical safe.\n\n## Viva points\n- Tar = AhR agonist (normalises differentiation), ketoconazole = anti-Malassezia\n- Tar shampoos may stain grey hair yellow\n\n_Sources: Wolverton 4e ch.51 (Therapeutic shampoos) and ch.57 (Miscellaneous topicals — tar); Khopkar ch.28. Facts summarised in our own words; Wolverton followed where books differ._",
   "draft": true,
   "banner": false,
-  "createdAt": 1791649634734,
-  "updatedAt": 1791649638743
+  "createdAt": 1791649818964,
+  "updatedAt": 1791649822972
  }
 }

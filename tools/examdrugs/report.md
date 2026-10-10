@@ -40,3 +40,9 @@ Discrepancies / doubts:
 - Not in either book: eberconazole, ozenoxacin, minocycline topical, decapeptide, TXA+peptides+niacinamide combo, tofacitinib ointment → product data/trials.
 - "Melanotx Ultra" brand not confirmed — ingredients covered.
 - Minocycline: list says 4% gel; approved form is 4% foam.
+
+## Rule from user (10 Oct): no products that are in neither book
+Removed: lymecycline, bilastine, montelukast, eberconazole, TXA+peptides+niacinamide ("Melanotx Ultra"), methotrexate gel.
+Kept despite being in neither book because the user asked for them specifically: STI kits (NACO), Histoglob (her dosing card), minocycline 4% foam (renamed from gel/foam).
+Sources corrected (found in the books after re-check): ozenoxacin (Wolverton ch.41), tofacitinib 2% ointment (Wolverton ch.18), decapeptide/bFGF (Khopkar topical immunomodulators).
+Total exam drug posts: 125.

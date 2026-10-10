@@ -5,11 +5,11 @@
   "summary": "IX Immunomodulators · Imidazoquinoline immune response modifier; Toll-like receptor 7 (TLR7) agonist",
   "icon": "💊",
   "category": "Topicals · IX Immunomodulators",
-  "order": 5019,
+  "order": 5018,
   "body": "_Topicals · IX Immunomodulators_\n\n**Class:** Imidazoquinoline immune response modifier; Toll-like receptor 7 (TLR7) agonist\n\n## Mechanism of action\n- Activates TLR7 (and TLR8) on dendritic cells and macrophages → release of IFN-α, TNF-α, IL-12\n- Boosts innate and Th1 cell-mediated immunity → clears virus-infected and tumour cells; also directly pro-apoptotic\n\n## Indications in dermatology & STI\n- Approved: external anogenital warts, actinic keratosis, superficial basal cell carcinoma\n- Off-label: molluscum (not effective in trials in children), common warts, Bowen disease, lentigo maligna, extramammary Paget disease, keloid (post-excision), cutaneous metastases\n\n## Dose & formulations\n- Anogenital warts: 3 times a week at bedtime (e.g. Mon/Wed/Fri), wash off after 6–10 h, up to 16 weeks\n- Superficial BCC: 5 times a week for 6 weeks\n- Actinic keratosis: twice a week for 16 weeks (5%); 3.75% daily for two 2-week cycles\n- Sachets — use one sachet per application; wash hands\n\n## Adverse effects\n- Local inflammation (erythema, erosion, crusting, oedema) — often needed for efficacy; rest days if severe\n- Flu-like symptoms (fever, myalgia, fatigue) with large areas\n- Hypo- or hyperpigmentation; induction or worsening of psoriasis, vitiligo-like depigmentation\n- Weakens condoms and diaphragms\n\n## Contraindications\n- Hypersensitivity; internal (urethral, intravaginal, cervical, rectal) warts\n- Caution: autoimmune disease, psoriasis, immunosuppression, broken skin\n\n## Pregnancy & lactation\nLimited data — avoid in pregnancy (old FDA category C); use cryotherapy for warts in pregnancy.\n\n## Viva points\n- TLR7 agonist → IFN-α\n- Warts: 3 times weekly; sBCC: 5 times weekly × 6 weeks\n- Inflammation = sign it is working\n- Damages latex condoms\n\n_Sources: Wolverton 4e ch.43 (Topical antivirals — imiquimod) and ch.47; Khopkar ch.23. Facts summarised in our own words; Wolverton followed where books differ._",
   "draft": true,
   "banner": false,
-  "createdAt": 1791649633724,
-  "updatedAt": 1791649638743
+  "createdAt": 1791649817954,
+  "updatedAt": 1791649822972
  }
 }

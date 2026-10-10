@@ -5,11 +5,11 @@
   "summary": "XI Miscellaneous · Alkaloid from Colchicum autumnale; anti-mitotic, anti-inflammatory",
   "icon": "💊",
   "category": "Oral · XI Miscellaneous",
-  "order": 2022,
+  "order": 2020,
   "body": "_Oral · XI Miscellaneous_\n\n**Class:** Alkaloid from Colchicum autumnale; anti-mitotic, anti-inflammatory\n\n## Mechanism of action\n- Binds tubulin and prevents microtubule polymerisation\n- This blocks neutrophil migration, adhesion and degranulation, and inflammasome (NLRP3) activation\n- Also an anti-mitotic (metaphase arrest) at higher concentrations\n\n## Pharmacokinetics\n- Absorbed in the gut; enterohepatic circulation; metabolised by CYP3A4 and pumped out by P-gp\n- Narrow therapeutic index\n\n## Indications in dermatology & STI\n- Behçet disease (mucocutaneous ulcers, erythema nodosum)\n- Leukocytoclastic vasculitis (chronic cutaneous), urticarial vasculitis\n- Recurrent aphthous stomatitis, Sweet syndrome, erythema nodosum leprosum (adjunct)\n- Dermatitis herpetiformis, epidermolysis bullosa acquisita, linear IgA, palmoplantar pustulosis\n- Familial Mediterranean fever, gout\n\n## Dose & formulations\n- 0.5–0.6 mg once to three times daily (usually 0.5 mg twice daily; Wolverton lists 0.6 mg twice daily)\n- Reduce dose in renal/hepatic impairment or the elderly\n\n## Adverse effects\n- GI (the commonest, dose-limiting): diarrhoea, nausea, abdominal pain — start low\n- Myelosuppression, myopathy and neuropathy (especially with renal impairment or interacting drugs)\n- Overdose is often fatal (above 0.8 mg/kg): multiorgan failure, alopecia in survivors\n- Reversible azoospermia\n\n## Contraindications\n- Severe renal or hepatic impairment\n- Combination with strong CYP3A4 or P-gp inhibitors in patients with renal or hepatic impairment\n\n## Drug interactions\n- Clarithromycin, erythromycin, ketoconazole, itraconazole, ritonavir, cyclosporine, verapamil, diltiazem: raise colchicine levels → fatal toxicity reported\n- Statins and fibrates: myopathy\n\n## Monitoring\n- CBC, renal function, LFT and CK periodically on long-term use\n\n## Pregnancy & lactation\nCan be continued in pregnancy for familial Mediterranean fever (old FDA category C); generally avoid for skin disease. Compatible with breastfeeding.\n\n## Viva points\n- Microtubule inhibitor → neutrophil inhibitor\n- Main use: Behçet and cutaneous vasculitis\n- Diarrhoea is the dose-limiting side effect\n- Clarithromycin/cyclosporine interaction can be fatal\n\n_Sources: Wolverton 4e ch.40; Khopkar (Miscellaneous agents). Facts summarised in our own words; Wolverton followed where books differ._",
   "draft": true,
   "banner": false,
-  "createdAt": 1791649636721,
-  "updatedAt": 1791649638743
+  "createdAt": 1791649820952,
+  "updatedAt": 1791649822972
  }
 }

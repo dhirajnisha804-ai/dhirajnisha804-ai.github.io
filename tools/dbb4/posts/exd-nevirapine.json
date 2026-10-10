@@ -5,11 +5,11 @@
   "summary": "IV Antivirals — Antiretroviral (ART) · Non-nucleoside reverse transcriptase inhibitor (NNRTI)",
   "icon": "💊",
   "category": "Oral · IV Antivirals — Antiretroviral (ART)",
-  "order": 1020,
+  "order": 1019,
   "body": "_Oral · IV Antivirals — Antiretroviral (ART)_\n\n**Class:** Non-nucleoside reverse transcriptase inhibitor (NNRTI)\n\n## Mechanism of action\n- Binds directly to a hydrophobic pocket close to the active site of HIV-1 reverse transcriptase\n- Non-competitive inhibition of the enzyme; no phosphorylation needed\n- Not active against HIV-2\n\n## Pharmacokinetics\n- Over 90% absorbed; crosses the placenta and enters breast milk\n- Metabolised by CYP3A4 and 2B6 and induces these enzymes (autoinduction), so the half-life falls from about 45 h to 25–30 h after 2–4 weeks\n\n## Indications in dermatology & STI\n- Former first-line ART (with zidovudine + lamivudine), now replaced by dolutegravir-based regimens\n- Infant prophylaxis in PMTCT (nevirapine syrup) under national programmes\n\n## Dose & formulations\n- 200 mg once daily for 14 days (lead-in), then 200 mg twice daily\n- Infant prophylaxis: weight-based syrup for 6–12 weeks as per NACO\n\n## Adverse effects\n- Rash in about 15–20%, mostly in the first 6 weeks; SJS/TEN and DRESS (hypersensitivity syndrome)\n- Hepatotoxicity: can be fulminant; risk higher in women with CD4 above 250 and men with CD4 above 400\n- Fever, myalgia, nausea\n\n## Contraindications\n- Women with CD4 above 250 and men with CD4 above 400 (when starting)\n- Moderate or severe liver disease (Child–Pugh B/C)\n- Previous severe rash or hepatitis with nevirapine — never restart\n\n## Drug interactions\n- Lowers levels of oral contraceptives, ketoconazole, methadone, protease inhibitors\n- Rifampicin lowers nevirapine levels — avoid\n- Fluconazole raises nevirapine levels\n\n## Monitoring\n- LFT at baseline, 2, 4, 8 and 12 weeks, then periodically\n- Skin examination in the first 6–8 weeks; stop if rash with fever, blisters, mucosal involvement, or hepatitis\n\n## Pregnancy & lactation\nHas been used in pregnancy, but liver toxicity is higher in women with high CD4 counts. Dolutegravir-based regimens are now preferred.\n\n## Viva points\n- Lead-in dosing because of autoinduction\n- Rash in the first 6 weeks; one of the commonest causes of SJS/TEN in India\n- CD4 thresholds for hepatotoxicity: women above 250, men above 400\n- HLA associations with nevirapine hypersensitivity are described (Wolverton ch.3)\n\n_Sources: Khopkar ch.4; Wolverton 4e ch.3, ch.11 and ch.67; check current NACO guidelines. Facts summarised in our own words; Wolverton followed where books differ._",
   "draft": true,
   "banner": false,
-  "createdAt": 1791649637723,
-  "updatedAt": 1791649638743
+  "createdAt": 1791649821953,
+  "updatedAt": 1791649822972
  }
 }

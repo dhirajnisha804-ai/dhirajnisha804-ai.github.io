@@ -10,6 +10,7 @@ def sec(title, items):
     items = [x for x in (items or []) if str(x).strip()]
     return f"## {title}\n" + "\n".join(f"- {x}" for x in items) + "\n\n" if items else ""
 
+for old in glob.glob(os.path.join(POSTS, "exd-*.json")): os.remove(old)  # rebuild from slot files
 n = 0
 for f in sorted(glob.glob(os.path.join(HERE, "slot*.py"))):
     s = int(re.search(r"slot(\d+)", f).group(1))
