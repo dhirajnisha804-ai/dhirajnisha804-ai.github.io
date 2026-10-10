@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Desloratadine",
+  "summary": "Antihistamines · Second-generation H1 antihistamine — active metabolite of loratadine",
+  "icon": "💊",
+  "category": "More from Khopkar · Antihistamines",
+  "order": 8020,
+  "body": "_More from Khopkar · Antihistamines_\n\n**Class:** Second-generation H1 antihistamine — active metabolite of loratadine\n\n## Mechanism of action\n- Highly potent selective peripheral H1 inverse agonist; some anti-inflammatory effect\n\n## Indications in dermatology & STI\n- Chronic urticaria, allergic rhinitis\n\n## Dose & formulations\n- 5 mg once daily (updosing up to 20 mg in urticaria); children 6–11 years 2.5 mg\n\n## Adverse effects\n- Headache, fatigue; non-sedating at standard dose\n\n## Contraindications\n- Hypersensitivity to loratadine\n\n## Drug interactions\n- Minimal; erythromycin/ketoconazole raise levels without QT change\n\n## Pregnancy & lactation\nLimited data; loratadine preferred.\n\n## Viva points\n- Active metabolite of loratadine; long half-life (~27 h)\n\n_Sources: Khopkar (Second generation H1 antihistamines); Wolverton 4e ch.32. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791653973207,
+  "updatedAt": 1791653981227
+ }
+}

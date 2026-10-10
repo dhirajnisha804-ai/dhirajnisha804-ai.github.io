@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "B-complex vitamins (riboflavin, niacin, pyridoxine, biotin, folic acid, B12)",
+  "summary": "Vitamins & trace elements · Water-soluble vitamins",
+  "icon": "💊",
+  "category": "More from Khopkar · Vitamins & trace elements",
+  "order": 8027,
+  "body": "_More from Khopkar · Vitamins & trace elements_\n\n**Class:** Water-soluble vitamins\n\n## Mechanism of action\n- Coenzymes in energy metabolism (B2, B3), amino acid metabolism (B6), carboxylation (biotin), one-carbon and DNA synthesis (folate, B12)\n\n## Indications in dermatology & STI\n- Riboflavin (B2) deficiency: angular cheilitis, glossitis (magenta tongue), seborrhoeic-like dermatitis, scrotal dermatitis\n- Niacin (B3) deficiency — pellagra: photosensitive dermatitis (Casal necklace), diarrhoea, dementia; seen with alcoholism, isoniazid, carcinoid, Hartnup disease — treat with nicotinamide (see nicotinamide post)\n- Pyridoxine (B6): prevent isoniazid neuropathy; deficiency causes seborrhoeic-like dermatitis, cheilitis\n- Biotin: biotinidase/holocarboxylase deficiency (periorificial dermatitis, alopecia); popular for brittle nails (2.5 mg/day — limited evidence)\n- Folic acid: with methotrexate; megaloblastic anaemia; pregnancy\n- B12 (cyanocobalamin/methylcobalamin): pernicious anaemia, hyperpigmentation of knuckles and nails, glossitis; neuropathy\n\n## Dose & formulations\n- Riboflavin 5–10 mg/day; nicotinamide 100 mg every 6 h for pellagra; pyridoxine 10–25 mg with INH; biotin 2.5–5 mg/day; folic acid 1–5 mg/day; B12 1000 µg IM daily × 1 week, then weekly, then monthly (deficiency)\n\n## Adverse effects\n- Nicotinic acid (not nicotinamide): flushing, pruritus, hepatotoxicity, acanthosis nigricans\n- High-dose B6: sensory neuropathy; B12 injections: acneiform eruption, rosacea flare\n- Biotin interferes with laboratory immunoassays (thyroid, troponin) — stop 2–3 days before tests\n\n## Contraindications\n- Folic acid alone in B12 deficiency (corrects anaemia, neuropathy progresses)\n\n## Drug interactions\n- Isoniazid/penicillamine deplete B6; methotrexate/co-trimoxazole antagonise folate\n\n## Pregnancy & lactation\nFolic acid 400 µg–5 mg recommended in pregnancy.\n\n## Viva points\n- Pellagra 4 Ds (dermatitis, diarrhoea, dementia, death); Casal necklace\n- B12 deficiency → knuckle hyperpigmentation\n- Biotin interferes with lab tests\n\n_Sources: Khopkar (Water-soluble vitamins — riboflavin, niacin, biotin, folic acid); Wolverton 4e ch.40. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791653973200,
+  "updatedAt": 1791653981227
+ }
+}

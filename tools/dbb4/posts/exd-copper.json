@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Copper",
+  "summary": "Vitamins & trace elements · Trace element (oral copper salts; copper peptides topically)",
+  "icon": "💊",
+  "category": "More from Khopkar · Vitamins & trace elements",
+  "order": 8031,
+  "body": "_More from Khopkar · Vitamins & trace elements_\n\n**Class:** Trace element (oral copper salts; copper peptides topically)\n\n## Mechanism of action\n- Cofactor of tyrosinase (melanin), lysyl oxidase (collagen and elastin cross-linking), cytochrome oxidase, superoxide dismutase\n\n## Indications in dermatology & STI\n- Copper deficiency (malnutrition, high-dose zinc, bariatric surgery): hypopigmentation of skin and hair, anaemia, neutropenia, neuropathy\n- Menkes kinky hair disease (copper histidinate injections — early)\n- Topical copper peptides (GHK-Cu): wound healing, cosmeceuticals\n\n## Dose & formulations\n- Oral copper 2–4 mg/day elemental for deficiency (specialist guidance)\n\n## Adverse effects\n- Excess: GI upset, hepatic toxicity; Wilson disease (copper accumulation — Kayser–Fleischer rings, azure lunulae)\n\n## Contraindications\n- Wilson disease\n\n## Drug interactions\n- Zinc reduces copper absorption (used therapeutically in Wilson disease)\n\n## Pregnancy & lactation\nDietary amounts safe.\n\n## Viva points\n- Menkes disease — pili torti, hypopigmentation; Wilson disease — azure lunulae\n- Long-term zinc causes copper deficiency\n\n_Sources: Khopkar (Trace elements — copper; copper peptides). Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791653973196,
+  "updatedAt": 1791653981227
+ }
+}

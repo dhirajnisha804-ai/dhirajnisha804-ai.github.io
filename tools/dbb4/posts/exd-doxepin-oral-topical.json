@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Doxepin (oral + topical)",
+  "summary": "Antihistamines · Tricyclic antidepressant with very potent H1 and H2 receptor blocking activity",
+  "icon": "💊",
+  "category": "More from Khopkar · Antihistamines",
+  "order": 8024,
+  "body": "_More from Khopkar · Antihistamines_\n\n**Class:** Tricyclic antidepressant with very potent H1 and H2 receptor blocking activity\n\n## Mechanism of action\n- H1 affinity about 800 times diphenhydramine and 50 times hydroxyzine; also H2 blockade, anticholinergic, sedative and antidepressant (noradrenaline/serotonin reuptake inhibition)\n\n## Indications in dermatology & STI\n- Chronic urticaria (especially with anxiety/depression, nocturnal itch), cold urticaria, dermographism\n- Neuropathic itch and pain, psychogenic excoriation, lichen simplex chronicus\n- Topical 5% cream: itch of atopic dermatitis and lichen simplex (short courses)\n\n## Dose & formulations\n- Oral: 10–25 mg at bedtime (up to 75 mg/day); elderly 10 mg\n- Topical 5% cream: four times daily for up to 8 days, maximum 10% body surface\n\n## Adverse effects\n- Sedation, dry mouth, constipation, weight gain, orthostatic hypotension\n- Cardiac arrhythmia (QT prolongation), lethal in overdose\n- Topical: drowsiness from absorption (about 20%), allergic contact dermatitis (common), burning\n\n## Contraindications\n- Recent MI, heart block, narrow-angle glaucoma, urinary retention, MAO inhibitors within 14 days, mania\n\n## Drug interactions\n- CYP2D6 inhibitors (fluoxetine, terbinafine) raise levels; alcohol; other serotonergic drugs\n\n## Monitoring\n- ECG in older patients or cardiac history\n\n## Pregnancy & lactation\nAvoid (neonatal withdrawal, limited data).\n\n## Viva points\n- Most potent H1 blocker available\n- Topical doxepin: absorbed enough to cause drowsiness; frequent contact allergy\n\n_Sources: Wolverton 4e ch.32 and ch.35; Khopkar (Antihistamines; topical doxepin). Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791653973203,
+  "updatedAt": 1791653981227
+ }
+}

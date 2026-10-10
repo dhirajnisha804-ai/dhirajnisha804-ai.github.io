@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Ebastine",
+  "summary": "Antihistamines · Second-generation H1 antihistamine — piperidine (prodrug of carebastine)",
+  "icon": "💊",
+  "category": "More from Khopkar · Antihistamines",
+  "order": 8021,
+  "body": "_More from Khopkar · Antihistamines_\n\n**Class:** Second-generation H1 antihistamine — piperidine (prodrug of carebastine)\n\n## Mechanism of action\n- Converted in liver (CYP3A4) to carebastine — selective H1 inverse agonist\n\n## Indications in dermatology & STI\n- Chronic urticaria, allergic rhinitis\n\n## Dose & formulations\n- 10–20 mg once daily\n\n## Adverse effects\n- Headache, dry mouth; QT prolongation possible at high doses or with CYP3A4 inhibitors\n\n## Contraindications\n- Severe liver impairment; long QT\n\n## Drug interactions\n- Ketoconazole/erythromycin raise levels (QT caution)\n\n## Pregnancy & lactation\nLimited data — avoid.\n\n## Viva points\n- Prodrug activated by CYP3A4; QT caution with azoles/macrolides\n\n_Sources: Khopkar (Second generation H1 antihistamines). Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791653973206,
+  "updatedAt": 1791653981227
+ }
+}

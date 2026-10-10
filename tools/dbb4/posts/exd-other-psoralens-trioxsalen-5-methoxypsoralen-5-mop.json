@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Other psoralens: trioxsalen & 5-methoxypsoralen (5-MOP)",
+  "summary": "Photoprotective agents · Furocoumarin photosensitisers used with UVA (PUVA)",
+  "icon": "💊",
+  "category": "More from Khopkar · Photoprotective agents",
+  "order": 8007,
+  "body": "_More from Khopkar · Photoprotective agents_\n\n**Class:** Furocoumarin photosensitisers used with UVA (PUVA)\n\n## Mechanism of action\n- Intercalate DNA; with UVA form monoadducts (and cross-links with 8-MOP/5-MOP) → antiproliferative, immunosuppressive and melanogenic effects\n- Trioxsalen (4,5',8-trimethylpsoralen): more melanogenic, less phototoxic orally; very phototoxic topically and in bath PUVA\n- 5-MOP (bergapten): less nausea and less phototoxicity than 8-MOP; needs higher dose\n\n## Indications in dermatology & STI\n- Vitiligo (trioxsalen orally with sunlight — PUVAsol; trioxsalen bath PUVA)\n- Psoriasis and other PUVA indications (5-MOP — used in Europe)\n\n## Dose & formulations\n- Trioxsalen 0.6 mg/kg orally 2 h before sunlight/UVA (Indian practice; tablets 5 mg)\n- 5-MOP 1.2–1.8 mg/kg orally 2 h before UVA\n- Bath PUVA: trioxsalen or 8-MOP dissolved in bath water (e.g. 0.5–1 mg/L), UVA immediately after 15 min soak\n\n## Adverse effects\n- Phototoxic burns, PUVA itch, nausea (less with 5-MOP and trioxsalen)\n- Long-term PUVA risks: SCC, lentigines, photoageing, cataract\n\n## Contraindications\n- As for methoxsalen: photosensitive disorders, pregnancy, children <10–12, melanoma/skin cancer history\n\n## Drug interactions\n- Other photosensitisers\n\n## Pregnancy & lactation\nAvoid.\n\n## Viva points\n- 5-MOP — less nausea, needs 1.2 mg/kg\n- Trioxsalen — popular in India for vitiligo (PUVAsol)\n- Bath PUVA avoids systemic side effects\n\n_Sources: Wolverton 4e ch.23; Khopkar (Psoralens, PUVA and phototherapy). Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791653973220,
+  "updatedAt": 1791653981227
+ }
+}

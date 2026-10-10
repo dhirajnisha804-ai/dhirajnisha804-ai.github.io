@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Spironolactone",
+  "summary": "Miscellaneous systemic drugs · Aldosterone antagonist (potassium-sparing diuretic) with anti-androgenic activity",
+  "icon": "💊",
+  "category": "More from Khopkar · Miscellaneous systemic drugs",
+  "order": 8033,
+  "body": "_More from Khopkar · Miscellaneous systemic drugs_\n\n**Class:** Aldosterone antagonist (potassium-sparing diuretic) with anti-androgenic activity\n\n## Mechanism of action\n- Blocks androgen receptors in sebaceous glands and hair follicles; reduces ovarian/adrenal androgen synthesis (inhibits 17α-hydroxylase); increases SHBG\n\n## Indications in dermatology & STI\n- Acne in adult women (especially jawline/hormonal, PCOS) — 'off-label first-line hormonal therapy'\n- Hirsutism, female pattern hair loss, hidradenitis suppurativa in women\n\n## Dose & formulations\n- Acne: 50–100 mg/day (25–200 mg range); hirsutism/FPHL: 100–200 mg/day; results in 3 months\n- Often combined with combined oral contraceptives (prevents menstrual irregularity, provides contraception)\n\n## Adverse effects\n- Menstrual irregularity, breast tenderness, diuresis, dizziness, postural hypotension\n- Hyperkalaemia — rare in young healthy women (routine K⁺ checks not needed per recent guidance); check in renal disease, older patients, ACE inhibitor/ARB users\n- Gynaecomastia in men (not used for men's acne)\n- Animal tumour data (high doses) — not seen in humans\n\n## Contraindications\n- Pregnancy (feminisation of male fetus), hyperkalaemia, renal failure, Addison disease; men (gynaecomastia)\n\n## Drug interactions\n- ACE inhibitors, ARBs, potassium supplements, trimethoprim, NSAIDs (hyperkalaemia); digoxin levels rise\n\n## Monitoring\n- Potassium only if risk factors; BP\n\n## Pregnancy & lactation\nContraindicated in pregnancy — use with contraception.\n\n## Viva points\n- Anti-androgen for female acne and hirsutism\n- Routine potassium monitoring not needed in healthy young women\n- Pregnancy — feminisation risk\n\n_Sources: Wolverton 4e ch.34 (Antiandrogens); Khopkar (Antiandrogens). Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791653973194,
+  "updatedAt": 1791653981227
+ }
+}

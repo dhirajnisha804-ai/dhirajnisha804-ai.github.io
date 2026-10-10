@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Leflunomide",
+  "summary": "Immunomodulators · Pyrimidine synthesis inhibitor (isoxazole immunomodulator, prodrug of teriflunomide)",
+  "icon": "💊",
+  "category": "More from Khopkar · Immunomodulators",
+  "order": 8002,
+  "body": "_More from Khopkar · Immunomodulators_\n\n**Class:** Pyrimidine synthesis inhibitor (isoxazole immunomodulator, prodrug of teriflunomide)\n\n## Mechanism of action\n- Inhibits dihydroorotate dehydrogenase → blocks de novo pyrimidine synthesis → activated lymphocytes arrested in G1 phase\n\n## Pharmacokinetics\n- Active metabolite teriflunomide has a very long half-life (about 2 weeks) and enterohepatic recirculation — persists for up to 2 years without washout\n\n## Indications in dermatology & STI\n- Psoriatic arthritis and rheumatoid arthritis (approved)\n- Off-label: cutaneous/systemic lupus, Sjögren, dermatomyositis, vasculitis, sarcoidosis, BK/CMV infections in transplant\n\n## Dose & formulations\n- 10–20 mg/day (loading doses no longer routinely used)\n- Washout: cholestyramine 8 g three times daily for 11 days (or activated charcoal) — before planned pregnancy or for toxicity\n\n## Adverse effects\n- Hepatotoxicity (boxed warning), diarrhoea, hypertension, weight loss, alopecia\n- Cytopenias, infections, interstitial lung disease, peripheral neuropathy\n- Skin: rash, SCLE induction, SJS/TEN, DRESS, cutaneous vasculitis\n\n## Contraindications\n- Pregnancy (boxed warning — teratogenic) and women not using contraception; liver disease; severe immunodeficiency\n\n## Drug interactions\n- Methotrexate (more liver toxicity), rifampicin (raises teriflunomide), cholestyramine (lowers levels), warfarin\n\n## Monitoring\n- LFT, CBC monthly for 6 months, then every 6–8 weeks; BP\n\n## Pregnancy & lactation\nContraindicated; after stopping, washout and confirm plasma teriflunomide <0.02 mg/L on two tests before conception.\n\n## Viva points\n- DHODH inhibitor\n- Cholestyramine washout because of very long half-life\n\n_Sources: Khopkar (Leflunomide); Wolverton 4e ch.40 (Miscellaneous systemic drugs). Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791653973225,
+  "updatedAt": 1791653981227
+ }
+}

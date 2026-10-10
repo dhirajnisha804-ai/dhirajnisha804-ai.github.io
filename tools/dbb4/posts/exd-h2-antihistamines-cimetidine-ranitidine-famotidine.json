@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "H2 antihistamines (cimetidine, ranitidine, famotidine)",
+  "summary": "Antihistamines · H2 receptor antagonists",
+  "icon": "💊",
+  "category": "More from Khopkar · Antihistamines",
+  "order": 8025,
+  "body": "_More from Khopkar · Antihistamines_\n\n**Class:** H2 receptor antagonists\n\n## Mechanism of action\n- Block H2 receptors on gastric parietal cells and on skin blood vessels (part of wheal and flare)\n- Cimetidine also has immunomodulatory (blocks suppressor T-cell H2 receptors) and anti-androgenic effects\n\n## Indications in dermatology & STI\n- Add-on to H1 antihistamines in chronic urticaria (small extra benefit), anaphylaxis adjunct, mastocytosis\n- Cimetidine: warts in children (immunomodulatory — evidence weak), hirsutism (anti-androgen), reduces dapsone methaemoglobinaemia\n\n## Dose & formulations\n- Famotidine 20–40 mg twice daily; cimetidine 400 mg twice daily (warts 30–40 mg/kg/day)\n\n## Adverse effects\n- Generally safe; cimetidine — gynaecomastia, impotence, confusion in elderly, CYP inhibition\n- Ranitidine withdrawn worldwide in 2020 (NDMA carcinogen contamination)\n\n## Contraindications\n- Hypersensitivity\n\n## Drug interactions\n- Cimetidine inhibits CYP1A2, 2D6, 3A4 → raises warfarin, theophylline, phenytoin, lignocaine, doxepin levels\n\n## Pregnancy & lactation\nFamotidine considered safe.\n\n## Viva points\n- H1 + H2 combination in refractory urticaria\n- Cimetidine: interactions, gynaecomastia, warts (immunomodulation)\n- Ranitidine withdrawn — NDMA\n\n_Sources: Khopkar (Antihistamines); Wolverton 4e ch.32. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791653973202,
+  "updatedAt": 1791653981227
+ }
+}

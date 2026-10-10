@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Ketotifen",
+  "summary": "Antihistamines · H1 antihistamine with mast cell–stabilising properties (benzocycloheptathiophene)",
+  "icon": "💊",
+  "category": "More from Khopkar · Antihistamines",
+  "order": 8023,
+  "body": "_More from Khopkar · Antihistamines_\n\n**Class:** H1 antihistamine with mast cell–stabilising properties (benzocycloheptathiophene)\n\n## Mechanism of action\n- Stabilises mast cells (inhibits calcium influx and mediator release), blocks H1 receptors, inhibits eosinophil accumulation\n\n## Indications in dermatology & STI\n- Chronic urticaria (adjunct), cholinergic and cold urticaria, physical urticarias\n- Mastocytosis (symptom control), allergic conjunctivitis (eye drops), neurofibromatosis-associated itch (trials)\n\n## Dose & formulations\n- 1 mg twice daily (start 1 mg at night); children 0.5 mg twice daily (age >3)\n\n## Adverse effects\n- Sedation, weight gain (appetite), dry mouth; full effect takes 6–12 weeks\n\n## Contraindications\n- Epilepsy (lowers seizure threshold — caution)\n\n## Drug interactions\n- Oral hypoglycaemics (reversible thrombocytopenia reported), CNS depressants\n\n## Pregnancy & lactation\nLimited data — avoid.\n\n## Viva points\n- Mast cell stabiliser + antihistamine; slow onset; weight gain\n\n_Sources: Khopkar (Mast cell stabilizers/ketotifen); Wolverton 4e ch.32. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791653973204,
+  "updatedAt": 1791653981227
+ }
+}

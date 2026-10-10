@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Infliximab",
+  "summary": "Biologicals · TNF-α inhibitor — chimeric (mouse–human) IgG1 monoclonal antibody",
+  "icon": "💊",
+  "category": "More from Khopkar · Biologicals",
+  "order": 8010,
+  "body": "_More from Khopkar · Biologicals_\n\n**Class:** TNF-α inhibitor — chimeric (mouse–human) IgG1 monoclonal antibody\n\n## Mechanism of action\n- Binds soluble and membrane-bound TNF-α with high affinity; lyses TNF-expressing cells (complement and antibody-dependent cytotoxicity)\n\n## Indications in dermatology & STI\n- Severe plaque psoriasis (fastest onset of TNF inhibitors), erythrodermic and generalised pustular psoriasis, psoriatic arthritis\n- Pyoderma gangrenosum (especially with IBD), hidradenitis suppurativa (off-label), Behçet disease, sarcoidosis, SJS/TEN (case reports)\n- Crohn disease, ulcerative colitis, rheumatoid arthritis\n\n## Dose & formulations\n- 5 mg/kg IV infusion at weeks 0, 2 and 6, then every 8 weeks (over 2 h)\n\n## Adverse effects\n- Infusion reactions (acute — fever, urticaria, hypotension; delayed serum-sickness-like)\n- Antibodies against the drug (chimeric) → loss of response; methotrexate reduces this\n- TB reactivation (highest risk among TNF inhibitors — often extrapulmonary/disseminated), opportunistic infections, hepatitis B reactivation\n- Hepatotoxicity, demyelination, lupus-like syndrome, heart failure, hepatosplenic T-cell lymphoma (young men with azathioprine)\n- Paradoxical psoriasis\n\n## Contraindications\n- As for TNF inhibitors; murine protein hypersensitivity\n\n## Drug interactions\n- Other biologics; live vaccines\n\n## Monitoring\n- TB, hepatitis, HIV screening; LFT; infusion monitoring\n\n## Pregnancy & lactation\nCrosses placenta in late pregnancy (IgG1) — stop by about 16–24 weeks if possible; avoid live vaccines (BCG, rotavirus) in exposed infants for 6–12 months.\n\n## Viva points\n- Chimeric antibody — infusion reactions and antidrug antibodies\n- Highest TB risk among anti-TNFs\n- Fastest-acting TNF blocker in psoriasis\n\n_Sources: Wolverton 4e ch.26; Khopkar (Immunobiologicals). Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791653973217,
+  "updatedAt": 1791653981227
+ }
+}

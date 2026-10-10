@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Flutamide",
+  "summary": "Miscellaneous systemic drugs · Non-steroidal pure anti-androgen (androgen receptor antagonist)",
+  "icon": "💊",
+  "category": "More from Khopkar · Miscellaneous systemic drugs",
+  "order": 8035,
+  "body": "_More from Khopkar · Miscellaneous systemic drugs_\n\n**Class:** Non-steroidal pure anti-androgen (androgen receptor antagonist)\n\n## Mechanism of action\n- Competitively blocks androgen receptors in target tissues (hair follicle, sebaceous gland, prostate)\n\n## Indications in dermatology & STI\n- Prostate cancer (approved)\n- Off-label in women: hirsutism, acne, female pattern hair loss — limited by liver toxicity (bicalutamide is now preferred)\n\n## Dose & formulations\n- Women (off-label): 62.5–250 mg/day with contraception\n\n## Adverse effects\n- Hepatotoxicity — may be fatal (boxed warning); dose-related\n- Dry skin, GI upset, green-brown urine, photosensitivity\n\n## Contraindications\n- Liver disease; pregnancy\n\n## Drug interactions\n- Warfarin (INR rises)\n\n## Monitoring\n- LFT monthly for 4 months, then periodically\n\n## Pregnancy & lactation\nContraindicated (feminisation of male fetus).\n\n## Viva points\n- Pure anti-androgen; fatal hepatotoxicity limits use in women\n\n_Sources: Wolverton 4e ch.34; Khopkar (Antiandrogens). Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791653973192,
+  "updatedAt": 1791653981227
+ }
+}

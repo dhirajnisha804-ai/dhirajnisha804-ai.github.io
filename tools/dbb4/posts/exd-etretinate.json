@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Etretinate",
+  "summary": "Retinoids · Second-generation (mono-aromatic) retinoid — ethyl ester prodrug of acitretin (withdrawn)",
+  "icon": "💊",
+  "category": "More from Khopkar · Retinoids",
+  "order": 8003,
+  "body": "_More from Khopkar · Retinoids_\n\n**Class:** Second-generation (mono-aromatic) retinoid — ethyl ester prodrug of acitretin (withdrawn)\n\n## Mechanism of action\n- Converted to acitretin; acts on RAR/RXR like other retinoids\n\n## Pharmacokinetics\n- Highly lipophilic, stored in fat; terminal half-life 80–160 days; detected in blood up to 2–3 years after stopping\n\n## Indications in dermatology & STI\n- Formerly: psoriasis, disorders of keratinisation — replaced by acitretin (withdrawn from the US market in 1998)\n\n## Dose & formulations\n- Historic: 0.5–1 mg/kg/day\n\n## Adverse effects\n- As for acitretin (mucocutaneous, lipids, liver, bone, teratogenicity) — prolonged teratogenic risk\n\n## Contraindications\n- Pregnancy for years after stopping\n\n## Pregnancy & lactation\nContraindicated; prolonged teratogenicity.\n\n## Viva points\n- Acitretin + alcohol → etretinate (re-esterification) — the reason for 3-year contraception with acitretin\n\n_Sources: Wolverton 4e ch.22; Khopkar (Etretinate and acitretin). Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791653973224,
+  "updatedAt": 1791653981227
+ }
+}

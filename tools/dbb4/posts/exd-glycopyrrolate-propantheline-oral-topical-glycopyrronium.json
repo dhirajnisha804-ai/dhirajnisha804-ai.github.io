@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Glycopyrrolate & propantheline (oral + topical glycopyrronium)",
+  "summary": "Miscellaneous systemic drugs · Quaternary ammonium antimuscarinics (anticholinergics) — poor CNS penetration",
+  "icon": "💊",
+  "category": "More from Khopkar · Miscellaneous systemic drugs",
+  "order": 8037,
+  "body": "_More from Khopkar · Miscellaneous systemic drugs_\n\n**Class:** Quaternary ammonium antimuscarinics (anticholinergics) — poor CNS penetration\n\n## Mechanism of action\n- Block muscarinic (M3) receptors on eccrine sweat glands (sympathetic cholinergic innervation) → reduced sweating\n\n## Indications in dermatology & STI\n- Hyperhidrosis (generalised, craniofacial, compensatory, palmoplantar) — oral glycopyrrolate or propantheline\n- Topical glycopyrronium tosylate 2.4% cloth (axillary hyperhidrosis, approved USA), 1% cream (Europe), iontophoresis with glycopyrrolate solution for refractory palmar hyperhidrosis\n- Drooling (sialorrhoea), anaesthetic premedication\n\n## Dose & formulations\n- Glycopyrrolate 1–2 mg once or twice daily (titrate); propantheline 15 mg three times daily\n- Topical cloth once daily to both axillae\n\n## Adverse effects\n- Dry mouth (most common), blurred vision (mydriasis), constipation, urinary retention, tachycardia, heat intolerance (risk of heat stroke)\n- Topical: local irritation, transient mydriasis if touched to eyes\n\n## Contraindications\n- Glaucoma, myasthenia gravis, obstructive uropathy, paralytic ileus, severe ulcerative colitis, tachyarrhythmia\n\n## Drug interactions\n- Other anticholinergics (TCAs, antihistamines); potassium chloride tablets (GI lesions)\n\n## Pregnancy & lactation\nLimited data — avoid.\n\n## Viva points\n- Quaternary amine — fewer CNS effects than atropine\n- Hyperhidrosis treatment ladder: topical aluminium chloride → iontophoresis → botulinum toxin → oral anticholinergics → sympathectomy\n\n_Sources: Khopkar (Glycopyrrolate and propantheline bromide); Wolverton 4e ch.57. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791653973190,
+  "updatedAt": 1791653981227
+ }
+}

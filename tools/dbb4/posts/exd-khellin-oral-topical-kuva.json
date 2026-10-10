@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Khellin (oral + topical, KUVA)",
+  "summary": "Photoprotective agents · Furochromone (from the plant Ammi visnaga); photosensitiser",
+  "icon": "💊",
+  "category": "More from Khopkar · Photoprotective agents",
+  "order": 8008,
+  "body": "_More from Khopkar · Photoprotective agents_\n\n**Class:** Furochromone (from the plant Ammi visnaga); photosensitiser\n\n## Mechanism of action\n- Similar to psoralens but forms only monoadducts with DNA after UVA → stimulates melanocytes with minimal phototoxicity\n\n## Indications in dermatology & STI\n- Vitiligo (KUVA — khellin + UVA/sunlight); topical khellin with UVA/NB-UVB or excimer\n\n## Dose & formulations\n- Oral: 50–100 mg 2.5 h before UVA (historic); topical 2–5% gel/cream before UVA\n\n## Adverse effects\n- Oral: raised liver enzymes (hepatotoxicity limits oral use), nausea, orthostatic hypotension\n- Topical: minimal phototoxicity\n\n## Contraindications\n- Liver disease (oral); pregnancy\n\n## Pregnancy & lactation\nAvoid.\n\n## Viva points\n- Low phototoxicity vs psoralens; oral use limited by hepatotoxicity\n\n_Sources: Khopkar (Systemic photoprotective agents / PUVA); Wolverton 4e ch.23. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791653973219,
+  "updatedAt": 1791653981227
+ }
+}

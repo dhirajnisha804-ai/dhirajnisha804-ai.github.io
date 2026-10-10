@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Cyproheptadine",
+  "summary": "Antihistamines · First-generation H1 antihistamine — piperidine; also serotonin (5-HT2) antagonist",
+  "icon": "💊",
+  "category": "More from Khopkar · Antihistamines",
+  "order": 8017,
+  "body": "_More from Khopkar · Antihistamines_\n\n**Class:** First-generation H1 antihistamine — piperidine; also serotonin (5-HT2) antagonist\n\n## Mechanism of action\n- Blocks H1 and 5-HT2 receptors; anticholinergic; appetite stimulant\n\n## Indications in dermatology & STI\n- Cold urticaria (drug of choice among older agents), chronic urticaria, pruritus\n- Serotonin syndrome (antidote), appetite stimulation, migraine prophylaxis in children\n\n## Dose & formulations\n- 4 mg three times daily (max 32 mg/day); children 0.25 mg/kg/day\n\n## Adverse effects\n- Sedation, increased appetite and weight gain, anticholinergic effects\n\n## Contraindications\n- Glaucoma, urinary retention, neonates, elderly debilitated\n\n## Drug interactions\n- Reduces effect of SSRIs; CNS depressants\n\n## Pregnancy & lactation\nAvoid in late pregnancy.\n\n## Viva points\n- Antiserotonergic — cold urticaria and serotonin syndrome; causes weight gain\n\n_Sources: Khopkar (First generation H1 antihistamines); Wolverton 4e ch.32. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791653973210,
+  "updatedAt": 1791653981227
+ }
+}
