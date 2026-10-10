@@ -166,3 +166,6 @@ UI: Templates tab lists ladders, old templates under "Older templates (being rep
 ## Resident Corner → Exam drugs (Oct 2026)
 - New section "Exam drugs" (grouped by exam-list heading, sorted by list order). Generator: tools/examdrugs/make.py + slot*.py → posts exd-*.json (drafts).
 - Slot 1 done: oral I–V (22). Slot 2 done: oral VI–XI (26). Slot 3 done: injectables (23). Slot 4 done: topicals. Products in neither book removed (user rule). "More from Khopkar" slots 6–9 done (systemic+topical merged). Total 257 drafts awaiting review. Notes: tools/examdrugs/report.md
+
+## Planned: Viva notes for all 140 cases (from Mon 12 Oct)
+- See tools/viva/PLAN.md — 6 slots, new Resident Corner "Viva" section + "Viva questions" button on each case page.
