@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Skin hook",
+  "summary": "Miscellaneous · Handle ending in one or more fine hooks that lift skin edges with less trauma than forceps.",
+  "icon": "🔧",
+  "image": "instruments/skin-hook.jpg",
+  "category": "Miscellaneous",
+  "body": "![Skin hook](instruments/skin-hook.jpg)\n\n_Also called: Frazier hook, Cottle hook, Rake retractor, Guthrie hook, Joseph double hook_\n\nHandle ending in one or more fine hooks that lift skin edges with less trauma than forceps.\n\n## Parts\n- Handle\n- Hook(s) - one to six prongs\n\n## Types / variants\n- Frazier - single hook\n- Cottle - double-pronged\n- Rakes - multi-pronged\n- Guthrie - 2-4 flattened prongs (PPT1)\n- Joseph - double U-shaped hook (PPT1)\n\n## Uses / indications\n- Holding skin margins during suturing, especially thin skin (eyelids)\n- Retracting skin margins during deeper dissection and undermining\n- Holding vital structures such as nerves during procedures/biopsy\n- Rakes for retracting large wound areas\n- Repair of dog-ears; everting wound edges while undermining (seminar)\n\n## How to hold\nHeld like a pencil; hook inserted into the dermis of the wound edge and lifted gently.\n\n## Sterilisation & care\nAutoclave, hot air oven, 2% glutaraldehyde or boiling\n\n## Viva points & tips\n- Preferred to forceps because they do not crush tissue\n- Sharp hooks can injure the operator - handle carefully",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176841,
+  "updatedAt": 1791639176879
+ }
+}

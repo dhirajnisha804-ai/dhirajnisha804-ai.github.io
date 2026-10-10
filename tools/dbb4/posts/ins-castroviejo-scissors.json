@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Castroviejo scissors",
+  "summary": "Scissors · Delicate spring-handled micro-scissors with small cutting tips.",
+  "icon": "🔧",
+  "image": "instruments/castroviejo-scissors.jpg",
+  "category": "Scissors",
+  "body": "![Castroviejo scissors](instruments/castroviejo-scissors.jpg)\n\n_Also called: Castroviejo iris scissors, Castroviejo spring scissors_\n\nDelicate spring-handled micro-scissors with small cutting tips.\n\n## Parts\n- Spring (non-ring) handles\n- Small, fine cutting tips\n\n## Types / variants\n- Straight or curved\n\n## Uses / indications\n- Surgery on mucosa and thin-skinned areas such as eyelids\n- Harvesting suction blister grafts\n- Cutting thin split-thickness / blister grafts (PPT1)\n\n## How to hold\nHeld like a pencil; squeeze the spring handles to cut.\n\n## Sterilisation & care\nAutoclave, hot air oven, 2% glutaraldehyde or boiling",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176847,
+  "updatedAt": 1791639176879
+ }
+}

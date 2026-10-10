@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Nail spatula",
+  "summary": "Hair & nail · Double-ended instrument with flat curved plates used to separate the nail plate from surrounding tissue.",
+  "icon": "🔧",
+  "image": "instruments/nail-spatula.jpg",
+  "category": "Hair & nail",
+  "body": "![Nail spatula](instruments/nail-spatula.jpg)\n\n_Also called: Nail elevator_\n\nDouble-ended instrument with flat curved plates used to separate the nail plate from surrounding tissue.\n\n## Parts\n- Central handle\n- Flat, rectangular, curved plates at either end\n\n## Uses / indications\n- Separating nail plate from nail bed\n- Separating proximal nail fold from nail plate\n- Lifting dressing from skin or punch grafts\n\n## How to hold\nPencil grip; advance the plate under the nail with gentle to-and-fro movements.\n\n## Sterilisation & care\nAutoclave, hot air oven, 2% glutaraldehyde or boiling",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176837,
+  "updatedAt": 1791639176879
+ }
+}

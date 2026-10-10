@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Sim's speculum",
+  "summary": "Diagnostic · Double-ended curved-plate vaginal speculum that depresses the posterior wall.",
+  "icon": "🔧",
+  "image": "instruments/sims-speculum.jpg",
+  "category": "Diagnostic",
+  "body": "![Sim's speculum](instruments/sims-speculum.jpg)\n\n_Also called: Sims double-bladed speculum_\n\nDouble-ended curved-plate vaginal speculum that depresses the posterior wall.\n\n## Parts\n- Two curved blades (plates) of different sizes\n- Vertical handle in between\n- Trough / central depression along the length\n\n## Types / variants\n- Sizes 26/31, 31/36, 36/42 mm\n- Single- or double-ended\n\n## Uses / indications\n- Visualising anterior and lateral vaginal walls, fornices, cervix and os\n- Differentiating cervical from vaginal discharge\n- Seeing strawberry cervix (trichomoniasis)\n- Collecting discharge: wet mount (Trichomonas), KOH/Gram (Candida), clue cells (Gardnerella)\n- Pap smear\n- Treating cervical/vaginal warts (podophyllin, cryotherapy)\n- Acetowhitening test with 3-5% acetic acid\n\n## Method of use\n1. Warm in water before use\n2. Patient in left lateral (Sims) position\n3. Insert one blade vertically, then rotate 90 degrees to depress posterior wall\n4. Lift anterior wall with Sim's retractor; discharge pools in the central trough\n\n## Sterilisation & care\nAutoclave, hot air oven, 2% glutaraldehyde or boiling\n\n## Viva points & tips\n- Disadvantages: patient brought to table edge; clinician's hands are not free (needs assistant/retractor)",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176830,
+  "updatedAt": 1791639176879
+ }
+}

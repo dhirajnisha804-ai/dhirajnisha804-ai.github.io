@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Iris scissors",
+  "summary": "Scissors · Small, sharp-pointed scissors with a long rivet-to-tip distance and short shank for fine dissection.",
+  "icon": "🔧",
+  "image": "instruments/iris-scissors.jpg",
+  "category": "Scissors",
+  "body": "![Iris scissors](instruments/iris-scissors.jpg)\n\n_Also called: Fine dissecting scissors_\n\nSmall, sharp-pointed scissors with a long rivet-to-tip distance and short shank for fine dissection.\n\n## Parts\n- Two blades pivoting on a rivet/screw that acts as fulcrum; ring handles\n- Long rivet-to-tip distance, short shank\n- Sharp fine tips\n- One blade may be serrated for tissue grip\n\n## Types / variants\n- Straight or curved\n- Plain or serrated blade\n- Usually 3.5-4.5 inch\n\n## Uses / indications\n- Fine dissection in dermatosurgery\n- Serrated variant for thin skin\n- Cutting delicate tissue and mucous membranes, skin biopsy, enucleation of cyst/lipoma (PPT1)\n\n## How to hold\nTripod grip: thumb and ring finger in the rings (only up to the distal phalanx), index finger resting near the screw joint for stability.\n\n## Sterilisation & care\nAutoclave, hot air oven, 2% glutaraldehyde or boiling\n\n## Viva points & tips\n- Originally ophthalmic; do not use for cutting sutures or dressings - blunts the tips",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176848,
+  "updatedAt": 1791639176879
+ }
+}

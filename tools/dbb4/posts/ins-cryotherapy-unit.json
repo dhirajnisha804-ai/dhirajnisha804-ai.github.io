@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Cryotherapy unit",
+  "summary": "Cryo / electro / light devices · Liquid-nitrogen container with spray tips and probes used to freeze and destroy lesions.",
+  "icon": "🔧",
+  "image": "instruments/cryotherapy-unit.jpg",
+  "category": "Cryo / electro / light devices",
+  "body": "![Cryotherapy unit](instruments/cryotherapy-unit.jpg)\n\n_Also called: Cryocan, Cryo-spray unit, Cryojet, Cryoprobe, Cryoroller_\n\nLiquid-nitrogen container with spray tips and probes used to freeze and destroy lesions.\n\n## Parts\n- Insulated canister for liquid nitrogen with trigger valve\n- Spray tips / cones / cylinders (open and closed methods)\n- Closed cryoprobes - flat, pointed, rounded\n- Accessories: eye protection (Jaeger retractor, goggles), cotton plugs, tongue depressor, thermocouple needles, chamois bag for CO2\n\n## Types / variants\n- Dipstick (cotton bud) method\n- Cryospray - open (spot, paintbrush, spiral, rotatory) and closed (cones)\n- Cryoprobe\n- Cryoroller - metal roller dipped in LN2 (acne scars, keloids)\n- Forceps technique - for pedunculated lesions\n- Intralesional cryo through spinal needle (thick keloids)\n- Cryoslush - solid CO2 with acetone (acne, scars)\n\n## Uses / indications\n- Benign: warts, molluscum, keloid, hypertrophic scar, pyogenic granuloma, skin tags, SK, mucous/myxoid cyst, angioma\n- Premalignant: leukoplakia, Bowen's, actinic keratosis, erythroplasia of Queyrat\n- Malignant: BCC (not morphoeic), SCC, LMM, palliation\n- Softening keloid before intralesional steroid\n- Cooling during laser; frozen section; topical anaesthesia (ethyl chloride); cutaneous myiasis\n\n## Contraindications\n- Cold intolerance, Raynaud's, cryoglobulinaemia, cold urticaria\n- Undiagnosed lesion\n- Multiple myeloma, agammaglobulinaemia, CTD\n- Atherosclerosis\n- Concurrent immunosuppressives\n\n## Method of use\n1. Fill unit with LN2 to 2 inches below brim; wait 3-4 min for pressure\n2. Mark lesion margin; spray at centre from about 1 cm\n3. Let ice ball thaw completely before 2nd freeze-thaw cycle\n4. Probe size about 3/4 of lesion size; remove probe only after thawing\n\n## Sterilisation & care\nAccessories: dry heat, autoclave or 2% glutaraldehyde.\n\n## Viva points & tips\n- Liquid nitrogen -196 C (spray), about -20 C on swab\n- Melanocytes die at -4 to -8 C, so hypopigmentation is common\n- Thaw time is about twice freeze time; fast freeze, slow thaw kills best\n- James Arnott - father of cryosurgery",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176823,
+  "updatedAt": 1791639176879
+ }
+}

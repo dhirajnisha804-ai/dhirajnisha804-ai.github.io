@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Blue and red light devices",
+  "summary": "Cryo / electro / light devices · LED light sources (blue about 400 nm, red 660 nm) that photoactivate porphyrins in acne and photodynamic thera",
+  "icon": "🔧",
+  "image": "",
+  "category": "Cryo / electro / light devices",
+  "body": "_Also called: LED light therapy, Blue light, Red light_\n\nLED light sources (blue about 400 nm, red 660 nm) that photoactivate porphyrins in acne and photodynamic therapy.\n\n## Types / variants\n- Blue light - peak about 400 nm (Soret band)\n- Red light - 660 nm LED, deeper penetration\n\n## Uses / indications\n- Inflammatory and non-inflammatory acne\n- Photodynamic therapy (with 5-ALA)\n\n## Viva points & tips\n- P. acnes porphyrins are photo-excited and kill the bacteria",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176820,
+  "updatedAt": 1791639176879
+ }
+}

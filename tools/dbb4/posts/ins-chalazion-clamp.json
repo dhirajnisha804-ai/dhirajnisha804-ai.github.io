@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Chalazion clamp",
+  "summary": "Biopsy & excision · Screw-tightened ring clamp that isolates and compresses tissue to give a bloodless field.",
+  "icon": "🔧",
+  "image": "instruments/chalazion-clamp.jpg",
+  "category": "Biopsy & excision",
+  "body": "![Chalazion clamp](instruments/chalazion-clamp.jpg)\n\n_Also called: Desmarres chalazion clamp, Lid clamp_\n\nScrew-tightened ring clamp that isolates and compresses tissue to give a bloodless field.\n\n## Parts\n- Two arms joined at one end, free at the other\n- Screw to approximate the arms and hold them in position\n- Free ends expanded: one a flat plate, the other a ring/perforated plate with a large flat thin rim\n\n## Types / variants\n- Various sizes (e.g. 16, 20, 24 mm rings)\n- Braid, Desmarres and Weis patterns (PPT1)\n\n## Uses / indications\n- Mucocele excision / deroofing\n- Haemostasis during excision of lip pyogenic granuloma or other neoplasm\n- Reducing bleeding during tongue biopsy\n- Ear lobe surgery and repair\n- Oral mucosal and minor salivary gland biopsy; scrotal surgery; lesions on ala nasi (PPT1)\n\n## How to hold\nPlace ring over the lesion, plate on the opposite side, tighten screw; the clamp then holds itself.\n\n## Sterilisation & care\nAutoclave, hot air oven, 2% glutaraldehyde or boiling\n\n## Viva points & tips\n- Originally an eyelid (chalazion) instrument; dermatologists use it on lip, tongue, ear lobe",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176873,
+  "updatedAt": 1791639176879
+ }
+}

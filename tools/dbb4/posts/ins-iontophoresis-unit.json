@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Iontophoresis unit",
+  "summary": "Cryo / electro / light devices · Galvanic device that drives charged drug ions or tap-water ions into skin with direct current.",
+  "icon": "🔧",
+  "image": "",
+  "category": "Cryo / electro / light devices",
+  "body": "_Also called: Iontophoresis_\n\nGalvanic device that drives charged drug ions or tap-water ions into skin with direct current.\n\n## Parts\n- DC source with current control (0-3.8 mA)\n- Treating and indifferent electrodes\n- Trays/pads\n\n## Uses / indications\n- Palmoplantar hyperhidrosis\n- Drug delivery: tretinoin (scars), glycolic acid, retinoids for melasma, sodium salicylate (warts), zinc oxide (ulcer), iodide (scars), idoxuridine (herpes labialis)\n- Patch testing, pilocarpine (sweat) test\n\n## Contraindications\n- Anaesthetic skin\n- Cuts, wounds, ulcers\n- Dermatitis\n\n## Method of use\n1. Clean area with spirit\n2. Khopkar: for acidic agents the cathode is the treating electrode and the anode indifferent; reverse for alkaline agents\n3. Raise current slowly 0-3.8 mA with continuous circular/stroking movement of the electrode; full face takes about 20-25 min\n4. End point mild erythema; reduce to zero and reverse polarity briefly\n\n## Viva points & tips\n- Physics: like charges repel - cations are driven from the anode, anions from the cathode (Khopkar's principle sentence labels acidic agents as cations repelled by the cathode - verify)\n- Grease abrasions; stop and reverse current if pain/burning\n- Complications: erythema, urticaria, burns, irritant/allergic dermatitis",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176819,
+  "updatedAt": 1791639176879
+ }
+}

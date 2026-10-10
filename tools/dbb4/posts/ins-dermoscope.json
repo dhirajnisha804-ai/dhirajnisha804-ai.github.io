@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Dermoscope",
+  "summary": "Diagnostic · Hand-held illuminated magnifier that shows subsurface skin structures not visible to the naked eye.",
+  "icon": "🔧",
+  "image": "instruments/dermoscope.jpg",
+  "category": "Diagnostic",
+  "body": "![Dermoscope](instruments/dermoscope.jpg)\n\n_Also called: Dermatoscope, Epiluminescence microscope, Skin surface microscope, Episcope_\n\nHand-held illuminated magnifier that shows subsurface skin structures not visible to the naked eye.\n\n## Parts\n- Achromatic lens (variable magnification)\n- In-built illumination - halogen or LED\n- Power: lithium/AA battery, rechargeable handle\n- Optional camera/software for image capture\n\n## Types / variants\n- Without image capture (e.g. Delta 10, Mini 2000)\n- With image capture (e.g. Dermlite Foto, Delta 20, Video episcope)\n- With capture and analysis (e.g. MoleMax, FotoFinder)\n- Contact (glass plate + linkage fluid) vs non-contact polarised\n\n## Uses / indications\n- Pigmented lesions - naevi, early melanoma\n- Psoriasis, lichen planus, dermatofibroma, Darier's disease, cicatricial alopecia, seborrhoeic keratosis, urticarial vasculitis\n- Follicular density of donor area before hair transplant\n- Nail-fold capillaroscopy (small plates)\n\n## Method of use\n1. Contact: apply linkage fluid, place glass plate on lesion\n2. Non-contact: cross-polarised lens held just above skin\n\n## Sterilisation & care\nContact plates: 2% glutaraldehyde, methylated spirit, boiling or autoclaving.\n\n## Viva points & tips\n- Non-contact avoids cross-infection but gives less illumination and resolution",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176827,
+  "updatedAt": 1791639176879
+ }
+}

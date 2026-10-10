@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Skin biopsy punch",
+  "summary": "Biopsy & excision · Cylindrical circular blade on a handle that cuts a full-thickness core of skin.",
+  "icon": "🔧",
+  "image": "instruments/skin-biopsy-punch.jpg",
+  "category": "Biopsy & excision",
+  "body": "![Skin biopsy punch](instruments/skin-biopsy-punch.jpg)\n\n_Also called: Biopsy punch, Hand-held punch, Keyes punch_\n\nCylindrical circular blade on a handle that cuts a full-thickness core of skin.\n\n## Parts\n- Handle (metal or plastic)\n- Cylindrical shaft with sharp circular cutting tip\n- Stylet with guard in metal punches (gauges graft depth and protects the tip)\n\n## Types / variants\n- Metal reusable punches - tapering or cylindrical tips; some with interchangeable tips on one handle\n- Disposable plastic-handle punches\n- Sizes 1.5-10 mm (Khopkar); 1-8 mm (PPT1)\n- Power (machine) punches - see separate entry\n\n## Uses / indications\n- Diagnostic, therapeutic and prognostic skin biopsy\n- Excisional biopsy of small naevus, solitary molluscum, pyogenic granuloma, digitate wart\n- Punch grafting in localised stable vitiligo\n- Lipoma excision by narrow-hole extrusion technique\n- Hair transplantation\n- Acne scar surgery: punch excision, punch elevation, punch grafting\n- Punch excision of small tattoos and melanocytic naevi\n- Nail matrix/nail bed biopsy (PPT1)\n\n## How to hold\nHeld vertically between thumb and index finger like a pencil, perpendicular to the skin.\n\n## Method of use\n1. Stretch skin perpendicular to the relaxed skin tension lines\n2. Press and rotate the punch in one direction until the subcutis is reached\n3. Lift the core gently (skin hook/needle), cut the base with scissors\n4. Close with suture or let heal by secondary intention\n\n## Sterilisation & care\nMetal punches: autoclave, hot air oven, 2% glutaraldehyde, boiling. Disposable plastic punches: 2% glutaraldehyde.\n\n## Viva points & tips\n- Remove the stylet before biopsy and flush the hollow during cleaning\n- Up to 3 mm punches are used on the face for cosmetic reasons\n- 3.5 or 4 mm is the usual diagnostic size (PPT1)",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176875,
+  "updatedAt": 1791639176879
+ }
+}

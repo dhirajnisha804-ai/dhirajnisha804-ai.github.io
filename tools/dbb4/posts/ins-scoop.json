@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Scoop",
+  "summary": "Curettes & extractors · Double-ended instrument with shallow oval spoons, used to scoop out cavity contents and granulation tissue.",
+  "icon": "🔧",
+  "image": "instruments/scoop.jpg",
+  "category": "Curettes & extractors",
+  "body": "![Scoop](instruments/scoop.jpg)\n\n_Also called: Volkmann double-ended scoop, Volkmann spoon_\n\nDouble-ended instrument with shallow oval spoons, used to scoop out cavity contents and granulation tissue.\n\n## Parts\n- Central handle\n- Oval, spoon-shaped shallow pointed expansion at either end\n- Spoon edges sharp (PPT1)\n\n## Types / variants\n- Small, medium and large sizes; small to medium most used\n\n## Uses / indications\n- Scooping out contents of cysts, abscesses and ulcers\n- Removal of hyperplastic granulation tissue around an ingrown toenail\n- Ulcer debridement, corn enucleation (seminar)\n- Nail surgery; applying cell pellet in cell-based vitiligo surgery (PPT1)\n\n## How to hold\nPencil (fountain-pen) grip between thumb, index and middle finger, or potato-peeler grip with the handle in the distal interdigital fold of the index finger and thumb as a stable base; stretch the skin with the other hand.\n\n## Sterilisation & care\nAutoclave, hot air oven, 2% glutaraldehyde or boiling\n\n## Viva points & tips\n- Larger and deeper than a molluscum curette\n- Considered a modification of the curette (PPT1)",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176877,
+  "updatedAt": 1791639176879
+ }
+}

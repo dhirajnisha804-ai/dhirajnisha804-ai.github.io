@@ -1,0 +1,2372 @@
+[
+  {
+    "slug": "comedone-extractor",
+    "name": "Comedone extractor",
+    "aka": [
+      "Comedone expressor",
+      "Comedo extractor",
+      "Unna/Schamberg/Saalfield comedone extractor"
+    ],
+    "category": "Curettes & extractors",
+    "description": "Double-ended steel instrument with perforated cups used to press out comedone contents.",
+    "parts": [
+      "Central handle",
+      "Two hemispherical cups, one at each end",
+      "Central perforation in each cup with blunt margins",
+      "Sinuous (S-curved) shape for better handling and localised pressure"
+    ],
+    "types": [
+      "Saalfield extractor",
+      "Schamberg extractor"
+    ],
+    "uses": [
+      "Expression of open and closed comedones in acne",
+      "Expression of contents of nevus comedonicus and senile (solar) comedones"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Held at the central handle like a pen; cup kept perpendicular to the skin.",
+    "method": [
+      "Place the cup perforation over the plugged follicular opening of an open comedone",
+      "Apply gentle, firm pressure perpendicularly downward",
+      "Comedone contents extrude through the hole and collect in the cup",
+      "For closed comedones first nick the surface with a sterile lancet or needle, then express the same way"
+    ],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [
+      "Pressure must be perpendicular, not sliding, to avoid trauma and scarring",
+      "Closed comedones need an artificial opening first"
+    ],
+    "sources": [
+      "Khopkar p403",
+      "Seminar p4-6",
+      "PPT2 slides 2-3",
+      "PPT1 slide 33"
+    ],
+    "image": "img/comedone-extractor.jpg"
+  },
+  {
+    "slug": "molluscum-curette",
+    "name": "Molluscum curette",
+    "aka": [
+      "Molluscum extractor",
+      "Dermal curette",
+      "Fox curette",
+      "Piffard curette"
+    ],
+    "category": "Curettes & extractors",
+    "description": "Double-ended curette with a small round or oval cutting loop, used to scoop out superficial lesions.",
+    "parts": [
+      "Central handle",
+      "Round or oval loop with cutting edge at either end"
+    ],
+    "types": [
+      "Fox curette - round cutting edge",
+      "Piffard curette - oval cutting edge",
+      "Rein round curette (PPT1)",
+      "Loop sizes 1-10 mm; 3-4 mm most commonly used"
+    ],
+    "uses": [
+      "Extraction of molluscum contagiosum",
+      "Curettage of seborrheic keratosis, stucco keratosis, verruca plana and actinic keratosis"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Pencil (fountain-pen) grip between thumb, index and middle finger, or potato-peeler grip with the handle in the distal interdigital fold of the index finger and thumb as a stable base; stretch the skin with the other hand.",
+    "method": [
+      "Stretch the skin around the lesion with the other hand",
+      "Engage the lesion edge with the loop",
+      "Scoop out with a single firm stroke, keeping the curette at an angle to the skin"
+    ],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [
+      "Two holding techniques asked in viva: pencil/fountain-pen and potato-peeler (seminar p10)",
+      "Curette removes soft lesional tissue preferentially; normal dermis resists"
+    ],
+    "sources": [
+      "Khopkar p404",
+      "Seminar p7-8, p10",
+      "PPT2 slides 4-5",
+      "PPT1 slide 29"
+    ],
+    "image": "img/molluscum-curette.jpg"
+  },
+  {
+    "slug": "scoop",
+    "name": "Scoop",
+    "aka": [
+      "Volkmann double-ended scoop",
+      "Volkmann spoon"
+    ],
+    "category": "Curettes & extractors",
+    "description": "Double-ended instrument with shallow oval spoons, used to scoop out cavity contents and granulation tissue.",
+    "parts": [
+      "Central handle",
+      "Oval, spoon-shaped shallow pointed expansion at either end",
+      "Spoon edges sharp (PPT1)"
+    ],
+    "types": [
+      "Small, medium and large sizes; small to medium most used"
+    ],
+    "uses": [
+      "Scooping out contents of cysts, abscesses and ulcers",
+      "Removal of hyperplastic granulation tissue around an ingrown toenail",
+      "Ulcer debridement, corn enucleation (seminar)",
+      "Nail surgery; applying cell pellet in cell-based vitiligo surgery (PPT1)"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Pencil (fountain-pen) grip between thumb, index and middle finger, or potato-peeler grip with the handle in the distal interdigital fold of the index finger and thumb as a stable base; stretch the skin with the other hand.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [
+      "Larger and deeper than a molluscum curette",
+      "Considered a modification of the curette (PPT1)"
+    ],
+    "sources": [
+      "Khopkar p404",
+      "Seminar p9-10",
+      "PPT2 slide 6",
+      "PPT1 slide 30"
+    ],
+    "image": "img/scoop.jpg"
+  },
+  {
+    "slug": "hypodermic-needle",
+    "name": "Hypodermic needle",
+    "aka": [
+      "Injection needle"
+    ],
+    "category": "Miscellaneous",
+    "description": "Disposable hollow needle that doubles in dermatology as an extractor, cutting tool, hook and injection device.",
+    "parts": [
+      "Hub (colour-coded by gauge)",
+      "Shaft / cannula",
+      "Bevel with cutting tip"
+    ],
+    "types": [
+      "18G to 30G (higher gauge = finer needle)",
+      "Hub colour indicates gauge"
+    ],
+    "uses": [
+      "Intramuscular, intravenous, subcutaneous injections",
+      "Intralesional injection: corticosteroid, 5-fluorouracil, bleomycin, interferon, sodium stibogluconate",
+      "Intramatricial steroid injection in nail psoriasis and nail lichen planus",
+      "Infiltration anaesthesia before procedures",
+      "Aspiration/drainage of bullae (e.g. bullous pemphigoid), vesicles, seroma or haematoma under grafts",
+      "Extraction of milia (rice-grain contents also confirm diagnosis), comedones, molluscum",
+      "Puncturing closed comedones before extraction",
+      "Distinguishing a papule from a small vesicle",
+      "Ear and nose piercing",
+      "Chemical cauterisation of sebaceous cyst / steatocystoma (Khopkar) and xanthelasma (seminar)",
+      "Subcision of acne scars",
+      "Intradermal tests: prick, Mantoux, pathergy, Kveim, Frei, Ito-Reenstierna, Montenegro, histamine/pilocarpine, ASST",
+      "Needling in vitiligo and molluscum",
+      "Drainage of paronychial or small abscess, acne pustule",
+      "Slit making in hair transplantation; transferring mini-punch grafts in vitiligo",
+      "Intralesional cryotherapy, FNAC",
+      "As a hook: nerve biopsy, knot opening, suture cutting"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Mounted on a syringe for injections; used bare (or bent tip) as a lancet, extractor or hook.",
+    "method": [],
+    "sterilization": "Commercially pre-packed and sterilised by gamma irradiation; single use.",
+    "tips": [
+      "Khopkar lists chemical cauterisation of sebaceous cyst/steatocystoma; the seminar lists xanthelasma",
+      "Classify uses as needle as extractor / cutting instrument / hook / injecting device for viva"
+    ],
+    "sources": [
+      "Khopkar p405-406",
+      "Seminar p11-14",
+      "PPT2 slides 7-9"
+    ],
+    "image": "img/hypodermic-needle.jpg"
+  },
+  {
+    "slug": "skin-biopsy-punch",
+    "name": "Skin biopsy punch",
+    "aka": [
+      "Biopsy punch",
+      "Hand-held punch",
+      "Keyes punch"
+    ],
+    "category": "Biopsy & excision",
+    "description": "Cylindrical circular blade on a handle that cuts a full-thickness core of skin.",
+    "parts": [
+      "Handle (metal or plastic)",
+      "Cylindrical shaft with sharp circular cutting tip",
+      "Stylet with guard in metal punches (gauges graft depth and protects the tip)"
+    ],
+    "types": [
+      "Metal reusable punches - tapering or cylindrical tips; some with interchangeable tips on one handle",
+      "Disposable plastic-handle punches",
+      "Sizes 1.5-10 mm (Khopkar); 1-8 mm (PPT1)",
+      "Power (machine) punches - see separate entry"
+    ],
+    "uses": [
+      "Diagnostic, therapeutic and prognostic skin biopsy",
+      "Excisional biopsy of small naevus, solitary molluscum, pyogenic granuloma, digitate wart",
+      "Punch grafting in localised stable vitiligo",
+      "Lipoma excision by narrow-hole extrusion technique",
+      "Hair transplantation",
+      "Acne scar surgery: punch excision, punch elevation, punch grafting",
+      "Punch excision of small tattoos and melanocytic naevi",
+      "Nail matrix/nail bed biopsy (PPT1)"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Held vertically between thumb and index finger like a pencil, perpendicular to the skin.",
+    "method": [
+      "Stretch skin perpendicular to the relaxed skin tension lines",
+      "Press and rotate the punch in one direction until the subcutis is reached",
+      "Lift the core gently (skin hook/needle), cut the base with scissors",
+      "Close with suture or let heal by secondary intention"
+    ],
+    "sterilization": "Metal punches: autoclave, hot air oven, 2% glutaraldehyde, boiling. Disposable plastic punches: 2% glutaraldehyde.",
+    "tips": [
+      "Remove the stylet before biopsy and flush the hollow during cleaning",
+      "Up to 3 mm punches are used on the face for cosmetic reasons",
+      "3.5 or 4 mm is the usual diagnostic size (PPT1)"
+    ],
+    "sources": [
+      "Khopkar p406-407",
+      "Seminar p15-17",
+      "PPT2 slides 10-11",
+      "PPT1 slides 38-40"
+    ],
+    "image": "img/skin-biopsy-punch.jpg"
+  },
+  {
+    "slug": "power-punch",
+    "name": "Power punch",
+    "aka": [
+      "Machine-held punch",
+      "Motorised punch"
+    ],
+    "category": "Biopsy & excision",
+    "description": "Punch shaft mounted on a motorised handpiece that rotates it at set speed.",
+    "parts": [
+      "Hand machine / micromotor handpiece",
+      "Punch shaft with circular cutting edge"
+    ],
+    "types": [
+      "Sizes 1.5-4.5 mm"
+    ],
+    "uses": [
+      "Same as hand punches",
+      "Follicular unit extraction (FUE) in hair transplantation",
+      "Rapid harvesting of multiple punch grafts"
+    ],
+    "contraindications": [],
+    "how_to_hold": "",
+    "method": [
+      "Mount punch on handpiece",
+      "Set rotational speed (2000-10,000 rpm per Khopkar)",
+      "Apply perpendicular to skin to required depth"
+    ],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [
+      "Speed is adjustable, giving faster and more uniform cuts than manual punches"
+    ],
+    "sources": [
+      "Khopkar p406",
+      "Seminar p15, p18-19"
+    ],
+    "image": "img/power-punch.jpg"
+  },
+  {
+    "slug": "chalazion-clamp",
+    "name": "Chalazion clamp",
+    "aka": [
+      "Desmarres chalazion clamp",
+      "Lid clamp"
+    ],
+    "category": "Biopsy & excision",
+    "description": "Screw-tightened ring clamp that isolates and compresses tissue to give a bloodless field.",
+    "parts": [
+      "Two arms joined at one end, free at the other",
+      "Screw to approximate the arms and hold them in position",
+      "Free ends expanded: one a flat plate, the other a ring/perforated plate with a large flat thin rim"
+    ],
+    "types": [
+      "Various sizes (e.g. 16, 20, 24 mm rings)",
+      "Braid, Desmarres and Weis patterns (PPT1)"
+    ],
+    "uses": [
+      "Mucocele excision / deroofing",
+      "Haemostasis during excision of lip pyogenic granuloma or other neoplasm",
+      "Reducing bleeding during tongue biopsy",
+      "Ear lobe surgery and repair",
+      "Oral mucosal and minor salivary gland biopsy; scrotal surgery; lesions on ala nasi (PPT1)"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Place ring over the lesion, plate on the opposite side, tighten screw; the clamp then holds itself.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [
+      "Originally an eyelid (chalazion) instrument; dermatologists use it on lip, tongue, ear lobe"
+    ],
+    "sources": [
+      "Khopkar p418",
+      "Seminar p54",
+      "PPT2 slides 36-37",
+      "PPT1 slide 31"
+    ],
+    "image": "img/chalazion-clamp.jpg"
+  },
+  {
+    "slug": "bard-parker-handle",
+    "name": "Bard-Parker handle",
+    "aka": [
+      "BP handle",
+      "Scalpel handle"
+    ],
+    "category": "Blades & scalpels",
+    "description": "Flat reusable handle onto whose grooved tip a disposable surgical blade is mounted to form a scalpel.",
+    "parts": [
+      "Long flat body (often with metric ruler)",
+      "Grooved, tapered blunt tip that receives the blade"
+    ],
+    "types": [
+      "No. 3 handle - small blades 10, 11, 12, 15 (Khopkar)",
+      "No. 4 handle - large blades 20-25",
+      "Longer versions marked L (3L, 4L)",
+      "Other handles: No. 7, Siegel (round-bodied, held like a pen), Beaver (PPT1)"
+    ],
+    "uses": [
+      "Mounting a surgical blade for incision, excision, shave and other procedures"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Pencil grip for fine dermatological incisions; table-knife grip for long firm cuts; violin-bow grip for long light strokes.",
+    "method": [
+      "Attach: hold blade with artery forceps/needle holder, slide its slot onto the grooved tip until it clicks",
+      "Remove: lift the blade heel with the forceps and push it off the tip away from you"
+    ],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [
+      "Never load or unload blades with fingers",
+      "Seminar lists blade 9 also fitting No. 3; Khopkar says 10, 11, 12, 15"
+    ],
+    "sources": [
+      "Khopkar p407",
+      "Seminar p20-23",
+      "PPT2 slides 12-13",
+      "PPT1 slides 20-23"
+    ],
+    "image": "img/bard-parker-handle.jpg"
+  },
+  {
+    "slug": "surgical-blade",
+    "name": "Surgical blade",
+    "aka": [
+      "Scalpel blade",
+      "BP blade"
+    ],
+    "category": "Blades & scalpels",
+    "description": "Disposable steel blade with a slot that fits a Bard-Parker handle; shape and number decide its use.",
+    "parts": [
+      "Belly with one sharp cutting edge",
+      "Blunt back (spine)",
+      "Linear slot that fits the handle groove",
+      "Tip"
+    ],
+    "types": [
+      "No. 11 - triangular, pointed tip",
+      "No. 15 - small, rounded belly (most used in dermatosurgery); 15C/15D finer",
+      "Nos. 20-24 - large, rounded belly",
+      "Nos. 10, 12 also fit No. 3 handle"
+    ],
+    "uses": [
+      "No. 11: stab incision, drainage of abscess, shave biopsy",
+      "No. 15: slit-skin smear (leprosy, leishmaniasis); incisions on thin skin such as eyelids and face",
+      "Nos. 20-24: incision and excision; Tzanck smear; molluscum smear; paring of warts and corns"
+    ],
+    "contraindications": [],
+    "how_to_hold": "As for the scalpel - pencil grip for precision.",
+    "method": [],
+    "sterilization": "Commercially pre-sterilised by gamma irradiation (cold sterilisation); single use.",
+    "tips": [
+      "Higher number = larger blade within each handle range",
+      "15 is the workhorse blade for skin surgery"
+    ],
+    "sources": [
+      "Khopkar p407-408 (Table AII.1)",
+      "Seminar p24-25",
+      "PPT2 slides 14-15",
+      "PPT1 slide 21"
+    ],
+    "image": "img/surgical-blade.jpg"
+  },
+  {
+    "slug": "humbys-knife",
+    "name": "Humby's knife",
+    "aka": [
+      "Humby skin graft knife",
+      "Skin graft harvester"
+    ],
+    "category": "Blades & scalpels",
+    "description": "Hand-held skin-graft knife with an adjustable roller guard for cutting split-thickness grafts.",
+    "parts": [
+      "Handle at one end",
+      "Long flat metal blade",
+      "Adjustable screws to set graft thickness",
+      "Roller that flattens the skin ahead of the blade"
+    ],
+    "types": [
+      "Modifications: Braithwaite, Watson, Cobbett (PPT1)"
+    ],
+    "uses": [
+      "Harvesting split-thickness skin grafts (e.g. for stable vitiligo, ulcers)"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Held at the handle with the blade nearly flat to stretched, lubricated donor skin; cut with a to-and-fro sawing movement.",
+    "method": [
+      "Set graft thickness by the screws (check the gap against a blade edge)",
+      "Lubricate and stretch donor skin with boards",
+      "Advance with to-and-fro oscillating strokes, roller leading"
+    ],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde",
+    "tips": [
+      "Watson modification is the most commonly used (PPT1)"
+    ],
+    "sources": [
+      "Khopkar p420",
+      "Seminar p62-63",
+      "PPT2 slide 44",
+      "PPT1 slides 34-36"
+    ],
+    "image": "img/humbys-knife.jpg"
+  },
+  {
+    "slug": "silvers-knife",
+    "name": "Silver's knife",
+    "aka": [
+      "Silver skin graft knife",
+      "Miniature dermatome"
+    ],
+    "category": "Blades & scalpels",
+    "description": "Smaller version of Humby's knife that takes a disposable shaving (razor) blade.",
+    "parts": [
+      "Handle",
+      "Clamp holding an ordinary disposable shaving blade",
+      "Screws to adjust graft thickness"
+    ],
+    "types": [],
+    "uses": [
+      "Harvesting small, thin split-thickness grafts",
+      "Grafts from awkward areas (dorsa of hands, face, scalp) where Humby's knife cannot reach"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Like Humby's knife, held flat to the stretched skin with gentle sawing strokes.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde",
+    "tips": [
+      "Cheap: uses ordinary razor blades"
+    ],
+    "sources": [
+      "Khopkar p420",
+      "Seminar p63-64",
+      "PPT1 slide 37"
+    ],
+    "image": "img/silvers-knife.jpg"
+  },
+  {
+    "slug": "dermatome",
+    "name": "Dermatome",
+    "aka": [
+      "Powered skin graft harvester"
+    ],
+    "category": "Blades & scalpels",
+    "description": "Disposable or powered device that harvests split-thickness skin grafts of set thickness.",
+    "parts": [],
+    "types": [
+      "Simon Davol dermatome - small rechargeable unit for small grafts",
+      "Brown dermatome - adjustable graft thickness"
+    ],
+    "uses": [
+      "Harvesting split-thickness skin grafts"
+    ],
+    "contraindications": [],
+    "how_to_hold": "",
+    "method": [],
+    "sterilization": "",
+    "tips": [
+      "Khopkar gives Brown dermatome thickness as 3-8 mm (likely a typo for tenths of a mm) - verify"
+    ],
+    "sources": [
+      "Khopkar p420",
+      "Seminar p68"
+    ],
+    "image": ""
+  },
+  {
+    "slug": "dissecting-forceps",
+    "name": "Dissecting forceps",
+    "aka": [
+      "Thumb forceps",
+      "Tissue forceps",
+      "Pick-ups",
+      "Plain / toothed forceps"
+    ],
+    "category": "Forceps & clamps",
+    "description": "Non-locking V-shaped spring forceps used to hold tissue during dissection, suturing and dressing.",
+    "parts": [
+      "Two blades/arms fused at one end and free at the other",
+      "Tips plain (serrated) or toothed",
+      "No ratchet or lock"
+    ],
+    "types": [
+      "Plain (non-toothed) - transverse serrations, less traumatic; for nerves, biopsy tissue and delicate structures",
+      "Toothed - usually 2 teeth on one jaw interlocking with 1 on the other (1x2); firmer grip, more traumatic; for dermis and cyst walls"
+    ],
+    "uses": [
+      "Holding tissue during dissection, suturing and dressing",
+      "Plain: delicate structures, biopsy specimens",
+      "Toothed: skin/dermis, cyst wall"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Hold like a pen with the first three fingers (between thumb and middle finger, index finger steadying); grasp dermis rather than epidermis to avoid crushing the wound edge.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [
+      "Do not crush the epidermis - pick up dermis",
+      "Plain = less traumatic; toothed = better grip but more traumatic"
+    ],
+    "sources": [
+      "Khopkar p408-409",
+      "Seminar p27, p29, p33",
+      "PPT2 slides 16-17",
+      "PPT1 slides 8, 12"
+    ],
+    "image": "img/dissecting-forceps.jpg"
+  },
+  {
+    "slug": "adson-forceps",
+    "name": "Adson forceps",
+    "aka": [
+      "Adson tissue forceps"
+    ],
+    "category": "Forceps & clamps",
+    "description": "Small, light thumb forceps with wide ridged handle tapering to a fine tip, used for handling skin.",
+    "parts": [
+      "Broad ridged handle for controlled grip",
+      "Long tapered narrow ends",
+      "Tips plain or with small interlocking teeth"
+    ],
+    "types": [
+      "Toothed (1x2) and non-toothed",
+      "Adson-Brown variant - see separate entry"
+    ],
+    "uses": [
+      "Holding skin edges during suturing (relatively atraumatic) - except eyelids",
+      "Suture removal",
+      "Handling punch grafts",
+      "Holding recipient plugs in hair transplant (PPT1)"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Hold like a pen with the first three fingers (between thumb and middle finger, index finger steadying); grasp dermis rather than epidermis to avoid crushing the wound edge.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [
+      "Workhorse forceps of dermatosurgery"
+    ],
+    "sources": [
+      "Khopkar p409",
+      "Seminar p30",
+      "PPT2 slide 18",
+      "PPT1 slide 9"
+    ],
+    "image": "img/adson-forceps.jpg"
+  },
+  {
+    "slug": "adson-brown-forceps",
+    "name": "Adson-Brown forceps",
+    "aka": [
+      "Brown-Adson forceps"
+    ],
+    "category": "Forceps & clamps",
+    "description": "Adson-type forceps whose tips carry two rows of many fine interlocking teeth, for delicate tissue.",
+    "parts": [
+      "Adson-pattern handle",
+      "Two rows of fine interlocking teeth at the tip"
+    ],
+    "types": [],
+    "uses": [
+      "Gentle handling of superficial, delicate tissue and skin edges"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Hold like a pen with the first three fingers (between thumb and middle finger, index finger steadying); grasp dermis rather than epidermis to avoid crushing the wound edge.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [
+      "Many small teeth spread the grip, so less crush than 1x2 teeth"
+    ],
+    "sources": [
+      "Seminar p30"
+    ],
+    "image": "img/adson-brown-forceps.jpg"
+  },
+  {
+    "slug": "debakey-forceps",
+    "name": "DeBakey forceps",
+    "aka": [
+      "DeBakey atraumatic forceps"
+    ],
+    "category": "Forceps & clamps",
+    "description": "Atraumatic thumb forceps with fine longitudinal serrations on the jaws.",
+    "parts": [
+      "Long handle",
+      "One jaw with two parallel rows of serrations, the other with a single central row (longitudinal)"
+    ],
+    "types": [],
+    "uses": [
+      "Atraumatic holding of delicate tissue and vessels"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Hold like a pen with the first three fingers (between thumb and middle finger, index finger steadying); grasp dermis rather than epidermis to avoid crushing the wound edge.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [
+      "Originally a vascular forceps; non-toothed"
+    ],
+    "sources": [
+      "Seminar p30"
+    ],
+    "image": "img/debakey-forceps.jpg"
+  },
+  {
+    "slug": "iris-forceps",
+    "name": "Iris forceps",
+    "aka": [
+      "Fine forceps"
+    ],
+    "category": "Forceps & clamps",
+    "description": "Fine, narrow-bladed forceps with gradually tapering tips for delicate grafting work.",
+    "parts": [
+      "Narrow blades tapering gradually (more gradual than Adson)",
+      "Plain or fine-toothed tip",
+      "Khopkar and PPT2 describe a 'lock' in the upper part"
+    ],
+    "types": [
+      "Straight or curved",
+      "Graefe, Stevens, Bishop-Harmon, Foerster, Gill, Tuebingen patterns (PPT1)",
+      "Bishop-Harmon: fenestrated handle, fine tips (sometimes 1x2 teeth), horizontal or crisscross serrations (seminar)"
+    ],
+    "uses": [
+      "Miniature punch grafting",
+      "Acne scar surgery",
+      "Split-thickness and blister grafting (PPT1)"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Hold like a pen with the first three fingers (between thumb and middle finger, index finger steadying); grasp dermis rather than epidermis to avoid crushing the wound edge.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [
+      "Originally an ophthalmic forceps for handling the iris",
+      "Bishop-Harmon is grouped here (PPT1 lists it as an iris forceps type; seminar gives a separate slide)"
+    ],
+    "sources": [
+      "Khopkar p409",
+      "Seminar p31, p82",
+      "PPT2 slide 19",
+      "PPT1 slides 14-16"
+    ],
+    "image": "img/iris-forceps.jpg"
+  },
+  {
+    "slug": "jewellers-forceps",
+    "name": "Jeweller's forceps",
+    "aka": [
+      "Watchmaker's forceps",
+      "Micro forceps"
+    ],
+    "category": "Forceps & clamps",
+    "description": "Plain-handled forceps that taper rapidly to very fine points, for atraumatic micro-handling.",
+    "parts": [
+      "Elongated plain handles",
+      "Rapid taper to a fine tip"
+    ],
+    "types": [
+      "Straight, curved or angled"
+    ],
+    "uses": [
+      "Atraumatic handling of skin grafts",
+      "Hair transplantation (graft implantation)",
+      "Suture removal",
+      "Grasping small bleeders during electrocoagulation"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Hold like a pen with the first three fingers (between thumb and middle finger, index finger steadying); grasp dermis rather than epidermis to avoid crushing the wound edge.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [],
+    "sources": [
+      "Khopkar p409",
+      "Seminar p31",
+      "PPT2 slide 20",
+      "PPT1 slide 17"
+    ],
+    "image": "img/jewellers-forceps.jpg"
+  },
+  {
+    "slug": "ring-forceps",
+    "name": "Ring forceps",
+    "aka": [],
+    "category": "Hair & nail",
+    "description": "Fine forceps like iris forceps but without teeth or serrations, with a curved fine tip.",
+    "parts": [
+      "Iris-forceps-like body",
+      "No teeth, no serrations",
+      "Curved fine tip"
+    ],
+    "types": [],
+    "uses": [
+      "Hair transplantation"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Hold like a pen with the first three fingers (between thumb and middle finger, index finger steadying); grasp dermis rather than epidermis to avoid crushing the wound edge.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [],
+    "sources": [
+      "Khopkar p409"
+    ],
+    "image": ""
+  },
+  {
+    "slug": "hair-transplant-forceps",
+    "name": "Hair transplant forceps",
+    "aka": [
+      "Graft extraction forceps",
+      "Implantation forceps"
+    ],
+    "category": "Hair & nail",
+    "description": "Fine forceps designed to grasp follicular grafts without crushing them, for extraction and implantation.",
+    "parts": [],
+    "types": [
+      "Extraction forceps - fine sharp tips to pull follicles from donor area",
+      "Implantation forceps - insert grafts into recipient slits",
+      "Jeweller's, Foerster, Castroviejo and Adson hair-transplant patterns",
+      "Plain, groove, hex tips; straight or curved (seminar figures)"
+    ],
+    "uses": [
+      "Follicular unit extraction (FUE)",
+      "Follicular unit transplantation (FUT/strip) graft handling and implantation"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Hold like a pen with the first three fingers (between thumb and middle finger, index finger steadying); grasp dermis rather than epidermis to avoid crushing the wound edge.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [
+      "Hold the graft by the perifollicular tissue, never the bulb",
+      "Not a separate Khopkar entry; Khopkar lists ring forceps and jeweller's forceps for hair transplantation (p409)"
+    ],
+    "sources": [
+      "Seminar p78-81"
+    ],
+    "image": "img/hair-transplant-forceps.jpg"
+  },
+  {
+    "slug": "epilation-forceps",
+    "name": "Epilation forceps",
+    "aka": [
+      "Hair-plucking forceps",
+      "Tweezers"
+    ],
+    "category": "Forceps & clamps",
+    "description": "Small forceps with serrated tips used to pluck hairs and remove sutures.",
+    "parts": [
+      "Small spring body",
+      "Serrated tips"
+    ],
+    "types": [
+      "Barraquer - rounded tip",
+      "Berg - angled tip"
+    ],
+    "uses": [
+      "Epilation",
+      "Suture removal"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Hold like a pen with the first three fingers (between thumb and middle finger, index finger steadying); grasp dermis rather than epidermis to avoid crushing the wound edge.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [],
+    "sources": [
+      "Khopkar p409",
+      "Seminar p32",
+      "PPT2 slide 21"
+    ],
+    "image": "img/epilation-forceps.jpg"
+  },
+  {
+    "slug": "dressing-forceps",
+    "name": "Dressing forceps",
+    "aka": [
+      "Dressing thumb forceps"
+    ],
+    "category": "Forceps & clamps",
+    "description": "Long, serrated non-locking forceps used to handle dressings.",
+    "parts": [
+      "Long thin handles",
+      "Wider, flatter tip than tissue forceps",
+      "Serrated (or smooth) tip, no teeth"
+    ],
+    "types": [],
+    "uses": [
+      "Holding medicated dressings and gauze during wound care"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Hold like a pen with the first three fingers (between thumb and middle finger, index finger steadying); grasp dermis rather than epidermis to avoid crushing the wound edge.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [
+      "Khopkar: serrated; seminar: may be smooth or serrated"
+    ],
+    "sources": [
+      "Khopkar p410",
+      "Seminar p28"
+    ],
+    "image": "img/dressing-forceps.jpg"
+  },
+  {
+    "slug": "allis-forceps",
+    "name": "Allis forceps",
+    "aka": [
+      "Allis tissue forceps"
+    ],
+    "category": "Forceps & clamps",
+    "description": "Ring-handled locking forceps with interdigitating teeth for a secure grip on tissue to be removed.",
+    "parts": [
+      "Two straight blades, separated except at the tip",
+      "Interdigitating teeth at the tip",
+      "Ratchet lock near the handle (3 catches)",
+      "Blades riveted together - the joint acts as fulcrum"
+    ],
+    "types": [],
+    "uses": [
+      "Corn enucleation",
+      "Cyst excision (holding the cyst/tissue being removed)"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Thumb and ring finger in the rings, index finger along the shanks for control; ratchet engaged/released by pressing the rings together and apart.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [
+      "Traumatic - hold only tissue that will be removed (PPT1)"
+    ],
+    "sources": [
+      "Khopkar p410",
+      "Seminar p36",
+      "PPT2 slide 22",
+      "PPT1 slide 10"
+    ],
+    "image": "img/allis-forceps.jpg"
+  },
+  {
+    "slug": "cheatle-forceps",
+    "name": "Cheatle forceps",
+    "aka": [
+      "Cheatle's sterilizer forceps",
+      "Transfer forceps"
+    ],
+    "category": "Forceps & clamps",
+    "description": "Long L-shaped forceps without teeth or lock, kept in antiseptic to pick up sterile items.",
+    "parts": [
+      "Somewhat L-shaped arms without teeth or lock",
+      "Proximal rings for thumb and ring finger (or one ring and a V-bend)",
+      "Sinuous distal part with curved serrated jaws"
+    ],
+    "types": [],
+    "uses": [
+      "Picking up sterile instruments, gauze and dressing material from trays/drums"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Thumb and ring finger in rings; keep tips pointing down so fluid does not run back onto the handle.",
+    "method": [],
+    "sterilization": "Distal part kept immersed in antiseptic (e.g. Savlon) in its jar; autoclave periodically.",
+    "tips": [
+      "Must be stored in a bottle of Savlon / antiseptic",
+      "Never touch the patient with it"
+    ],
+    "sources": [
+      "Khopkar p410",
+      "Seminar p37",
+      "PPT2 slide 23",
+      "PPT1 slide 11"
+    ],
+    "image": "img/cheatle-forceps.jpg"
+  },
+  {
+    "slug": "artery-forceps",
+    "name": "Artery forceps",
+    "aka": [
+      "Haemostatic forceps",
+      "Hemostat",
+      "Mosquito forceps",
+      "Kelly clamp",
+      "Crile / Rochester-Pean forceps"
+    ],
+    "category": "Forceps & clamps",
+    "description": "Ring-handled locking clamp with blunt serrated tapering jaws used to catch bleeders and grasp tissue.",
+    "parts": [
+      "Ring handles",
+      "Ratchet lock",
+      "Box joint",
+      "Blunt tapering jaws with transverse serrations"
+    ],
+    "types": [
+      "Straight or curved",
+      "Mosquito (Halsted/Hartmann) - smallest, 3-5 inch",
+      "Kelly - 5-7 inch, serrations on distal part of jaw only",
+      "Crile / Rochester-Pean - largest, serrations along entire jaw"
+    ],
+    "uses": [
+      "Catching bleeding vessels",
+      "Holding the free end of a suture",
+      "Blunt dissection of lipoma and cysts",
+      "Crushing the pedicle of pedunculated lesions (acrochordon, DPN)",
+      "Removing nail plate in partial nail avulsion",
+      "Three-point traction during circumcision",
+      "Plucking hairs for trichogram"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Thumb and ring finger in the rings, index finger along the shanks for control; ratchet engaged/released by pressing the rings together and apart.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [
+      "Size order: Mosquito < Kelly < Crile/Pean",
+      "Medium and small sizes are most used in dermatosurgery (PPT1)"
+    ],
+    "sources": [
+      "Khopkar p411",
+      "Seminar p34-35",
+      "PPT2 slides 24-25",
+      "PPT1 slides 13, 19"
+    ],
+    "image": "img/artery-forceps.jpg"
+  },
+  {
+    "slug": "sponge-holding-forceps",
+    "name": "Sponge holding forceps",
+    "aka": [
+      "Foerster forceps"
+    ],
+    "category": "Forceps & clamps",
+    "description": "Long ring-handled locking forceps with fenestrated oval jaws for holding gauze swabs.",
+    "parts": [
+      "Long shanks with ring handles and ratchet",
+      "Oval fenestrated jaws",
+      "Transverse serrations on inner jaw surface"
+    ],
+    "types": [
+      "Straight or curved"
+    ],
+    "uses": [
+      "Holding cotton/gauze swabs to paint the operative site with antiseptic before surgery"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Thumb and ring finger in the rings, index finger along the shanks for control; ratchet engaged/released by pressing the rings together and apart.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [],
+    "sources": [
+      "Khopkar p411-412",
+      "Seminar p38",
+      "PPT2 slide 26",
+      "PPT1 slide 18"
+    ],
+    "image": "img/sponge-holding-forceps.jpg"
+  },
+  {
+    "slug": "towel-clip",
+    "name": "Towel clip",
+    "aka": [
+      "Backhaus towel clamp"
+    ],
+    "category": "Forceps & clamps",
+    "description": "Small ring-handled locking clip with curved pointed tips that fixes drapes in place.",
+    "parts": [
+      "Ring handles with ratchet",
+      "Curved sharp or blunt tips that meet"
+    ],
+    "types": [],
+    "uses": [
+      "Securing surgical drapes and towels so they do not slip during a procedure"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Thumb and ring finger in the rings, index finger along the shanks for control; ratchet engaged/released by pressing the rings together and apart.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [],
+    "sources": [
+      "Seminar p26"
+    ],
+    "image": "img/towel-clip.jpg"
+  },
+  {
+    "slug": "needle-holder",
+    "name": "Needle holder",
+    "aka": [
+      "Needle driver",
+      "Mayo-Hegar needle holder"
+    ],
+    "category": "Needle holders",
+    "description": "Ring-handled locking instrument with short strong jaws that grips the suture needle.",
+    "parts": [
+      "Short jaws, smooth or serrated, with a central groove",
+      "Ratchet lock (Khopkar: in the proximal part)",
+      "Shanks and ring handles"
+    ],
+    "types": [
+      "Mayo-Hegar - heavy, for larger needles (2-0, 3-0)",
+      "Crile-Wood - finer, rounded tip for delicate needles",
+      "Gillies - combined design, not ratcheted",
+      "Ryder - small, fine tips for 4-0/5-0 needles (PPT1)",
+      "Castroviejo - see separate entry"
+    ],
+    "uses": [
+      "Grasping and driving the needle during suturing",
+      "Instrument tying of knots"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Finger (ring) grip with thumb and ring finger in rings and index finger on the shank, or palm (thenar) grip with rings in the palm for speed. Grasp the needle at the junction of its middle and posterior thirds (2/3:1/3 rule), near the jaw tip.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [
+      "Do not grip the swaged end - it bends/breaks",
+      "Khopkar places the lock proximally; the seminar says near the jaws - follow Khopkar"
+    ],
+    "sources": [
+      "Khopkar p414",
+      "Seminar p39-41",
+      "PPT2 slide 27",
+      "PPT1 slide 24"
+    ],
+    "image": "img/needle-holder.jpg"
+  },
+  {
+    "slug": "castroviejo-needle-holder",
+    "name": "Castroviejo needle holder",
+    "aka": [
+      "Castro needle holder",
+      "Micro needle holder"
+    ],
+    "category": "Needle holders",
+    "description": "Small spring-handled needle holder with a lock, for fine needles in delicate surgery.",
+    "parts": [
+      "Spring (non-ring) textured handles",
+      "Fine straight or curved tips",
+      "Locking catch (not a ratchet)"
+    ],
+    "types": [],
+    "uses": [
+      "Fine suturing with 6-0 and smaller sutures",
+      "Delicate surgery such as mini hair grafts and acne scar revision (Khopkar)"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Held like a pencil between thumb and index/middle fingers; spring action opens and closes the jaws.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [],
+    "sources": [
+      "Khopkar p414",
+      "Seminar p40-41"
+    ],
+    "image": "img/castroviejo-needle-holder.jpg"
+  },
+  {
+    "slug": "suturing-needle",
+    "name": "Suturing needle",
+    "aka": [
+      "Surgical needle"
+    ],
+    "category": "Miscellaneous",
+    "description": "Curved or straight needle that carries suture through tissue; classified by curvature and cross-section.",
+    "parts": [
+      "Needle point",
+      "Body",
+      "Shank (eyed or swaged)"
+    ],
+    "types": [
+      "Shank: closed eye (suture threaded) or swaged (suture attached)",
+      "Curvature: 1/4, 3/8, 1/2, 5/8 circle",
+      "Conventional cutting - third edge on inner curve",
+      "Reverse cutting - third edge on outer curve; preferred for skin under tension",
+      "Round-bodied - no cutting edge; mucosa, subcutaneous sutures",
+      "Straight needles - round or cutting"
+    ],
+    "uses": [
+      "Suturing skin, mucosa and subcutaneous tissue"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Held in a needle holder at the junction of middle and posterior thirds.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde, boiling (swaged suture-needles come gamma-sterilised).",
+    "tips": [
+      "Conventional cutting needles tend to cut through the wound margin; reverse cutting avoids this"
+    ],
+    "sources": [
+      "Khopkar p414-415"
+    ],
+    "image": ""
+  },
+  {
+    "slug": "suture-materials",
+    "name": "Suture materials",
+    "aka": [
+      "Sutures"
+    ],
+    "category": "Miscellaneous",
+    "description": "Threads used to close wounds, graded from 11-0 (finest) to 3 (thickest).",
+    "parts": [],
+    "types": [
+      "Absorbable: catgut, polyglycolic acid (Dexon), polyglactin 910 (Vicryl), polydioxanone (PDS), poliglecaprone (Monocryl)",
+      "Non-absorbable: silk, nylon (Ethilon), polyester (Mersilene), polypropylene (Prolene), polybutester",
+      "Monofilament: gut, nylon, polypropylene",
+      "Multifilament: silk, cotton, linen, braided nylon, polyglactin",
+      "Natural vs synthetic"
+    ],
+    "uses": [
+      "3-0/4-0: scalp, back, extremities, facial wounds under tension",
+      "5-0: face, scrotum",
+      "6-0: eyelids",
+      "Most dermatosurgery uses 3-0 to 6-0"
+    ],
+    "contraindications": [],
+    "how_to_hold": "",
+    "method": [],
+    "sterilization": "Gamma irradiation (factory pre-sterilised).",
+    "tips": [
+      "Sizes thicker than 1-0 carry the '#' prefix",
+      "Other closure aids: cyanoacrylate glue, fibrin glue, closure tapes (Steri-Strip), staples; tincture benzoin as tactifier"
+    ],
+    "sources": [
+      "Khopkar p415-416 (Table AII.2)"
+    ],
+    "image": ""
+  },
+  {
+    "slug": "iris-scissors",
+    "name": "Iris scissors",
+    "aka": [
+      "Fine dissecting scissors"
+    ],
+    "category": "Scissors",
+    "description": "Small, sharp-pointed scissors with a long rivet-to-tip distance and short shank for fine dissection.",
+    "parts": [
+      "Two blades pivoting on a rivet/screw that acts as fulcrum; ring handles",
+      "Long rivet-to-tip distance, short shank",
+      "Sharp fine tips",
+      "One blade may be serrated for tissue grip"
+    ],
+    "types": [
+      "Straight or curved",
+      "Plain or serrated blade",
+      "Usually 3.5-4.5 inch"
+    ],
+    "uses": [
+      "Fine dissection in dermatosurgery",
+      "Serrated variant for thin skin",
+      "Cutting delicate tissue and mucous membranes, skin biopsy, enucleation of cyst/lipoma (PPT1)"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Tripod grip: thumb and ring finger in the rings (only up to the distal phalanx), index finger resting near the screw joint for stability.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [
+      "Originally ophthalmic; do not use for cutting sutures or dressings - blunts the tips"
+    ],
+    "sources": [
+      "Khopkar p412",
+      "Seminar p46",
+      "PPT2 slide 28",
+      "PPT1 slides 4-5"
+    ],
+    "image": "img/iris-scissors.jpg"
+  },
+  {
+    "slug": "castroviejo-scissors",
+    "name": "Castroviejo scissors",
+    "aka": [
+      "Castroviejo iris scissors",
+      "Castroviejo spring scissors"
+    ],
+    "category": "Scissors",
+    "description": "Delicate spring-handled micro-scissors with small cutting tips.",
+    "parts": [
+      "Spring (non-ring) handles",
+      "Small, fine cutting tips"
+    ],
+    "types": [
+      "Straight or curved"
+    ],
+    "uses": [
+      "Surgery on mucosa and thin-skinned areas such as eyelids",
+      "Harvesting suction blister grafts",
+      "Cutting thin split-thickness / blister grafts (PPT1)"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Held like a pencil; squeeze the spring handles to cut.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [],
+    "sources": [
+      "Khopkar p413",
+      "Seminar p47",
+      "PPT2 slide 29",
+      "PPT1 slide 7"
+    ],
+    "image": "img/castroviejo-scissors.jpg"
+  },
+  {
+    "slug": "dressing-scissors",
+    "name": "Dressing scissors",
+    "aka": [
+      "Straight scissors",
+      "Bandage scissors",
+      "Lister bandage scissors"
+    ],
+    "category": "Scissors",
+    "description": "Straight scissors with one thick blunt blade and one sharp blade, for cutting dressings and sutures.",
+    "parts": [
+      "Two blades pivoting on a rivet/screw that acts as fulcrum; ring handles",
+      "Lower blade thick and blunt (slides under the dressing, protects skin)",
+      "Upper blade sharp - cuts as the scissors close"
+    ],
+    "types": [
+      "Straight dressing scissors",
+      "Lister bandage scissors (angled)"
+    ],
+    "uses": [
+      "Cutting dressings and bandages without injuring skin",
+      "Cutting sutures"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Tripod grip: thumb and ring finger in the rings (only up to the distal phalanx), index finger resting near the screw joint for stability.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [],
+    "sources": [
+      "Khopkar p412",
+      "Seminar p44",
+      "PPT2 slide 30",
+      "PPT1 slide 6"
+    ],
+    "image": "img/dressing-scissors.jpg"
+  },
+  {
+    "slug": "curved-scissors",
+    "name": "Curved scissors",
+    "aka": [
+      "Curved dissecting scissors"
+    ],
+    "category": "Scissors",
+    "description": "Sharp scissors with curved blades that give better reach and visibility in deeper dissection.",
+    "parts": [
+      "Two blades pivoting on a rivet/screw that acts as fulcrum; ring handles",
+      "Curved sharp blades"
+    ],
+    "types": [],
+    "uses": [
+      "Cutting tissue",
+      "Negotiating difficult-to-reach areas during deeper dissection"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Tripod grip: thumb and ring finger in the rings (only up to the distal phalanx), index finger resting near the screw joint for stability.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [
+      "Straight scissors give mechanical advantage for tough tissue; curved give more directional mobility and visibility (seminar)"
+    ],
+    "sources": [
+      "Khopkar p412",
+      "Seminar p43",
+      "PPT2 slide 31"
+    ],
+    "image": "img/curved-scissors.jpg"
+  },
+  {
+    "slug": "undermining-scissors",
+    "name": "Undermining scissors",
+    "aka": [
+      "Metzenbaum scissors",
+      "Ragnell dissecting scissors"
+    ],
+    "category": "Scissors",
+    "description": "Longer scissors with blunt, broad tips for undermining and blunt dissection with minimal trauma.",
+    "parts": [
+      "Two blades pivoting on a rivet/screw that acts as fulcrum; ring handles",
+      "Long shanks relative to blades",
+      "Blunt broad tips"
+    ],
+    "types": [
+      "Straight, curved or serrated",
+      "Ragnell, Metzenbaum patterns"
+    ],
+    "uses": [
+      "Undermining wound edges before closure",
+      "Soft tissue and blunt dissection"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Tripod grip: thumb and ring finger in the rings (only up to the distal phalanx), index finger resting near the screw joint for stability.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [],
+    "sources": [
+      "Khopkar p413",
+      "Seminar p48-49"
+    ],
+    "image": "img/undermining-scissors.jpg"
+  },
+  {
+    "slug": "mayo-scissors",
+    "name": "Mayo scissors",
+    "aka": [],
+    "category": "Scissors",
+    "description": "Heavy, robust scissors for cutting thick tissue such as fascia and cartilage.",
+    "parts": [
+      "Two blades pivoting on a rivet/screw that acts as fulcrum; ring handles",
+      "Short heavy blades, sturdier than Metzenbaum"
+    ],
+    "types": [
+      "Straight or curved"
+    ],
+    "uses": [
+      "Cutting thick tissue (fascia, cartilage)",
+      "Straight Mayo commonly used to cut sutures in general surgery"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Tripod grip: thumb and ring finger in the rings (only up to the distal phalanx), index finger resting near the screw joint for stability.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [
+      "Mayo = short handle, heavy blades; Metzenbaum = long handle, fine blades"
+    ],
+    "sources": [
+      "Seminar p48-49"
+    ],
+    "image": "img/mayo-scissors.jpg"
+  },
+  {
+    "slug": "suture-removal-scissors",
+    "name": "Suture removal scissors",
+    "aka": [
+      "Stitch scissors",
+      "Spencer stitch scissors",
+      "Forgesy scissors"
+    ],
+    "category": "Scissors",
+    "description": "Small scissors with a hooked or notched lower blade that slips under a stitch to cut it.",
+    "parts": [
+      "Two blades pivoting on a rivet/screw that acts as fulcrum; ring handles",
+      "Small hook / concavity on one blade"
+    ],
+    "types": [
+      "Spencer",
+      "Forgesy"
+    ],
+    "uses": [
+      "Safe, quick removal of sutures"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Tripod grip: thumb and ring finger in the rings (only up to the distal phalanx), index finger resting near the screw joint for stability.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [
+      "Specialised (fine) scissors should not be used for cutting sutures - use these instead"
+    ],
+    "sources": [
+      "Seminar p45"
+    ],
+    "image": "img/suture-removal-scissors.jpg"
+  },
+  {
+    "slug": "skin-hook",
+    "name": "Skin hook",
+    "aka": [
+      "Frazier hook",
+      "Cottle hook",
+      "Rake retractor",
+      "Guthrie hook",
+      "Joseph double hook"
+    ],
+    "category": "Miscellaneous",
+    "description": "Handle ending in one or more fine hooks that lift skin edges with less trauma than forceps.",
+    "parts": [
+      "Handle",
+      "Hook(s) - one to six prongs"
+    ],
+    "types": [
+      "Frazier - single hook",
+      "Cottle - double-pronged",
+      "Rakes - multi-pronged",
+      "Guthrie - 2-4 flattened prongs (PPT1)",
+      "Joseph - double U-shaped hook (PPT1)"
+    ],
+    "uses": [
+      "Holding skin margins during suturing, especially thin skin (eyelids)",
+      "Retracting skin margins during deeper dissection and undermining",
+      "Holding vital structures such as nerves during procedures/biopsy",
+      "Rakes for retracting large wound areas",
+      "Repair of dog-ears; everting wound edges while undermining (seminar)"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Held like a pencil; hook inserted into the dermis of the wound edge and lifted gently.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [
+      "Preferred to forceps because they do not crush tissue",
+      "Sharp hooks can injure the operator - handle carefully"
+    ],
+    "sources": [
+      "Khopkar p413-414",
+      "Seminar p50-51",
+      "PPT2 slides 32-33",
+      "PPT1 slides 25-28"
+    ],
+    "image": "img/skin-hook.jpg"
+  },
+  {
+    "slug": "liposuction-cannula",
+    "name": "Liposuction cannula",
+    "aka": [
+      "Fat aspiration cannula"
+    ],
+    "category": "Miscellaneous",
+    "description": "Hollow blunt metal tube with side openings at the tip, attached to syringe or suction to remove fat.",
+    "parts": [
+      "Distal tip with one or more openings where fat enters",
+      "Hollow metal tube (channel)",
+      "Proximal end that attaches to syringe or suction device"
+    ],
+    "types": [
+      "Different diameters and lengths",
+      "Short cannulas for face; long for back and outer thigh"
+    ],
+    "uses": [
+      "Liposuction / fat harvesting (e.g. for fat grafting)"
+    ],
+    "contraindications": [],
+    "how_to_hold": "",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [
+      "Large cannula: more dead cells, more complications; small cannula: better fat take (seminar figure)"
+    ],
+    "sources": [
+      "Seminar p65-67",
+      "PPT2 slide 45"
+    ],
+    "image": "img/liposuction-cannula.jpg"
+  },
+  {
+    "slug": "loupes",
+    "name": "Loupes",
+    "aka": [
+      "Surgical loupes",
+      "Binocular magnifier",
+      "Head loupe"
+    ],
+    "category": "Diagnostic",
+    "description": "Binocular magnifying devices (about 2-4x) worn during examination and surgery.",
+    "parts": [],
+    "types": [
+      "Head-band and spectacle-mounted",
+      "Magnification about 2x to 4x"
+    ],
+    "uses": [
+      "Better visualisation for suturing and spotting bleeding points",
+      "Biopsy, excision, hair transplant and reconstructive surgery",
+      "Better posture and less eye strain in long procedures"
+    ],
+    "contraindications": [],
+    "how_to_hold": "",
+    "method": [],
+    "sterilization": "",
+    "tips": [],
+    "sources": [
+      "Seminar p73"
+    ],
+    "image": "img/loupes.jpg"
+  },
+  {
+    "slug": "nail-nipper",
+    "name": "Nail nipper / nail splitter",
+    "aka": [
+      "Nail nipper",
+      "Nail splitter",
+      "English anvil nail splitter",
+      "Thwaites nail splitter"
+    ],
+    "category": "Hair & nail",
+    "description": "Stout plier-like cutter used to cut the nail plate in nail surgery.",
+    "parts": [
+      "Stout handles (often spring-loaded)",
+      "Strong blades with sharp cutting edges",
+      "Splitter: one wedge-shaped blunt (anvil) blade and one sharp cutting blade"
+    ],
+    "types": [
+      "Nail nipper - both blades cutting",
+      "Nail splitter - anvil + cutting blade"
+    ],
+    "uses": [
+      "Cutting the nail plate during partial nail avulsion"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Held in the palm like pliers; in a splitter the blunt anvil blade goes under the nail plate.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [
+      "Khopkar distinguishes nipper (both edges sharp) from splitter (anvil + sharp); seminar/PPT treat them as one"
+    ],
+    "sources": [
+      "Khopkar p417",
+      "Seminar p52",
+      "PPT2 slide 34"
+    ],
+    "image": "img/nail-nipper.jpg"
+  },
+  {
+    "slug": "nail-spatula",
+    "name": "Nail spatula",
+    "aka": [
+      "Nail elevator"
+    ],
+    "category": "Hair & nail",
+    "description": "Double-ended instrument with flat curved plates used to separate the nail plate from surrounding tissue.",
+    "parts": [
+      "Central handle",
+      "Flat, rectangular, curved plates at either end"
+    ],
+    "types": [],
+    "uses": [
+      "Separating nail plate from nail bed",
+      "Separating proximal nail fold from nail plate",
+      "Lifting dressing from skin or punch grafts"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Pencil grip; advance the plate under the nail with gentle to-and-fro movements.",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [],
+    "sources": [
+      "Khopkar p417",
+      "Seminar p53",
+      "PPT2 slide 35"
+    ],
+    "image": "img/nail-spatula.jpg"
+  },
+  {
+    "slug": "manual-dermabrader",
+    "name": "Manual dermabrader",
+    "aka": [
+      "Maneksha's manual dermabrader",
+      "Dermabrader"
+    ],
+    "category": "Dermabrasion & resurfacing",
+    "description": "Hand-held abrader with a toothed, slightly curved rectangular tip, devised by Dr Rustom Maneksha.",
+    "parts": [
+      "Handle with or without thumb rest",
+      "Slightly curved, expanded rectangular tip",
+      "Sharp teeth in regular rows and columns on the convex surface"
+    ],
+    "types": [
+      "Tip sizes 3-25 mm"
+    ],
+    "uses": [
+      "Vitiligo: abrading recipient area for suction blister or split-thickness grafts; stimulating melanocyte proliferation and migration",
+      "Lichen amyloidosis, lichen simplex chronicus",
+      "Spot dermabrasion of acne scars",
+      "Full-face dermabrasion for rejuvenation",
+      "Debulking rhinophyma",
+      "Multiple adenoma sebaceum",
+      "Tattoo removal",
+      "Freshening edges in ear lobe repair"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Gripped with four fingers around the handle and thumb on the thumb rest; skin stretched with the other hand.",
+    "method": [
+      "Stretch and anaesthetise the area",
+      "Abrade with firm back-and-forth strokes",
+      "End point: pin-point bleeding (papillary dermis)"
+    ],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [
+      "Indian innovation - Maneksha's dermabrader is a favourite viva spot"
+    ],
+    "sources": [
+      "Khopkar p418-420",
+      "Seminar p55-57",
+      "PPT2 slides 38-39",
+      "PPT1 slide 32"
+    ],
+    "image": "img/manual-dermabrader.jpg"
+  },
+  {
+    "slug": "motorized-dermabrader",
+    "name": "Motorised dermabrader",
+    "aka": [
+      "Micromotor",
+      "Hand engine",
+      "Dermabrasion machine",
+      "Diamond fraise",
+      "Wire brush"
+    ],
+    "category": "Dermabrasion & resurfacing",
+    "description": "Motor-driven handpiece that spins diamond fraises or wire brushes to abrade skin at controlled speed.",
+    "parts": [
+      "Motor / control unit with foot pedal",
+      "Rotating handpiece",
+      "Attachments: diamond fraise or wire brush"
+    ],
+    "types": [
+      "Diamond fraises - diamond chips bonded to steel wheels; regular, coarse, extra-coarse (coarser = deeper)",
+      "Wire brushes - short steel wires; abrade deeper than fraises",
+      "Burrs of various shapes (ball, pear, cylinder, cone, wheel)",
+      "Bell hand engines, dental burrs"
+    ],
+    "uses": [
+      "Same indications as manual dermabrasion (vitiligo recipient site, scars, rhinophyma, amyloidosis)",
+      "Driving FUE punches in hair transplant",
+      "Bone/nail burring (osteophyte removal) - seminar"
+    ],
+    "contraindications": [],
+    "how_to_hold": "",
+    "method": [
+      "Choose fraise/brush by depth needed",
+      "Set speed; depth depends on burr type, speed, pressure, duration and skin condition"
+    ],
+    "sterilization": "Fraises/brushes: autoclave; handpiece per manufacturer",
+    "tips": [
+      "Speed: Khopkar 3000-30,000 rpm (seminar text garbled as '3,000 and 0,000 rpm')",
+      "Wire brush abrades deeper than diamond fraise"
+    ],
+    "sources": [
+      "Khopkar p419",
+      "Seminar p68-72"
+    ],
+    "image": "img/motorized-dermabrader.jpg"
+  },
+  {
+    "slug": "skin-graft-spreader",
+    "name": "Skin graft spreader",
+    "aka": [],
+    "category": "Miscellaneous",
+    "description": "Straight metal rod of uniform diameter with blunt ends used to spread thin grafts.",
+    "parts": [
+      "Straight metallic rod, uniform diameter",
+      "Blunt ends"
+    ],
+    "types": [],
+    "uses": [
+      "Spreading suction blister or split-thickness grafts over the recipient area"
+    ],
+    "contraindications": [],
+    "how_to_hold": "",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [],
+    "sources": [
+      "Khopkar p420-421"
+    ],
+    "image": ""
+  },
+  {
+    "slug": "suction-blister-apparatus",
+    "name": "Suction blister apparatus",
+    "aka": [
+      "Suction blister set-up",
+      "Syringe suction technique"
+    ],
+    "category": "Miscellaneous",
+    "description": "Suction machine or syringe assembly that raises epidermal blisters for epidermal grafting in vitiligo.",
+    "parts": [
+      "Suction machine: suction pump, vacuum gauge, glass cup with non-traumatic rim",
+      "Syringe technique: 20/50/100 ml disposable syringes with pistons removed, three-way cannula (Disofix), 50-100 ml syringe for negative pressure"
+    ],
+    "types": [
+      "Suction machine (250-500 mmHg)",
+      "Syringe technique"
+    ],
+    "uses": [
+      "Raising suction blisters for epidermal (blister-roof) grafting in stable vitiligo"
+    ],
+    "contraindications": [],
+    "how_to_hold": "",
+    "method": [
+      "Clean donor site (anterolateral thigh, flexor forearm, abdomen); shave hair",
+      "Interconnect syringes via three-way cannulas, open ends on skin",
+      "Withdraw piston of the end syringe to create negative pressure; close the three-way",
+      "Blister forms in 1-2 h from dermo-epidermal separation"
+    ],
+    "sterilization": "Glass cups must be sterilised; syringes are disposable.",
+    "tips": [
+      "Syringe method: cheap, less painful, no sterilisation, easy",
+      "Blister grafts: good colour match, no pebbling; suitable for eyelids, lips, glans",
+      "Machine: expensive, bulky, needs special cups"
+    ],
+    "sources": [
+      "Khopkar p458-459"
+    ],
+    "image": ""
+  },
+  {
+    "slug": "sw-monofilament",
+    "name": "Semmes-Weinstein monofilament",
+    "aka": [
+      "SW monofilament",
+      "Graded nylon monofilaments"
+    ],
+    "category": "Diagnostic",
+    "description": "Colour-coded nylon filaments that bend at a fixed force, used to test protective touch sensation.",
+    "parts": [
+      "Nylon 612 filament of set diameter",
+      "Holder; colour code for force"
+    ],
+    "types": [
+      "Green 0.05 g - normal",
+      "Blue 0.2 g - diminished light touch",
+      "Purple 2 g - diminished protective sensation",
+      "Red 4 g - loss of protective sensation",
+      "Orange 7.5 g - only deep pressure",
+      "About 20 grades exist"
+    ],
+    "uses": [
+      "Screening for sensory neuropathy",
+      "Measuring sensory loss in leprosy, diabetes and other neuropathies",
+      "Detecting silent neuritis in leprosy (test every 2 weeks for 4 months, then monthly)"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Hold perpendicular to the skin and press until the filament bends into a 'C'.",
+    "method": [
+      "Test hands at 7 sites (3 ulnar, 3 median, 1 radial) and feet at 8 sites (Khopkar: 7 common peroneal, 1 posterior tibial)",
+      "Ask the patient (eyes closed) if felt",
+      "Failure at any tested point = positive"
+    ],
+    "sterilization": "",
+    "tips": [
+      "Designed by Josephine Semmes and Sidney Weinstein",
+      "Inability to feel the purple filament = loss of protective sensation",
+      "Khopkar's foot nerve split (7 peroneal, 1 posterior tibial) looks reversed vs usual practice - verify"
+    ],
+    "sources": [
+      "Khopkar p421-422 (Table AII.3)"
+    ],
+    "image": ""
+  },
+  {
+    "slug": "sims-anterior-vaginal-wall-retractor",
+    "name": "Sim's anterior vaginal wall retractor",
+    "aka": [
+      "Sims vaginal wall retractor"
+    ],
+    "category": "Diagnostic",
+    "description": "Long thin instrument with angled, serrated oval fenestrated ends that lifts the anterior vaginal wall.",
+    "parts": [
+      "Central elongated metal shaft",
+      "Expanded oval fenestrated loops at both ends, angled to the shaft (about 15 degrees, facing opposite directions)",
+      "Serrations on the loops for grip"
+    ],
+    "types": [],
+    "uses": [
+      "Used with Sim's speculum during gynaecological examination and procedures",
+      "Retracting anterior vaginal wall to see cervix and fornices"
+    ],
+    "contraindications": [],
+    "how_to_hold": "",
+    "method": [],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [],
+    "sources": [
+      "Khopkar p422-423",
+      "Seminar p59",
+      "PPT2 slide 40"
+    ],
+    "image": "img/sims-anterior-vaginal-wall-retractor.jpg"
+  },
+  {
+    "slug": "sims-speculum",
+    "name": "Sim's speculum",
+    "aka": [
+      "Sims double-bladed speculum"
+    ],
+    "category": "Diagnostic",
+    "description": "Double-ended curved-plate vaginal speculum that depresses the posterior wall.",
+    "parts": [
+      "Two curved blades (plates) of different sizes",
+      "Vertical handle in between",
+      "Trough / central depression along the length"
+    ],
+    "types": [
+      "Sizes 26/31, 31/36, 36/42 mm",
+      "Single- or double-ended"
+    ],
+    "uses": [
+      "Visualising anterior and lateral vaginal walls, fornices, cervix and os",
+      "Differentiating cervical from vaginal discharge",
+      "Seeing strawberry cervix (trichomoniasis)",
+      "Collecting discharge: wet mount (Trichomonas), KOH/Gram (Candida), clue cells (Gardnerella)",
+      "Pap smear",
+      "Treating cervical/vaginal warts (podophyllin, cryotherapy)",
+      "Acetowhitening test with 3-5% acetic acid"
+    ],
+    "contraindications": [],
+    "how_to_hold": "",
+    "method": [
+      "Warm in water before use",
+      "Patient in left lateral (Sims) position",
+      "Insert one blade vertically, then rotate 90 degrees to depress posterior wall",
+      "Lift anterior wall with Sim's retractor; discharge pools in the central trough"
+    ],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [
+      "Disadvantages: patient brought to table edge; clinician's hands are not free (needs assistant/retractor)"
+    ],
+    "sources": [
+      "Khopkar p423-425",
+      "Seminar p60",
+      "PPT2 slide 41"
+    ],
+    "image": "img/sims-speculum.jpg"
+  },
+  {
+    "slug": "cuscos-speculum",
+    "name": "Cusco's self-retaining vaginal speculum",
+    "aka": [
+      "Cusco's speculum",
+      "Bivalve speculum",
+      "Duck-bill speculum"
+    ],
+    "category": "Diagnostic",
+    "description": "Bivalve speculum resembling a bird's beak that is locked open by a screw, freeing the examiner's hands.",
+    "parts": [
+      "Two blades, concave inside with rounded free margins, riveted together",
+      "Handles at right angles to blades",
+      "Screw lock to hold blades apart"
+    ],
+    "types": [
+      "Small, intermediate (most used), large",
+      "Small for nulliparous, large for multiparous/prolapse"
+    ],
+    "uses": [
+      "Visualising cervix",
+      "Pap smear, cervical biopsy, swab collection",
+      "Chemical cauterisation / cryotherapy of cervical warts",
+      "IUCD insertion, colposcopy (seminar)"
+    ],
+    "contraindications": [],
+    "how_to_hold": "",
+    "method": [
+      "Insert with blades closed (Khopkar: oriented vertically)",
+      "After full insertion rotate 90 degrees (Khopkar: anticlockwise) so handle points down",
+      "Press handles to open blades and tighten the screw",
+      "Before removal loosen the screw, close the blades and withdraw"
+    ],
+    "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
+    "tips": [
+      "Self-retaining: hands free for procedures; patient need not move to table edge",
+      "Disadvantage: anterior and posterior walls are hidden by the blades",
+      "Seminar wording: enter at 9 o'clock then rotate to 6/12 o'clock - follow Khopkar's description",
+      "Seminar/PPT: preferred in cryosurgery as it shields the vaginal walls; not ideal for vaginal surgery"
+    ],
+    "sources": [
+      "Khopkar p425-426",
+      "Seminar p58, p61",
+      "PPT2 slides 42-43"
+    ],
+    "image": "img/cuscos-speculum.jpg"
+  },
+  {
+    "slug": "woods-lamp",
+    "name": "Wood's lamp",
+    "aka": [
+      "Wood's light",
+      "UVA (black light) lamp"
+    ],
+    "category": "Diagnostic",
+    "description": "Hand-held long-wave UVA source whose induced fluorescence helps diagnose skin, hair and systemic conditions.",
+    "parts": [
+      "High-pressure mercury arc lamp",
+      "Wood's filter (barium silicate with 9% nickel oxide)",
+      "Many models: white light and magnifying lens",
+      "AC power supply; output <1 mW/cm2; peak 365 nm (320-400 nm)"
+    ],
+    "types": [],
+    "uses": [
+      "Pityriasis versicolor - golden yellow",
+      "Tinea capitis: M. canis, M. audouinii, M. distortum, M. ferrugineum - blue-green; M. gypseum - dull yellow; T. schoenleinii - dull blue",
+      "Pseudomonas - greenish (pyoverdin); erythrasma - coral red (coproporphyrin III)",
+      "Vitiligo - chalky/bright blue-white; nevus depigmentosus vs nevus anemicus",
+      "Typing melasma (epidermal accentuates)",
+      "Porphyrias - pink fluorescence of urine, teeth, tears etc.; acne - orange-red (P. acnes porphyrins)",
+      "Scabies burrows (tetracycline/fluorescein)",
+      "Checking even application of peel or barrier cream",
+      "Therapeutic: vitiligo when UV source unavailable (long exposures)",
+      "Non-dermatological: forged currency/signatures, semen detection, cracks in metal"
+    ],
+    "contraindications": [],
+    "how_to_hold": "Held 4-5 inches (10-13 cm) from the skin in a dark room.",
+    "method": [
+      "Darken the room (or use a hood)",
+      "Pre-warm the lamp for about 1 minute",
+      "Hold 4-5 inches from the lesion",
+      "Examine before the patient washes the area"
+    ],
+    "sterilization": "",
+    "tips": [
+      "Invented by physicist Robert W. Wood (1903)",
+      "False negative: washing removes water-soluble coproporphyrin in erythrasma",
+      "False positive: white coat (light blue), scales, salicylic ointment (green), petrolatum (bluish-purple)"
+    ],
+    "sources": [
+      "Khopkar p427-430 (Table AIII.1)"
+    ],
+    "image": "img/woods-lamp.jpg"
+  },
+  {
+    "slug": "dermoscope",
+    "name": "Dermoscope",
+    "aka": [
+      "Dermatoscope",
+      "Epiluminescence microscope",
+      "Skin surface microscope",
+      "Episcope"
+    ],
+    "category": "Diagnostic",
+    "description": "Hand-held illuminated magnifier that shows subsurface skin structures not visible to the naked eye.",
+    "parts": [
+      "Achromatic lens (variable magnification)",
+      "In-built illumination - halogen or LED",
+      "Power: lithium/AA battery, rechargeable handle",
+      "Optional camera/software for image capture"
+    ],
+    "types": [
+      "Without image capture (e.g. Delta 10, Mini 2000)",
+      "With image capture (e.g. Dermlite Foto, Delta 20, Video episcope)",
+      "With capture and analysis (e.g. MoleMax, FotoFinder)",
+      "Contact (glass plate + linkage fluid) vs non-contact polarised"
+    ],
+    "uses": [
+      "Pigmented lesions - naevi, early melanoma",
+      "Psoriasis, lichen planus, dermatofibroma, Darier's disease, cicatricial alopecia, seborrhoeic keratosis, urticarial vasculitis",
+      "Follicular density of donor area before hair transplant",
+      "Nail-fold capillaroscopy (small plates)"
+    ],
+    "contraindications": [],
+    "how_to_hold": "",
+    "method": [
+      "Contact: apply linkage fluid, place glass plate on lesion",
+      "Non-contact: cross-polarised lens held just above skin"
+    ],
+    "sterilization": "Contact plates: 2% glutaraldehyde, methylated spirit, boiling or autoclaving.",
+    "tips": [
+      "Non-contact avoids cross-infection but gives less illumination and resolution"
+    ],
+    "sources": [
+      "Khopkar p430-432"
+    ],
+    "image": "img/dermoscope.jpg"
+  },
+  {
+    "slug": "electrocautery-unit",
+    "name": "Electrocautery / electrosurgical unit",
+    "aka": [
+      "Electrocautery",
+      "Electrosurgery",
+      "Spark-gap cautery"
+    ],
+    "category": "Cryo / electro / light devices",
+    "description": "Device converting mains current into high-frequency oscillating current that destroys, coagulates or cuts tissue.",
+    "parts": [
+      "Power regulator (output 1-10)",
+      "Sockets: monopolar (low/high), bipolar, epilation",
+      "Terminal: monoterminal or biterminal",
+      "Electrode probes - pointed, bent, straight, blade, ball, wire, Teflon-coated, forceps electrode",
+      "Ground/dispersive plate",
+      "Foot pad / switch"
+    ],
+    "types": [
+      "Spark gap - damped wave: fulguration, desiccation, coagulation (most used in India)",
+      "Vacuum tube - pure wave: electrosection",
+      "Solid state - all/blended waves: coagulation and cutting",
+      "Electrofulguration (no touch, 1-3 mm gap; power 1-2): verruca plana, DPN, milia",
+      "Electrodesiccation (touch; power 5-7): SK, warts, pyogenic granuloma, acrochordon, xanthelasma, superficial BCC",
+      "Electrocoagulation (power 7-10, ground plate): telangiectasia, BCC, nail matrix ablation, bleeders",
+      "Electrosection (cutting, 5-10 mm/s): keloid, acne keloidalis, rhinophyma"
+    ],
+    "uses": [
+      "Destruction of benign/superficial lesions",
+      "Haemostasis",
+      "Cutting (electrosection)"
+    ],
+    "contraindications": [
+      "Cardiac pacemaker",
+      "Keloidal tendency",
+      "History of seizures"
+    ],
+    "how_to_hold": "",
+    "method": [
+      "Clean electrode with blade/sand paper or wet gauze",
+      "Choose mode and power",
+      "Do not forcibly pull off eschar"
+    ],
+    "sterilization": "Probes are self-sterilising from heat; disposable electrodes may be preferred.",
+    "tips": [
+      "Keep alcohol/ether away; let spirit evaporate fully",
+      "Use smoke evacuator within 2 cm or mask (HPV, HBV, HIV in plume)",
+      "Avoid infiltrating anaesthetic over telangiectasia (blanches vessels)",
+      "William Bovie - father of modern electrosurgery"
+    ],
+    "sources": [
+      "Khopkar p432-437 (Table AIII.2)"
+    ],
+    "image": ""
+  },
+  {
+    "slug": "electrolysis-unit",
+    "name": "Electrolysis (galvanic) epilator",
+    "aka": [
+      "Electrolysis",
+      "Chemolysis",
+      "Galvanic electroepilation"
+    ],
+    "category": "Cryo / electro / light devices",
+    "description": "Direct-current device that generates caustic sodium hydroxide in the follicle to destroy the hair bulb.",
+    "parts": [
+      "DC (galvanic) source",
+      "Treating needle electrode on cathode (negative)",
+      "Dispersive electrode on anode (positive) held against skin"
+    ],
+    "types": [],
+    "uses": [
+      "Permanent hair removal (electroepilation)"
+    ],
+    "contraindications": [],
+    "how_to_hold": "",
+    "method": [
+      "Insert cathode needle into the hair follicle",
+      "Patient holds/contacts the anode",
+      "Current ionises tissue water and salt: NaOH forms at cathode and destroys the bulb"
+    ],
+    "sterilization": "",
+    "tips": [
+      "Products: NaOH (lye) and H2 at cathode; HCl and Cl2 at anode"
+    ],
+    "sources": [
+      "Khopkar p437-438"
+    ],
+    "image": ""
+  },
+  {
+    "slug": "radiofrequency-unit",
+    "name": "Radiofrequency surgical unit",
+    "aka": [
+      "Radiofrequency",
+      "RF surgery",
+      "Radiosurgery"
+    ],
+    "category": "Cryo / electro / light devices",
+    "description": "Electrosurgery at very high frequency (500-4000 kHz) giving precise cutting/coagulation with little lateral heat damage.",
+    "parts": [],
+    "types": [
+      "Cut mode (pure wave): skin tags, naevi, cysts, shave of xanthelasma, verruca plana",
+      "Cut-and-coagulate (blended): curettage, SK, keloids, warts, BCC, Bowen's, SCC, Paget's, debulking rhinophyma, large pyogenic granuloma",
+      "Coagulation mode: pyogenic granuloma, haemangioma, telangiectasia"
+    ],
+    "uses": [
+      "Same as electrocautery, with choice of mode"
+    ],
+    "contraindications": [],
+    "how_to_hold": "",
+    "method": [],
+    "sterilization": "",
+    "tips": [
+      "Advantages: less lateral spread, better scars, less infection, easier bleeding control",
+      "Disadvantages: expensive, fragile costly probes"
+    ],
+    "sources": [
+      "Khopkar p438-440 (Table AIII.3)"
+    ],
+    "image": ""
+  },
+  {
+    "slug": "cryotherapy-unit",
+    "name": "Cryotherapy unit",
+    "aka": [
+      "Cryocan",
+      "Cryo-spray unit",
+      "Cryojet",
+      "Cryoprobe",
+      "Cryoroller"
+    ],
+    "category": "Cryo / electro / light devices",
+    "description": "Liquid-nitrogen container with spray tips and probes used to freeze and destroy lesions.",
+    "parts": [
+      "Insulated canister for liquid nitrogen with trigger valve",
+      "Spray tips / cones / cylinders (open and closed methods)",
+      "Closed cryoprobes - flat, pointed, rounded",
+      "Accessories: eye protection (Jaeger retractor, goggles), cotton plugs, tongue depressor, thermocouple needles, chamois bag for CO2"
+    ],
+    "types": [
+      "Dipstick (cotton bud) method",
+      "Cryospray - open (spot, paintbrush, spiral, rotatory) and closed (cones)",
+      "Cryoprobe",
+      "Cryoroller - metal roller dipped in LN2 (acne scars, keloids)",
+      "Forceps technique - for pedunculated lesions",
+      "Intralesional cryo through spinal needle (thick keloids)",
+      "Cryoslush - solid CO2 with acetone (acne, scars)"
+    ],
+    "uses": [
+      "Benign: warts, molluscum, keloid, hypertrophic scar, pyogenic granuloma, skin tags, SK, mucous/myxoid cyst, angioma",
+      "Premalignant: leukoplakia, Bowen's, actinic keratosis, erythroplasia of Queyrat",
+      "Malignant: BCC (not morphoeic), SCC, LMM, palliation",
+      "Softening keloid before intralesional steroid",
+      "Cooling during laser; frozen section; topical anaesthesia (ethyl chloride); cutaneous myiasis"
+    ],
+    "contraindications": [
+      "Cold intolerance, Raynaud's, cryoglobulinaemia, cold urticaria",
+      "Undiagnosed lesion",
+      "Multiple myeloma, agammaglobulinaemia, CTD",
+      "Atherosclerosis",
+      "Concurrent immunosuppressives"
+    ],
+    "how_to_hold": "",
+    "method": [
+      "Fill unit with LN2 to 2 inches below brim; wait 3-4 min for pressure",
+      "Mark lesion margin; spray at centre from about 1 cm",
+      "Let ice ball thaw completely before 2nd freeze-thaw cycle",
+      "Probe size about 3/4 of lesion size; remove probe only after thawing"
+    ],
+    "sterilization": "Accessories: dry heat, autoclave or 2% glutaraldehyde.",
+    "tips": [
+      "Liquid nitrogen -196 C (spray), about -20 C on swab",
+      "Melanocytes die at -4 to -8 C, so hypopigmentation is common",
+      "Thaw time is about twice freeze time; fast freeze, slow thaw kills best",
+      "James Arnott - father of cryosurgery"
+    ],
+    "sources": [
+      "Khopkar p440-450 (Tables AIII.4-5)"
+    ],
+    "image": "img/cryotherapy-unit.jpg"
+  },
+  {
+    "slug": "laser",
+    "name": "Lasers",
+    "aka": [
+      "LASER - Light Amplification by Stimulated Emission of Radiation"
+    ],
+    "category": "Cryo / electro / light devices",
+    "description": "Devices emitting coherent, collimated, monochromatic light that selectively destroys target chromophores.",
+    "parts": [
+      "Gain (lasing) medium",
+      "Optical resonator - 100% and partially reflecting mirrors",
+      "Power/pumping source (electrical, flash lamp, chemical, diode)",
+      "Cooling system and plume evacuator"
+    ],
+    "types": [
+      "Solid (ruby, Nd:YAG, Er:YAG, alexandrite, diode)",
+      "Liquid (dye/PDL)",
+      "Gas (argon, krypton, excimer, CO2)",
+      "Vapour (copper, gold)"
+    ],
+    "uses": [
+      "Hair reduction: long-pulsed Nd:YAG 1064 (dark skin), diode 800, alexandrite 755, IPL",
+      "Pigment and tattoos: Q-switched Nd:YAG 1064/532, ruby 694, alexandrite 755",
+      "Vascular: PDL 585 nm, alexandrite, Nd:YAG, argon-pumped dye, krypton, copper vapour",
+      "Ablative resurfacing: CO2 10,600 nm, Er:YAG 2940 nm",
+      "Psoriasis/vitiligo: excimer 308 nm",
+      "Acne, scars, keloids, warts"
+    ],
+    "contraindications": [],
+    "how_to_hold": "",
+    "method": [],
+    "sterilization": "",
+    "tips": [
+      "Mechanism: selective photothermolysis; photothermal, photomechanical, photoacoustic effects",
+      "Know terms: fluence (J/cm2), irradiance, pulse duration, thermal relaxation time, spot size",
+      "Precautions: no combustibles, goggles for all, plume evacuator, no reflective instruments"
+    ],
+    "sources": [
+      "Khopkar p450-456 (Tables AIII.6-8)"
+    ],
+    "image": ""
+  },
+  {
+    "slug": "intense-pulsed-light",
+    "name": "Intense pulsed light (IPL)",
+    "aka": [
+      "IPL"
+    ],
+    "category": "Cryo / electro / light devices",
+    "description": "Non-laser xenon flash-lamp source emitting broad-spectrum light (500-1200 nm) that is filtered for the target.",
+    "parts": [
+      "Xenon flash lamp",
+      "Cut-off filters"
+    ],
+    "types": [],
+    "uses": [
+      "Hair reduction",
+      "Non-ablative rejuvenation",
+      "Hyperpigmentation (mixed type)"
+    ],
+    "contraindications": [],
+    "how_to_hold": "",
+    "method": [],
+    "sterilization": "",
+    "tips": [
+      "Not a laser: non-coherent, polychromatic; filters let one machine do many tasks"
+    ],
+    "sources": [
+      "Khopkar p457"
+    ],
+    "image": ""
+  },
+  {
+    "slug": "led-light-therapy",
+    "name": "Blue and red light devices",
+    "aka": [
+      "LED light therapy",
+      "Blue light",
+      "Red light"
+    ],
+    "category": "Cryo / electro / light devices",
+    "description": "LED light sources (blue about 400 nm, red 660 nm) that photoactivate porphyrins in acne and photodynamic therapy.",
+    "parts": [],
+    "types": [
+      "Blue light - peak about 400 nm (Soret band)",
+      "Red light - 660 nm LED, deeper penetration"
+    ],
+    "uses": [
+      "Inflammatory and non-inflammatory acne",
+      "Photodynamic therapy (with 5-ALA)"
+    ],
+    "contraindications": [],
+    "how_to_hold": "",
+    "method": [],
+    "sterilization": "",
+    "tips": [
+      "P. acnes porphyrins are photo-excited and kill the bacteria"
+    ],
+    "sources": [
+      "Khopkar p457-458"
+    ],
+    "image": ""
+  },
+  {
+    "slug": "iontophoresis-unit",
+    "name": "Iontophoresis unit",
+    "aka": [
+      "Iontophoresis"
+    ],
+    "category": "Cryo / electro / light devices",
+    "description": "Galvanic device that drives charged drug ions or tap-water ions into skin with direct current.",
+    "parts": [
+      "DC source with current control (0-3.8 mA)",
+      "Treating and indifferent electrodes",
+      "Trays/pads"
+    ],
+    "types": [],
+    "uses": [
+      "Palmoplantar hyperhidrosis",
+      "Drug delivery: tretinoin (scars), glycolic acid, retinoids for melasma, sodium salicylate (warts), zinc oxide (ulcer), iodide (scars), idoxuridine (herpes labialis)",
+      "Patch testing, pilocarpine (sweat) test"
+    ],
+    "contraindications": [
+      "Anaesthetic skin",
+      "Cuts, wounds, ulcers",
+      "Dermatitis"
+    ],
+    "how_to_hold": "",
+    "method": [
+      "Clean area with spirit",
+      "Khopkar: for acidic agents the cathode is the treating electrode and the anode indifferent; reverse for alkaline agents",
+      "Raise current slowly 0-3.8 mA with continuous circular/stroking movement of the electrode; full face takes about 20-25 min",
+      "End point mild erythema; reduce to zero and reverse polarity briefly"
+    ],
+    "sterilization": "",
+    "tips": [
+      "Physics: like charges repel - cations are driven from the anode, anions from the cathode (Khopkar's principle sentence labels acidic agents as cations repelled by the cathode - verify)",
+      "Grease abrasions; stop and reverse current if pain/burning",
+      "Complications: erythema, urticaria, burns, irritant/allergic dermatitis"
+    ],
+    "sources": [
+      "Khopkar p459-461"
+    ],
+    "image": ""
+  },
+  {
+    "slug": "patch-test-kit",
+    "name": "Patch test kit",
+    "aka": [
+      "Finn chambers",
+      "TRUE test",
+      "Indian standard series"
+    ],
+    "category": "Diagnostic",
+    "description": "Allergen series and occlusive chambers used to demonstrate type IV contact allergy.",
+    "parts": [
+      "Allergens in petrolatum or other vehicles",
+      "Chambers: Al-test discs, Finn chambers (8 mm aluminium), plastic chambers",
+      "Micropore/hypoallergenic tape"
+    ],
+    "types": [
+      "Indian standard series (CODFI) plus cosmetic and footwear series",
+      "TRUE test - ready-to-use 20 allergens",
+      "Chemotechnique series (International, European)"
+    ],
+    "uses": [
+      "Confirming allergic contact dermatitis",
+      "Photopatch testing for photoallergy"
+    ],
+    "contraindications": [],
+    "how_to_hold": "",
+    "method": [
+      "Apply to upper back (or outer arm/thigh)",
+      "Keep dry for 48 h; remove at 48 h",
+      "First reading about 30 min after removal; late readings 48-72 h later and at day 4-7 (ICDRG grading)"
+    ],
+    "sterilization": "",
+    "tips": [
+      "Stop systemic steroids (>20 mg/day) and immunosuppressants before testing",
+      "Plastic Finn chambers for metals (nickel, cobalt, mercury)",
+      "Jadassohn - father of patch testing (1895)",
+      "False positives: angry back, irritants, excess concentration"
+    ],
+    "sources": [
+      "Khopkar p461-466 (Tables AIII.9-10)"
+    ],
+    "image": "img/patch-test-kit.jpg"
+  },
+  {
+    "slug": "prick-test-kit",
+    "name": "Prick test kit",
+    "aka": [
+      "Skin prick test"
+    ],
+    "category": "Diagnostic",
+    "description": "Kit of allergen solutions, lancets and stencil used to demonstrate type I (immediate) hypersensitivity.",
+    "parts": [
+      "Allergen solutions in small dropper bottles",
+      "Positive (histamine) and negative (saline) controls",
+      "Blood lancets",
+      "Stencil for measuring wheal"
+    ],
+    "types": [],
+    "uses": [
+      "Diagnosis of respiratory allergy, chronic urticaria and other IgE-mediated allergy"
+    ],
+    "contraindications": [],
+    "how_to_hold": "",
+    "method": [
+      "Place allergen drops about 1 inch apart on flexor forearm or back (back preferred in children)",
+      "Prick superficially through each drop without drawing blood; wipe lancet between pricks",
+      "Read at 20 minutes against controls with the stencil"
+    ],
+    "sterilization": "",
+    "tips": [
+      "Stop antihistamines, steroids, mast-cell stabilisers beforehand",
+      "Emergency kit (hydrocortisone, adrenaline, chlorpheniramine, bronchodilator) must be ready"
+    ],
+    "sources": [
+      "Khopkar p467-470 (Table AIII.11)"
+    ],
+    "image": "img/prick-test-kit.jpg"
+  }
+]

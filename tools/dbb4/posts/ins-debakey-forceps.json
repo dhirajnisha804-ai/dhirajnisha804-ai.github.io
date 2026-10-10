@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "DeBakey forceps",
+  "summary": "Forceps & clamps · Atraumatic thumb forceps with fine longitudinal serrations on the jaws.",
+  "icon": "🔧",
+  "image": "instruments/debakey-forceps.jpg",
+  "category": "Forceps & clamps",
+  "body": "![DeBakey forceps](instruments/debakey-forceps.jpg)\n\n_Also called: DeBakey atraumatic forceps_\n\nAtraumatic thumb forceps with fine longitudinal serrations on the jaws.\n\n## Parts\n- Long handle\n- One jaw with two parallel rows of serrations, the other with a single central row (longitudinal)\n\n## Uses / indications\n- Atraumatic holding of delicate tissue and vessels\n\n## How to hold\nHold like a pen with the first three fingers (between thumb and middle finger, index finger steadying); grasp dermis rather than epidermis to avoid crushing the wound edge.\n\n## Sterilisation & care\nAutoclave, hot air oven, 2% glutaraldehyde or boiling\n\n## Viva points & tips\n- Originally a vascular forceps; non-toothed",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176864,
+  "updatedAt": 1791639176879
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Sim's anterior vaginal wall retractor",
+  "summary": "Diagnostic · Long thin instrument with angled, serrated oval fenestrated ends that lifts the anterior vaginal wall.",
+  "icon": "🔧",
+  "image": "instruments/sims-anterior-vaginal-wall-retractor.jpg",
+  "category": "Diagnostic",
+  "body": "![Sim's anterior vaginal wall retractor](instruments/sims-anterior-vaginal-wall-retractor.jpg)\n\n_Also called: Sims vaginal wall retractor_\n\nLong thin instrument with angled, serrated oval fenestrated ends that lifts the anterior vaginal wall.\n\n## Parts\n- Central elongated metal shaft\n- Expanded oval fenestrated loops at both ends, angled to the shaft (about 15 degrees, facing opposite directions)\n- Serrations on the loops for grip\n\n## Uses / indications\n- Used with Sim's speculum during gynaecological examination and procedures\n- Retracting anterior vaginal wall to see cervix and fornices\n\n## Sterilisation & care\nAutoclave, hot air oven, 2% glutaraldehyde or boiling",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176831,
+  "updatedAt": 1791639176879
+ }
+}

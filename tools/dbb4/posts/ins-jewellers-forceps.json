@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Jeweller's forceps",
+  "summary": "Forceps & clamps · Plain-handled forceps that taper rapidly to very fine points, for atraumatic micro-handling.",
+  "icon": "🔧",
+  "image": "instruments/jewellers-forceps.jpg",
+  "category": "Forceps & clamps",
+  "body": "![Jeweller's forceps](instruments/jewellers-forceps.jpg)\n\n_Also called: Watchmaker's forceps, Micro forceps_\n\nPlain-handled forceps that taper rapidly to very fine points, for atraumatic micro-handling.\n\n## Parts\n- Elongated plain handles\n- Rapid taper to a fine tip\n\n## Types / variants\n- Straight, curved or angled\n\n## Uses / indications\n- Atraumatic handling of skin grafts\n- Hair transplantation (graft implantation)\n- Suture removal\n- Grasping small bleeders during electrocoagulation\n\n## How to hold\nHold like a pen with the first three fingers (between thumb and middle finger, index finger steadying); grasp dermis rather than epidermis to avoid crushing the wound edge.\n\n## Sterilisation & care\nAutoclave, hot air oven, 2% glutaraldehyde or boiling",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176862,
+  "updatedAt": 1791639176879
+ }
+}

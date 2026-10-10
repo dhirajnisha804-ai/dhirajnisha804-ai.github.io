@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Undermining scissors",
+  "summary": "Scissors · Longer scissors with blunt, broad tips for undermining and blunt dissection with minimal trauma.",
+  "icon": "🔧",
+  "image": "instruments/undermining-scissors.jpg",
+  "category": "Scissors",
+  "body": "![Undermining scissors](instruments/undermining-scissors.jpg)\n\n_Also called: Metzenbaum scissors, Ragnell dissecting scissors_\n\nLonger scissors with blunt, broad tips for undermining and blunt dissection with minimal trauma.\n\n## Parts\n- Two blades pivoting on a rivet/screw that acts as fulcrum; ring handles\n- Long shanks relative to blades\n- Blunt broad tips\n\n## Types / variants\n- Straight, curved or serrated\n- Ragnell, Metzenbaum patterns\n\n## Uses / indications\n- Undermining wound edges before closure\n- Soft tissue and blunt dissection\n\n## How to hold\nTripod grip: thumb and ring finger in the rings (only up to the distal phalanx), index finger resting near the screw joint for stability.\n\n## Sterilisation & care\nAutoclave, hot air oven, 2% glutaraldehyde or boiling",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176844,
+  "updatedAt": 1791639176879
+ }
+}

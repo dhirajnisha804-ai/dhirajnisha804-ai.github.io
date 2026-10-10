@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Power punch",
+  "summary": "Biopsy & excision · Punch shaft mounted on a motorised handpiece that rotates it at set speed.",
+  "icon": "🔧",
+  "image": "instruments/power-punch.jpg",
+  "category": "Biopsy & excision",
+  "body": "![Power punch](instruments/power-punch.jpg)\n\n_Also called: Machine-held punch, Motorised punch_\n\nPunch shaft mounted on a motorised handpiece that rotates it at set speed.\n\n## Parts\n- Hand machine / micromotor handpiece\n- Punch shaft with circular cutting edge\n\n## Types / variants\n- Sizes 1.5-4.5 mm\n\n## Uses / indications\n- Same as hand punches\n- Follicular unit extraction (FUE) in hair transplantation\n- Rapid harvesting of multiple punch grafts\n\n## Method of use\n1. Mount punch on handpiece\n2. Set rotational speed (2000-10,000 rpm per Khopkar)\n3. Apply perpendicular to skin to required depth\n\n## Sterilisation & care\nAutoclave, hot air oven, 2% glutaraldehyde or boiling\n\n## Viva points & tips\n- Speed is adjustable, giving faster and more uniform cuts than manual punches",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176874,
+  "updatedAt": 1791639176879
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Artery forceps",
+  "summary": "Forceps & clamps · Ring-handled locking clamp with blunt serrated tapering jaws used to catch bleeders and grasp tissue.",
+  "icon": "🔧",
+  "image": "instruments/artery-forceps.jpg",
+  "category": "Forceps & clamps",
+  "body": "![Artery forceps](instruments/artery-forceps.jpg)\n\n_Also called: Haemostatic forceps, Hemostat, Mosquito forceps, Kelly clamp, Crile / Rochester-Pean forceps_\n\nRing-handled locking clamp with blunt serrated tapering jaws used to catch bleeders and grasp tissue.\n\n## Parts\n- Ring handles\n- Ratchet lock\n- Box joint\n- Blunt tapering jaws with transverse serrations\n\n## Types / variants\n- Straight or curved\n- Mosquito (Halsted/Hartmann) - smallest, 3-5 inch\n- Kelly - 5-7 inch, serrations on distal part of jaw only\n- Crile / Rochester-Pean - largest, serrations along entire jaw\n\n## Uses / indications\n- Catching bleeding vessels\n- Holding the free end of a suture\n- Blunt dissection of lipoma and cysts\n- Crushing the pedicle of pedunculated lesions (acrochordon, DPN)\n- Removing nail plate in partial nail avulsion\n- Three-point traction during circumcision\n- Plucking hairs for trichogram\n\n## How to hold\nThumb and ring finger in the rings, index finger along the shanks for control; ratchet engaged/released by pressing the rings together and apart.\n\n## Sterilisation & care\nAutoclave, hot air oven, 2% glutaraldehyde or boiling\n\n## Viva points & tips\n- Size order: Mosquito < Kelly < Crile/Pean\n- Medium and small sizes are most used in dermatosurgery (PPT1)",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176855,
+  "updatedAt": 1791639176879
+ }
+}

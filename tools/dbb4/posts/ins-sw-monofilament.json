@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Semmes-Weinstein monofilament",
+  "summary": "Diagnostic · Colour-coded nylon filaments that bend at a fixed force, used to test protective touch sensation.",
+  "icon": "🔧",
+  "image": "",
+  "category": "Diagnostic",
+  "body": "_Also called: SW monofilament, Graded nylon monofilaments_\n\nColour-coded nylon filaments that bend at a fixed force, used to test protective touch sensation.\n\n## Parts\n- Nylon 612 filament of set diameter\n- Holder; colour code for force\n\n## Types / variants\n- Green 0.05 g - normal\n- Blue 0.2 g - diminished light touch\n- Purple 2 g - diminished protective sensation\n- Red 4 g - loss of protective sensation\n- Orange 7.5 g - only deep pressure\n- About 20 grades exist\n\n## Uses / indications\n- Screening for sensory neuropathy\n- Measuring sensory loss in leprosy, diabetes and other neuropathies\n- Detecting silent neuritis in leprosy (test every 2 weeks for 4 months, then monthly)\n\n## How to hold\nHold perpendicular to the skin and press until the filament bends into a 'C'.\n\n## Method of use\n1. Test hands at 7 sites (3 ulnar, 3 median, 1 radial) and feet at 8 sites (Khopkar: 7 common peroneal, 1 posterior tibial)\n2. Ask the patient (eyes closed) if felt\n3. Failure at any tested point = positive\n\n## Viva points & tips\n- Designed by Josephine Semmes and Sidney Weinstein\n- Inability to feel the purple filament = loss of protective sensation\n- Khopkar's foot nerve split (7 peroneal, 1 posterior tibial) looks reversed vs usual practice - verify",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176832,
+  "updatedAt": 1791639176879
+ }
+}

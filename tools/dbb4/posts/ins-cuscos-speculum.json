@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Cusco's self-retaining vaginal speculum",
+  "summary": "Diagnostic · Bivalve speculum resembling a bird's beak that is locked open by a screw, freeing the examiner's hands.",
+  "icon": "🔧",
+  "image": "instruments/cuscos-speculum.jpg",
+  "category": "Diagnostic",
+  "body": "![Cusco's self-retaining vaginal speculum](instruments/cuscos-speculum.jpg)\n\n_Also called: Cusco's speculum, Bivalve speculum, Duck-bill speculum_\n\nBivalve speculum resembling a bird's beak that is locked open by a screw, freeing the examiner's hands.\n\n## Parts\n- Two blades, concave inside with rounded free margins, riveted together\n- Handles at right angles to blades\n- Screw lock to hold blades apart\n\n## Types / variants\n- Small, intermediate (most used), large\n- Small for nulliparous, large for multiparous/prolapse\n\n## Uses / indications\n- Visualising cervix\n- Pap smear, cervical biopsy, swab collection\n- Chemical cauterisation / cryotherapy of cervical warts\n- IUCD insertion, colposcopy (seminar)\n\n## Method of use\n1. Insert with blades closed (Khopkar: oriented vertically)\n2. After full insertion rotate 90 degrees (Khopkar: anticlockwise) so handle points down\n3. Press handles to open blades and tighten the screw\n4. Before removal loosen the screw, close the blades and withdraw\n\n## Sterilisation & care\nAutoclave, hot air oven, 2% glutaraldehyde or boiling\n\n## Viva points & tips\n- Self-retaining: hands free for procedures; patient need not move to table edge\n- Disadvantage: anterior and posterior walls are hidden by the blades\n- Seminar wording: enter at 9 o'clock then rotate to 6/12 o'clock - follow Khopkar's description\n- Seminar/PPT: preferred in cryosurgery as it shields the vaginal walls; not ideal for vaginal surgery",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176829,
+  "updatedAt": 1791639176879
+ }
+}

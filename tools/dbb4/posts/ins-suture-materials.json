@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Suture materials",
+  "summary": "Miscellaneous · Threads used to close wounds, graded from 11-0 (finest) to 3 (thickest).",
+  "icon": "🔧",
+  "image": "",
+  "category": "Miscellaneous",
+  "body": "_Also called: Sutures_\n\nThreads used to close wounds, graded from 11-0 (finest) to 3 (thickest).\n\n## Types / variants\n- Absorbable: catgut, polyglycolic acid (Dexon), polyglactin 910 (Vicryl), polydioxanone (PDS), poliglecaprone (Monocryl)\n- Non-absorbable: silk, nylon (Ethilon), polyester (Mersilene), polypropylene (Prolene), polybutester\n- Monofilament: gut, nylon, polypropylene\n- Multifilament: silk, cotton, linen, braided nylon, polyglactin\n- Natural vs synthetic\n\n## Uses / indications\n- 3-0/4-0: scalp, back, extremities, facial wounds under tension\n- 5-0: face, scrotum\n- 6-0: eyelids\n- Most dermatosurgery uses 3-0 to 6-0\n\n## Sterilisation & care\nGamma irradiation (factory pre-sterilised).\n\n## Viva points & tips\n- Sizes thicker than 1-0 carry the '#' prefix\n- Other closure aids: cyanoacrylate glue, fibrin glue, closure tapes (Steri-Strip), staples; tincture benzoin as tactifier",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176849,
+  "updatedAt": 1791639176879
+ }
+}

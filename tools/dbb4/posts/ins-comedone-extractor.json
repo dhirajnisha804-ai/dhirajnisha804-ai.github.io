@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Comedone extractor",
+  "summary": "Curettes & extractors · Double-ended steel instrument with perforated cups used to press out comedone contents.",
+  "icon": "🔧",
+  "image": "instruments/comedone-extractor.jpg",
+  "category": "Curettes & extractors",
+  "body": "![Comedone extractor](instruments/comedone-extractor.jpg)\n\n_Also called: Comedone expressor, Comedo extractor, Unna/Schamberg/Saalfield comedone extractor_\n\nDouble-ended steel instrument with perforated cups used to press out comedone contents.\n\n## Parts\n- Central handle\n- Two hemispherical cups, one at each end\n- Central perforation in each cup with blunt margins\n- Sinuous (S-curved) shape for better handling and localised pressure\n\n## Types / variants\n- Saalfield extractor\n- Schamberg extractor\n\n## Uses / indications\n- Expression of open and closed comedones in acne\n- Expression of contents of nevus comedonicus and senile (solar) comedones\n\n## How to hold\nHeld at the central handle like a pen; cup kept perpendicular to the skin.\n\n## Method of use\n1. Place the cup perforation over the plugged follicular opening of an open comedone\n2. Apply gentle, firm pressure perpendicularly downward\n3. Comedone contents extrude through the hole and collect in the cup\n4. For closed comedones first nick the surface with a sterile lancet or needle, then express the same way\n\n## Sterilisation & care\nAutoclave, hot air oven, 2% glutaraldehyde or boiling\n\n## Viva points & tips\n- Pressure must be perpendicular, not sliding, to avoid trauma and scarring\n- Closed comedones need an artificial opening first",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176879,
+  "updatedAt": 1791639176879
+ }
+}

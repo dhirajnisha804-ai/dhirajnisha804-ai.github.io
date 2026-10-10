@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Epilation forceps",
+  "summary": "Forceps & clamps · Small forceps with serrated tips used to pluck hairs and remove sutures.",
+  "icon": "🔧",
+  "image": "instruments/epilation-forceps.jpg",
+  "category": "Forceps & clamps",
+  "body": "![Epilation forceps](instruments/epilation-forceps.jpg)\n\n_Also called: Hair-plucking forceps, Tweezers_\n\nSmall forceps with serrated tips used to pluck hairs and remove sutures.\n\n## Parts\n- Small spring body\n- Serrated tips\n\n## Types / variants\n- Barraquer - rounded tip\n- Berg - angled tip\n\n## Uses / indications\n- Epilation\n- Suture removal\n\n## How to hold\nHold like a pen with the first three fingers (between thumb and middle finger, index finger steadying); grasp dermis rather than epidermis to avoid crushing the wound edge.\n\n## Sterilisation & care\nAutoclave, hot air oven, 2% glutaraldehyde or boiling",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176859,
+  "updatedAt": 1791639176879
+ }
+}

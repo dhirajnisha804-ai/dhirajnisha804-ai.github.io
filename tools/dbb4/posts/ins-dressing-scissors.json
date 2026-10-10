@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Dressing scissors",
+  "summary": "Scissors · Straight scissors with one thick blunt blade and one sharp blade, for cutting dressings and sutures.",
+  "icon": "🔧",
+  "image": "instruments/dressing-scissors.jpg",
+  "category": "Scissors",
+  "body": "![Dressing scissors](instruments/dressing-scissors.jpg)\n\n_Also called: Straight scissors, Bandage scissors, Lister bandage scissors_\n\nStraight scissors with one thick blunt blade and one sharp blade, for cutting dressings and sutures.\n\n## Parts\n- Two blades pivoting on a rivet/screw that acts as fulcrum; ring handles\n- Lower blade thick and blunt (slides under the dressing, protects skin)\n- Upper blade sharp - cuts as the scissors close\n\n## Types / variants\n- Straight dressing scissors\n- Lister bandage scissors (angled)\n\n## Uses / indications\n- Cutting dressings and bandages without injuring skin\n- Cutting sutures\n\n## How to hold\nTripod grip: thumb and ring finger in the rings (only up to the distal phalanx), index finger resting near the screw joint for stability.\n\n## Sterilisation & care\nAutoclave, hot air oven, 2% glutaraldehyde or boiling",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176846,
+  "updatedAt": 1791639176879
+ }
+}

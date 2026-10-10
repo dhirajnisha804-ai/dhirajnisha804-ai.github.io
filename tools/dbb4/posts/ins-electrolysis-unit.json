@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Electrolysis (galvanic) epilator",
+  "summary": "Cryo / electro / light devices · Direct-current device that generates caustic sodium hydroxide in the follicle to destroy the hair bulb.",
+  "icon": "🔧",
+  "image": "",
+  "category": "Cryo / electro / light devices",
+  "body": "_Also called: Electrolysis, Chemolysis, Galvanic electroepilation_\n\nDirect-current device that generates caustic sodium hydroxide in the follicle to destroy the hair bulb.\n\n## Parts\n- DC (galvanic) source\n- Treating needle electrode on cathode (negative)\n- Dispersive electrode on anode (positive) held against skin\n\n## Uses / indications\n- Permanent hair removal (electroepilation)\n\n## Method of use\n1. Insert cathode needle into the hair follicle\n2. Patient holds/contacts the anode\n3. Current ionises tissue water and salt: NaOH forms at cathode and destroys the bulb\n\n## Viva points & tips\n- Products: NaOH (lye) and H2 at cathode; HCl and Cl2 at anode",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176825,
+  "updatedAt": 1791639176879
+ }
+}

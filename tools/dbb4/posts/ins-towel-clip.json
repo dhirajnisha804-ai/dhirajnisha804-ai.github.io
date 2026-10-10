@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Towel clip",
+  "summary": "Forceps & clamps · Small ring-handled locking clip with curved pointed tips that fixes drapes in place.",
+  "icon": "🔧",
+  "image": "instruments/towel-clip.jpg",
+  "category": "Forceps & clamps",
+  "body": "![Towel clip](instruments/towel-clip.jpg)\n\n_Also called: Backhaus towel clamp_\n\nSmall ring-handled locking clip with curved pointed tips that fixes drapes in place.\n\n## Parts\n- Ring handles with ratchet\n- Curved sharp or blunt tips that meet\n\n## Uses / indications\n- Securing surgical drapes and towels so they do not slip during a procedure\n\n## How to hold\nThumb and ring finger in the rings, index finger along the shanks for control; ratchet engaged/released by pressing the rings together and apart.\n\n## Sterilisation & care\nAutoclave, hot air oven, 2% glutaraldehyde or boiling",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176853,
+  "updatedAt": 1791639176879
+ }
+}

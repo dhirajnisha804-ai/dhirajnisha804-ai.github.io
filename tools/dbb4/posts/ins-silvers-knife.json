@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Silver's knife",
+  "summary": "Blades & scalpels · Smaller version of Humby's knife that takes a disposable shaving (razor) blade.",
+  "icon": "🔧",
+  "image": "instruments/silvers-knife.jpg",
+  "category": "Blades & scalpels",
+  "body": "![Silver's knife](instruments/silvers-knife.jpg)\n\n_Also called: Silver skin graft knife, Miniature dermatome_\n\nSmaller version of Humby's knife that takes a disposable shaving (razor) blade.\n\n## Parts\n- Handle\n- Clamp holding an ordinary disposable shaving blade\n- Screws to adjust graft thickness\n\n## Uses / indications\n- Harvesting small, thin split-thickness grafts\n- Grafts from awkward areas (dorsa of hands, face, scalp) where Humby's knife cannot reach\n\n## How to hold\nLike Humby's knife, held flat to the stretched skin with gentle sawing strokes.\n\n## Sterilisation & care\nAutoclave, hot air oven, 2% glutaraldehyde\n\n## Viva points & tips\n- Cheap: uses ordinary razor blades",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176869,
+  "updatedAt": 1791639176879
+ }
+}

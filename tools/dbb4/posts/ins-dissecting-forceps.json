@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Dissecting forceps",
+  "summary": "Forceps & clamps · Non-locking V-shaped spring forceps used to hold tissue during dissection, suturing and dressing.",
+  "icon": "🔧",
+  "image": "instruments/dissecting-forceps.jpg",
+  "category": "Forceps & clamps",
+  "body": "![Dissecting forceps](instruments/dissecting-forceps.jpg)\n\n_Also called: Thumb forceps, Tissue forceps, Pick-ups, Plain / toothed forceps_\n\nNon-locking V-shaped spring forceps used to hold tissue during dissection, suturing and dressing.\n\n## Parts\n- Two blades/arms fused at one end and free at the other\n- Tips plain (serrated) or toothed\n- No ratchet or lock\n\n## Types / variants\n- Plain (non-toothed) - transverse serrations, less traumatic; for nerves, biopsy tissue and delicate structures\n- Toothed - usually 2 teeth on one jaw interlocking with 1 on the other (1x2); firmer grip, more traumatic; for dermis and cyst walls\n\n## Uses / indications\n- Holding tissue during dissection, suturing and dressing\n- Plain: delicate structures, biopsy specimens\n- Toothed: skin/dermis, cyst wall\n\n## How to hold\nHold like a pen with the first three fingers (between thumb and middle finger, index finger steadying); grasp dermis rather than epidermis to avoid crushing the wound edge.\n\n## Sterilisation & care\nAutoclave, hot air oven, 2% glutaraldehyde or boiling\n\n## Viva points & tips\n- Do not crush the epidermis - pick up dermis\n- Plain = less traumatic; toothed = better grip but more traumatic",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176867,
+  "updatedAt": 1791639176879
+ }
+}

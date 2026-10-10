@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Prick test kit",
+  "summary": "Diagnostic · Kit of allergen solutions, lancets and stencil used to demonstrate type I (immediate) hypersensitivity.",
+  "icon": "🔧",
+  "image": "instruments/prick-test-kit.jpg",
+  "category": "Diagnostic",
+  "body": "![Prick test kit](instruments/prick-test-kit.jpg)\n\n_Also called: Skin prick test_\n\nKit of allergen solutions, lancets and stencil used to demonstrate type I (immediate) hypersensitivity.\n\n## Parts\n- Allergen solutions in small dropper bottles\n- Positive (histamine) and negative (saline) controls\n- Blood lancets\n- Stencil for measuring wheal\n\n## Uses / indications\n- Diagnosis of respiratory allergy, chronic urticaria and other IgE-mediated allergy\n\n## Method of use\n1. Place allergen drops about 1 inch apart on flexor forearm or back (back preferred in children)\n2. Prick superficially through each drop without drawing blood; wipe lancet between pricks\n3. Read at 20 minutes against controls with the stencil\n\n## Viva points & tips\n- Stop antihistamines, steroids, mast-cell stabilisers beforehand\n- Emergency kit (hydrocortisone, adrenaline, chlorpheniramine, bronchodilator) must be ready",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639176817,
+  "updatedAt": 1791639176879
+ }
+}
