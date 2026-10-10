@@ -1,0 +1,16 @@
+{
+ "data": {
+  "section": "Viva",
+  "title": "Atopic dermatitis — viva",
+  "caseName": "Atopic dermatitis",
+  "summary": "Eczemas · 8 viva questions with answers",
+  "icon": "🎓",
+  "category": "Eczemas",
+  "order": 16027,
+  "body": "_Viva questions for the case: **Atopic dermatitis** (Eczemas)_\n\n**Q1. Diagnostic criteria?**\n- Hanifin and Rajka (4 major: pruritus, typical morphology/distribution, chronic relapsing course, personal/family atopy; ≥3 major + ≥3 minor)\n- UK Working Party criteria (itchy skin + ≥3 of: flexural involvement, history of asthma/hay fever, generalised dry skin, onset <2 years, visible flexural eczema)\n- Indian criteria: Rajagopalan et al.\n\n**Q2. Pathogenesis?**\n- Barrier defect (filaggrin loss-of-function mutations, reduced ceramides) + immune dysregulation (Th2 — IL-4, IL-13, IL-31 itch; Th22/Th17 in Asians) + S. aureus colonisation + microbiome dysbiosis; 'atopic march' to asthma and allergic rhinitis\n\n**Q3. Distribution by age?**\n- Infantile (<2 y): face (cheeks), extensors, spares napkin area\n- Childhood: flexures (cubital, popliteal), wrists, ankles, neck\n- Adult: flexures, hands, head and neck, nipple, lichenification, prurigo form\n\n**Q4. Minor features/stigmata?**\n- Xerosis, ichthyosis vulgaris, palmar hyperlinearity, keratosis pilaris, Dennie–Morgan folds, orbital darkening, Hertoghe sign, pityriasis alba, white dermographism, anterior subcapsular cataract, keratoconus, nipple eczema, raised IgE\n\n**Q5. Complications?**\n- Secondary infection — S. aureus impetiginisation, eczema herpeticum (emergency), molluscum, warts; erythroderma; growth retardation; sleep loss; psychosocial impact; ocular (keratoconjunctivitis, cataract)\n\n**Q6. How to assess severity?**\n- SCORAD, EASI, POEM (patient-oriented), IGA; DLQI/CDLQI for quality of life (available in Derma Desk)\n\n**Q7. Stepwise treatment?**\n- Base: emollients, soap substitutes, trigger avoidance, education, bleach baths for recurrent infection\n- Topical steroids (reactive and proactive twice-weekly), topical calcineurin inhibitors (face/folds), crisaborole, topical JAK (ruxolitinib)\n- Phototherapy (NB-UVB)\n- Systemic: cyclosporine (fastest), methotrexate, azathioprine, MMF; short oral steroids not recommended\n- Biologics: dupilumab (IL-4Rα), tralokinumab/lebrikizumab (IL-13), nemolizumab (IL-31R); oral JAK inhibitors (upadacitinib, abrocitinib, baricitinib)\n\n**Q8. Role of diet and allergy testing?**\n- Food allergy relevant mainly in young infants with severe disease; avoid indiscriminate elimination diets; prick/specific IgE only with clear history; early peanut/egg introduction may prevent allergy\n\n## Quick spotter facts\n- Lichenified flexural eczema in a child with Dennie–Morgan folds — atopic dermatitis\n\n_Sources: DYP Survival Guide for PG Dermatology Exam (Atopic dermatitis); IADVL Textbook of Dermatology 5e ch.25. Answers written in our own words; check with your teachers' preferences._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791655432188,
+  "updatedAt": 1791655432215
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "data": {
+  "section": "Viva",
+  "title": "Gonorrhoea / urethral discharge — viva",
+  "caseName": "Gonorrhoea / urethral discharge",
+  "summary": "Sexually transmitted infections · 9 viva questions with answers",
+  "icon": "🎓",
+  "category": "Sexually transmitted infections",
+  "order": 5,
+  "body": "_Viva questions for the case: **Gonorrhoea / urethral discharge** (Sexually transmitted infections)_\n\n**Q1. What is gonorrhoea and its organism?**\n- STI caused by Neisseria gonorrhoeae — Gram-negative intracellular kidney/bean-shaped diplococci; infects columnar/transitional epithelium (urethra, endocervix, rectum, pharynx, conjunctiva)\n\n**Q2. Why does gonorrhoea not cause vaginitis in adult women?**\n- Adult vagina has stratified squamous epithelium (oestrogen) resistant to gonococci; prepubertal girls (thin columnar-like epithelium) get vulvovaginitis\n\n**Q3. Clinical features in men?**\n- Incubation 2–5 days; profuse purulent urethral discharge, dysuria, meatal oedema; complications: epididymitis, prostatitis, periurethral abscess, Tysonian/Littre gland abscess, urethral stricture\n\n**Q4. Gonococcal vs non-gonococcal urethritis?**\n- Gonococcal: short incubation, profuse purulent discharge, Gram-negative intracellular diplococci\n- NGU: longer incubation (1–3 weeks), scanty mucoid discharge, pus cells ≥2/oil immersion field without diplococci — Chlamydia trachomatis (D–K), Mycoplasma genitalium, Ureaplasma, Trichomonas\n\n**Q5. What is disseminated gonococcal infection?**\n- Arthritis–dermatitis syndrome: fever, migratory polyarthralgia, tenosynovitis and few acral haemorrhagic pustules on erythematous base; or purulent monoarthritis; risk with menstruation, pregnancy, late complement (C5–C9) deficiency, SLE\n\n**Q6. Investigations?**\n- Gram stain of urethral smear (sensitivity >95% in symptomatic men; poor in women), culture on Thayer–Martin/modified New York City medium (antibiotic sensitivity), NAAT/PCR (most sensitive, multiple sites incl. pharynx and rectum)\n- Screen for chlamydia, syphilis, HIV, hepatitis B/C\n\n**Q7. Treatment?**\n- CDC 2020/2021: ceftriaxone 500 mg IM single dose (1 g if ≥150 kg); add doxycycline 100 mg twice daily × 7 days if chlamydia not excluded\n- NACO syndromic: grey kit (kit 1) — cefixime 400 mg + azithromycin 1 g single dose for urethral discharge/cervicitis\n- Treat partners; abstain for 7 days; test of cure for pharyngeal infection\n\n**Q8. Why high-dose ceftriaxone?**\n- Rising MICs and ceftriaxone-resistant strains; pharyngeal infection needs higher levels; azithromycin resistance makes dual therapy less reliable\n\n**Q9. Ophthalmia neonatorum — prevention and treatment?**\n- Prophylaxis at birth: 0.5% erythromycin or 1% tetracycline eye ointment (silver nitrate 1% — Credé method, historical)\n- Treatment: ceftriaxone 25–50 mg/kg IM single dose (max 125 mg) and saline irrigation\n\n## Quick spotter facts\n- Profuse purulent urethral discharge with Gram-negative intracellular diplococci — gonococcal urethritis\n\n_Sources: DYP Survival Guide for PG Dermatology Exam (Long case — Gonorrhoea); IADVL Textbook of Dermatology 5e ch.132; NACO; CDC 2021. Answers written in our own words; check with your teachers' preferences._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791655432210,
+  "updatedAt": 1791655432215
+ }
+}

@@ -1,0 +1,191 @@
+# Viva slot V2 (part B): eczemas + reactive & drug eruptions
+DYP = "DYP Survival Guide for PG Dermatology Exam"; IA = "IADVL Textbook of Dermatology 5e"
+D = [
+dict(case="Diaper (napkin) dermatitis", src=f"{DYP}; {IA} ch.11 and ch.24",
+ qa=[
+ ("What is irritant napkin dermatitis and its pathogenesis?", ["Irritant contact dermatitis in the diaper area from prolonged contact with urine and faeces: occlusion and over-hydration, friction, raised pH (urease converts urea to ammonia), faecal lipases and proteases"]),
+ ("Clinical features?", ["Glazed erythema on convex surfaces (buttocks, thighs, mons, genitalia) sparing the skin folds — W-shaped pattern; severe forms: Jacquet erosive dermatitis (punched-out erosions)"]),
+ ("Differential diagnosis?", ["Candidal napkin dermatitis (involves folds, satellite pustules), infantile seborrhoeic dermatitis, psoriasis (napkin psoriasis), atopic dermatitis, allergic contact dermatitis (dyes, fragrance), perianal streptococcal dermatitis, acrodermatitis enteropathica (zinc deficiency), Langerhans cell histiocytosis (fold involvement with petechiae), granuloma gluteale infantum, scabies, congenital syphilis"]),
+ ("Management?", ["Frequent diaper changes, superabsorbent disposable diapers, diaper-free time, gentle cleansing with water", "Barrier pastes/ointments (zinc oxide, petrolatum) at each change; mild topical steroid (1% hydrocortisone) briefly; topical azole if candida (persists >3 days)", "Avoid potent steroids (granuloma gluteale infantum, striae, HPA suppression)"]),
+ ("What is granuloma gluteale infantum?", ["Purple-red nodules in the diaper area after potent steroid use in napkin dermatitis/candidiasis — resolves when steroids stopped"]),
+ ],
+ spot=["Glazed erythema on convexities sparing the folds — irritant napkin dermatitis"]),
+
+dict(case="Atopic dermatitis", src=f"{DYP} (Atopic dermatitis); {IA} ch.25",
+ qa=[
+ ("Diagnostic criteria?", ["Hanifin and Rajka (4 major: pruritus, typical morphology/distribution, chronic relapsing course, personal/family atopy; ≥3 major + ≥3 minor)", "UK Working Party criteria (itchy skin + ≥3 of: flexural involvement, history of asthma/hay fever, generalised dry skin, onset <2 years, visible flexural eczema)", "Indian criteria: Rajagopalan et al."]),
+ ("Pathogenesis?", ["Barrier defect (filaggrin loss-of-function mutations, reduced ceramides) + immune dysregulation (Th2 — IL-4, IL-13, IL-31 itch; Th22/Th17 in Asians) + S. aureus colonisation + microbiome dysbiosis; 'atopic march' to asthma and allergic rhinitis"]),
+ ("Distribution by age?", ["Infantile (<2 y): face (cheeks), extensors, spares napkin area", "Childhood: flexures (cubital, popliteal), wrists, ankles, neck", "Adult: flexures, hands, head and neck, nipple, lichenification, prurigo form"]),
+ ("Minor features/stigmata?", ["Xerosis, ichthyosis vulgaris, palmar hyperlinearity, keratosis pilaris, Dennie–Morgan folds, orbital darkening, Hertoghe sign, pityriasis alba, white dermographism, anterior subcapsular cataract, keratoconus, nipple eczema, raised IgE"]),
+ ("Complications?", ["Secondary infection — S. aureus impetiginisation, eczema herpeticum (emergency), molluscum, warts; erythroderma; growth retardation; sleep loss; psychosocial impact; ocular (keratoconjunctivitis, cataract)"]),
+ ("How to assess severity?", ["SCORAD, EASI, POEM (patient-oriented), IGA; DLQI/CDLQI for quality of life (available in Derma Desk)"]),
+ ("Stepwise treatment?", ["Base: emollients, soap substitutes, trigger avoidance, education, bleach baths for recurrent infection", "Topical steroids (reactive and proactive twice-weekly), topical calcineurin inhibitors (face/folds), crisaborole, topical JAK (ruxolitinib)", "Phototherapy (NB-UVB)", "Systemic: cyclosporine (fastest), methotrexate, azathioprine, MMF; short oral steroids not recommended", "Biologics: dupilumab (IL-4Rα), tralokinumab/lebrikizumab (IL-13), nemolizumab (IL-31R); oral JAK inhibitors (upadacitinib, abrocitinib, baricitinib)"]),
+ ("Role of diet and allergy testing?", ["Food allergy relevant mainly in young infants with severe disease; avoid indiscriminate elimination diets; prick/specific IgE only with clear history; early peanut/egg introduction may prevent allergy"]),
+ ],
+ spot=["Lichenified flexural eczema in a child with Dennie–Morgan folds — atopic dermatitis"]),
+
+dict(case="Contact dermatitis", src=f"{DYP} (Contact dermatitis); {IA} ch.26",
+ qa=[
+ ("Types of contact dermatitis?", ["Irritant contact dermatitis (~80%, non-immunological), allergic contact dermatitis (type IV), photoirritant and photoallergic, contact urticaria (type I/non-immune), systemic contact dermatitis, protein contact dermatitis"]),
+ ("Irritant vs allergic contact dermatitis?", ["ICD: anyone with enough exposure, burning/stinging, dose-related, confined to contact site, sharp borders, onset quick, patch test negative", "ACD: only sensitised people, itch, spreads beyond contact, can occur at low concentration, delayed 24–72 h, patch test positive"]),
+ ("Common allergens in India?", ["Parthenium hysterophorus (airborne contact dermatitis), nickel, potassium dichromate (cement), paraphenylenediamine (hair dye), fragrance mix, rubber chemicals (thiuram, mercapto), neomycin, colophony, epoxy resin, preservatives (methylisothiazolinone, parabens), bindi adhesive"]),
+ ("Patterns of Parthenium dermatitis?", ["Air-borne contact dermatitis pattern (face, V of neck, flexures, upper eyelids, behind ears involved — unlike photodermatitis), chronic actinic dermatitis-like, mixed, erythroderma, PLE-like, seborrhoeic pattern"]),
+ ("How to do a patch test?", ["Allergens (Indian standard series) in Finn chambers on upper back, occluded 48 h; read at 48 h (D2) and 72–96 h (D3/D4) (± D7); ICDRG grading: ?+ doubtful, + weak (erythema, infiltration, papules), ++ strong (vesicles), +++ extreme (bullae/ulcer), IR irritant", "Stop oral steroids (>20 mg) 2 weeks and topical steroids on back 1 week before; avoid in active eczema; antihistamines allowed"]),
+ ("What is angry back (excited skin) syndrome?", ["Strong positive reaction makes nearby tests falsely positive — retest separately"]),
+ ("Treatment?", ["Identify and avoid allergen/irritant (substitutes, gloves, protective measures)", "Topical steroids, emollients; short oral steroid for acute widespread ACD", "Parthenium: avoidance, azathioprine (weekly pulse 300 mg or daily), methotrexate, cyclosporine, low-dose steroids, PUVA"]),
+ ],
+ spot=["Eczema under the metal buckle of a belt — nickel allergic contact dermatitis"]),
+
+dict(case="Keratolysis exfoliativa", src=f"{DYP} (Keratolysis exfoliativa); {IA} ch.24",
+ qa=[
+ ("What is keratolysis exfoliativa?", ["Lamellar dyshidrosis — recurrent focal superficial peeling of palms (and soles) beginning as air-filled 'blisters' that rupture into collarettes of scale, without inflammation"]),
+ ("Associations?", ["Summer, hyperhidrosis, friction, detergents; atopy; may be a variant of dyshidrotic eczema; possible keratin/corneodesmosin defects"]),
+ ("Differential diagnosis?", ["Pompholyx, tinea manuum (KOH), irritant hand dermatitis, acral peeling skin syndrome (TGM5), pitted keratolysis (soles), psoriasis, secondary syphilis"]),
+ ("Treatment?", ["Reassurance (self-limiting), avoid irritants, emollients, urea/lactic acid creams, barrier creams; treat hyperhidrosis"]),
+ ],
+ spot=["Collarettes of peeling on palms without inflammation — keratolysis exfoliativa"]),
+
+dict(case="Lichen simplex chronicus", src=f"{DYP} (Lichen simplex chronicus); {IA} ch.24 and ch.72",
+ qa=[
+ ("Define LSC.", ["Localised lichenified plaque resulting from repeated rubbing/scratching (itch–scratch cycle) without a primary dermatosis (or superimposed on one)"]),
+ ("Common sites?", ["Nape of neck (women), ankles/shins, scrotum/vulva, wrists, extensor forearms, scalp (occipital), upper eyelids"]),
+ ("Clinical features?", ["Well-defined thickened plaque with exaggerated skin markings, hyperpigmentation, excoriations; paroxysmal intense itch, often at night or with stress"]),
+ ("Associated factors?", ["Anxiety, depression, obsessive-compulsive traits, atopy, xerosis, underlying contact dermatitis, insect bites, neuropathic itch"]),
+ ("Differential diagnosis?", ["Lichen planus (hypertrophic), psoriasis, tinea (KOH), lichen amyloidosis, chronic contact dermatitis, nummular eczema, mycosis fungoides, prurigo nodularis"]),
+ ("Histopathology?", ["Compact orthohyperkeratosis, irregular psoriasiform acanthosis, hypergranulosis, vertically streaked collagen in papillary dermis"]),
+ ("Treatment?", ["Break itch–scratch cycle: potent topical steroids under occlusion, intralesional triamcinolone, occlusive dressings (prevent scratching), topical calcineurin inhibitors, capsaicin, doxepin", "Antihistamines (sedating at night), SSRIs/anxiolytics, behavioural therapy; treat underlying cause"]),
+ ],
+ spot=["Thick lichenified plaque on the nape of the neck — lichen simplex chronicus"]),
+
+dict(case="Hand eczema & pompholyx", src=f"{DYP} (Nipple eczema, hand eczema and pompholyx); {IA} ch.24 and ch.26",
+ qa=[
+ ("Classify hand eczema.", ["Exogenous: irritant contact (commonest, 'housewife's dermatitis'), allergic contact, protein contact dermatitis", "Endogenous: atopic, pompholyx (dyshidrotic), hyperkeratotic (tylotic), nummular, recurrent vesicular", "Mixed"]),
+ ("What is pompholyx?", ["Recurrent crops of deep-seated itchy 'sago-grain' vesicles on palms, sides of fingers and soles (cheiropompholyx/podopompholyx); thick stratum corneum keeps vesicles intact; triggers: heat, sweating, stress, nickel ingestion, id reaction, IVIG"]),
+ ("What is the id reaction?", ["Autoeczematisation — distant vesicular eczema triggered by an active primary site (tinea pedis, stasis dermatitis)"]),
+ ("Investigations?", ["KOH (exclude tinea), patch test (essential in chronic hand eczema), prick test for protein contact dermatitis, bacterial swab"]),
+ ("Differential diagnosis?", ["Palmar psoriasis (well-defined, symmetrical, scaly), tinea manuum ('two feet–one hand'), scabies, palmoplantar pustulosis, keratolysis exfoliativa, bullous pemphigoid (dyshidrosiform), dermatophytid"]),
+ ("Treatment?", ["Avoid irritants/allergens, gloves (cotton liners under vinyl/nitrile), emollients and barrier creams", "Potent topical steroids, topical tacrolimus; potassium permanganate/Burow's soaks for vesicles", "Severe/chronic: alitretinoin (approved in Europe for chronic hand eczema), acitretin (hyperkeratotic), PUVA (topical/soak), methotrexate, azathioprine, cyclosporine, dupilumab, delgocitinib cream (topical pan-JAK)"]),
+ ],
+ spot=["Deep-seated sago-grain vesicles on sides of fingers — pompholyx"]),
+
+dict(case="Nipple eczema", src=f"{DYP} (Nipple eczema, hand eczema and pompholyx); {IA} ch.24",
+ qa=[
+ ("Causes of nipple eczema?", ["Atopic dermatitis (minor Hanifin–Rajka criterion — bilateral, adolescents), irritant/allergic contact (breastfeeding, creams, lanolin), friction (jogger's nipple), scabies, candidiasis in lactating women"]),
+ ("Most important differential?", ["Paget disease of the nipple (unilateral, persistent, well-defined, does not respond to steroids, underlying ductal carcinoma) — biopsy any unilateral eczema not responding in 3–4 weeks"]),
+ ("Other differentials?", ["Psoriasis, erosive adenomatosis of the nipple, Bowen disease, seborrhoeic dermatitis, nipple hyperkeratosis"]),
+ ("Treatment?", ["Emollients, mild–moderate steroid or tacrolimus, avoid allergens, treat candida (in breastfeeding — mother and baby)"]),
+ ],
+ spot=["Bilateral itchy eczema of nipples in an atopic adolescent — nipple eczema"]),
+
+dict(case="Nummular (discoid) eczema", src=f"{DYP} (Nummular eczema); {IA} ch.24",
+ qa=[
+ ("What is nummular eczema?", ["Coin-shaped, well-defined eczematous plaques (papulovesicular, oozing, crusted) mainly on extensor limbs and dorsa of hands, very itchy, chronic relapsing"]),
+ ("Associations?", ["Xerosis (elderly men), atopy (young), staphylococcal colonisation, contact allergy (nickel, chromate), venous insufficiency, alcohol, drugs (isotretinoin, interferon), dental infection (focal infection)"]),
+ ("Differential diagnosis?", ["Tinea corporis (central clearing, KOH positive), psoriasis, impetigo, Bowen disease, mycosis fungoides, contact dermatitis, lichen simplex"]),
+ ("Treatment?", ["Emollients, potent topical steroids (ointment, occlusion), tacrolimus, treat infection (topical/oral antistaphylococcal), patch testing if recalcitrant, NB-UVB, methotrexate/azathioprine for extensive disease"]),
+ ],
+ spot=["Coin-shaped oozing eczematous plaques on legs — nummular eczema"]),
+
+dict(case="Prurigo nodularis", src=f"{DYP} (Prurigo nodularis); {IA} ch.72",
+ qa=[
+ ("What is prurigo nodularis?", ["Chronic condition with intensely itchy, hyperkeratotic, excoriated firm nodules on extensor limbs and trunk from repetitive scratching — now considered a neuroimmune disease (chronic nodular prurigo)"]),
+ ("Associations?", ["Atopy, chronic kidney disease, liver disease, diabetes, HIV, hepatitis C, thyroid disease, lymphoma, iron deficiency, depression/anxiety, neuropathy; elderly"]),
+ ("Histopathology?", ["Compact hyperkeratosis, irregular acanthosis (pseudoepitheliomatous), fibrosis, increased dermal nerves (neural hyperplasia) with reduced intraepidermal nerve fibres, mast cells"]),
+ ("Differential diagnosis?", ["Hypertrophic lichen planus, nodular scabies, perforating disorders (acquired reactive perforating collagenosis in diabetics/CKD), pemphigoid nodularis, keratoacanthoma, multiple warts, lichen amyloidosis"]),
+ ("Workup?", ["CBC, renal and liver function, thyroid, glucose, HIV/hepatitis serology, iron studies; chest X-ray/age-appropriate cancer screening if generalised itch"]),
+ ("Treatment?", ["Potent topical steroids under occlusion, intralesional triamcinolone, cryotherapy, capsaicin, calcipotriol, phototherapy (NB-UVB/PUVA)", "Systemic: gabapentin/pregabalin, antidepressants (paroxetine, mirtazapine), thalidomide, methotrexate, cyclosporine, naltrexone", "Biologics approved: dupilumab (2022) and nemolizumab (anti-IL-31R, 2024)"]),
+ ],
+ spot=["Multiple excoriated hyperkeratotic nodules on extensor arms — prurigo nodularis"]),
+
+dict(case="Seborrhoeic dermatitis", src=f"{DYP}; {IA} ch.24",
+ qa=[
+ ("Define and describe the distribution.", ["Chronic relapsing inflammatory dermatosis of sebum-rich areas: scalp (dandruff), eyebrows, nasolabial folds, retroauricular, beard, presternal and interscapular (petaloid), flexures, eyelids (blepharitis)"]),
+ ("Pathogenesis?", ["Malassezia (M. globosa, M. restricta) lipases release irritant fatty acids from sebum in susceptible individuals; sebaceous activity, immune response, barrier dysfunction"]),
+ ("Clinical variants?", ["Infantile (cradle cap, flexural), adult, petaloid, pityriasiform, erythrodermic (Leiner phenotype in immunodeficiency), seborrhoeic blepharitis"]),
+ ("Associations — when to suspect?", ["Severe/extensive or sudden onset — HIV (marker), Parkinson disease, stroke, depression, Down syndrome, alcoholism, zinc/biotin deficiency, drugs (levodopa, lithium)"]),
+ ("Differential diagnosis?", ["Psoriasis (sebopsoriasis — thicker scale, beyond hairline), rosacea, atopic dermatitis, tinea capitis/faciei, lupus (butterfly — spares nasolabial folds), pemphigus foliaceus/erythematosus, Langerhans cell histiocytosis (infants)"]),
+ ("Treatment?", ["Ketoconazole 2% shampoo/cream, ciclopirox, selenium sulfide, zinc pyrithione; low-potency steroid or tacrolimus/pimecrolimus for flares (face); keratolytics (salicylic acid, coal tar) for thick scalp scale", "Severe/recurrent: oral itraconazole/fluconazole, low-dose isotretinoin (oily skin); infants — emollients, olive oil, mild shampoo, short ketoconazole"]),
+ ],
+ spot=["Greasy yellow scales on nasolabial folds and eyebrows — seborrhoeic dermatitis"]),
+
+dict(case="Erythema multiforme", src=f"{DYP} (Erythema multiforme); {IA} ch.101",
+ qa=[
+ ("Define EM and its types.", ["Acute, self-limiting, often recurrent immune reaction with typical target lesions, acral distribution", "EM minor (no or one mucosal site), EM major (≥2 mucosal sites with skin) — distinct from SJS/TEN"]),
+ ("Causes?", ["Herpes simplex (commonest; HSV-associated recurrent EM), Mycoplasma pneumoniae (children — may cause mucositis-predominant MIRM), other infections (orf, histoplasmosis), drugs (less common), idiopathic"]),
+ ("Describe a typical target lesion.", ["Round, <3 cm, well-defined with three zones: central dusky/necrotic or bullous centre, pale oedematous ring, outer erythematous ring", "Atypical raised targets (2 zones) in EM; atypical flat targets/macules with purpura in SJS"]),
+ ("EM vs SJS?", ["EM: typical/raised atypical targets, acral, little mucosal disease, HSV-triggered, low mortality", "SJS: widespread flat atypical targets/macules on trunk, epidermal detachment <10%, severe mucositis, drug-induced, systemic illness"]),
+ ("Differential diagnosis?", ["Urticaria (lesions <24 h, no dusky centre), fixed drug eruption, SJS, Rowell syndrome (lupus + EM-like), bullous pemphigoid, urticarial vasculitis, Sweet syndrome"]),
+ ("Histopathology?", ["Interface dermatitis with vacuolar change, scattered necrotic keratinocytes (satellite cell necrosis), papillary dermal oedema, lymphocytic infiltrate"]),
+ ("Treatment?", ["Treat cause; symptomatic (antihistamines, topical steroids, mouthwashes); short oral steroid for severe mucosal EM", "Recurrent HSV-associated EM: continuous acyclovir 400 mg twice daily (or valacyclovir 500 mg twice daily) for 6–12 months; refractory — dapsone, azathioprine, thalidomide, MMF"]),
+ ],
+ spot=["Acral target lesions with three concentric zones — erythema multiforme"]),
+
+dict(case="Erythema nodosum", src=f"{DYP} (Erythema nodosum); {IA} ch.63",
+ qa=[
+ ("What is erythema nodosum?", ["Commonest panniculitis — septal panniculitis without vasculitis; a hypersensitivity reaction; tender red nodules on shins, symmetric, no ulceration, heals with bruise-like colour change (erythema contusiformis) in 3–6 weeks without scarring"]),
+ ("Causes?", ["Infections: streptococcal (commonest in children), TB (important in India), leprosy (ENL is different — vasculitis), Yersinia, histoplasmosis, coccidioidomycosis", "Sarcoidosis (Löfgren syndrome: EN + bilateral hilar lymphadenopathy + fever + arthritis), inflammatory bowel disease, Behçet disease, pregnancy, oral contraceptives, drugs (sulfonamides), malignancy (lymphoma), idiopathic (~50%)"]),
+ ("Histopathology?", ["Septal panniculitis with widened septa, lymphohistiocytic infiltrate, Miescher's radial granulomas (histiocytes around a central cleft) — characteristic"]),
+ ("Differential diagnosis?", ["Erythema induratum (calves, ulcerates, lobular panniculitis with vasculitis), ENL (leprosy), nodular vasculitis, cellulitis, superficial thrombophlebitis, polyarteritis nodosa, pancreatic panniculitis, lupus profundus"]),
+ ("Workup?", ["CBC, ESR, ASO titre/throat swab, Mantoux/IGRA, chest X-ray (sarcoid, TB), stool culture/IBD workup if GI symptoms, pregnancy test, biopsy (deep incisional) if atypical"]),
+ ("Treatment?", ["Treat cause, rest, leg elevation, compression; NSAIDs; potassium iodide (300–900 mg/day); colchicine, dapsone, hydroxychloroquine; short oral steroids only after excluding infection (TB)"]),
+ ],
+ spot=["Bilateral tender red nodules on the shins that do not ulcerate — erythema nodosum"]),
+
+dict(case="Fixed drug eruption", src=f"{DYP} (Fixed drug eruptions); {IA} ch.101",
+ qa=[
+ ("Why is it called 'fixed'?", ["Lesions recur at the same site(s) every time the drug is taken (fixed site) and with the same drug — tissue-resident memory CD8+ T cells persist in the lesion"]),
+ ("Clinical features?", ["One or few round/oval, sharply demarcated, dusky violaceous plaques, sometimes bullous, within 30 min–8 h of drug intake; heal with persistent slate-grey/brown hyperpigmentation; sites: lips, genitalia, hands, feet", "Burning rather than itch"]),
+ ("Common culprit drugs (India)?", ["Fluoroquinolones (ciprofloxacin, ofloxacin), co-trimoxazole/sulfonamides, metronidazole/tinidazole, fluconazole, NSAIDs (paracetamol, mefenamic acid, oxicams), tetracyclines, barbiturates, dapsone, food colourants"]),
+ ("Variants?", ["Generalised bullous FDE (GBFDE — mimics TEN), non-pigmenting FDE (pseudoephedrine — symmetrical), linear, wandering, eczematous, urticarial, mucosal only, oral"]),
+ ("Investigations?", ["Clinical history; biopsy (interface dermatitis with dyskeratosis, eosinophils, marked pigment incontinence); patch test on the lesional site (post-lesion); oral provocation (only if essential and safe)"]),
+ ("Treatment?", ["Stop and avoid culprit (and related drugs), give written drug card", "Potent topical steroid for non-bullous lesions; wound care for erosions; GBFDE treated like SJS/TEN", "Pigmentation fades slowly; no reliable treatment — avoid re-exposure"]),
+ ],
+ spot=["Single dusky violaceous plaque on the glans recurring with ofloxacin — FDE"]),
+
+dict(case="Acute generalised exanthematous pustulosis (AGEP)", src=f"{DYP} (Fixed drug eruptions chapter — AGEP); {IA} ch.101",
+ qa=[
+ ("What is AGEP?", ["Toxic pustuloderma — severe cutaneous adverse reaction with acute onset (within 1–2 days of the drug) of hundreds of small sterile non-follicular pustules on oedematous erythema, starting in folds/face, with fever and neutrophilia"]),
+ ("Common causes?", ["Antibiotics (β-lactams, macrolides — commonest), hydroxychloroquine, terbinafine, diltiazem, carbamazepine, pristinamycin; infections and mercury exposure rarely"]),
+ ("Histopathology?", ["Subcorneal/intraepidermal spongiform pustules, papillary oedema, perivascular neutrophils and eosinophils, ± leukocytoclasis; no psoriasiform hyperplasia (vs pustular psoriasis)"]),
+ ("Differential diagnosis?", ["Generalised pustular psoriasis (history of psoriasis, slower onset, longer course), subcorneal pustular dermatosis, DRESS with pustules, SJS/TEN, pustular vasculitis, IgA pemphigus, impetigo (bullous)"]),
+ ("Scoring?", ["EuroSCAR AGEP validation score (morphology, course, histology)"]),
+ ("Treatment and course?", ["Stop culprit drug; resolves in 1–2 weeks with characteristic post-pustular collarette desquamation; supportive care, topical steroids; systemic steroids for severe or organ involvement (liver, kidney, lung)", "Patch testing positive in ~50% (useful)"]),
+ ],
+ spot=["Sheets of pinhead non-follicular pustules on erythema in folds after an antibiotic — AGEP"]),
+
+dict(case="Tattoo & tattoo reactions", src=f"{DYP} (Tattoo); {IA} ch.114",
+ qa=[
+ ("Types of tattoo?", ["Decorative/professional, amateur, cosmetic (permanent make-up), medical (radiotherapy markers), traumatic (asphalt, gunpowder, graphite — Collier's stripes in coal miners), natural/ritual"]),
+ ("Pigments and their reactions?", ["Black (carbon/iron oxide), red (mercury sulfide/cinnabar, azo dyes — commonest allergic reactions), yellow (cadmium — phototoxic), green (chromium), blue (cobalt)"]),
+ ("Skin diseases associated with tattoos?", ["Allergic (eczematous, lichenoid, granulomatous, pseudolymphomatous), photoallergic/phototoxic, sarcoidosis (tattoo sarcoid), Koebner phenomenon (psoriasis, LP, vitiligo), infections (pyogenic, HBV, HCV, HIV, warts, molluscum, NTM, leprosy, syphilis), keloid, malignancy rare"]),
+ ("Management of an inflamed tattoo?", ["Rule out infection (culture, biopsy), patch test with pigment; potent topical/intralesional steroids, tacrolimus; laser removal may worsen allergic reactions — surgical excision for persistent allergy"]),
+ ("Tattoo removal methods?", ["Q-switched/picosecond lasers (black — 1064 nm Nd:YAG; red — 532 nm; green — ruby 694/alexandrite 755 nm) using selective photothermolysis/photoacoustic effect", "Older: dermabrasion, salabrasion, excision, CO2 laser"]),
+ ("Complications of laser removal?", ["Paradoxical darkening of cosmetic tattoos (white/red iron/titanium oxide reduction), hypopigmentation, scarring, allergic reactions from released pigment"]),
+ ],
+ spot=["Lichenoid or granulomatous reaction confined to red parts of a tattoo — tattoo allergy"]),
+
+dict(case="Urticaria & angioedema", src=f"{DYP} (Urticaria); {IA} ch.37; EAACI/GA²LEN/EuroGuiDerm/APAAACI guideline",
+ qa=[
+ ("Classify urticaria.", ["Acute (<6 weeks) vs chronic (≥6 weeks)", "Chronic spontaneous urticaria (CSU) and chronic inducible urticaria (CIndU — dermographism, cold, heat, delayed pressure, solar, cholinergic, aquagenic, contact, vibratory)"]),
+ ("Pathogenesis of CSU?", ["Mast-cell activation by autoantibodies: type I autoimmunity (IgE against autoantigens like TPO, IL-24), type IIb (IgG against IgE or FcεRI); histamine and other mediators; also basophil abnormalities"]),
+ ("Urticaria vs urticarial vasculitis?", ["Urticaria: individual wheals last <24 h, itch, no residue", "Urticarial vasculitis: lesions >24 h, burning/pain, purpura and bruising on resolution, systemic features, low complement (hypocomplementaemic) — biopsy shows leukocytoclastic vasculitis"]),
+ ("Angioedema without wheals — causes?", ["Hereditary angioedema (C1-INH deficiency type I/II, normal C1-INH type III), acquired C1-INH deficiency (lymphoma, autoimmune), ACE inhibitor–induced (bradykinin-mediated — no response to antihistamines/steroids)"]),
+ ("Investigations in CSU?", ["Minimal: CBC, ESR/CRP, total IgE, anti-TPO IgG; further only if history suggests (thyroid, stool for parasites, autologous serum skin test, H. pylori)", "UAS7 to assess activity, UCT for control"]),
+ ("Treatment ladder (international guideline)?", ["Step 1: second-generation H1 antihistamine at standard dose", "Step 2: increase up to 4-fold", "Step 3: add omalizumab (300 mg every 4 weeks)", "Step 4: cyclosporine", "Short courses of oral steroids for severe exacerbations only; avoid NSAIDs/triggers"]),
+ ("Management of anaphylaxis/airway angioedema?", ["IM adrenaline 0.5 mg (1:1000) anterolateral thigh, repeat every 5 min; airway, oxygen, IV fluids; then antihistamine and steroid; HAE attacks — C1-INH concentrate, icatibant, ecallantide, FFP"]),
+ ],
+ spot=["Evanescent itchy wheals lasting less than 24 hours — urticaria"]),
+
+dict(case="Stevens–Johnson syndrome / TEN", src=f"{DYP} (Vesicobullous long case / drug reactions); {IA} ch.101",
+ qa=[
+ ("Define SJS, overlap and TEN.", ["Severe cutaneous adverse reaction with epidermal necrosis and mucosal involvement", "SJS: detachment <10% BSA; SJS/TEN overlap: 10–30%; TEN: >30%"]),
+ ("Common culprit drugs?", ["Allopurinol, carbamazepine (HLA-B*15:02 in Asians), phenytoin, lamotrigine, phenobarbital, sulfonamides (co-trimoxazole), nevirapine, oxicam NSAIDs, sulfasalazine; Mycoplasma in children (MIRM)", "Onset usually 4–28 days after starting the drug"]),
+ ("Clinical features?", ["Prodrome of fever, sore throat, burning eyes; painful dusky macules/flat atypical targets on trunk/face coalescing into sheets of epidermal detachment; Nikolsky and Asboe-Hansen positive; ≥2 mucosal sites (oral, ocular, genital) with haemorrhagic crusted lips"]),
+ ("Prognostic score?", ["SCORTEN (first 24 h and day 3): age ≥40, malignancy, heart rate ≥120, BSA detached >10% at day 1, serum urea >10 mmol/L, bicarbonate <20 mmol/L, glucose >14 mmol/L — each 1 point; mortality rises from ~3% (0–1) to >90% (≥5)"]),
+ ("Differential diagnosis?", ["SSSS (children, subcorneal split, mucosa spared), GBFDE, EM major, AGEP, paraneoplastic pemphigus, linear IgA bullous dermatosis (vancomycin), acute GVHD, DRESS"]),
+ ("Management?", ["Stop all suspect drugs immediately (ALDEN algorithm for causality), admit to burns/ICU setting", "Supportive: fluids (less than burns), warmed room, barrier nursing, non-adherent dressings, nutrition, pain control, eye care daily with ophthalmologist (lubricants, steroid drops, amniotic membrane), oral and genital care, avoid adhesives", "Specific (evidence variable): cyclosporine 3–5 mg/kg/day for 7–10 days (first line in Derma Desk ladder), IVIG, early short pulse steroids, etanercept (single 50 mg dose)"]),
+ ("Sequelae?", ["Ocular (dry eye, symblepharon, trichiasis, corneal scarring, blindness — most important), nail loss, scarring, pigmentary changes, genital adhesions/strictures, oesophageal and urethral strictures, psychological effects"]),
+ ("Prevention?", ["HLA-B*15:02 screening before carbamazepine in South-East Asians, HLA-B*58:01 before allopurinol (Han Chinese, Thai, Korean), HLA-B*57:01 before abacavir; allergy card; avoid structurally related drugs"]),
+ ],
+ spot=["Haemorrhagic crusted lips, conjunctivitis and sheets of epidermal detachment after carbamazepine — SJS/TEN"]),
+]

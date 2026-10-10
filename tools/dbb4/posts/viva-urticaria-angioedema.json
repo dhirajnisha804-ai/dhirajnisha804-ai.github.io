@@ -1,0 +1,16 @@
+{
+ "data": {
+  "section": "Viva",
+  "title": "Urticaria & angioedema — viva",
+  "caseName": "Urticaria & angioedema",
+  "summary": "Reactive & drug eruptions · 7 viva questions with answers",
+  "icon": "🎓",
+  "category": "Reactive & drug eruptions",
+  "order": 19125,
+  "body": "_Viva questions for the case: **Urticaria & angioedema** (Reactive & drug eruptions)_\n\n**Q1. Classify urticaria.**\n- Acute (<6 weeks) vs chronic (≥6 weeks)\n- Chronic spontaneous urticaria (CSU) and chronic inducible urticaria (CIndU — dermographism, cold, heat, delayed pressure, solar, cholinergic, aquagenic, contact, vibratory)\n\n**Q2. Pathogenesis of CSU?**\n- Mast-cell activation by autoantibodies: type I autoimmunity (IgE against autoantigens like TPO, IL-24), type IIb (IgG against IgE or FcεRI); histamine and other mediators; also basophil abnormalities\n\n**Q3. Urticaria vs urticarial vasculitis?**\n- Urticaria: individual wheals last <24 h, itch, no residue\n- Urticarial vasculitis: lesions >24 h, burning/pain, purpura and bruising on resolution, systemic features, low complement (hypocomplementaemic) — biopsy shows leukocytoclastic vasculitis\n\n**Q4. Angioedema without wheals — causes?**\n- Hereditary angioedema (C1-INH deficiency type I/II, normal C1-INH type III), acquired C1-INH deficiency (lymphoma, autoimmune), ACE inhibitor–induced (bradykinin-mediated — no response to antihistamines/steroids)\n\n**Q5. Investigations in CSU?**\n- Minimal: CBC, ESR/CRP, total IgE, anti-TPO IgG; further only if history suggests (thyroid, stool for parasites, autologous serum skin test, H. pylori)\n- UAS7 to assess activity, UCT for control\n\n**Q6. Treatment ladder (international guideline)?**\n- Step 1: second-generation H1 antihistamine at standard dose\n- Step 2: increase up to 4-fold\n- Step 3: add omalizumab (300 mg every 4 weeks)\n- Step 4: cyclosporine\n- Short courses of oral steroids for severe exacerbations only; avoid NSAIDs/triggers\n\n**Q7. Management of anaphylaxis/airway angioedema?**\n- IM adrenaline 0.5 mg (1:1000) anterolateral thigh, repeat every 5 min; airway, oxygen, IV fluids; then antihistamine and steroid; HAE attacks — C1-INH concentrate, icatibant, ecallantide, FFP\n\n## Quick spotter facts\n- Evanescent itchy wheals lasting less than 24 hours — urticaria\n\n_Sources: DYP Survival Guide for PG Dermatology Exam (Urticaria); IADVL Textbook of Dermatology 5e ch.37; EAACI/GA²LEN/EuroGuiDerm/APAAACI guideline. Answers written in our own words; check with your teachers' preferences._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791655432090,
+  "updatedAt": 1791655432215
+ }
+}

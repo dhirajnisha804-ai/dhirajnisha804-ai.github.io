@@ -1,0 +1,16 @@
+{
+ "data": {
+  "section": "Viva",
+  "title": "Stevens–Johnson syndrome / TEN — viva",
+  "caseName": "Stevens–Johnson syndrome / TEN",
+  "summary": "Reactive & drug eruptions · 8 viva questions with answers",
+  "icon": "🎓",
+  "category": "Reactive & drug eruptions",
+  "order": 19137,
+  "body": "_Viva questions for the case: **Stevens–Johnson syndrome / TEN** (Reactive & drug eruptions)_\n\n**Q1. Define SJS, overlap and TEN.**\n- Severe cutaneous adverse reaction with epidermal necrosis and mucosal involvement\n- SJS: detachment <10% BSA; SJS/TEN overlap: 10–30%; TEN: >30%\n\n**Q2. Common culprit drugs?**\n- Allopurinol, carbamazepine (HLA-B*15:02 in Asians), phenytoin, lamotrigine, phenobarbital, sulfonamides (co-trimoxazole), nevirapine, oxicam NSAIDs, sulfasalazine; Mycoplasma in children (MIRM)\n- Onset usually 4–28 days after starting the drug\n\n**Q3. Clinical features?**\n- Prodrome of fever, sore throat, burning eyes; painful dusky macules/flat atypical targets on trunk/face coalescing into sheets of epidermal detachment; Nikolsky and Asboe-Hansen positive; ≥2 mucosal sites (oral, ocular, genital) with haemorrhagic crusted lips\n\n**Q4. Prognostic score?**\n- SCORTEN (first 24 h and day 3): age ≥40, malignancy, heart rate ≥120, BSA detached >10% at day 1, serum urea >10 mmol/L, bicarbonate <20 mmol/L, glucose >14 mmol/L — each 1 point; mortality rises from ~3% (0–1) to >90% (≥5)\n\n**Q5. Differential diagnosis?**\n- SSSS (children, subcorneal split, mucosa spared), GBFDE, EM major, AGEP, paraneoplastic pemphigus, linear IgA bullous dermatosis (vancomycin), acute GVHD, DRESS\n\n**Q6. Management?**\n- Stop all suspect drugs immediately (ALDEN algorithm for causality), admit to burns/ICU setting\n- Supportive: fluids (less than burns), warmed room, barrier nursing, non-adherent dressings, nutrition, pain control, eye care daily with ophthalmologist (lubricants, steroid drops, amniotic membrane), oral and genital care, avoid adhesives\n- Specific (evidence variable): cyclosporine 3–5 mg/kg/day for 7–10 days (first line in Derma Desk ladder), IVIG, early short pulse steroids, etanercept (single 50 mg dose)\n\n**Q7. Sequelae?**\n- Ocular (dry eye, symblepharon, trichiasis, corneal scarring, blindness — most important), nail loss, scarring, pigmentary changes, genital adhesions/strictures, oesophageal and urethral strictures, psychological effects\n\n**Q8. Prevention?**\n- HLA-B*15:02 screening before carbamazepine in South-East Asians, HLA-B*58:01 before allopurinol (Han Chinese, Thai, Korean), HLA-B*57:01 before abacavir; allergy card; avoid structurally related drugs\n\n## Quick spotter facts\n- Haemorrhagic crusted lips, conjunctivitis and sheets of epidermal detachment after carbamazepine — SJS/TEN\n\n_Sources: DYP Survival Guide for PG Dermatology Exam (Vesicobullous long case / drug reactions); IADVL Textbook of Dermatology 5e ch.101. Answers written in our own words; check with your teachers' preferences._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791655432078,
+  "updatedAt": 1791655432215
+ }
+}

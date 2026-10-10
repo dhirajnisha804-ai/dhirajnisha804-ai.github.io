@@ -9,10 +9,11 @@ definition & synonyms · epidemiology · aetiopathogenesis · classification/var
 
 Slots
 - [done 10 Oct] Slot V1 (app wiring + 24): add "Viva" section, case↔post link, button on case page; Infections — bacterial (7), leprosy & cutaneous TB (2), viral (5), fungal (8), infestations (2)
-- Slot V2 (23): STI (5), eczemas (11), reactive & drug eruptions (7)
+- [done 10 Oct] Slot V2 (23): STI (5), eczemas (11), reactive & drug eruptions (7)
 - Slot V3 (24): papulosquamous & erythroderma (7), vesicobullous (1), connective tissue (8), vascular & ulcers (6), granulomatous (1), psychocutaneous (1)
 - Slot V4 (22): pigmentary (14), acne & appendageal (8)
 - Slot V5 (24): hair & nail (7), oral (1), nutritional & metabolic (4), disorders of keratinisation (7), premalignant & malignant (3), + 2 from nevi (acquired melanocytic nevus, congenital melanocytic nevus)
 - Slot V6 (23): remaining nevi & hamartomas (7), genodermatoses (8), benign tumours & cysts (8); final QA, build, publish note
 
 Rules: Wolverton-style rule here = DYP first, IADVL second; if they disagree, ask her (decide at slot end). Ask doubts at end of each slot.
+- Next session: start at Slot V3. IADVL text is extracted on her laptop at ~/iadvl/iadvl.txt (device shell); DYP Q&A text in container scratchpad viva/dyp_raw.txt (re-create with pdftotext from the uploaded DYP PDF if lost).
