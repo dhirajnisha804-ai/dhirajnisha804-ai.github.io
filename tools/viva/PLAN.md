@@ -8,7 +8,7 @@ Each post: likely viva questions with short model answers —
 definition & synonyms · epidemiology · aetiopathogenesis · classification/variants · key clinical signs & named signs · differential diagnosis (with distinguishing points) · investigations incl. histopathology & dermoscopy · treatment (link to Derma Desk ladder) · complications/prognosis · recent advances · spotter/photo questions · "examiner's favourites".
 
 Slots
-- Slot V1 (app wiring + 24): add "Viva" section, case↔post link, button on case page; Infections — bacterial (7), leprosy & cutaneous TB (2), viral (5), fungal (8), infestations (2)
+- [done 10 Oct] Slot V1 (app wiring + 24): add "Viva" section, case↔post link, button on case page; Infections — bacterial (7), leprosy & cutaneous TB (2), viral (5), fungal (8), infestations (2)
 - Slot V2 (23): STI (5), eczemas (11), reactive & drug eruptions (7)
 - Slot V3 (24): papulosquamous & erythroderma (7), vesicobullous (1), connective tissue (8), vascular & ulcers (6), granulomatous (1), psychocutaneous (1)
 - Slot V4 (22): pigmentary (14), acne & appendageal (8)

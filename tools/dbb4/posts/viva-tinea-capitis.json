@@ -1,0 +1,16 @@
+{
+ "data": {
+  "section": "Viva",
+  "title": "Tinea capitis — viva",
+  "caseName": "Tinea capitis",
+  "summary": "Fungal infections · 7 viva questions with answers",
+  "icon": "🎓",
+  "category": "Fungal infections",
+  "order": 22118,
+  "body": "_Viva questions for the case: **Tinea capitis** (Fungal infections)_\n\n**Q1. Types of hair invasion?**\n- Ectothrix: arthroconidia outside the shaft, destroy cuticle (Microsporum canis, M. audouinii, T. mentagrophytes, T. verrucosum)\n- Endothrix: arthroconidia inside the shaft, cuticle intact (T. tonsurans, T. violaceum, T. soudanense) — black-dot\n- Favus: hyphae and air spaces in shaft (T. schoenleinii)\n\n**Q2. Clinical types?**\n- Non-inflammatory: grey patch (ectothrix, scaly patches with broken hairs), black dot (endothrix), seborrhoeic/diffuse scaling type\n- Inflammatory: kerion (boggy, pustular, suppurative plaque with lymphadenopathy — can scar), agminate folliculitis\n- Favus: yellow cup-shaped crusts (scutula), mousy odour, scarring alopecia\n\n**Q3. Which fungi fluoresce under Wood's lamp?**\n- Green fluorescence: Microsporum canis, M. audouinii, M. ferrugineum, M. distortum; favus (T. schoenleinii) — dull blue-green\n- Non-fluorescent: T. tonsurans, T. violaceum, T. soudanense (endothrix)\n\n**Q4. Differential diagnosis?**\n- Seborrhoeic dermatitis, psoriasis, alopecia areata, trichotillomania, pityriasis amiantacea, impetigo, pyoderma/bacterial folliculitis (kerion), lupus/LPP, discoid lupus\n\n**Q5. Investigations?**\n- KOH of plucked hairs/scales (spores and hyphae), Wood's lamp, trichoscopy (comma hairs, corkscrew hairs, Morse-code hairs, zigzag hairs), culture\n\n**Q6. Treatment?**\n- Systemic therapy is always needed (topicals do not penetrate the follicle)\n- Griseofulvin microsize 20–25 mg/kg/day for 6–8 weeks (drug of choice for Microsporum)\n- Terbinafine weight-based (10–20 kg 62.5 mg; 20–40 kg 125 mg; >40 kg 250 mg) for 2–4 weeks (T. tonsurans; 8–12 weeks for M. canis)\n- Itraconazole 5 mg/kg/day; fluconazole 6 mg/kg/day\n- Adjuncts: 2% ketoconazole or 2.5% selenium sulfide shampoo for patient and family (reduce spore shedding); kerion — add short oral steroid if severe; no surgical drainage\n\n**Q7. Why is tinea capitis rare after puberty?**\n- Sebum fatty acids (fungistatic) increase at puberty\n\n## Quick spotter facts\n- Scaly patch of broken hairs in a child with green fluorescence — grey patch tinea capitis (Microsporum)\n\n_Sources: DYP Survival Guide for PG Dermatology Exam (Superficial fungal infection — tinea capitis); IADVL Textbook of Dermatology 5e ch.18; Wolverton 4e Table 10.5. Answers written in our own words; check with your teachers' preferences._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791655224988,
+  "updatedAt": 1791655225106
+ }
+}

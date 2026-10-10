@@ -1,0 +1,16 @@
+{
+ "data": {
+  "section": "Viva",
+  "title": "Chickenpox (varicella) — viva",
+  "caseName": "Chickenpox (varicella)",
+  "summary": "Viral infections · 9 viva questions with answers",
+  "icon": "🎓",
+  "category": "Viral infections",
+  "order": 21130,
+  "body": "_Viva questions for the case: **Chickenpox (varicella)** (Viral infections)_\n\n**Q1. Why is it chickenpox?**\n- Fever followed by crops of itchy lesions in different stages (macule → papule → vesicle 'dew drop on rose petal' → pustule → crust), centripetal distribution (trunk > face/limbs), mucosal involvement, scalp involvement\n\n**Q2. Causative agent and transmission?**\n- Varicella-zoster virus (HHV-3) — airborne/droplet and vesicle fluid; infectious from 1–2 days before rash until all lesions crust; incubation 10–21 days\n\n**Q3. Difference from smallpox?**\n- Smallpox: lesions in same stage, centrifugal, deep-seated, palms/soles involved, severe prodrome — eradicated 1980\n\n**Q4. Differential diagnosis?**\n- Disseminated herpes simplex/zoster, hand-foot-and-mouth disease, PLEVA (Mucha–Habermann), insect bite reactions, rickettsial pox, eczema herpeticum, impetigo, drug eruptions\n\n**Q5. Tzanck smear findings?**\n- Multinucleated giant cells and intranuclear inclusions (Cowdry type A) — same as HSV\n\n**Q6. Complications?**\n- Secondary bacterial infection (commonest), scarring, pneumonia (adults, smokers, pregnancy), encephalitis/cerebellar ataxia, Reye syndrome (aspirin), hepatitis, purpura fulminans, congenital varicella syndrome (first 20 weeks), neonatal varicella (maternal rash 5 days before to 2 days after delivery)\n\n**Q7. Management?**\n- Children: symptomatic (calamine, antihistamines, paracetamol — avoid aspirin); acyclovir 20 mg/kg four times daily × 5 days in adolescents/adults, secondary cases in households, chronic skin/lung disease\n- Immunocompromised/pregnant/pneumonia: IV acyclovir 10 mg/kg 8-hourly\n- Post-exposure: vaccine within 3–5 days, VZIG within 10 days for high-risk\n\n**Q8. Vaccines available?**\n- Live attenuated varicella vaccine (Oka strain) 2 doses (12–15 months and 4–6 years); MMRV; zoster vaccines (recombinant Shingrix) for adults\n\n**Q9. Diseases caused by poxviruses (as asked in DYP)?**\n- Smallpox, mpox (monkeypox), cowpox, vaccinia, molluscum contagiosum, orf, milker's nodule — chickenpox is NOT a poxvirus (it is a herpesvirus)\n\n## Quick spotter facts\n- Polymorphic crops of vesicles ('dew drop on rose petal') — varicella\n\n_Sources: DYP Survival Guide for PG Dermatology Exam (Chicken pox); IADVL Textbook of Dermatology 5e ch.20–21. Answers written in our own words; check with your teachers' preferences._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791655224976,
+  "updatedAt": 1791655225106
+ }
+}

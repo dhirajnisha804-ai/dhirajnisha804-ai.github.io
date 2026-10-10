@@ -1,0 +1,16 @@
+{
+ "data": {
+  "section": "Viva",
+  "title": "Warts (verruca) — viva",
+  "caseName": "Warts (verruca)",
+  "summary": "Viral infections · 8 viva questions with answers",
+  "icon": "🎓",
+  "category": "Viral infections",
+  "order": 21135,
+  "body": "_Viva questions for the case: **Warts (verruca)** (Viral infections)_\n\n**Q1. What are warts and what causes them?**\n- Benign epidermal proliferations caused by human papillomavirus (HPV — DNA virus, >200 types) infecting basal keratinocytes through microabrasions\n\n**Q2. Clinical types and HPV types?**\n- Verruca vulgaris (HPV 2, 4, 27, 57), plantar/myrmecia (HPV 1), plane/flat warts (HPV 3, 10), filiform/digitate (face), periungual, mosaic warts, butcher's warts (HPV 7)\n- Anogenital: HPV 6, 11 (low risk); 16, 18 (high risk)\n- Epidermodysplasia verruciformis: HPV 5, 8\n\n**Q3. Why is it a wart and not a corn?**\n- Paring a wart shows black dots (thrombosed capillaries) and interruption of skin lines; corn has a central translucent core, painful on direct pressure, skin lines preserved; lateral squeeze painful in wart\n\n**Q4. Histopathology?**\n- Hyperkeratosis, papillomatosis, acanthosis, parakeratosis over papillae ('church spire'), koilocytes (vacuolated cells with perinuclear halo), large keratohyaline granules, inward-pointing rete ridges\n\n**Q5. Treatment options?**\n- Destructive: salicylic acid 15–26% paint, cryotherapy, electrocautery, laser, TCA, cantharidin, curettage\n- Antiproliferative: 5-FU, bleomycin intralesional (1 U/mL), podophyllotoxin (genital), retinoids (plane warts)\n- Immunotherapy: imiquimod, intralesional MMR/Candida antigen/PPD/Mw vaccine, DPCP/SADBE, cimetidine, zinc, HPV vaccine (off-label)\n\n**Q6. What is Koebner phenomenon in warts?**\n- Pseudo-Koebner — linear warts along scratch marks due to autoinoculation (also seen in molluscum)\n\n**Q7. Warts in special situations?**\n- Children: many regress spontaneously (2/3 in 2 years) — gentle treatments\n- Immunocompromised/transplant: extensive, recalcitrant, risk of SCC\n- Pregnancy: cryotherapy/TCA; avoid podophyllin\n\n**Q8. Prevention?**\n- HPV vaccine (quadrivalent/9-valent) prevents anogenital warts; avoid sharing footwear, cover warts in pools\n\n## Quick spotter facts\n- Rough hyperkeratotic papule with black dots — verruca vulgaris\n\n_Sources: DYP Survival Guide for PG Dermatology Exam (Anogenital warts; topical agents — 5-FU, bleomycin); IADVL Textbook of Dermatology 5e ch.20. Answers written in our own words; check with your teachers' preferences._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791655224971,
+  "updatedAt": 1791655225106
+ }
+}
