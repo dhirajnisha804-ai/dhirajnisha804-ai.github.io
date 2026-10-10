@@ -53,3 +53,4 @@ make.py: entries with merge_into are rendered as a "Topical form" section inside
 - Merged existing pairs: ivermectin, minocycline, methoxsalen, tofacitinib, triamcinolone, hydrocortisone.
 - Added: dapsone (+gel), clofazimine, rifampicin, MDT regimens, newer antileprosy drugs, INH, PZA, ethambutol, streptomycin, cutaneous TB regimens (NTEP daily), second-line ATT, NTM regimens.
 - Flags: MDT/NLEP regimen updates (3-drug PB); Khopkar DOTS thrice-weekly vs current NTEP daily — current given.
+- MDT updated to NLEP revised classification & 3-drug PB/MB regimen effective 1 Apr 2025 (MoHFW DGHS NLEP page; DO letter 6 Mar 2025). TB post: only current NTEP daily regimen (old DOTS note removed).
