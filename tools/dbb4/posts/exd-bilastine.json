@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Bilastine",
+  "summary": "IX Antihistaminics · Second-generation H1 antihistamine (piperidine; newer agent)",
+  "icon": "💊",
+  "category": "Oral · IX Antihistaminics",
+  "order": 2017,
+  "body": "_Oral · IX Antihistaminics_\n\n**Class:** Second-generation H1 antihistamine (piperidine; newer agent)\n\n## Mechanism of action\n- Highly selective H1 inverse agonist; P-glycoprotein substrate, so very little reaches the brain\n- Also some anti-inflammatory effects on mast-cell mediator release\n\n## Pharmacokinetics\n- Not metabolised (no CYP involvement); excreted unchanged\n- Food and fruit juice greatly reduce absorption — take 1 h before or 2 h after food or juice\n- Half-life about 14 h; once daily\n\n## Indications in dermatology & STI\n- Chronic urticaria and allergic rhinitis\n- People who need to drive or operate machinery\n\n## Dose & formulations\n- Adults and children over 12 years: 20 mg once daily on an empty stomach (updosing up to 80 mg in urticaria per guidelines)\n- Children 6–11 years (over 20 kg): 10 mg daily\n\n## Adverse effects\n- Headache, drowsiness (rare), abdominal pain\n- No QT effect at standard or 4 times the dose\n\n## Contraindications\n- Hypersensitivity\n\n## Drug interactions\n- P-gp inhibitors (erythromycin, ketoconazole, cyclosporine, diltiazem) raise levels\n- Grapefruit and other fruit juices lower absorption\n\n## Monitoring\n- None\n\n## Pregnancy & lactation\nInsufficient data — avoid; prefer loratadine or cetirizine.\n\n## Viva points\n- Not metabolised — no CYP interactions\n- Take on an empty stomach\n- Non-sedating; safe for drivers\n\n## Note on sources\nBilastine is in neither book; product data and international urticaria guidelines were used.\n\n_Sources: Not covered in Wolverton 4e or Khopkar; product information and urticaria guidelines (EAACI/GA²LEN) used. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791648472833,
+  "updatedAt": 1791648474850
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Dutasteride",
+  "summary": "VIII Antiandrogen · Dual 5α-reductase inhibitor (types I and II)",
+  "icon": "💊",
+  "category": "Oral · VIII Antiandrogen",
+  "order": 2012,
+  "body": "_Oral · VIII Antiandrogen_\n\n**Class:** Dual 5α-reductase inhibitor (types I and II)\n\n## Mechanism of action\n- Inhibits both type I (sebaceous glands, skin) and type II (hair follicle, prostate) 5α-reductase\n- Lowers serum DHT by more than 90% — more than finasteride\n\n## Pharmacokinetics\n- Very long half-life (about 5 weeks); effect persists for months after stopping\n- Metabolised by CYP3A4\n\n## Indications in dermatology & STI\n- Male androgenetic alopecia (approved in Korea/Japan at 0.5 mg; off-label elsewhere) — slightly more effective than finasteride\n- Female pattern hair loss in post-menopausal women (off-label)\n- Mesotherapy (intradermal dutasteride) for AGA\n- Benign prostatic hyperplasia\n\n## Dose & formulations\n- 0.5 mg once daily (some use 0.5 mg 2–3 times a week); soft capsules should not be opened\n\n## Adverse effects\n- Sexual side effects (similar to or slightly more than finasteride)\n- Gynaecomastia, breast tenderness\n- PSA lowered by about 50%\n\n## Contraindications\n- Women of childbearing potential and pregnancy; children\n- Men should not donate blood for 6 months after the last dose (long half-life)\n\n## Drug interactions\n- Strong CYP3A4 inhibitors (ritonavir, ketoconazole) raise levels\n\n## Monitoring\n- Baseline PSA in older men\n\n## Pregnancy & lactation\nContraindicated (old FDA category X). Pregnant women should not handle leaking capsules.\n\n## Viva points\n- Blocks both isoenzymes — more DHT suppression than finasteride\n- Very long half-life — no blood donation for 6 months after stopping\n\n_Sources: Wolverton 4e ch.34; Khopkar (Miscellaneous agents). Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791648472838,
+  "updatedAt": 1791648474850
+ }
+}
