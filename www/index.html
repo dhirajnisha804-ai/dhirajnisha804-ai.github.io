@@ -1,6 +1,6 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#14324d">
 <link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<meta name="drx-build" content="202610091941">
+<meta name="drx-build" content="202610101320">
 <script src="config.js"></script>
 <script>window.DRX_OCR=(b=>({lib:b+"tesseract.min.js",worker:b+"worker.min.js",core:b,lang:b}))(new URL("vendor/tesseract/",location.href).href);</script>
 <script src="vendor/firebase-app-compat.js"></script><script src="vendor/firebase-auth-compat.js"></script><script src="vendor/firebase-firestore-compat.js"></script>
@@ -257,6 +257,7 @@ header.top #btnMoreTop{margin-left:-4px}
 .favrow{display:flex;align-items:center;gap:4px}.favrow .pick{flex:1;min-width:0}
 .dxsug{border:1px solid var(--line);border-radius:12px;background:var(--card,#fff);margin-top:4px;max-height:260px;overflow:auto;box-shadow:0 6px 18px rgba(0,0,0,.12)}.dxopt{display:block;width:100%;text-align:left;padding:10px 12px;border:0;border-bottom:1px solid var(--line);background:none;font:inherit;color:inherit;cursor:pointer}.dxopt:last-child{border-bottom:0}.dxnew{color:var(--accent,#1f5f8b);font-weight:600}
 .lxpick{display:flex;gap:10px;align-items:flex-start;cursor:pointer}.lxview{cursor:default}.lxpick input{margin-top:3px;width:18px;height:18px;flex:none}.lxrx{list-style:none;padding-left:0}
+.rcfig{margin:10px 0;text-align:center}.rcfig img{max-width:100%;max-height:300px;border-radius:12px;border:1px solid var(--line);background:#fff}.rcfig figcaption{font-size:12px;color:var(--muted);margin-top:4px}.pthumb{width:52px;height:52px;object-fit:contain;border-radius:10px;background:#fff;border:1px solid var(--line);flex:none}
 .rvbadge{display:inline-block;font-size:10.5px;font-weight:700;color:#9a3412;background:#ffedd5;border-radius:5px;padding:1px 6px;margin-left:6px;vertical-align:middle}
 .newb{font-size:10px;font-weight:700;color:#fff;background:#3fb5ad;border-radius:5px;padding:1px 6px;margin-left:6px;vertical-align:middle}
 .pcard{display:flex;gap:12px;align-items:center;text-align:left;width:100%;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:11px 12px;cursor:pointer;color:var(--fg)}
@@ -1272,7 +1273,8 @@ async function loadReviewed(){ try{ const d=await S.db?.collection("meta").doc("
 
 /* ---------- Resident Corner ---------- */
 S.posts = S.posts || []; S.cornerTab = S.cornerTab || "Procedures";
-const CORNER_SECS=["Articles","Procedures","Updates"];
+const CORNER_SECS=["Articles","Procedures","Instruments","Updates"];
+const assetUrl = u => /^(https?:|data:|\/_blob\/)/.test(u||"") ? u : ((/github\.io|localhost|127\.0\.0\.1/.test(location.host) ? "" : "https://dhirajnisha804-ai.github.io/") + u);
 const isAdmin = () => window.DRX ? !!window.DRX.isAdmin : true;
 const isNewPost = p => (Date.now()-(p.createdAt||0)) < 14*864e5;
 function mdLite(src){
@@ -1282,13 +1284,14 @@ function mdLite(src){
   lines.forEach(l=>{ const t=l.trim();
     if(!t){ close(); return; }
     if(t.startsWith("## ")){ close(); html+=`<h3 class="rch">${inl(t.slice(3))}</h3>`; return; }
+    let im=t.match(/^!\[(.*?)\]\((.+?)\)$/); if(im){ close(); html+=`<figure class="rcfig"><img src="${esc(assetUrl(im[2]))}" alt="${esc(im[1])}" loading="lazy"><figcaption>${esc(im[1])}</figcaption></figure>`; return; }
     let m=t.match(/^- (.*)/); if(m){ if(list!=="ul"){ close(); html+="<ul>"; list="ul"; } html+=`<li>${inl(m[1])}</li>`; return; }
     m=t.match(/^\d+\.\s+(.*)/); if(m){ if(list!=="ol"){ close(); html+="<ol>"; list="ol"; } html+=`<li>${inl(m[1])}</li>`; return; }
     close(); html+=`<p>${inl(t)}</p>`; });
   close(); return html;
 }
 function cornerShell(){
-  return `${banner()}${carouselHTML()}<div class="viewhead"><div><h2>Resident Corner</h2><p>Articles, procedures and updates</p></div>${isAdmin()?`<button class="btn primary" data-act="newpost">${ICON.plus}Post</button>`:""}</div>
+  return `${banner()}${carouselHTML()}<div class="viewhead"><div><h2>Resident Corner</h2><p>Articles, procedures, instruments and updates</p></div>${isAdmin()?`<button class="btn primary" data-act="newpost">${ICON.plus}Post</button>`:""}</div>
   <label class="search">${ICON.search}<input id="qPost" type="search" placeholder="Search posts" aria-label="Search posts" autocomplete="off"></label>
   <div class="chips segs">${CORNER_SECS.map(s=>`<button class="chip" data-csec="${s}" aria-pressed="${S.cornerTab===s}">${s} <span style="opacity:.6">${S.posts.filter(p=>p.section===s&&(isAdmin()||!p.draft)).length}</span></button>`).join("")}</div><div id="postList"></div>`;
 }
@@ -1296,8 +1299,8 @@ function fillCorner(){
   wireCarousel();
   document.querySelectorAll("[data-csec]").forEach(b=>b.setAttribute("aria-pressed", b.dataset.csec===S.cornerTab));
   const q=($("#qPost")?.value||"").toLowerCase().trim();
-  const arr=S.posts.filter(p=>isAdmin()||!p.draft).filter(p=>q ? (p.title+" "+p.summary+" "+p.body).toLowerCase().includes(q) : p.section===S.cornerTab).sort((a,b)=>(b.createdAt||0)-(a.createdAt||0)||(a.title||"").localeCompare(b.title||""));
-  $("#postList").innerHTML = arr.length ? `<div class="stack" style="margin-top:10px">${arr.map(p=>`<button class="pcard" data-post="${esc(p.id)}"><span class="pico">${esc(p.icon||"📄")}</span><span class="main"><span class="t">${esc(p.title)}${isNewPost(p)?`<span class="newb">NEW</span>`:""}${p.draft?`<span class="rvbadge">Draft</span>`:""}</span><span class="s">${esc(p.summary||"")}</span></span></button>`).join("")}</div>` : `<div class="empty">${S.loaded.posts===false?"Loading…":"Nothing here yet."}</div>`;
+  const arr=S.posts.filter(p=>isAdmin()||!p.draft).filter(p=>q ? (p.title+" "+p.summary+" "+p.body).toLowerCase().includes(q) : p.section===S.cornerTab).sort((a,b)=> (!q&&S.cornerTab==="Instruments") ? (a.title||"").localeCompare(b.title||"") : ((b.createdAt||0)-(a.createdAt||0)||(a.title||"").localeCompare(b.title||"")));
+  $("#postList").innerHTML = arr.length ? `<div class="stack" style="margin-top:10px">${arr.map(p=>`<button class="pcard" data-post="${esc(p.id)}">${p.image?`<img class="pthumb" src="${esc(assetUrl(p.image))}" alt="" loading="lazy">`:`<span class="pico">${esc(p.icon||"📄")}</span>`}<span class="main"><span class="t">${esc(p.title)}${isNewPost(p)?`<span class="newb">NEW</span>`:""}${p.draft?`<span class="rvbadge">Draft</span>`:""}</span><span class="s">${esc(p.summary||"")}</span></span></button>`).join("")}</div>` : `<div class="empty">${S.loaded.posts===false?"Loading…":"Nothing here yet."}</div>`;
 }
 function openPost(id){
   const p=S.posts.find(x=>x.id===id); if(!p) return;

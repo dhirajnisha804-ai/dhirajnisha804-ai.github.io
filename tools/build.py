@@ -74,6 +74,10 @@ else:
     for f in glob.glob(V + "/tesseract/*"): shutil.copy(f, OUT + "/vendor/tesseract/")
 for f in glob.glob(HERE + "/src/icons/*.png"): shutil.copy(f, OUT + "/icons/")
 shutil.copy(HERE + "/src/manifest.webmanifest", OUT)
+# instrument photos for Resident Corner → Instruments
+if os.path.isdir(HERE + "/src/instruments"):
+    os.makedirs(OUT + "/instruments", exist_ok=True)
+    for f in glob.glob(HERE + "/src/instruments/*.jpg"): shutil.copy(f, OUT + "/instruments/")
 # legal pages (public links for Play Store and in-app)
 _LH=open(HERE+"/src/legal/_head.html",encoding="utf-8").read()
 for _n,_t in (("privacy","Privacy policy"),("terms","Terms of use")):
