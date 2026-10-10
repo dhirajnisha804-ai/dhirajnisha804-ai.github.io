@@ -1,4 +1,4 @@
-# Viva notes for all 140 cases — plan (start Monday 12 Oct 2026)
+# Viva notes for all 140 cases — plan (start Wednesday 14 Oct 2026)
 
 Sources: DYP Survival Guide for PG Dermatology Examination (main, Q&A style; text in scratchpad ins/dyp.txt and uploaded PDF) + IADVL Textbook (on her laptop: DERMATOLOGY BOOKS / new iadvl — needs computer linked or upload). Rook's only if both are silent. Own words; drafts until she approves.
 
