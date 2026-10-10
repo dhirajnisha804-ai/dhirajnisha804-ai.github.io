@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Streptomycin",
+  "summary": "Antituberculous drugs · Aminoglycoside antibiotic (first aminoglycoside); injectable antituberculous drug",
+  "icon": "💊",
+  "category": "More from Khopkar · Antituberculous drugs",
+  "order": 6009,
+  "body": "_More from Khopkar · Antituberculous drugs_\n\n**Class:** Aminoglycoside antibiotic (first aminoglycoside); injectable antituberculous drug\n\n## Mechanism of action\n- Binds the 30S ribosomal subunit → misreading of mRNA → bactericidal for extracellular bacilli\n\n## Indications in dermatology & STI\n- TB (now rarely; previously in retreatment regimens)\n- Plague, tularaemia, brucellosis (with doxycycline)\n- Donovanosis and mycetoma (historical/alternative regimens)\n\n## Dose & formulations\n- 15 mg/kg IM daily (max 1 g; 0.75 g in older patients)\n\n## Adverse effects\n- Ototoxicity — mainly vestibular (vertigo, ataxia), also hearing loss\n- Nephrotoxicity (less than other aminoglycosides), neuromuscular blockade\n- Hypersensitivity rashes, contact dermatitis in health workers handling it\n\n## Contraindications\n- Pregnancy (fetal deafness), myasthenia gravis, pre-existing hearing/vestibular disease\n\n## Drug interactions\n- Other ototoxic/nephrotoxic drugs (loop diuretics, vancomycin, amphotericin B)\n\n## Monitoring\n- Hearing, balance, renal function\n\n## Pregnancy & lactation\nContraindicated (old FDA category D — congenital deafness).\n\n## Viva points\n- Vestibular toxicity — the classic streptomycin side effect\n- Contraindicated in pregnancy\n\n_Sources: Khopkar ch.7; Wolverton 4e ch.9 (aminoglycosides). Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791652399976,
+  "updatedAt": 1791652405985
+ }
+}

@@ -46,3 +46,10 @@ Removed: lymecycline, bilastine, montelukast, eberconazole, TXA+peptides+niacina
 Kept despite being in neither book because the user asked for them specifically: STI kits (NACO), Histoglob (her dosing card), minocycline 4% foam (renamed from gel/foam).
 Sources corrected (found in the books after re-check): ozenoxacin (Wolverton ch.41), tofacitinib 2% ointment (Wolverton ch.18), decapeptide/bFGF (Khopkar topical immunomodulators).
 Total exam drug posts: 125.
+
+## "More from Khopkar" (drugs in Khopkar but not on the exam lists) — user: add all, slot-wise; systemic + topical of same drug under one heading
+make.py: entries with merge_into are rendered as a "Topical form" section inside the target post (optional title override).
+### Slot 6 (done)
+- Merged existing pairs: ivermectin, minocycline, methoxsalen, tofacitinib, triamcinolone, hydrocortisone.
+- Added: dapsone (+gel), clofazimine, rifampicin, MDT regimens, newer antileprosy drugs, INH, PZA, ethambutol, streptomycin, cutaneous TB regimens (NTEP daily), second-line ATT, NTM regimens.
+- Flags: MDT/NLEP regimen updates (3-drug PB); Khopkar DOTS thrice-weekly vs current NTEP daily — current given.

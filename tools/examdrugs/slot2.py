@@ -189,7 +189,7 @@ dict(name="Thalidomide", group="Oral · VI Immunosuppressants",
        "Mechanism: cereblon binding, TNF-α reduction, anti-angiogenesis"],
  src=f"{W} ch.40 (Miscellaneous systemic drugs); {K} (Miscellaneous agents)"),
 
-dict(name="Tofacitinib", group="Oral · VI Immunosuppressants",
+dict(name="Tofacitinib", title="Tofacitinib (oral + 2% ointment)", group="Oral · VI Immunosuppressants",
  cls="Janus kinase (JAK) inhibitor — mainly JAK1 and JAK3 (pan-JAK at higher doses)",
  moa=["Blocks JAK enzymes that pass on signals from cytokine receptors",
       "So STAT proteins are not activated, and responses to IL-2, IL-4, IL-6, IL-7, IL-15, IL-21 and interferons are reduced",
@@ -508,7 +508,7 @@ dict(name="Loratadine", group="Oral · IX Antihistaminics",
  src=f"{W} ch.32; {K} (Antihistamines)"),
 
 # ---------------- X PHOTOCHEMOTHERAPY ----------------
-dict(name="Methoxsalen (8-MOP, oral)", group="Oral · X Photochemotherapy",
+dict(name="Methoxsalen (8-MOP, oral)", title="Methoxsalen (8-MOP) — oral and topical PUVA", group="Oral · X Photochemotherapy",
  cls="Psoralen (furocoumarin) photosensitiser; used with UVA (PUVA)",
  moa=["Intercalates between DNA base pairs; after UVA exposure it forms monofunctional adducts and then cross-links between DNA strands",
       "Result: inhibits DNA synthesis and keratinocyte proliferation; apoptosis of activated T cells; immunosuppression",

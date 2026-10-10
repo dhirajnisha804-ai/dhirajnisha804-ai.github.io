@@ -142,7 +142,7 @@ dict(name="Doxycycline", group="Oral · II Antibiotics — a) Tetracyclines",
  src=f"{W} ch.9 (Systemic antibacterial agents); {K} ch.1",
  note="Khopkar says doxycycline lacks the anti-inflammatory effect of tetracycline. Wolverton describes clear anti-inflammatory actions (the basis of sub-antimicrobial dosing). We follow Wolverton."),
 
-dict(name="Minocycline", group="Oral · II Antibiotics — a) Tetracyclines",
+dict(name="Minocycline", title="Minocycline (oral + topical foam)", group="Oral · II Antibiotics — a) Tetracyclines",
  cls="Second-generation semisynthetic tetracycline — the most lipophilic",
  moa=["Binds the 30S ribosome and blocks protein synthesis (bacteriostatic)",
       "Anti-inflammatory: inhibits MMPs, neutrophil chemotaxis and lymphocyte activity",
@@ -712,7 +712,7 @@ dict(name="Nevirapine", group="Oral · IV Antivirals — Antiretroviral (ART)",
  src=f"{K} ch.4; {W} ch.3, ch.11 and ch.67; check current NACO guidelines"),
 
 # ---------------- V ANTIPARASITIC ----------------
-dict(name="Ivermectin", group="Oral · V Antiparasitic",
+dict(name="Ivermectin", title="Ivermectin (oral + topical)", group="Oral · V Antiparasitic",
  cls="Macrocyclic lactone (semisynthetic avermectin from Streptomyces avermitilis)",
  moa=["Binds glutamate-gated chloride channels in invertebrate nerve and muscle cells (also GABA-gated channels)",
       "Increases chloride entry → hyperpolarisation → paralysis and death of the parasite",

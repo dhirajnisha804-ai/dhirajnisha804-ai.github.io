@@ -262,7 +262,7 @@ dict(name="Fusidic acid 2% cream", group="Topicals · II Antibacterials",
        "Good penetration through crusts"],
  src=f"{W} ch.41; {K} ch.18"),
 
-dict(name="Minocycline 4% topical foam", group="Topicals · II Antibacterials",
+dict(name="Minocycline 4% topical foam", merge_into="Minocycline", form_label="Topical form", group="Topicals · II Antibacterials",
  cls="Tetracycline antibiotic in a hydrophobic foam base (topical minocycline foam)",
  moa=["Binds the 30S ribosome; anti-inflammatory (MMP inhibition, neutrophil effects)",
       "Topical delivery gives high follicular levels with negligible blood levels — avoids systemic minocycline side effects"],
@@ -300,7 +300,7 @@ dict(name="Permethrin (5% cream, 1% creme rinse)", group="Topicals · III Antipa
        "Itch persisting 2–4 weeks is expected"],
  src=f"{W} ch.44 (Topical antiparasitic agents); {K} ch.21"),
 
-dict(name="Ivermectin 1% cream (and 0.5% lotion)", group="Topicals · III Antiparasitics",
+dict(name="Ivermectin 1% cream (and 0.5% lotion)", merge_into="Ivermectin", form_label="Topical form", group="Topicals · III Antiparasitics",
  cls="Macrocyclic lactone (avermectin) — topical",
  moa=["Binds glutamate-gated chloride channels in invertebrates → paralysis of Demodex mites and lice",
       "Anti-inflammatory effects (reduces neutrophil activity and cytokines)"],
@@ -372,7 +372,7 @@ dict(name="Topical corticosteroids — overview & potency", group="Topicals · I
        "Contact allergy to steroids — suspect when eczema fails to respond"],
  src=f"{W} ch.45 (Topical corticosteroids); {K} ch.22 (Topical and intralesional corticosteroids)"),
 
-dict(name="Hydrocortisone acetate 1% lotion/cream", group="Topicals · IV Topical corticosteroids",
+dict(name="Hydrocortisone acetate 1% lotion/cream", merge_into="Hydrocortisone sodium succinate injection", form_label="Topical form", group="Topicals · IV Topical corticosteroids",
  cls="Least potent topical steroid (US class 7; UK 'mild'); non-fluorinated",
  moa=["Glucocorticoid receptor agonist — mild anti-inflammatory action with very little atrophy"],
  uses=["Face, eyelids, flexures, genitals and nappy area",
@@ -417,7 +417,7 @@ dict(name="Mometasone furoate 0.1% (cream, ointment, lotion)", group="Topicals �
        "Cream class 4 vs ointment class 2 — vehicle changes potency"],
  src=f"{W} ch.45; {K} ch.22"),
 
-dict(name="Triamcinolone acetonide (cream, lotion, paste)", group="Topicals · IV Topical corticosteroids",
+dict(name="Triamcinolone acetonide (cream, lotion, paste)", merge_into="Triamcinolone acetonide injection", form_label="Topical form", group="Topicals · IV Topical corticosteroids",
  cls="Medium-potency fluorinated steroid (0.1% cream/lotion US class 5; ointment class 4)",
  moa=["Glucocorticoid receptor agonist (acetonide group)"],
  uses=["Cream/lotion 0.1%: eczema, psoriasis, lichen planus, insect bite reactions, body and scalp (lotion)",

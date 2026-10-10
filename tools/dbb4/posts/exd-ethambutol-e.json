@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Ethambutol (E)",
+  "summary": "Antituberculous drugs · Ethylenediamine derivative; first-line antituberculous drug",
+  "icon": "💊",
+  "category": "More from Khopkar · Antituberculous drugs",
+  "order": 6008,
+  "body": "_More from Khopkar · Antituberculous drugs_\n\n**Class:** Ethylenediamine derivative; first-line antituberculous drug\n\n## Mechanism of action\n- Inhibits arabinosyl transferase → blocks arabinogalactan synthesis in the mycobacterial cell wall (bacteriostatic)\n- Mainly prevents resistance to other drugs\n\n## Indications in dermatology & STI\n- TB (intensive and continuation phases in India's daily regimen), cutaneous TB\n- Atypical mycobacteria (M. marinum with clarithromycin; MAC)\n\n## Dose & formulations\n- 15 mg/kg/day (range 15–25) in fixed-dose combinations\n- Reduce dose/interval in renal impairment\n\n## Adverse effects\n- Optic (retrobulbar) neuritis: reduced visual acuity and red–green colour blindness (dose-related, usually reversible if stopped early)\n- Hyperuricaemia, peripheral neuropathy, rash (rare)\n\n## Contraindications\n- Pre-existing optic neuritis; young children who cannot report visual symptoms (relative)\n\n## Drug interactions\n- Aluminium antacids reduce absorption\n\n## Monitoring\n- Visual acuity and colour vision (Ishihara) at baseline and monthly\n\n## Pregnancy & lactation\nSafe in pregnancy.\n\n## Viva points\n- Optic neuritis — red–green colour vision test\n- Used with clarithromycin for M. marinum\n\n_Sources: Khopkar ch.7; Wolverton 4e ch.9. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791652399977,
+  "updatedAt": 1791652405985
+ }
+}

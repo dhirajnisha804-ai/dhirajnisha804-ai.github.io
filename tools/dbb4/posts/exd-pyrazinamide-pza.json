@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Pyrazinamide (PZA)",
+  "summary": "Antituberculous drugs · Nicotinamide analogue; first-line antituberculous drug",
+  "icon": "💊",
+  "category": "More from Khopkar · Antituberculous drugs",
+  "order": 6007,
+  "body": "_More from Khopkar · Antituberculous drugs_\n\n**Class:** Nicotinamide analogue; first-line antituberculous drug\n\n## Mechanism of action\n- Prodrug converted by mycobacterial pyrazinamidase to pyrazinoic acid, which is active in acidic environments (inside macrophages and caseous lesions)\n- Disrupts membrane energy and trans-translation → kills semi-dormant bacilli — key to the 6-month short-course regimen\n\n## Indications in dermatology & STI\n- Intensive phase of TB treatment (first 2 months), including cutaneous TB\n- Not effective against M. bovis (naturally resistant) — relevant for BCG complications\n\n## Dose & formulations\n- 25 mg/kg/day (range 20–30) in fixed-dose combinations\n\n## Adverse effects\n- Hepatotoxicity (dose-related) — the most hepatotoxic first-line drug at high doses\n- Hyperuricaemia and gout (inhibits urate excretion); arthralgia\n- Photosensitivity, rash, pruritus; GI upset\n\n## Contraindications\n- Severe liver disease; acute gout\n\n## Drug interactions\n- Antagonises probenecid and allopurinol (raises uric acid)\n\n## Monitoring\n- LFT; uric acid if joint symptoms\n\n## Pregnancy & lactation\nWHO recommends its use in pregnancy (US guidance more cautious).\n\n## Viva points\n- Works in acid pH — kills intracellular, semi-dormant bacilli\n- Hyperuricaemia; M. bovis/BCG is naturally resistant\n\n_Sources: Khopkar ch.7; Wolverton 4e ch.9. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791652399978,
+  "updatedAt": 1791652405985
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Second-line & newer antituberculous agents",
+  "summary": "Antituberculous drugs · Drugs for drug-resistant TB and intolerance (ethionamide, cycloserine, PAS, injectable agents, fluoroquinolones, thiacetazone, newer dru",
+  "icon": "💊",
+  "category": "More from Khopkar · Antituberculous drugs",
+  "order": 6011,
+  "body": "_More from Khopkar · Antituberculous drugs_\n\n**Class:** Drugs for drug-resistant TB and intolerance (ethionamide, cycloserine, PAS, injectable agents, fluoroquinolones, thiacetazone, newer drugs)\n\n## Mechanism of action\n- Ethionamide/prothionamide: inhibit InhA (mycolic acid synthesis)\n- Cycloserine: inhibits cell-wall peptidoglycan synthesis (D-alanine analogue)\n- Para-aminosalicylic acid (PAS): folate antagonist\n- Injectables (kanamycin, amikacin, capreomycin): protein synthesis inhibitors\n- Fluoroquinolones (levofloxacin, moxifloxacin): DNA gyrase inhibitors — backbone of MDR regimens\n- Thiacetazone: older cheap drug, now abandoned\n- Newer drugs (bedaquiline, delamanid, pretomanid, linezolid) now replace injectables in MDR-TB\n\n## Indications in dermatology & STI\n- MDR/RR-TB and XDR-TB (including cutaneous forms) under the national programme\n- Atypical mycobacterial infections (amikacin, clarithromycin, fluoroquinolones)\n\n## Dose & formulations\n- As per NTEP drug-resistant TB guidelines (e.g. bedaquiline-pretomanid-linezolid-moxifloxacin, BPaLM, 6 months)\n\n## Adverse effects\n- Ethionamide: GI upset, hepatitis, hypothyroidism, gynaecomastia, alopecia, acne\n- Cycloserine: psychosis, depression, seizures\n- PAS: GI upset, hypothyroidism, lichenoid rash\n- Injectables: ototoxicity, nephrotoxicity\n- Thiacetazone: severe SJS/TEN, especially in HIV — the reason it was abandoned\n- Bedaquiline/clofazimine/fluoroquinolones: QT prolongation; linezolid: myelosuppression, neuropathy\n\n## Contraindications\n- Thiacetazone in HIV (never use)\n\n## Monitoring\n- ECG (QT), CBC, LFT, thyroid, audiometry (injectables), psychiatric review (cycloserine)\n\n## Pregnancy & lactation\nSpecialist decision; avoid injectables (ototoxic).\n\n## Viva points\n- Thiacetazone → SJS/TEN in HIV\n- Ethionamide → hypothyroidism, gynaecomastia\n- MDR-TB now treated with all-oral bedaquiline-based regimens\n\n_Sources: Khopkar ch.7 (Second-line and newer antituberculous agents); NTEP/WHO drug-resistant TB guidelines. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791652399974,
+  "updatedAt": 1791652405985
+ }
+}

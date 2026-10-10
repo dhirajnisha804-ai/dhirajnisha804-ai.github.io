@@ -46,7 +46,7 @@ dict(name="Lignocaine (lidocaine) 2% injection", group="Injectables · I Local a
  src=f"{W} ch.58 (Local anesthetics); {K} (Miscellaneous agents / Appendix)"),
 
 # ---------------- II CORTICOSTEROIDS ----------------
-dict(name="Hydrocortisone sodium succinate injection", group="Injectables · II Corticosteroids",
+dict(name="Hydrocortisone sodium succinate injection", title="Hydrocortisone (injection + topical)", group="Injectables · II Corticosteroids",
  cls="Short-acting natural glucocorticoid (cortisol) with mineralocorticoid action",
  moa=["Glucocorticoid receptor agonist — anti-inflammatory, immunosuppressive",
       "Significant mineralocorticoid effect (salt and water retention) — the right steroid for adrenal insufficiency"],
@@ -131,7 +131,7 @@ dict(name="Dexamethasone sodium phosphate injection", group="Injectables · II C
        "No mineralocorticoid action"],
  src=f"{K} ch.8 (injectable steroids, DCP/DAP pulse); {W} ch.13"),
 
-dict(name="Triamcinolone acetonide injection", group="Injectables · II Corticosteroids",
+dict(name="Triamcinolone acetonide injection", title="Triamcinolone acetonide (injection + topical)", group="Injectables · II Corticosteroids",
  cls="Intermediate-acting fluorinated glucocorticoid; insoluble depot suspension",
  moa=["Glucocorticoid receptor agonist (5 times hydrocortisone); the acetonide crystals dissolve slowly, giving a local depot lasting weeks",
       "In keloids: reduces fibroblast proliferation and collagen synthesis, increases collagenase"],
