@@ -169,3 +169,6 @@ UI: Templates tab lists ladders, old templates under "Older templates (being rep
 
 ## Planned: Viva notes for all 140 cases (from Wed 14 Oct)
 - See tools/viva/PLAN.md — 6 slots, new Resident Corner "Viva" section + "Viva questions" button on each case page.
+
+## TODO (user, 10 Oct — do later, not now)
+- Save a full record of our conversations/decisions into a file in the repo (e.g. docs/HISTORY.md: what was built, every decision she made, pending items) so work can be recovered if chat data is lost. Keep it updated after each session.
