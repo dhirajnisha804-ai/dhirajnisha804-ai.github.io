@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "MMR vaccine",
+  "summary": "VII Vaccines · Live attenuated viral vaccine (measles, mumps, rubella)",
+  "icon": "💊",
+  "category": "Injectables · VII Vaccines",
+  "order": 3016,
+  "body": "_Injectables · VII Vaccines_\n\n**Class:** Live attenuated viral vaccine (measles, mumps, rubella)\n\n## Mechanism of action\n- Attenuated viruses replicate briefly and induce long-lasting humoral and cell-mediated immunity\n- Intralesional use in warts: the antigen triggers a delayed-type hypersensitivity (Th1) response with cytokines (IFN-γ, IL-2, TNF) that also clears distant, untreated warts\n\n## Pharmacokinetics\n- 0.5 mL subcutaneous (or IM); seroconversion over 2–3 weeks\n\n## Indications in dermatology & STI\n- Prevention of measles, mumps and rubella (national schedule: MR at 9–12 months and 16–24 months; MMR in private schedule at 9 months, 15 months, 4–6 years)\n- Rubella-susceptible women before pregnancy\n- Dermatology: intralesional immunotherapy for multiple or recalcitrant warts (common, plantar, anogenital)\n\n## Dose & formulations\n- Prophylaxis: 0.5 mL SC\n- Warts: 0.3–0.5 mL injected into the largest (mother) wart, every 2–3 weeks, up to 3–5 sessions (pre-sensitisation not needed)\n\n## Adverse effects\n- Pain, swelling, fever, flu-like symptoms\n- Transient measles-like rash, parotid swelling, arthralgia (rubella component, adult women)\n- Febrile seizures (rare), thrombocytopenia (rare), anaphylaxis (gelatin/neomycin)\n\n## Contraindications\n- Pregnancy (avoid pregnancy for 1 month after vaccination)\n- Immunosuppression (high-dose steroids, chemotherapy, biologics, advanced HIV)\n- Severe allergy to neomycin or gelatin; recent immunoglobulin or blood products (defer 3–11 months)\n- Acute febrile illness\n\n## Drug interactions\n- Can temporarily suppress tuberculin skin test — do Mantoux on the same day or 4–6 weeks after\n- Immunoglobulin products reduce response\n- Give other live vaccines the same day or 4 weeks apart\n\n## Monitoring\n- Observe 15–30 min after injection\n\n## Pregnancy & lactation\nContraindicated (live vaccine); inadvertent vaccination is not a reason for termination.\n\n## Viva points\n- Live vaccine — avoid in pregnancy and immunosuppression\n- Immunotherapy for warts: induces Th1 response, clears distant warts\n- Interferes with Mantoux reading\n\n## Note on sources\nWolverton discusses Candida antigen and HPV vaccine more than MMR; MMR wart protocol is from published Indian studies and IADVL practice.\n\n_Sources: Wolverton 4e ch.43 (Topical and intralesional antiviral agents — IL immunotherapy for warts); national immunisation schedule. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791649028185,
+  "updatedAt": 1791649031201
+ }
+}

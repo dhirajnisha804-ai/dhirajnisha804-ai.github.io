@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "BCG vaccine",
+  "summary": "VII Vaccines · Live attenuated Mycobacterium bovis (Bacille Calmette–Guérin) vaccine",
+  "icon": "💊",
+  "category": "Injectables · VII Vaccines",
+  "order": 3017,
+  "body": "_Injectables · VII Vaccines_\n\n**Class:** Live attenuated Mycobacterium bovis (Bacille Calmette–Guérin) vaccine\n\n## Mechanism of action\n- Induces cell-mediated (Th1) immunity to mycobacteria\n- Protects children against severe TB (miliary TB, TB meningitis); variable protection against pulmonary TB and some protection against leprosy\n- Non-specific immune stimulation (trained immunity) — basis for use in warts and bladder cancer\n\n## Pharmacokinetics\n- 0.1 mL intradermal (0.05 mL in infants under 1 month) over the left deltoid insertion\n- Papule → pustule → ulcer → scar over 6–12 weeks\n\n## Indications in dermatology & STI\n- Routine at birth in India (national schedule; up to 1 year of age)\n- Dermatology: immunotherapy for warts (intralesional or intradermal), leprosy contacts (some programmes)\n- Intravesical BCG for superficial bladder cancer\n\n## Dose & formulations\n- 0.1 mL intradermal (0.05 mL under 1 month)\n- Warts (off-label protocols): 0.1 mL intradermal/IL every 2–4 weeks for a few sessions\n\n## Adverse effects\n- Normal: local papule, ulcer, scar\n- Complications: large ulcer, abscess, suppurative lymphadenitis (BCG adenitis), keloid\n- Cutaneous TB at the site: lupus vulgaris, scrofuloderma; tuberculids (lichen scrofulosorum, papulonecrotic)\n- Disseminated BCG infection (BCGosis) in immunodeficient children (SCID, chronic granulomatous disease, IFN-γ pathway defects, HIV)\n- Flare (redness) of an old BCG scar in Kawasaki disease (a diagnostic clue)\n\n## Contraindications\n- Immunosuppression (primary immunodeficiency, symptomatic HIV, steroids, biologics, chemotherapy)\n- Pregnancy; generalised skin disease or infection at the site; active TB\n\n## Drug interactions\n- Antituberculous drugs inactivate the vaccine\n- Immunosuppressants increase the risk of disseminated infection\n\n## Monitoring\n- Check the site at follow-up; investigate persistent ulcer or adenitis\n\n## Pregnancy & lactation\nContraindicated (live vaccine).\n\n## Viva points\n- Live vaccine — intradermal, left deltoid\n- Cutaneous complications include lupus vulgaris and scrofuloderma at the site\n- BCGosis signals immunodeficiency\n- BCG scar reactivation in Kawasaki disease\n\n_Sources: Wolverton 4e ch.43 (IL immunotherapy for warts — brief); national immunisation schedule; Khopkar (Immunobiologicals). Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791649028184,
+  "updatedAt": 1791649031201
+ }
+}

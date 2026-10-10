@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Exam drugs",
+  "title": "Atropine sulphate injection",
+  "summary": "VI Emergency drugs · Antimuscarinic (anticholinergic) belladonna alkaloid",
+  "icon": "💊",
+  "category": "Injectables · VI Emergency drugs",
+  "order": 3014,
+  "body": "_Injectables · VI Emergency drugs_\n\n**Class:** Antimuscarinic (anticholinergic) belladonna alkaloid\n\n## Mechanism of action\n- Competitively blocks muscarinic acetylcholine receptors\n- Heart: blocks vagal tone → raises heart rate and AV conduction\n- Also reduces secretions, relaxes smooth muscle, dilates pupils\n\n## Pharmacokinetics\n- IV onset within 1 min; IM within 15 min; half-life about 2–4 h\n\n## Indications in dermatology & STI\n- Symptomatic bradycardia — including severe vasovagal reaction during dermatological procedures\n- Organophosphate/carbamate insecticide poisoning (large repeated doses)\n- Pre-anaesthetic to dry secretions; reversal of neuromuscular block (with neostigmine)\n\n## Dose & formulations\n- Bradycardia: 0.5–0.6 mg IV every 3–5 min, up to a total of 3 mg\n- Organophosphate poisoning: 1.2–2.4 mg IV, doubled every 5 min until the chest is clear and the heart rate is over 80/min\n- Children: 0.02 mg/kg (minimum 0.1 mg)\n- Ampoule 0.6 mg/mL\n\n## Adverse effects\n- Dry mouth, flushing, hot dry skin, fever (especially children)\n- Tachycardia, blurred vision, urinary retention, constipation\n- Confusion, delirium in the elderly ('mad as a hatter, red as a beet, dry as a bone, blind as a bat, hot as a hare')\n- Doses under 0.5 mg in adults can cause paradoxical bradycardia\n\n## Contraindications\n- Angle-closure glaucoma, obstructive uropathy, paralytic ileus, myasthenia gravis (relative), tachyarrhythmias\n- No absolute contraindication in life-threatening bradycardia or poisoning\n\n## Drug interactions\n- Other anticholinergics (TCAs, first-generation antihistamines, phenothiazines): additive effects\n\n## Monitoring\n- Heart rate, BP, ECG\n\n## Pregnancy & lactation\nCrosses the placenta; use when needed in emergencies.\n\n## Viva points\n- Vasovagal attack during a procedure: lie flat, legs up; atropine if bradycardia persists\n- Minimum dose 0.5 mg in adults to avoid paradoxical bradycardia\n- Signs of atropine toxicity (anticholinergic toxidrome)\n\n_Sources: Wolverton 4e ch.58 (vasovagal reactions); ACLS/resuscitation guidelines. Facts summarised in our own words; Wolverton followed where books differ._",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791649028187,
+  "updatedAt": 1791649031201
+ }
+}

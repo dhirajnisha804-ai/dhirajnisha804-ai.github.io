@@ -165,4 +165,4 @@ UI: Templates tab lists ladders, old templates under "Older templates (being rep
 
 ## Resident Corner → Exam drugs (Oct 2026)
 - New section "Exam drugs" (grouped by exam-list heading, sorted by list order). Generator: tools/examdrugs/make.py + slot*.py → posts exd-*.json (drafts).
-- Slot 1 done: oral I–V (22). Slot 2 done: oral VI–XI (26). Slots 3 (injectables), 4 (topicals) pending. Notes: tools/examdrugs/report.md
+- Slot 1 done: oral I–V (22). Slot 2 done: oral VI–XI (26). Slot 3 done: injectables (23). Slot 4 (topicals) pending. Notes: tools/examdrugs/report.md

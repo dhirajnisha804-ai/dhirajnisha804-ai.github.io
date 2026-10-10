@@ -21,3 +21,13 @@ Discrepancies / doubts:
 
 ## Decisions for slot 3
 - Histoglobulin = Histoglob PFS (human normal immunoglobulin + histamine dihydrochloride, Bharat Serums). User confirmed: induction 6 injections at 4-day intervals, then boosters at 1, 3 and 6 months.
+
+## Slot 3 — Injectables I–IX (23 posts, drafts)
+- Lignocaine max dose from Wolverton ch.58 (4.5 mg/kg plain, 7 mg/kg with adrenaline).
+- Bleomycin: 1 U/mL for warts; Wolverton 0.2–0.4 mg/mL for vascular anomalies.
+- Ceftriaxone gonorrhoea dose differs across guidelines (250 mg / 500 mg / 1 g) — flagged.
+- Benzathine penicillin skin testing: Indian practice vs WHO/CDC — flagged.
+- Histoglob: user's PFS card dosing; not in books.
+- Vitamin D3 60,000 IU is mainly oral in India — oral and IM both covered.
+- Menadione (K3) vs phytomenadione (K1) — asked user which examiners mean.
+- PPSV23: adult pneumococcal schedule recently changed (PCV20/21) — flagged.
