@@ -23,3 +23,9 @@ Rules: Wolverton-style rule here = DYP first, IADVL second; if they disagree, as
 - Cover every question DYP asks for that case (full chapter text via tools: scratchpad viva/ch.py, qs.py) + extra IADVL viva points (IADVL text on her laptop ~/iadvl/iadvl.txt via device shell).
 - Slots of 10–12 cases (~12 slots total).
 - Order: first REDO V1+V2 (47 cases) in deep format (slots R1–R4), then remaining 93 cases (slots D1–D8) in this order: papulosquamous & erythroderma, vesicobullous, CTD, vascular & ulcers, granulomatous, psychocutaneous, pigmentary, acne & appendageal, hair & nail, oral, nutritional & metabolic, keratinisation, premalignant & malignant, nevi & hamartomas, genodermatoses, benign tumours & cysts.
+
+## RULE (10 Oct, user): do NOT copy DYP
+- DYP is only one reference for which topics get asked. Frame questions ourselves; answers fully in our own words — nobody should be able to say the content is copied from DYP.
+- Also use the previous-year question book on her laptop: "Dermatology Questions Book.pdf" = Sahana P Raju, Solved Papers Dermatology for PG Students (Jaypee) — text extracted to ~/iadvl/pyq.txt (device shell). Use it to find which questions are actually asked in exams.
+- Combine: PYQ book (what is asked) + IADVL (facts) + DYP (examiner style) + own knowledge. Take time; quality over speed.
+- No source's sentences or question lists reproduced verbatim; sources line on each post names all references.
