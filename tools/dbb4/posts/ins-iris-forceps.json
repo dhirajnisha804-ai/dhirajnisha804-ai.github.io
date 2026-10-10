@@ -6,10 +6,10 @@
   "icon": "🔧",
   "image": "instruments/iris-forceps.jpg",
   "category": "Forceps & clamps",
-  "body": "![Iris forceps](instruments/iris-forceps.jpg)\n\n_Also called: Fine forceps_\n\nFine, narrow-bladed forceps with gradually tapering tips for delicate grafting work.\n\n## Parts\n- Narrow blades tapering gradually (more gradual than Adson)\n- Plain or fine-toothed tip\n- Khopkar and PPT2 describe a 'lock' in the upper part\n\n## Types / variants\n- Straight or curved\n- Graefe, Stevens, Bishop-Harmon, Foerster, Gill, Tuebingen patterns (PPT1)\n- Bishop-Harmon: fenestrated handle, fine tips (sometimes 1x2 teeth), horizontal or crisscross serrations (seminar)\n\n## Uses / indications\n- Miniature punch grafting\n- Acne scar surgery\n- Split-thickness and blister grafting (PPT1)\n\n## How to hold\nHold like a pen with the first three fingers (between thumb and middle finger, index finger steadying); grasp dermis rather than epidermis to avoid crushing the wound edge.\n\n## Sterilisation & care\nAutoclave, hot air oven, 2% glutaraldehyde or boiling\n\n## Viva points & tips\n- Originally an ophthalmic forceps for handling the iris\n- Bishop-Harmon is grouped here (PPT1 lists it as an iris forceps type; seminar gives a separate slide)",
+  "body": "![Iris forceps](instruments/iris-forceps.jpg)\n\n_Also called: Fine forceps_\n\nFine, narrow-bladed forceps with gradually tapering tips for delicate grafting work.\n\n## Parts\n- Narrow blades tapering gradually (more gradual than Adson)\n- Plain or fine-toothed tip\n- Spring forceps - no lock or ratchet\n\n## Types / variants\n- Straight or curved\n- Graefe, Stevens, Bishop-Harmon, Foerster, Gill, Tuebingen patterns (PPT1)\n- Bishop-Harmon: fenestrated handle, fine tips (sometimes 1x2 teeth), horizontal or crisscross serrations (seminar)\n\n## Uses / indications\n- Miniature punch grafting\n- Acne scar surgery\n- Split-thickness and blister grafting (PPT1)\n\n## How to hold\nHold like a pen with the first three fingers (between thumb and middle finger, index finger steadying); grasp dermis rather than epidermis to avoid crushing the wound edge.\n\n## Sterilisation & care\nAutoclave, hot air oven, 2% glutaraldehyde or boiling\n\n## Viva points & tips\n- Corrected from source: Khopkar/PPT2 mention a 'lock'; iris forceps have no lock\n- Originally an ophthalmic forceps for handling the iris\n- Bishop-Harmon is grouped here (PPT1 lists it as an iris forceps type; seminar gives a separate slide)",
   "draft": true,
   "banner": false,
-  "createdAt": 1791639176863,
-  "updatedAt": 1791639176879
+  "createdAt": 1791639724391,
+  "updatedAt": 1791639724407
  }
 }

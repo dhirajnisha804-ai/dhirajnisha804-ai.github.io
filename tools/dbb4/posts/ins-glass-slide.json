@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Glass slide",
+  "summary": "Office aids · Plain microscope slide used for diascopy and for preparing smears and mounts.",
+  "icon": "🔧",
+  "image": "",
+  "category": "Office aids",
+  "body": "_Also called: Microscope slide, Diascope_\n\nPlain microscope slide used for diascopy and for preparing smears and mounts.\n\n## Uses / indications\n- Diascopy (vitropression): purpura vs erythema; nevus depigmentosus vs nevus anemicus; apple-jelly nodules in lupus vulgaris, sarcoidosis\n- Therapeutic diascopy: blanching the superficial part of a vascular malformation so laser reaches the deeper part\n- Testing compressibility of vascular malformations\n- Smears: imprint, tissue, crush, slit-skin smear for Gram, AFB, Giemsa/Wright stain; KOH (10-20%) mount\n- Tzanck smear in calcinosis cutis (irregular deep blue basophilic granules)\n- Elastosis perforans serpiginosa - elastic fibres in keratotic plug (KOH and stain)\n- Transferring suction blister grafts from donor to recipient site\n- Preparing hair mounts\n\n## Method of use\n1. Diascopy: press the slide firmly on the lesion and look for blanching or residual colour",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639724343,
+  "updatedAt": 1791639724407
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Filter paper",
+  "summary": "Office aids · Absorbent paper used for simple bedside tests and for collecting and preserving specimens.",
+  "icon": "🔧",
+  "image": "",
+  "category": "Office aids",
+  "body": "Absorbent paper used for simple bedside tests and for collecting and preserving specimens.\n\n## Uses / indications\n- Checking dapsone adherence in leprosy - urine drop on filter paper dipped in Ehrlich's reagent\n- Sweat tests: ninhydrin (pink) and bromophenol blue (blue) in leprosy and other neuropathies (diabetes, alcohol, HSAN, porphyria)\n- Patch testing liquid allergens (formaldehyde, propylene glycol)\n- Documenting Auspitz sign\n- Collecting and keeping hair, skin scrapings and nail clippings\n- Wrapping tattoo pigments for autoclaving",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639724340,
+  "updatedAt": 1791639724407
+ }
+}

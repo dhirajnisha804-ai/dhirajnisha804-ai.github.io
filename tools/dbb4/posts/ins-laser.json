@@ -9,7 +9,7 @@
   "body": "_Also called: LASER - Light Amplification by Stimulated Emission of Radiation_\n\nDevices emitting coherent, collimated, monochromatic light that selectively destroys target chromophores.\n\n## Parts\n- Gain (lasing) medium\n- Optical resonator - 100% and partially reflecting mirrors\n- Power/pumping source (electrical, flash lamp, chemical, diode)\n- Cooling system and plume evacuator\n\n## Types / variants\n- Solid (ruby, Nd:YAG, Er:YAG, alexandrite, diode)\n- Liquid (dye/PDL)\n- Gas (argon, krypton, excimer, CO2)\n- Vapour (copper, gold)\n\n## Uses / indications\n- Hair reduction: long-pulsed Nd:YAG 1064 (dark skin), diode 800, alexandrite 755, IPL\n- Pigment and tattoos: Q-switched Nd:YAG 1064/532, ruby 694, alexandrite 755\n- Vascular: PDL 585 nm, alexandrite, Nd:YAG, argon-pumped dye, krypton, copper vapour\n- Ablative resurfacing: CO2 10,600 nm, Er:YAG 2940 nm\n- Psoriasis/vitiligo: excimer 308 nm\n- Acne, scars, keloids, warts\n\n## Viva points & tips\n- Mechanism: selective photothermolysis; photothermal, photomechanical, photoacoustic effects\n- Know terms: fluence (J/cm2), irradiance, pulse duration, thermal relaxation time, spot size\n- Precautions: no combustibles, goggles for all, plume evacuator, no reflective instruments",
   "draft": true,
   "banner": false,
-  "createdAt": 1791639176822,
-  "updatedAt": 1791639176879
+  "createdAt": 1791639724350,
+  "updatedAt": 1791639724407
  }
 }

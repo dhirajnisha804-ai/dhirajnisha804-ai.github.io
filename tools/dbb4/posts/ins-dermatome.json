@@ -6,10 +6,10 @@
   "icon": "🔧",
   "image": "",
   "category": "Blades & scalpels",
-  "body": "_Also called: Powered skin graft harvester_\n\nDisposable or powered device that harvests split-thickness skin grafts of set thickness.\n\n## Types / variants\n- Simon Davol dermatome - small rechargeable unit for small grafts\n- Brown dermatome - adjustable graft thickness\n\n## Uses / indications\n- Harvesting split-thickness skin grafts\n\n## Viva points & tips\n- Khopkar gives Brown dermatome thickness as 3-8 mm (likely a typo for tenths of a mm) - verify",
+  "body": "_Also called: Powered skin graft harvester_\n\nDisposable or powered device that harvests split-thickness skin grafts of set thickness.\n\n## Types / variants\n- Simon Davol dermatome - small rechargeable unit for small grafts\n- Brown (electric) dermatome - adjustable split-thickness graft depth, about 0.2-0.75 mm (0.008-0.030 inch)\n\n## Uses / indications\n- Harvesting split-thickness skin grafts\n\n## Viva points & tips\n- Graft thickness corrected from source (Khopkar prints 3-8 mm) to the standard split-thickness range of about 0.2-0.75 mm",
   "draft": true,
   "banner": false,
-  "createdAt": 1791639176868,
-  "updatedAt": 1791639176879
+  "createdAt": 1791639724396,
+  "updatedAt": 1791639724407
  }
 }

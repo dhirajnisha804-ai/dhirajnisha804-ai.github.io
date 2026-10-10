@@ -4,12 +4,12 @@
   "title": "Patch test kit",
   "summary": "Diagnostic · Allergen series and occlusive chambers used to demonstrate type IV contact allergy.",
   "icon": "🔧",
-  "image": "instruments/patch-test-kit.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Skin_patch_allergy_test_02.jpg/640px-Skin_patch_allergy_test_02.jpg",
   "category": "Diagnostic",
-  "body": "![Patch test kit](instruments/patch-test-kit.jpg)\n\n_Also called: Finn chambers, TRUE test, Indian standard series_\n\nAllergen series and occlusive chambers used to demonstrate type IV contact allergy.\n\n## Parts\n- Allergens in petrolatum or other vehicles\n- Chambers: Al-test discs, Finn chambers (8 mm aluminium), plastic chambers\n- Micropore/hypoallergenic tape\n\n## Types / variants\n- Indian standard series (CODFI) plus cosmetic and footwear series\n- TRUE test - ready-to-use 20 allergens\n- Chemotechnique series (International, European)\n\n## Uses / indications\n- Confirming allergic contact dermatitis\n- Photopatch testing for photoallergy\n\n## Method of use\n1. Apply to upper back (or outer arm/thigh)\n2. Keep dry for 48 h; remove at 48 h\n3. First reading about 30 min after removal; late readings 48-72 h later and at day 4-7 (ICDRG grading)\n\n## Viva points & tips\n- Stop systemic steroids (>20 mg/day) and immunosuppressants before testing\n- Plastic Finn chambers for metals (nickel, cobalt, mercury)\n- Jadassohn - father of patch testing (1895)\n- False positives: angry back, irritants, excess concentration",
+  "body": "![Patch test kit](https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Skin_patch_allergy_test_02.jpg/640px-Skin_patch_allergy_test_02.jpg)\n\n_Photo: Smirkybec, CC BY 4.0, via Wikimedia Commons_\n\n_Also called: Finn chambers, TRUE test, Indian standard series_\n\nAllergen series and occlusive chambers used to demonstrate type IV contact allergy.\n\n## Parts\n- Allergens in petrolatum or other vehicles\n- Chambers: Al-test discs, Finn chambers (8 mm aluminium), plastic chambers\n- Micropore/hypoallergenic tape\n\n## Types / variants\n- Indian standard series (CODFI) plus cosmetic and footwear series\n- TRUE test - ready-to-use 20 allergens\n- Chemotechnique series (International, European)\n\n## Uses / indications\n- Confirming allergic contact dermatitis\n- Photopatch testing for photoallergy\n\n## Method of use\n1. Apply to upper back (or outer arm/thigh)\n2. Keep dry for 48 h; remove at 48 h\n3. First reading about 30 min after removal; late readings 48-72 h later and at day 4-7 (ICDRG grading)\n\n## Viva points & tips\n- Stop systemic steroids (>20 mg/day) and immunosuppressants before testing\n- Plastic Finn chambers for metals (nickel, cobalt, mercury)\n- Jadassohn - father of patch testing (1895)\n- False positives: angry back, irritants, excess concentration",
   "draft": true,
   "banner": false,
-  "createdAt": 1791639176818,
-  "updatedAt": 1791639176879
+  "createdAt": 1791639724346,
+  "updatedAt": 1791639724407
  }
 }

@@ -477,7 +477,7 @@
     "parts": [],
     "types": [
       "Simon Davol dermatome - small rechargeable unit for small grafts",
-      "Brown dermatome - adjustable graft thickness"
+      "Brown (electric) dermatome - adjustable split-thickness graft depth, about 0.2-0.75 mm (0.008-0.030 inch)"
     ],
     "uses": [
       "Harvesting split-thickness skin grafts"
@@ -487,7 +487,7 @@
     "method": [],
     "sterilization": "",
     "tips": [
-      "Khopkar gives Brown dermatome thickness as 3-8 mm (likely a typo for tenths of a mm) - verify"
+      "Graft thickness corrected from source (Khopkar prints 3-8 mm) to the standard split-thickness range of about 0.2-0.75 mm"
     ],
     "sources": [
       "Khopkar p420",
@@ -641,7 +641,7 @@
     "parts": [
       "Narrow blades tapering gradually (more gradual than Adson)",
       "Plain or fine-toothed tip",
-      "Khopkar and PPT2 describe a 'lock' in the upper part"
+      "Spring forceps - no lock or ratchet"
     ],
     "types": [
       "Straight or curved",
@@ -658,6 +658,7 @@
     "method": [],
     "sterilization": "Autoclave, hot air oven, 2% glutaraldehyde or boiling",
     "tips": [
+      "Corrected from source: Khopkar/PPT2 mention a 'lock'; iris forceps have no lock",
       "Originally an ophthalmic forceps for handling the iris",
       "Bishop-Harmon is grouped here (PPT1 lists it as an iris forceps type; seminar gives a separate slide)"
     ],
@@ -1736,7 +1737,8 @@
     "contraindications": [],
     "how_to_hold": "Hold perpendicular to the skin and press until the filament bends into a 'C'.",
     "method": [
-      "Test hands at 7 sites (3 ulnar, 3 median, 1 radial) and feet at 8 sites (Khopkar: 7 common peroneal, 1 posterior tibial)",
+      "Test hands at 7 sites (3 ulnar, 3 median, 1 radial)",
+      "Test feet at the standard 10 sites: plantar 1st, 3rd and 5th metatarsal heads; plantar distal hallux, 3rd and 5th toes; medial and lateral midfoot; heel; dorsum between 1st and 2nd toes",
       "Ask the patient (eyes closed) if felt",
       "Failure at any tested point = positive"
     ],
@@ -1744,7 +1746,7 @@
     "tips": [
       "Designed by Josephine Semmes and Sidney Weinstein",
       "Inability to feel the purple filament = loss of protective sensation",
-      "Khopkar's foot nerve split (7 peroneal, 1 posterior tibial) looks reversed vs usual practice - verify"
+      "Foot test sites corrected from source to the standard 10-site examination"
     ],
     "sources": [
       "Khopkar p421-422 (Table AII.3)"
@@ -1918,7 +1920,7 @@
     "sources": [
       "Khopkar p427-430 (Table AIII.1)"
     ],
-    "image": "img/woods-lamp.jpg"
+    "image": ""
   },
   {
     "slug": "dermoscope",
@@ -1962,7 +1964,7 @@
     "sources": [
       "Khopkar p430-432"
     ],
-    "image": "img/dermoscope.jpg"
+    "image": ""
   },
   {
     "slug": "electrocautery-unit",
@@ -2144,7 +2146,7 @@
     "sources": [
       "Khopkar p440-450 (Tables AIII.4-5)"
     ],
-    "image": "img/cryotherapy-unit.jpg"
+    "image": ""
   },
   {
     "slug": "laser",
@@ -2276,13 +2278,14 @@
     "how_to_hold": "",
     "method": [
       "Clean area with spirit",
-      "Khopkar: for acidic agents the cathode is the treating electrode and the anode indifferent; reverse for alkaline agents",
+      "Place the drug under the electrode of the same charge: positively charged drug under the anode, negatively charged drug under the cathode; the other electrode is the indifferent one",
+      "Tap-water iontophoresis for hyperhidrosis: both palms/soles in water trays, one on each electrode, with polarity reversed midway through the session",
       "Raise current slowly 0-3.8 mA with continuous circular/stroking movement of the electrode; full face takes about 20-25 min",
       "End point mild erythema; reduce to zero and reverse polarity briefly"
     ],
     "sterilization": "",
     "tips": [
-      "Physics: like charges repel - cations are driven from the anode, anions from the cathode (Khopkar's principle sentence labels acidic agents as cations repelled by the cathode - verify)",
+      "Principle: like charges repel - cations are driven into skin from the anode, anions from the cathode (corrected from source: Khopkar's acidic-agent/cathode wording dropped)",
       "Grease abrasions; stop and reverse current if pain/burning",
       "Complications: erythema, urticaria, burns, irritant/allergic dermatitis"
     ],
@@ -2332,7 +2335,7 @@
     "sources": [
       "Khopkar p461-466 (Tables AIII.9-10)"
     ],
-    "image": "img/patch-test-kit.jpg"
+    "image": ""
   },
   {
     "slug": "prick-test-kit",
@@ -2367,6 +2370,203 @@
     "sources": [
       "Khopkar p467-470 (Table AIII.11)"
     ],
-    "image": "img/prick-test-kit.jpg"
+    "image": ""
+  },
+  {
+    "slug": "common-pin",
+    "name": "Common pin",
+    "aka": [],
+    "category": "Office aids",
+    "description": "Ordinary pin whose head, tip and shaft each serve as simple bedside diagnostic tools.",
+    "parts": [
+      "Head",
+      "Body (shaft)",
+      "Tip"
+    ],
+    "types": [],
+    "uses": [
+      "Head: crude touch sensation in leprosy and neurological conditions",
+      "Head: eliciting deep dermal tenderness",
+      "Head: showing the feeding vessel of a spider angioma",
+      "Head: demonstrating scales - scratch sign (pityriasis versicolor), carpet-tack / cat's-tongue sign (DLE, pemphigus foliaceus), Auspitz sign (psoriasis), wafer-like scale (pityriasis lichenoides chronica)",
+      "Head: stroking skin for dermographism and Darier's sign",
+      "Head: chemical cauterisation",
+      "Tip: pain sensation in leprosy, HSAN, congenital insensitivity to pain",
+      "Tip: extracting mites",
+      "Shaft: lifting the buried distal end of an ingrowing hair in pseudofolliculitis"
+    ],
+    "contraindications": [],
+    "how_to_hold": "",
+    "method": [],
+    "sterilization": "",
+    "tips": [
+      "Use a fresh sterile pin for each patient when breaking skin"
+    ],
+    "sources": [
+      "Khopkar p397-398"
+    ],
+    "image": ""
+  },
+  {
+    "slug": "glass-slide",
+    "name": "Glass slide",
+    "aka": [
+      "Microscope slide",
+      "Diascope"
+    ],
+    "category": "Office aids",
+    "description": "Plain microscope slide used for diascopy and for preparing smears and mounts.",
+    "parts": [],
+    "types": [],
+    "uses": [
+      "Diascopy (vitropression): purpura vs erythema; nevus depigmentosus vs nevus anemicus; apple-jelly nodules in lupus vulgaris, sarcoidosis",
+      "Therapeutic diascopy: blanching the superficial part of a vascular malformation so laser reaches the deeper part",
+      "Testing compressibility of vascular malformations",
+      "Smears: imprint, tissue, crush, slit-skin smear for Gram, AFB, Giemsa/Wright stain; KOH (10-20%) mount",
+      "Tzanck smear in calcinosis cutis (irregular deep blue basophilic granules)",
+      "Elastosis perforans serpiginosa - elastic fibres in keratotic plug (KOH and stain)",
+      "Transferring suction blister grafts from donor to recipient site",
+      "Preparing hair mounts"
+    ],
+    "contraindications": [],
+    "how_to_hold": "",
+    "method": [
+      "Diascopy: press the slide firmly on the lesion and look for blanching or residual colour"
+    ],
+    "sterilization": "",
+    "tips": [],
+    "sources": [
+      "Khopkar p398-399"
+    ],
+    "image": ""
+  },
+  {
+    "slug": "magnifying-lens",
+    "name": "Magnifying lens",
+    "aka": [
+      "Hand lens",
+      "Self-illuminating magnifier"
+    ],
+    "category": "Office aids",
+    "description": "Hand lens (2x-7x), with or without its own light, for studying fine surface details of lesions.",
+    "parts": [],
+    "types": [
+      "Self-illuminating (built-in torch)",
+      "Non-illuminating",
+      "Magnification 2x to 7x"
+    ],
+    "uses": [
+      "Studying fine morphology of skin lesions",
+      "Nits and lice (pediculosis capitis, pubic lice); lice in clothing seams (pediculosis corporis)",
+      "Scabies burrows and mites",
+      "Auspitz sign, nail pits, Wickham's striae (lichen planus vs lichenoid drug rash)",
+      "Black dots in warts and black-dot tinea capitis",
+      "Umbilication in molluscum, penicilliosis",
+      "Carpet-tack sign in DLE, seborrhoeic keratosis, Darier's disease, pemphigus foliaceus",
+      "Nail-fold telangiectasia in collagen vascular disease",
+      "Furrow in the ridged margin of porokeratosis",
+      "Exclamation-mark hairs in alopecia areata",
+      "Can act as a diascope when no glass slide is available"
+    ],
+    "contraindications": [],
+    "how_to_hold": "",
+    "method": [],
+    "sterilization": "",
+    "tips": [],
+    "sources": [
+      "Khopkar p399-400"
+    ],
+    "image": ""
+  },
+  {
+    "slug": "measuring-tape",
+    "name": "Measuring tape",
+    "aka": [
+      "Tape measure"
+    ],
+    "category": "Office aids",
+    "description": "Flexible tape used to measure lesions and body dimensions for documentation and follow-up.",
+    "parts": [],
+    "types": [],
+    "uses": [
+      "Size of ulcers, plaques, lymph nodes for description and monitoring",
+      "Limb hypertrophy (Klippel-Trenaunay, lymphoedema), muscle atrophy (leprosy, hereditary motor neuropathy), limb girth in mycetoma",
+      "Induration after Mantoux and other intradermal tests",
+      "Chest expansion in scleroderma",
+      "Hip/waist ratio in lipodystrophy",
+      "Upper:lower segment ratio and arm span in Marfan syndrome"
+    ],
+    "contraindications": [],
+    "how_to_hold": "",
+    "method": [],
+    "sterilization": "",
+    "tips": [],
+    "sources": [
+      "Khopkar p400"
+    ],
+    "image": ""
+  },
+  {
+    "slug": "filter-paper",
+    "name": "Filter paper",
+    "aka": [],
+    "category": "Office aids",
+    "description": "Absorbent paper used for simple bedside tests and for collecting and preserving specimens.",
+    "parts": [],
+    "types": [],
+    "uses": [
+      "Checking dapsone adherence in leprosy - urine drop on filter paper dipped in Ehrlich's reagent",
+      "Sweat tests: ninhydrin (pink) and bromophenol blue (blue) in leprosy and other neuropathies (diabetes, alcohol, HSAN, porphyria)",
+      "Patch testing liquid allergens (formaldehyde, propylene glycol)",
+      "Documenting Auspitz sign",
+      "Collecting and keeping hair, skin scrapings and nail clippings",
+      "Wrapping tattoo pigments for autoclaving"
+    ],
+    "contraindications": [],
+    "how_to_hold": "",
+    "method": [],
+    "sterilization": "",
+    "tips": [],
+    "sources": [
+      "Khopkar p400-401"
+    ],
+    "image": ""
+  },
+  {
+    "slug": "cotton-swab-stick",
+    "name": "Cotton swab stick",
+    "aka": [
+      "Cotton-tipped applicator",
+      "Ear bud"
+    ],
+    "category": "Office aids",
+    "description": "Wooden stick with a cotton tip used to collect specimens, apply agents and perform simple procedures.",
+    "parts": [
+      "Cotton tip",
+      "Wooden stick (ear buds or ready-made sterile plastic swabs as alternatives)"
+    ],
+    "types": [],
+    "uses": [
+      "Cotton tip: smears and culture swabs of discharges",
+      "Applying peels (glycolic acid, TCA, phenol, salicylic acid)",
+      "Chemical cauterisation (TCA, phenol)",
+      "Cryotherapy by dipstick method",
+      "Applying podophyllin to genital warts; acetowhitening for subclinical warts",
+      "Cervical swabs; specimens for PCR",
+      "Haemostasis in hair transplantation",
+      "Spreading ointment on suture lines; applying topical lotions (e.g. psoralen in vitiligo)",
+      "Nikolsky sign on mucosa",
+      "Stick end: chemical cauterisation of small lesions (DPN, filiform wart, verruca plana, molluscum)",
+      "Stick: extraction of guinea worm"
+    ],
+    "contraindications": [],
+    "how_to_hold": "",
+    "method": [],
+    "sterilization": "Autoclave; ready-made swabs for specimen collection are gamma-irradiated.",
+    "tips": [],
+    "sources": [
+      "Khopkar p401-402"
+    ],
+    "image": ""
   }
 ]

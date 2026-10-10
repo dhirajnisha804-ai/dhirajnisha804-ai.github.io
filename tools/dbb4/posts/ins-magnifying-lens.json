@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Magnifying lens",
+  "summary": "Office aids · Hand lens (2x-7x), with or without its own light, for studying fine surface details of lesions.",
+  "icon": "🔧",
+  "image": "",
+  "category": "Office aids",
+  "body": "_Also called: Hand lens, Self-illuminating magnifier_\n\nHand lens (2x-7x), with or without its own light, for studying fine surface details of lesions.\n\n## Types / variants\n- Self-illuminating (built-in torch)\n- Non-illuminating\n- Magnification 2x to 7x\n\n## Uses / indications\n- Studying fine morphology of skin lesions\n- Nits and lice (pediculosis capitis, pubic lice); lice in clothing seams (pediculosis corporis)\n- Scabies burrows and mites\n- Auspitz sign, nail pits, Wickham's striae (lichen planus vs lichenoid drug rash)\n- Black dots in warts and black-dot tinea capitis\n- Umbilication in molluscum, penicilliosis\n- Carpet-tack sign in DLE, seborrhoeic keratosis, Darier's disease, pemphigus foliaceus\n- Nail-fold telangiectasia in collagen vascular disease\n- Furrow in the ridged margin of porokeratosis\n- Exclamation-mark hairs in alopecia areata\n- Can act as a diascope when no glass slide is available",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639724342,
+  "updatedAt": 1791639724407
+ }
+}

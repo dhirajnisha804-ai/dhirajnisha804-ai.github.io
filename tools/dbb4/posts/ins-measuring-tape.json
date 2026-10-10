@@ -1,0 +1,15 @@
+{
+ "data": {
+  "section": "Instruments",
+  "title": "Measuring tape",
+  "summary": "Office aids · Flexible tape used to measure lesions and body dimensions for documentation and follow-up.",
+  "icon": "🔧",
+  "image": "",
+  "category": "Office aids",
+  "body": "_Also called: Tape measure_\n\nFlexible tape used to measure lesions and body dimensions for documentation and follow-up.\n\n## Uses / indications\n- Size of ulcers, plaques, lymph nodes for description and monitoring\n- Limb hypertrophy (Klippel-Trenaunay, lymphoedema), muscle atrophy (leprosy, hereditary motor neuropathy), limb girth in mycetoma\n- Induration after Mantoux and other intradermal tests\n- Chest expansion in scleroderma\n- Hip/waist ratio in lipodystrophy\n- Upper:lower segment ratio and arm span in Marfan syndrome",
+  "draft": true,
+  "banner": false,
+  "createdAt": 1791639724341,
+  "updatedAt": 1791639724407
+ }
+}
