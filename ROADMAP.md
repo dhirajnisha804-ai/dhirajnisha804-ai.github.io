@@ -161,3 +161,8 @@ UI: Templates tab lists ladders, old templates under "Older templates (being rep
 - 8 Oct: Dose guide +34 drugs that had no entry at all (tofacitinib, baricitinib, upadacitinib, abrocitinib, ritlecitinib, apremilast, secukinumab, ustekinumab, pentoxifylline, spironolactone, finasteride, oral minoxidil, tranexamic acid, nicotinamide, deflazacort, methylprednisolone oral, rifampicin, clofazimine, pregabalin, gabapentin, famciclovir, montelukast, doxepin, amitriptyline, glycopyrrolate, metronidazole, secnidazole, benzathine penicillin, ceftriaxone, metformin, vitamin D3, folic acid, fixed adult cyclosporine & HCQ). Total 137.
 - 10 Oct: Resident Corner → Instruments: 63 instruments/apparatus (Khopkar 'Drugs & Instruments' App II/III primary; seminar PDF + 2 PPTs secondary), 49 with photos (tools/instruments/img → www/instruments). Source: tools/instruments/instruments.json; generator tools/instruments/make.py → posts ins-*.json (draft). Open doubts in tools/instruments/report.md.
 - 10 Oct slot 2: +6 Khopkar App I office aids (69 total, 44 local photos + 5 Wikimedia Commons photos hotlinked with credits for Wood's lamp, dermoscope, cryotherapy unit, patch test kit, prick test kit; B&W scans removed); typo corrections applied (dermatome thickness, iontophoresis principle, iris forceps no lock, monofilament 10 sites).
+
+
+## Resident Corner → Exam drugs (Oct 2026)
+- New section "Exam drugs" (grouped by exam-list heading, sorted by list order). Generator: tools/examdrugs/make.py + slot*.py → posts exd-*.json (drafts).
+- Slot 1 done: oral I–V (22 drugs). Slots 2 (oral VI–XI), 3 (injectables), 4 (topicals) pending. Notes: tools/examdrugs/report.md
