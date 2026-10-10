@@ -17,3 +17,9 @@ Slots
 
 Rules: Wolverton-style rule here = DYP first, IADVL second; if they disagree, ask her (decide at slot end). Ask doubts at end of each slot.
 - Next session: start at Slot V3. IADVL text is extracted on her laptop at ~/iadvl/iadvl.txt (device shell); DYP Q&A text in container scratchpad viva/dyp_raw.txt (re-create with pdftotext from the uploaded DYP PDF if lost).
+
+## REVISED (10 Oct, user): content too thin — deeper format from Wednesday 14 Oct
+- Depth: long cases 30–40 Qs; short cases 15–25; tiny cases ≥10. Fuller answers (classifications, distinguishing tables, histopathology, scores, regimens, recent advances).
+- Cover every question DYP asks for that case (full chapter text via tools: scratchpad viva/ch.py, qs.py) + extra IADVL viva points (IADVL text on her laptop ~/iadvl/iadvl.txt via device shell).
+- Slots of 10–12 cases (~12 slots total).
+- Order: first REDO V1+V2 (47 cases) in deep format (slots R1–R4), then remaining 93 cases (slots D1–D8) in this order: papulosquamous & erythroderma, vesicobullous, CTD, vascular & ulcers, granulomatous, psychocutaneous, pigmentary, acne & appendageal, hair & nail, oral, nutritional & metabolic, keratinisation, premalignant & malignant, nevi & hamartomas, genodermatoses, benign tumours & cysts.
