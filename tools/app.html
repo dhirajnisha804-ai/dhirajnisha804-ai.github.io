@@ -1608,8 +1608,10 @@ function ladderHTML(t, {pick}={}){
 function openLadder(t, {onPick}={}){
   if(!t) return;
   const body = ladderHTML(t,{pick:!!onPick});
-  if(onPick){ openSheet2("Treatment", body); } else { openSheet("Treatment", body); }
+  const canRev = !onPick && isAdmin() && !t.reviewed && t.id;
+  if(onPick){ openSheet2("Treatment", body); } else { openSheet("Treatment", body, canRev?`<button class="btn primary" id="lRev">✓ Approve — mark as final</button>`:""); }
   const root = onPick ? $("#sheet2Body") : $("#sheetBody");
+  $("#lRev")?.addEventListener("click", async()=>{ const {id:_,...d}=t; if(await save("templates", t.id, {...d, reviewed:true, reviewedAt:Date.now()})){ t.reviewed=true; toast("Approved — “Needs review” removed"); closeSheet(); } });
   root.addEventListener("click", e=>{ const b=e.target.closest("[data-useline]"); if(!b) return;
     const li=+b.dataset.useline, l=t.lines[li]; const picked=[...root.querySelectorAll(`[data-pick^="${li}:"]`)].filter(c=>c.checked).map(c=>+c.dataset.pick.split(":")[1]);
     if(!picked.length){ toast("Tick at least one medicine in this line"); return; }

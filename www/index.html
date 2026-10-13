@@ -1,6 +1,6 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#14324d">
 <link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<meta name="drx-build" content="202610101803">
+<meta name="drx-build" content="202610131500">
 <script src="config.js"></script>
 <script>window.DRX_OCR=(b=>({lib:b+"tesseract.min.js",worker:b+"worker.min.js",core:b,lang:b}))(new URL("vendor/tesseract/",location.href).href);</script>
 <script src="vendor/firebase-app-compat.js"></script><script src="vendor/firebase-auth-compat.js"></script><script src="vendor/firebase-firestore-compat.js"></script>
@@ -1615,8 +1615,10 @@ function ladderHTML(t, {pick}={}){
 function openLadder(t, {onPick}={}){
   if(!t) return;
   const body = ladderHTML(t,{pick:!!onPick});
-  if(onPick){ openSheet2("Treatment", body); } else { openSheet("Treatment", body); }
+  const canRev = !onPick && isAdmin() && !t.reviewed && t.id;
+  if(onPick){ openSheet2("Treatment", body); } else { openSheet("Treatment", body, canRev?`<button class="btn primary" id="lRev">✓ Approve — mark as final</button>`:""); }
   const root = onPick ? $("#sheet2Body") : $("#sheetBody");
+  $("#lRev")?.addEventListener("click", async()=>{ const {id:_,...d}=t; if(await save("templates", t.id, {...d, reviewed:true, reviewedAt:Date.now()})){ t.reviewed=true; toast("Approved — “Needs review” removed"); closeSheet(); } });
   root.addEventListener("click", e=>{ const b=e.target.closest("[data-useline]"); if(!b) return;
     const li=+b.dataset.useline, l=t.lines[li]; const picked=[...root.querySelectorAll(`[data-pick^="${li}:"]`)].filter(c=>c.checked).map(c=>+c.dataset.pick.split(":")[1]);
     if(!picked.length){ toast("Tick at least one medicine in this line"); return; }
