@@ -118,3 +118,4 @@ Keep it updated at the end of every working session (newest session at the botto
 - **3–9 Oct** — Many features (see section 3): ladders, DLQI/CDLQI, drug safety, tour, universal search, PDF, admin-only edits, account options, personalised header, legal pages, about/update/offline banners, filters, favourites, FAQ; brochure products & generics; dose guide expansion; QA fixes; Firestore rules.
 - **10 Oct** — Instruments (69). Exam drugs from Sassoon exam lists (slots 1–4) then "More from Khopkar" (slots 6–9); products in neither book removed; systemic+topical merged; NLEP 2025 MDT; NTEP TB. Viva section + case-page button; viva slots V1–V2 (47 cases). Decisions: deeper viva format, no copying DYP, use previous-year question book; remove DLQI; Play Store checklist.
 - **11 Oct** — This history file created on her request.
+- **13 Oct** — Added admin "✓ Approve — mark as final" button on treatment ladders (removes "Needs review").
