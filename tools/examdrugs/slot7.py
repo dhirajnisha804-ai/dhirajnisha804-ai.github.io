@@ -568,7 +568,7 @@ dict(name="HIV post-exposure prophylaxis (PEP) & prevention of parent-to-child t
  dose=["PEP: start as early as possible (ideally within 2 h, not beyond 72 h); preferred regimen TLD (tenofovir + lamivudine + dolutegravir) once daily for 28 days",
        "Baseline HIV test of exposed person; follow-up HIV tests at 6 weeks, 3 months (and 6 months as per programme)",
        "Immediate care: wash wound with soap and water, do not squeeze or use bleach; flush mucous membranes with water",
-       "PPTCT: mother on TLD lifelong; infant prophylaxis with nevirapine syrup for 6 weeks (low risk), or zidovudine + nevirapine (dual prophylaxis) for 12 weeks if high risk (mother not virally suppressed/late diagnosis), with early infant diagnosis (DNA-PCR at 6 weeks)",
+       "PPTCT: mother on TLD lifelong; infant prophylaxis with nevirapine syrup for 6 weeks (low risk), or zidovudine + nevirapine (dual prophylaxis) if high risk — mother not on ART, no viral load or viral load ≥1000 copies/ml after 32 weeks, or diagnosed within 6 weeks of delivery (NACO 2021); dual prophylaxis for 6 weeks, extended to 12 weeks if the baby is breastfed, with early infant diagnosis (DNA-PCR at 6 weeks)",
        "Hepatitis B: check vaccination status after needle-stick; give vaccine ± HBIG"],
  ae=["See component drugs; PEP side effects are usually mild with TLD"],
  ci=["PEP not indicated if the exposed person is already HIV-positive or exposure is beyond 72 h"],
@@ -577,7 +577,7 @@ dict(name="HIV post-exposure prophylaxis (PEP) & prevention of parent-to-child t
  viva=["PEP within 72 h (ideally 2 h) for 28 days — TLD",
        "Infant prophylaxis: NVP 6 weeks or AZT+NVP 12 weeks (high risk)",
        "Lifelong ART for all pregnant women with HIV"],
- src="Current NACO PEP and PPTCT guidance; " + f"{K} ch.4 (Postexposure prophylaxis, perinatal transmission regimens — older regimens superseded)",
+ src="NACO National Guidelines for HIV Care and Treatment 2021 (PEP sec. 2.10, PPTCT sec. 2.5); " + f"{K} ch.4 (Postexposure prophylaxis, perinatal transmission regimens — older regimens superseded)",
  note="Khopkar's PEP and perinatal regimens (zidovudine-based, single-dose nevirapine) are outdated; only current NACO regimens are given here. Please confirm with the latest NACO technical guidelines."),
 
 # ---------------- ANTIPARASITICS ----------------
