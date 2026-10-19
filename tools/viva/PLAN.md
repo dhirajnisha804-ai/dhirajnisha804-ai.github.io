@@ -44,3 +44,5 @@ Rules: Wolverton-style rule here = DYP first, IADVL second; if they disagree, as
 - [19 Oct] e2.py: extra questions for 39 more cases that had 6–7 Qs (now ≥9 each).
 - [19 Oct] e3.py: extra questions for the 18 cases still at 8 (rosacea, HS, NF1 got 4–5 more). Every viva post now has ≥9 questions (54 posts have exactly 9).
 - Next (only if she asks): review pass, her corrections, approve/publish.
+- [19 Oct, her request 'information too less'] Long-case expansion (e4–e8): 25 long cases brought to ~25–37 Qs each — L1 psoriasis, pemphigus/pemphigoid, vitiligo, SLE, cutaneous TB; L2 SSc, DM, erythroderma, LP, AD, contact; L3 SJS/TEN, urticaria, ichthyosis, NF1, TSC; L4 alopecia areata, acne, AGA, BCC, SCC; L5 leg ulcers, HS, XP. Answers are viva-length bullets (her choice).
+- Next: short cases to 15–25 Qs (her chosen order: long first, then short), slot by slot with e9+.
