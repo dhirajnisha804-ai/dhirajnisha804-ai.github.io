@@ -41,4 +41,5 @@ Rules: Wolverton-style rule here = DYP first, IADVL second; if they disagree, as
 - [done 19 Oct] D4 pigmentary (14, d4a/d4b), D5 acne & appendageal + hair & nail (15, d5a/d5b), D6 keratinisation + AK/BCC/SCC (10, d6a/d6b), D7 nevi + genodermatoses (17, d7a/d7b), D8 benign tumours (8, d8.py).
 - ALL 140 CASES NOW HAVE DEEP VIVA POSTS (drafts). Laptop link dropped during D6; D6–D8 topics came from PYQ question lists already pulled earlier that session (genodermatoses, ichthyoses/PPK, tumours, naevi chapters).
 - [19 Oct] e1.py: extra questions for 14 small cases (5 → 9 each); make.py appends e*.py questions to existing cases.
+- [19 Oct] e2.py: extra questions for 39 more cases that had 6–7 Qs (now ≥9 each).
 - Next (only if she asks): review pass, her corrections, approve/publish.
