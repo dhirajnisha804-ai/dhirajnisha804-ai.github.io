@@ -80,7 +80,7 @@ if os.path.isdir(HERE + "/src/instruments"):
     for f in glob.glob(HERE + "/src/instruments/*.jpg"): shutil.copy(f, OUT + "/instruments/")
 # legal pages (public links for Play Store and in-app)
 _LH=open(HERE+"/src/legal/_head.html",encoding="utf-8").read()
-for _n,_t in (("privacy","Privacy policy"),("terms","Terms of use")):
+for _n,_t in (("privacy","Privacy policy"),("terms","Terms of use"),("delete-account","Delete your account")):
     open(OUT+f"/{_n}.html","w",encoding="utf-8").write(_LH.replace("__TITLE__",_t)+open(HERE+f"/src/legal/{_n}.html",encoding="utf-8").read()+'<p class="mut" style="margin-top:30px"><a href="./">Open Derma Desk</a></p></main></body></html>')
 
 open(OUT + "/.nojekyll", "w").write("")
