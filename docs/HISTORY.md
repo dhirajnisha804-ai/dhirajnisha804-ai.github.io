@@ -78,7 +78,7 @@ Keep it updated at the end of every working session (newest session at the botto
 | Treatment ladders | 134 | live, marked "needs review" |
 | Instruments | 69 | drafts |
 | Exam drugs | 257 (125 exam list + 132 "More from Khopkar") | drafts |
-| Viva posts | 47 cases (V1 infections, V2 STI/eczemas/drug eruptions) | drafts; 12 redone in deep format (R1, 19 Oct), 35 still to redo (R2–R4) |
+| Viva posts | 47 cases (V1 infections, V2 STI/eczemas/drug eruptions) | drafts; 24 redone in deep format (R1+R2, 19 Oct), 23 still to redo (R3–R4) |
 
 ---
 
@@ -125,3 +125,4 @@ Keep it updated at the end of every working session (newest session at the botto
   Exam drugs HIV PEP/PPTCT checked against NACO 2021 guidelines (TLD 28 days within 72 h; high-risk infant definition; dual AZT+NVP 6 wk, 12 wk if breastfed).
   Viva deep redo slot R1 done (12 cases, r1a.py/r1b.py) using PYQ book topics + IADVL.
   Still pending: viva R2–R4 then D1–D8; hyperhidrosis ladder order (her answer); reviewer test login for Play (she creates a test account, verifies it, gives the login only inside Play Console 'App access'); open questions (vit K, ceftriaxone dose, newer facts).
+- **19 Oct (evening)** — Viva slot R2 done (12 cases: warts, zoster, mycetoma, sporotrichosis, chromoblastomycosis, tinea corporis, tinea capitis, tinea pedis/onychomycosis, PV, candidiasis, pediculosis, scabies). All V1 cases now in deep format. Next: R3–R4 (V2 cases: STI, eczemas, drug eruptions).

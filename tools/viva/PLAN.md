@@ -32,4 +32,5 @@ Rules: Wolverton-style rule here = DYP first, IADVL second; if they disagree, as
 
 ## Progress of deep redo
 - [done 19 Oct] Slot R1 (12 cases, files r1a.py + r1b.py): impetigo, folliculitis, furuncle/carbuncle, ecthyma, erysipelas/cellulitis, pitted keratolysis, erythrasma, leprosy (37 Qs), cutaneous TB (28 Qs), herpes simplex, molluscum, chickenpox. Topics chosen from the PYQ book question lists (leprosy chapter Q1–Q69, pyoderma, viral chapters); facts checked with IADVL ch.16 etc. make.py: r*.py replaces the same case from v*.py.
-- Next: R2 = warts, herpes zoster, mycetoma, sporotrichosis, chromoblastomycosis, tinea corporis/cruris, tinea capitis, tinea pedis & onychomycosis, pityriasis versicolor, candidiasis, pediculosis, scabies.
+- [done 19 Oct] Slot R2 (12 cases, r2a.py + r2b.py): warts, herpes zoster, mycetoma, sporotrichosis, chromoblastomycosis, tinea corporis/cruris/faciei, tinea capitis, tinea pedis & onychomycosis, pityriasis versicolor, candidiasis, pediculosis, scabies.
+- Next: R3 = V2 part A (STI 5 + first eczemas), R4 = rest of V2.
