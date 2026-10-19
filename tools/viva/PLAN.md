@@ -42,4 +42,5 @@ Rules: Wolverton-style rule here = DYP first, IADVL second; if they disagree, as
 - ALL 140 CASES NOW HAVE DEEP VIVA POSTS (drafts). Laptop link dropped during D6; D6–D8 topics came from PYQ question lists already pulled earlier that session (genodermatoses, ichthyoses/PPK, tumours, naevi chapters).
 - [19 Oct] e1.py: extra questions for 14 small cases (5 → 9 each); make.py appends e*.py questions to existing cases.
 - [19 Oct] e2.py: extra questions for 39 more cases that had 6–7 Qs (now ≥9 each).
+- [19 Oct] e3.py: extra questions for the 18 cases still at 8 (rosacea, HS, NF1 got 4–5 more). Every viva post now has ≥10 questions.
 - Next (only if she asks): review pass, her corrections, approve/publish.

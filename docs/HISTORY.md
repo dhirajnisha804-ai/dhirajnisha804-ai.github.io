@@ -132,4 +132,5 @@ Keep it updated at the end of every working session (newest session at the botto
 - **19 Oct (night)** — Viva D3 written (vascular & ulcers 6 + nutritional & metabolic 4); total 76. Next D4: pigmentary (14).
 - **19 Oct (night)** — Viva D4–D8 written in one go on her request (64 cases: pigmentary, acne/appendageal, hair/nail, keratinisation, AK/BCC/SCC, naevi, genodermatoses, benign tumours). All 140 cases now have viva posts (drafts, 'Needs review'). Newer facts flagged inside posts for her to confirm. Her next step: Publish, then review/approve.
 - **19 Oct (late night)** — Added 4 extra questions each to the 14 thinnest viva posts (e1.py). Total viva questions ~1400 across 140 cases.
-- **19 Oct (late night)** — e2.py: extra questions for 39 more viva cases (6–7 → ≥9). Every viva post now has ≥9 questions.
+- **19 Oct (late night)** — e2.py: extra questions for 39 more viva cases (6–7 → ≥9). Most posts now ≥9 (a few had 8).
+- **19 Oct (late night)** — e3.py: extra questions for 18 cases still at 8 (rosacea, HS, NF1 got 4–5 more). Every viva post now ≥10 questions; total ~1550 across 140 cases.
