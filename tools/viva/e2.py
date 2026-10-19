@@ -54,7 +54,7 @@ dict(case="Pityriasis alba", qa=[
  ]),
 dict(case="Fox–Fordyce disease", qa=[
  ("Pathogenesis.", ["Keratin plugging of the intra-infundibular part of apocrine ducts → rupture → apocrine sweat retention and inflammation; hormonal (begins after puberty, improves in pregnancy and after menopause); can follow laser hair removal of axillae"]),
- ("Clinical features.", ["Young women (13–35 y): intensely itchy, dome-shaped, skin-coloured to yellowish follicular papules in apocrine areas — axillae (commonest), areolae, pubic/ labial region, periumbilical; worse with heat, emotion, exercise; reduced axillary sweating and sparse hair"]),
+ ("Describe the clinical presentation in detail.", ["Young women (13–35 y): intensely itchy, dome-shaped, skin-coloured to yellowish follicular papules in apocrine areas — axillae (commonest), areolae, pubic/ labial region, periumbilical; worse with heat, emotion, exercise; reduced axillary sweating and sparse hair"]),
  ("Enumerate apocrine gland disorders.", ["Fox–Fordyce disease, hidradenitis suppurativa (now considered follicular), apocrine bromhidrosis (malodour — bacterial breakdown), chromhidrosis (coloured sweat — lipofuscin), apocrine hidrocystoma, syringocystadenoma papilliferum, extramammary Paget's disease, apocrine carcinoma"]),
  ]),
 dict(case="Miliaria", qa=[
