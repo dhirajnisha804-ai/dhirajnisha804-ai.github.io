@@ -13,9 +13,13 @@ for c in cases: grank.setdefault(c["g"], len(grank))
 def slug(s): return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")[:60]
 
 for old in glob.glob(os.path.join(POSTS, "viva-*.json")): os.remove(old)
+# v*.py = first versions; r*.py = deep redo (R slots) — a later file replaces the same case
+allD = {}
+for f in sorted(glob.glob(os.path.join(HERE, "v[0-9]*.py"))) + sorted(glob.glob(os.path.join(HERE, "r[0-9]*.py"))):
+    for d in runpy.run_path(f)["D"]: allD[d["case"]] = d
 n = 0
-for f in sorted(glob.glob(os.path.join(HERE, "v[0-9]*.py"))):
-    for d in runpy.run_path(f)["D"]:
+if True:
+    for d in allD.values():
         name = d["case"]; assert name in idx, "unknown case: " + name
         i, g = idx[name]
         body = f"_Viva questions for the case: **{name}** ({g})_\n\n"

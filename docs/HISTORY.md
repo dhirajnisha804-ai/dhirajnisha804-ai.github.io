@@ -45,7 +45,7 @@ Keep it updated at the end of every working session (newest session at the botto
 - Patients with visits, filters (diagnosis/date), unsaved-changes guard, back handling.
 - **Cases**: 140 case formats (history to ask, examination, investigations, clickable differentials, how to present, viva pearls), treatment button at the bottom, and a **📝 Viva questions** button that opens the case's viva post.
 - **Treatment ladders** (1st/2nd/3rd line) for 134 diseases — view-only in Cases and Templates; ticking medicines only inside a patient via "Use template".
-- Scores incl. DLQI/CDLQI item-by-item (**to be removed** — see pending); scores auto-save on a new patient.
+- Scores; DLQI/CDLQI now record only the total score with a link to Cardiff's official questionnaire (items removed 19 Oct for copyright); scores auto-save on a new patient.
 - Drug interactions (on Cases page), Drug safety (A–Z, 26 entries, name-match first), Dose by weight (137 entries, age-filtered, adult doses added), all under the Drugs tab.
 - Universal search (header 🔍), personalised header ("Dr. Name, Qual"), app tour, About & update banner, offline banner, FAQ, report-a-problem, privacy & terms pages, logout / delete account / change password in More.
 - **Resident Corner** sections: Articles, Procedures, **Instruments** (69 items, Khopkar guide), **Exam drugs**, **Viva**, Updates — grouped lists, drafts visible only to admins, ✓ Approve button.
@@ -78,7 +78,7 @@ Keep it updated at the end of every working session (newest session at the botto
 | Treatment ladders | 134 | live, marked "needs review" |
 | Instruments | 69 | drafts |
 | Exam drugs | 257 (125 exam list + 132 "More from Khopkar") | drafts |
-| Viva posts | 47 cases (V1 infections, V2 STI/eczemas/drug eruptions) | drafts — too thin, to be redone deeper |
+| Viva posts | 47 cases (V1 infections, V2 STI/eczemas/drug eruptions) | drafts; 12 redone in deep format (R1, 19 Oct), 35 still to redo (R2–R4) |
 
 ---
 
@@ -88,9 +88,9 @@ Keep it updated at the end of every working session (newest session at the botto
 - **Sun 11 Oct 10:00 IST** — hyperhidrosis ladder (she is studying it).
 - **Wed 14 Oct 10:00 IST** (scheduled reminder in this chat):
   1. Viva notes in DEEPER format: long cases 30–40 Qs, short 15–25, small ≥10; slots of 10–12 cases; redo the 47 first (R1–R4), then the remaining 93. Sources: previous-year question book (Sahana P Raju, *Solved Papers – Dermatology for PG Students*, on her laptop: DERMATOLOGY BOOKS/Dermatology Questions Book.pdf; text at ~/iadvl/pyq.txt via device shell), IADVL 5e (DERMATOLOGY BOOKS/IADVL new edition .pdf; text at ~/iadvl/iadvl.txt), DYP only as style guide. Own words. She must open the chat on her laptop.
-  2. Remove DLQI/CDLQI; add link to official DLQI app.
+  2. ~~Remove DLQI/CDLQI~~ done 19 Oct.
   3. Play Store technical prep: raise targetSdk/compileSdk from 34 to Play's current minimum; build signed **AAB**; reviewer test login; account-deletion web page; final QA.
-  4. Check exam-drugs slot 7 HIV PEP/PPTCT regimens against latest NACO.
+  4. ~~Check HIV PEP/PPTCT against NACO~~ done 19 Oct.
 
 ### Open questions for her
 - Vitamin K: menadione (K3) or phytomenadione (K1) for exams?
@@ -119,3 +119,9 @@ Keep it updated at the end of every working session (newest session at the botto
 - **10 Oct** — Instruments (69). Exam drugs from Sassoon exam lists (slots 1–4) then "More from Khopkar" (slots 6–9); products in neither book removed; systemic+topical merged; NLEP 2025 MDT; NTEP TB. Viva section + case-page button; viva slots V1–V2 (47 cases). Decisions: deeper viva format, no copying DYP, use previous-year question book; remove DLQI; Play Store checklist.
 - **11 Oct** — This history file created on her request.
 - **13 Oct** — Added admin "✓ Approve — mark as final" button on treatment ladders (removes "Needs review").
+- **19 Oct** — She reported the Android back button closing the app. Fixed: in-app view history (back goes to the previous tab, patient → patient list, then Cases; at Cases 'press back again to exit'), Android 13+ predictive-back callback, safe fallback. Needs the NEW APK (apk-latest release).
+  Play Store prep: targetSdk/compileSdk 36, AGP 8.9.3, Gradle 8.11.1; CI now also builds a signed **AAB** (DermaDesk-PlayStore.aab in the apk-latest release); portrait lock removed (large screens); account-deletion page https://dhirajnisha804-ai.github.io/delete-account.html (in-app: More → Delete account → tap 'Delete my account' twice; or email, done within 30 days).
+  DLQI/CDLQI questionnaire items removed — total score only + link to Cardiff official page.
+  Exam drugs HIV PEP/PPTCT checked against NACO 2021 guidelines (TLD 28 days within 72 h; high-risk infant definition; dual AZT+NVP 6 wk, 12 wk if breastfed).
+  Viva deep redo slot R1 done (12 cases, r1a.py/r1b.py) using PYQ book topics + IADVL.
+  Still pending: viva R2–R4 then D1–D8; hyperhidrosis ladder order (her answer); reviewer test login for Play (she creates a test account, verifies it, gives the login only inside Play Console 'App access'); open questions (vit K, ceftriaxone dose, newer facts).

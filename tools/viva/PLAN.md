@@ -29,3 +29,7 @@ Rules: Wolverton-style rule here = DYP first, IADVL second; if they disagree, as
 - Also use the previous-year question book on her laptop: "Dermatology Questions Book.pdf" = Sahana P Raju, Solved Papers Dermatology for PG Students (Jaypee) — text extracted to ~/iadvl/pyq.txt (device shell). Use it to find which questions are actually asked in exams.
 - Combine: PYQ book (what is asked) + IADVL (facts) + DYP (examiner style) + own knowledge. Take time; quality over speed.
 - No source's sentences or question lists reproduced verbatim; sources line on each post names all references.
+
+## Progress of deep redo
+- [done 19 Oct] Slot R1 (12 cases, files r1a.py + r1b.py): impetigo, folliculitis, furuncle/carbuncle, ecthyma, erysipelas/cellulitis, pitted keratolysis, erythrasma, leprosy (37 Qs), cutaneous TB (28 Qs), herpes simplex, molluscum, chickenpox. Topics chosen from the PYQ book question lists (leprosy chapter Q1–Q69, pyoderma, viral chapters); facts checked with IADVL ch.16 etc. make.py: r*.py replaces the same case from v*.py.
+- Next: R2 = warts, herpes zoster, mycetoma, sporotrichosis, chromoblastomycosis, tinea corporis/cruris, tinea capitis, tinea pedis & onychomycosis, pityriasis versicolor, candidiasis, pediculosis, scabies.
