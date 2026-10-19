@@ -38,3 +38,6 @@ Rules: Wolverton-style rule here = DYP first, IADVL second; if they disagree, as
 - [done 19 Oct] D2 (11 cases: DM, SLE, SSc, DLE, LSA, morphoea, Parry–Romberg, striae, GA, dermatitis artefacta, RAS) — d2a.py, d2b.py.
 - [done 19 Oct] D3 (10 cases: vascular & ulcers 6, nutritional & metabolic 4) — d3a.py, d3b.py.
 - Next: D4 pigmentary (14), D5 acne & appendageal (8) + hair & nail (7), D6 keratinisation (7) + premalignant/malignant (3), D7 nevi (9) + genodermatoses (8), D8 benign tumours (8).
+- [done 19 Oct] D4 pigmentary (14, d4a/d4b), D5 acne & appendageal + hair & nail (15, d5a/d5b), D6 keratinisation + AK/BCC/SCC (10, d6a/d6b), D7 nevi + genodermatoses (17, d7a/d7b), D8 benign tumours (8, d8.py).
+- ALL 140 CASES NOW HAVE DEEP VIVA POSTS (drafts). Laptop link dropped during D6; D6–D8 topics came from PYQ question lists already pulled earlier that session (genodermatoses, ichthyoses/PPK, tumours, naevi chapters).
+- Next (only if she asks): review pass, her corrections, approve/publish.

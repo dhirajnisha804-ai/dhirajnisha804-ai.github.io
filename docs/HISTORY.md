@@ -78,7 +78,7 @@ Keep it updated at the end of every working session (newest session at the botto
 | Treatment ladders | 134 | live, marked "needs review" |
 | Instruments | 69 | drafts |
 | Exam drugs | 257 (125 exam list + 132 "More from Khopkar") | drafts |
-| Viva posts | 47 cases (V1 infections, V2 STI/eczemas/drug eruptions) | drafts; all 47 redone in deep format (R1–R4, 19 Oct); D1–D3 done (29 new cases, 76 viva posts total); 64 still to write (D4–D8) |
+| Viva posts | 47 cases (V1 infections, V2 STI/eczemas/drug eruptions) | drafts; all 47 redone in deep format (R1–R4, 19 Oct); ALL 140 cases have deep viva posts (drafts) — finished 19 Oct |
 
 ---
 
@@ -130,3 +130,4 @@ Keep it updated at the end of every working session (newest session at the botto
 - **19 Oct (night)** — Viva D1 (papulosquamous & erythroderma 7 + vesicobullous) written; total viva posts 55. Next D2: connective tissue + granuloma annulare + dermatitis artefacta + aphthous stomatitis.
 - **19 Oct (night)** — Viva D2 written (CTD 8 + granuloma annulare + dermatitis artefacta + aphthous stomatitis); total 66. Next D3: vascular & ulcers + nutritional & metabolic.
 - **19 Oct (night)** — Viva D3 written (vascular & ulcers 6 + nutritional & metabolic 4); total 76. Next D4: pigmentary (14).
+- **19 Oct (night)** — Viva D4–D8 written in one go on her request (64 cases: pigmentary, acne/appendageal, hair/nail, keratinisation, AK/BCC/SCC, naevi, genodermatoses, benign tumours). All 140 cases now have viva posts (drafts, 'Needs review'). Newer facts flagged inside posts for her to confirm. Her next step: Publish, then review/approve.
