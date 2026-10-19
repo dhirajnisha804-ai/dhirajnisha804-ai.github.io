@@ -131,3 +131,4 @@ Keep it updated at the end of every working session (newest session at the botto
 - **19 Oct (night)** — Viva D2 written (CTD 8 + granuloma annulare + dermatitis artefacta + aphthous stomatitis); total 66. Next D3: vascular & ulcers + nutritional & metabolic.
 - **19 Oct (night)** — Viva D3 written (vascular & ulcers 6 + nutritional & metabolic 4); total 76. Next D4: pigmentary (14).
 - **19 Oct (night)** — Viva D4–D8 written in one go on her request (64 cases: pigmentary, acne/appendageal, hair/nail, keratinisation, AK/BCC/SCC, naevi, genodermatoses, benign tumours). All 140 cases now have viva posts (drafts, 'Needs review'). Newer facts flagged inside posts for her to confirm. Her next step: Publish, then review/approve.
+- **19 Oct (late night)** — Added 4 extra questions each to the 14 thinnest viva posts (e1.py). Total viva questions ~1400 across 140 cases.

@@ -17,6 +17,12 @@ for old in glob.glob(os.path.join(POSTS, "viva-*.json")): os.remove(old)
 allD = {}
 for f in sorted(glob.glob(os.path.join(HERE, "v[0-9]*.py"))) + sorted(glob.glob(os.path.join(HERE, "r[0-9]*.py"))) + sorted(glob.glob(os.path.join(HERE, "d[0-9]*.py"))):
     for d in runpy.run_path(f)["D"]: allD[d["case"]] = d
+# e*.py = extra questions appended to an existing case (keeps the base file unchanged)
+for f in sorted(glob.glob(os.path.join(HERE, "e[0-9]*.py"))):
+    for x in runpy.run_path(f)["D"]:
+        b = allD[x["case"]]
+        b["qa"] = list(b["qa"]) + list(x.get("qa", []))
+        if x.get("spot"): b["spot"] = list(b.get("spot", [])) + list(x["spot"])
 n = 0
 if True:
     for d in allD.values():
