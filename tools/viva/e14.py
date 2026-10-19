@@ -1,0 +1,106 @@
+# Short-case expansion S6 (target ≥15 Qs): keratinisation (6), AK, hair & nail (5), aphthous stomatitis.
+# Own words; viva-length bullets. Facts from IADVL 5e and standard references.
+KER = ("Describe the process of keratinisation and the cornified envelope (PYQ).", ["Basal keratinocytes (K5/K14) divide and move up: spinous (K1/K10, desmosomes), granular (keratohyaline granules — profilaggrin, loricrin; lamellar bodies — lipids), cornified layer (flattened anucleate corneocytes)", "Cornified envelope: cross-linked proteins (involucrin, loricrin, small proline-rich proteins) by transglutaminases (TGM1, TGM3, TGM5) with covalently bound lipid envelope (ceramides); intercellular lipid lamellae (ceramides, cholesterol, FFA) — 'bricks and mortar' barrier", "Desquamation via kallikreins (KLK5/7) degrading corneodesmosomes, regulated by LEKTI (SPINK5)"])
+NAIL = ("Describe the anatomy and growth of the nail unit (linked PYQ).", ["Components: nail plate (keratin — hard keratins), proximal nail fold with cuticle (eponychium), lateral folds, matrix (proximal — dorsal plate; distal — ventral plate; lunula is visible distal matrix), nail bed, hyponychium", "Growth: fingernail ~3 mm/month (complete regrowth 4–6 months), toenail ~1 mm/month (12–18 months); faster in summer, dominant hand, pregnancy, psoriasis; slower in elderly, illness, yellow nail syndrome"])
+HAIR = ("Classify alopecia (linked PYQ).", ["Non-scarring: AGA, alopecia areata, telogen effluvium, anagen effluvium, trichotillomania, traction (early), tinea capitis (non-inflammatory), syphilis, nutritional/ endocrine, hair shaft disorders", "Scarring (cicatricial) — primary: lymphocytic (DLE, LPP, FFA, CCCA, pseudopelade of Brocq), neutrophilic (folliculitis decalvans, dissecting cellulitis), mixed (acne keloidalis, erosive pustular dermatosis); secondary: burns, radiation, trauma, infections (kerion, favus), tumours, morphoea, sarcoid"])
+D = [
+dict(case="Porokeratosis", qa=[
+ ("Describe the clinical types in detail.", ["Porokeratosis of Mibelli (single/ few annular plaques with raised keratotic ridge, childhood, limbs)", "Disseminated superficial actinic porokeratosis (DSAP — many small annular lesions on sun-exposed limbs, adults, worse in summer)", "Disseminated superficial porokeratosis (non-sun-exposed, immunosuppression)", "Linear porokeratosis (Blaschko — highest SCC risk)", "Porokeratosis palmaris et plantaris disseminata, punctate porokeratosis, porokeratosis ptychotropica (genital/ gluteal cleft), eruptive pruritic papular porokeratosis"]),
+ ("Why does porokeratosis appear in immunosuppressed patients?", ["Organ transplant recipients, HIV, chemotherapy, haematological malignancy — reduced immune surveillance allows clonal expansion of abnormal keratinocytes; often disseminated; regular SCC surveillance"]),
+ ("Histopathology of the cornoid lamella in detail.", ["Thin column of parakeratotic cells angled away from the centre of the lesion, overlying an epidermal invagination with absent/ reduced granular layer and dyskeratotic cells beneath; corresponds to the raised ridge; also seen focally in other lesions (cornoid lamellation — not specific alone)"]),
+ KER,
+ ("Treatment options in detail.", ["Photoprotection; topical 5-FU, imiquimod, tacrolimus, retinoids, vitamin D analogues, diclofenac; statin + cholesterol creams; cryotherapy, CO2/ Er:YAG laser, PDT, curettage/ excision for single lesions; oral acitretin for extensive"]),
+ ]),
+dict(case="Callus (callosity)", qa=[
+ KER,
+ ("What keratolytics are used and how do they work?", ["Salicylic acid 10–40% (plasters/ ointment — dissolves intercellular cement), urea 20–40% (humectant and keratolytic at high strength), lactic acid 12%, propylene glycol; caution in diabetics/ neuropathy (chemical burns)"]),
+ ("What is the paring technique and safety?", ["Soften by soaking 10 min, pare with scalpel blade (no. 15) parallel to skin until pink skin appears, avoid drawing blood; in diabetics and leprosy patients refer to trained podiatry; pumice stone home maintenance"]),
+ ("Callus vs plantar wart vs corn on dermoscopy.", ["Callus: homogeneous yellowish structureless keratin with preserved dermatoglyphics", "Wart: interrupted dermatoglyphics, red-black dots (thrombosed capillaries)", "Corn: central translucent keratin core with surrounding callus, dermatoglyphics preserved around"]),
+ ("Callus in leprosy patients — prevention programme.", ["Daily self-care: soak feet 20 min, scrape with pumice, apply oil/ petroleum jelly, inspect for cracks, protective footwear (MCR/ microcellular rubber insoles), regular follow-up at disability prevention clinics"]),
+ ("What is the 'pre-ulcerative callus'?", ["Callus with underlying haemorrhage (dark discolouration) or blister — signals high pressure and impending ulcer in neuropathic feet; urgent offloading and debridement"]),
+ ]),
+dict(case="Corn (clavus)", qa=[
+ KER,
+ ("Describe the types in detail.", ["Hard corn (heloma durum): dorsolateral aspect of toes (5th toe), over bony prominences in tight shoes", "Soft corn (heloma molle): interdigital (4th web), macerated white", "Seed corns: tiny multiple corns on weight-bearing sole (dry skin)", "Vascular/ neurovascular corns: painful with capillaries/ nerves in core, bleed on paring"]),
+ ("What padding and footwear advice?", ["Wide toe-box footwear, low heels, silicone toe sleeves/ separators, metatarsal pads, foam corn pads (avoid medicated corn plasters with salicylic acid in diabetics/ PVD), orthotics for biomechanical faults"]),
+ ("Why should medicated corn plasters be avoided in diabetics?", ["Salicylic acid can macerate and ulcerate neuropathic/ ischaemic skin without pain warning → infection, gangrene"]),
+ ("Corn vs wart — paring test details.", ["Paring a corn reveals a translucent central keratin core with intact skin lines; a wart shows black dots (thrombosed capillaries) and pinpoint bleeding with interrupted dermatoglyphics; lateral squeeze painful in wart, direct pressure painful in corn"]),
+ ("What is porokeratosis plantaris discreta?", ["Painful, discrete, hard keratotic plug on the plantar surface (often under metatarsal heads) in middle-aged women — central cornoid-like plug (eccrine duct obstruction); mimics corn/ wart; treat with paring, cryotherapy, excision"]),
+ ]),
+dict(case="Keratosis pilaris", qa=[
+ KER,
+ ("Describe the clinical features in detail.", ["Small (1–2 mm) rough follicular keratotic papules ('chicken skin'/ 'goose bumps'), sometimes with perifollicular erythema, on extensor upper arms, thighs, buttocks, cheeks (children); asymptomatic or mildly itchy; worse in winter; improves after adolescence"]),
+ ("Treatment in detail.", ["Emollients with keratolytics — urea 10–20%, lactic acid 12%, salicylic acid 2–6%, glycolic acid; topical retinoids (tretinoin, adapalene), mild steroids for inflamed lesions; gentle exfoliation; pulsed-dye laser/ Nd:YAG/ IPL for erythema; microdermabrasion; recurrence on stopping"]),
+ ("What drugs cause KP-like eruptions?", ["BRAF inhibitors (vemurafenib, dabrafenib), nilotinib, sorafenib, ciclosporin (also trichodysplasia spinulosa)"]),
+ ("Ulerythema ophryogenes and Noonan syndrome link.", ["Lateral eyebrow erythema with follicular papules → scarring loss of eyebrows; associated with Noonan syndrome, cardiofaciocutaneous syndrome, Cornelia de Lange, Rubinstein–Taybi, woolly hair — examine for dysmorphism"]),
+ ("Differentiate KP from phrynoderma.", ["KP: atopic/ genetic, upper outer arms/ thighs, fine papules, normal nutrition; phrynoderma: larger spiny papules on elbows/ knees/ buttocks, malnutrition signs (night blindness, Bitot's spots, angular cheilitis), responds to vitamin/ nutritional supplementation"]),
+ ]),
+dict(case="Lichen spinulosus", qa=[
+ KER,
+ ("Treatment in detail.", ["Keratolytics — salicylic acid 3–6% ointment, urea 10–20%, lactic acid 12%; topical retinoids (tretinoin, tazarotene); mild topical steroids for itch; emollients; vitamin A in deficient children; resistant cases — oral isotretinoin (rare)"]),
+ ("Histopathology in detail.", ["Dilated follicular infundibula filled with keratin plugs protruding as spines, mild perifollicular lymphocytic infiltrate; hair shaft may be absent"]),
+ ("Differentiate lichen spinulosus from lichen nitidus and keratosis pilaris.", ["Lichen spinulosus: grouped follicular spiny papules in well-defined plaques", "Lichen nitidus: non-follicular tiny shiny flat-topped papules (ball-in-claw histology)", "KP: diffuse discrete follicular papules on outer arms/ thighs, not in grouped plaques"]),
+ ("What is the role of dermoscopy?", ["Shows follicular keratotic plugs with central hair shaft or spine, perifollicular erythema; helps differentiate from LP (Wickham's striae) and lichen nitidus"]),
+ ("Generalised lichen spinulosus in adults — significance.", ["May be associated with HIV, Hodgkin lymphoma, Crohn's disease, alcoholism — consider evaluation if widespread adult-onset"]),
+ ]),
+dict(case="Palmoplantar keratoderma", qa=[
+ KER,
+ ("What is Mal de Meleda?", ["Autosomal recessive SLURP1 mutation: diffuse transgrediens PPK extending to dorsa of hands/feet ('glove and sock'), malodour, hyperhidrosis, constriction bands (pseudoainhum), perioral erythema, nail changes; acitretin helps"]),
+ ("What is epidermolytic PPK (Vörner) vs Unna–Thost?", ["Vörner (KRT9, sometimes KRT1): diffuse yellow waxy PPK with sharp red border, epidermolytic histology — commonest hereditary PPK", "Unna–Thost (KRT1): diffuse non-epidermolytic PPK — similar clinically; histology distinguishes"]),
+ ("What is pachyonychia congenita?", ["Autosomal dominant KRT6A/6B/16/17: painful focal plantar keratoderma (blistering calluses), hypertrophic thickened wedge-shaped nails, oral leukokeratosis, follicular keratoses, steatocystomas (KRT17), natal teeth; pain management, paring, botulinum toxin, rapamycin (experimental)"]),
+ ("Treatment in detail.", ["Keratolytics (salicylic acid 10–20%, urea 40%, lactic acid), mechanical debridement, topical retinoids, vitamin D analogues; oral acitretin (diffuse non-epidermolytic and syndromic types — lower dose in epidermolytic due to fragility); treat hyperhidrosis and secondary infection (fungal); surgical excision with grafting in severe cases"]),
+ ("Explain the clinical examination of PPK.", ["Pattern (diffuse/ focal/ punctate/ striate), transgrediens (extension beyond palms), associated features — nails, teeth, hair, hearing, eyes, hyperhidrosis, malodour, constriction bands, family history; screen for oesophageal cancer (tylosis) and cardiac disease (Naxos/ Carvajal — woolly hair)"]),
+ ]),
+dict(case="Actinic keratosis", qa=[
+ ("Describe the clinical variants in detail.", ["Classic (rough, sandpaper-like erythematous scaly papule — felt better than seen), hypertrophic (thick hyperkeratotic — may form cutaneous horn), atrophic, pigmented (mimics lentigo maligna), lichenoid, bowenoid, actinic cheilitis (lower lip — diffuse scaling, blurred vermilion border)"]),
+ ("What is a cutaneous horn and its significance?", ["Conical hyperkeratotic projection; base may be AK, SK, wart, keratoacanthoma or SCC (in ~20%) — always biopsy the base, especially with induration or in elderly"]),
+ ("Actinic cheilitis — management.", ["Premalignant (SCC of lip has higher metastasis); sun protection with lip balms (SPF), avoid smoking; treat with 5-FU, imiquimod, PDT, CO2/ Er:YAG laser vermilionectomy; biopsy ulcerated/ indurated areas"]),
+ ("Histopathology of AK in detail.", ["Atypical keratinocytes in basal layer extending partially (AK I/II) or fully (AK III ≈ Bowen's) through epidermis, alternating parakeratosis over affected epidermis and orthokeratosis over spared adnexal openings ('flag sign' — pink and blue), budding of atypical cells into papillary dermis, solar elastosis"]),
+ ("Photodynamic therapy — how does it work?", ["Topical photosensitiser (5-aminolaevulinic acid or methyl aminolaevulinate) is taken up preferentially by dysplastic cells and converted to protoporphyrin IX; illumination with red (630 nm), blue light or daylight generates reactive oxygen species → selective cell death; side effects — pain/ burning during illumination, erythema, crusting; excellent cosmesis"]),
+ ("Prevention of AK.", ["Regular sunscreen use reduces AK incidence (Australian trials), sun avoidance, protective clothing; oral nicotinamide in high-risk; acitretin for transplant recipients; treat AK early to prevent SCC"]),
+ ]),
+dict(case="Paronychia", qa=[
+ NAIL,
+ ("Candida in chronic paronychia — role.", ["Candida is often isolated but is thought to be secondary colonisation; chronic paronychia is primarily an irritant/ allergic inflammatory disorder of the nail fold in wet workers — topical steroids are more effective than antifungals alone; combine both"]),
+ ("What surgical options for refractory chronic paronychia?", ["En bloc excision of proximal nail fold (crescentic excision) ± nail avulsion, Swiss roll technique (reflection of nail fold and healing by secondary intention); intralesional steroid into the fold"]),
+ ("Ingrown toenail — staging and treatment.", ["Stage 1: erythema, oedema, pain; Stage 2: pus/ infection; Stage 3: granulation tissue and lateral nail fold hypertrophy", "Conservative: cotton wisp/ dental floss under nail edge, taping, gutter splint, warm soaks, correct cutting (straight across), proper footwear; antibiotics if infected", "Surgical: partial nail avulsion with lateral matricectomy (phenol 88% chemical, electrocautery, CO2 laser, surgical wedge excision)"]),
+ ("Paronychia in children (thumb-suckers) — organisms.", ["Mixed oral flora including anaerobes and Candida; treat with amoxicillin-clavulanate/ clindamycin and topical antifungal; discourage thumb-sucking"]),
+ ("Drug-induced paronychia.", ["Retinoids (isotretinoin), EGFR inhibitors (cetuximab, erlotinib, gefitinib), MEK inhibitors, taxanes, methotrexate, indinavir — painful periungual inflammation with pyogenic granuloma-like lesions; dose modification, topical steroids, antiseptic soaks, doxycycline, silver nitrate/ timolol for granulation"]),
+ ]),
+dict(case="Trichotillomania", qa=[
+ HAIR,
+ ("Trichoscopy signs in detail.", ["Broken hairs at different lengths, trichoptilosis (split ends), flame hairs (wavy proximal hair residues), V-sign (two hairs broken at same level), tulip hairs, hook hairs, coiled hairs, black dots, hair powder (sprinkled shaft fragments), absence of exclamation-mark hairs (seen in AA) — though overlap possible"]),
+ ("Histopathology findings.", ["Increased catagen/ telogen hairs, trichomalacia (distorted, soft hair shafts), pigment casts in follicular canal, perifollicular haemorrhage, empty follicles, no significant inflammation, normal follicle density"]),
+ ("What psychiatric comorbidities and treatments?", ["Comorbid anxiety, depression, OCD, skin picking, ADHD; treatment — habit reversal training (first line), CBT, N-acetylcysteine (1200–2400 mg/day), SSRIs, clomipramine, olanzapine/ aripiprazole in resistant; children — often self-limiting 'baby trich' with parental guidance"]),
+ ("What is the 'hair pull test' and 'hair window' in trichotillomania?", ["Pull test is negative (hairs firmly anchored); 'hair growth window' — shaving or occluding a small area shows normal regrowth when the patient cannot pull — confirms diagnosis"]),
+ ]),
+dict(case="Twenty-nail dystrophy (trachyonychia)", qa=[
+ NAIL,
+ ("Associated conditions in detail.", ["Idiopathic (commonest in children), alopecia areata (most common association), lichen planus, psoriasis, atopic dermatitis, eczema, vitiligo, ichthyosis vulgaris, IgA deficiency, sarcoidosis, Down syndrome"]),
+ ("Treatment options in detail.", ["Reassurance and cosmetic measures (nail polish, buffing) in children (spontaneous improvement); emollients/ nail hardeners; topical steroids/ tacrolimus to proximal nail fold, intralesional triamcinolone into matrix, short systemic steroids, oral retinoids, cyclosporine, JAK inhibitors (alopecia areata-associated)"]),
+ ("Enumerate nail signs of systemic disease.", ["Clubbing (cardiopulmonary, IBD, cirrhosis), koilonychia (iron deficiency), Beau's lines (systemic illness), Muehrcke's lines (hypoalbuminaemia), Terry's nails (cirrhosis, CHF, diabetes), half-and-half (Lindsay's — CKD), Mees' lines (arsenic, thallium), splinter haemorrhages (endocarditis, trauma), yellow nails (yellow nail syndrome), blue lunulae (Wilson's, argyria, zidovudine), periungual telangiectasia (CTD)"]),
+ ("What is nail lichen planus and why urgent treatment?", ["Thinning, ridging, splitting, red lunula, dorsal pterygium (permanent scarring), anonychia — early systemic/ intralesional steroids prevent irreversible matrix damage"]),
+ ]),
+dict(case="Yellow nail syndrome", qa=[
+ NAIL,
+ ("Associations in detail.", ["Primary/ idiopathic; secondary — malignancies (lymphoma, breast, lung), immunodeficiencies, rheumatoid arthritis, thyroid disease, nephrotic syndrome, drugs (penicillamine, gold, bucillamine, titanium implants — 'titanium yellow nail')"]),
+ ("Treatment in detail.", ["Nails: oral vitamin E 1000–1200 IU/day, oral itraconazole/ fluconazole pulse therapy (stimulate growth), zinc; topical vitamin E; nails may improve spontaneously (~30%)", "Lymphoedema: compression, physiotherapy", "Pleural effusion: thoracentesis, pleurodesis, octreotide (chylous)", "Sinusitis/ bronchiectasis: antibiotics, physiotherapy", "Remove titanium implants if implicated"]),
+ ("Differential diagnosis of yellow nails in detail.", ["Onychomycosis (subungual debris, KOH +), psoriasis, ageing, smoking (nicotine stain), nail polish staining, carotenaemia, jaundice, tetracyclines, diabetes (glycation), lymphoedema-associated nail changes, PXE"]),
+ ("What is the prognosis?", ["Chronic disease; nail changes may remit in ~1/3; respiratory complications determine morbidity; life expectancy mildly reduced in some series"]),
+ ]),
+dict(case="Telogen effluvium", qa=[
+ HAIR,
+ ("Acute vs chronic telogen effluvium.", ["Acute TE: shedding 2–3 months after trigger (fever, surgery, childbirth, crash diet, haemorrhage, drugs, COVID-19), lasts <6 months, full recovery expected", "Chronic TE: diffuse shedding >6 months in middle-aged women, often fluctuating, bitemporal recession, no miniaturisation, no clear trigger in many — must exclude AGA (female pattern) and nutritional/ thyroid causes"]),
+ ("Trichoscopy in TE.", ["Normal hair density pattern with many empty follicles, short regrowing hairs (upright regrowing), no significant variation in shaft diameter between frontal and occipital regions (unlike AGA), no exclamation marks"]),
+ ("What is the trichogram?", ["Plucking 50–100 hairs and examining roots: normal anagen:telogen 85–90:10–15; TE shows >20–25% telogen (club) hairs; anagen effluvium — dystrophic anagen hairs; AA — dystrophic/ telogen"]),
+ ("Post-COVID-19 telogen effluvium.", ["Common 1–3 months after COVID-19 infection (fever, stress, inflammation); self-limiting over 6–9 months; reassure, correct deficiencies, topical minoxidil may hasten regrowth"]),
+ ("Counselling in TE.", ["Reassure that hair follicles are intact and regrowth will occur (takes 6–12 months for cosmetic density); avoid unnecessary supplements and harsh treatments; diet with adequate protein, iron; manage stress"]),
+ ]),
+dict(case="Recurrent aphthous stomatitis", qa=[
+ ("What is the pathogenesis?", ["Immune dysregulation — T-cell (CD8 cytotoxic, Th1 — TNF-α) mediated destruction of oral epithelium, triggered by trauma, microbial antigens (streptococcal HSP), stress, hormones, nutritional deficiencies; genetic predisposition (HLA, cytokine polymorphisms)"]),
+ ("Oral ulcer in HIV — differential and management.", ["Major aphthae (large, painful), HSV, CMV (biopsy), histoplasmosis, lymphoma, Kaposi sarcoma, necrotising gingivitis; thalidomide (major aphthae), topical/ intralesional steroids, treat infections, optimise ART"]),
+ ("What is MAGIC syndrome?", ["Mouth And Genital ulcers with Inflamed Cartilage — overlap of Behçet's disease and relapsing polychondritis"]),
+ ("Treatment of Behçet's disease in detail.", ["Mucocutaneous: topical steroids, colchicine (0.5–1.5 mg/day — EN and genital ulcers), apremilast 30 mg BD (oral ulcers), dapsone, thalidomide", "Eye: azathioprine, cyclosporine, TNF inhibitors (infliximab/ adalimumab), interferon-α", "Vascular/ neuro: high-dose steroids + cyclophosphamide/ TNF inhibitors; anticoagulation controversial in venous thrombosis"]),
+ ("Oral lesions of nutritional deficiency.", ["Iron: angular cheilitis, atrophic glossitis; B12/ folate: beefy red tongue, aphthae; riboflavin: magenta tongue; niacin: red swollen tongue (pellagra); zinc: erosive stomatitis; vitamin C: bleeding swollen gums (scurvy)"]),
+ ]),
+]
