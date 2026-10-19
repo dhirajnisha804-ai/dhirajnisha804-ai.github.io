@@ -35,4 +35,5 @@ Rules: Wolverton-style rule here = DYP first, IADVL second; if they disagree, as
 - [done 19 Oct] Slot R2 (12 cases, r2a.py + r2b.py): warts, herpes zoster, mycetoma, sporotrichosis, chromoblastomycosis, tinea corporis/cruris/faciei, tinea capitis, tinea pedis & onychomycosis, pityriasis versicolor, candidiasis, pediculosis, scabies.
 - [done 19 Oct] Slots R3 (r3a STI 5, r3b eczemas 6) and R4 (r4a eczemas 5, r4b drug/reactive 7) — all 47 V1+V2 cases now deep.
 - [done 19 Oct] D1 (8 cases: erythroderma, psoriasis, LP, lichen striatus, parapsoriasis, PR, PRP, vesicobullous) — d1a.py, d1b.py; make.py globs d*.py.
-- Next: D2 = connective tissue (8) + granuloma annulare + dermatitis artefacta + aphthous stomatitis.
+- [done 19 Oct] D2 (11 cases: DM, SLE, SSc, DLE, LSA, morphoea, Parry–Romberg, striae, GA, dermatitis artefacta, RAS) — d2a.py, d2b.py.
+- Next: D3 = vascular & ulcers (6) + nutritional & metabolic (4) + recurrent? (order: pigmentary next after).
