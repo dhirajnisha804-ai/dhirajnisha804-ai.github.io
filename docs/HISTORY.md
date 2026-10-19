@@ -78,7 +78,7 @@ Keep it updated at the end of every working session (newest session at the botto
 | Treatment ladders | 134 | live, marked "needs review" |
 | Instruments | 69 | drafts |
 | Exam drugs | 257 (125 exam list + 132 "More from Khopkar") | drafts |
-| Viva posts | 47 cases (V1 infections, V2 STI/eczemas/drug eruptions) | drafts; all 47 redone in deep format (R1–R4, 19 Oct); D1–D2 done (19 new cases, 66 viva posts total); 74 still to write (D3–D8) |
+| Viva posts | 47 cases (V1 infections, V2 STI/eczemas/drug eruptions) | drafts; all 47 redone in deep format (R1–R4, 19 Oct); D1–D3 done (29 new cases, 76 viva posts total); 64 still to write (D4–D8) |
 
 ---
 
@@ -129,3 +129,4 @@ Keep it updated at the end of every working session (newest session at the botto
 - **19 Oct (night)** — Viva slots R3 (STI + eczemas I) and R4 (eczemas II + drug/reactive eruptions, urticaria, tattoo) done. All 47 original viva posts now deep. Items flagged for her to confirm inside posts: ceftriaxone dose, newer gonorrhoea drugs, remibrutinib/dupilumab for CSU, nemolizumab for PN. Next: D1 (papulosquamous & erythroderma).
 - **19 Oct (night)** — Viva D1 (papulosquamous & erythroderma 7 + vesicobullous) written; total viva posts 55. Next D2: connective tissue + granuloma annulare + dermatitis artefacta + aphthous stomatitis.
 - **19 Oct (night)** — Viva D2 written (CTD 8 + granuloma annulare + dermatitis artefacta + aphthous stomatitis); total 66. Next D3: vascular & ulcers + nutritional & metabolic.
+- **19 Oct (night)** — Viva D3 written (vascular & ulcers 6 + nutritional & metabolic 4); total 76. Next D4: pigmentary (14).
