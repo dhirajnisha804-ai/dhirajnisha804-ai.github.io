@@ -78,7 +78,7 @@ dict(case="Acrokeratosis verruciformis of Hopf", qa=[
  ("Differential diagnosis in detail.", ["Plane warts (Koebner, HPV, resolve), epidermodysplasia verruciformis, stucco keratoses (elderly), seborrhoeic keratoses, Darier's disease acral lesions (look for seborrhoeic papules elsewhere), lichen planus, acrokeratoelastoidosis (keratotic papules at palm margins)"]),
  ("Management in detail.", ["Usually cosmetic; superficial ablation — cryotherapy, CO2/ Er:YAG laser, curettage, electrodesiccation; topical retinoids/ keratolytics; oral acitretin for extensive disease; recurrence possible"]),
  ("What is acrokeratoelastoidosis?", ["Autosomal dominant (or sporadic) small firm translucent/ keratotic papules along the margins of palms and soles (at junction of dorsal and ventral skin); histology — fragmented elastic fibres (elastorrhexis) with hyperkeratosis"]),
- GENO,
+ ("Why is skin biopsy important in AKV?", ["To differentiate from plane warts (koilocytes, HPV) and from acral lesions of Darier's disease (acantholysis and dyskeratosis); AKV shows only church-spire hyperkeratosis without dyskeratosis — diagnosis affects genetic counselling"]),
  ("What does 'genodermatosis with ATP2A2' teach about calcium in the skin?", ["Calcium gradient (low basal, high granular) controls keratinocyte differentiation and desmosome assembly; SERCA2 (Darier/ AKV) and SPCA1 (Hailey–Hailey) pump defects disrupt intracellular calcium stores → acantholysis/ dyskeratosis"]),
  ("Onset and course.", ["Appears in early childhood or adolescence, slowly progressive, persists lifelong; asymptomatic"]),
  ]),
