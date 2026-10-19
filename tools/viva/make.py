@@ -15,7 +15,7 @@ def slug(s): return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")[:60]
 for old in glob.glob(os.path.join(POSTS, "viva-*.json")): os.remove(old)
 # v*.py = first versions; r*.py = deep redo (R slots) — a later file replaces the same case
 allD = {}
-for f in sorted(glob.glob(os.path.join(HERE, "v[0-9]*.py"))) + sorted(glob.glob(os.path.join(HERE, "r[0-9]*.py"))):
+for f in sorted(glob.glob(os.path.join(HERE, "v[0-9]*.py"))) + sorted(glob.glob(os.path.join(HERE, "r[0-9]*.py"))) + sorted(glob.glob(os.path.join(HERE, "d[0-9]*.py"))):
     for d in runpy.run_path(f)["D"]: allD[d["case"]] = d
 n = 0
 if True:
