@@ -135,3 +135,4 @@ Keep it updated at the end of every working session (newest session at the botto
 - **19 Oct (late night)** — e2.py: extra questions for 39 more viva cases (6–7 → ≥9). (Some still had 8 after this — fixed by e3.)
 - **19 Oct (late night)** — e3.py: extra questions for 18 cases still at 8 (rosacea, HS, NF1 got 4–5 more). Every viva post now has ≥9 questions (54 have exactly 9); total 1558 across 140 cases.
 - **19 Oct (late night)** — She felt viva content was too little; chose 'long cases first, viva-length bullets'. 25 long cases expanded to ~25–37 questions each (e4–e8). Next: short cases to 15–25 Qs.
+- **19 Oct (late night)** — Short cases expanded (e9–e17): all 140 viva posts now ≥15 questions; total 2520 questions. Long cases 25–37.
