@@ -5,6 +5,12 @@ import android.annotation.SuppressLint;
 import android.content.pm.PackageManager;
 import android.speech.RecognizerIntent;
 import android.view.WindowManager;
+import android.view.WindowInsets;
+import android.view.WindowInsetsController;
+import android.view.Gravity;
+import android.os.Build;
+import android.window.OnBackInvokedCallback;
+import android.window.OnBackInvokedDispatcher;
 import android.webkit.PermissionRequest;
 import android.widget.FrameLayout;
 import org.json.JSONObject;
@@ -56,7 +62,32 @@ public class MainActivity extends Activity {
         web = new WebView(this);
         web.setBackgroundColor(Color.parseColor("#14324D"));
         FrameLayout root = new FrameLayout(this);
-        root.addView(web, new FrameLayout.LayoutParams(-1, -1));
+        root.setBackgroundColor(Color.parseColor("#F3F5F8"));
+        final View statusBg = new View(this);
+        statusBg.setBackgroundColor(Color.parseColor("#14324D"));
+        root.addView(statusBg, new FrameLayout.LayoutParams(-1, 0, Gravity.TOP));
+        final FrameLayout.LayoutParams webLp = new FrameLayout.LayoutParams(-1, -1);
+        root.addView(web, webLp);
+        // Android 15+ draws apps edge-to-edge: keep the page clear of the status bar, navigation bar and keyboard.
+        if (Build.VERSION.SDK_INT >= 30) {
+            getWindow().setDecorFitsSystemWindows(false);
+            root.setOnApplyWindowInsetsListener((v, insets) -> {
+                android.graphics.Insets bars = insets.getInsets(WindowInsets.Type.systemBars() | WindowInsets.Type.displayCutout());
+                android.graphics.Insets ime = insets.getInsets(WindowInsets.Type.ime());
+                webLp.setMargins(bars.left, bars.top, bars.right, Math.max(bars.bottom, ime.bottom));
+                web.setLayoutParams(webLp);
+                FrameLayout.LayoutParams sl = (FrameLayout.LayoutParams) statusBg.getLayoutParams();
+                sl.height = bars.top; statusBg.setLayoutParams(sl);
+                return WindowInsets.CONSUMED;
+            });
+            WindowInsetsController c = getWindow().getInsetsController();
+            if (c != null) c.setSystemBarsAppearance(WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS,
+                    WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS | WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS);
+        }
+        // Android 13+ (and required for Android 16): handle Back ourselves so it closes screens inside the app first.
+        if (Build.VERSION.SDK_INT >= 33) {
+            getOnBackInvokedDispatcher().registerOnBackInvokedCallback(OnBackInvokedDispatcher.PRIORITY_DEFAULT, this::handleBack);
+        }
         View sp = new View(this);
         sp.setBackgroundResource(R.drawable.splash_bg);
         splash = sp;
@@ -230,15 +261,21 @@ public class MainActivity extends Activity {
 
     /** Back: close an open screen inside the app first, then go back, then leave. */
     @Override
-    public void onBackPressed() {
-        web.evaluateJavascript("(window.DRX_back&&window.DRX_back())?'1':'0'", value -> {
+    @SuppressWarnings("deprecation")
+    public void onBackPressed() { handleBack(); }
+
+    private long lastBackAt = 0;
+    private void handleBack() {
+        web.evaluateJavascript("(function(){try{return (window.DRX_back&&window.DRX_back())?'1':'0'}catch(e){return 'e'}})()", value -> {
             if (value != null && value.contains("1")) return;
-            if (web.canGoBack()) web.goBack();
-            else finishApp();
+            if (web.canGoBack()) { web.goBack(); return; }
+            // On the home screen: ask for a second press so the app never closes by accident.
+            long now = System.currentTimeMillis();
+            if (now - lastBackAt < 2000) { finish(); return; }
+            lastBackAt = now;
+            Toast.makeText(MainActivity.this, "Press back again to exit", Toast.LENGTH_SHORT).show();
         });
     }
-
-    private void finishApp() { super.onBackPressed(); }
 
     @Override
     protected void onSaveInstanceState(Bundle out) {

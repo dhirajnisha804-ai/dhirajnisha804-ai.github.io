@@ -1,6 +1,6 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#14324d">
 <link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<meta name="drx-build" content="202610131500">
+<meta name="drx-build" content="202610191327">
 <script src="config.js"></script>
 <script>window.DRX_OCR=(b=>({lib:b+"tesseract.min.js",worker:b+"worker.min.js",core:b,lang:b}))(new URL("vendor/tesseract/",location.href).href);</script>
 <script src="vendor/firebase-app-compat.js"></script><script src="vendor/firebase-auth-compat.js"></script><script src="vendor/firebase-firestore-compat.js"></script>
@@ -743,7 +743,7 @@ $("#sheet2Close").addEventListener("click", closeSheet2);
 document.addEventListener("keydown", e => { if(e.key!=="Escape") return; if(!$("#pnl").hidden) panelClose(); else if(!$("#lightbox").hidden) closeLightbox(); else if(!$("#sheet2").hidden) closeSheet2(); else if(!$("#sheet").hidden) closeSheet(); });
 
 /* ---------- navigation ---------- */
-function go(view, opts={}){ S.view=view; if(opts.pid) S.pid=opts.pid; if(opts.tab) S.ptTab=opts.tab; try{ localStorage.setItem("dermrx.view", view==="patient"?"patients":view); }catch{} render(true); window.scrollTo(0,0); secureForView(); }
+function go(view, opts={}){ if(!opts.back && S.view && S.view!==view){ S.vhist=(S.vhist||[]).filter(h=>h.view!==view); S.vhist.push({view:S.view,pid:S.pid}); if(S.vhist.length>20) S.vhist.shift(); } S.view=view; if(opts.pid) S.pid=opts.pid; if(opts.tab) S.ptTab=opts.tab; try{ localStorage.setItem("dermrx.view", view==="patient"?"patients":view); }catch{} render(true); window.scrollTo(0,0); secureForView(); }
 document.querySelectorAll("nav.tabs button").forEach(b => b.addEventListener("click", () => go(b.dataset.tab)));
 $("#btnNewTop").addEventListener("click", () => openSearch());
 $("#btnMoreTop").addEventListener("click", () => go("more"));
@@ -1811,7 +1811,10 @@ window.DRX_back=()=>{
   if(!$("#sheet2").hidden){ closeSheet2(); return true; }
   if($("#pnl") && !$("#pnl").hidden){ if(!$("#pnlBack").hidden) $("#pnlBack").click(); else panelClose(); return true; }
   if(!$("#sheet").hidden){ $("#sheetClose").click(); return true; }
-  if(S.view!=="cases"){ go("cases"); return true; }
+  if(S.view==="patient"){ S.vhist=(S.vhist||[]).filter(x=>x.view!=="patients"&&x.view!=="patient"); go("patients",{back:true}); return true; }
+  let h; while((h=(S.vhist||[]).pop()) && h.view===S.view){}
+  if(h){ go(h.view,{back:true, pid:h.pid}); return true; }
+  if(S.view!=="cases"){ go("cases",{back:true}); return true; }
   return false;
 };
 window.addEventListener("beforeunload",e=>{ if(S.guard?.()){ e.preventDefault(); e.returnValue=""; } });

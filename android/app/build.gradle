@@ -2,11 +2,11 @@ plugins { id 'com.android.application' }
 def host = System.getenv("DRX_HOST") ?: "dhirajnisha804-ai.github.io"
 android {
     namespace 'com.dermadesk.app'
-    compileSdk 34
+    compileSdk 36
     defaultConfig {
         applicationId "in.dermrx.desk"
         minSdk 24
-        targetSdk 34
+        targetSdk 36
         versionCode((System.getenv("GITHUB_RUN_NUMBER") ?: "1").toInteger())
         versionName "2." + (System.getenv("GITHUB_RUN_NUMBER") ?: "0")
         buildConfigField "String", "APP_URL", "\"https://" + host + "/\""
