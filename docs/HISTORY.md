@@ -78,7 +78,7 @@ Keep it updated at the end of every working session (newest session at the botto
 | Treatment ladders | 134 | live, marked "needs review" |
 | Instruments | 69 | drafts |
 | Exam drugs | 257 (125 exam list + 132 "More from Khopkar") | drafts |
-| Viva posts | 47 cases (V1 infections, V2 STI/eczemas/drug eruptions) | drafts; 24 redone in deep format (R1+R2, 19 Oct), 23 still to redo (R3–R4) |
+| Viva posts | 47 cases (V1 infections, V2 STI/eczemas/drug eruptions) | drafts; all 47 redone in deep format (R1–R4, 19 Oct); 93 cases still to write (D1–D8) |
 
 ---
 
@@ -126,3 +126,4 @@ Keep it updated at the end of every working session (newest session at the botto
   Viva deep redo slot R1 done (12 cases, r1a.py/r1b.py) using PYQ book topics + IADVL.
   Still pending: viva R2–R4 then D1–D8; hyperhidrosis ladder order (her answer); reviewer test login for Play (she creates a test account, verifies it, gives the login only inside Play Console 'App access'); open questions (vit K, ceftriaxone dose, newer facts).
 - **19 Oct (evening)** — Viva slot R2 done (12 cases: warts, zoster, mycetoma, sporotrichosis, chromoblastomycosis, tinea corporis, tinea capitis, tinea pedis/onychomycosis, PV, candidiasis, pediculosis, scabies). All V1 cases now in deep format. Next: R3–R4 (V2 cases: STI, eczemas, drug eruptions).
+- **19 Oct (night)** — Viva slots R3 (STI + eczemas I) and R4 (eczemas II + drug/reactive eruptions, urticaria, tattoo) done. All 47 original viva posts now deep. Items flagged for her to confirm inside posts: ceftriaxone dose, newer gonorrhoea drugs, remibrutinib/dupilumab for CSU, nemolizumab for PN. Next: D1 (papulosquamous & erythroderma).
