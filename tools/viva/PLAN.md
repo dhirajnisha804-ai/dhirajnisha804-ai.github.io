@@ -36,4 +36,4 @@ Rules: Wolverton-style rule here = DYP first, IADVL second; if they disagree, as
 - [done 19 Oct] Slots R3 (r3a STI 5, r3b eczemas 6) and R4 (r4a eczemas 5, r4b drug/reactive 7) — all 47 V1+V2 cases now deep.
 - [done 19 Oct] D1 (8 cases: erythroderma, psoriasis, LP, lichen striatus, parapsoriasis, PR, PRP, vesicobullous) — d1a.py, d1b.py; make.py globs d*.py.
 - [done 19 Oct] D2 (11 cases: DM, SLE, SSc, DLE, LSA, morphoea, Parry–Romberg, striae, GA, dermatitis artefacta, RAS) — d2a.py, d2b.py.
-- Next: D3 = vascular & ulcers (6) + nutritional & metabolic (4) + recurrent? (order: pigmentary next after).
+- Next: D3 = vascular & ulcers (6) + nutritional & metabolic (4); then D4 pigmentary (14), D5 acne & appendageal (8) + hair & nail (7), D6 keratinisation (7) + premalignant/malignant (3), D7 nevi (9) + genodermatoses (8), D8 benign tumours (8).
